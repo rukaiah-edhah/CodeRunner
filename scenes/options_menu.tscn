@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://tjbvo7db6awc"]
+
+[ext_resource type="Script" path="res://scripts/options_menu.gd" id="1_8pgr6"]
+[ext_resource type="PackedScene" uid="uid://dieljgd8ai41" path="res://scenes/world.tscn" id="2_l3c6b"]
+
+[node name="options menu" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1.0
+offset_top = 109.0
+offset_right = 1152.0
+offset_bottom = 456.0
+script = ExtResource("1_8pgr6")
+
+[node name="volume" type="Button" parent="."]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 163.0
+offset_right = 320.0
+offset_bottom = 209.0
+
+[node name="brightness" type="Button" parent="."]
+layout_mode = 0
+offset_left = 425.0
+offset_top = 163.0
+offset_right = 638.0
+offset_bottom = 209.0
+
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 735.0
+offset_top = 163.0
+offset_right = 948.0
+offset_bottom = 209.0
+
+[node name="Node2D" parent="." instance=ExtResource("2_l3c6b")]
+show_behind_parent = true
+position = Vector2(0, -142)
+
+[connection signal="pressed" from="volume" to="." method="_on_volume_pressed"]
+[connection signal="pressed" from="brightness" to="." method="_on_brightness_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

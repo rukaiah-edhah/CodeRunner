@@ -1,0 +1,78 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjr3f6oxwl481"]
+
+[ext_resource type="Texture2D" uid="uid://dc7si5ltyjaau" path="res://images/character.png" id="1_k54xb"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_ra8ml"]
+[ext_resource type="Texture2D" uid="uid://bs7k4abjo84xs" path="res://images/coin.png" id="3_16uj5"]
+[ext_resource type="Texture2D" uid="uid://m8vs1kjgafmr" path="res://images/green.png" id="4_yk0fd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wgc3y"]
+radius = 16.0
+height = 46.0
+
+[node name="player" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_ra8ml")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(43, 20)
+shape = SubResource("CapsuleShape2D_wgc3y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(43, 20)
+scale = Vector2(1.58333, 1.70833)
+texture = ExtResource("1_k54xb")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="health" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -19.0
+offset_top = -30.0
+offset_right = 21.0
+offset_bottom = 10.0
+
+[node name="healthbar" type="TextureProgressBar" parent="health"]
+layout_mode = 0
+offset_left = -545.0
+offset_top = -247.0
+offset_right = -345.0
+offset_bottom = -221.0
+value = 100.0
+allow_greater = true
+texture_progress = ExtResource("4_yk0fd")
+
+[node name="coin_inventory" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="coin_inventory"]
+layout_mode = 0
+offset_left = -565.0
+offset_top = -308.0
+offset_right = -366.0
+offset_bottom = -281.0
+
+[node name="num_coins" type="Label" parent="coin_inventory"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -11.421
+anchor_top = -7.381
+anchor_right = -11.421
+anchor_bottom = -7.381
+offset_left = -59.16
+offset_top = -9.75998
+offset_right = 84.84
+offset_bottom = 13.24
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="coin" type="TextureRect" parent="coin_inventory"]
+layout_mode = 0
+offset_left = -559.0
+offset_top = -303.0
+offset_right = -543.0
+offset_bottom = -287.0
+texture = ExtResource("3_16uj5")
+expand_mode = 5
