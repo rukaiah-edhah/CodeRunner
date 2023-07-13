@@ -5,7 +5,6 @@ extends CharacterBody2D
 @export var gravity = 30
 @export var jump_force = 700
 @onready var healthbar = $health/healthbar
-var screen_size
 var coins = 0
 
 # variables for colors for the healthbar
@@ -19,7 +18,6 @@ var health = FULL_HEALTH
 
 func _ready():
 	# set screen size, health bar, and coin bar
-	screen_size = get_viewport_rect().size
 	set_health_bar()
 	set_coin_bar()
 	
@@ -73,6 +71,6 @@ func update_healthbar(value):
 
 
 func _on_coin_coin_inventory_changed():
-	# add one coin to the coin bar when user picks up a coin
+	# add three coins to the coin bar when user picks up a coin
 	coins += 3
 	set_coin_bar()
