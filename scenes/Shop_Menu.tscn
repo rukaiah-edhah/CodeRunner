@@ -1,0 +1,149 @@
+[gd_scene load_steps=13 format=3 uid="uid://2ak2ssakwgjl"]
+
+[ext_resource type="Script" path="res://scripts/Shop_Menu.gd" id="1_oodp5"]
+[ext_resource type="Texture2D" uid="uid://cr34gf4c7t1rl" path="res://images/farmingTilesheetComplete.png" id="1_rq56k"]
+[ext_resource type="Texture2D" uid="uid://d244avs6th1v6" path="res://images/coin.png" id="2_8r1la"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_108om"]
+atlas = ExtResource("1_rq56k")
+region = Rect2(176, 80, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bl7h6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_108om")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sy8sn"]
+atlas = ExtResource("1_rq56k")
+region = Rect2(176, 80, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4qui8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sy8sn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gsujk"]
+atlas = ExtResource("1_rq56k")
+region = Rect2(160, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8sc7"]
+atlas = ExtResource("1_rq56k")
+region = Rect2(128, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nscfc"]
+atlas = ExtResource("1_rq56k")
+region = Rect2(32, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcon6"]
+atlas = ExtResource("1_rq56k")
+region = Rect2(80, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ncj1j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gsujk")
+}],
+"loop": true,
+"name": &"Berry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8sc7")
+}],
+"loop": true,
+"name": &"Carrot",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nscfc")
+}],
+"loop": true,
+"name": &"Corn",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcon6")
+}],
+"loop": true,
+"name": &"Onion",
+"speed": 5.0
+}]
+
+[node name="Shop_Menu" type="Node2D"]
+script = ExtResource("1_oodp5")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -48.0
+offset_top = -34.0
+offset_right = 49.0
+offset_bottom = 27.0
+color = Color(1, 1, 1, 0.0509804)
+
+[node name="Left Arrow" type="AnimatedSprite2D" parent="ColorRect"]
+position = Vector2(16, 51)
+rotation = 1.5708
+scale = Vector2(1.41858, 1.51067)
+sprite_frames = SubResource("SpriteFrames_bl7h6")
+
+[node name="Left_Arrow_Click" type="Button" parent="ColorRect/Left Arrow"]
+offset_left = -4.93452
+offset_top = -1.98586
+offset_right = 3.06548
+offset_bottom = 6.01414
+
+[node name="Right Arrow" type="AnimatedSprite2D" parent="ColorRect"]
+position = Vector2(36, 50)
+rotation = 4.71239
+scale = Vector2(1.40338, 1.6913)
+sprite_frames = SubResource("SpriteFrames_4qui8")
+
+[node name="Right_Arrow_Click" type="Button" parent="ColorRect/Right Arrow"]
+offset_left = -4.27538
+offset_top = -2.38902
+offset_right = 3.72462
+offset_bottom = 5.61098
+
+[node name="Item_Icon" type="AnimatedSprite2D" parent="."]
+position = Vector2(-21, 0)
+scale = Vector2(1.58789, 1.42481)
+sprite_frames = SubResource("SpriteFrames_ncj1j")
+animation = &"Onion"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -41.0
+offset_top = -36.0
+offset_right = -5.0
+offset_bottom = -11.0
+text = "100"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -23)
+scale = Vector2(0.287313, 0.257463)
+texture = ExtResource("2_8r1la")
+
+[node name="Buy_button" type="Button" parent="."]
+offset_left = 7.0
+offset_top = -15.0
+offset_right = 45.0
+offset_bottom = 16.0
+text = "Buy"
+
+[connection signal="pressed" from="ColorRect/Left Arrow/Left_Arrow_Click" to="." method="_on_left_arrow_click_pressed"]
+[connection signal="pressed" from="ColorRect/Right Arrow/Right_Arrow_Click" to="." method="_on_right_arrow_click_pressed"]
+[connection signal="pressed" from="Buy_button" to="." method="_on_buy_button_pressed"]
