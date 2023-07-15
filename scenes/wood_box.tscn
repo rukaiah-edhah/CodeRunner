@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://c4u1kl48fqk6u"]
+
+[ext_resource type="Script" path="res://scripts/wood_box.gd" id="1_7ldk5"]
+[ext_resource type="Texture2D" uid="uid://di647bvucot8r" path="res://images/flat,800x800,075,f.u1.jpg" id="2_oov1d"]
+[ext_resource type="PackedScene" uid="uid://divgbcotp0d8v" path="res://scenes/coin.tscn" id="3_vgh2a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_beru5"]
+size = Vector2(28, 19)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aqep5"]
+size = Vector2(29, 28)
+
+[sub_resource type="QuadMesh" id="QuadMesh_f0upe"]
+
+[node name="wood_box" type="Area2D"]
+position = Vector2(482, 470)
+script = ExtResource("1_7ldk5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(1.00024, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1.43774, 4.50027)
+shape = SubResource("RectangleShape2D_beru5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.437744, 0.5)
+shape = SubResource("RectangleShape2D_aqep5")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(29.1245, 27.0005)
+mesh = SubResource("QuadMesh_f0upe")
+texture = ExtResource("2_oov1d")
+
+[node name="coin" parent="." instance=ExtResource("3_vgh2a")]
+position = Vector2(0, -32)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
