@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ohfi2qlykajt"]
+
+[ext_resource type="Script" path="res://Scripts/moving_platform_sideways.gd" id="1_tjtm3"]
+[ext_resource type="Texture2D" uid="uid://c6dsof8vagqj4" path="res://icon.svg" id="2_5g71b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b0b8g"]
+size = Vector2(198, 47)
+
+[node name="moving_platform_sideways" type="AnimatableBody2D"]
+position = Vector2(0, 6)
+script = ExtResource("1_tjtm3")
+distance = Vector2(100, 0)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(586.5, 362.5)
+scale = Vector2(1.55469, 0.382813)
+texture = ExtResource("2_5g71b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(587, 363.5)
+shape = SubResource("RectangleShape2D_b0b8g")
