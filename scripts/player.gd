@@ -5,7 +5,10 @@ extends CharacterBody2D
 @export var gravity = 30
 @export var jump_force = 700
 @onready var healthbar = $health/healthbar
+@onready var _animation = $AnimatedSprite2D
 var coins = 0
+var jump_count = 0
+var double_jump = 2
 
 # variables for colors for the healthbar
 var red_health = preload("res://images/red.png")
@@ -29,21 +32,36 @@ func set_health_bar():
 	# set health bar to full 
 	healthbar.value = health
 
+func _process(delta):
+	# setting player animation to movement
+	if Input.is_action_pressed("jump"):
+		_animation.play("jump")
+	elif Input.is_action_pressed("move_left"):
+		_animation.play("walk_left")
+	elif Input.is_action_pressed("move_right"):
+		_animation.play("walk_right")
+	else:
+		_animation.play("idle")
+	
 func _physics_process(_delta):
 	# set velocity to max out at 1,000
 	if !is_on_floor():
 		velocity.y += gravity
 		if velocity.y > 1000:
 			velocity.y = 1000
-			
-	if velocity.x == 0 and velocity.y == 1000:
-		# (TEMPORARY UNTIL I FIND A BETTER WAY TO HANDLE THIS) -> restart game for user if they go wrong direction
-		get_tree().change_scene_to_file("res://scenes/main.tscn")
 		
 	if Input.is_action_just_pressed("jump") && is_on_floor():
-		# allow for jumping
+		# allow for jumping, set jump_count back to 0 when on the floor and add 1 to jump_count after jump
+		jump_count = 0
 		velocity.y = -jump_force
-	
+		jump_count += 1
+		
+	if Input.is_action_just_pressed("jump") && not is_on_floor():
+		# allow for double jump.. no more
+		if jump_count < double_jump:
+			velocity.y = -jump_force
+			jump_count += 1
+		
 	# allow for movement left and right through input
 	var horizontal_direction = Input.get_axis("move_left", "move_right")
 	
