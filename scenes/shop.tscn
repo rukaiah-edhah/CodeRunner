@@ -1,90 +1,221 @@
-[gd_scene load_steps=11 format=3 uid="uid://biigqhbweier8"]
+[gd_scene load_steps=15 format=3 uid="uid://b764wloi3l2ks"]
 
-[ext_resource type="Script" path="res://scripts/shop.gd" id="1_kfkij"]
-[ext_resource type="Texture2D" uid="uid://cr34gf4c7t1rl" path="res://images/farmingTilesheetComplete.png" id="2_uetx0"]
+[ext_resource type="Script" path="res://scripts/shop.gd" id="1_p0or2"]
+[ext_resource type="Texture2D" uid="uid://dya2b1osuokk2" path="res://images/coin.png" id="2_5wuy6"]
+[ext_resource type="Script" path="res://scenes/Item_Info.gd" id="3_clwob"]
+[ext_resource type="Texture2D" uid="uid://cr34gf4c7t1rl" path="res://images/farmingTilesheetComplete.png" id="3_ga1yi"]
+[ext_resource type="Texture2D" uid="uid://dfrx612fccb3s" path="res://images/right_arrow.png" id="4_fvgd6"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8o5f2"]
-atlas = ExtResource("2_uetx0")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="Animation" id="Animation_prpqf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -300)]
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_41ljy"]
-atlas = ExtResource("2_uetx0")
-region = Rect2(0, 16, 16, 16)
+[sub_resource type="Animation" id="Animation_sebst"]
+resource_name = "Transition_In"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(300, 300), Vector2(0, 450)]
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_uuvqe"]
-atlas = ExtResource("2_uetx0")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="Animation" id="Animation_4tacv"]
+resource_name = "Transition_Out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -300)]
+}
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_v1b1i"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_85yw2"]
+_data = {
+"RESET": SubResource("Animation_prpqf"),
+"Transin": SubResource("Animation_sebst"),
+"Transition_Out": SubResource("Animation_4tacv")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oevkn"]
+atlas = ExtResource("3_ga1yi")
+region = Rect2(160, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1uanl"]
+atlas = ExtResource("3_ga1yi")
+region = Rect2(128, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oa7gm"]
+atlas = ExtResource("3_ga1yi")
+region = Rect2(32, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ix3b1"]
+atlas = ExtResource("3_ga1yi")
+region = Rect2(144, 64, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nwqv4"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8o5f2")
+"texture": SubResource("AtlasTexture_oevkn")
 }],
 "loop": true,
-"name": &"Bob",
+"name": &"Berry",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_41ljy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_uetx0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_uuvqe")
+"texture": SubResource("AtlasTexture_1uanl")
 }],
 "loop": true,
-"name": &"Sally",
+"name": &"Carrot",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oa7gm")
+}],
+"loop": true,
+"name": &"Corn",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ix3b1")
+}],
+"loop": true,
+"name": &"Orange",
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wmsnv"]
-atlas = ExtResource("2_uetx0")
-region = Rect2(0, 174, 34, 29)
+[node name="Shop" type="CanvasLayer"]
+process_mode = 3
+offset = Vector2(0, -300)
+transform = Transform2D(1, 0, 0, 1, 0, -300)
+script = ExtResource("1_p0or2")
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_wukjf"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wmsnv")
-}],
-"loop": true,
-"name": &"default",
-"speed": 6.0
-}]
+[node name="Panel" type="Panel" parent="."]
+process_mode = 3
+offset_left = -155.0
+offset_top = -179.0
+offset_right = 172.0
+offset_bottom = 28.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qhsm5"]
-size = Vector2(28.138, 22.254)
+[node name="Anim" type="AnimationPlayer" parent="."]
+process_mode = 3
+libraries = {
+"": SubResource("AnimationLibrary_85yw2")
+}
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_yte1y"]
-radius = 35.0143
+[node name="Close__Shop" type="Button" parent="."]
+offset_left = 106.0
+offset_top = -177.0
+offset_right = 168.0
+offset_bottom = -140.0
+text = "close
+"
 
-[node name="Shop" type="StaticBody2D"]
-script = ExtResource("1_kfkij")
+[node name="Coin" type="Sprite2D" parent="."]
+position = Vector2(135, -69)
+scale = Vector2(0.365672, 0.320896)
+texture = ExtResource("2_5wuy6")
 
-[node name="Shop_Owner" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1.00001, -4)
-scale = Vector2(1.9375, 1.96875)
-sprite_frames = SubResource("SpriteFrames_v1b1i")
-animation = &"Bob"
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_clwob")
 
-[node name="Shop_Art" type="AnimatedSprite2D" parent="."]
-position = Vector2(0.999996, -13)
-scale = Vector2(2.55882, 1.88362)
-sprite_frames = SubResource("SpriteFrames_wukjf")
+[node name="Left_Arrow" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -116.0
+offset_top = -28.0
+offset_right = -68.0
+offset_bottom = 1.0
 
-[node name="Area2D" type="Area2D" parent="Shop_Art"]
+[node name="Left_Arrow_Sprite" type="Sprite2D" parent="Control/Left_Arrow"]
+position = Vector2(25, 14)
+rotation = -3.11192
+scale = Vector2(0.075, 0.0631868)
+texture = ExtResource("4_fvgd6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Shop_Art/Area2D"]
-position = Vector2(-0.390804, 3.16361)
-shape = SubResource("RectangleShape2D_qhsm5")
+[node name="Right_Arrow" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -52.0
+offset_top = -29.0
+offset_right = -4.0
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Right_Arrow_Sprite" type="Sprite2D" parent="Control/Right_Arrow"]
+position = Vector2(27, 15)
+rotation = -6.28319
+scale = Vector2(0.075, 0.0631868)
+texture = ExtResource("4_fvgd6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-2, -5)
-shape = SubResource("CircleShape2D_yte1y")
+[node name="Buy" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -44.0
+offset_right = 135.0
+offset_bottom = -13.0
+text = "Buy
+"
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[node name="Item_Icon" type="AnimatedSprite2D" parent="."]
+position = Vector2(-57, -92)
+rotation = -3.14159
+scale = Vector2(7.38495, -5.48677)
+sprite_frames = SubResource("SpriteFrames_nwqv4")
+animation = &"Orange"
+
+[node name="Item_Price" type="Label" parent="."]
+offset_left = 77.0
+offset_top = -80.0
+offset_right = 99.0
+offset_bottom = -54.0
+text = "10"
+
+[node name="Item_Name" type="Label" parent="."]
+offset_left = 65.0
+offset_top = -129.0
+offset_right = 158.0
+offset_bottom = -37.0
+text = "Berry
+
+
+"
+
+[node name="Item_Description" type="Label" parent="."]
+offset_left = 53.0
+offset_top = -108.0
+offset_right = 152.0
+offset_bottom = -82.0
+text = "Healing Item
+"
+
+[connection signal="property_list_changed" from="." to="." method="_on_property_list_changed"]
+[connection signal="pressed" from="Close__Shop" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/Left_Arrow" to="." method="_on_left_arrow_pressed"]
+[connection signal="pressed" from="Control/Right_Arrow" to="." method="_on_right_arrow_pressed"]
+[connection signal="pressed" from="Control/Buy" to="." method="_on_buy_pressed"]

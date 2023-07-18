@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyfi72qrqhkft"]
+
+[ext_resource type="Script" path="res://scripts/CharacterBody2D.gd" id="1_2vnv6"]
+[ext_resource type="Texture2D" uid="uid://beryq7y6b6vyu" path="res://images/slimeyboy.png" id="2_13s3n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dobpp"]
+size = Vector2(39, 24)
+
+[node name="Mini_Enemy" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_2vnv6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-1, 3)
+shape = SubResource("RectangleShape2D_dobpp")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(0, 2)
+texture = ExtResource("2_13s3n")

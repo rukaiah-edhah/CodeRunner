@@ -1,0 +1,90 @@
+[gd_scene load_steps=11 format=3 uid="uid://biigqhbweier8"]
+
+[ext_resource type="Script" path="res://scripts/shop.gd" id="1_kfkij"]
+[ext_resource type="Texture2D" uid="uid://cr34gf4c7t1rl" path="res://images/farmingTilesheetComplete.png" id="2_uetx0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8o5f2"]
+atlas = ExtResource("2_uetx0")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41ljy"]
+atlas = ExtResource("2_uetx0")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uuvqe"]
+atlas = ExtResource("2_uetx0")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v1b1i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8o5f2")
+}],
+"loop": true,
+"name": &"Bob",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41ljy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_uetx0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uuvqe")
+}],
+"loop": true,
+"name": &"Sally",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmsnv"]
+atlas = ExtResource("2_uetx0")
+region = Rect2(0, 174, 34, 29)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wukjf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmsnv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qhsm5"]
+size = Vector2(28.138, 22.254)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yte1y"]
+radius = 35.0143
+
+[node name="Shop" type="StaticBody2D"]
+script = ExtResource("1_kfkij")
+
+[node name="Shop_Owner" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.00001, -4)
+scale = Vector2(1.9375, 1.96875)
+sprite_frames = SubResource("SpriteFrames_v1b1i")
+animation = &"Bob"
+
+[node name="Shop_Art" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.999996, -13)
+scale = Vector2(2.55882, 1.88362)
+sprite_frames = SubResource("SpriteFrames_wukjf")
+
+[node name="Area2D" type="Area2D" parent="Shop_Art"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shop_Art/Area2D"]
+position = Vector2(-0.390804, 3.16361)
+shape = SubResource("RectangleShape2D_qhsm5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, -5)
+shape = SubResource("CircleShape2D_yte1y")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
