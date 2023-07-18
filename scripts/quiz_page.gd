@@ -1,6 +1,6 @@
 extends Control
 
-## Follow the comments that start with a hashtag and a number if you want more or fewer options 
+## Follow the comments that start with a hashtag and a number if you want more or fewer options ##
 
 var questions = [
     {
