@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0me2xgnmxsm3"]
 
 [ext_resource type="Script" path="res://scripts/quiz_page.gd" id="1_vf68h"]
-[ext_resource type="FontFile" uid="uid://ck8u3nw8637l2" path="res://fonts/quiz_page_font/LibreBaskerville-Bold.ttf" id="2_nlyta"]
+[ext_resource type="FontFile" uid="uid://ck8u3nw8637l2" path="res://fonts/quiz_page_font/LibreBaskerville-Bold.ttf" id="2_g2w1t"]
 
 [node name="quiz_page" type="ColorRect"]
 anchors_preset = 15
@@ -36,7 +36,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2_nlyta")
+theme_override_fonts/normal_font = ExtResource("2_g2w1t")
 theme_override_font_sizes/normal_font_size = 22
 bbcode_enabled = true
 
@@ -59,26 +59,26 @@ metadata/_edit_use_anchors_ = true
 
 [node name="option_button1" type="Button" parent="options_container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_nlyta")
+theme_override_fonts/font = ExtResource("2_g2w1t")
 theme_override_font_sizes/font_size = 19
 icon_alignment = 1
 expand_icon = true
 
 [node name="option_button2" type="Button" parent="options_container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_nlyta")
+theme_override_fonts/font = ExtResource("2_g2w1t")
 theme_override_font_sizes/font_size = 19
 expand_icon = true
 
 [node name="option_button3" type="Button" parent="options_container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_nlyta")
+theme_override_fonts/font = ExtResource("2_g2w1t")
 theme_override_font_sizes/font_size = 19
 expand_icon = true
 
 [node name="option_button4" type="Button" parent="options_container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_nlyta")
+theme_override_fonts/font = ExtResource("2_g2w1t")
 theme_override_font_sizes/font_size = 19
 expand_icon = true
 
