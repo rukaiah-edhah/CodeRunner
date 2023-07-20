@@ -1,0 +1,185 @@
+[gd_scene load_steps=7 format=3 uid="uid://oj87udbd2eaq"]
+
+[ext_resource type="FontFile" uid="uid://ck8u3nw8637l2" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="2_jlrmc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tu174"]
+font = ExtResource("2_jlrmc")
+font_size = 20
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
+font = ExtResource("2_jlrmc")
+font_size = 20
+font_color = Color(0, 0.639216, 0.94902, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_e0svr"]
+font = ExtResource("2_jlrmc")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_dv4lf"]
+font = ExtResource("2_jlrmc")
+font_size = 20
+font_color = Color(1, 1, 1, 0.25098)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2riv2"]
+bg_color = Color(0, 0.639216, 0.94902, 1)
+
+[node name="code_page" type="Control"]
+layout_direction = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="background_color" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(1, 1, 1, 0)
+
+[node name="code_container" type="VBoxContainer" parent="background_color"]
+clip_contents = true
+layout_direction = 1
+layout_mode = 2
+offset_left = 31.0
+offset_top = 44.0
+offset_right = 789.0
+offset_bottom = 597.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="problem_container" type="VBoxContainer" parent="background_color/code_container"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="problem_label" type="Label" parent="background_color/code_container/problem_container"]
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 3
+text = "Write a Python program that performs arithmetic operations
+"
+label_settings = SubResource("LabelSettings_tu174")
+
+[node name="panel" type="Panel" parent="background_color/code_container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="line_num_container" type="HBoxContainer" parent="background_color/code_container/panel"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 20.0
+offset_right = 44.0
+offset_bottom = 503.0
+
+[node name="line_number" type="Label" parent="background_color/code_container/panel/line_num_container"]
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0.639216, 0.94902, 1)
+theme_override_font_sizes/font_size = 19
+text = "1
+
+2
+
+3
+
+4"
+label_settings = SubResource("LabelSettings_8g3qe")
+
+[node name="code_template_conatiner" type="HBoxContainer" parent="background_color/code_container/panel"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 20.0
+offset_right = 726.0
+offset_bottom = 480.0
+
+[node name="code_template_label" type="Label" parent="background_color/code_container/panel/code_template_conatiner"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 100
+text = "num1 = 4
+
+num2 = 8
+    
+addition = num1                num2
+    
+subtraction = num1                num2"
+label_settings = SubResource("LabelSettings_e0svr")
+
+[node name="LineEdit" type="LineEdit" parent="background_color/code_container/panel/code_template_conatiner/code_template_label"]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 112.0
+offset_right = 246.062
+offset_bottom = 143.0
+
+[node name="LineEdit2" type="LineEdit" parent="background_color/code_container/panel/code_template_conatiner/code_template_label"]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 169.0
+offset_right = 278.062
+offset_bottom = 200.0
+
+[node name="feedback_conatiner" type="VBoxContainer" parent="background_color"]
+layout_mode = 2
+offset_left = 811.0
+offset_top = 98.0
+offset_right = 1117.0
+offset_bottom = 597.0
+
+[node name="panel_container" type="HBoxContainer" parent="background_color/feedback_conatiner"]
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="panel2" type="Panel" parent="background_color/feedback_conatiner/panel_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="instructions_container" type="VBoxContainer" parent="background_color/feedback_conatiner/panel_container/panel2"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 14.0
+offset_right = 290.0
+offset_bottom = 124.0
+
+[node name="instructions_label" type="Label" parent="background_color/feedback_conatiner/panel_container/panel2/instructions_container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.639216, 0.94902, 0.431373)
+theme_override_fonts/font = ExtResource("2_jlrmc")
+text = "Once you've answered all 
+the questions, click Run to 
+get your feedback!"
+label_settings = SubResource("LabelSettings_dv4lf")
+
+[node name="run_button_conatiner" type="VBoxContainer" parent="background_color"]
+layout_mode = 2
+offset_left = 1014.0
+offset_top = 50.0
+offset_right = 1112.0
+offset_bottom = 90.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.09
+
+[node name="run_button" type="Button" parent="background_color/run_button_conatiner"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_2riv2")
+text = "Run"
