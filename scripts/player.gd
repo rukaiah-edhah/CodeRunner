@@ -6,9 +6,12 @@ extends CharacterBody2D
 @export var jump_force = 700
 @onready var healthbar = $health/healthbar
 @onready var _animation = $AnimatedSprite2D
+@onready var coin_inventory = $coin_inventory/num_coins
 var coins = 0
 var jump_count = 0
 var double_jump = 2
+
+var _font = preload("res://fonts/quiz_page_font/LibreBaskerville-Regular.ttf")
 
 # variables for colors for the healthbar
 var red_health = preload("res://images/red.png")
@@ -21,12 +24,13 @@ var health = FULL_HEALTH
 
 func _ready():
 	# set screen size, health bar, and coin bar
+	coin_inventory.add_theme_font_override("font", _font)
 	set_health_bar()
 	set_coin_bar()
 	
 func set_coin_bar():
 	# set coin bar to coins
-	$coin_inventory/num_coins.text = str(coins)
+	coin_inventory.text = str(coins)
 
 func set_health_bar():
 	# set health bar to full 
