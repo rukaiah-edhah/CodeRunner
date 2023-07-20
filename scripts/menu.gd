@@ -1,11 +1,39 @@
 extends Node2D
 
+@onready var start_button = $start_button
+@onready var load_button = $load_button
+@onready var options_button = $options_button
+@onready var quit_button = $quit_button
+
+var _font = preload("res://fonts/quiz_page_font/LibreBaskerville-Regular.ttf")
+var button_bg = preload("res://images/purple_button.tres")
+
 func _ready():
 	# menu option labels
-	$start_button.text = "Start"
-	$load_button.text = "Load Game"
-	$options_button.text = "Options"
-	$quit_button.text = "Quit"
+	start_button.text = "New Game"
+	load_button.text = "Load Game"
+	options_button.text = "Options"
+	quit_button.text = "Quit"
+	
+	start_button.add_theme_font_override("font", _font)
+	load_button.add_theme_font_override("font", _font)
+	options_button.add_theme_font_override("font", _font)
+	quit_button.add_theme_font_override("font", _font)
+	
+	start_button.add_theme_stylebox_override("normal", button_bg)
+	load_button.add_theme_stylebox_override("normal", button_bg)
+	options_button.add_theme_stylebox_override("normal", button_bg)
+	quit_button.add_theme_stylebox_override("normal", button_bg)
+	
+	start_button.add_theme_stylebox_override("hover", button_bg)
+	load_button.add_theme_stylebox_override("hover", button_bg)
+	options_button.add_theme_stylebox_override("hover", button_bg)
+	quit_button.add_theme_stylebox_override("hover", button_bg)
+	
+	start_button.add_theme_stylebox_override("pressed", button_bg)
+	load_button.add_theme_stylebox_override("pressed", button_bg)
+	options_button.add_theme_stylebox_override("pressed", button_bg)
+	quit_button.add_theme_stylebox_override("pressed", button_bg)
 
 func _on_start_button_pressed():
 	# when you press start -> go to game
