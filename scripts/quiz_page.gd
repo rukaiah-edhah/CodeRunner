@@ -34,7 +34,7 @@ func display_question():
     question_label.set_custom_minimum_size(Vector2(400, 100))  
     
     for button in range(4): # 2. Change the number based on the number of options you want 
-        var option_button =$background_color/options_container.get_node("option_button" + str(button + 1))
+        var option_button = $background_color/options_container.get_node("option_button" + str(button + 1))
         option_button.text = questions[current_question_index]["options"][button]
         option_button.disabled = false
         option_button.modulate = Color(1, 1, 1)  
@@ -47,7 +47,7 @@ func check_answer(selected_index):
         option_button.modulate = Color(0, 1, 0)  
         next_question()
     else:
-        var option_button =$background_color/options_container.get_node("option_button" + str(selected_index + 1))
+        var option_button = $background_color/options_container.get_node("option_button" + str(selected_index + 1))
         option_button.modulate = Color(1, 0, 0)  
         option_button.disabled = true  
     
