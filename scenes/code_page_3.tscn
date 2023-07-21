@@ -1,25 +1,24 @@
-[gd_scene load_steps=12 format=3 uid="uid://3dgjw804ujxh"]
+[gd_scene load_steps=11 format=3 uid="uid://cubylg73cjrd3"]
 
-[ext_resource type="Script" path="res://scripts/code_page.gd" id="1_x7hjn"]
-[ext_resource type="FontFile" uid="uid://cd0wcggadutaq" path="res://Fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="2_uobh3"]
-[ext_resource type="FontFile" uid="uid://py8r0bc1bcmb" path="res://Fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="3_qtuwq"]
+[ext_resource type="FontFile" uid="uid://cd0wcggadutaq" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="1_xn5o0"]
+[ext_resource type="FontFile" uid="uid://py8r0bc1bcmb" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="2_3ek4h"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tu174"]
-font = ExtResource("2_uobh3")
+font = ExtResource("1_xn5o0")
 font_size = 20
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
-font = ExtResource("2_uobh3")
+font = ExtResource("1_xn5o0")
 font_size = 20
 font_color = Color(0, 0.639216, 0.94902, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_e0svr"]
-font = ExtResource("3_qtuwq")
+font = ExtResource("2_3ek4h")
 font_size = 20
 
 [sub_resource type="LabelSettings" id="LabelSettings_dv4lf"]
-font = ExtResource("2_uobh3")
+font = ExtResource("1_xn5o0")
 font_size = 20
 font_color = Color(1, 1, 1, 0.25098)
 
@@ -77,7 +76,6 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("1_x7hjn")
 
 [node name="background_color" type="ColorRect" parent="."]
 layout_mode = 1
@@ -96,7 +94,7 @@ layout_direction = 1
 layout_mode = 2
 offset_left = 31.0
 offset_top = 44.0
-offset_right = 851.0
+offset_right = 833.0
 offset_bottom = 597.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -158,33 +156,31 @@ text = "num1 = 4
 
 num2 = 8
     
-addition = num1                 num2
+addition = num1                num2
     
-subtraction = num1                   num2"
+subtraction = num1                num2"
 label_settings = SubResource("LabelSettings_e0svr")
 
-[node name="player_answer" type="LineEdit" parent="background_color/code_container/panel"]
+[node name="player_answer" type="Panel" parent="background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 226.0
-offset_top = 133.0
-offset_right = 307.25
-offset_bottom = 164.0
-theme_override_fonts/font = ExtResource("2_uobh3")
+offset_left = 233.0
+offset_top = 134.0
+offset_right = 300.062
+offset_bottom = 165.0
 
-[node name="player_answer2" type="LineEdit" parent="background_color/code_container/panel"]
+[node name="player_answer2" type="Panel" parent="background_color/code_container/panel"]
 layout_mode = 2
 offset_left = 264.0
 offset_top = 192.0
-offset_right = 345.25
+offset_right = 331.062
 offset_bottom = 223.0
-theme_override_fonts/font = ExtResource("2_uobh3")
 
 [node name="feedback_conatiner" type="VBoxContainer" parent="background_color"]
 layout_mode = 2
-offset_left = 868.0
+offset_left = 848.0
 offset_top = 98.0
 offset_right = 1128.0
-offset_bottom = 597.0
+offset_bottom = 274.0
 
 [node name="panel_container" type="HBoxContainer" parent="background_color/feedback_conatiner"]
 layout_direction = 1
@@ -198,10 +194,10 @@ size_flags_vertical = 3
 
 [node name="feedback_container" type="VBoxContainer" parent="background_color/feedback_conatiner/panel_container/panel2"]
 layout_mode = 0
-offset_left = 17.0
+offset_left = 22.0
 offset_top = 14.0
-offset_right = 240.0
-offset_bottom = 486.0
+offset_right = 255.0
+offset_bottom = 171.0
 
 [node name="feedback_label" type="Label" parent="background_color/feedback_conatiner/panel_container/panel2/feedback_container"]
 layout_mode = 2
@@ -209,6 +205,8 @@ size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0.639216, 0.94902, 0.431373)
 label_settings = SubResource("LabelSettings_dv4lf")
 autowrap_mode = 3
+visible_characters = 0
+visible_ratio = 0.0
 
 [node name="animation_player" type="AnimationPlayer" parent="background_color/feedback_conatiner/panel_container/panel2/feedback_container"]
 root_node = NodePath("../../../../../run_button_conatiner")
@@ -229,8 +227,19 @@ size_flags_stretch_ratio = 0.09
 [node name="run_button" type="Button" parent="background_color/run_button_conatiner"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_qtuwq")
+theme_override_fonts/font = ExtResource("2_3ek4h")
 theme_override_styles/normal = SubResource("StyleBoxFlat_2riv2")
 text = "Run"
+
+[node name="drop_drag_container" type="VBoxContainer" parent="background_color"]
+layout_mode = 0
+offset_left = 848.0
+offset_top = 287.0
+offset_right = 1128.0
+offset_bottom = 597.0
+
+[node name="Panel" type="Panel" parent="background_color/drop_drag_container"]
+layout_mode = 2
+size_flags_vertical = 3
 
 [connection signal="pressed" from="background_color/run_button_conatiner/run_button" to="." method="_on_run_button_pressed"]

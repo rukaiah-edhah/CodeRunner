@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dsasgdttawdlw"]
 
 [ext_resource type="Script" path="res://scripts/quiz_page.gd" id="1_vf68h"]
-[ext_resource type="FontFile" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="2_nlyta"]
+[ext_resource type="FontFile" uid="uid://cd0wcggadutaq" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="2_nlyta"]
 
 [node name="quiz_page" type="Control"]
 layout_mode = 3
