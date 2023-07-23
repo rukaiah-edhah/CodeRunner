@@ -1,82 +1,25 @@
-<<<<<<< HEAD
-[gd_scene load_steps=11 format=3 uid="uid://cmnowr0smaklf"]
-=======
-[gd_scene load_steps=12 format=3 uid="uid://cmnowr0smaklf"]
->>>>>>> 8cfc1c4555ef2f444782ff319a7d8d60165797b2
+[gd_scene load_steps=5 format=3 uid="uid://cmnowr0smaklf"]
 
-[ext_resource type="PackedScene" uid="uid://dieljgd8ai41" path="res://scenes/world.tscn" id="3_v3ydl"]
+[ext_resource type="PackedScene" uid="uid://cfg73y5efex6k" path="res://scenes/hall.tscn" id="1_ofvwh"]
 [ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="4_mwpk0"]
-[ext_resource type="Script" path="res://scripts/falloff_warning.gd" id="5_cfu8n"]
 [ext_resource type="PackedScene" uid="uid://divgbcotp0d8v" path="res://scenes/coin.tscn" id="5_x78ym"]
-[ext_resource type="Texture2D" uid="uid://1nswp7fr0kk5" path="res://images/right_arrow.png" id="6_hf61o"]
-[ext_resource type="PackedScene" uid="uid://c4u1kl48fqk6u" path="res://scenes/wood_box.tscn" id="7_c4thh"]
-[ext_resource type="PackedScene" uid="uid://1g14ar8c2qun" path="res://scenes/fall_off_.tscn" id="7_w121u"]
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://omo1bq8e4xvo" path="res://scenes/moving_platform_oscilate.tscn" id="8_xftt7"]
-=======
-[ext_resource type="Script" path="res://scripts/fall_restart.gd" id="8_5ltp7"]
->>>>>>> 8cfc1c4555ef2f444782ff319a7d8d60165797b2
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mikcd"]
-size = Vector2(500, 229)
-
-[sub_resource type="QuadMesh" id="QuadMesh_ww50f"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ims3k"]
-size = Vector2(1182, 539)
+[ext_resource type="PackedScene" uid="uid://dqb1xko6sqcir" path="res://scenes/wood_box.tscn" id="7_c4thh"]
 
 [node name="main" type="Node2D"]
 
-[node name="world" parent="." instance=ExtResource("3_v3ydl")]
-
-[node name="world2" parent="." instance=ExtResource("3_v3ydl")]
-position = Vector2(4077, 0)
-
-[node name="world3" parent="." instance=ExtResource("3_v3ydl")]
-position = Vector2(2032, 0)
+[node name="hall" parent="." instance=ExtResource("1_ofvwh")]
+show_behind_parent = true
+position = Vector2(-12, -1935)
 
 [node name="player" parent="." instance=ExtResource("4_mwpk0")]
-position = Vector2(1141, 208)
+top_level = true
+position = Vector2(608, 196)
 
 [node name="coin" parent="." instance=ExtResource("5_x78ym")]
 position = Vector2(1214, 396)
 
-[node name="falloff_warning" type="Area2D" parent="."]
-position = Vector2(-743, 425)
-script = ExtResource("5_cfu8n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="falloff_warning"]
-position = Vector2(3, -112)
-shape = SubResource("RectangleShape2D_mikcd")
-
-[node name="right_arrow" type="MeshInstance2D" parent="falloff_warning"]
-position = Vector2(-1, -49)
-scale = Vector2(99, 89.5)
-mesh = SubResource("QuadMesh_ww50f")
-texture = ExtResource("6_hf61o")
-
-[node name="falloff_" parent="." instance=ExtResource("7_w121u")]
-show_behind_parent = true
-position = Vector2(-2047, 0)
-
 [node name="wood_box" parent="." instance=ExtResource("7_c4thh")]
-position = Vector2(1424, 344)
-
-<<<<<<< HEAD
-[node name="moving_platform_oscilate" parent="." instance=ExtResource("8_xftt7")]
-position = Vector2(2069, 210)
-distance = Vector2(100, 100)
-debug = false
-=======
-[node name="fall_restart" type="Area2D" parent="."]
-position = Vector2(-2288, 492)
-script = ExtResource("8_5ltp7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_restart"]
-position = Vector2(-357, 259.5)
-shape = SubResource("RectangleShape2D_ims3k")
->>>>>>> 8cfc1c4555ef2f444782ff319a7d8d60165797b2
+top_level = true
+position = Vector2(2170, 111)
 
 [connection signal="coin_inventory_changed" from="coin" to="player" method="_on_coin_coin_inventory_changed"]
-[connection signal="body_entered" from="falloff_warning" to="falloff_warning" method="_on_body_entered"]
-[connection signal="body_entered" from="fall_restart" to="fall_restart" method="_on_body_entered"]
