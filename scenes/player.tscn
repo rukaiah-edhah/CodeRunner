@@ -1,11 +1,11 @@
-[gd_scene load_steps=44 format=3 uid="uid://bjr3f6oxwl481"]
+[gd_scene load_steps=45 format=3 uid="uid://bjr3f6oxwl481"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ra8ml"]
 [ext_resource type="Texture2D" uid="uid://c5jhhgo80qdpy" path="res://images/cat_player_animation/Idle1.png" id="2_4gqm2"]
-[ext_resource type="Texture2D" uid="uid://bs7k4abjo84xs" path="res://images/coin.png" id="3_16uj5"]
+[ext_resource type="Texture2D" uid="uid://1srh4p22jd5m" path="res://images/coin.png" id="3_16uj5"]
 [ext_resource type="Texture2D" uid="uid://cvy1cdh2evr14" path="res://images/cat_player_animation/Idle2.png" id="3_cg8hg"]
 [ext_resource type="Texture2D" uid="uid://dtltutje85rng" path="res://images/cat_player_animation/Idle3.png" id="4_5d1bh"]
-[ext_resource type="Texture2D" uid="uid://m8vs1kjgafmr" path="res://images/green.png" id="4_yk0fd"]
+[ext_resource type="Texture2D" uid="uid://bl81w7nc18vxy" path="res://images/green.png" id="4_yk0fd"]
 [ext_resource type="Texture2D" uid="uid://dbxdirjkladdl" path="res://images/cat_player_animation/Idle4.png" id="5_mqaq7"]
 [ext_resource type="Texture2D" uid="uid://4skg6syv8jqf" path="res://images/cat_player_animation/Idle5.png" id="6_h0l3q"]
 [ext_resource type="Texture2D" uid="uid://yd0e2reivphn" path="res://images/cat_player_animation/Idle6.png" id="7_tu21e"]
@@ -41,10 +41,11 @@
 [ext_resource type="Texture2D" uid="uid://b5kde6xxd23hq" path="res://images/cat_player_animation/Walk8.png" id="37_v06nx"]
 [ext_resource type="Texture2D" uid="uid://cblrchvppr4a7" path="res://images/cat_player_animation/Walk9.png" id="38_ja7ht"]
 [ext_resource type="Texture2D" uid="uid://c1liyrcgn3fm2" path="res://images/cat_player_animation/Walk10.png" id="39_2482s"]
+[ext_resource type="Texture2D" uid="uid://b54il1bjqnv2u" path="res://images/helmet.png" id="42_b0a8h"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wgc3y"]
-radius = 29.0
-height = 64.0
+radius = 35.0
+height = 114.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fq2uv"]
 animations = [{
@@ -187,12 +188,11 @@ animations = [{
 script = ExtResource("1_ra8ml")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(210, -69)
+position = Vector2(-5, -2)
 shape = SubResource("CapsuleShape2D_wgc3y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(213.563, -70.9999)
-scale = Vector2(0.160285, 0.14768)
+scale = Vector2(0.236969, 0.234178)
 sprite_frames = SubResource("SpriteFrames_fq2uv")
 animation = &"idle"
 frame_progress = 0.880363
@@ -209,10 +209,10 @@ offset_bottom = 10.0
 
 [node name="healthbar" type="TextureProgressBar" parent="health"]
 layout_mode = 0
-offset_left = -545.0
-offset_top = -247.0
-offset_right = -345.0
-offset_bottom = -221.0
+offset_left = -547.0
+offset_top = -239.0
+offset_right = -347.0
+offset_bottom = -213.0
 value = 100.0
 allow_greater = true
 texture_progress = ExtResource("4_yk0fd")
@@ -252,3 +252,8 @@ offset_right = -543.0
 offset_bottom = -287.0
 texture = ExtResource("3_16uj5")
 expand_mode = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-6, -21)
+scale = Vector2(0.101406, 0.0869348)
+texture = ExtResource("42_b0a8h")

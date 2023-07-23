@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # variables for movement and healthbar and starter coins
-@export var speed = 300
+@export var speed = 350
 @export var gravity = 30
 @export var jump_force = 700
 @onready var healthbar = $health/healthbar
@@ -36,7 +36,7 @@ func set_health_bar():
 	# set health bar to full 
 	healthbar.value = health
 
-func _process(delta):
+func _process(_delta):
 	# setting player animation to movement
 	if Input.is_action_pressed("jump"):
 		_animation.play("jump")
