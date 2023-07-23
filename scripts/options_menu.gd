@@ -4,7 +4,7 @@ extends Control
 @onready var brightness = $brightness
 @onready var back = $back
 var _font = preload("res://fonts/quiz_page_font/LibreBaskerville-Regular.ttf")
-var button_bg = preload("res://images/purple_button.tres")
+var button_bg = preload("res://images/themes/purple_button.tres")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# menu labels for options menu

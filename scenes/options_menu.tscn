@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/options_menu.gd" id="1_8pgr6"]
 [ext_resource type="PackedScene" uid="uid://dieljgd8ai41" path="res://scenes/world.tscn" id="2_l3c6b"]
-[ext_resource type="StyleBox" uid="uid://iuskkhobcs2e" path="res://images/purple_button.tres" id="2_v63xt"]
+[ext_resource type="StyleBox" uid="uid://iuskkhobcs2e" path="res://images/themes/purple_button.tres" id="2_v63xt"]
 
 [node name="options menu" type="Control"]
 top_level = true
@@ -38,7 +38,7 @@ offset_bottom = 209.0
 
 [node name="Node2D" parent="." instance=ExtResource("2_l3c6b")]
 show_behind_parent = true
-position = Vector2(0, -142)
+position = Vector2(5, -110)
 
 [connection signal="pressed" from="brightness" to="." method="_on_brightness_pressed"]
 [connection signal="pressed" from="volume" to="." method="_on_volume_pressed"]
