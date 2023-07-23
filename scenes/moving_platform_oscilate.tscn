@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://omo1bq8e4xvo"]
 
 [ext_resource type="Script" path="res://Scripts/moving_platform_oscilate.gd" id="1_5rini"]
-[ext_resource type="Texture2D" uid="uid://c6dsof8vagqj4" path="res://icon.svg" id="2_wo5m7"]
+[ext_resource type="Texture2D" uid="uid://dhkrx3a50daol" path="res://images/platform wood.jpeg" id="2_xlw2i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fhtn0"]
 size = Vector2(178, 45)
@@ -13,9 +13,9 @@ script = ExtResource("1_5rini")
 distance = Vector2(10, 10)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-9.53674e-06, -0.999984)
-scale = Vector2(1.375, 0.359375)
-texture = ExtResource("2_wo5m7")
+position = Vector2(1.5, -2.86102e-06)
+scale = Vector2(0.78125, 0.196429)
+texture = ExtResource("2_xlw2i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -1)

@@ -11,7 +11,7 @@ var coins = 0
 var jump_count = 0
 var double_jump = 2
 
-var _font = preload("res://fonts/quiz_page_font/LibreBaskerville-Regular.ttf")
+var _font = preload("res://fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf")
 
 # variables for colors for the healthbar
 var red_health = preload("res://images/red.png")
@@ -23,18 +23,18 @@ const FULL_HEALTH = 100
 var health = FULL_HEALTH
 
 func _ready():
-	# set screen size, health bar, and coin bar
-	coin_inventory.add_theme_font_override("font", _font)
-	set_health_bar()
-	set_coin_bar()
-	
+    # set screen size, health bar, and coin bar
+    coin_inventory.add_theme_font_override("font", _font)
+    set_health_bar()
+    set_coin_bar()
+    
 func set_coin_bar():
-	# set coin bar to coins
-	coin_inventory.text = str(coins)
+    # set coin bar to coins
+    coin_inventory.text = str(coins)
 
 func set_health_bar():
-	# set health bar to full 
-	healthbar.value = health
+    # set health bar to full 
+    healthbar.value = health
 
 func _process(_delta):
 	# setting player animation to movement
@@ -48,51 +48,51 @@ func _process(_delta):
 		_animation.play("idle")
 	
 func _physics_process(_delta):
-	# set velocity to max out at 1,000
-	if !is_on_floor():
-		velocity.y += gravity
-		if velocity.y > 1000:
-			velocity.y = 1000
-		
-	if Input.is_action_just_pressed("jump") && is_on_floor():
-		# allow for jumping, set jump_count back to 0 when on the floor and add 1 to jump_count after jump
-		jump_count = 0
-		velocity.y = -jump_force
-		jump_count += 1
-		
-	if Input.is_action_just_pressed("jump") && not is_on_floor():
-		# allow for double jump.. no more
-		if jump_count < double_jump:
-			velocity.y = -jump_force
-			jump_count += 1
-		
-	# allow for movement left and right through input
-	var horizontal_direction = Input.get_axis("move_left", "move_right")
-	
-	velocity.x = speed * horizontal_direction
-	
-	move_and_slide()
-	
-	print(velocity) # track velocity 
+    # set velocity to max out at 1,000
+    if !is_on_floor():
+        velocity.y += gravity
+        if velocity.y > 1000:
+            velocity.y = 1000
+        
+    if Input.is_action_just_pressed("jump") && is_on_floor():
+        # allow for jumping, set jump_count back to 0 when on the floor and add 1 to jump_count after jump
+        jump_count = 0
+        velocity.y = -jump_force
+        jump_count += 1
+        
+    if Input.is_action_just_pressed("jump") && not is_on_floor():
+        # allow for double jump.. no more
+        if jump_count < double_jump:
+            velocity.y = -jump_force
+            jump_count += 1
+        
+    # allow for movement left and right through input
+    var horizontal_direction = Input.get_axis("move_left", "move_right")
+    
+    velocity.x = speed * horizontal_direction
+    
+    move_and_slide()
+    
+    print(velocity) # track velocity 
 
 func _damage():
-	# let player take damage and set health bar accordingly
-	health -= 20
-	if health <= 0:
-		health = FULL_HEALTH
-	update_healthbar(health)
+    # let player take damage and set health bar accordingly
+    health -= 20
+    if health <= 0:
+        health = FULL_HEALTH
+    update_healthbar(health)
 
 func update_healthbar(value):
-	# update colors of healthbar as user loses health
-	healthbar.texture_progress = green_health
-	if value < healthbar.max_value * 0.75:
-		healthbar.texture_progress = yellow_health
-	if value < healthbar.max_value * 0.45:
-		healthbar.texture_progress = red_health
-	set_health_bar()
+    # update colors of healthbar as user loses health
+    healthbar.texture_progress = green_health
+    if value < healthbar.max_value * 0.75:
+        healthbar.texture_progress = yellow_health
+    if value < healthbar.max_value * 0.45:
+        healthbar.texture_progress = red_health
+    set_health_bar()
 
 
 func _on_coin_coin_inventory_changed():
-	# add three coins to the coin bar when user picks up a coin
-	coins += 3
-	set_coin_bar()
+    # add three coins to the coin bar when user picks up a coin
+    coins += 3
+    set_coin_bar()

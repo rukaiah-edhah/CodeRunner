@@ -27,14 +27,14 @@ func _ready():
   
   
 func display_question():
-    var question_label = $question_container/question_label
+    var question_label = $background_color/question_container/question_label
     var question = "[center]" + questions[current_question_index]["question"] + "[/center]"
     
     question_label.bbcode_text = question
     question_label.set_custom_minimum_size(Vector2(400, 100))  
     
     for button in range(4): # 2. Change the number based on the number of options you want 
-        var option_button = $options_container.get_node("option_button" + str(button + 1))
+        var option_button = $background_color/options_container.get_node("option_button" + str(button + 1))
         option_button.text = questions[current_question_index]["options"][button]
         option_button.disabled = false
         option_button.modulate = Color(1, 1, 1)  
@@ -43,17 +43,17 @@ func display_question():
 func check_answer(selected_index):
     var correct_answer = questions[current_question_index]["answer"]
     if selected_index == correct_answer:
-        var option_button = $options_container.get_node("option_button" + str(selected_index + 1))
+        var option_button = $background_color/options_container.get_node("option_button" + str(selected_index + 1))
         option_button.modulate = Color(0, 1, 0)  
         next_question()
     else:
-        var option_button = $options_container.get_node("option_button" + str(selected_index + 1))
+        var option_button = $background_color/options_container.get_node("option_button" + str(selected_index + 1))
         option_button.modulate = Color(1, 0, 0)  
         option_button.disabled = true  
     
     
 func next_question():
-    var question_label = $question_container/question_label
+    var question_label = $background_color/question_container/question_label
     current_question_index += 1
     
     if current_question_index < questions.size():
@@ -61,7 +61,7 @@ func next_question():
     else:
         question_label.bbcode_text = "[center]" + "Quiz finished! Now it's time to go to the Code page." + "[/center]"
         for button in range(4): # 3. Do the same here 
-            var option_button = $options_container.get_node("option_button" + str(button + 1))
+            var option_button = $background_color/options_container.get_node("option_button" + str(button + 1))
             option_button.disabled = true
 
 
