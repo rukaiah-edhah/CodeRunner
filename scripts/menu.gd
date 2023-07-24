@@ -5,7 +5,7 @@ extends Node2D
 @onready var options_button = $options_button
 @onready var quit_button = $quit_button
 
-var _font = preload("res://fonts/quiz_page_font/LibreBaskerville-Regular.ttf")
+var _font = preload("res://fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf")
 var button_bg = preload("res://images/themes/purple_button.tres")
 
 func _ready():

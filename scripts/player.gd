@@ -37,16 +37,16 @@ func set_health_bar():
     healthbar.value = health
 
 func _process(_delta):
-	# setting player animation to movement
-	if Input.is_action_pressed("jump"):
-		_animation.play("jump")
-	elif Input.is_action_pressed("move_left"):
-		_animation.play("walk_left")
-	elif Input.is_action_pressed("move_right"):
-		_animation.play("walk_right")
-	else:
-		_animation.play("idle")
-	
+    # setting player animation to movement
+    if Input.is_action_pressed("jump"):
+        _animation.play("jump")
+    elif Input.is_action_pressed("move_left"):
+        _animation.play("walk_left")
+    elif Input.is_action_pressed("move_right"):
+        _animation.play("walk_right")
+    else:
+        _animation.play("idle")
+    
 func _physics_process(_delta):
     # set velocity to max out at 1,000
     if !is_on_floor():

@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_8mpn6"]
 [ext_resource type="PackedScene" uid="uid://dieljgd8ai41" path="res://scenes/world.tscn" id="2_yh8q3"]
-[ext_resource type="Texture2D" uid="uid://5axcjd3wqxho" path="res://images/cat_player_animation/Jump3.png" id="3_0i6do"]
-[ext_resource type="Texture2D" uid="uid://b54il1bjqnv2u" path="res://images/helmet.png" id="4_aoqtt"]
+[ext_resource type="Texture2D" uid="uid://njdsik758txf" path="res://images/cat_player_animation/Jump3.png" id="3_0i6do"]
+[ext_resource type="Texture2D" uid="uid://denufy7d34fpg" path="res://images/helmet.png" id="4_aoqtt"]
 
 [node name="menu" type="Node2D"]
 script = ExtResource("1_8mpn6")
