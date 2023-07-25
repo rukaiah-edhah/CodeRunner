@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://dutqe76oy7gik"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pn08b"]
+bg_color = Color(0, 0, 0, 0.0470588)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 9
+border_width_bottom = 9
+border_color = Color(0, 0, 0, 1)
+
+[node name="boss_level_window" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -2.0
+offset_top = 1.0
+offset_right = 1152.0
+offset_bottom = 649.0
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+offset_right = 1154.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pn08b")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 1154.0
+offset_bottom = 648.0
+theme_override_constants/separation = 0
+
+[node name="body" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="top_bar" type="HBoxContainer" parent="HBoxContainer/body"]
+custom_minimum_size = Vector2(1070, 50)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+theme_override_constants/separation = 0
+
+[node name="Pages" type="Control" parent="HBoxContainer/body"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="bot_bar" type="HBoxContainer" parent="HBoxContainer/body"]
+custom_minimum_size = Vector2(2.08165e-12, 50)
+layout_mode = 2

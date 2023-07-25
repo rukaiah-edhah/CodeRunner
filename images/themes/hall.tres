@@ -1,11 +1,11 @@
 [gd_resource type="TileSet" load_steps=13 format=3 uid="uid://b4784kapg2v3w"]
 
-[ext_resource type="Texture2D" uid="uid://x6o8ys110og2" path="res://images/spritesheet.png" id="1_jiy8n"]
-[ext_resource type="Texture2D" uid="uid://dgkltuj8yegox" path="res://images/stars.png" id="2_62fdu"]
-[ext_resource type="Texture2D" uid="uid://dcur7rnc8m4pa" path="res://images/Room_Builder.png" id="2_gfus5"]
-[ext_resource type="Texture2D" uid="uid://bhwxkik6fjbwb" path="res://images/Interiors.png" id="3_dqckd"]
-[ext_resource type="Texture2D" uid="uid://d2ubsovoxt5wk" path="res://images/base_tileset.png" id="4_1j4fb"]
-[ext_resource type="Texture2D" uid="uid://c4jyvlr7lv38t" path="res://images/WaterAndFire.png" id="6_khwpa"]
+[ext_resource type="Texture2D" uid="uid://fsci6xyjfr0t" path="res://images/spritesheet.png" id="1_jiy8n"]
+[ext_resource type="Texture2D" uid="uid://bc6607yi2vhv4" path="res://images/stars.png" id="2_62fdu"]
+[ext_resource type="Texture2D" uid="uid://b63wc1w0yhkpg" path="res://images/Room_Builder.png" id="2_gfus5"]
+[ext_resource type="Texture2D" uid="uid://cxgaijhugkdyx" path="res://images/Interiors.png" id="3_dqckd"]
+[ext_resource type="Texture2D" uid="uid://duym5f7wpntg8" path="res://images/base_tileset.png" id="4_1j4fb"]
+[ext_resource type="Texture2D" uid="uid://dmcqlu11tbif8" path="res://images/WaterAndFire.png" id="6_khwpa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mvctt"]
 texture = ExtResource("1_jiy8n")

@@ -1,0 +1,55 @@
+extends Node2D
+
+var health = 100 
+@onready var health_bar = $boss_encounter_area/boss_level_window/health_bar
+@onready var anim_sprite = $boss_encounter_area/animated_sprite_2d
+@onready var anim_player = $boss_encounter_area/animation_player
+@onready var boss_level_window = $boss_encounter_area/boss_level_window
+@onready var quiz_page = $boss_encounter_area/boss_level_window/quiz_page
+@onready var code_page = $boss_encounter_area/boss_level_window/code_page
+
+func _ready():
+    # Connecting quiz signals
+    quiz_page.wrong_answer.connect(player_wrong_answer)
+    quiz_page.take_damage.connect(take_damage)
+    quiz_page.quiz_finished.connect(on_quiz_finished)
+    
+    # Connecting code page signals
+    code_page.wrong_answer.connect(player_wrong_answer)
+    code_page.take_damage.connect(take_damage)
+    code_page.all_correct.connect(_on_code_page_all_correct)
+    
+    # Initial visibility setup
+    quiz_page.visible = true
+    code_page.visible = false
+    
+# Signal handlers  
+func on_quiz_finished():
+    transition_to_code_page()
+    
+func _on_code_page_all_correct():
+    health_bar.value = 0 #makes sure that the health goes to 0 befor the window dissolves 
+    await get_tree().create_timer(1.5).timeout
+    anim_sprite.play("death")
+    anim_player.play("dissolve_window")
+
+# Quiz and code page handlers
+func player_wrong_answer():
+    anim_sprite.play("wrong_answer")
+    await anim_sprite.animation_finished
+    anim_sprite.play("idle")
+    
+func take_damage(amount):
+    health -= amount
+    health_bar.value = health
+    if health <= 0:
+        anim_sprite.play("death")
+    else:
+        anim_sprite.play("right_answer")
+        await anim_sprite.animation_finished
+        anim_sprite.play("idle")
+    
+# Utility functions
+func transition_to_code_page():
+    code_page.visible = true
+    anim_player.play("quiz_to_code")

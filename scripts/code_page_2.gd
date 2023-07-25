@@ -1,5 +1,9 @@
 extends Control
 
+signal wrong_answer
+signal take_damage
+signal all_correct
+
 var correct_answers = {
     "background_color/code_container/panel/player_answer": "+",
     "background_color/code_container/panel/player_answer2": "-",
@@ -8,7 +12,7 @@ var correct_answers = {
 
 @onready var run_button =$background_color/run_button_conatiner/run_button 
 @onready var feedback_label = $background_color/feedback_conatiner/panel_container/panel2/feedback_container/feedback_label
-
+@onready var previously_correct_answers = {} # initialize a dictionary to keep track of whether each answer has been correctly inputted before
 
 func _ready():
     feedback_label.text = "Click on Run to get your feedback."
@@ -28,14 +32,21 @@ func _on_run_button_pressed():
             animation_player.play("text_animation")
             return
 
-
     for node_path in correct_answers.keys():
         var option_button = get_node(node_path)
         var player_input = option_button.get_item_text(option_button.selected)
         if player_input != correct_answers[node_path]:
             all_correct = false
             incorrect_answers.append(node_path)
+            option_button.selected = -1 # Reset the option button if the answer is incorrect
             option_button.text = "" # If we don't want to reveal the incorrect answer to the player, we can get rid of this line
+            previously_correct_answers[node_path] = false # Reset the state for this question, since the answer is now incorrect
+        else:
+            # If the answer was not correct last time, we take damage
+            if not previously_correct_answers.get(node_path, false):
+                emit_signal("take_damage", 50 / correct_answers.size())
+                # We mark this question as correctly answered
+                previously_correct_answers[node_path] = true
     
     if all_correct:
         feedback_label.text = "All of your answers are correct, great job!"

@@ -1,25 +1,25 @@
 [gd_scene load_steps=12 format=3 uid="uid://bd5dtr8w5pv4d"]
 
-[ext_resource type="Script" path="res://scripts/code_page_2.gd" id="1_qftbg"]
-[ext_resource type="FontFile" uid="uid://cd0wcggadutaq" path="res://Fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="2_mg8gl"]
-[ext_resource type="FontFile" uid="uid://py8r0bc1bcmb" path="res://Fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="3_xqei7"]
+[ext_resource type="Script" path="res://scripts/code_page_2.gd" id="1_jf2no"]
+[ext_resource type="FontFile" uid="uid://cd0wcggadutaq" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="2_px6hw"]
+[ext_resource type="FontFile" uid="uid://py8r0bc1bcmb" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="3_c5cq3"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tu174"]
-font = ExtResource("2_mg8gl")
+font = ExtResource("2_px6hw")
 font_size = 20
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
-font = ExtResource("2_mg8gl")
+font = ExtResource("2_px6hw")
 font_size = 20
-font_color = Color(0, 0.639216, 0.94902, 1)
+font_color = Color(0.65098, 0.384314, 1, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_e0svr"]
-font = ExtResource("3_xqei7")
+font = ExtResource("3_c5cq3")
 font_size = 20
 
 [sub_resource type="LabelSettings" id="LabelSettings_dv4lf"]
-font = ExtResource("2_mg8gl")
+font = ExtResource("2_px6hw")
 font_size = 20
 font_color = Color(1, 1, 1, 0.25098)
 
@@ -61,7 +61,7 @@ _data = {
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2riv2"]
-bg_color = Color(0, 0.639216, 0.94902, 1)
+bg_color = Color(0.65098, 0.384314, 1, 1)
 
 [node name="code_page" type="Control"]
 layout_direction = 1
@@ -77,7 +77,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("1_qftbg")
+script = ExtResource("1_jf2no")
 
 [node name="background_color" type="ColorRect" parent="."]
 layout_mode = 1
@@ -169,7 +169,7 @@ offset_left = 234.0
 offset_top = 135.0
 offset_right = 299.0
 offset_bottom = 165.0
-theme_override_fonts/font = ExtResource("2_mg8gl")
+theme_override_fonts/font = ExtResource("2_px6hw")
 item_count = 4
 popup/item_0/text = "-"
 popup/item_0/id = 0
@@ -186,7 +186,7 @@ offset_left = 263.0
 offset_top = 191.0
 offset_right = 330.062
 offset_bottom = 222.0
-theme_override_fonts/font = ExtResource("2_mg8gl")
+theme_override_fonts/font = ExtResource("2_px6hw")
 item_count = 4
 popup/item_0/text = "-"
 popup/item_0/id = 0
@@ -247,7 +247,7 @@ size_flags_stretch_ratio = 0.09
 [node name="run_button" type="Button" parent="background_color/run_button_conatiner"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_xqei7")
+theme_override_fonts/font = ExtResource("3_c5cq3")
 theme_override_styles/normal = SubResource("StyleBoxFlat_2riv2")
 text = "Run"
 

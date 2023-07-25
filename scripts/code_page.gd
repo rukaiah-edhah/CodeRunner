@@ -1,5 +1,9 @@
 extends Control
 
+signal wrong_answer
+signal take_damage
+signal all_correct
+
 var correct_answers = {
     "background_color/code_container/panel/player_answer": "+",
     "background_color/code_container/panel/player_answer2": "-",
@@ -8,7 +12,7 @@ var correct_answers = {
 
 @onready var run_button =$background_color/run_button_conatiner/run_button 
 @onready var feedback_label = $background_color/feedback_conatiner/panel_container/panel2/feedback_container/feedback_label
-
+@onready var previously_correct_answers = {} # initialize a dictionary to keep track of whether each answer has been correctly inputted before
 
 func _ready():
     feedback_label.text = "Click on Run to get your feedback."
@@ -28,17 +32,25 @@ func _on_run_button_pressed():
             animation_player.play("text_animation")
             return
 
-
     for node_path in correct_answers.keys():
         var line_edit = get_node(node_path)
         var player_input = line_edit.text
         if player_input != correct_answers[node_path]:
+            emit_signal("wrong_answer")
             all_correct = false
             incorrect_answers.append(line_edit)
-            line_edit.text = "" # If we don't want to reveal the incorrect answer to the player, we can get rid of this line
+            line_edit.text = "" # We can get rid of this line of we do not want the player to know which answer was incorrect 
+            previously_correct_answers[node_path] = false # Reset the state for this question, since the answer is now incorrect
+        else:
+            # If the answer was not correct last time, we take damage
+            if not previously_correct_answers.get(node_path, false):
+                emit_signal("take_damage", 50 / correct_answers.size())
+                # We mark this question as correctly answered
+                previously_correct_answers[node_path] = true
     
     if all_correct:
         feedback_label.text = "All of your answers are correct, great job!"
+        emit_signal("all_correct")
         ## This line can be uncommented if we want to make the text green:
         #feedback_label.modulate = Color(0, 1, 0) 
     else:
