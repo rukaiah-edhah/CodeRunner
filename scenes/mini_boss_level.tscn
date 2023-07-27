@@ -1,7 +1,6 @@
-[gd_scene load_steps=47 format=3 uid="uid://dlfka5isvxef4"]
+[gd_scene load_steps=45 format=3 uid="uid://dlfka5isvxef4"]
 
 [ext_resource type="Script" path="res://scripts/mini_boss_level.gd" id="1_6h3co"]
-[ext_resource type="Script" path="res://scripts/boss_encounter_area.gd" id="2_dre4h"]
 [ext_resource type="Texture2D" uid="uid://bp30eg1hqlilh" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_1.png" id="3_uoj6s"]
 [ext_resource type="Texture2D" uid="uid://b4q6x135hewjd" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_2.png" id="4_0pk3t"]
 [ext_resource type="Texture2D" uid="uid://dk4r2imi3et24" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_3.png" id="5_lwmux"]
@@ -36,10 +35,9 @@
 [ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_window.tscn" id="58_jmf74"]
 [ext_resource type="PackedScene" uid="uid://3dgjw804ujxh" path="res://scenes/code_page.tscn" id="59_i7eb1"]
 [ext_resource type="PackedScene" uid="uid://dsasgdttawdlw" path="res://scenes/quiz_page.tscn" id="60_dknki"]
-[ext_resource type="Script" path="res://scripts/block_area.gd" id="62_h3420"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvki5"]
-size = Vector2(417, 311)
+size = Vector2(319, 643.5)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ebl7p"]
 animations = [{
@@ -232,22 +230,22 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4rqvw"]
-size = Vector2(541, 311)
+size = Vector2(556, 641.5)
 
 [node name="mini_boss_level" type="Node2D"]
 position = Vector2(567, 589)
 script = ExtResource("1_6h3co")
+metadata/_edit_group_ = true
 
 [node name="boss_encounter_area" type="Area2D" parent="."]
-script = ExtResource("2_dre4h")
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="boss_encounter_area"]
-position = Vector2(-291, -102)
+position = Vector2(-330.5, -268.25)
 shape = SubResource("RectangleShape2D_uvki5")
 
 [node name="animated_sprite_2d" type="AnimatedSprite2D" parent="boss_encounter_area"]
 position = Vector2(-88, -67)
-scale = Vector2(2.8, 2.8)
+scale = Vector2(2.2, 2.2)
 sprite_frames = SubResource("SpriteFrames_ebl7p")
 animation = &"wrong_answer"
 
@@ -286,12 +284,11 @@ libraries = {
 "": SubResource("AnimationLibrary_vb8hw")
 }
 
-[node name="block_area" type="Area2D" parent="."]
-script = ExtResource("62_h3420")
+[node name="block_area" type="StaticBody2D" parent="."]
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="block_area"]
-position = Vector2(207, -102)
+position = Vector2(240, -267.25)
 shape = SubResource("RectangleShape2D_4rqvw")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
+debug_color = Color(1, 0.243137, 0.27451, 0.341176)
 
 [connection signal="all_correct" from="boss_encounter_area/boss_level_window/code_page" to="." method="_on_code_page_all_correct"]
