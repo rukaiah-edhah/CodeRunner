@@ -7,7 +7,8 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+@warning_ignore("unused_parameter")
+func _process(_delta):
 	pass
 
 func _on_body_entered(Body):
@@ -15,4 +16,6 @@ func _on_body_entered(Body):
 		save()
 
 func save():
-	var save_game = FileAccess.open("user://savegame.save", FileAccess.WRITE)
+	print("saved")
+	var _save_game = FileAccess.open("user://savegame.txt", FileAccess.WRITE_READ)
+	pass

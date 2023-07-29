@@ -270,8 +270,9 @@ animations = [{
 }]
 
 [node name="Save_Portal" type="Area2D"]
+position = Vector2(-2.99997, -3.00002)
+scale = Vector2(0.228537, 0.23281)
 script = ExtResource("1_iwtg5")
-metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(531, 422)
