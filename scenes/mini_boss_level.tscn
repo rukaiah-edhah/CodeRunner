@@ -250,6 +250,7 @@ sprite_frames = SubResource("SpriteFrames_ebl7p")
 animation = &"wrong_answer"
 
 [node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("58_jmf74")]
+modulate = Color(1, 1, 1, 0)
 offset_left = -384.0
 offset_top = -567.0
 offset_right = 770.0

@@ -1,7 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://dutqe76oy7gik"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pn08b"]
-bg_color = Color(0, 0, 0, 0.0470588)
+bg_color = Color(0, 0, 0, 0.360784)
 border_width_left = 9
 border_width_top = 9
 border_width_right = 9

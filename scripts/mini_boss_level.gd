@@ -1,5 +1,7 @@
 extends Node2D
 
+signal wrong_answer
+signal all_correct
 
 var health = 100 
 @onready var health_bar = $boss_encounter_area/boss_level_window/health_bar
@@ -13,6 +15,7 @@ var health = 100
 
 
 func _ready():
+    BossManager.add_boss(self) # Connects the boss's signals to the player's methods
     boss_encounter_area.body_entered.connect(_on_boss_encounter_area_body_entered)
     
     # Connecting quiz signals
@@ -44,13 +47,15 @@ func _on_code_page_all_correct():
     await get_tree().create_timer(1.5).timeout
     anim_sprite.play("death")
     anim_player.play("dissolve_window")
-    
     block_area.queue_free()  # Removes the blocking area
+    
+    emit_signal("all_correct")
     
 
 # Quiz and code page handlers
 func player_wrong_answer():
     anim_sprite.play("wrong_answer")
+    emit_signal("wrong_answer")
     await anim_sprite.animation_finished
     anim_sprite.play("idle")
     

@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+
 # variables for movement and healthbar and starter coins
 @export var speed = 350
 @export var gravity = 30
@@ -23,6 +24,12 @@ const FULL_HEALTH = 100
 var health = FULL_HEALTH
 
 func _ready():
+    
+    #_________________________________________Added by Rukaiah__________________________________________
+    assert(BossManager != null) #The purpose of this line is to check that the boss manager is not null. If the game is running smoothly, we can remove it.
+    BossManager.set_player(self) # Sets the current player in the BossManager
+    #___________________________________________________________________________________________________
+    
     # set screen size, health bar, and coin bar
     coin_inventory.add_theme_font_override("font", _font)
     set_health_bar()
@@ -73,7 +80,6 @@ func _physics_process(_delta):
     
     move_and_slide()
     
-    print(velocity) # track velocity 
 
 func _damage():
     # let player take damage and set health bar accordingly
@@ -96,3 +102,25 @@ func _on_coin_coin_inventory_changed():
     # add three coins to the coin bar when user picks up a coin
     coins += 3
     set_coin_bar()
+    
+#_________________________________________Added by Rukaiah__________________________________________
+func _on_mini_boss_level_wrong_answer(): # Connect the signal wrong_answer to this function in main 
+    # The reduction of health and coins per wrong answer can be adjusted below
+    health -= 3
+    coins -= 3  
+    if health <= 0:
+        health = 0
+        _damage() # Replace it with the function that handles the death of the player
+    if coins <= 0: # Further logic can be added here once the number of coins reaches zero e.q sound effects 
+        coins = 0 
+    update_healthbar(health)
+    set_coin_bar()
+
+
+func _on_mini_boss_level_all_correct(): # Connect the signal all_correct to this function in maih
+    if health < 100: 
+        health = 100  # I am restoring the player's health to full if all answers are correct, but we can only add specific numbers if we wish
+    coins += 100
+    update_healthbar(health)  # make sure to update the health bar
+    set_coin_bar()  # make sure to update the coins
+#___________________________________________________________________________________________________
