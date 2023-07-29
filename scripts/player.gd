@@ -74,3 +74,9 @@ func _on_coin_coin_inventory_changed():
 	# add three coins to the coin bar when user picks up a coin
 	coins += 3
 	set_coin_bar()
+	
+
+func to_dictionary(): #convert the func to dic
+	return {
+		"health": health
+	}
