@@ -1,0 +1,77 @@
+[gd_scene load_steps=13 format=3 uid="uid://de7rl165dmwfw"]
+
+[ext_resource type="Texture2D" uid="uid://bq4abpjwayjn4" path="res://images/grey_block.png" id="1_s21bj"]
+[ext_resource type="PackedScene" uid="uid://c2gdlux5l4ird" path="res://scenes/envir_components/floor.tscn" id="2_137xm"]
+[ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="3_4bity"]
+[ext_resource type="PackedScene" uid="uid://cvhh5tql6pw0l" path="res://scenes/envir_components/wall.tscn" id="3_h243n"]
+[ext_resource type="PackedScene" uid="uid://bomr167vu3rbe" path="res://scenes/envir_components/platform.tscn" id="5_0nawp"]
+[ext_resource type="PackedScene" uid="uid://ohfi2qlykajt" path="res://scenes/envir_components/moving_platform_sideways.tscn" id="5_a0s6a"]
+[ext_resource type="PackedScene" uid="uid://dcoako00of7ko" path="res://scenes/envir_components/moving_platform_up_down.tscn" id="6_c6e16"]
+[ext_resource type="PackedScene" uid="uid://4oe815g4xepq" path="res://scenes/envir_components/one_way_platform.tscn" id="7_8c3em"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hx5i6"]
+resource_name = "grey_block"
+texture = ExtResource("1_s21bj")
+texture_region_size = Vector2i(33, 33)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_brkke"]
+scenes/1/scene = ExtResource("2_137xm")
+scenes/2/scene = ExtResource("5_0nawp")
+scenes/5/scene = ExtResource("6_c6e16")
+scenes/6/scene = ExtResource("7_8c3em")
+scenes/8/scene = ExtResource("5_a0s6a")
+scenes/9/scene = ExtResource("6_c6e16")
+scenes/10/scene = ExtResource("7_8c3em")
+scenes/11/scene = ExtResource("3_h243n")
+
+[sub_resource type="TileSet" id="TileSet_bnw77"]
+tile_size = Vector2i(33, 33)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_hx5i6")
+sources/1 = SubResource("TileSetScenesCollectionSource_brkke")
+
+[sub_resource type="LabelSettings" id="LabelSettings_iy5fr"]
+font_size = 24
+
+[node name="Intro_envir" type="Node2D"]
+position = Vector2(-1, -1)
+
+[node name="tile_map" type="TileMap" parent="."]
+position = Vector2(73, -12)
+tile_set = SubResource("TileSet_bnw77")
+cell_quadrant_size = 33
+format = 2
+layer_0/name = "base "
+layer_0/tile_data = PackedInt32Array(65535, 1, 65536, 75, 1, 65536, 131069, 1, 720896, -393063, 1, 327680, -917336, 1, 65536, -917259, 1, 65536)
+
+[node name="player" parent="." instance=ExtResource("3_4bity")]
+position = Vector2(141, -746)
+
+[node name="communication" type="Node2D" parent="."]
+
+[node name="Rukaiah" type="Label" parent="communication"]
+offset_left = 61.0
+offset_top = -515.0
+offset_right = 488.0
+offset_bottom = -366.0
+text = "Use labels for our communication and to clarify your vision for us, such as where the boss and shop will be located"
+label_settings = SubResource("LabelSettings_iy5fr")
+autowrap_mode = 3
+
+[node name="graphics" type="Node2D" parent="."]

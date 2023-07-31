@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://dlfka5isvxef4"]
+[gd_scene load_steps=48 format=3 uid="uid://dlfka5isvxef4"]
 
 [ext_resource type="Script" path="res://scripts/mini_boss_level.gd" id="1_6h3co"]
 [ext_resource type="Texture2D" uid="uid://bp30eg1hqlilh" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_1.png" id="3_uoj6s"]
@@ -32,9 +32,10 @@
 [ext_resource type="Texture2D" uid="uid://bam0a8eskahda" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_8.png" id="31_nw4bf"]
 [ext_resource type="Texture2D" uid="uid://bvorm4dg8fptb" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_9.png" id="32_cl7ru"]
 [ext_resource type="Texture2D" uid="uid://fnw8hajvjxq0" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_10.png" id="33_1mkoh"]
-[ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_window.tscn" id="58_jmf74"]
-[ext_resource type="PackedScene" uid="uid://3dgjw804ujxh" path="res://scenes/code_page.tscn" id="59_i7eb1"]
-[ext_resource type="PackedScene" uid="uid://dsasgdttawdlw" path="res://scenes/quiz_page.tscn" id="60_dknki"]
+[ext_resource type="Script" path="res://scripts/block_area.gd" id="37_27xu5"]
+[ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="58_jmf74"]
+[ext_resource type="PackedScene" uid="uid://3dgjw804ujxh" path="res://scenes/boss_level_components/code_page.tscn" id="59_i7eb1"]
+[ext_resource type="PackedScene" uid="uid://dsasgdttawdlw" path="res://scenes/boss_level_components/quiz_page.tscn" id="60_dknki"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvki5"]
 size = Vector2(319, 643.5)
@@ -161,6 +162,21 @@ bg_color = Color(0.376471, 0, 0.682353, 1)
 [sub_resource type="Animation" id="Animation_2vdb3"]
 length = 0.001
 
+[sub_resource type="Animation" id="Animation_fv11m"]
+resource_name = "shake_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("boss_encounter_area/boss_level_window:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-384, -524), Vector2(-394, -524), Vector2(-374, -524), Vector2(-404, -524), Vector2(-394, -524), Vector2(-384, -524)]
+}
+
 [sub_resource type="Animation" id="Animation_i86ek"]
 resource_name = "display_window"
 length = 2.0
@@ -224,18 +240,21 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vb8hw"]
 _data = {
 "RESET": SubResource("Animation_2vdb3"),
+"block_area": SubResource("Animation_fv11m"),
 "display_window": SubResource("Animation_i86ek"),
 "dissolve_window": SubResource("Animation_cwsnv"),
 "quiz_to_code": SubResource("Animation_bqsxn")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cguhy"]
+size = Vector2(646, 644)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4rqvw"]
-size = Vector2(556, 641.5)
+size = Vector2(641, 641.5)
 
 [node name="mini_boss_level" type="Node2D"]
 position = Vector2(567, 589)
 script = ExtResource("1_6h3co")
-metadata/_edit_group_ = true
 
 [node name="boss_encounter_area" type="Area2D" parent="."]
 
@@ -252,10 +271,10 @@ animation = &"wrong_answer"
 [node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("58_jmf74")]
 modulate = Color(1, 1, 1, 0)
 offset_left = -384.0
-offset_top = -567.0
+offset_top = -524.0
 offset_right = 770.0
-offset_bottom = 81.0
-scale = Vector2(0.7, 0.7)
+offset_bottom = 124.0
+scale = Vector2(0.65, 0.65)
 metadata/_edit_group_ = true
 
 [node name="quiz_page" parent="boss_encounter_area/boss_level_window" instance=ExtResource("60_dknki")]
@@ -286,9 +305,17 @@ libraries = {
 }
 
 [node name="block_area" type="StaticBody2D" parent="."]
+script = ExtResource("37_27xu5")
+
+[node name="area_2d" type="Area2D" parent="block_area"]
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="block_area/area_2d"]
+position = Vector2(198, -267)
+shape = SubResource("RectangleShape2D_cguhy")
+debug_color = Color(0.992157, 0, 0.278431, 0.0352941)
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="block_area"]
-position = Vector2(240, -267.25)
+position = Vector2(197.5, -267.25)
 shape = SubResource("RectangleShape2D_4rqvw")
 debug_color = Color(1, 0.243137, 0.27451, 0.341176)
 

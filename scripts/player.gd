@@ -7,7 +7,7 @@ extends CharacterBody2D
 @export var jump_force = 700
 @onready var healthbar = $health/healthbar
 @onready var _animation = $AnimatedSprite2D
-@onready var coin_inventory = $coin_inventory/num_coins
+@onready var coin_inventory = $coin_inventory/Panel/num_coins
 var coins = 0
 var jump_count = 0
 var double_jump = 2

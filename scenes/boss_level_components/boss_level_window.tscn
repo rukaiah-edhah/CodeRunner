@@ -22,6 +22,34 @@ offset_right = 1154.0
 offset_bottom = 648.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_pn08b")
 
+[node name="top_border" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 9.0
+color = Color(0, 0, 0, 1)
+
+[node name="left_border" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 9.0
+offset_right = 9.0
+offset_bottom = 639.0
+color = Color(0, 0, 0, 1)
+
+[node name="right_border" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 1145.0
+offset_top = 9.0
+offset_right = 1154.0
+offset_bottom = 639.0
+color = Color(0, 0, 0, 1)
+
+[node name="bottom_border" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 639.0
+offset_right = 1154.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
 offset_right = 1154.0

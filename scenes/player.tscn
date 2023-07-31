@@ -229,27 +229,28 @@ offset_left = -565.0
 offset_top = -308.0
 offset_right = -366.0
 offset_bottom = -281.0
+metadata/_edit_group_ = true
 
-[node name="num_coins" type="Label" parent="coin_inventory"]
+[node name="num_coins" type="Label" parent="coin_inventory/Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -11.421
 anchor_top = -7.381
 anchor_right = -11.421
 anchor_bottom = -7.381
-offset_left = -59.16
-offset_top = -9.75998
-offset_right = 84.84
-offset_bottom = 13.24
+offset_left = 2303.78
+offset_top = 202.287
+offset_right = 2455.78
+offset_bottom = 225.287
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="coin" type="TextureRect" parent="coin_inventory"]
+[node name="coin" type="TextureRect" parent="coin_inventory/Panel"]
 layout_mode = 0
-offset_left = -559.0
-offset_top = -303.0
-offset_right = -543.0
-offset_bottom = -287.0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 22.0
+offset_bottom = 21.0
 texture = ExtResource("3_16uj5")
 expand_mode = 5
 

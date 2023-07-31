@@ -13,10 +13,18 @@ var health = 100
 @onready var block_area = $block_area
 @onready var boss_encounter_area = $boss_encounter_area
 
+# Responsible for the flash effect 
+@onready var top_border = $boss_encounter_area/boss_level_window/top_border
+@onready var bottom_border = $boss_encounter_area/boss_level_window/bottom_border
+@onready var right_border = $boss_encounter_area/boss_level_window/right_border
+@onready var left_border = $boss_encounter_area/boss_level_window/left_border
 
 func _ready():
     BossManager.add_boss(self) # Connects the boss's signals to the player's methods
+    
+    # Connecting area signals
     boss_encounter_area.body_entered.connect(_on_boss_encounter_area_body_entered)
+    block_area.player_hit.connect(_on_player_hit_block_area)
     
     # Connecting quiz signals
     quiz_page.wrong_answer.connect(player_wrong_answer)
@@ -33,7 +41,7 @@ func _ready():
     code_page.visible = false
     
     
-# Signal handlers  
+# Signal handlers 
 func _on_boss_encounter_area_body_entered(body):
     if body is CharacterBody2D: 
         anim_player.play("display_window")
@@ -45,32 +53,43 @@ func on_quiz_finished():
 func _on_code_page_all_correct():
     health_bar.value = 0 #makes sure that the health goes to 0 befor the window dissolves 
     await get_tree().create_timer(1.5).timeout
-    anim_sprite.play("death")
+    anim_sprite.play("death") # Remove/change based on the boss' animations
     anim_player.play("dissolve_window")
     block_area.queue_free()  # Removes the blocking area
     
     emit_signal("all_correct")
+
+func _on_player_hit_block_area():
+    flash_border(top_border)
+    flash_border(bottom_border)
+    flash_border(right_border)
+    flash_border(left_border)
+    
+    anim_player.play("block_area")
     
 
 # Quiz and code page handlers
 func player_wrong_answer():
-    anim_sprite.play("wrong_answer")
+    anim_sprite.play("wrong_answer") # Remove/change based on the boss' animations
     emit_signal("wrong_answer")
     await anim_sprite.animation_finished
-    anim_sprite.play("idle")
+    anim_sprite.play("idle") # Remove/change based on the boss' animations
     
 func take_damage(amount):
     health -= amount
     health_bar.value = health
-    if health <= 0:
-        anim_sprite.play("death")
-    else:
-        anim_sprite.play("right_answer")
+    if health > 0:
+        anim_sprite.play("right_answer") # Remove/change based on the boss' animations
         await anim_sprite.animation_finished
-        anim_sprite.play("idle")
+        anim_sprite.play("idle") # Remove/change based on the boss' animations
     
     
 # Utility functions
 func transition_to_code_page():
     code_page.visible = true
     anim_player.play("quiz_to_code")
+    
+func flash_border(border):
+    border.color = Color(1, 1, 1, 1)
+    await get_tree().create_timer(0.3).timeout 
+    border.color = Color(0, 0, 0, 1)  

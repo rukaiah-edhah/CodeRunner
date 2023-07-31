@@ -36,6 +36,7 @@ func _on_run_button_pressed():
         var option_button = get_node(node_path)
         var player_input = option_button.get_item_text(option_button.selected)
         if player_input != correct_answers[node_path]:
+            emit_signal("wrong_answer")
             all_correct = false
             incorrect_answers.append(node_path)
             option_button.selected = -1 # Reset the option button if the answer is incorrect
@@ -50,6 +51,7 @@ func _on_run_button_pressed():
     
     if all_correct:
         feedback_label.text = "All of your answers are correct, great job!"
+        emit_signal("all_correct")
         ## This line can be uncommented if we want to make the text green:
         #feedback_label.modulate = Color(0, 1, 0) 
     else:

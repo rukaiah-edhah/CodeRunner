@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://4oe815g4xepq"]
+
+[ext_resource type="Texture2D" uid="uid://bq4abpjwayjn4" path="res://images/grey_block.png" id="1_5q0l1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g8hij"]
+size = Vector2(460, 46)
+
+[node name="one_way_platform" type="AnimatableBody2D"]
+position = Vector2(-8, -8)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(230, 23)
+scale = Vector2(6.97, 0.697)
+texture = ExtResource("1_5q0l1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(230, 23)
+shape = SubResource("RectangleShape2D_g8hij")
+one_way_collision = true
