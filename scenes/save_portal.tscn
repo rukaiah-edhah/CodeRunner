@@ -284,3 +284,5 @@ sprite_frames = SubResource("SpriteFrames_ncyu4")
 autoplay = "default"
 frame = 51
 frame_progress = 0.718736
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -39,3 +39,12 @@ func _draw()->void:
 		var a: = get_pos(increments * 1) - global_position
 		var b: = get_pos(increments * (i + 1)) - global_position
 		draw_line(a, b, Color.WHITE, -1)
+
+func save():
+	var save_dict = {
+		"filename" : get_scene_file_path(),
+		"parent" : get_parent().get_path(),
+		"pos_x" : position.x, # Vector2 is not supported by JSON
+		"pos_y" : position.y
+		}
+	return save_dict

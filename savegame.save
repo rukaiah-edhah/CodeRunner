@@ -1,0 +1,3 @@
+{"filename":"res://scenes/main.tscn","parent":"/root","pos_x":0,"pos_y":0}
+{"filename":"res://scenes/player.tscn","parent":"/root/@Node2D@4","pos_x":1516,"pos_y":388.925018310547}
+{"filename":"res://scenes/moving_platform_oscilate.tscn","parent":"/root/@Node2D@4","pos_x":2011.64233398438,"pos_y":291.915191650391}

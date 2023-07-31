@@ -12,6 +12,7 @@ var red_health = preload("res://images/red.png")
 var yellow_health = preload("res://images/yellow.png")
 var green_health = preload("res://images/green.png")
 
+
 # set variables for beginning health/max health
 const FULL_HEALTH = 100
 var health = FULL_HEALTH
@@ -74,9 +75,12 @@ func _on_coin_coin_inventory_changed():
 	# add three coins to the coin bar when user picks up a coin
 	coins += 3
 	set_coin_bar()
-	
 
-func to_dictionary(): #convert the func to dic
-	return {
-		"health": health
-	}
+func save():
+	var save_dict = {
+		"filename" : get_scene_file_path(),
+		"parent" : get_parent().get_path(),
+		"pos_x" : position.x, # Vector2 is not supported by JSON
+		"pos_y" : position.y
+		}
+	return save_dict

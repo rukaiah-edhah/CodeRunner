@@ -19,21 +19,21 @@ size = Vector2(500, 229)
 [node name="main" type="Node2D" groups=["Persist"]]
 script = ExtResource("1_v2djy")
 
-[node name="world" parent="." instance=ExtResource("3_v3ydl")]
+[node name="world" parent="." groups=["Persist"] instance=ExtResource("3_v3ydl")]
 
-[node name="world2" parent="." instance=ExtResource("3_v3ydl")]
+[node name="world2" parent="." groups=["Persist"] instance=ExtResource("3_v3ydl")]
 position = Vector2(4077, 0)
 
-[node name="world3" parent="." instance=ExtResource("3_v3ydl")]
+[node name="world3" parent="." groups=["Persist"] instance=ExtResource("3_v3ydl")]
 position = Vector2(2032, 0)
 
 [node name="player" parent="." groups=["Persist"] instance=ExtResource("4_mwpk0")]
 position = Vector2(1141, 208)
 
-[node name="coin" parent="." instance=ExtResource("5_x78ym")]
+[node name="coin" parent="." groups=["Persist"] instance=ExtResource("5_x78ym")]
 position = Vector2(1214, 396)
 
-[node name="falloff_warning" type="Area2D" parent="."]
+[node name="falloff_warning" type="Area2D" parent="." groups=["Persist"]]
 position = Vector2(-743, 425)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="falloff_warning"]
@@ -46,12 +46,12 @@ scale = Vector2(99, 89.5)
 mesh = SubResource("QuadMesh_ww50f")
 texture = ExtResource("6_hf61o")
 
-[node name="falloff_" parent="." instance=ExtResource("7_w121u")]
+[node name="falloff_" parent="." groups=["Persist"] instance=ExtResource("7_w121u")]
 show_behind_parent = true
 position = Vector2(-2047, 0)
 script = ExtResource("4_r40i0")
 
-[node name="wood_box" parent="." instance=ExtResource("7_c4thh")]
+[node name="wood_box" parent="." groups=["Persist"] instance=ExtResource("7_c4thh")]
 position = Vector2(1424, 344)
 
 [node name="moving_platform_oscilate" parent="." groups=["Persist"] instance=ExtResource("8_xftt7")]
