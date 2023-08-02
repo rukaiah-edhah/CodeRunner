@@ -34,7 +34,6 @@ texture_region_size = Vector2i(33, 33)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_3o3mb"]
 scenes/1/scene = ExtResource("2_wcwcm")
-scenes/1/display_placeholder = ExtResource("2_wcwcm")
 scenes/2/scene = ExtResource("3_6byng")
 scenes/3/scene = ExtResource("4_mp0xw")
 scenes/4/scene = ExtResource("5_a6772")
@@ -87,3 +86,11 @@ label_settings = SubResource("LabelSettings_8vl8x")
 autowrap_mode = 3
 
 [node name="graphics" type="Node2D" parent="."]
+
+[node name="bg" type="ParallaxBackground" parent="graphics"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="graphics/bg"]
+
+[node name="floor" type="ParallaxBackground" parent="graphics"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="graphics/floor"]

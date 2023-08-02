@@ -61,7 +61,7 @@ layer_0/name = "base "
 layer_0/tile_data = PackedInt32Array(65535, 1, 65536, 75, 1, 65536, 131069, 1, 720896, -393063, 1, 327680, -917336, 1, 65536, -917259, 1, 65536)
 
 [node name="player" parent="." instance=ExtResource("3_4bity")]
-position = Vector2(141, -746)
+position = Vector2(412, -335)
 
 [node name="communication" type="Node2D" parent="."]
 
@@ -74,4 +74,30 @@ text = "Use labels for our communication and to clarify your vision for us, such
 label_settings = SubResource("LabelSettings_iy5fr")
 autowrap_mode = 3
 
+[node name="Rukaiah2" type="Label" parent="communication"]
+offset_left = 2402.0
+offset_top = -376.0
+offset_right = 2829.0
+offset_bottom = -227.0
+text = "Here, there will be only the two blocks in which Shifu introduce himself to the player and their mission "
+label_settings = SubResource("LabelSettings_iy5fr")
+autowrap_mode = 3
+
+[node name="Rukaiah3" type="Label" parent="communication"]
+offset_left = 6162.0
+offset_top = -742.0
+offset_right = 6589.0
+offset_bottom = -593.0
+text = "Here, they will start to encounter the mini enemies as well as the first topic which is Programming Languages and Syntax "
+label_settings = SubResource("LabelSettings_iy5fr")
+autowrap_mode = 3
+
 [node name="graphics" type="Node2D" parent="."]
+
+[node name="bg" type="ParallaxBackground" parent="graphics"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="graphics/bg"]
+
+[node name="floor" type="ParallaxBackground" parent="graphics"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="graphics/floor"]
