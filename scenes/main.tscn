@@ -27,7 +27,12 @@ position = Vector2(2170, 111)
 
 [node name="Save_Portal" parent="." instance=ExtResource("5_alneg")]
 top_level = true
+<<<<<<< HEAD
 position = Vector2(1473, -94)
 scale = Vector2(0.731429, 0.902582)
+=======
+position = Vector2(1696, 175)
+scale = Vector2(0.234593, 0.262176)
+>>>>>>> load
 
 [connection signal="coin_inventory_changed" from="coin" to="player" method="_on_coin_coin_inventory_changed"]
