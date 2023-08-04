@@ -14,7 +14,7 @@ script = ExtResource("1_238at")
 show_behind_parent = true
 position = Vector2(-12, -1935)
 
-[node name="player" parent="." instance=ExtResource("4_mwpk0")]
+[node name="player" parent="." groups=["Persist"] instance=ExtResource("4_mwpk0")]
 top_level = true
 position = Vector2(608, 196)
 
@@ -27,6 +27,7 @@ position = Vector2(2170, 111)
 
 [node name="Save_Portal" parent="." instance=ExtResource("5_alneg")]
 top_level = true
-position = Vector2(1693, 254)
+position = Vector2(1473, -94)
+scale = Vector2(0.731429, 0.902582)
 
 [connection signal="coin_inventory_changed" from="coin" to="player" method="_on_coin_coin_inventory_changed"]
