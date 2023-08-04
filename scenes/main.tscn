@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cmnowr0smaklf"]
+[gd_scene load_steps=7 format=3 uid="uid://cmnowr0smaklf"]
 
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_238at"]
 [ext_resource type="PackedScene" uid="uid://cfg73y5efex6k" path="res://scenes/hall.tscn" id="1_ofvwh"]
 [ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="4_mwpk0"]
 [ext_resource type="PackedScene" uid="uid://bhiwhgg53t8dl" path="res://scenes/save_portal.tscn" id="5_alneg"]
@@ -7,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c4u1kl48fqk6u" path="res://scenes/wood_box.tscn" id="7_c4thh"]
 
 [node name="main" type="Node2D" groups=["Persist"]]
+script = ExtResource("1_238at")
 
 [node name="hall" parent="." instance=ExtResource("1_ofvwh")]
 show_behind_parent = true
