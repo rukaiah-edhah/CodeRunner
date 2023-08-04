@@ -280,6 +280,7 @@ shape = SubResource("CircleShape2D_upycg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(531, 422)
+scale = Vector2(2.62421, 2.97089)
 sprite_frames = SubResource("SpriteFrames_ncyu4")
 autoplay = "default"
 frame = 51
