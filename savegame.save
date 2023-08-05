@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 {"filename":"res://scenes/main.tscn","parent":"/root","pos_x":0,"pos_y":0}
 {"filename":"res://scenes/player.tscn","parent":"/root/main","pos_x":608,"pos_y":197.5}
+=======
+{"filename":"res://scenes/player.tscn","parent":"/root/main/Intro_level","pos_x":1774.65515136719,"pos_y":276.341094970703}
+>>>>>>> load
