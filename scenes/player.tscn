@@ -44,12 +44,12 @@
 [ext_resource type="Texture2D" uid="uid://dw4no08ivkd7m" path="res://images/helmet.png" id="42_b0a8h"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_np7yk"]
-radius = 35.0
-height = 114.0
+radius = 41.0
+height = 138.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wgc3y"]
-radius = 35.0
-height = 114.0
+radius = 41.0
+height = 138.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fq2uv"]
 animations = [{
@@ -201,30 +201,32 @@ debug_color = Color(0.886275, 0, 0.8, 0.419608)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-5, -2)
 shape = SubResource("CapsuleShape2D_wgc3y")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.236969, 0.234178)
+scale = Vector2(0.304, 0.3)
 sprite_frames = SubResource("SpriteFrames_fq2uv")
 animation = &"idle"
 frame_progress = 0.880363
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-4, -6)
+position = Vector2(420, -208)
+zoom = Vector2(0.8, 0.8)
 
 [node name="health" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -19.0
-offset_top = -30.0
-offset_right = 21.0
-offset_bottom = 10.0
+offset_left = 234.0
+offset_top = -320.0
+offset_right = 274.0
+offset_bottom = -280.0
 
 [node name="healthbar" type="TextureProgressBar" parent="health"]
 layout_mode = 0
-offset_left = -547.0
-offset_top = -239.0
-offset_right = -347.0
-offset_bottom = -213.0
+offset_left = -513.0
+offset_top = -249.0
+offset_right = -313.0
+offset_bottom = -223.0
 value = 100.0
 allow_greater = true
 texture_progress = ExtResource("4_yk0fd")
@@ -232,15 +234,17 @@ texture_progress = ExtResource("4_yk0fd")
 [node name="coin_inventory" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 251.0
+offset_top = -289.0
+offset_right = 291.0
+offset_bottom = -249.0
 
 [node name="Panel" type="Panel" parent="coin_inventory"]
 layout_mode = 0
-offset_left = -565.0
-offset_top = -308.0
-offset_right = -366.0
-offset_bottom = -281.0
+offset_left = -530.0
+offset_top = -314.0
+offset_right = -331.0
+offset_bottom = -287.0
 metadata/_edit_group_ = true
 
 [node name="num_coins" type="Label" parent="coin_inventory/Panel"]
@@ -267,6 +271,6 @@ texture = ExtResource("3_16uj5")
 expand_mode = 5
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-6, -21)
-scale = Vector2(0.101406, 0.0869348)
+position = Vector2(-5.50001, -20)
+scale = Vector2(0.110352, 0.0996094)
 texture = ExtResource("42_b0a8h")
