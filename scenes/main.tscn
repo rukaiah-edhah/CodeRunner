@@ -1,20 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://cmnowr0smaklf"]
+[gd_scene load_steps=7 format=3 uid="uid://cmnowr0smaklf"]
 
 [ext_resource type="PackedScene" uid="uid://cfg73y5efex6k" path="res://scenes/hall.tscn" id="1_jbhde"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_yuqy0"]
 [ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="2_0etpr"]
 [ext_resource type="PackedScene" uid="uid://divgbcotp0d8v" path="res://scenes/coin.tscn" id="3_w58ea"]
 [ext_resource type="PackedScene" uid="uid://c4u1kl48fqk6u" path="res://scenes/wood_box.tscn" id="4_4fl2c"]
 [ext_resource type="PackedScene" uid="uid://bhiwhgg53t8dl" path="res://scenes/save_portal.tscn" id="5_qwyvo"]
 
-[node name="main" type="Node2D" groups=["Persist"]]
+[node name="main" type="Node2D"]
+script = ExtResource("1_yuqy0")
 
 [node name="hall" parent="." instance=ExtResource("1_jbhde")]
 show_behind_parent = true
 position = Vector2(-12, -1935)
-
-[node name="player" parent="." instance=ExtResource("2_0etpr")]
-top_level = true
-position = Vector2(608, 196)
 
 [node name="coin" parent="." instance=ExtResource("3_w58ea")]
 position = Vector2(1214, 396)
@@ -27,5 +25,9 @@ position = Vector2(2170, 111)
 top_level = true
 position = Vector2(1696, 175)
 scale = Vector2(0.234593, 0.262176)
+
+[node name="player" parent="." groups=["Persist"] instance=ExtResource("2_0etpr")]
+top_level = true
+position = Vector2(608, 196)
 
 [connection signal="coin_inventory_changed" from="coin" to="player" method="_on_coin_coin_inventory_changed"]

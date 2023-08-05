@@ -124,3 +124,12 @@ func _on_mini_boss_level_all_correct(): # Connect the signal all_correct to this
 	update_healthbar(health)  # make sure to update the health bar
 	set_coin_bar()  # make sure to update the coins
 #___________________________________________________________________________________________________
+
+func save():
+	var save_dict = {
+		"filename" : get_scene_file_path(),
+		"parent" : get_parent().get_path(),
+		"pos_x" : position.x, # Vector2 is not supported by JSON
+		"pos_y" : position.y
+		}
+	return save_dict
