@@ -37,8 +37,7 @@ func _ready():
 
 func _on_start_button_pressed():
 	# when you press start -> go to game
-	var y = get_tree().change_scene_to_file("res://scenes/main.tscn")
-	print(y, "this is not working")
+	get_tree().change_scene_to_file("res://scenes/main.tscn")
 
 func _on_options_button_pressed():
 	# when you press options -> go to options menu
@@ -49,9 +48,6 @@ func _on_quit_button_pressed():
 	get_tree().quit()
 
 func _on_load_button_pressed():
-	
-	var x = get_tree().change_scene_to_file("res://scenes/main.tscn")
-	print(x)
 	#Handling Exceptions
 	if not FileAccess.file_exists("res://savegame.save"): #no save file
 		print("Error! We don't have a save to load.")
