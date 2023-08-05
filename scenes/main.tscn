@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cmnowr0smaklf"]
+[gd_scene load_steps=8 format=3 uid="uid://cmnowr0smaklf"]
 
 [ext_resource type="PackedScene" uid="uid://cfg73y5efex6k" path="res://scenes/hall.tscn" id="1_jbhde"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_yuqy0"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://divgbcotp0d8v" path="res://scenes/coin.tscn" id="3_w58ea"]
 [ext_resource type="PackedScene" uid="uid://c4u1kl48fqk6u" path="res://scenes/wood_box.tscn" id="4_4fl2c"]
 [ext_resource type="PackedScene" uid="uid://bhiwhgg53t8dl" path="res://scenes/save_portal.tscn" id="5_qwyvo"]
+[ext_resource type="PackedScene" uid="uid://oeaisxo7osqs" path="res://scenes/dialogue.tscn" id="7_h66yg"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_yuqy0")
@@ -29,5 +30,12 @@ scale = Vector2(0.234593, 0.262176)
 [node name="player" parent="." groups=["Persist"] instance=ExtResource("2_0etpr")]
 top_level = true
 position = Vector2(608, 196)
+
+[node name="dialog_box" parent="." instance=ExtResource("7_h66yg")]
+top_level = true
+offset_left = 3496.0
+offset_top = 39.0
+offset_right = 2884.0
+offset_bottom = -445.0
 
 [connection signal="coin_inventory_changed" from="coin" to="player" method="_on_coin_coin_inventory_changed"]
