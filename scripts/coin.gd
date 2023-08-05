@@ -4,7 +4,7 @@ extends Area2D
 signal coin_inventory_changed
 
 func _on_body_entered(body):
-	# send signal to player and make coin dissappear
-	if body.is_in_group("player"):
-		emit_signal("coin_inventory_changed")
-		queue_free()
+    # send signal to player and make coin dissappear
+    if body.is_in_group("player"):
+        emit_signal("coin_inventory_changed")
+        queue_free()

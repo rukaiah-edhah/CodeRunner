@@ -13,10 +13,7 @@ config_version=5
 config/name="Code Runner"
 run/main_scene="res://scenes/shifu.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
-
-[autoload]
-
-BossManager="*res://singleton/boss_manager.gd"
+">>>>>>>main[autoload]BossManager"="*res://singleton/boss_manager.gd"
 
 [display]
 

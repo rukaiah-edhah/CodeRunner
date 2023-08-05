@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ra8ml"]
 [ext_resource type="Texture2D" uid="uid://b55daew6ctkkr" path="res://images/cat_player_animation/Idle1.png" id="2_4gqm2"]
-[ext_resource type="Texture2D" uid="uid://bvhoh6xtafrdg" path="res://images/coin.png" id="3_16uj5"]
 [ext_resource type="Texture2D" uid="uid://uopq4hu6gybo" path="res://images/cat_player_animation/Idle2.png" id="3_cg8hg"]
 [ext_resource type="Texture2D" uid="uid://bliiyhpn6pm3r" path="res://images/cat_player_animation/Idle3.png" id="4_5d1bh"]
 [ext_resource type="Texture2D" uid="uid://giiuvm1guxpx" path="res://images/green.png" id="4_yk0fd"]
@@ -41,6 +40,7 @@
 [ext_resource type="Texture2D" uid="uid://qu3cuc5dl1ta" path="res://images/cat_player_animation/Walk8.png" id="37_v06nx"]
 [ext_resource type="Texture2D" uid="uid://cap8g0i0q8tgy" path="res://images/cat_player_animation/Walk9.png" id="38_ja7ht"]
 [ext_resource type="Texture2D" uid="uid://drkdvuy447feb" path="res://images/cat_player_animation/Walk10.png" id="39_2482s"]
+[ext_resource type="Texture2D" uid="uid://vt7kmmtdjp18" path="res://images/coin_animation/coin_1.png" id="41_36tdq"]
 [ext_resource type="Texture2D" uid="uid://dw4no08ivkd7m" path="res://images/helmet.png" id="42_b0a8h"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_np7yk"]
@@ -258,12 +258,13 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="coin" type="TextureRect" parent="coin_inventory/Panel"]
+texture_filter = 4
 layout_mode = 0
 offset_left = 6.0
 offset_top = 5.0
 offset_right = 22.0
 offset_bottom = 21.0
-texture = ExtResource("3_16uj5")
+texture = ExtResource("41_36tdq")
 expand_mode = 5
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
