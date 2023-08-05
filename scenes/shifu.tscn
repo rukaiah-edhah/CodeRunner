@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://yv4q2ayft2mq"]
+
+[ext_resource type="Shader" path="res://shader/shifu.gdshader" id="1_igpjf"]
+[ext_resource type="Texture2D" uid="uid://ckuyd6cix2awb" path="res://images/Shifu/29639A34-714A-477D-87E1-46586334043D.png" id="2_jepwg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_efea5"]
+shader = ExtResource("1_igpjf")
+shader_parameter/lines = 100
+shader_parameter/color1 = Color(0, 0, 1, 1)
+shader_parameter/color2 = Color(1, 0, 0, 1)
+shader_parameter/speed = 0.5
+shader_parameter/alpha = 0.5
+shader_parameter/noise_amount = 0.05
+shader_parameter/effect_factor = 0.4
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pfidp"]
+radius = 333.27
+
+[node name="Sprite2D" type="Sprite2D"]
+material = SubResource("ShaderMaterial_efea5")
+position = Vector2(488.75, 323.75)
+scale = Vector2(0.959459, 0.888013)
+texture = ExtResource("2_jepwg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_pfidp")
