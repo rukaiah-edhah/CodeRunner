@@ -1,0 +1,92 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsasgdttawdlw"]
+
+[ext_resource type="Script" path="res://scripts/quiz_page.gd" id="1_d4kfs"]
+[ext_resource type="FontFile" uid="uid://cd0wcggadutaq" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="2_tun1u"]
+[ext_resource type="FontFile" uid="uid://py8r0bc1bcmb" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="3_55dii"]
+
+[node name="quiz_page" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = 2.0
+offset_right = -4.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_d4kfs")
+
+[node name="background_color" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 1155.0
+offset_bottom = 720.0
+color = Color(1, 1, 1, 0)
+
+[node name="question_container" type="VBoxContainer" parent="background_color"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 107.0
+offset_top = 178.0
+offset_right = 1080.0
+offset_bottom = 298.0
+metadata/_edit_group_ = true
+
+[node name="question_label" type="RichTextLabel" parent="background_color/question_container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_tun1u")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+
+[node name="options_container" type="VBoxContainer" parent="background_color"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.512259
+anchor_top = 0.532445
+anchor_right = 0.512259
+anchor_bottom = 0.532445
+offset_left = -211.586
+offset_top = -150.36
+offset_right = 172.414
+offset_bottom = 123.64
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.1, 1.1)
+alignment = 1
+metadata/_edit_group_ = true
+metadata/_edit_use_anchors_ = true
+
+[node name="option_button1" type="Button" parent="background_color/options_container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_55dii")
+theme_override_font_sizes/font_size = 19
+icon_alignment = 1
+expand_icon = true
+
+[node name="option_button2" type="Button" parent="background_color/options_container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_55dii")
+theme_override_font_sizes/font_size = 19
+expand_icon = true
+
+[node name="option_button3" type="Button" parent="background_color/options_container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_55dii")
+theme_override_font_sizes/font_size = 19
+expand_icon = true
+
+[node name="option_button4" type="Button" parent="background_color/options_container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_55dii")
+theme_override_font_sizes/font_size = 19
+expand_icon = true
+
+[connection signal="pressed" from="background_color/options_container/option_button1" to="." method="_on_option_button_1_pressed"]
+[connection signal="pressed" from="background_color/options_container/option_button2" to="." method="_on_option_button_2_pressed"]
+[connection signal="pressed" from="background_color/options_container/option_button3" to="." method="_on_option_button_3_pressed"]
+[connection signal="pressed" from="background_color/options_container/option_button4" to="." method="_on_option_button_4_pressed"]

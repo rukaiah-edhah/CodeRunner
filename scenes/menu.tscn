@@ -1,18 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://brqa4emc67drg"]
+[gd_scene load_steps=5 format=3 uid="uid://brqa4emc67drg"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_8mpn6"]
 [ext_resource type="PackedScene" uid="uid://dieljgd8ai41" path="res://scenes/world.tscn" id="2_yh8q3"]
-[ext_resource type="Texture2D" uid="uid://eiqgycwfy858" path="res://images/character.png" id="3_ve2sg"]
+[ext_resource type="Texture2D" uid="uid://b0kgh7jnxep4q" path="res://images/cat_player_animation/Jump3.png" id="3_0i6do"]
+[ext_resource type="Texture2D" uid="uid://d27ihnnp32y75" path="res://images/helmet.png" id="4_aoqtt"]
 
 [node name="menu" type="Node2D"]
 script = ExtResource("1_8mpn6")
 
 [node name="menu_world" parent="." instance=ExtResource("2_yh8q3")]
+position = Vector2(4, -2)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(522, 395)
-scale = Vector2(2.91667, 3.04167)
-texture = ExtResource("3_ve2sg")
+position = Vector2(579, 505)
+scale = Vector2(0.439739, 0.422716)
+texture = ExtResource("3_0i6do")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(-56.8521, -78.0667)
+scale = Vector2(0.383097, 0.335929)
+texture = ExtResource("4_aoqtt")
 
 [node name="start_button" type="Button" parent="."]
 offset_left = 138.0

@@ -1,0 +1,96 @@
+[gd_scene load_steps=16 format=3 uid="uid://bo2vfu0vkqg3m"]
+
+[ext_resource type="Texture2D" uid="uid://d32lpjwq3qjdc" path="res://images/grey_block.png" id="1_hxknr"]
+[ext_resource type="PackedScene" uid="uid://c2gdlux5l4ird" path="res://scenes/envir_components/floor.tscn" id="2_wcwcm"]
+[ext_resource type="PackedScene" uid="uid://omo1bq8e4xvo" path="res://scenes/envir_components/moving_platform_oscilate.tscn" id="3_6byng"]
+[ext_resource type="PackedScene" uid="uid://ohfi2qlykajt" path="res://scenes/envir_components/moving_platform_sideways.tscn" id="4_mp0xw"]
+[ext_resource type="PackedScene" uid="uid://dcoako00of7ko" path="res://scenes/envir_components/moving_platform_up_down.tscn" id="5_a6772"]
+[ext_resource type="PackedScene" uid="uid://4oe815g4xepq" path="res://scenes/envir_components/one_way_platform.tscn" id="6_cyxfq"]
+[ext_resource type="PackedScene" uid="uid://cvhh5tql6pw0l" path="res://scenes/envir_components/wall.tscn" id="7_w37s1"]
+[ext_resource type="PackedScene" uid="uid://ckaxothwj5u0w" path="res://scenes/envir_components/up_stairs.tscn" id="8_7uw6t"]
+[ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="8_d8gj5"]
+[ext_resource type="PackedScene" uid="uid://cu46u1ulhqch0" path="res://scenes/envir_components/down_stairs.tscn" id="9_naaul"]
+[ext_resource type="PackedScene" uid="uid://bomr167vu3rbe" path="res://scenes/envir_components/platform.tscn" id="10_ls45j"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_spmiq"]
+texture = ExtResource("1_hxknr")
+texture_region_size = Vector2i(33, 33)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_3o3mb"]
+scenes/1/scene = ExtResource("2_wcwcm")
+scenes/2/scene = ExtResource("3_6byng")
+scenes/3/scene = ExtResource("4_mp0xw")
+scenes/4/scene = ExtResource("5_a6772")
+scenes/5/scene = ExtResource("6_cyxfq")
+scenes/6/scene = ExtResource("7_w37s1")
+scenes/7/scene = ExtResource("8_7uw6t")
+scenes/8/scene = ExtResource("9_naaul")
+scenes/9/scene = ExtResource("10_ls45j")
+
+[sub_resource type="TileSet" id="TileSet_lotx2"]
+tile_size = Vector2i(33, 33)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_spmiq")
+sources/1 = SubResource("TileSetScenesCollectionSource_3o3mb")
+
+[sub_resource type="LabelSettings" id="LabelSettings_8vl8x"]
+font_size = 24
+
+[node name="python_envir" type="Node2D"]
+
+[node name="tile_map" type="TileMap" parent="."]
+position = Vector2(5, 5)
+tile_set = SubResource("TileSet_lotx2")
+cell_quadrant_size = 33
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 1, 65536, 131071, 1, 393216, 76, 1, 65536, 152, 1, 65536, 229, 1, 458752, -392969, 1, 65536, -261897, 1, 65536, -130825, 1, 65536, 247, 1, 65536, -392892, 1, 524288, 342, 1, 65536)
+
+[node name="player" parent="." instance=ExtResource("8_d8gj5")]
+position = Vector2(615, -363)
+
+[node name="communication" type="Node2D" parent="."]
+
+[node name="Rukaiah" type="Label" parent="communication"]
+offset_left = 51.0
+offset_top = -1000.0
+offset_right = 463.0
+offset_bottom = -704.0
+text = "Depending on how the player will enter the spaceship, I will remove this wall and change it. For example, if they entered the ship via stairs. I'd maybe change this wall to be downstairs or something that matches what we'll do, but let's leave it as it is now."
+label_settings = SubResource("LabelSettings_8vl8x")
+autowrap_mode = 3
+
+[node name="Rukaiah2" type="Label" parent="communication"]
+offset_left = 9420.0
+offset_top = -487.0
+offset_right = 9939.0
+offset_bottom = -320.0
+text = "Here we can have the first mini-boss level...
+Considering I'll be removing the wall, I can expand the previous floor if it wasn't enough for the dialogue boxes."
+label_settings = SubResource("LabelSettings_8vl8x")
+autowrap_mode = 3
+
+[node name="graphics" type="Node2D" parent="."]
+
+[node name="bg" type="ParallaxBackground" parent="graphics"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="graphics/bg"]
+
+[node name="floor" type="ParallaxBackground" parent="graphics"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="graphics/floor"]

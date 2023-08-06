@@ -1,0 +1,234 @@
+[gd_scene load_steps=24 format=3 uid="uid://de7rl165dmwfw"]
+
+[ext_resource type="Texture2D" uid="uid://d32lpjwq3qjdc" path="res://images/grey_block.png" id="1_s21bj"]
+[ext_resource type="PackedScene" uid="uid://c2gdlux5l4ird" path="res://scenes/envir_components/floor.tscn" id="2_137xm"]
+[ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="3_4bity"]
+[ext_resource type="PackedScene" uid="uid://cvhh5tql6pw0l" path="res://scenes/envir_components/wall.tscn" id="3_h243n"]
+[ext_resource type="PackedScene" uid="uid://bomr167vu3rbe" path="res://scenes/envir_components/platform.tscn" id="5_0nawp"]
+[ext_resource type="PackedScene" uid="uid://ohfi2qlykajt" path="res://scenes/envir_components/moving_platform_sideways.tscn" id="5_a0s6a"]
+[ext_resource type="PackedScene" uid="uid://dcoako00of7ko" path="res://scenes/envir_components/moving_platform_up_down.tscn" id="6_c6e16"]
+[ext_resource type="PackedScene" uid="uid://4oe815g4xepq" path="res://scenes/envir_components/one_way_platform.tscn" id="7_8c3em"]
+[ext_resource type="Texture2D" uid="uid://ki4r3kacn8gi" path="res://images/alien_planet /bg.png" id="9_o124v"]
+[ext_resource type="Texture2D" uid="uid://b0fpboqqb7j0b" path="res://images/alien_planet /stars.png" id="9_u7faq"]
+[ext_resource type="Texture2D" uid="uid://ct8fhjxo5on8q" path="res://images/alien_planet /bg_element_3.png" id="10_do6ie"]
+[ext_resource type="Texture2D" uid="uid://cdnbeqbg4uops" path="res://images/alien_planet /planets.png" id="10_r7flv"]
+[ext_resource type="Texture2D" uid="uid://cviwj7co0ibgl" path="res://images/alien_planet /bg_element_5.png" id="11_dkv3b"]
+[ext_resource type="Texture2D" uid="uid://cwfxmqkee0oug" path="res://images/alien_planet /rock_5.png" id="11_hr2j3"]
+[ext_resource type="Texture2D" uid="uid://cedlnh8tu088b" path="res://images/alien_planet /shooting_star.png" id="11_pjum4"]
+[ext_resource type="Texture2D" uid="uid://mcfnk712wj4w" path="res://images/alien_planet /ground.png" id="12_3cemt"]
+[ext_resource type="Texture2D" uid="uid://0fb0ks40u3vt" path="res://images/alien_planet /item_3.png" id="14_0wmyn"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hx5i6"]
+resource_name = "grey_block"
+texture = ExtResource("1_s21bj")
+texture_region_size = Vector2i(33, 33)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_brkke"]
+scenes/1/scene = ExtResource("2_137xm")
+scenes/2/scene = ExtResource("5_0nawp")
+scenes/5/scene = ExtResource("6_c6e16")
+scenes/6/scene = ExtResource("7_8c3em")
+scenes/8/scene = ExtResource("5_a0s6a")
+scenes/9/scene = ExtResource("6_c6e16")
+scenes/10/scene = ExtResource("7_8c3em")
+scenes/11/scene = ExtResource("3_h243n")
+
+[sub_resource type="TileSet" id="TileSet_bnw77"]
+tile_size = Vector2i(33, 33)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_hx5i6")
+sources/1 = SubResource("TileSetScenesCollectionSource_brkke")
+
+[sub_resource type="LabelSettings" id="LabelSettings_iy5fr"]
+font_size = 24
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_p53c1"]
+scenes/1/scene = ExtResource("6_c6e16")
+
+[sub_resource type="TileSet" id="TileSet_y0je2"]
+sources/0 = SubResource("TileSetScenesCollectionSource_p53c1")
+
+[node name="Intro_envir" type="Node2D"]
+position = Vector2(-1, -1)
+
+[node name="tile_map" type="TileMap" parent="."]
+position = Vector2(73, -12)
+tile_set = SubResource("TileSet_bnw77")
+cell_quadrant_size = 33
+format = 2
+layer_0/name = "base "
+layer_0/tile_data = PackedInt32Array(65535, 1, 65536, 75, 1, 65536, 131069, 1, 720896, -917336, 1, 65536, -917259, 1, 65536)
+
+[node name="communication" type="Node2D" parent="."]
+
+[node name="Rukaiah" type="Label" parent="communication"]
+offset_left = 104.0
+offset_top = -1193.0
+offset_right = 531.0
+offset_bottom = -1044.0
+text = "Use labels for our communication and to clarify your vision for us, such as where the boss and shop will be located"
+label_settings = SubResource("LabelSettings_iy5fr")
+autowrap_mode = 3
+
+[node name="Rukaiah2" type="Label" parent="communication"]
+offset_left = 2366.0
+offset_top = -1162.0
+offset_right = 2793.0
+offset_bottom = -1013.0
+text = "Here, there will be only the two blocks in which Shifu introduce himself to the player and their mission "
+label_settings = SubResource("LabelSettings_iy5fr")
+autowrap_mode = 3
+
+[node name="Rukaiah3" type="Label" parent="communication"]
+offset_left = 6162.0
+offset_top = -742.0
+offset_right = 6589.0
+offset_bottom = -593.0
+text = "Here, they will start to encounter the mini enemies as well as the first topic which is Programming Languages and Syntax "
+label_settings = SubResource("LabelSettings_iy5fr")
+autowrap_mode = 3
+
+[node name="graphics" type="Node2D" parent="."]
+
+[node name="bg" type="CanvasLayer" parent="graphics"]
+follow_viewport_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="graphics/bg"]
+show_behind_parent = true
+position = Vector2(699, -403.5)
+scale = Vector2(1.75342, 2.15186)
+texture = ExtResource("9_o124v")
+
+[node name="Sprite2D2" type="Sprite2D" parent="graphics/bg/Sprite2D"]
+position = Vector2(-5.9918, 8.05322)
+scale = Vector2(0.875978, 0.968762)
+texture = ExtResource("9_u7faq")
+
+[node name="Sprite2D" type="Sprite2D" parent="graphics/bg/Sprite2D"]
+position = Vector2(20.4524, -82.9913)
+scale = Vector2(1.10569, 0.953319)
+texture = ExtResource("10_r7flv")
+
+[node name="Sprite2D3" type="Sprite2D" parent="graphics/bg/Sprite2D"]
+position = Vector2(295.395, -120.305)
+scale = Vector2(0.628087, 0.555745)
+texture = ExtResource("11_pjum4")
+
+[node name="-4" type="CanvasLayer" parent="graphics"]
+follow_viewport_enabled = true
+follow_viewport_scale = 0.6
+
+[node name="Sprite2D" type="Sprite2D" parent="graphics/-4"]
+position = Vector2(1694.17, -116.786)
+scale = Vector2(3.06505, 2.16951)
+
+[node name="-3" type="CanvasLayer" parent="graphics"]
+follow_viewport_enabled = true
+follow_viewport_scale = 0.7
+
+[node name="Sprite2D" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(1474.29, -116.786)
+scale = Vector2(2.31439, 2.16951)
+texture = ExtResource("10_do6ie")
+
+[node name="Sprite2D2" type="Sprite2D" parent="graphics/-3/Sprite2D"]
+position = Vector2(1409.81, 0)
+scale = Vector2(0.974118, 1)
+texture = ExtResource("10_do6ie")
+
+[node name="-2" type="CanvasLayer" parent="graphics"]
+follow_viewport_enabled = true
+follow_viewport_scale = 0.8
+
+[node name="Sprite2D" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(865, 16.875)
+scale = Vector2(1.41409, 1.51923)
+texture = ExtResource("11_dkv3b")
+
+[node name="Sprite2D2" type="Sprite2D" parent="graphics/-2/Sprite2D"]
+position = Vector2(1440.85, -1.90735e-06)
+scale = Vector2(0.865757, 1)
+texture = ExtResource("11_dkv3b")
+
+[node name="Sprite2D3" type="Sprite2D" parent="graphics/-2/Sprite2D"]
+position = Vector2(2820.71, -1.90735e-06)
+scale = Vector2(0.951081, 1)
+texture = ExtResource("11_dkv3b")
+
+[node name="Sprite2D2" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(44.375, -267.5)
+scale = Vector2(3.45339, 3.3147)
+texture = ExtResource("11_hr2j3")
+
+[node name="-1" type="CanvasLayer" parent="graphics"]
+follow_viewport_enabled = true
+follow_viewport_scale = 0.9
+
+[node name="Sprite2D" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(2523.33, -606.667)
+scale = Vector2(3.13873, 2.67661)
+
+[node name="0" type="CanvasLayer" parent="graphics"]
+follow_viewport_enabled = true
+
+[node name="floor" type="Node2D" parent="graphics/0"]
+
+[node name="Sprite2D" type="Sprite2D" parent="graphics/0/floor"]
+position = Vector2(633, 80)
+scale = Vector2(2.15036, 3.84)
+texture = ExtResource("12_3cemt")
+
+[node name="Sprite2D4" type="Sprite2D" parent="graphics/0/floor/Sprite2D"]
+position = Vector2(875.264, -0.152439)
+scale = Vector2(1.09253, 1.0061)
+texture = ExtResource("12_3cemt")
+
+[node name="Sprite2D2" type="Sprite2D" parent="graphics/0/floor/Sprite2D"]
+position = Vector2(1704.41, -0.30488)
+scale = Vector2(0.8889, 1.0061)
+texture = ExtResource("12_3cemt")
+
+[node name="platforms" type="Node2D" parent="graphics/0"]
+position = Vector2(-1, -1)
+
+[node name="TileMap" type="TileMap" parent="graphics/0/platforms"]
+tile_set = SubResource("TileSet_y0je2")
+format = 2
+layer_0/tile_data = PackedInt32Array(-786116, 0, 65536)
+
+[node name="player" parent="graphics/0" instance=ExtResource("3_4bity")]
+top_level = true
+position = Vector2(264, -161)
+
+[node name="1" type="CanvasLayer" parent="graphics"]
+follow_viewport_enabled = true
+follow_viewport_scale = 1.1
+
+[node name="Sprite2D" type="Sprite2D" parent="graphics/1"]
+position = Vector2(1291.36, -34.0909)
+scale = Vector2(1.50583, 2.19412)
+texture = ExtResource("14_0wmyn")
+
+[node name="2" type="CanvasLayer" parent="graphics"]
+follow_viewport_enabled = true
+follow_viewport_scale = 1.2
+
+[node name="3" type="CanvasLayer" parent="graphics"]
+follow_viewport_enabled = true
+follow_viewport_scale = 1.3

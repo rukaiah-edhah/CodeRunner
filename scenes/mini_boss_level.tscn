@@ -1,0 +1,326 @@
+[gd_scene load_steps=48 format=3 uid="uid://dlfka5isvxef4"]
+
+[ext_resource type="Script" path="res://scripts/mini_boss_level.gd" id="1_6h3co"]
+[ext_resource type="Texture2D" uid="uid://ctq8g14tkupri" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_1.png" id="3_uoj6s"]
+[ext_resource type="Texture2D" uid="uid://ve04te50n1ke" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_2.png" id="4_0pk3t"]
+[ext_resource type="Texture2D" uid="uid://b748jyctbosle" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_3.png" id="5_lwmux"]
+[ext_resource type="Texture2D" uid="uid://ciptff2dlc8bo" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_4.png" id="6_sg3gp"]
+[ext_resource type="Texture2D" uid="uid://q7q6ok0o87ty" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_5.png" id="7_elh41"]
+[ext_resource type="Texture2D" uid="uid://tis25aqvyxu6" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_6.png" id="8_w76ts"]
+[ext_resource type="Texture2D" uid="uid://cukgwvs8ylhph" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_7.png" id="9_tvpyf"]
+[ext_resource type="Texture2D" uid="uid://ddokmbt12g1gc" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_8.png" id="10_1w75d"]
+[ext_resource type="Texture2D" uid="uid://4b5nm3bwi3k4" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_9.png" id="11_jdpmv"]
+[ext_resource type="Texture2D" uid="uid://duhojoiykikxp" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_10.png" id="12_s2uir"]
+[ext_resource type="Texture2D" uid="uid://cbkcgdyhy65v3" path="res://images/mini_boss_animation/Idle/Bringer-of-Death_Idle_1.png" id="13_88rm5"]
+[ext_resource type="Texture2D" uid="uid://c4yfx6rq1a0r1" path="res://images/mini_boss_animation/Idle/Bringer-of-Death_Idle_2.png" id="14_ur051"]
+[ext_resource type="Texture2D" uid="uid://dafxboxg33gk6" path="res://images/mini_boss_animation/Idle/Bringer-of-Death_Idle_3.png" id="15_lyghs"]
+[ext_resource type="Texture2D" uid="uid://wyksa4s0nkbf" path="res://images/mini_boss_animation/Idle/Bringer-of-Death_Idle_4.png" id="16_0wef5"]
+[ext_resource type="Texture2D" uid="uid://dgrkqqn0ry5w7" path="res://images/mini_boss_animation/Idle/Bringer-of-Death_Idle_5.png" id="17_rtl0d"]
+[ext_resource type="Texture2D" uid="uid://nxonu8gmywoh" path="res://images/mini_boss_animation/Idle/Bringer-of-Death_Idle_6.png" id="18_fqg0j"]
+[ext_resource type="Texture2D" uid="uid://kby66aa5ddjb" path="res://images/mini_boss_animation/Idle/Bringer-of-Death_Idle_7.png" id="19_pm3t0"]
+[ext_resource type="Texture2D" uid="uid://uaw0uagkafbx" path="res://images/mini_boss_animation/Idle/Bringer-of-Death_Idle_8.png" id="20_mkror"]
+[ext_resource type="Texture2D" uid="uid://bh0gna5ma8jxv" path="res://images/mini_boss_animation/Hurt/Bringer-of-Death_Hurt_1.png" id="21_0qvu7"]
+[ext_resource type="Texture2D" uid="uid://dha7k06rpvmck" path="res://images/mini_boss_animation/Hurt/Bringer-of-Death_Hurt_2.png" id="22_wgmxv"]
+[ext_resource type="Texture2D" uid="uid://bkx1rni7g7nld" path="res://images/mini_boss_animation/Hurt/Bringer-of-Death_Hurt_3.png" id="23_52612"]
+[ext_resource type="Texture2D" uid="uid://bn1us0xo1fu2a" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_1.png" id="24_58v1h"]
+[ext_resource type="Texture2D" uid="uid://c6kmrvvq42gwp" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_2.png" id="25_o0j8n"]
+[ext_resource type="Texture2D" uid="uid://csasxx0c7krys" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_3.png" id="26_ian0s"]
+[ext_resource type="Texture2D" uid="uid://c3ufedjy56qdn" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_4.png" id="27_pt6j6"]
+[ext_resource type="Texture2D" uid="uid://curxnx3r4b2au" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_5.png" id="28_7pl4x"]
+[ext_resource type="Texture2D" uid="uid://dgwtajahbvvd1" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_6.png" id="29_lfmkq"]
+[ext_resource type="Texture2D" uid="uid://ckcbi45o46ch7" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_7.png" id="30_v7h6d"]
+[ext_resource type="Texture2D" uid="uid://k245mfbwnunu" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_8.png" id="31_nw4bf"]
+[ext_resource type="Texture2D" uid="uid://3wskxfhwxsgs" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_9.png" id="32_cl7ru"]
+[ext_resource type="Texture2D" uid="uid://dc746db2su4qt" path="res://images/mini_boss_animation/Attack/Bringer-of-Death_Attack_10.png" id="33_1mkoh"]
+[ext_resource type="Script" path="res://scripts/block_area.gd" id="37_27xu5"]
+[ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="58_jmf74"]
+[ext_resource type="PackedScene" uid="uid://3dgjw804ujxh" path="res://scenes/boss_level_components/code_page.tscn" id="59_i7eb1"]
+[ext_resource type="PackedScene" uid="uid://dsasgdttawdlw" path="res://scenes/boss_level_components/quiz_page.tscn" id="60_dknki"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cguhy"]
+size = Vector2(963, 644)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rqvw"]
+size = Vector2(961, 641.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvki5"]
+size = Vector2(119.5, 643.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ebl7p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_uoj6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0pk3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lwmux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sg3gp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_elh41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_w76ts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tvpyf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1w75d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jdpmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_s2uir")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_88rm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ur051")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_lyghs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0wef5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_rtl0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_fqg0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_pm3t0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mkror")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_0qvu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_wgmxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_52612")
+}],
+"loop": false,
+"name": &"right_answer",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_58v1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_o0j8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ian0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_pt6j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_7pl4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_lfmkq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_v7h6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_nw4bf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_cl7ru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_1mkoh")
+}],
+"loop": false,
+"name": &"wrong_answer",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eocmm"]
+bg_color = Color(0.376471, 0, 0.682353, 1)
+
+[sub_resource type="Animation" id="Animation_2vdb3"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_fv11m"]
+resource_name = "shake_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("boss_encounter_area/boss_level_window:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-566, -538), Vector2(-576, -538), Vector2(-556, -538), Vector2(-606, -538), Vector2(-576, -538), Vector2(-566, -538)]
+}
+
+[sub_resource type="Animation" id="Animation_i86ek"]
+resource_name = "display_window"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("boss_encounter_area/boss_level_window:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_cwsnv"]
+resource_name = "dissolve_window"
+length = 2.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("boss_encounter_area/boss_level_window:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bqsxn"]
+resource_name = "quiz_to_code"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("boss_encounter_area/boss_level_window/quiz_page:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("boss_encounter_area/boss_level_window/code_page:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.1, 2.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vb8hw"]
+_data = {
+"RESET": SubResource("Animation_2vdb3"),
+"block_area": SubResource("Animation_fv11m"),
+"display_window": SubResource("Animation_i86ek"),
+"dissolve_window": SubResource("Animation_cwsnv"),
+"quiz_to_code": SubResource("Animation_bqsxn")
+}
+
+[node name="mini_boss_level" type="Node2D"]
+position = Vector2(567, 589)
+script = ExtResource("1_6h3co")
+
+[node name="block_area" type="StaticBody2D" parent="."]
+script = ExtResource("37_27xu5")
+
+[node name="area_2d" type="Area2D" parent="block_area"]
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="block_area/area_2d"]
+show_behind_parent = true
+position = Vector2(39.5, -267)
+shape = SubResource("RectangleShape2D_cguhy")
+debug_color = Color(0.992157, 0, 0.278431, 0.0352941)
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="block_area"]
+show_behind_parent = true
+position = Vector2(38.5, -267)
+shape = SubResource("RectangleShape2D_4rqvw")
+debug_color = Color(1, 0.243137, 0.27451, 0.341176)
+
+[node name="boss_encounter_area" type="Area2D" parent="."]
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="boss_encounter_area"]
+show_behind_parent = true
+position = Vector2(-506.75, -268)
+shape = SubResource("RectangleShape2D_uvki5")
+
+[node name="animated_sprite_2d" type="AnimatedSprite2D" parent="boss_encounter_area"]
+position = Vector2(234, -107)
+scale = Vector2(3.28571, 3.50538)
+sprite_frames = SubResource("SpriteFrames_ebl7p")
+animation = &"wrong_answer"
+
+[node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("58_jmf74")]
+modulate = Color(1, 1, 1, 0)
+show_behind_parent = true
+offset_left = -566.0
+offset_top = -538.0
+offset_right = 588.0
+offset_bottom = 110.0
+scale = Vector2(0.8, 0.8)
+metadata/_edit_group_ = true
+
+[node name="quiz_page" parent="boss_encounter_area/boss_level_window" instance=ExtResource("60_dknki")]
+layout_mode = 1
+
+[node name="code_page" parent="boss_encounter_area/boss_level_window" instance=ExtResource("59_i7eb1")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+anchors_preset = 0
+offset_left = -2.0
+offset_top = -4.0
+offset_right = -1.0
+
+[node name="health_bar" type="ProgressBar" parent="boss_encounter_area/boss_level_window"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 16.0
+offset_right = 302.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_eocmm")
+
+[node name="animation_player" type="AnimationPlayer" parent="boss_encounter_area"]
+root_node = NodePath("../..")
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_vb8hw")
+}
+
+[connection signal="all_correct" from="boss_encounter_area/boss_level_window/code_page" to="." method="_on_code_page_all_correct"]
