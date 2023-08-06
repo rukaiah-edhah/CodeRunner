@@ -15,6 +15,10 @@ run/main_scene="res://scenes/shifu.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 ">>>>>>>main[autoload]BossManager"="*res://singleton/boss_manager.gd"
 
+[autoload]
+
+BossManager="*res://singleton/boss_manager.gd"
+
 [display]
 
 window/stretch/mode="viewport"
