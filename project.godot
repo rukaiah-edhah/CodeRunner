@@ -18,6 +18,7 @@ config/features=PackedStringArray("4.0", "GL Compatibility")
 [autoload]
 
 BossManager="*res://singleton/boss_manager.gd"
+StaticData="*res://singleton/static_data.gd"
 
 [display]
 
