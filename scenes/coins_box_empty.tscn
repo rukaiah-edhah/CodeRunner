@@ -1,0 +1,78 @@
+[gd_scene load_steps=9 format=3 uid="uid://c4u1kl48fqk6u"]
+
+[ext_resource type="Script" path="res://scripts/coins_box.gd" id="1_obsr7"]
+[ext_resource type="Texture2D" uid="uid://bmn0u8b0nw6c5" path="res://images/coin_box_empty /1.png" id="2_nst8f"]
+[ext_resource type="Texture2D" uid="uid://bp38q60v3gcqv" path="res://images/coin_box_empty /3.png" id="3_s0gnc"]
+[ext_resource type="Texture2D" uid="uid://c8xxtkkpqtbtp" path="res://images/coin_box_empty /5.png" id="4_7ue0x"]
+[ext_resource type="Texture2D" uid="uid://bgi5rbhu2ambg" path="res://images/coin_box_empty /2.png" id="5_ucmvr"]
+[ext_resource type="Texture2D" uid="uid://bhxsbnmp5dck2" path="res://images/coin_box_empty /4.png" id="6_4uapv"]
+[ext_resource type="PackedScene" uid="uid://divgbcotp0d8v" path="res://scenes/coin.tscn" id="7_w5jc5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fi3hw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nst8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_s0gnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7ue0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ucmvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4uapv")
+}],
+"loop": false,
+"name": &"coin_box",
+"speed": 5.0
+}]
+
+[node name="coins_box_empty" type="Area2D"]
+position = Vector2(0, 1)
+script = ExtResource("1_obsr7")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(1.00024, -4)
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(1.39996, 0.599998)
+polygon = PackedVector2Array(-2.00024, -26, 17.9998, -23, 24.9998, -19, 27.9998, -10, 28.9998, 16, 4.99976, 25, -29.0002, 16, -28.0002, -12, -26.0002, -19, -21.0002, -25, -13.0002, -27)
+
+[node name="coin_box" type="AnimatedSprite2D" parent="."]
+show_behind_parent = true
+texture_filter = 4
+position = Vector2(2.4002, -5.4)
+scale = Vector2(0.329507, 0.361542)
+sprite_frames = SubResource("SpriteFrames_fi3hw")
+animation = &"coin_box"
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(3.4002, -6.4)
+polygon = PackedVector2Array(28, 18, 29, 4, 27, -9, 23, -16, 13, -19, -8, -23, -18, -22, -24, -17, -27, -9, -29, -4, -28, 6, -29, 18, -17, 22, -5, 26, 7, 28, 19, 24, 29, 21)
+
+[node name="coins" type="Node2D" parent="."]
+position = Vector2(2, -2)
+
+[node name="coin" parent="coins" instance=ExtResource("7_w5jc5")]
+position = Vector2(-66, -2)
+
+[node name="coin2" parent="coins" instance=ExtResource("7_w5jc5")]
+position = Vector2(-103, -2)
+
+[node name="coin3" parent="coins" instance=ExtResource("7_w5jc5")]
+position = Vector2(-140, -1)
+
+[node name="coin4" parent="coins" instance=ExtResource("7_w5jc5")]
+position = Vector2(60, -1)
+
+[node name="coin5" parent="coins" instance=ExtResource("7_w5jc5")]
+position = Vector2(100, -1)
+
+[node name="coin6" parent="coins" instance=ExtResource("7_w5jc5")]
+position = Vector2(137, -1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
