@@ -306,7 +306,7 @@ animations = [{
 [node name="player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_ra8ml")
 
-[node name="teleportation_area_2d" type="Area2D" parent="."]
+[node name="teleportation_area_2d" type="Area2D" parent="." groups=["player"]]
 
 [node name="collision_shape_2d" type="CollisionPolygon2D" parent="teleportation_area_2d"]
 position = Vector2(-5, -2)

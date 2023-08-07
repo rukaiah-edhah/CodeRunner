@@ -11,6 +11,7 @@ extends CharacterBody2D
 var coins = 0
 var jump_count = 0
 var double_jump = 2
+var can_move = true
 
 var _font = preload("res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf")
 
@@ -57,7 +58,10 @@ func _process(_delta):
         _animation.play("idle")
     
 func _physics_process(_delta):
-    # set velocity to max out at 1,000
+    if not can_move:
+        return
+   
+# set velocity to max out at 1,000
     if !is_on_floor():
         velocity.y += gravity
         if velocity.y > 1000:
@@ -81,8 +85,16 @@ func _physics_process(_delta):
     velocity.x = speed * horizontal_direction
     
     move_and_slide()
-    
 
+# __________________________ Added by Rukaiah ______________________
+func disable_movement():
+    can_move = false
+    velocity = Vector2(0, 0)   
+
+func enable_movement():
+    can_move = true
+# ___________________________________________________________________
+    
 func _damage():
     # let player take damage and set health bar accordingly
     health -= 20
@@ -138,5 +150,3 @@ func save():
         "pos_y" : position.y
         }
     return save_dict
-
-

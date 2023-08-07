@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://72gp0ct0f57p"]
+
+[ext_resource type="Script" path="res://scripts/spacship_teleportation.gd" id="1_d82ot"]
+[ext_resource type="Texture2D" uid="uid://d0hm1lxi36w4d" path="res://images/alien_planet /spacship_1.png" id="1_m37xu"]
+[ext_resource type="Texture2D" uid="uid://chqfocahtmf45" path="res://images/alien_planet /light_beam.png" id="2_0st2i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w0k16"]
+size = Vector2(75.7361, 319.681)
+
+[sub_resource type="Animation" id="Animation_05nff"]
+resource_name = "light_effect"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("light_beam:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lgrsb"]
+_data = {
+"light_effect": SubResource("Animation_05nff")
+}
+
+[node name="spacship_teleportation" type="Area2D"]
+script = ExtResource("1_d82ot")
+
+[node name="spacship_sprite" type="Sprite2D" parent="."]
+position = Vector2(-9, -35.75)
+scale = Vector2(1.4338, 1.98864)
+texture = ExtResource("1_m37xu")
+
+[node name="light_beam" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-8.49999, 34.5)
+scale = Vector2(1.70408, 2.18089)
+texture = ExtResource("2_0st2i")
+
+[node name="movement_block_area" type="CollisionShape2D" parent="."]
+position = Vector2(104, 23)
+scale = Vector2(1.58445, 2.1584)
+shape = SubResource("RectangleShape2D_w0k16")
+debug_color = Color(0.909804, 0.164706, 0.611765, 0.419608)
+
+[node name="timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="anim_spacship" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_lgrsb")
+}
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
