@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://bjr3f6oxwl481"]
+[gd_scene load_steps=71 format=3 uid="uid://bjr3f6oxwl481"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ra8ml"]
 [ext_resource type="Texture2D" uid="uid://bb7b43ff3vjjv" path="res://images/player/white/defend/__all_white_spaceman_defend_000.png" id="2_v8lgr"]
@@ -69,14 +69,6 @@
 [ext_resource type="Texture2D" uid="uid://bfyp7f7mh0igu" path="res://images/player/white/shoot/__all_white_spaceman_shoot_005.png" id="52_f5cba"]
 [ext_resource type="Texture2D" uid="uid://dwvtvkhbdi26b" path="res://images/player/white/shoot/__all_white_spaceman_shoot_006.png" id="53_wnr82"]
 [ext_resource type="Texture2D" uid="uid://b4ojthufom3l2" path="res://images/player/white/shoot/__all_white_spaceman_shoot_007.png" id="54_xw7lo"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_np7yk"]
-radius = 46.0
-height = 192.0
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wgc3y"]
-radius = 46.0
-height = 200.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fq2uv"]
 animations = [{
@@ -316,15 +308,9 @@ script = ExtResource("1_ra8ml")
 
 [node name="teleportation_area_2d" type="Area2D" parent="."]
 
-[node name="collision_shape_2d" type="CollisionShape2D" parent="teleportation_area_2d"]
+[node name="collision_shape_2d" type="CollisionPolygon2D" parent="teleportation_area_2d"]
 position = Vector2(-5, -2)
-shape = SubResource("CapsuleShape2D_np7yk")
-debug_color = Color(0.886275, 0, 0.8, 0.419608)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5, -2)
-shape = SubResource("CapsuleShape2D_wgc3y")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
+polygon = PackedVector2Array(19, -122, 27, -120, 27, -120, 40, -117, 50, -112, 60, -106, 64, -97, 69, -85, 72, -69, 71, -57, 68, -46, 63, -37, 54, -26, 47, -21, 48, -16, 46, -12, 39, -9, 36, 6, 37, 11, 37, 17, 40, 28, 43, 28, 46, 31, 47, 38, 51, 42, 51, 45, 49, 48, 39, 55, 34, 55, 32, 51, 32, 62, 33, 65, 32, 80, 37, 81, 43, 82, 46, 90, 48, 99, 45, 101, 23, 101, 19, 100, 14, 103, -5, 103, -10, 102, -19, 102, -25, 98, -27, 92, -26, 84, -28, 80, -28, 65, -31, 63, -34, 53, -39, 52, -42, 48, -42, 33, -39, 30, -42, 13, -40, 1, -43, -4, -37, -22, -35, -32, -45, -40, -52, -53, -52, -64, -49, -76, -40, -88, -27, -97, -17, -108, -6, -113, 3, -118)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(3, -20)
@@ -333,6 +319,10 @@ sprite_frames = SubResource("SpriteFrames_fq2uv")
 animation = &"shoot "
 autoplay = "idle"
 flip_h = true
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-5, -2)
+polygon = PackedVector2Array(9, -120, 20, -121, 36, -119, 54, -111, 64, -98, 69, -85, 71, -70, 71, -52, 65, -40, 59, -30, 47, -21, 48, -16, 44, -10, 40, -8, 36, 6, 40, 25, 45, 30, 48, 37, 52, 43, 47, 51, 39, 56, 35, 56, 33, 52, 34, 68, 32, 80, 37, 80, 44, 82, 47, 91, 47, 99, 45, 101, 22, 102, 19, 100, 18, 100, 16, 102, 14, 103, -7, 103, -10, 102, -15, 102, -20, 102, -21, 98, -25, 98, -26, 92, -27, 82, -28, 65, -31, 63, -34, 52, -40, 52, -42, 46, -41, 34, -39, 31, -41, 20, -41, 11, -40, 0, -43, -4, -36, -20, -34, -31, -43, -37, -51, -50, -52, -70, -48, -78, -39, -87, -35, -93, -27, -97, -18, -105, -5, -113)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(420, -208)

@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://yv4q2ayft2mq"]
+[gd_scene load_steps=9 format=3 uid="uid://yv4q2ayft2mq"]
 
 [ext_resource type="Shader" path="res://shader/shifu.gdshader" id="1_igpjf"]
-[ext_resource type="Texture2D" uid="uid://ckuyd6cix2awb" path="res://images/Shifu/29639A34-714A-477D-87E1-46586334043D.png" id="2_jepwg"]
+[ext_resource type="Texture2D" uid="uid://x371i122q021" path="res://images/Shifu/29639A34-714A-477D-87E1-46586334043D.png" id="2_jepwg"]
+[ext_resource type="Script" path="res://scripts/block_area.gd" id="3_q4hv6"]
+[ext_resource type="Script" path="res://scripts/shifu.gd" id="3_srjvk"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_efea5"]
 shader = ExtResource("1_igpjf")
@@ -16,11 +18,33 @@ shader_parameter/effect_factor = 0.4
 [sub_resource type="CircleShape2D" id="CircleShape2D_pfidp"]
 radius = 333.27
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_t36sk"]
+radius = 314.235
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_niluo"]
+radius = 313.938
+
 [node name="Sprite2D" type="Sprite2D"]
 material = SubResource("ShaderMaterial_efea5")
 position = Vector2(488.75, 323.75)
 scale = Vector2(0.959459, 0.888013)
 texture = ExtResource("2_jepwg")
+script = ExtResource("3_srjvk")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="encounter_area" type="Area2D" parent="."]
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="encounter_area"]
 shape = SubResource("CircleShape2D_pfidp")
+
+[node name="block_area" type="StaticBody2D" parent="."]
+script = ExtResource("3_q4hv6")
+
+[node name="area_2d" type="Area2D" parent="block_area"]
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="block_area/area_2d"]
+shape = SubResource("CircleShape2D_t36sk")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="block_area"]
+shape = SubResource("CircleShape2D_niluo")
+debug_color = Color(1, 0.0627451, 0.247059, 0.419608)

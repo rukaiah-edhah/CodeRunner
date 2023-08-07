@@ -41,7 +41,7 @@
 size = Vector2(963, 644)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4rqvw"]
-size = Vector2(961, 641.5)
+size = Vector2(958, 640.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvki5"]
 size = Vector2(119.5, 643.5)
@@ -169,7 +169,7 @@ bg_color = Color(0.376471, 0, 0.682353, 1)
 length = 0.001
 
 [sub_resource type="Animation" id="Animation_fv11m"]
-resource_name = "shake_animation"
+resource_name = "block_area"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -181,22 +181,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(-566, -538), Vector2(-576, -538), Vector2(-556, -538), Vector2(-606, -538), Vector2(-576, -538), Vector2(-566, -538)]
-}
-
-[sub_resource type="Animation" id="Animation_i86ek"]
-resource_name = "display_window"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("boss_encounter_area/boss_level_window:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.8),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_cwsnv"]
@@ -243,11 +227,27 @@ tracks/1/keys = {
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
+[sub_resource type="Animation" id="Animation_j55cl"]
+resource_name = "display_window"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("boss_encounter_area/boss_level_window:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vb8hw"]
 _data = {
 "RESET": SubResource("Animation_2vdb3"),
 "block_area": SubResource("Animation_fv11m"),
-"display_window": SubResource("Animation_i86ek"),
+"display_window": SubResource("Animation_j55cl"),
 "dissolve_window": SubResource("Animation_cwsnv"),
 "quiz_to_code": SubResource("Animation_bqsxn")
 }
@@ -269,7 +269,7 @@ debug_color = Color(0.992157, 0, 0.278431, 0.0352941)
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="block_area"]
 show_behind_parent = true
-position = Vector2(38.5, -267)
+position = Vector2(40, -266.625)
 shape = SubResource("RectangleShape2D_4rqvw")
 debug_color = Color(1, 0.243137, 0.27451, 0.341176)
 
@@ -317,6 +317,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/background = SubResource("StyleBoxFlat_eocmm")
 
 [node name="animation_player" type="AnimationPlayer" parent="boss_encounter_area"]
+process_priority = 2
 root_node = NodePath("../..")
 reset_on_save = false
 libraries = {
