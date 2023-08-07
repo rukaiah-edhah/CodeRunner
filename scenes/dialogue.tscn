@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://oeaisxo7osqs"]
 
-[ext_resource type="Texture2D" uid="uid://pxkktxsrwcj5" path="res://images/juicy-rounded-rectangle-1.png" id="1_m7ayx"]
-[ext_resource type="Script" path="res://scripts/Dialogue.gd" id="1_vdee1"]
-[ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="3_bw4iu"]
-[ext_resource type="Texture2D" uid="uid://wqv73ur1pk7h" path="res://images/arrow.png" id="3_ogigf"]
+[ext_resource type="Script" path="res://scripts/dialog.gd" id="1_4owgk"]
+[ext_resource type="Texture2D" uid="uid://me0ci0wx0ot8" path="res://images/juicy-rounded-rectangle-1.png" id="1_m7ayx"]
+[ext_resource type="FontFile" uid="uid://cukhtv1mgs6fw" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="3_bw4iu"]
+[ext_resource type="Texture2D" uid="uid://b6s01bdlq0uhe" path="res://images/arrow.png" id="3_ogigf"]
 
 [node name="dialog_box" type="Control"]
 layout_mode = 3
@@ -16,7 +16,7 @@ offset_right = -328.0
 offset_bottom = -231.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_vdee1")
+script = ExtResource("1_4owgk")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
