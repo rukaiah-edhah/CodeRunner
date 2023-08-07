@@ -1,16 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://bd5dtr8w5pv4d"]
+[gd_scene load_steps=11 format=3 uid="uid://bd5dtr8w5pv4d"]
 
 [ext_resource type="Script" path="res://scripts/code_page_2.gd" id="1_jf2no"]
-[ext_resource type="FontFile" uid="uid://cd0wcggadutaq" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="2_px6hw"]
-[ext_resource type="FontFile" uid="uid://py8r0bc1bcmb" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="3_c5cq3"]
+[ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="3_c5cq3"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tu174"]
-font = ExtResource("2_px6hw")
+font = ExtResource("3_c5cq3")
 font_size = 20
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
-font = ExtResource("2_px6hw")
+font = ExtResource("3_c5cq3")
 font_size = 20
 font_color = Color(0.65098, 0.384314, 1, 1)
 
@@ -19,7 +18,7 @@ font = ExtResource("3_c5cq3")
 font_size = 20
 
 [sub_resource type="LabelSettings" id="LabelSettings_dv4lf"]
-font = ExtResource("2_px6hw")
+font = ExtResource("3_c5cq3")
 font_size = 20
 font_color = Color(1, 1, 1, 0.25098)
 
@@ -169,7 +168,7 @@ offset_left = 234.0
 offset_top = 135.0
 offset_right = 299.0
 offset_bottom = 165.0
-theme_override_fonts/font = ExtResource("2_px6hw")
+theme_override_fonts/font = ExtResource("3_c5cq3")
 item_count = 4
 popup/item_0/text = "-"
 popup/item_0/id = 0
@@ -186,7 +185,7 @@ offset_left = 263.0
 offset_top = 191.0
 offset_right = 330.062
 offset_bottom = 222.0
-theme_override_fonts/font = ExtResource("2_px6hw")
+theme_override_fonts/font = ExtResource("3_c5cq3")
 item_count = 4
 popup/item_0/text = "-"
 popup/item_0/id = 0

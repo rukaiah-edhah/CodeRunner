@@ -12,7 +12,7 @@ var coins = 0
 var jump_count = 0
 var double_jump = 2
 
-var _font = preload("res://fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf")
+var _font = preload("res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf")
 
 # variables for colors for the healthbar
 var red_health = preload("res://images/red.png")
@@ -43,14 +43,16 @@ func set_health_bar():
     # set health bar to full 
     healthbar.value = health
 
-func _process(_delta):
+func _process(_delta): 
     # setting player animation to movement
     if Input.is_action_pressed("jump"):
         _animation.play("jump")
     elif Input.is_action_pressed("move_left"):
-        _animation.play("walk_left")
+        _animation.play("walk")
+        _animation.flip_h = false
     elif Input.is_action_pressed("move_right"):
-        _animation.play("walk_right")
+        _animation.flip_h = true
+        _animation.play("walk")
     else:
         _animation.play("idle")
     
@@ -106,8 +108,10 @@ func _on_coin_coin_inventory_changed():
 #_________________________________________Added by Rukaiah__________________________________________
 func _on_mini_boss_level_wrong_answer(): # Connect the signal wrong_answer to this function in main 
     # The reduction of health and coins per wrong answer can be adjusted below
+    _animation.play("hurt") # NOT WORKING
+    print("Trying to play hurt animation") 
     health -= 3
-    coins -= 3  
+    coins -= 3 
     if health <= 0:
         health = 0
         _damage() # Replace it with the function that handles the death of the player
@@ -119,6 +123,7 @@ func _on_mini_boss_level_wrong_answer(): # Connect the signal wrong_answer to th
 
 func _on_mini_boss_level_all_correct(): # Connect the signal all_correct to this function in maih
     if health < 100: 
+        _animation.play("shoot") # NOT WORKING 
         health = 100  # I am restoring the player's health to full if all answers are correct, but we can only add specific numbers if we wish
     coins += 100
     update_healthbar(health)  # make sure to update the health bar
@@ -133,3 +138,5 @@ func save():
         "pos_y" : position.y
         }
     return save_dict
+
+

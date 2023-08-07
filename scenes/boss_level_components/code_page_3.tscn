@@ -1,15 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://cubylg73cjrd3"]
+[gd_scene load_steps=10 format=3 uid="uid://cubylg73cjrd3"]
 
-[ext_resource type="FontFile" uid="uid://cd0wcggadutaq" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="1_xn5o0"]
-[ext_resource type="FontFile" uid="uid://py8r0bc1bcmb" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="2_3ek4h"]
+[ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="2_3ek4h"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tu174"]
-font = ExtResource("1_xn5o0")
+font = ExtResource("2_3ek4h")
 font_size = 20
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
-font = ExtResource("1_xn5o0")
+font = ExtResource("2_3ek4h")
 font_size = 20
 font_color = Color(0, 0.639216, 0.94902, 1)
 
@@ -18,7 +17,7 @@ font = ExtResource("2_3ek4h")
 font_size = 20
 
 [sub_resource type="LabelSettings" id="LabelSettings_dv4lf"]
-font = ExtResource("1_xn5o0")
+font = ExtResource("2_3ek4h")
 font_size = 20
 font_color = Color(1, 1, 1, 0.25098)
 

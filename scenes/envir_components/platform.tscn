@@ -1,17 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://bomr167vu3rbe"]
+[gd_scene load_steps=2 format=3 uid="uid://bomr167vu3rbe"]
 
-[ext_resource type="Texture2D" uid="uid://bq4abpjwayjn4" path="res://images/grey_block.png" id="1_4kysx"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tr47l"]
-size = Vector2(346, 46)
+[ext_resource type="Texture2D" uid="uid://2jpe5c1skv1f" path="res://images/alien_planet /platform.png" id="1_737dc"]
 
 [node name="platform" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(155, 6)
-scale = Vector2(5.235, 0.697)
-texture = ExtResource("1_4kysx")
+position = Vector2(154, 43)
+scale = Vector2(2.32895, 2.79412)
+texture = ExtResource("1_737dc")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(155, 6)
-shape = SubResource("RectangleShape2D_tr47l")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(154, 43)
+scale = Vector2(2.32895, 2.79412)
+polygon = PackedVector2Array(-0.858757, -19.6842, 18.0339, -18.6105, 32.6328, -18.9684, 46.3729, -19.6842, 60.5424, -16.1053, 74.7119, -11.4526, 70.8475, -4.65263, 54.5311, -3.22105, 49.3785, -1.78948, 47.661, 3.93684, 45.5141, 9.30526, 44.226, 14.3158, 36.0678, 15.0316, 32.2034, 15.3895, 30.4859, 23.2632, 26.1921, 29.7053, 21.0396, 32.2105, 12.0226, 34, -5.15254, 32.5684, -11.1638, 30.421, -19.7514, 29.3474, -36.9265, 21.4737, -42.0791, 17.5368, -49.8079, 14.6737, -54.1017, 9.66315, -61.8305, -0.357897, -67.4124, -6.44211, -72.1356, -10.3789, -73, -12.4, -76, -16.6, -76, -23.6211, -70.8474, -24.3368, -67.4124, -24.6947, -60.5424, -25.4105, -45.9435, -25.4105, -14.5989, -20.7579)

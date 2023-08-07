@@ -1,16 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://3dgjw804ujxh"]
+[gd_scene load_steps=11 format=3 uid="uid://3dgjw804ujxh"]
 
 [ext_resource type="Script" path="res://scripts/code_page.gd" id="1_ovf4u"]
-[ext_resource type="FontFile" uid="uid://cd0wcggadutaq" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="2_cnjwn"]
-[ext_resource type="FontFile" uid="uid://py8r0bc1bcmb" path="res://fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="3_powp7"]
+[ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="3_powp7"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tu174"]
-font = ExtResource("2_cnjwn")
+font = ExtResource("3_powp7")
 font_size = 20
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
-font = ExtResource("2_cnjwn")
+font = ExtResource("3_powp7")
 font_size = 20
 font_color = Color(0.65098, 0.384314, 1, 1)
 
@@ -19,7 +18,7 @@ font = ExtResource("3_powp7")
 font_size = 20
 
 [sub_resource type="LabelSettings" id="LabelSettings_dv4lf"]
-font = ExtResource("2_cnjwn")
+font = ExtResource("3_powp7")
 font_size = 20
 font_color = Color(1, 1, 1, 0.615686)
 
@@ -173,7 +172,7 @@ offset_left = 226.0
 offset_top = 133.0
 offset_right = 307.25
 offset_bottom = 164.0
-theme_override_fonts/font = ExtResource("2_cnjwn")
+theme_override_fonts/font = ExtResource("3_powp7")
 
 [node name="player_answer2" type="LineEdit" parent="background_color/code_container/panel"]
 layout_mode = 2
@@ -181,7 +180,7 @@ offset_left = 264.0
 offset_top = 192.0
 offset_right = 345.25
 offset_bottom = 223.0
-theme_override_fonts/font = ExtResource("2_cnjwn")
+theme_override_fonts/font = ExtResource("3_powp7")
 
 [node name="feedback_conatiner" type="VBoxContainer" parent="background_color"]
 layout_mode = 2

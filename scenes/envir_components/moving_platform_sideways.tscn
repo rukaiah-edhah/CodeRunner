@@ -1,10 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ohfi2qlykajt"]
+[gd_scene load_steps=3 format=3 uid="uid://ohfi2qlykajt"]
 
 [ext_resource type="Script" path="res://Scripts/moving_platform_sideways.gd" id="1_tjtm3"]
-[ext_resource type="Texture2D" uid="uid://bq4abpjwayjn4" path="res://images/grey_block.png" id="2_fslar"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b0b8g"]
-size = Vector2(460, 45.5)
+[ext_resource type="Texture2D" uid="uid://cl55j35xe0ho3" path="res://images/alien_planet /platform_2.png" id="2_5sonp"]
 
 [node name="moving_platform_sideways" type="AnimatableBody2D"]
 position = Vector2(-14, -10)
@@ -14,10 +11,11 @@ debug = false
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(230, 17)
-scale = Vector2(6.97, 0.697)
-texture = ExtResource("2_fslar")
+position = Vector2(233.5, 9.49999)
+scale = Vector2(2.25373, 2.76613)
+texture = ExtResource("2_5sonp")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(230, 17.25)
-shape = SubResource("RectangleShape2D_b0b8g")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(233.5, 9.49999)
+scale = Vector2(2.25373, 2.76613)
+polygon = PackedVector2Array(-5.10265, -9.94169, 3.32782, -10.3032, 5.99007, -11.0262, 12.6457, -9.94169, 15.7517, -11.0262, 18.8576, -11.3878, 30.8378, -9.21866, 37.4934, -3.79592, 36.606, 3.43441, 67.2218, 2.71137, 101.387, 1.62683, 96.5066, 7.7726, 90.7384, 10.3032, 85.4139, 12.4723, 67.6656, 29.8251, 63.2285, 32.3557, 60.1225, 34.8863, 53.4669, 36.6939, 50.3609, 39.586, 47.6987, 43.9242, 46.8113, 47.5394, 45.9238, 51.1545, 42.3742, 52.9621, 39.2682, 55.4927, 34.3874, 55.1312, 26.8444, 53.6851, 24.6258, 48.2624, 21.9636, 44.2857, 10.8709, 58.7464, -4.65894, 62, -24.6258, 57.3003, -35.7185, 54.7697, -39.2682, 50.793, -48.5861, 48.6239, -58.7914, 47.5394, -70.3278, 35.9708, -82.7516, 21.5102, -88.9636, 21.8717, -92.9569, 18.2566, -96.5066, 13.9184, -99.1689, 8.85715, -99.6126, 3.43441, -91.1821, 0.542277, -71.6589, -6.68804, -43.7053, -8.49562, -38.8245, -8.49562, -29.9503, -9.94169, -23.7384, -9.58017, -15.3079, -9.58017)
