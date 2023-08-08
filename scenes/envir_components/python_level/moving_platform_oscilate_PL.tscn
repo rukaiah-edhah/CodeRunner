@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://dfewuq08k2mdv"]
 
 [ext_resource type="Script" path="res://Scripts/moving_platform_oscilate.gd" id="1_wtwoa"]
-[ext_resource type="Texture2D" uid="uid://b0p00po02qy3t" path="res://images/spaceship_interior/style_2/floor.png" id="2_bw0rm"]
+[ext_resource type="Texture2D" uid="uid://ckujv33dmdbwc" path="res://images/spaceship_interior/style_2/floor.png" id="2_bw0rm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1o42j"]
 size = Vector2(383, 42)
 
 [node name="moving_platform_oscilate" type="AnimatableBody2D"]
 process_mode = 1
-position = Vector2(-12, 31)
+position = Vector2(-19, 23)
 script = ExtResource("1_wtwoa")
 distance = Vector2(10, 10)
 debug = false
