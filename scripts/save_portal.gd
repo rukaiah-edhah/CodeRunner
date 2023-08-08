@@ -6,7 +6,7 @@ func _on_body_entered(body):
 
 
 func save_game():
-	var save_game = FileAccess.open("res://savegame.save", FileAccess.WRITE_READ)
+	var save_game = FileAccess.open("res://savegame.json", FileAccess.WRITE_READ)
 	
 	var save_nodes = get_tree().get_nodes_in_group("Persist")
 	for node in save_nodes:
@@ -22,6 +22,5 @@ func save_game():
 		var node_data = node.call("save") #calling the save function with in the node
 		
 		var json_string = JSON.stringify(node_data,"", true, false) #converting dictionary to JASON
-		
-		save_game.store_line(json_string) #save the dictionary as a new line in the save_game file
+		save_game.store_string(json_string) #save the dictionary as a new line in the save_game file
 

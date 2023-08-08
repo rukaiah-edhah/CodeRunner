@@ -57,8 +57,50 @@ func _on_load_button_pressed():
 	for i in save_nodes:
 		i.queue_free()
 		
+	"""
+	#print(FileAccess.file_exists("res://savegame.save"))	
 	var save_game = FileAccess.open("res://savegame.save", FileAccess.READ)
+	
+	var json = JSON.new()
+	var content = save_game.get_as_text()
+	#print(typeof(content))
+	var json_data = json.parse(content)
+	if json_data == null:
+		print("Failed to parse JSON data.")
+		print(json_data)
+	var postion_x = json_data["pos_x"]
+	print(str(postion_x))
+	"""
+
+#print(FileAccess.file_exists("res://savegame.save")) 
+	var save_game = FileAccess.open("res://savegame.json", FileAccess.READ)
+ 
+	var json = JSON.new()
+	var content = save_game.get_as_text()
+
+	#var json_content = json.stringify(content)
+	#var json_data = json.parse(json_content)
+	var json_data = json.parse_string(content)
+	
+	if json_data == null:
+		print("Failed to parse JSON data.")
+		return
+	
+	print(json_data)
+	var file_name = json_data["filename"]
+	print(file_name)
+
+	var pos_x = json_data["pos_x"]
+	print(pos_x)
+
+	var pos_y= json_data["pos_y"]
+	print(pos_y)
+	
+	
+	
+"""
 	while save_game.get_position() < save_game.get_length():
+	
 		var json_string = save_game.get_line()
 
 		# Creates the helper class to interact with JSON
@@ -83,4 +125,4 @@ func _on_load_button_pressed():
 			if i == "filename" or i == "parent" or i == "pos_x" or i == "pos_y":
 				continue
 			new_object.set(i, node_data[i])
-
+"""
