@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://bo2vfu0vkqg3m"]
 
-[ext_resource type="Texture2D" uid="uid://d32lpjwq3qjdc" path="res://images/grey_block.png" id="1_hxknr"]
+[ext_resource type="Texture2D" uid="uid://bd16vawkbglce" path="res://images/grey_block.png" id="1_hxknr"]
 [ext_resource type="PackedScene" uid="uid://c2gdlux5l4ird" path="res://scenes/envir_components/floor.tscn" id="2_wcwcm"]
 [ext_resource type="PackedScene" uid="uid://omo1bq8e4xvo" path="res://scenes/envir_components/moving_platform_oscilate.tscn" id="3_6byng"]
 [ext_resource type="PackedScene" uid="uid://ohfi2qlykajt" path="res://scenes/envir_components/moving_platform_sideways.tscn" id="4_mp0xw"]
@@ -55,11 +55,11 @@ font_size = 24
 [node name="python_envir" type="Node2D"]
 
 [node name="tile_map" type="TileMap" parent="."]
-position = Vector2(5, 5)
+position = Vector2(7, 3)
 tile_set = SubResource("TileSet_lotx2")
 cell_quadrant_size = 33
 format = 2
-layer_0/tile_data = PackedInt32Array(0, 1, 65536, 131071, 1, 393216, 76, 1, 65536, 152, 1, 65536, 229, 1, 458752, -392969, 1, 65536, -261897, 1, 65536, -130825, 1, 65536, 247, 1, 65536, -392892, 1, 524288, 342, 1, 65536)
+layer_0/tile_data = PackedInt32Array(0, 1, 65536, 131071, 1, 393216, 76, 1, 65536, 152, 1, 65536, 229, 1, 458752, -392969, 1, 65536, -261897, 1, 65536, -130825, 1, 65536, 247, 1, 65536, -392892, 1, 524288, 342, 1, 65536, -5505024, 1, 393216, -5570558, 1, 65536, -5570481, 1, 65536, -5570404, 1, 65536, -5636067, 1, 458752, -6094799, 1, 458752, -6553530, 1, 458752)
 
 [node name="player" parent="." instance=ExtResource("8_d8gj5")]
 position = Vector2(615, -363)

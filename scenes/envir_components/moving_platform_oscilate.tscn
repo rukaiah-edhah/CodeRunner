@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://omo1bq8e4xvo"]
 
 [ext_resource type="Script" path="res://Scripts/moving_platform_oscilate.gd" id="1_5rini"]
-[ext_resource type="Texture2D" uid="uid://c7ah5q1hvm808" path="res://images/alien_planet /platform_3.png" id="2_kdk2w"]
+[ext_resource type="Texture2D" uid="uid://3buo17mb2ild" path="res://images/alien_planet /platform_3.png" id="2_kdk2w"]
 
 [node name="moving_platform_oscilate" type="AnimatableBody2D"]
 process_mode = 1
