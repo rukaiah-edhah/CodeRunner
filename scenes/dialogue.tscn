@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://oeaisxo7osqs"]
 
 [ext_resource type="Script" path="res://scripts/dialogue.gd" id="1_qkm1a"]
-[ext_resource type="Texture2D" uid="uid://b562inkdnpvh7" path="res://images/learning_material_boxes/yellow.png" id="2_1kahy"]
-[ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="3_i62jg"]
-[ext_resource type="Texture2D" uid="uid://c61vkjdl8heew" path="res://images/learning_material_boxes/arrow_yellow.png" id="4_3kf4v"]
+[ext_resource type="Texture2D" uid="uid://caystgpmhlxwt" path="res://images/learning_material_boxes/yellow.png" id="2_1kahy"]
+[ext_resource type="FontFile" uid="uid://dlgx5iqpx7pfl" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="3_i62jg"]
+[ext_resource type="Texture2D" uid="uid://b5c31g06cjjjo" path="res://images/learning_material_boxes/arrow_yellow.png" id="4_3kf4v"]
 [ext_resource type="Script" path="res://scripts/block_area.gd" id="5_6s2oh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8j3br"]
