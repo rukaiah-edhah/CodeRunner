@@ -7,10 +7,10 @@
 [ext_resource type="Script" path="res://scripts/block_area.gd" id="5_6s2oh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8j3br"]
-size = Vector2(416, 829)
+size = Vector2(705, 844)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hc6bu"]
-size = Vector2(402, 831)
+size = Vector2(672, 843.5)
 
 [sub_resource type="Animation" id="Animation_052qw"]
 resource_name = "display "
@@ -80,6 +80,7 @@ grow_vertical = 2
 script = ExtResource("1_qkm1a")
 
 [node name="dialogue_box_sprite" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.947368)
 layout_mode = 0
 offset_left = -99.0
 offset_top = 27.0
@@ -121,12 +122,12 @@ script = ExtResource("5_6s2oh")
 [node name="area_2d" type="Area2D" parent="block_area"]
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="block_area/area_2d"]
-position = Vector2(515, 211.5)
+position = Vector2(370.5, 219)
 shape = SubResource("RectangleShape2D_8j3br")
 debug_color = Color(0.788235, 0, 0.0196078, 0.419608)
 
 [node name="collision_shape_2d" type="CollisionShape2D" parent="block_area"]
-position = Vector2(513, 213)
+position = Vector2(378, 219.25)
 shape = SubResource("RectangleShape2D_hc6bu")
 debug_color = Color(0, 0, 0, 0.0784314)
 

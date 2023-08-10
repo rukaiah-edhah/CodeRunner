@@ -49,6 +49,7 @@ func _process(_delta):
 		stop_dialogue()
 
 func start_dialogue():
+	#anim_player.play("display")
 	current_message = 0
 	display = ""
 	current_char = 0
@@ -61,8 +62,9 @@ func start_dialogue():
 func stop_dialogue():
 	# get_parent().remove_child(self)
 	if (current_message == len(messages) - 1):
-		#$Arrow.visible = true
+		anim_player.play("dissolve")
 		queue_free()
+		block_area.queue_free()
 
 func _on_next_char_timeout():
 	if (current_char < len(messages[current_message])):
@@ -99,8 +101,8 @@ func _on_block_area_player_hit():
 	
 func _on_animation_player_animation_finished(anim_name):
 	match anim_name:
-		"display_window":
+		"display":
 			is_displaying_window = false
-		"dissolve_window":
+		"dissolve":
 			is_dissolving_window = false
 #________________________________________________________________________
