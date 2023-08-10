@@ -27,6 +27,8 @@ var active = false
 @onready var dialogue_text = $dialogue_box_sprite/panel/dialogue_text
 @onready var anim_player = $AnimationPlayer
 @onready var enter_button = $dialogue_box_sprite/panel/VBoxContainer/Button
+@onready var encounter_area = $encounter_area
+@onready var example_box = $dialogue_box_sprite
 
 var current_line_visible = 0
 var dialogue_complete = false
@@ -39,15 +41,11 @@ var is_dissolving_window = false
 
 
 func _ready():
-    is_displaying_window = true
-    anim_player.play("display")
-    
+    encounter_area.body_entered.connect(_on_encounter_area_area_entered)
     block_area.player_hit.connect(_on_block_area_player_hit)
     anim_player.animation_finished.connect(_on_animation_player_animation_finished)
     
     messages = StaticData.item_data
-    #print(messages)
-    start_dialogue()
     
     enter_button.visible = false 
     dialogue_text.scroll_active = false # Disable manual scrolling
@@ -116,12 +114,17 @@ func _on_next_message_timeout():
         $next_char.start()
 
 #_____________________________Added by Rukaiah__________________________
+func _on_encounter_area_area_entered(area):
+    start_dialogue()
+    encounter_area.body_entered.disconnect(_on_encounter_area_area_entered)
+    #anim_player.play("display")
+
 func _on_button_pressed():
     if (current_message == len(messages) - 1):
         stop_dialogue()
 
 func _on_block_area_player_hit():
-    if is_dissolving_window or is_displaying_window:
+    if is_dissolving_window:
         return  
         
     anim_player.play("shake_animation")
@@ -129,8 +132,6 @@ func _on_block_area_player_hit():
     
 func _on_animation_player_animation_finished(anim_name):
     match anim_name:
-        "display":
-            is_displaying_window = false
         "dissolve":
             is_dissolving_window = false
 #________________________________________________________________________
