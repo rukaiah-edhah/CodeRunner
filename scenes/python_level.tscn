@@ -1,31 +1,34 @@
 [gd_scene load_steps=28 format=3 uid="uid://bo2vfu0vkqg3m"]
 
-[ext_resource type="Texture2D" uid="uid://bd16vawkbglce" path="res://images/grey_block.png" id="1_hxknr"]
-[ext_resource type="PackedScene" uid="uid://c2gdlux5l4ird" path="res://scenes/envir_components/floor.tscn" id="2_wcwcm"]
-[ext_resource type="PackedScene" uid="uid://omo1bq8e4xvo" path="res://scenes/envir_components/moving_platform_oscilate.tscn" id="3_6byng"]
-[ext_resource type="PackedScene" uid="uid://ohfi2qlykajt" path="res://scenes/envir_components/moving_platform_sideways.tscn" id="4_mp0xw"]
-[ext_resource type="PackedScene" uid="uid://dcoako00of7ko" path="res://scenes/envir_components/moving_platform_up_down.tscn" id="5_a6772"]
-[ext_resource type="PackedScene" uid="uid://4oe815g4xepq" path="res://scenes/envir_components/one_way_platform.tscn" id="6_cyxfq"]
-[ext_resource type="PackedScene" uid="uid://cvhh5tql6pw0l" path="res://scenes/envir_components/wall.tscn" id="7_w37s1"]
-[ext_resource type="PackedScene" uid="uid://ckaxothwj5u0w" path="res://scenes/envir_components/up_stairs.tscn" id="8_7uw6t"]
-[ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="8_d8gj5"]
-[ext_resource type="PackedScene" uid="uid://cu46u1ulhqch0" path="res://scenes/envir_components/down_stairs.tscn" id="9_naaul"]
-[ext_resource type="PackedScene" uid="uid://bomr167vu3rbe" path="res://scenes/envir_components/platform.tscn" id="10_ls45j"]
-[ext_resource type="Texture2D" uid="uid://ki4r3kacn8gi" path="res://images/alien_planet /bg.png" id="11_nv10f"]
-[ext_resource type="Texture2D" uid="uid://b47vl0mk8xgqy" path="res://images/spaceship_interior/style_2/wall.png" id="12_pnowm"]
-[ext_resource type="Texture2D" uid="uid://cdnbeqbg4uops" path="res://images/alien_planet /planets.png" id="12_xq8uk"]
-[ext_resource type="Texture2D" uid="uid://b0fpboqqb7j0b" path="res://images/alien_planet /stars.png" id="13_6nmmq"]
-[ext_resource type="Texture2D" uid="uid://c4ggihk0qnuhw" path="res://images/spaceship_interior/style_2/wall_with_window.png" id="13_305yi"]
-[ext_resource type="Texture2D" uid="uid://8f5w6gvxq7y4" path="res://images/spaceship_interior/style_1/element1.png" id="14_d8kfa"]
-[ext_resource type="Texture2D" uid="uid://ckujv33dmdbwc" path="res://images/spaceship_interior/style_2/floor.png" id="14_vc7fq"]
-[ext_resource type="Texture2D" uid="uid://c0hfjbk8me2iv" path="res://images/spaceship_interior/style_2/furniture_5.png" id="15_4lm2y"]
-[ext_resource type="Texture2D" uid="uid://d1f2xjehn000r" path="res://images/spaceship_interior/style_1/element3.png" id="15_hv3a0"]
-[ext_resource type="Texture2D" uid="uid://dl4yswj6chq64" path="res://images/spaceship_interior/style_2/furniture_6.png" id="18_1kgn0"]
-[ext_resource type="Texture2D" uid="uid://hdtf8sdaycfs" path="res://images/spaceship_interior/style_2/stairs_1.png" id="20_xl6w7"]
-[ext_resource type="Texture2D" uid="uid://dmgarodttay5h" path="res://images/spaceship_interior/style_2/furniture_1.png" id="23_a7b1p"]
+[ext_resource type="Texture2D" uid="uid://d32lpjwq3qjdc" path="res://images/grey_block.png" id="1_0msub"]
+[ext_resource type="PackedScene" uid="uid://c2gdlux5l4ird" path="res://scenes/envir_components/floor.tscn" id="2_l2m0d"]
+[ext_resource type="PackedScene" uid="uid://omo1bq8e4xvo" path="res://scenes/envir_components/moving_platform_oscilate.tscn" id="3_281t8"]
+[ext_resource type="PackedScene" uid="uid://ohfi2qlykajt" path="res://scenes/envir_components/moving_platform_sideways.tscn" id="4_oblxo"]
+[ext_resource type="PackedScene" uid="uid://dcoako00of7ko" path="res://scenes/envir_components/moving_platform_up_down.tscn" id="5_wvwdk"]
+[ext_resource type="PackedScene" uid="uid://4oe815g4xepq" path="res://scenes/envir_components/one_way_platform.tscn" id="6_t4eg3"]
+[ext_resource type="PackedScene" uid="uid://cvhh5tql6pw0l" path="res://scenes/envir_components/wall.tscn" id="7_au3ms"]
+[ext_resource type="PackedScene" uid="uid://ckaxothwj5u0w" path="res://scenes/envir_components/python_level/up_stairs.tscn" id="8_b4u60"]
+[ext_resource type="PackedScene" uid="uid://cu46u1ulhqch0" path="res://scenes/envir_components/down_stairs.tscn" id="9_h21xr"]
+[ext_resource type="PackedScene" uid="uid://bomr167vu3rbe" path="res://scenes/envir_components/platform.tscn" id="10_pvkbc"]
+[ext_resource type="Texture2D" uid="uid://cdnbeqbg4uops" path="res://images/alien_planet /planets.png" id="11_t5sk6"]
+[ext_resource type="Texture2D" uid="uid://ki4r3kacn8gi" path="res://images/alien_planet /bg.png" id="12_vy3or"]
+[ext_resource type="Texture2D" uid="uid://b0fpboqqb7j0b" path="res://images/alien_planet /stars.png" id="13_rkddb"]
+[ext_resource type="Texture2D" uid="uid://b47vl0mk8xgqy" path="res://images/spaceship_interior/style_2/wall.png" id="14_2oonu"]
+[ext_resource type="Texture2D" uid="uid://c4ggihk0qnuhw" path="res://images/spaceship_interior/style_2/wall_with_window.png" id="15_k02n8"]
+[ext_resource type="Texture2D" uid="uid://8f5w6gvxq7y4" path="res://images/spaceship_interior/style_1/element1.png" id="16_0e6mp"]
+[ext_resource type="Texture2D" uid="uid://d1f2xjehn000r" path="res://images/spaceship_interior/style_1/element3.png" id="17_5w581"]
+[ext_resource type="Texture2D" uid="uid://c0hfjbk8me2iv" path="res://images/spaceship_interior/style_2/furniture_5.png" id="18_kpo3v"]
+[ext_resource type="Texture2D" uid="uid://ckujv33dmdbwc" path="res://images/spaceship_interior/style_2/floor.png" id="19_750m6"]
+[ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="20_6vxv0"]
+[ext_resource type="Texture2D" uid="uid://hdtf8sdaycfs" path="res://images/spaceship_interior/style_2/stairs_1.png" id="21_ohlfd"]
+[ext_resource type="Texture2D" uid="uid://dl4yswj6chq64" path="res://images/spaceship_interior/style_2/furniture_6.png" id="22_jsxal"]
+[ext_resource type="Texture2D" uid="uid://dmgarodttay5h" path="res://images/spaceship_interior/style_2/furniture_1.png" id="23_8xpem"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8vl8x"]
+font_size = 24
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_spmiq"]
-texture = ExtResource("1_hxknr")
+texture = ExtResource("1_0msub")
 texture_region_size = Vector2i(33, 33)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -45,15 +48,15 @@ texture_region_size = Vector2i(33, 33)
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_3o3mb"]
-scenes/1/scene = ExtResource("2_wcwcm")
-scenes/2/scene = ExtResource("3_6byng")
-scenes/3/scene = ExtResource("4_mp0xw")
-scenes/4/scene = ExtResource("5_a6772")
-scenes/5/scene = ExtResource("6_cyxfq")
-scenes/6/scene = ExtResource("7_w37s1")
-scenes/7/scene = ExtResource("8_7uw6t")
-scenes/8/scene = ExtResource("9_naaul")
-scenes/9/scene = ExtResource("10_ls45j")
+scenes/1/scene = ExtResource("2_l2m0d")
+scenes/2/scene = ExtResource("3_281t8")
+scenes/3/scene = ExtResource("4_oblxo")
+scenes/4/scene = ExtResource("5_wvwdk")
+scenes/5/scene = ExtResource("6_t4eg3")
+scenes/6/scene = ExtResource("7_au3ms")
+scenes/7/scene = ExtResource("8_b4u60")
+scenes/8/scene = ExtResource("9_h21xr")
+scenes/9/scene = ExtResource("10_pvkbc")
 
 [sub_resource type="TileSet" id="TileSet_lotx2"]
 tile_size = Vector2i(33, 33)
@@ -61,21 +64,11 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_spmiq")
 sources/1 = SubResource("TileSetScenesCollectionSource_3o3mb")
 
-[sub_resource type="LabelSettings" id="LabelSettings_8vl8x"]
-font_size = 24
+[node name="python_level" type="Node2D"]
 
-[node name="python_envir" type="Node2D"]
-
-[node name="tile_map" type="TileMap" parent="."]
-position = Vector2(7, 3)
-tile_set = SubResource("TileSet_lotx2")
-cell_quadrant_size = 33
-format = 2
-
-layer_0/tile_data = PackedInt32Array(0, 1, 65536, 131071, 1, 393216, 76, 1, 65536, 152, 1, 65536, 229, 1, 458752, -392969, 1, 65536, -261897, 1, 65536, -130825, 1, 65536, 247, 1, 65536, -392892, 1, 524288, 342, 1, 65536, -5505024, 1, 393216, -5570558, 1, 65536, -5570481, 1, 65536, -5570404, 1, 65536, -5636067, 1, 458752, -6094799, 1, 458752, -6553530, 1, 458752, 76, 1, 65536, 152, 1, 65536, 229, 1, 458752, -392969, 1, 65536, -261897, 1, 65536, -130825, 1, 65536, 247, 1, 65536, -392892, 1, 524288, 342, 1, 65536, 418, 1, 65536, 0, 1, 65536, 65501, 1, 65536, 65467, 1, 65536, 65438, 1, 65536, 65414, 1, 65536, 65392, 1, 65536, 65348, 1, 65536, 65305, 1, 65536, 65249, 1, 65536)
-
-
-[node name="communication" type="Node2D" parent="."]
+[node name="communication" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="Rukaiah" type="Label" parent="communication"]
 offset_left = 59.0
@@ -96,19 +89,38 @@ Considering I'll be removing the wall, I can expand the previous floor if it was
 label_settings = SubResource("LabelSettings_8vl8x")
 autowrap_mode = 3
 
+[node name="playabel_area" type="Node2D" parent="."]
+
+[node name="-5" type="CanvasLayer" parent="playabel_area"]
+layer = -5
+follow_viewport_enabled = true
+
+[node name="tile_map" type="TileMap" parent="playabel_area/-5"]
+position = Vector2(7, 3)
+tile_set = SubResource("TileSet_lotx2")
+cell_quadrant_size = 33
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 1, 65536, 131071, 1, 393216, 76, 1, 65536, 152, 1, 65536, 229, 1, 458752, -392969, 1, 65536, -261897, 1, 65536, -130825, 1, 65536, 247, 1, 65536, -392892, 1, 524288, 342, 1, 65536, -5505024, 1, 393216, -5570558, 1, 65536, -5570481, 1, 65536, -5570404, 1, 65536, -5636067, 1, 458752, -6094799, 1, 458752, -6553530, 1, 458752, 418, 1, 65536, 65501, 1, 65536, 65467, 1, 65536, 65438, 1, 65536, 65414, 1, 65536, 65392, 1, 65536, 65348, 1, 65536, 65305, 1, 65536, 65249, 1, 65536)
+
+[node name="elevators" type="Node2D" parent="."]
+
+[node name="2" type="CanvasLayer" parent="elevators"]
+layer = 2
+follow_viewport_enabled = true
+
 [node name="graphics" type="Node2D" parent="."]
 
 [node name="bg" type="CanvasLayer" parent="graphics"]
+layer = -4
 follow_viewport_enabled = true
-follow_viewport_scale = 0.6
 
 [node name="Sprite2D" type="Sprite2D" parent="graphics/bg"]
 position = Vector2(2642.5, -301.667)
 scale = Vector2(3.30406, 4.29802)
 
 [node name="-3" type="CanvasLayer" parent="graphics"]
+layer = -3
 follow_viewport_enabled = true
-follow_viewport_scale = 0.7
 
 [node name="window_1" type="Node2D" parent="graphics/-3"]
 
@@ -116,83 +128,83 @@ follow_viewport_scale = 0.7
 show_behind_parent = true
 position = Vector2(2450, 26.4286)
 scale = Vector2(7.42857, 6.50476)
-texture = ExtResource("12_xq8uk")
+texture = ExtResource("11_t5sk6")
 
 [node name="bg" type="Sprite2D" parent="graphics/-3/window_1/window_view1"]
 show_behind_parent = true
 position = Vector2(-22.6458, -44.0337)
 scale = Vector2(0.377467, 0.423348)
-texture = ExtResource("11_nv10f")
+texture = ExtResource("12_vy3or")
 
 [node name="stars" type="Sprite2D" parent="graphics/-3/window_1/window_view1"]
 show_behind_parent = true
 position = Vector2(46.0359, -69.5095)
 scale = Vector2(0.692172, 0.628146)
-texture = ExtResource("13_6nmmq")
+texture = ExtResource("13_rkddb")
 
 [node name="window_view2" type="Sprite2D" parent="graphics/-3/window_1"]
 show_behind_parent = true
 position = Vector2(-7077.86, -60.7143)
 scale = Vector2(7.12653, 7.01905)
-texture = ExtResource("12_xq8uk")
+texture = ExtResource("11_t5sk6")
 
 [node name="bg" type="Sprite2D" parent="graphics/-3/window_1/window_view2"]
 show_behind_parent = true
 position = Vector2(-22.6458, -44.0337)
 scale = Vector2(0.377467, 0.423348)
-texture = ExtResource("11_nv10f")
+texture = ExtResource("12_vy3or")
 
 [node name="stars" type="Sprite2D" parent="graphics/-3/window_1/window_view2"]
 show_behind_parent = true
 position = Vector2(46.0359, -69.5095)
 scale = Vector2(0.692172, 0.628146)
-texture = ExtResource("13_6nmmq")
+texture = ExtResource("13_rkddb")
 
 [node name="window_view_2" type="Sprite2D" parent="graphics/-3/window_1"]
 show_behind_parent = true
 position = Vector2(6622.14, -520)
 scale = Vector2(5.84618, 4.91519)
-texture = ExtResource("13_6nmmq")
+texture = ExtResource("13_rkddb")
 
 [node name="bg" type="Sprite2D" parent="graphics/-3/window_1/window_view_2"]
 show_behind_parent = true
 position = Vector2(-99.2263, 40.5572)
 scale = Vector2(0.545336, 0.673965)
-texture = ExtResource("11_nv10f")
+texture = ExtResource("12_vy3or")
 
 [node name="window_view_3" type="Sprite2D" parent="graphics/-3/window_1"]
 show_behind_parent = true
 position = Vector2(-3637.86, -520.714)
 scale = Vector2(4.32869, 4.35356)
-texture = ExtResource("13_6nmmq")
+texture = ExtResource("13_rkddb")
 
 [node name="bg" type="Sprite2D" parent="graphics/-3/window_1/window_view_3"]
 show_behind_parent = true
 position = Vector2(-99.2263, 40.5572)
 scale = Vector2(0.545336, 0.673965)
-texture = ExtResource("11_nv10f")
+texture = ExtResource("12_vy3or")
 
 [node name="window_view3" type="Sprite2D" parent="graphics/-3/window_1"]
 show_behind_parent = true
 position = Vector2(14497.9, -132.857)
 scale = Vector2(7.30612, 6.55238)
-texture = ExtResource("12_xq8uk")
+texture = ExtResource("11_t5sk6")
 
 [node name="bg" type="Sprite2D" parent="graphics/-3/window_1/window_view3"]
 show_behind_parent = true
 position = Vector2(-22.6458, -44.0337)
 scale = Vector2(0.377467, 0.423348)
-texture = ExtResource("11_nv10f")
+texture = ExtResource("12_vy3or")
 
 [node name="stars" type="Sprite2D" parent="graphics/-3/window_1/window_view3"]
 show_behind_parent = true
 position = Vector2(46.0359, -69.5095)
 scale = Vector2(0.692172, 0.628146)
-texture = ExtResource("13_6nmmq")
+texture = ExtResource("13_rkddb")
 
 [node name="-2" type="CanvasLayer" parent="graphics"]
+layer = -2
 follow_viewport_enabled = true
-follow_viewport_scale = 0.8
 
 [node name="wall" type="Node2D" parent="graphics/-2"]
 position = Vector2(-6.25, -45)
@@ -200,47 +212,47 @@ position = Vector2(-6.25, -45)
 [node name="wall1" type="Sprite2D" parent="graphics/-2/wall"]
 position = Vector2(-1061.61, -470.09)
 scale = Vector2(4.86171, 2.62307)
-texture = ExtResource("12_pnowm")
+texture = ExtResource("14_2oonu")
 
 [node name="wall_with_window" type="Sprite2D" parent="graphics/-2/wall"]
 position = Vector2(2126.12, -467.157)
 scale = Vector2(2.52177, 3.7298)
-texture = ExtResource("13_305yi")
+texture = ExtResource("15_k02n8")
 
 [node name="wall_with_window4" type="Sprite2D" parent="graphics/-2/wall"]
 position = Vector2(-4242.5, -466.875)
 scale = Vector2(2.92279, 3.74275)
-texture = ExtResource("13_305yi")
+texture = ExtResource("15_k02n8")
 
 [node name="wall_with_window5" type="Sprite2D" parent="graphics/-2/wall"]
 position = Vector2(-7408.75, -461.25)
 scale = Vector2(2.91054, 3.78261)
-texture = ExtResource("13_305yi")
+texture = ExtResource("15_k02n8")
 
 [node name="wall_with_window2" type="Sprite2D" parent="graphics/-2/wall"]
 position = Vector2(5713.1, -458.753)
 scale = Vector2(2.51078, 3.76813)
-texture = ExtResource("13_305yi")
+texture = ExtResource("15_k02n8")
 
 [node name="wall_with_window3" type="Sprite2D" parent="graphics/-2/wall"]
 position = Vector2(14162.5, -470.004)
 scale = Vector2(2.89522, 3.70291)
-texture = ExtResource("13_305yi")
+texture = ExtResource("15_k02n8")
 
 [node name="wall3" type="Sprite2D" parent="graphics/-2/wall"]
 position = Vector2(9893.75, -473.755)
 scale = Vector2(7.2138, 2.58693)
-texture = ExtResource("12_pnowm")
+texture = ExtResource("14_2oonu")
 
 [node name="wall2" type="Sprite2D" parent="graphics/-2/wall"]
 position = Vector2(3791.25, -478.037)
 scale = Vector2(2.03624, 2.58911)
-texture = ExtResource("12_pnowm")
+texture = ExtResource("14_2oonu")
 
 [node name="wall4" type="Sprite2D" parent="graphics/-2/wall"]
 position = Vector2(-5880.62, -510.582)
 scale = Vector2(1.04798, 2.46148)
-texture = ExtResource("12_pnowm")
+texture = ExtResource("14_2oonu")
 
 [node name="doors" type="Node2D" parent="graphics/-2"]
 
@@ -249,36 +261,36 @@ texture = ExtResource("12_pnowm")
 [node name="picture" type="Sprite2D" parent="graphics/-2/wall_decoration"]
 position = Vector2(8108.75, -687.5)
 scale = Vector2(0.784316, 0.730337)
-texture = ExtResource("14_d8kfa")
+texture = ExtResource("16_0e6mp")
 
 [node name="picture4" type="Sprite2D" parent="graphics/-2/wall_decoration"]
 position = Vector2(-825, -695)
 scale = Vector2(0.784316, 0.730337)
-texture = ExtResource("14_d8kfa")
+texture = ExtResource("16_0e6mp")
 
 [node name="picture2" type="Sprite2D" parent="graphics/-2/wall_decoration"]
 position = Vector2(10957.5, -638.75)
 scale = Vector2(0.567329, 0.475509)
-texture = ExtResource("15_hv3a0")
+texture = ExtResource("17_5w581")
 
 [node name="picture3" type="Sprite2D" parent="graphics/-2/wall_decoration"]
 position = Vector2(-1266.25, -598.75)
 scale = Vector2(0.567329, 0.621819)
-texture = ExtResource("15_hv3a0")
+texture = ExtResource("17_5w581")
 
 [node name="shelf" type="Sprite2D" parent="graphics/-2/wall_decoration"]
 position = Vector2(1160, -590)
 scale = Vector2(3.23877, 2.7718)
-texture = ExtResource("15_4lm2y")
+texture = ExtResource("18_kpo3v")
 
 [node name="shelf2" type="Sprite2D" parent="graphics/-2/wall_decoration"]
 position = Vector2(13247.5, -591.25)
 scale = Vector2(3.23877, 2.7718)
-texture = ExtResource("15_4lm2y")
+texture = ExtResource("18_kpo3v")
 
 [node name="-1" type="CanvasLayer" parent="graphics"]
+layer = -1
 follow_viewport_enabled = true
-follow_viewport_scale = 0.9
 
 [node name="furniture" type="Node2D" parent="graphics/-1"]
 
@@ -298,30 +310,27 @@ follow_viewport_enabled = true
 [node name="floor" type="Sprite2D" parent="graphics/0/floor"]
 position = Vector2(2981, 30)
 scale = Vector2(30.277, 1.6)
-texture = ExtResource("14_vc7fq")
-
-[node name="player" parent="graphics/0" instance=ExtResource("8_d8gj5")]
-position = Vector2(-8338, -263)
+texture = ExtResource("19_750m6")
 
 [node name="stairs" type="Node2D" parent="graphics/0"]
 
 [node name="stair1" type="Sprite2D" parent="graphics/0/stairs"]
 position = Vector2(9521.5, -25.5)
 scale = Vector2(0.549643, 0.181592)
-texture = ExtResource("20_xl6w7")
+texture = ExtResource("21_ohlfd")
 
 [node name="stair2" type="Sprite2D" parent="graphics/0/stairs"]
 position = Vector2(9524, -94.5)
 scale = Vector2(0.487434, 0.171642)
-texture = ExtResource("20_xl6w7")
+texture = ExtResource("21_ohlfd")
 
 [node name="stair3" type="Sprite2D" parent="graphics/0/stairs"]
 position = Vector2(9525, -162.5)
 scale = Vector2(0.42538, 0.166667)
-texture = ExtResource("20_xl6w7")
+texture = ExtResource("21_ohlfd")
 
 [node name="1" type="CanvasLayer" parent="graphics"]
-follow_viewport_enabled = true
+layer = 2
 follow_viewport_scale = 1.1
 
 [node name="front_furnitures" type="Node2D" parent="graphics/1"]
@@ -329,47 +338,73 @@ follow_viewport_scale = 1.1
 [node name="front_furnitures" type="Sprite2D" parent="graphics/1/front_furnitures"]
 position = Vector2(564.583, -130.455)
 scale = Vector2(2.73529, 2.61486)
-texture = ExtResource("18_1kgn0")
+texture = ExtResource("22_jsxal")
 
 [node name="front_furnitures7" type="Sprite2D" parent="graphics/1/front_furnitures"]
 position = Vector2(-5760, -133.636)
 scale = Vector2(2.73529, 2.61486)
-texture = ExtResource("18_1kgn0")
+texture = ExtResource("22_jsxal")
 
 [node name="front_furnitures2" type="Sprite2D" parent="graphics/1/front_furnitures"]
 position = Vector2(7248.18, -130.909)
 scale = Vector2(2.73529, 2.61486)
-texture = ExtResource("18_1kgn0")
+texture = ExtResource("22_jsxal")
 
 [node name="front_furnitures5" type="Sprite2D" parent="graphics/1/front_furnitures"]
 position = Vector2(15371.8, -129.091)
 scale = Vector2(2.73529, 2.61486)
-texture = ExtResource("18_1kgn0")
+texture = ExtResource("22_jsxal")
 
 [node name="front_furnitures3" type="Sprite2D" parent="graphics/1/front_furnitures"]
 position = Vector2(12041.8, -134.545)
 scale = Vector2(2.73529, 2.61486)
-texture = ExtResource("23_a7b1p")
+texture = ExtResource("23_8xpem")
 
 [node name="front_furnitures4" type="Sprite2D" parent="graphics/1/front_furnitures"]
 position = Vector2(3884.55, -138.636)
 scale = Vector2(2.5532, 2.70283)
-texture = ExtResource("23_a7b1p")
+texture = ExtResource("23_8xpem")
 
 [node name="front_furnitures6" type="Sprite2D" parent="graphics/1/front_furnitures"]
 position = Vector2(-2602.73, -142.727)
 scale = Vector2(2.5532, 2.70283)
-texture = ExtResource("23_a7b1p")
+texture = ExtResource("23_8xpem")
 
 [node name="front_furnitures8" type="Sprite2D" parent="graphics/1/front_furnitures"]
 position = Vector2(-8695.46, -142.727)
 scale = Vector2(2.5532, 2.70283)
-texture = ExtResource("23_a7b1p")
+texture = ExtResource("23_8xpem")
 
 [node name="2" type="CanvasLayer" parent="graphics"]
+layer = 3
 follow_viewport_enabled = true
-follow_viewport_scale = 1.2
 
 [node name="3" type="CanvasLayer" parent="graphics"]
+layer = 4
 follow_viewport_enabled = true
-follow_viewport_scale = 1.3
+
+[node name="doors" type="Node2D" parent="."]
+
+[node name="1" type="CanvasLayer" parent="doors"]
+follow_viewport_enabled = true
+
+[node name="in_game_items" type="Node2D" parent="."]
+
+[node name="2" type="CanvasLayer" parent="in_game_items"]
+layer = 2
+follow_viewport_enabled = true
+
+[node name="player" parent="in_game_items/2" instance=ExtResource("20_6vxv0")]
+position = Vector2(305, -172)
+
+[node name="shifu\'s_lessons" type="Node2D" parent="."]
+
+[node name="2" type="CanvasLayer" parent="shifu\'s_lessons"]
+layer = 2
+follow_viewport_enabled = true
+
+[node name="boss_levels" type="Node2D" parent="."]
+
+[node name="2" type="CanvasLayer" parent="boss_levels"]
+layer = 2
+follow_viewport_enabled = true
