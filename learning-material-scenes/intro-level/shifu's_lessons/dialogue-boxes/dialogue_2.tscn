@@ -1,10 +1,10 @@
 [gd_scene load_steps=13 format=3 uid="uid://c3ktrm6ioidi4"]
 
 [ext_resource type="Script" path="res://scripts/dialogue.gd" id="1_vkjvv"]
-[ext_resource type="Texture2D" uid="uid://b562inkdnpvh7" path="res://images/learning_material_boxes/yellow.png" id="2_0xcxa"]
-[ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="3_uvlhj"]
-[ext_resource type="Texture2D" uid="uid://c61vkjdl8heew" path="res://images/learning_material_boxes/arrow_yellow.png" id="4_ntwko"]
-[ext_resource type="FontFile" uid="uid://c1w4uwymgxw6f" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Italic.ttf" id="5_n6mks"]
+[ext_resource type="Texture2D" uid="uid://caystgpmhlxwt" path="res://images/learning_material_boxes/yellow.png" id="2_0xcxa"]
+[ext_resource type="FontFile" uid="uid://dlgx5iqpx7pfl" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="3_uvlhj"]
+[ext_resource type="Texture2D" uid="uid://b5c31g06cjjjo" path="res://images/learning_material_boxes/arrow_yellow.png" id="4_ntwko"]
+[ext_resource type="FontFile" uid="uid://dp0tr8rga7f40" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Italic.ttf" id="5_n6mks"]
 [ext_resource type="Script" path="res://scripts/block_area.gd" id="6_evw5q"]
 
 [sub_resource type="Animation" id="Animation_3o6vt"]
