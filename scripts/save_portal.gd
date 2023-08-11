@@ -21,6 +21,6 @@ func save_game():
 		
 		var node_data = node.call("save") #calling the save function with in the node
 		
-		var json_string = JSON.stringify(node_data,"", true, false) #converting dictionary to JASON
+		var json_string = JSON.stringify(node_data) #converting dictionary to JASON
 		save_game.store_string(json_string) #save the dictionary as a new line in the save_game file
 
