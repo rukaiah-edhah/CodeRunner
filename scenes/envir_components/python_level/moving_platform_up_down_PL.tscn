@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://c8xevhvyg824j"]
 
 [ext_resource type="Script" path="res://Scripts/moving_platform_up_down.gd" id="1_cmdlx"]
-[ext_resource type="Texture2D" uid="uid://b0p00po02qy3t" path="res://images/spaceship_interior/style_2/floor.png" id="2_et81k"]
+[ext_resource type="Texture2D" uid="uid://ckujv33dmdbwc" path="res://images/spaceship_interior/style_2/floor.png" id="2_et81k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r0fay"]
 size = Vector2(323, 42)
 
 [node name="moving_platform_up_down" type="AnimatableBody2D"]
 top_level = true
-position = Vector2(-813, -680)
+position = Vector2(-816, -683)
 script = ExtResource("1_cmdlx")
 distance = Vector2(0, 250)
 debug = false
