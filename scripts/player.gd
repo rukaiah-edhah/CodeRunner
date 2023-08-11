@@ -24,6 +24,13 @@ var green_health = preload("res://images/green.png")
 const FULL_HEALTH = 100
 var health = FULL_HEALTH
 
+#_____________________Ignore for now_________________________    
+## Controlling Camera position
+#@onready var player_camera = $Camera2D
+#var camera_offset_right = Vector2(420, -208)
+#var camera_offset_left = Vector2(-384, -221)
+#___________________________________________________________
+
 func _ready():
     
     #_________________________________________Added by Rukaiah__________________________________________
@@ -85,6 +92,15 @@ func _physics_process(_delta):
     velocity.x = speed * horizontal_direction
     
     move_and_slide()
+#_____________________Ignore for now_________________________    
+    #update_camera_position(velocity.x)
+    
+#func update_camera_position(direction_x: float):
+    #f direction_x > 0:
+        #player_camera.offset = camera_offset_right
+    #elif direction_x < 0:
+        #player_camera.offset = camera_offset_left
+#_______________________________________________________________    
 
 # __________________________ Added by Rukaiah ______________________
 func disable_movement():
