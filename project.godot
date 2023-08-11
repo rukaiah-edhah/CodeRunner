@@ -17,8 +17,8 @@ config/features=PackedStringArray("4.0", "GL Compatibility")
 
 [autoload]
 
-BossManager="*res://singleton/boss_manager.gd"
-StaticData="*res://singleton/static_data.gd"
+BossManager="*res://scripts/singleton/boss_manager.gd"
+StaticData="*res://unnecessary-files/static_data.gd"
 IntorStaticData1="*res://learning-material/intro-level/singleton/intor_static_data1.gd"
 
 [display]

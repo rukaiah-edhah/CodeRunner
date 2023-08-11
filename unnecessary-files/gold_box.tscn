@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cyes153bp6tka"]
+[gd_scene load_steps=5 format=3 uid="uid://cyes153bp6tka"]
 
 [ext_resource type="Script" path="res://scripts/gold_box.gd" id="1_oow73"]
-[ext_resource type="Texture2D" uid="uid://10o8dwuhx5vu" path="res://images/gold.png" id="1_ydx1g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o2tb8"]
 size = Vector2(32.5, 27.5)
@@ -22,7 +21,6 @@ shape = SubResource("RectangleShape2D_o2tb8")
 position = Vector2(4, 3.00001)
 scale = Vector2(31.75, 25.75)
 mesh = SubResource("QuadMesh_jbd5p")
-texture = ExtResource("1_ydx1g")
 
 [node name="welcome_box" type="TextEdit" parent="."]
 offset_left = -128.0

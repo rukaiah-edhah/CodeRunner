@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://1g14ar8c2qun"]
 
-[ext_resource type="Texture2D" uid="uid://dgmw6un5kw0ta" path="res://images/platformPack_tilesheet.png" id="1_r2vjh"]
-[ext_resource type="Texture2D" uid="uid://bwrlggvdke8qu" path="res://images/sky.png" id="2_n5frf"]
+[ext_resource type="Texture2D" uid="uid://chhiwlbcg6xqi" path="res://unnecessary-files/platformPack_tilesheet.png" id="1_415ep"]
+[ext_resource type="Texture2D" uid="uid://3fl7fw5nl4x1" path="res://images/sky.png" id="2_7kof8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h0ajw"]
-texture = ExtResource("1_r2vjh")
+texture = ExtResource("1_415ep")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -2972,7 +2972,7 @@ texture = ExtResource("1_r2vjh")
 55:27/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e7su6"]
-texture = ExtResource("2_n5frf")
+texture = ExtResource("2_7kof8")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0

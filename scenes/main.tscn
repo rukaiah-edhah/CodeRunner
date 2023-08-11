@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://divgbcotp0d8v" path="res://scenes/coin.tscn" id="3_w58ea"]
 [ext_resource type="PackedScene" uid="uid://c4u1kl48fqk6u" path="res://scenes/coins_box_empty.tscn" id="4_4fl2c"]
 [ext_resource type="PackedScene" uid="uid://bhiwhgg53t8dl" path="res://scenes/save_portal.tscn" id="5_qwyvo"]
-[ext_resource type="PackedScene" uid="uid://yv4q2ayft2mq" path="res://learning-material-scenes/intro-level/shifu's_lessons/shifu.tscn" id="7_nre40"]
-[ext_resource type="PackedScene" uid="uid://b8nruig5385js" path="res://learning-material-scenes/intro-level/shifu's_lessons/dialogue-boxes/example.tscn" id="8_d3dhs"]
+[ext_resource type="PackedScene" uid="uid://yv4q2ayft2mq" path="res://learning-material-scenes/intro-level/shifu's-lessons/intro/shifu.tscn" id="7_nre40"]
+[ext_resource type="PackedScene" uid="uid://b8nruig5385js" path="res://learning-material-scenes/intro-level/shifu's-lessons/dialogue-boxes/example.tscn" id="8_d3dhs"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_yuqy0")

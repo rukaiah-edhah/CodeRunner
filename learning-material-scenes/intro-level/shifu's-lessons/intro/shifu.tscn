@@ -3,7 +3,7 @@
 [ext_resource type="Shader" path="res://shader/shifu.gdshader" id="1_igpjf"]
 [ext_resource type="Texture2D" uid="uid://x371i122q021" path="res://images/Shifu/29639A34-714A-477D-87E1-46586334043D.png" id="2_jepwg"]
 [ext_resource type="Script" path="res://scripts/shifu.gd" id="3_srjvk"]
-[ext_resource type="PackedScene" uid="uid://oeaisxo7osqs" path="res://learning-material-scenes/intro-level/shifu's_lessons/dialogue-boxes/dialogue.tscn" id="4_aq3wt"]
+[ext_resource type="PackedScene" uid="uid://oeaisxo7osqs" path="res://learning-material-scenes/intro-level/shifu's-lessons/dialogue-boxes/intro/dialogue.tscn" id="4_aq3wt"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_efea5"]
 shader = ExtResource("1_igpjf")

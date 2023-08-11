@@ -1,11 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://oeaisxo7osqs"]
+[gd_scene load_steps=13 format=3 uid="uid://54nshy2db6t1"]
 
-[ext_resource type="Script" path="res://scripts/dialogue_box.gd" id="1_fcs8c"]
-[ext_resource type="Texture2D" uid="uid://b562inkdnpvh7" path="res://images/learning_material_boxes/yellow.png" id="2_w2vl4"]
-[ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="3_eggrc"]
-[ext_resource type="Texture2D" uid="uid://c61vkjdl8heew" path="res://images/learning_material_boxes/arrow_yellow.png" id="4_ojhmj"]
-[ext_resource type="FontFile" uid="uid://c1w4uwymgxw6f" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Italic.ttf" id="5_a7ceq"]
-[ext_resource type="Script" path="res://scripts/block_area.gd" id="6_ttqhu"]
+[ext_resource type="Script" path="res://scripts/learning_material_scripts/intro_level/dialogue_boxes/topic_one/dialogue_box_L10.gd" id="1_qk82w"]
+[ext_resource type="Texture2D" uid="uid://b562inkdnpvh7" path="res://images/learning_material_boxes/yellow.png" id="2_leipq"]
+[ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="3_jt6y1"]
+[ext_resource type="Texture2D" uid="uid://c61vkjdl8heew" path="res://images/learning_material_boxes/arrow_yellow.png" id="4_rjfgp"]
+[ext_resource type="FontFile" uid="uid://c1w4uwymgxw6f" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Italic.ttf" id="5_2fdgn"]
+[ext_resource type="Script" path="res://scripts/block_area.gd" id="6_irmg8"]
 
 [sub_resource type="Animation" id="Animation_3o6vt"]
 resource_name = "display"
@@ -67,10 +67,10 @@ size = Vector2(701, 844)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hc6bu"]
 size = Vector2(684, 843.5)
 
-[node name="dialogue_box" type="Control"]
+[node name="dialogue_lesson10" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_fcs8c")
+script = ExtResource("1_qk82w")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 reset_on_save = false
@@ -79,12 +79,13 @@ libraries = {
 }
 
 [node name="dialogue_box_sprite" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = -109.0
 offset_top = 27.0
 offset_right = 687.0
 offset_bottom = 390.0
-texture = ExtResource("2_w2vl4")
+texture = ExtResource("2_leipq")
 
 [node name="panel" type="Panel" parent="dialogue_box_sprite"]
 modulate = Color(1, 1, 1, 0.560784)
@@ -99,9 +100,9 @@ layout_mode = 0
 offset_left = 9.0
 offset_top = 10.0
 offset_right = 497.0
-offset_bottom = 237.0
+offset_bottom = 234.0
 theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_fonts/bold_font = ExtResource("3_eggrc")
+theme_override_fonts/bold_font = ExtResource("3_jt6y1")
 theme_override_font_sizes/normal_font_size = 24
 bbcode_enabled = true
 
@@ -109,7 +110,7 @@ bbcode_enabled = true
 visible = false
 position = Vector2(477.052, 243.214)
 rotation = 1.5708
-texture = ExtResource("4_ojhmj")
+texture = ExtResource("4_rjfgp")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="dialogue_box_sprite/panel"]
 layout_mode = 1
@@ -125,7 +126,7 @@ grow_vertical = 0
 modulate = Color(1, 1, 1, 0.839216)
 self_modulate = Color(1, 1, 1, 0.835294)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("5_a7ceq")
+theme_override_fonts/font = ExtResource("5_2fdgn")
 text = "Got it!"
 
 [node name="next_char" type="Timer" parent="."]
@@ -133,7 +134,7 @@ text = "Got it!"
 [node name="next_message" type="Timer" parent="."]
 
 [node name="block_area" type="StaticBody2D" parent="."]
-script = ExtResource("6_ttqhu")
+script = ExtResource("6_irmg8")
 
 [node name="area_2d" type="Area2D" parent="block_area"]
 

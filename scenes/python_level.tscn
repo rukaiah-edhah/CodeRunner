@@ -71,6 +71,7 @@ layout_mode = 3
 anchors_preset = 0
 
 [node name="Rukaiah" type="Label" parent="communication"]
+layout_mode = 0
 offset_left = 59.0
 offset_top = -1523.0
 offset_right = 471.0
@@ -80,6 +81,7 @@ label_settings = SubResource("LabelSettings_8vl8x")
 autowrap_mode = 3
 
 [node name="Rukaiah2" type="Label" parent="communication"]
+layout_mode = 0
 offset_left = 9420.0
 offset_top = -1370.0
 offset_right = 9939.0
