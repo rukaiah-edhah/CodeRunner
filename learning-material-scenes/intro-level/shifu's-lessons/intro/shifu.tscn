@@ -307,9 +307,9 @@ scale = Vector2(0.959459, 0.888013)
 shape = SubResource("CircleShape2D_pfidp")
 
 [node name="dialogue_box" parent="." instance=ExtResource("4_aq3wt")]
-offset_left = 423.0
-offset_top = 62.0
-offset_right = 423.0
-offset_bottom = 62.0
+offset_left = 415.0
+offset_top = 60.0
+offset_right = 415.0
+offset_bottom = 60.0
 
 [connection signal="area_entered" from="AnimatedSprite2D/encounter_area" to="." method="_on_shifu_encounter_area_body_entered"]
