@@ -288,7 +288,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_t3e44")
 }, {
-"duration": 0.7,
+"duration": 1.0,
 "texture": ExtResource("22_uav1w")
 }, {
 "duration": 1.0,
@@ -309,7 +309,8 @@ script = ExtResource("3_srjvk")
 material = SubResource("ShaderMaterial_n8aih")
 position = Vector2(185, 210)
 sprite_frames = SubResource("SpriteFrames_x0fgr")
-animation = &"idle"
+animation = &"wakeup"
+autoplay = "sleep"
 
 [node name="encounter_area" type="Area2D" parent="AnimatedSprite2D"]
 position = Vector2(32, 46)
