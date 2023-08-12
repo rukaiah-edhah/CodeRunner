@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://toitu616jmfd"]
+
+[ext_resource type="AudioStream" uid="uid://c7icp3y5occug" path="res://Music/DavidKBD - Cosmic Pack 01 - Cosmic Journey-full.ogg" id="1_j1jqe"]
+[ext_resource type="Script" path="res://scenes/Music.gd" id="2_rk850"]
+
+[node name="Music_Player" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_j1jqe")
+autoplay = true
+script = ExtResource("2_rk850")
