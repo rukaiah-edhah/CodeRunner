@@ -1,44 +1,115 @@
-[gd_scene load_steps=5 format=3 uid="uid://bypm3gqfiqlvq"]
+[gd_scene load_steps=19 format=3 uid="uid://bypm3gqfiqlvq"]
 
-[ext_resource type="Script" path="res://scripts/Mini_Enemy.gd" id="1_c4eoh"]
-[ext_resource type="SpriteFrames" uid="uid://b3cow2snghw3" path="res://Mini_Enemy.tres" id="2_2w1nj"]
+[ext_resource type="Script" path="res://scripts/Mini_Enemy.gd" id="1_jqye7"]
+[ext_resource type="Texture2D" uid="uid://bksw0pqc7jjbe" path="res://images/mini_enemies_intro/black/__black_slime_monster_base_000.png" id="1_q865k"]
+[ext_resource type="Texture2D" uid="uid://bv3dcky4a8yil" path="res://images/mini_enemies_intro/black/__black_slime_monster_bite_007.png" id="2_pw74r"]
+[ext_resource type="Texture2D" uid="uid://rb2cwvtwmagg" path="res://images/mini_enemies_intro/black/__black_slime_monster_bite_008.png" id="3_uts0n"]
+[ext_resource type="Texture2D" uid="uid://bjxnqlg4l1kdc" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_000.png" id="4_lwcf7"]
+[ext_resource type="Texture2D" uid="uid://dl8kscy3jofgr" path="res://images/mini_enemies_intro/black/__black_slime_monster_bite_003.png" id="5_w71ki"]
+[ext_resource type="Texture2D" uid="uid://vjnb5qpaxemk" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_002.png" id="6_6mtwj"]
+[ext_resource type="Texture2D" uid="uid://c3nif5t01nw1i" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_003.png" id="7_kgat8"]
+[ext_resource type="Texture2D" uid="uid://7c1a2xwauxeu" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_004.png" id="8_d0tr0"]
+[ext_resource type="Texture2D" uid="uid://c1d850ryrdirx" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_005.png" id="9_pbkxt"]
+[ext_resource type="Texture2D" uid="uid://bllaklcagj1hi" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_006.png" id="10_tuyll"]
+[ext_resource type="Texture2D" uid="uid://bhu88rnkyvm4y" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_007.png" id="11_dd6k2"]
+[ext_resource type="Texture2D" uid="uid://dhw2p12try0jm" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_008.png" id="12_iibmr"]
+[ext_resource type="Texture2D" uid="uid://c08adtdugyca7" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_009.png" id="13_almnv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0rpg"]
+atlas = ExtResource("1_q865k")
+region = Rect2(0, 0, 205, 173)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h63gl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_w71ki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6mtwj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_kgat8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_d0tr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pbkxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tuyll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dd6k2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_iibmr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_almnv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p0rpg")
+}],
+"loop": true,
+"name": &"Death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_q865k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pw74r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uts0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_lwcf7")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dobpp"]
-size = Vector2(82.6563, 69.5826)
+size = Vector2(299.861, 289.752)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7l0xx"]
-size = Vector2(78.75, 66.4495)
+size = Vector2(103, 76.2125)
 
 [node name="Mini_Enemy" type="Node2D"]
 light_mask = 3
 visibility_layer = 3
+script = ExtResource("1_jqye7")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("1_c4eoh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(-1, 11)
+position = Vector2(28, -28)
 rotation = -6.28319
-scale = Vector2(1, 0.798914)
-sprite_frames = ExtResource("2_2w1nj")
-animation = &"Run"
-flip_h = true
+scale = Vector2(0.299371, 0.161028)
+sprite_frames = SubResource("SpriteFrames_h63gl")
+animation = &"Death"
 
 [node name="Area2D" type="Area2D" parent="CharacterBody2D/AnimatedSprite2D"]
 position = Vector2(-23, -70.0952)
 scale = Vector2(1, 1.04437)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D/AnimatedSprite2D/Area2D"]
-position = Vector2(23, 56.3306)
+position = Vector2(-40.4667, 197.935)
 scale = Vector2(1, 1.15728)
 shape = SubResource("RectangleShape2D_dobpp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-1, -9.53674e-07)
+position = Vector2(12, -13)
 scale = Vector2(1, 0.864092)
 shape = SubResource("RectangleShape2D_7l0xx")
 
 [connection signal="child_entered_tree" from="CharacterBody2D" to="CharacterBody2D" method="_on_child_entered_tree"]
 [connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="CharacterBody2D/AnimatedSprite2D/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="CharacterBody2D/AnimatedSprite2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
 [connection signal="child_entered_tree" from="CharacterBody2D/AnimatedSprite2D/Area2D/CollisionShape2D2" to="CharacterBody2D" method="_on_collision_shape_2d_child_entered_tree"]

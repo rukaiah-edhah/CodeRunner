@@ -8,7 +8,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var _animation = $AnimatedSprite2D
 # Enemy state variables
 var is_dead = false
-
+signal Player_Damaged
 
 func _ready():
 	_animation = $AnimatedSprite2D
@@ -32,26 +32,18 @@ func _on_collision_shape_2d_child_entered_tree(body):
 		if player_velocity.y > 0:
 			enemy_died()
 		else:
-			pass
+			emit_signal("Player_Damaged")
 ## ANOTHER PARAMETER CHECK TO MAKE SURE THE PLAYER CHARACTER IS NOT ON FLOOR WHEN DEFEATING ENEMY ##
 func _on_area_2d_body_entered(body):
 	if body.name == "player" and !is_dead:
 		if is_on_floor() == false:
 			enemy_died()
 		else:
-			pass
+			emit_signal("Player_Damaged")
 
 ## ENEMY DEATH FUNCTION PLAYS DEATH ANIMATION AND TAKES AWAY THEIR COLLISION ##
 func enemy_died():
 	_animation.play("Death")
 	is_dead = true
 	collision_layer = 0
-	
-	
-## IGNORE ##
-#func _on_animated_sprite_2d_animation_finished():
-	#if _animation == "Death":
-		#collision_layer = 0
-		#collision_mask = 0
-		#visible = false
-		#queue_free()
+
