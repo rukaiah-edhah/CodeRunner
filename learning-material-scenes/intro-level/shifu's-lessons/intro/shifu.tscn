@@ -1,7 +1,8 @@
-[gd_scene load_steps=71 format=3 uid="uid://yv4q2ayft2mq"]
+[gd_scene load_steps=73 format=3 uid="uid://yv4q2ayft2mq"]
 
 [ext_resource type="Texture2D" uid="uid://yuoeeyrb6lyx" path="res://images/Shifu/Character_07-death_00.png" id="2_0ywpg"]
 [ext_resource type="Texture2D" uid="uid://xtn4nvgtvam" path="res://images/Shifu/Character_07-idle_00.png" id="2_m78tj"]
+[ext_resource type="Shader" path="res://shader/shifu.gdshader" id="2_ts56q"]
 [ext_resource type="Texture2D" uid="uid://hgxbrk1nwga7" path="res://images/Shifu/Character_07-death_01.png" id="3_r2pi5"]
 [ext_resource type="Script" path="res://scripts/shifu.gd" id="3_srjvk"]
 [ext_resource type="Texture2D" uid="uid://cj3qm2hl5ngr" path="res://images/Shifu/Character_07-idle_01.png" id="3_vg5wq"]
@@ -68,6 +69,16 @@
 [ext_resource type="Texture2D" uid="uid://cs06up2mku01l" path="res://images/Shifu/Character_07-idle_41.png" id="43_uqfkv"]
 [ext_resource type="Texture2D" uid="uid://byj1svd8cvq6l" path="res://images/Shifu/Character_07-idle_42.png" id="44_ou0ub"]
 [ext_resource type="Texture2D" uid="uid://6yxv34qhxpqx" path="res://images/Shifu/Character_07-idle_43.png" id="45_6adr0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n8aih"]
+shader = ExtResource("2_ts56q")
+shader_parameter/lines = 100
+shader_parameter/color1 = Color(0, 0, 1, 1)
+shader_parameter/color2 = Color(1, 0, 0, 1)
+shader_parameter/speed = 0.4
+shader_parameter/alpha = 0.5
+shader_parameter/noise_amount = 0.05
+shader_parameter/effect_factor = 0.4
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x0fgr"]
 animations = [{
@@ -295,6 +306,7 @@ radius = 333.27
 script = ExtResource("3_srjvk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_n8aih")
 position = Vector2(185, 210)
 sprite_frames = SubResource("SpriteFrames_x0fgr")
 animation = &"idle"
