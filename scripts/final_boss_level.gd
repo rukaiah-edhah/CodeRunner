@@ -4,6 +4,7 @@ signal wrong_answer
 signal all_correct
 
 var health = 100 
+@onready var final_boss = $boss_encounter_area/animated_sprite_2d
 @onready var health_bar = $boss_encounter_area/boss_level_window/health_bar
 @onready var anim_sprite = $boss_encounter_area/animated_sprite_2d
 @onready var anim_player = $boss_encounter_area/animation_player
@@ -66,6 +67,7 @@ func _on_code_page_all_correct():
     await anim_sprite.animation_finished
     is_dissolving_window = true
     anim_player.play("dissolve_window")
+    final_boss.queue_free()
     block_area.queue_free()  # Removes the blocking area
     
     emit_signal("all_correct")
@@ -93,7 +95,7 @@ func take_damage(amount):
     health -= amount
     health_bar.value = health
     if health > 0:
-        anim_sprite.play("right_answer") # Remove/change based on the boss' animations
+        anim_sprite.play("idle") # Remove/change based on the boss' animations
         await anim_sprite.animation_finished
         anim_sprite.play("idle") # Remove/change based on the boss' animations
     
