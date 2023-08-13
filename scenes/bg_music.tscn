@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b0y2nbxqx3fkn"]
+
+[node name="bg_music" type="AudioStreamPlayer"]
+volume_db = -3.0
+autoplay = true

@@ -8,12 +8,20 @@ extends Node2D
 var _font = preload("res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf")
 var button_bg = preload("res://images/themes/purple_button.tres")
 
+#background music path
+const music_path: String = "res://fonts-and-music/music/DavidKBD - Cosmic Pack 03 - Nebula Run-variation5.ogg"
 func _ready():
 	# menu option labels
 	start_button.text = "New Game"
 	load_button.text = "Load Game"
 	options_button.text = "Options"
 	quit_button.text = "Quit"
+	
+	#background music
+	$bg_music.stream = preload(music_path)
+	$bg_music.volume_db = -2
+	$bg_music.play()
+	
 	
 	start_button.add_theme_font_override("font", _font)
 	load_button.add_theme_font_override("font", _font)

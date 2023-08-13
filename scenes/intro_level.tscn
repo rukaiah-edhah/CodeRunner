@@ -1,5 +1,6 @@
-[gd_scene load_steps=35 format=3 uid="uid://de7rl165dmwfw"]
+[gd_scene load_steps=37 format=3 uid="uid://de7rl165dmwfw"]
 
+[ext_resource type="Script" path="res://scripts/intro_level.gd" id="1_kn3aq"]
 [ext_resource type="Texture2D" uid="uid://dqeyrhrx2f6wk" path="res://images/grey_block.png" id="1_s21bj"]
 [ext_resource type="PackedScene" uid="uid://c2gdlux5l4ird" path="res://scenes/envir_components/floor.tscn" id="2_137xm"]
 [ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="3_4bity"]
@@ -23,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://72gp0ct0f57p" path="res://scenes/spacship_teleportation.tscn" id="20_5adf4"]
 [ext_resource type="PackedScene" uid="uid://cjxb4ef8x5tw5" path="res://scenes/coins_box.tscn" id="21_2tdba"]
 [ext_resource type="PackedScene" uid="uid://yv4q2ayft2mq" path="res://learning-material-scenes/intro-level/shifu's-lessons/intro/shifu.tscn" id="23_r71li"]
+[ext_resource type="PackedScene" uid="uid://b0y2nbxqx3fkn" path="res://scenes/bg_music.tscn" id="24_8lrfu"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_c5why"]
 font_size = 24
@@ -87,6 +89,7 @@ sources/0 = SubResource("TileSetScenesCollectionSource_w7tag")
 
 [node name="Intro_level" type="Node2D"]
 position = Vector2(-1, -1)
+script = ExtResource("1_kn3aq")
 
 [node name="communication" type="Control" parent="."]
 layout_mode = 3
@@ -684,40 +687,4 @@ position = Vector2(1264, -626)
 layer = 2
 follow_viewport_enabled = true
 
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/coin" to="in_game_items/2/coins/tile_map_coins/coin" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19879" to="in_game_items/2/coins/tile_map_coins/@coin@19879" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19880" to="in_game_items/2/coins/tile_map_coins/@coin@19880" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19881" to="in_game_items/2/coins/tile_map_coins/@coin@19881" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19882" to="in_game_items/2/coins/tile_map_coins/@coin@19882" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19883" to="in_game_items/2/coins/tile_map_coins/@coin@19883" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19884" to="in_game_items/2/coins/tile_map_coins/@coin@19884" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19885" to="in_game_items/2/coins/tile_map_coins/@coin@19885" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19886" to="in_game_items/2/coins/tile_map_coins/@coin@19886" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19887" to="in_game_items/2/coins/tile_map_coins/@coin@19887" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19888" to="in_game_items/2/coins/tile_map_coins/@coin@19888" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19889" to="in_game_items/2/coins/tile_map_coins/@coin@19889" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19890" to="in_game_items/2/coins/tile_map_coins/@coin@19890" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19891" to="in_game_items/2/coins/tile_map_coins/@coin@19891" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19892" to="in_game_items/2/coins/tile_map_coins/@coin@19892" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19893" to="in_game_items/2/coins/tile_map_coins/@coin@19893" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19894" to="in_game_items/2/coins/tile_map_coins/@coin@19894" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19895" to="in_game_items/2/coins/tile_map_coins/@coin@19895" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19896" to="in_game_items/2/coins/tile_map_coins/@coin@19896" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19897" to="in_game_items/2/coins/tile_map_coins/@coin@19897" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19898" to="in_game_items/2/coins/tile_map_coins/@coin@19898" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19899" to="in_game_items/2/coins/tile_map_coins/@coin@19899" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19900" to="in_game_items/2/coins/tile_map_coins/@coin@19900" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19901" to="in_game_items/2/coins/tile_map_coins/@coin@19901" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19902" to="in_game_items/2/coins/tile_map_coins/@coin@19902" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19903" to="in_game_items/2/coins/tile_map_coins/@coin@19903" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19904" to="in_game_items/2/coins/tile_map_coins/@coin@19904" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19905" to="in_game_items/2/coins/tile_map_coins/@coin@19905" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19906" to="in_game_items/2/coins/tile_map_coins/@coin@19906" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19907" to="in_game_items/2/coins/tile_map_coins/@coin@19907" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19908" to="in_game_items/2/coins/tile_map_coins/@coin@19908" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19909" to="in_game_items/2/coins/tile_map_coins/@coin@19909" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19910" to="in_game_items/2/coins/tile_map_coins/@coin@19910" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19911" to="in_game_items/2/coins/tile_map_coins/@coin@19911" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19912" to="in_game_items/2/coins/tile_map_coins/@coin@19912" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19913" to="in_game_items/2/coins/tile_map_coins/@coin@19913" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19914" to="in_game_items/2/coins/tile_map_coins/@coin@19914" method="_on_body_entered" flags=18]
+[node name="bg_music" parent="." instance=ExtResource("24_8lrfu")]

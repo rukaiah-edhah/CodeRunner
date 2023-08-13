@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=3 uid="uid://cfg73y5efex6k"]
 
 [ext_resource type="TileSet" uid="uid://b4784kapg2v3w" path="res://images/themes/hall.tres" id="1_hni5t"]
-[ext_resource type="Texture2D" uid="uid://c4jyvlr7lv38t" path="res://images/WaterAndFire.png" id="3_pk8m1"]
-[ext_resource type="Texture2D" uid="uid://dgkltuj8yegox" path="res://images/stars.png" id="4_1xwxb"]
+[ext_resource type="Texture2D" uid="uid://du54agrv5pjsm" path="res://images/WaterAndFire.png" id="3_pk8m1"]
+[ext_resource type="Texture2D" uid="uid://bc8gak1ka10p" path="res://images/stars.png" id="4_1xwxb"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5ccei"]
 

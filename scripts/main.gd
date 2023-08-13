@@ -1,9 +1,11 @@
 extends Node2D
 
-
+const music_path: String = "res://fonts-and-music/music/DavidKBD - Cosmic Pack 01 - Cosmic Journey-full.ogg"
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$bg_music.stream = preload(music_path)
+	$bg_music.volume_db = -2
+	$bg_music.play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
