@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1liv3vnunyhu"]
+
+[ext_resource type="AudioStream" uid="uid://ccrljcyo5rrr3" path="res://fonts-and-music/music/pickupCoin.wav" id="1_6c0w7"]
+
+[node name="pick_up_sound" type="AudioStreamPlayer"]
+stream = ExtResource("1_6c0w7")
+volume_db = 0.136
