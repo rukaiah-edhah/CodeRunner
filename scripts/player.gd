@@ -8,17 +8,20 @@ extends CharacterBody2D
 @onready var healthbar = $health/healthbar
 @onready var _animation = $AnimatedSprite2D
 @onready var coin_inventory = $coin_inventory/Panel/num_coins
+@onready var jump_sound = $jump_sound
+
 var coins = 0
 var jump_count = 0
 var double_jump = 2
 var can_move = true
 
+var jump_sa = preload("res://fonts-and-music/music/jump_sound.wav)
 var _font = preload("res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf")
 
 # variables for colors for the healthbar
-var red_health = preload("res://images/red.png")
-var yellow_health = preload("res://images/yellow.png")
-var green_health = preload("res://images/green.png")
+var red_health = preload("res://unnecessary-files/red.png")
+var yellow_health = preload("res://unnecessary-files/yellow.png")
+var green_health = preload("res://unnecessary-files/green.png")
 
 # set variables for beginning health/max health
 const FULL_HEALTH = 100
@@ -42,6 +45,11 @@ func _ready():
 	coin_inventory.add_theme_font_override("font", _font)
 	set_health_bar()
 	set_coin_bar()
+
+	# set audioplayer to have jump sound and good volume and pitch
+	jump_sound.stream = jump_s
+	jump_sound.volume_db = -10
+	jump_sound.pitch_scale = 0.70
 	
 func set_coin_bar():
 	# set coin bar to coins
@@ -67,6 +75,10 @@ func _process(_delta):
 func _physics_process(_delta):
 	if not can_move:
 		return
+	
+	# play jump sound when player jumps
+	if Input.is_action_just_pressed("jump"):
+		jump_sound.play()
    
 # set velocity to max out at 1,000
 	if !is_on_floor():
