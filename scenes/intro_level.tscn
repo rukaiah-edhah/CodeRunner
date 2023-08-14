@@ -532,6 +532,16 @@ text = "lesson4"
 label_settings = SubResource("LabelSettings_iy5fr")
 autowrap_mode = 3
 
+[node name="Abu11" type="Label" parent="communication/topic3"]
+layout_mode = 0
+offset_left = 98294.0
+offset_top = -3693.0
+offset_right = 98721.0
+offset_bottom = -3544.0
+text = "lesson5"
+label_settings = SubResource("LabelSettings_iy5fr")
+autowrap_mode = 3
+
 [node name="Abu9" type="Label" parent="communication/topic3"]
 layout_mode = 0
 offset_left = 99422.0
@@ -806,22 +816,22 @@ follow_viewport_enabled = true
 [node name="bg_music" parent="." instance=ExtResource("24_8lrfu")]
 
 [connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/coin" to="in_game_items/2/coins/tile_map_coins/coin" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20188" to="in_game_items/2/coins/tile_map_coins/@coin@20188" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20189" to="in_game_items/2/coins/tile_map_coins/@coin@20189" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20190" to="in_game_items/2/coins/tile_map_coins/@coin@20190" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20191" to="in_game_items/2/coins/tile_map_coins/@coin@20191" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20192" to="in_game_items/2/coins/tile_map_coins/@coin@20192" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20193" to="in_game_items/2/coins/tile_map_coins/@coin@20193" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20194" to="in_game_items/2/coins/tile_map_coins/@coin@20194" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20195" to="in_game_items/2/coins/tile_map_coins/@coin@20195" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20196" to="in_game_items/2/coins/tile_map_coins/@coin@20196" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20197" to="in_game_items/2/coins/tile_map_coins/@coin@20197" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20198" to="in_game_items/2/coins/tile_map_coins/@coin@20198" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20199" to="in_game_items/2/coins/tile_map_coins/@coin@20199" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20200" to="in_game_items/2/coins/tile_map_coins/@coin@20200" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20201" to="in_game_items/2/coins/tile_map_coins/@coin@20201" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20202" to="in_game_items/2/coins/tile_map_coins/@coin@20202" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20203" to="in_game_items/2/coins/tile_map_coins/@coin@20203" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20204" to="in_game_items/2/coins/tile_map_coins/@coin@20204" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20205" to="in_game_items/2/coins/tile_map_coins/@coin@20205" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@20206" to="in_game_items/2/coins/tile_map_coins/@coin@20206" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21385" to="in_game_items/2/coins/tile_map_coins/@coin@21385" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21386" to="in_game_items/2/coins/tile_map_coins/@coin@21386" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21387" to="in_game_items/2/coins/tile_map_coins/@coin@21387" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21388" to="in_game_items/2/coins/tile_map_coins/@coin@21388" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21389" to="in_game_items/2/coins/tile_map_coins/@coin@21389" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21390" to="in_game_items/2/coins/tile_map_coins/@coin@21390" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21391" to="in_game_items/2/coins/tile_map_coins/@coin@21391" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21392" to="in_game_items/2/coins/tile_map_coins/@coin@21392" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21393" to="in_game_items/2/coins/tile_map_coins/@coin@21393" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21394" to="in_game_items/2/coins/tile_map_coins/@coin@21394" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21395" to="in_game_items/2/coins/tile_map_coins/@coin@21395" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21396" to="in_game_items/2/coins/tile_map_coins/@coin@21396" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21397" to="in_game_items/2/coins/tile_map_coins/@coin@21397" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21398" to="in_game_items/2/coins/tile_map_coins/@coin@21398" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21399" to="in_game_items/2/coins/tile_map_coins/@coin@21399" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21400" to="in_game_items/2/coins/tile_map_coins/@coin@21400" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21401" to="in_game_items/2/coins/tile_map_coins/@coin@21401" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21402" to="in_game_items/2/coins/tile_map_coins/@coin@21402" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@21403" to="in_game_items/2/coins/tile_map_coins/@coin@21403" method="_on_body_entered" flags=18]
