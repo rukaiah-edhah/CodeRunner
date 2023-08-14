@@ -26,12 +26,13 @@ offset_bottom = 720.0
 color = Color(1, 1, 1, 0)
 
 [node name="question_container" type="VBoxContainer" parent="background_color"]
+clip_contents = true
 layout_mode = 1
 anchors_preset = -1
 offset_left = 107.0
-offset_top = 178.0
+offset_top = 168.0
 offset_right = 1080.0
-offset_bottom = 298.0
+offset_bottom = 261.0
 metadata/_edit_group_ = true
 
 [node name="question_label" type="RichTextLabel" parent="background_color/question_container"]
@@ -45,10 +46,10 @@ bbcode_enabled = true
 [node name="options_container" type="VBoxContainer" parent="background_color"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.512259
-anchor_top = 0.532445
-anchor_right = 0.512259
-anchor_bottom = 0.532445
+anchor_left = 0.466132
+anchor_top = 0.5
+anchor_right = 0.521833
+anchor_bottom = 0.5
 offset_left = -211.586
 offset_top = -150.36
 offset_right = 172.414
@@ -64,6 +65,7 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_hwnq0")
 theme_override_font_sizes/font_size = 19
+clip_text = true
 icon_alignment = 1
 expand_icon = true
 
@@ -71,18 +73,21 @@ expand_icon = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_hwnq0")
 theme_override_font_sizes/font_size = 19
+clip_text = true
 expand_icon = true
 
 [node name="option_button3" type="Button" parent="background_color/options_container"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_hwnq0")
 theme_override_font_sizes/font_size = 19
+clip_text = true
 expand_icon = true
 
 [node name="option_button4" type="Button" parent="background_color/options_container"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_hwnq0")
 theme_override_font_sizes/font_size = 19
+clip_text = true
 expand_icon = true
 
 [connection signal="pressed" from="background_color/options_container/option_button1" to="." method="_on_option_button_1_pressed"]

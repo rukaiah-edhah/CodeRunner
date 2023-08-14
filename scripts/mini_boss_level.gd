@@ -9,7 +9,7 @@ var health = 100
 @onready var anim_player = $boss_encounter_area/animation_player
 @onready var boss_level_window = $boss_encounter_area/boss_level_window
 @onready var quiz_page = $boss_encounter_area/boss_level_window/quiz_page
-@onready var code_page = $boss_encounter_area/boss_level_window/code_page
+@onready var code_page = $boss_encounter_area/boss_level_window/intro_code_page
 @onready var block_area = $block_area
 @onready var boss_encounter_area = $boss_encounter_area
 
@@ -67,6 +67,7 @@ func _on_code_page_all_correct():
     is_dissolving_window = true
     anim_player.play("dissolve_window")
     block_area.queue_free()  # Removes the blocking area
+    queue_free() 
     
     emit_signal("all_correct")
 
@@ -93,7 +94,7 @@ func take_damage(amount):
     health -= amount
     health_bar.value = health
     if health > 0:
-        anim_sprite.play("right_answer") # Remove/change based on the boss' animations
+        anim_sprite.play("idle") # Remove/change based on the boss' animations
         await anim_sprite.animation_finished
         anim_sprite.play("idle") # Remove/change based on the boss' animations
     
@@ -119,3 +120,4 @@ func _on_animation_player_animation_finished(anim_name):
         "quiz_to_code":
             is_transitioning_to_code = false
     
+
