@@ -2,8 +2,13 @@
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_8mpn6"]
 [ext_resource type="PackedScene" uid="uid://dieljgd8ai41" path="res://scenes/world.tscn" id="2_yh8q3"]
+<<<<<<< HEAD
+[ext_resource type="Texture2D" uid="uid://btpyplacruvgg" path="res://images/cat_player_animation/Jump3.png" id="3_0i6do"]
+[ext_resource type="Texture2D" uid="uid://tbx3o305yo5b" path="res://images/helmet.png" id="4_aoqtt"]
+=======
 [ext_resource type="Texture2D" uid="uid://b0kgh7jnxep4q" path="res://images/cat_player_animation/Jump3.png" id="3_0i6do"]
 [ext_resource type="Texture2D" uid="uid://d27ihnnp32y75" path="res://images/helmet.png" id="4_aoqtt"]
+>>>>>>> 950a7852f5e3427a55a21590820ab955258b3069
 [ext_resource type="PackedScene" uid="uid://b0y2nbxqx3fkn" path="res://scenes/bg_music.tscn" id="5_uuloj"]
 
 [node name="menu" type="Node2D"]
