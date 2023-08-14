@@ -472,7 +472,7 @@ offset_bottom = 390.0
 texture = ExtResource("69_xlc04")
 
 [node name="panel" type="Panel" parent="dialogue/dialogue_box_sprite"]
-modulate = Color(1, 1, 1, 0.560784)
+modulate = Color(1, 1, 1, 0.752941)
 layout_mode = 0
 offset_left = 155.0
 offset_top = 48.0
