@@ -1,15 +1,15 @@
-[gd_scene load_steps=13 format=3 uid="uid://brao5gdnxrlj1"]
+[gd_scene load_steps=13 format=3 uid="uid://oeaisxo7osqs"]
 
-[ext_resource type="Script" path="res://scripts/learning_material_scripts/intro_level/dialogue_boxes/topic_one/dialogue_box_L7.gd" id="1_rty3u"]
-[ext_resource type="Texture2D" uid="uid://b562inkdnpvh7" path="res://images/learning_material_boxes/yellow.png" id="2_17f5a"]
-[ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="3_w6v4x"]
-[ext_resource type="Texture2D" uid="uid://c61vkjdl8heew" path="res://images/learning_material_boxes/arrow_yellow.png" id="4_lw6yl"]
-[ext_resource type="FontFile" uid="uid://c1w4uwymgxw6f" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Italic.ttf" id="5_1c4f4"]
-[ext_resource type="Script" path="res://scripts/block_area.gd" id="6_lkwke"]
+[ext_resource type="Script" path="res://scripts/learning_material_scripts/intro_level/dialogue_boxes/intro/dialogue_box.gd" id="1_fcs8c"]
+[ext_resource type="Texture2D" uid="uid://b562inkdnpvh7" path="res://images/learning_material_boxes/yellow.png" id="2_w2vl4"]
+[ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="3_eggrc"]
+[ext_resource type="Texture2D" uid="uid://c61vkjdl8heew" path="res://images/learning_material_boxes/arrow_yellow.png" id="4_ojhmj"]
+[ext_resource type="FontFile" uid="uid://c1w4uwymgxw6f" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Italic.ttf" id="5_a7ceq"]
+[ext_resource type="Script" path="res://scripts/block_area.gd" id="6_ttqhu"]
 
-[sub_resource type="Animation" id="Animation_3o6vt"]
+[sub_resource type="Animation" id="Animation_epu7n"]
 resource_name = "display"
-length = 6.0
+length = 5.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -17,13 +17,13 @@ tracks/0/path = NodePath("dialogue_box_sprite:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 5.7),
+"times": PackedFloat32Array(0.3, 4.6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_cy4aj"]
+[sub_resource type="Animation" id="Animation_veix2"]
 resource_name = "dissolve"
 length = 4.0
 tracks/0/type = "value"
@@ -33,7 +33,7 @@ tracks/0/path = NodePath("dialogue_box_sprite:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.8),
+"times": PackedFloat32Array(0.3, 3.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
@@ -56,8 +56,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_exk74"]
 _data = {
-"display": SubResource("Animation_3o6vt"),
-"dissolve": SubResource("Animation_cy4aj"),
+"display": SubResource("Animation_epu7n"),
+"dissolve": SubResource("Animation_veix2"),
 "shake_animation": SubResource("Animation_wo8im")
 }
 
@@ -67,10 +67,10 @@ size = Vector2(701, 844)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hc6bu"]
 size = Vector2(684, 843.5)
 
-[node name="dialogue_lesson7" type="Control"]
+[node name="dialogue" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_rty3u")
+script = ExtResource("1_fcs8c")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 reset_on_save = false
@@ -81,11 +81,11 @@ libraries = {
 [node name="dialogue_box_sprite" type="TextureRect" parent="."]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = -109.0
+offset_left = -99.0
 offset_top = 27.0
-offset_right = 687.0
+offset_right = 697.0
 offset_bottom = 390.0
-texture = ExtResource("2_17f5a")
+texture = ExtResource("2_w2vl4")
 
 [node name="panel" type="Panel" parent="dialogue_box_sprite"]
 modulate = Color(1, 1, 1, 0.560784)
@@ -100,9 +100,9 @@ layout_mode = 0
 offset_left = 9.0
 offset_top = 10.0
 offset_right = 497.0
-offset_bottom = 234.0
+offset_bottom = 237.0
 theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_fonts/bold_font = ExtResource("3_w6v4x")
+theme_override_fonts/bold_font = ExtResource("3_eggrc")
 theme_override_font_sizes/normal_font_size = 24
 bbcode_enabled = true
 
@@ -110,7 +110,7 @@ bbcode_enabled = true
 visible = false
 position = Vector2(477.052, 243.214)
 rotation = 1.5708
-texture = ExtResource("4_lw6yl")
+texture = ExtResource("4_ojhmj")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="dialogue_box_sprite/panel"]
 layout_mode = 1
@@ -126,15 +126,15 @@ grow_vertical = 0
 modulate = Color(1, 1, 1, 0.839216)
 self_modulate = Color(1, 1, 1, 0.835294)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("5_1c4f4")
-text = "Got it!"
+theme_override_fonts/font = ExtResource("5_a7ceq")
+text = "Let's begin!"
 
 [node name="next_char" type="Timer" parent="."]
 
 [node name="next_message" type="Timer" parent="."]
 
 [node name="block_area" type="StaticBody2D" parent="."]
-script = ExtResource("6_lkwke")
+script = ExtResource("6_ttqhu")
 
 [node name="area_2d" type="Area2D" parent="block_area"]
 
@@ -148,7 +148,6 @@ position = Vector2(372, 219.25)
 shape = SubResource("RectangleShape2D_hc6bu")
 debug_color = Color(0, 0, 0, 0.0784314)
 
-[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="pressed" from="dialogue_box_sprite/panel/VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="timeout" from="next_char" to="." method="_on_next_char_timeout"]
 [connection signal="timeout" from="next_message" to="." method="_on_next_message_timeout"]

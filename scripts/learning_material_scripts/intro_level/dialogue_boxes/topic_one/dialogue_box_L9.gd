@@ -12,6 +12,7 @@ var current_message = 0
 var display = ""
 var current_char = 0
 var active = false
+var block_area_active = true
 
 
 
@@ -25,19 +26,12 @@ var active = false
 var current_line_visible = 0
 var dialogue_complete = false
 
-# prioritize these animations over the block area animation
-var is_displaying_window = false
-var is_dissolving_window = false
 #____________________________________________________________________
 
 
 
 func _ready():
-    is_displaying_window = true
     anim_player.play("display")
-    
-    block_area.player_hit.connect(_on_block_area_player_hit)
-    anim_player.animation_finished.connect(_on_animation_player_animation_finished)
     
     #messages = StaticData.item_data
     #print(messages)
@@ -70,8 +64,6 @@ func start_dialogue():
 
 func stop_dialogue():
     # get_parent().remove_child(self)
-    block_area.queue_free()
-    is_displaying_window = true
     anim_player.play("dissolve")
 
 func _on_next_char_timeout():
@@ -111,21 +103,32 @@ func _on_next_message_timeout():
 
 #_____________________________Added by Rukaiah__________________________
 func _on_button_pressed():
-    if (current_message == len(messages) - 1):
+    if current_message == len(messages) - 1:
         stop_dialogue()
+        if block_area_active:  # remove block area only when it is active
+            block_area.queue_free()
+            block_area_active = false
+ 
 
-func _on_block_area_player_hit():
-    if is_dissolving_window or is_displaying_window:
-        return  
-        
-    anim_player.play("shake_animation")
+func reset_scene():
+    # Reset animation
+    anim_player.stop()
+    anim_player.seek(0)
+    anim_player.play("display")
+    
+    # Reset text and associated variables
+    current_message = 0
+    display = ""
+    current_char = 0
+    dialogue_text.text = ""
 
     
-func _on_animation_player_animation_finished(anim_name):
-    match anim_name:
-        "display":
-            is_displaying_window = false
-        "dissolve":
-            is_dissolving_window = false
+    # Reset other states
+    enter_button.visible = false
+    dialogue_text.scroll_active = false
+    $dialogue_box_sprite/panel/Arrow.visible = false
+    var block_area_active = true
+    
+    start_dialogue()
 #________________________________________________________________________
 

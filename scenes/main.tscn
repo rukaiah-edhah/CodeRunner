@@ -7,9 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://c4u1kl48fqk6u" path="res://scenes/coins_box_empty.tscn" id="4_4fl2c"]
 [ext_resource type="PackedScene" uid="uid://bhiwhgg53t8dl" path="res://scenes/save_portal.tscn" id="5_qwyvo"]
 [ext_resource type="PackedScene" uid="uid://yv4q2ayft2mq" path="res://learning-material-scenes/intro-level/shifu's-lessons/intro/shifu.tscn" id="7_nre40"]
-[ext_resource type="PackedScene" uid="uid://b8nruig5385js" path="res://learning-material-scenes/intro-level/shifu's-lessons/dialogue-boxes/example.tscn" id="8_d3dhs"]
 [ext_resource type="PackedScene" uid="uid://b0y2nbxqx3fkn" path="res://scenes/bg_music.tscn" id="9_6bruo"]
 [ext_resource type="PackedScene" uid="uid://drwvsj0yb6hob" path="res://learning-material-scenes/intro-level/boss_levels/final_boss_intro_topic6.tscn" id="10_im171"]
+[ext_resource type="PackedScene" uid="uid://cr87j3ggbtht7" path="res://learning-material-scenes/intro-level/shifu's-lessons/intro/shifu_2.tscn" id="11_crgru"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_yuqy0")
@@ -32,24 +32,21 @@ scale = Vector2(0.234593, 0.262176)
 
 [node name="Shifu" parent="." instance=ExtResource("7_nre40")]
 top_level = true
-position = Vector2(3484, -255)
-
-[node name="example_box" parent="." instance=ExtResource("8_d3dhs")]
-top_level = true
-offset_left = 5291.0
-offset_top = -350.0
-offset_right = 5291.0
-offset_bottom = -350.0
+position = Vector2(3370, -304)
 
 [node name="bg_music" parent="." instance=ExtResource("9_6bruo")]
 
 [node name="player" parent="." groups=["Persist"] instance=ExtResource("2_0etpr")]
 top_level = true
 z_index = 2
-position = Vector2(6361, 268)
+position = Vector2(3034, 258)
 
 [node name="final_boss_intro" parent="." instance=ExtResource("10_im171")]
 top_level = true
 position = Vector2(7071, 339)
+
+[node name="Shifu2" parent="." instance=ExtResource("11_crgru")]
+top_level = true
+position = Vector2(4902, -319)
 
 [connection signal="coin_inventory_changed" from="coin" to="player" method="_on_coin_coin_inventory_changed"]
