@@ -366,7 +366,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pfidp"]
-radius = 373.133
+radius = 491.417
 
 [sub_resource type="Animation" id="Animation_epu7n"]
 resource_name = "display"
