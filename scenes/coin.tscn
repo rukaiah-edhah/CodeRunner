@@ -1,15 +1,15 @@
 [gd_scene load_steps=13 format=3 uid="uid://divgbcotp0d8v"]
 
 [ext_resource type="Script" path="res://scripts/coin.gd" id="1_7irsq"]
-[ext_resource type="Texture2D" uid="uid://byh6dpslxehoh" path="res://images/coin_animation/coin_1.png" id="2_m6718"]
-[ext_resource type="Texture2D" uid="uid://kkj5nlic8e2o" path="res://images/coin_animation/coin_2.png" id="3_fg1hf"]
-[ext_resource type="Texture2D" uid="uid://0mkyw8sod405" path="res://images/coin_animation/coin_3.png" id="4_lwfm7"]
-[ext_resource type="Texture2D" uid="uid://dr8wr516d3yna" path="res://images/coin_animation/coin_4.png" id="5_wtkxt"]
-[ext_resource type="Texture2D" uid="uid://b3pqrxluue7ed" path="res://images/coin_animation/coin_5.png" id="6_t8fc8"]
-[ext_resource type="Texture2D" uid="uid://bc6msumq8qgbx" path="res://images/coin_animation/coin_6.png" id="7_xdfiw"]
-[ext_resource type="Texture2D" uid="uid://c2sq6hdyvvggi" path="res://images/coin_animation/coin_7.png" id="8_w1ftv"]
-[ext_resource type="Texture2D" uid="uid://4xk4e233wool" path="res://images/coin_animation/coin_8.png" id="9_lwe7q"]
-[ext_resource type="Texture2D" uid="uid://cy10o38x4ptsd" path="res://images/coin_animation/coin_9.png" id="10_5rqc3"]
+[ext_resource type="Texture2D" uid="uid://1ijh4o8sj468" path="res://images/coin_animation/coin_1.png" id="2_m6718"]
+[ext_resource type="Texture2D" uid="uid://dx53g8sag5wai" path="res://images/coin_animation/coin_2.png" id="3_fg1hf"]
+[ext_resource type="Texture2D" uid="uid://bgh3ya2kjng2r" path="res://images/coin_animation/coin_3.png" id="4_lwfm7"]
+[ext_resource type="Texture2D" uid="uid://c1yvcvkwu4cq1" path="res://images/coin_animation/coin_4.png" id="5_wtkxt"]
+[ext_resource type="Texture2D" uid="uid://bmc6686slmew" path="res://images/coin_animation/coin_5.png" id="6_t8fc8"]
+[ext_resource type="Texture2D" uid="uid://dxiypss6v7f2p" path="res://images/coin_animation/coin_6.png" id="7_xdfiw"]
+[ext_resource type="Texture2D" uid="uid://756qytqgctnl" path="res://images/coin_animation/coin_7.png" id="8_w1ftv"]
+[ext_resource type="Texture2D" uid="uid://c3ev1kr7041v7" path="res://images/coin_animation/coin_8.png" id="9_lwe7q"]
+[ext_resource type="Texture2D" uid="uid://bc47xvgeseb0u" path="res://images/coin_animation/coin_9.png" id="10_5rqc3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0hlmf"]
 animations = [{
@@ -65,5 +65,7 @@ frame_progress = 0.925382
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_xy16x")
+
+[node name="coin_audio" type="AudioStreamPlayer" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
