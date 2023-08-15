@@ -9,30 +9,30 @@ signal quiz_finished
 
 var questions = [
 	{
-		"question": "Which type of programming language prioritizes ease of use and productivity?",
-		"options": [" Higher-level languages", "Lower-level languages", "General-purpose languages", "Specific-purpose languages"], # 1. Add all of the options you want to display 
-		"answer": 0 # The index of the correct answer
+		"question": "Which statement accurately describes pseudocode?",
+		"options": ["A specific coding language", "A universal language for programmers", "A mix of natural language and code", "Visual diagram of algorithm flow"], # 1. Add all of the options you want to display 
+		"answer": 3 # The index of the correct answer
 	},
 	{
-		"question": "Higher-level programming languages are best described as:",
-		"options": ["Based on core computer principles", "Hardware-focused", "Clear and straightforward", "Specialized without extras"],
-		"answer": 2
+		"question": "What is the primary purpose of pseudocode?",
+		"options": ["Serve as a blueprint", "Act as executable code", "Focus on syntax", "Present logic simply"],
+		"answer": 4
 	},
 	{
-		"question": "Which programming language is used for performance-critical tasks and provides more control and proximity to the hardware? ",
-		"options": ["Python", "JavaScript", "Assembly", "Ruby"],
-		"answer": 2
+		"question": "What is the main advantage of flowcharts over pseudocode?",
+		"options": ["Emphasize beginner logic", "Use simple speech and logic", "Visualize program paths", "Offer detailed execution steps"],
+		"answer": 3
 	},
 	{
 		
-		"question": "Which two basic numbers form the foundation of binary code in computing?",
-		"options": ["1 and 2", "0 and 1", "1 and 3", "0 and 2"],
+		"question": "What role do pseudocode and flowcharts play for beginners?",
+		"options": ["Emphasizing strict syntax", "Avoiding coding", "Clarifying design and understanding", "Prioritizing one over the other"],
 		"answer": 1
 	},
 	{
-		"question": "What are the two primary classifications of programming languages?",
-		"options": ["Higher Level & Medium Level", "Medium Level & Low level", "Powerful & Precise", "High Level & Low Level"],
-		"answer": 3
+		"question": "Which of the following is essential for pseudocode syntax?",
+		"options": ["Indentation", "None; it lacks strict syntax", "Spaces", "Snake Case"],
+		"answer": 2
 	}
 ]
 @onready var question_label = $background_color/question_container/question_label

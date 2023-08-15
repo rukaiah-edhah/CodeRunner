@@ -9,30 +9,30 @@ signal quiz_finished
 
 var questions = [
 	{
-		"question": "Which type of programming language prioritizes ease of use and productivity?",
-		"options": [" Higher-level languages", "Lower-level languages", "General-purpose languages", "Specific-purpose languages"], # 1. Add all of the options you want to display 
-		"answer": 0 # The index of the correct answer
+		"question": "How do 'if,' 'elif,' and 'else' statements help manage how a program runs?",
+		"options": ["They set the program's start point", "They determine code's loop count", "They modify variable types", "They specify conditions for code paths"], # 1. Add all of the options you want to display 
+		"answer": 4 # The index of the correct answer
 	},
 	{
-		"question": "Higher-level programming languages are best described as:",
-		"options": ["Based on core computer principles", "Hardware-focused", "Clear and straightforward", "Specialized without extras"],
+		"question": "Which control structure is used to execute a block of code only if a specified condition is true?",
+		"options": ["The else statement", "The if statement", "The elif statement", "All of the above"],
 		"answer": 2
 	},
 	{
-		"question": "Which programming language is used for performance-critical tasks and provides more control and proximity to the hardware? ",
-		"options": ["Python", "JavaScript", "Assembly", "Ruby"],
-		"answer": 2
-	},
-	{
-		
-		"question": "Which two basic numbers form the foundation of binary code in computing?",
-		"options": ["1 and 2", "0 and 1", "1 and 3", "0 and 2"],
+		"question": "What is the purpose of the else statement?",
+		"options": ["Executes code if a condition is false", "Executes code if a condition is true", "Executes code regardless of prior condition", "Manages exceptions and errors"],
 		"answer": 1
 	},
 	{
-		"question": "What are the two primary classifications of programming languages?",
-		"options": ["Higher Level & Medium Level", "Medium Level & Low level", "Powerful & Precise", "High Level & Low Level"],
-		"answer": 3
+		
+		"question": "What is the purpose of the elif statement in conditional control structures?",
+		"options": ["Checks conditions and runs the first true one", "Runs code for a true condition", "Offers alternate block for false conditions.", "Prints variable's message"],
+		"answer": 1
+	},
+	{
+		"question": "Which statement must be used to start a chain of conditional statements?",
+		"options": ["if", "elif", "else", "for"],
+		"answer": 1
 	}
 ]
 @onready var question_label = $background_color/question_container/question_label

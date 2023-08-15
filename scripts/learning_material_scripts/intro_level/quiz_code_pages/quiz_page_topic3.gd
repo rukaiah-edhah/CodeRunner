@@ -9,30 +9,31 @@ signal quiz_finished
 
 var questions = [
 	{
-		"question": "Which type of programming language prioritizes ease of use and productivity?",
-		"options": [" Higher-level languages", "Lower-level languages", "General-purpose languages", "Specific-purpose languages"], # 1. Add all of the options you want to display 
-		"answer": 0 # The index of the correct answer
+		"question": "Which data type would you use to represent a person's age?",
+		"options": ["Integer", "Floating-point", "String", "Boolean"], # 1. Add all of the options you want to display 
+		"answer": 1 # The index of the correct answer
 	},
 	{
-		"question": "Higher-level programming languages are best described as:",
-		"options": ["Based on core computer principles", "Hardware-focused", "Clear and straightforward", "Specialized without extras"],
-		"answer": 2
+		"question": "Which data type would you use to represent a person's name?",
+		"options": ["Character", "Boolean", "String", "Integer"],
+		"answer": 3
 	},
 	{
-		"question": "Which programming language is used for performance-critical tasks and provides more control and proximity to the hardware? ",
-		"options": ["Python", "JavaScript", "Assembly", "Ruby"],
-		"answer": 2
-	},
-	{
-		
-		"question": "Which two basic numbers form the foundation of binary code in computing?",
-		"options": ["1 and 2", "0 and 1", "1 and 3", "0 and 2"],
+		"question": "Which data type would you use to represent a list of students in a class?",
+		"options": ["Array", "Boolean", "Integer", "String"],
 		"answer": 1
 	},
 	{
-		"question": "What are the two primary classifications of programming languages?",
-		"options": ["Higher Level & Medium Level", "Medium Level & Low level", "Powerful & Precise", "High Level & Low Level"],
-		"answer": 3
+		
+		"question": "Which data type would you use to represent a True or False Value?
+",
+		"options": ["Float", "Boolean", "Integer", "Char"],
+		"answer": 2
+	},
+	{
+		"question": "Which data type would you use to represent a number with a decimal?",
+		"options": ["String", "Integer", "Array", "Floating-point"],
+		"answer": 4
 	}
 ]
 @onready var question_label = $background_color/question_container/question_label
