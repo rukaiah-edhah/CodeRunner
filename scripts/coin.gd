@@ -11,7 +11,7 @@ func _ready():
 	coin_sound.stream = audio
 
 func _on_body_entered(body):
-	coin_sound.play()
+	coin_sound.play(0)
 	# send signal to player and make coin dissappear
 	if body.is_in_group("player"):
 		emit_signal("coin_inventory_changed")

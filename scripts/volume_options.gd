@@ -65,4 +65,4 @@ func _on_mute_button_toggled(button_pressed):
 	if button_pressed == true:
 		audio.volume_db = -80
 	else:
-		audio.volume_db = 0
+		audio.volume_db = volume_bar.value

@@ -13,23 +13,23 @@ script = ExtResource("1_63qig")
 
 [node name="volume_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1061.0
-offset_top = 4.0
-offset_right = 1138.0
-offset_bottom = 24.0
+offset_left = 1064.0
+offset_top = 5.0
+offset_right = 1141.0
+offset_bottom = 25.0
 
 [node name="volume_bar" type="HSlider" parent="volume_button"]
 layout_mode = 0
-offset_left = -18.0
+offset_left = -20.0
 offset_top = 25.0
-offset_right = 90.0
+offset_right = 88.0
 offset_bottom = 41.0
 
 [node name="mute_button" type="CheckBox" parent="volume_button"]
 layout_mode = 0
-offset_left = 27.0
+offset_left = 29.0
 offset_top = 44.0
-offset_right = 51.0
+offset_right = 53.0
 offset_bottom = 68.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
