@@ -9,30 +9,30 @@ signal quiz_finished
 
 var questions = [
 	{
-		"question": "Which type of programming language prioritizes ease of use and productivity?",
-		"options": [" Higher-level languages", "Lower-level languages", "General-purpose languages", "Specific-purpose languages"], # 1. Add all of the options you want to display 
-		"answer": 0 # The index of the correct answer
+		"question": "In programming, what's the main role of variables?",
+		"options": ["Just fancy names without much use", "Things you set once and never change", "Holders for values with specific names", "Short-lived items without much importance"], # 1. Add all of the options you want to display 
+		"answer": 3 # The index of the correct answer
 	},
 	{
-		"question": "Higher-level programming languages are best described as:",
-		"options": ["Based on core computer principles", "Hardware-focused", "Clear and straightforward", "Specialized without extras"],
+		"question": "Which naming convention is commonly used for variables in Python?",
+		"options": ["Camel case", "Sneak case", "Upper case", "Pascal case"],
 		"answer": 2
 	},
 	{
-		"question": "Which programming language is used for performance-critical tasks and provides more control and proximity to the hardware? ",
-		"options": ["Python", "JavaScript", "Assembly", "Ruby"],
-		"answer": 2
-	},
-	{
-		
-		"question": "Which two basic numbers form the foundation of binary code in computing?",
-		"options": ["1 and 2", "0 and 1", "1 and 3", "0 and 2"],
+		"question": "Which naming convention is often used for naming classes or types?",
+		"options": ["Pascal case", "Upper case", "Sneak case", "Camel case"],
 		"answer": 1
 	},
 	{
-		"question": "What are the two primary classifications of programming languages?",
-		"options": ["Higher Level & Medium Level", "Medium Level & Low level", "Powerful & Precise", "High Level & Low Level"],
+		
+		"question": "What does the = operator do when used with variables?",
+		"options": ["Compares two variable values", "Declares a variable ", "Assigns a value to a variable", "None of the above"],
 		"answer": 3
+	},
+	{
+		"question": "Why is following naming conventions for variables important?",
+		"options": ["To make the code visually appealing", "To improve readability and understanding", "None of the above ", "To obscure the code from others"],
+		"answer": 2
 	}
 ]
 @onready var question_label = $background_color/question_container/question_label
