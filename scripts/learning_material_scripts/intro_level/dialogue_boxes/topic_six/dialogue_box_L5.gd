@@ -1,7 +1,11 @@
 extends Control
 
 var messages = [
-	"Ah, welcome, fledgling adventurer! I am Shifu, your guide in this realm rocked by a digital anomaly. Our quest begins here, where you'll learn essential programming skills. These skills will equip you to become proficient in Python, the language the central computer operates on, enabling you to confront the epicenter of the chaos."
+	"The journey begins with initialization, setting forth the starting value. The condition emerges as the sentinel, guarding the continuation of the loop's dance. And behold, the iteration steps forth, updating the loop's variable after each sacred step.
+
+
+for (initialization; condition; iteration) 
+  // Code to be executed"
 	]
 
 var typing_speed = .1

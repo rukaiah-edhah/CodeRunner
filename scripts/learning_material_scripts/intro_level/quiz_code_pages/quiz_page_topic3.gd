@@ -85,7 +85,7 @@ func next_question():
 
 # 5. If the number of options is less than 4, turn off the toggle visibility of the option_button node you do not want to see, otherwise add another OptionButton node and connect it to the pressed() signal:
 func _on_option_button_1_pressed(): 
-	 check_answer(0)
+	check_answer(0)
 	
 func _on_option_button_2_pressed():
 	check_answer(1)

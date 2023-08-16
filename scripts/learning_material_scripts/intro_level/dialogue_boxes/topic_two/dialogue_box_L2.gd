@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Ah, welcome, fledgling adventurer! I am Shifu, your guide in this realm rocked by a digital anomaly. Our quest begins here, where you'll learn essential programming skills. These skills will equip you to become proficient in Python, the language the central computer operates on, enabling you to confront the epicenter of the chaos."
+	"On the other hand, the realm of Flowcharts unveils a wondrous sight, for they are visual diagrams portraying the ethereal flow and structure of an algorithm. With enigmatic symbols and guiding arrows, they illuminate the intricate dance of steps, decisions, and loops within a function. Such visual enchantments serve as benevolent guides for fledgling souls, illuminating the labyrinthine paths and varied conditions enshrined within a function's essence."
 	]
 
 var typing_speed = .1

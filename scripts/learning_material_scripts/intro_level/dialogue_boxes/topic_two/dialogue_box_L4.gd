@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Ah, welcome, fledgling adventurer! I am Shifu, your guide in this realm rocked by a digital anomaly. Our quest begins here, where you'll learn essential programming skills. These skills will equip you to become proficient in Python, the language the central computer operates on, enabling you to confront the epicenter of the chaos."
+	"Thus, in contemplation, we perceive that flowcharts and pseudocode, like the sacred weapons of a warrior, serve as excellent tools to plan, design, and unravel the mysteries of functions. When faced with the choice between them, consider your innermost preferences, the function's complexity, and the need for visual representation."
 	]
 
 var typing_speed = .1

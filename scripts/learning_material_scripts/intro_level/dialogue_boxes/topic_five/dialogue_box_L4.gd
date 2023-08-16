@@ -1,7 +1,18 @@
 extends Control
 
 var messages = [
-	"Ah, welcome, fledgling adventurer! I am Shifu, your guide in this realm rocked by a digital anomaly. Our quest begins here, where you'll learn essential programming skills. These skills will equip you to become proficient in Python, the language the central computer operates on, enabling you to confront the epicenter of the chaos."
+	"But in the grand tapestry of programming, sometimes we confront the need for multiple possibilities. Enter the elif statement, a versatile arbiter, entrusted with evaluating additional conditions when its predecessors fail to reveal the path to truth.
+Contemplate upon this exemplar:
+
+num = 10
+
+if num > 0 then
+	Display 'Number is positive'
+elif num < 0 then
+	Display 'Number is negative'
+else
+	Display 'Number is zero'
+End if"
 	]
 
 var typing_speed = .1

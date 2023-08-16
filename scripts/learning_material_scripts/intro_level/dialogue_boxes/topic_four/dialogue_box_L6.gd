@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Ah, welcome, fledgling adventurer! I am Shifu, your guide in this realm rocked by a digital anomaly. Our quest begins here, where you'll learn essential programming skills. These skills will equip you to become proficient in Python, the language the central computer operates on, enabling you to confront the epicenter of the chaos."
+	"Pascal case, akin to Camel case, but adorned with an uppercase beginning, finds its purpose in naming classes or types. Observe 'PersonName' or 'StudentAge' as examples."
 	]
 
 var typing_speed = .1

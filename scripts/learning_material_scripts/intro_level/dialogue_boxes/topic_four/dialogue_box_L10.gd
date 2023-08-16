@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Ah, welcome, fledgling adventurer! I am Shifu, your guide in this realm rocked by a digital anomaly. Our quest begins here, where you'll learn essential programming skills. These skills will equip you to become proficient in Python, the language the central computer operates on, enabling you to confront the epicenter of the chaos."
+	"May this wisdom of variables accompany you on your journey, dear disciple, as you traverse the realms of programming. Let it empower you to wield the power of data with grace and precision, and may your code be a harmonious dance of values within the mystical sanctuary of variables."
 	]
 
 var typing_speed = .1
