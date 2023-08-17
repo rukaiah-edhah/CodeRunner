@@ -119,5 +119,4 @@ func _on_animation_player_animation_finished(anim_name):
             is_dissolving_window = false
         "quiz_to_code":
             is_transitioning_to_code = false
-    
 

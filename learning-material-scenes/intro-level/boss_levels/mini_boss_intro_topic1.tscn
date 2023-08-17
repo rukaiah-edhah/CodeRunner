@@ -380,7 +380,7 @@ position = Vector2(-506.75, -268)
 shape = SubResource("RectangleShape2D_uvki5")
 
 [node name="animated_sprite_2d" type="AnimatedSprite2D" parent="boss_encounter_area"]
-position = Vector2(374, -91.5)
+position = Vector2(374, -59)
 scale = Vector2(0.510638, 0.575847)
 sprite_frames = SubResource("SpriteFrames_ebl7p")
 animation = &"idle"
@@ -713,6 +713,8 @@ libraries = {
 "": SubResource("AnimationLibrary_vb8hw")
 }
 
+[connection signal="wrong_answer" from="boss_encounter_area/boss_level_window/quiz_page" to="." method="player_wrong_answer"]
+[connection signal="wrong_answer" from="boss_encounter_area/boss_level_window/quiz_page" to="." method="_on_quiz_page_wrong_answer"]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button1" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_1_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button2" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_2_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button3" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_3_pressed" flags=18]
