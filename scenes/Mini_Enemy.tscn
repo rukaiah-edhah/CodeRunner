@@ -1,73 +1,86 @@
-[gd_scene load_steps=19 format=3 uid="uid://bypm3gqfiqlvq"]
+[gd_scene load_steps=23 format=3 uid="uid://bypm3gqfiqlvq"]
 
 [ext_resource type="Script" path="res://scripts/Mini_Enemy.gd" id="1_jqye7"]
-[ext_resource type="Texture2D" uid="uid://m05o6xccae7m" path="res://images/mini_enemies_intro/black/__black_slime_monster_base_000.png" id="1_q865k"]
-[ext_resource type="Texture2D" uid="uid://yt0k8couexps" path="res://images/mini_enemies_intro/black/__black_slime_monster_bite_007.png" id="2_pw74r"]
-[ext_resource type="Texture2D" uid="uid://cragyo065il2l" path="res://images/mini_enemies_intro/black/__black_slime_monster_bite_008.png" id="3_uts0n"]
-[ext_resource type="Texture2D" uid="uid://dpgnqry60e8ve" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_000.png" id="4_lwcf7"]
-[ext_resource type="Texture2D" uid="uid://ieja746vktie" path="res://images/mini_enemies_intro/black/__black_slime_monster_bite_003.png" id="5_w71ki"]
-[ext_resource type="Texture2D" uid="uid://dx5lq0p1aadtm" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_002.png" id="6_6mtwj"]
-[ext_resource type="Texture2D" uid="uid://bxl7gsjcswelp" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_003.png" id="7_kgat8"]
-[ext_resource type="Texture2D" uid="uid://bp8s7et1pcq75" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_004.png" id="8_d0tr0"]
-[ext_resource type="Texture2D" uid="uid://bed2clcpsdcs3" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_005.png" id="9_pbkxt"]
-[ext_resource type="Texture2D" uid="uid://bvknokul2oapx" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_006.png" id="10_tuyll"]
-[ext_resource type="Texture2D" uid="uid://cg1c1eu8c8j3l" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_007.png" id="11_dd6k2"]
-[ext_resource type="Texture2D" uid="uid://b5x02ybrawgfp" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_008.png" id="12_iibmr"]
-[ext_resource type="Texture2D" uid="uid://d1l8uvo8m38o0" path="res://images/mini_enemies_intro/black/__black_slime_monster_die_009.png" id="13_almnv"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p0rpg"]
-atlas = ExtResource("1_q865k")
-region = Rect2(0, 0, 205, 173)
+[ext_resource type="Texture2D" uid="uid://cr8k4v6cwkcmi" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_die_000.png" id="2_vvs3m"]
+[ext_resource type="Texture2D" uid="uid://l5jo63a21e1f" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_die_001.png" id="3_17qpv"]
+[ext_resource type="Texture2D" uid="uid://fbt8iinqvh4c" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_die_002.png" id="4_yyhe3"]
+[ext_resource type="Texture2D" uid="uid://bgs57l7pctupr" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_die_003.png" id="5_fsvo2"]
+[ext_resource type="Texture2D" uid="uid://d2hblqqpc1bge" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_die_004.png" id="6_p1i3o"]
+[ext_resource type="Texture2D" uid="uid://0lard4cvbtkt" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_die_005.png" id="7_o1qwp"]
+[ext_resource type="Texture2D" uid="uid://ddab22wvcqd5o" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_die_006.png" id="8_m213i"]
+[ext_resource type="Texture2D" uid="uid://r3xthmw0eyas" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_die_007.png" id="9_0h325"]
+[ext_resource type="Texture2D" uid="uid://deoe5kslfns8h" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_die_008.png" id="10_5jlne"]
+[ext_resource type="Texture2D" uid="uid://cbmrn6r43d147" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_die_009.png" id="11_aflrw"]
+[ext_resource type="Texture2D" uid="uid://we2whng3b4gu" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_move_000.png" id="12_iwegn"]
+[ext_resource type="Texture2D" uid="uid://c1dsbastk8n1l" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_move_001.png" id="13_n75ak"]
+[ext_resource type="Texture2D" uid="uid://dd7uto7rk6psu" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_move_002.png" id="14_vlq37"]
+[ext_resource type="Texture2D" uid="uid://vr41ofqkfcx1" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_move_003.png" id="15_pr0yf"]
+[ext_resource type="Texture2D" uid="uid://c63i8e1cxjxle" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_move_004.png" id="16_a3idr"]
+[ext_resource type="Texture2D" uid="uid://cuxtb137p6y3j" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_move_005.png" id="17_weaa5"]
+[ext_resource type="Texture2D" uid="uid://dijer1g6m5q25" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_move_006.png" id="18_jc2lc"]
+[ext_resource type="Texture2D" uid="uid://jp4txeum0uyr" path="res://images/mini_enemies_intro/black/__black_slime_monster_no_bones_move_007.png" id="19_cwvd5"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_h63gl"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_w71ki")
+"texture": ExtResource("2_vvs3m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_6mtwj")
+"texture": ExtResource("3_17qpv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_kgat8")
+"texture": ExtResource("4_yyhe3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_d0tr0")
+"texture": ExtResource("5_fsvo2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_pbkxt")
+"texture": ExtResource("6_p1i3o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_tuyll")
+"texture": ExtResource("7_o1qwp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_dd6k2")
+"texture": ExtResource("8_m213i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_iibmr")
+"texture": ExtResource("9_0h325")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_almnv")
+"texture": ExtResource("10_5jlne")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_p0rpg")
+"texture": ExtResource("11_aflrw")
 }],
-"loop": true,
+"loop": false,
 "name": &"Death",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_q865k")
+"texture": ExtResource("12_iwegn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_pw74r")
+"texture": ExtResource("13_n75ak")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_uts0n")
+"texture": ExtResource("14_vlq37")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_lwcf7")
+"texture": ExtResource("15_pr0yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_a3idr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_weaa5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jc2lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_cwvd5")
 }],
 "loop": true,
 "name": &"Run",
@@ -75,7 +88,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dobpp"]
-size = Vector2(299.861, 334.988)
+size = Vector2(239.387, 107.567)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7l0xx"]
 size = Vector2(103, 60.0946)
@@ -88,23 +101,23 @@ visibility_layer = 3
 script = ExtResource("1_jqye7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(28, -28)
+position = Vector2(8.75806, -47.546)
 rotation = -6.28319
-scale = Vector2(0.299371, 0.161028)
+scale = Vector2(0.294714, 0.218084)
 sprite_frames = SubResource("SpriteFrames_h63gl")
-animation = &"Death"
+animation = &"Run"
 
 [node name="Area2D" type="Area2D" parent="CharacterBody2D/AnimatedSprite2D"]
 position = Vector2(-23, -70.0952)
 scale = Vector2(1, 1.04437)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D/AnimatedSprite2D/Area2D"]
-position = Vector2(-40.4667, 171.76)
+position = Vector2(-43.1463, 60.5749)
 scale = Vector2(1, 1.15728)
 shape = SubResource("RectangleShape2D_dobpp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(12, -6.03634)
+position = Vector2(-2, -5)
 scale = Vector2(1, 0.864092)
 shape = SubResource("RectangleShape2D_7l0xx")
 

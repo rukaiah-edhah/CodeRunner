@@ -5,9 +5,10 @@ extends CharacterBody2D
 @export var speed = 350
 @export var gravity = 30
 @export var jump_force = 700
-@onready var healthbar = $health/healthbar
+@onready var healthbar = $RemoteTransform2D/Camera2D/health/healthbar
 @onready var _animation = $AnimatedSprite2D
-@onready var coin_inventory = $coin_inventory/Panel/num_coins
+@onready var coin_panel = $RemoteTransform2D/Camera2D/coin_inventory/Panel
+@onready var coin_inventory = $RemoteTransform2D/Camera2D/coin_inventory/Panel/num_coins
 @onready var jump_sound = $jump_sound
 
 var coins = 0
@@ -27,11 +28,18 @@ var green_health = preload("res://unnecessary-files/green.png")
 const FULL_HEALTH = 100
 var health = FULL_HEALTH
 
-#_____________________Ignore for now_________________________    
-## Controlling Camera position
-#@onready var player_camera = $Camera2D
-#var camera_offset_right = Vector2(420, -208)
-#var camera_offset_left = Vector2(-384, -221)
+#_____________________Added bt Rukaiah_________________________    
+# Variabels for controlling the camera's position based in the player's diraction
+@onready var player_camera = $RemoteTransform2D/Camera2D
+# Camera 
+const CAMERA_OFFSET_RIGHT = Vector2(420, -208)
+const CAMERA_OFFSET_LEFT = Vector2(-384, -221)
+
+# UI elements 
+const HEALTHBAR_POSITION_RIGHT = Vector2(410, -215)
+const HEALTHBAR_POSITION_LEFT = Vector2(-394, -228)
+const COIN_PANEL_POSITION_RIGHT = Vector2(410, -215)
+const COIN_PANEL_POSITION_LEFT = Vector2(-394, -228)
 #___________________________________________________________
 
 func _ready():
@@ -39,6 +47,10 @@ func _ready():
     #_________________________________________Added by Rukaiah__________________________________________
     assert(BossManager != null) #The purpose of this line is to check that the boss manager is not null. If the game is running smoothly, we can remove it.
     BossManager.set_player(self) # Sets the current player in the BossManager
+    
+    player_camera.offset = CAMERA_OFFSET_RIGHT
+    healthbar.position = HEALTHBAR_POSITION_RIGHT 
+    coin_panel.position = COIN_PANEL_POSITION_RIGHT
     #___________________________________________________________________________________________________
     
     # set screen size, health bar, and coin bar
@@ -104,14 +116,18 @@ func _physics_process(_delta):
     velocity.x = speed * horizontal_direction
     
     move_and_slide()
-#_____________________Ignore for now_________________________    
-    #update_camera_position(velocity.x)
+#_____________________Added by Rukaiah_________________________    
+    update_camera_position(velocity.x)
     
-#func update_camera_position(direction_x: float):
-    #f direction_x > 0:
-        #player_camera.offset = camera_offset_right
-    #elif direction_x < 0:
-        #player_camera.offset = camera_offset_left
+func update_camera_position(direction_x: float):
+    if direction_x > 0:
+        player_camera.offset = CAMERA_OFFSET_RIGHT
+        healthbar.position = HEALTHBAR_POSITION_RIGHT 
+        coin_panel.position = COIN_PANEL_POSITION_RIGHT
+    elif direction_x < 0:
+        player_camera.offset = CAMERA_OFFSET_LEFT
+        healthbar.position = HEALTHBAR_POSITION_LEFT 
+        coin_panel.position = COIN_PANEL_POSITION_LEFT 
 #_______________________________________________________________    
 
 # __________________________ Added by Rukaiah ______________________

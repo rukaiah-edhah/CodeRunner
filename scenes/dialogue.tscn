@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://oeaisxo7osqs"]
 
-[ext_resource type="Script" path="res://scripts/learning_material_scripts/intro_level/dialogue_boxes/intro/dialogue_box.gd" id="1_fcs8c"]
+[ext_resource type="Script" path="res://scripts/learning_material_scripts/intro_level/shifu's-lessons/intro/dialogue_box.gd" id="1_fcs8c"]
 [ext_resource type="Texture2D" uid="uid://b562inkdnpvh7" path="res://images/learning_material_boxes/yellow.png" id="2_w2vl4"]
 [ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="3_eggrc"]
 [ext_resource type="Texture2D" uid="uid://c61vkjdl8heew" path="res://images/learning_material_boxes/arrow_yellow.png" id="4_ojhmj"]

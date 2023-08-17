@@ -1,10 +1,10 @@
 [gd_scene load_steps=15 format=3 uid="uid://bn5nfyepiouqv"]
 
 [ext_resource type="Script" path="res://scripts/shop.gd" id="1_p0or2"]
-[ext_resource type="Texture2D" uid="uid://bgedgixnqqxya" path="res://images/coin.png" id="2_5wuy6"]
+[ext_resource type="Texture2D" uid="uid://c5hmchibpao40" path="res://images/coin.png" id="2_5wuy6"]
 [ext_resource type="Script" path="res://scripts/Item_Info.gd" id="3_clwob"]
 [ext_resource type="Texture2D" uid="uid://cr34gf4c7t1rl" path="res://images/farmingTilesheetComplete.png" id="3_ga1yi"]
-[ext_resource type="Texture2D" uid="uid://6w0d4dxnilew" path="res://images/right_arrow.png" id="4_fvgd6"]
+[ext_resource type="Texture2D" uid="uid://oo7cr820w524" path="res://images/right_arrow.png" id="4_fvgd6"]
 
 [sub_resource type="Animation" id="Animation_prpqf"]
 length = 0.001

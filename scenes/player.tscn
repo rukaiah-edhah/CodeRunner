@@ -324,46 +324,48 @@ flip_h = true
 position = Vector2(-5, -2)
 polygon = PackedVector2Array(9, -120, 20, -121, 36, -119, 54, -111, 64, -98, 69, -85, 71, -70, 71, -52, 65, -40, 59, -30, 47, -21, 48, -16, 44, -10, 40, -8, 36, 6, 40, 25, 45, 30, 48, 37, 52, 43, 47, 51, 39, 56, 35, 56, 33, 52, 34, 68, 32, 80, 37, 80, 44, 82, 47, 91, 47, 99, 45, 101, 22, 102, 19, 100, 18, 100, 16, 102, 14, 103, -7, 103, -10, 102, -15, 102, -20, 102, -21, 98, -25, 98, -26, 92, -27, 82, -28, 65, -31, 63, -34, 52, -40, 52, -42, 46, -41, 34, -39, 31, -41, 20, -41, 11, -40, 0, -43, -4, -36, -20, -34, -31, -43, -37, -51, -50, -52, -70, -48, -78, -39, -87, -35, -93, -27, -97, -18, -105, -5, -113)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(420, -208)
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+remote_path = NodePath("Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="RemoteTransform2D"]
 zoom = Vector2(0.8, 0.8)
 rotation_smoothing_enabled = true
 
-[node name="health" type="Control" parent="."]
+[node name="health" type="Control" parent="RemoteTransform2D/Camera2D"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 234.0
-offset_top = -320.0
-offset_right = 274.0
-offset_bottom = -280.0
+offset_left = -688.0
+offset_top = -335.0
+offset_right = -493.0
+offset_bottom = -316.0
 
-[node name="healthbar" type="TextureProgressBar" parent="health"]
+[node name="healthbar" type="TextureProgressBar" parent="RemoteTransform2D/Camera2D/health"]
 layout_mode = 0
-offset_left = -513.0
-offset_top = -249.0
-offset_right = -313.0
-offset_bottom = -223.0
+offset_left = -3.0
+offset_top = -6.0
+offset_right = 197.0
+offset_bottom = 20.0
 value = 100.0
 allow_greater = true
 texture_progress = ExtResource("67_0r6mn")
 
-[node name="coin_inventory" type="Control" parent="."]
+[node name="coin_inventory" type="Control" parent="RemoteTransform2D/Camera2D"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 251.0
-offset_top = -289.0
-offset_right = 291.0
-offset_bottom = -249.0
+offset_left = -688.0
+offset_top = -374.0
+offset_right = -499.0
+offset_bottom = -352.0
 
-[node name="Panel" type="Panel" parent="coin_inventory"]
+[node name="Panel" type="Panel" parent="RemoteTransform2D/Camera2D/coin_inventory"]
 layout_mode = 0
-offset_left = -530.0
-offset_top = -314.0
-offset_right = -331.0
-offset_bottom = -287.0
+offset_left = -2.0
+offset_top = -3.0
+offset_right = 197.0
+offset_bottom = 24.0
 metadata/_edit_group_ = true
 
-[node name="num_coins" type="Label" parent="coin_inventory/Panel"]
+[node name="num_coins" type="Label" parent="RemoteTransform2D/Camera2D/coin_inventory/Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -11.421
@@ -377,7 +379,7 @@ offset_bottom = 225.287
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="coin" type="TextureRect" parent="coin_inventory/Panel"]
+[node name="coin" type="TextureRect" parent="RemoteTransform2D/Camera2D/coin_inventory/Panel"]
 texture_filter = 4
 layout_mode = 0
 offset_left = 6.0
