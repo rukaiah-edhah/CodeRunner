@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://b7ixjx52y172q"]
+[gd_scene load_steps=82 format=3 uid="uid://b7ixjx52y172q"]
 
 [ext_resource type="Script" path="res://scripts/shifu.gd" id="1_g4fif"]
 [ext_resource type="Shader" path="res://shader/shifu.gdshader" id="2_30lrm"]
@@ -72,7 +72,6 @@
 [ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="70_46fer"]
 [ext_resource type="Texture2D" uid="uid://c61vkjdl8heew" path="res://images/learning_material_boxes/arrow_yellow.png" id="71_jeyve"]
 [ext_resource type="FontFile" uid="uid://c1w4uwymgxw6f" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Italic.ttf" id="72_qtytm"]
-[ext_resource type="Script" path="res://scripts/block_area.gd" id="73_45nat"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_n8aih"]
 shader = ExtResource("2_30lrm")
@@ -518,7 +517,6 @@ text = "Let's get started!"
 [node name="next_message" type="Timer" parent="dialogue"]
 
 [node name="block_area" type="StaticBody2D" parent="dialogue"]
-script = ExtResource("73_45nat")
 
 [node name="area_2d" type="Area2D" parent="dialogue/block_area"]
 
@@ -533,9 +531,6 @@ shape = SubResource("RectangleShape2D_hc6bu")
 debug_color = Color(0, 0, 0, 0.0784314)
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="area_entered" from="AnimatedSprite2D/encounter_area" to="." method="_on_shifu_encounter_area_body_entered"]
-[connection signal="body_exited" from="AnimatedSprite2D/encounter_area" to="." method="_on_shifu_encounter_area_body_exited"]
 [connection signal="pressed" from="dialogue/dialogue_box_sprite/panel/VBoxContainer/Button" to="dialogue" method="_on_button_pressed" flags=18]
 [connection signal="timeout" from="dialogue/next_char" to="dialogue" method="_on_next_char_timeout" flags=18]
 [connection signal="timeout" from="dialogue/next_message" to="dialogue" method="_on_next_message_timeout" flags=18]
-[connection signal="player_hit" from="dialogue/block_area" to="dialogue" method="_on_block_area_player_hit" flags=18]

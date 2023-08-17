@@ -7,7 +7,6 @@ extends Node2D
 
 
 func _ready():
-    
     encounter_area.body_entered.connect(_on_shifu_encounter_area_body_entered)
     encounter_area.body_exited.connect(_on_shifu_encounter_area_body_exited)
 

@@ -137,11 +137,14 @@ func disable_movement():
 
 func enable_movement():
     can_move = true
+    
+func _on_player_damaged():
+    _damage(20)
 # ___________________________________________________________________
     
-func _damage():
+func _damage(damage_value):
     # let player take damage and set health bar accordingly
-    health -= 20
+    health -= damage_value
     if health <= 0:
         health = FULL_HEALTH
     update_healthbar(health)
@@ -170,7 +173,7 @@ func _on_mini_boss_level_wrong_answer(): # Connect the signal wrong_answer to th
     coins -= 3 
     if health <= 0:
         health = 0
-        _damage() # Replace it with the function that handles the death of the player
+        # Add the function that handles the death of the player
     if coins <= 0: # Further logic can be added here once the number of coins reaches zero e.q sound effects 
         coins = 0 
     update_healthbar(health)
@@ -194,3 +197,6 @@ func save():
         "pos_y" : position.y
         }
     return save_dict
+
+
+
