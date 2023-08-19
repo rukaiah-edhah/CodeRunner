@@ -530,7 +530,7 @@ size_flags_stretch_ratio = 0.1
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
-text = "Problem: Calculate the Sum of Two Numbers"
+text = "Problem: Calculate the Average of Three Numbers"
 label_settings = SubResource("LabelSettings_tu174")
 clip_text = true
 
@@ -573,11 +573,11 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 100
-text = "                       Number1, Number2
+text = "                       Number1, Number2, Number3
 
-                       Sum = Number1 + Number2
+                       SAverage = (Number1 + Number2 + Number3) / 3
     
-                       \"The sum of the two numbers is:\", 
+                       \"The average of the three numbers is:\", Average
 
     "
 label_settings = SubResource("LabelSettings_e0svr")
