@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://dx3j2ighw68wf"]
+[gd_scene load_steps=83 format=3 uid="uid://bpst13kwaabon"]
 
 [ext_resource type="Script" path="res://scripts/shifu.gd" id="1_ynowa"]
 [ext_resource type="Shader" path="res://shader/shifu.gdshader" id="2_r5s06"]
@@ -67,7 +67,7 @@
 [ext_resource type="Texture2D" uid="uid://cs06up2mku01l" path="res://images/Shifu/Character_07-idle_41.png" id="65_0ymsm"]
 [ext_resource type="Texture2D" uid="uid://byj1svd8cvq6l" path="res://images/Shifu/Character_07-idle_42.png" id="66_xvi82"]
 [ext_resource type="Texture2D" uid="uid://6yxv34qhxpqx" path="res://images/Shifu/Character_07-idle_43.png" id="67_f1uwc"]
-[ext_resource type="Script" path="res://scripts/learning_material_scripts/intro_level/dialogue_boxes/topic_one/dialogue_box_L2.gd" id="68_hwgo6"]
+[ext_resource type="Script" path="res://scripts/learning_material_scripts/intro_level/shifu's-lessons/topic_one/dialogue_box_L2.gd" id="68_1qn8w"]
 [ext_resource type="Texture2D" uid="uid://hbbir6u821l6" path="res://images/learning_material_boxes/yellow.png" id="69_lcsis"]
 [ext_resource type="FontFile" uid="uid://b827yj5scm7kt" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="70_mfqik"]
 [ext_resource type="Texture2D" uid="uid://73njocumsoux" path="res://images/learning_material_boxes/arrow_yellow.png" id="71_6n6ac"]
@@ -454,7 +454,7 @@ offset_left = 416.0
 offset_top = 68.0
 offset_right = 416.0
 offset_bottom = 68.0
-script = ExtResource("68_hwgo6")
+script = ExtResource("68_1qn8w")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="dialogue"]
 reset_on_save = false
