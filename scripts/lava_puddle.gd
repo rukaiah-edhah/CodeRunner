@@ -1,13 +1,14 @@
 extends Node2D
 
-var damage_per_second = 10  
+signal Player_Damaged
 
-func _on_lava_puddle_body_entered(body):
+func _ready():
+    $AnimationPlayer.play("boil")
+
+func _on_lava_area_entered(body):
     if body.is_in_group("player"):
-        pass
-        #body.timer_process(delta)
+        $AnimationPlayer.play("smoke")
+        emit_signal("Player_Damaged")
 
-func _process(delta):
-    var bodies = get_overlapping_bodies()
-    for body in bodies:
-        if body.is_in_group("player"):
+
+

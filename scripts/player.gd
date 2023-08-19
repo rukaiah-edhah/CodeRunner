@@ -53,6 +53,13 @@ func _ready():
     coin_panel.position = COIN_PANEL_POSITION_RIGHT
     #___________________________________________________________________________________________________
     
+    #_____________________connecting PLayer_Damaged signal_________________
+    var obstacles = get_tree().get_nodes_in_group("obstacles")
+    for obstacle in obstacles:
+        obstacle.Player_Damaged.connect(_on_player_damaged)
+    #_____________________________________________________________________
+    
+    
     # set screen size, health bar, and coin bar
     coin_inventory.add_theme_font_override("font", _font)
     set_health_bar()
@@ -139,7 +146,7 @@ func enable_movement():
     can_move = true
     
 func _on_player_damaged():
-    _damage(20)
+    _damage(3)
 # ___________________________________________________________________
     
 func _damage(damage_value):
@@ -197,6 +204,5 @@ func save():
         "pos_y" : position.y
         }
     return save_dict
-
 
 
