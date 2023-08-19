@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6qwfieb5x5sj"]
+
+[ext_resource type="Script" path="res://Scripts/moving_platform_sideways.gd" id="1_t4qpw"]
+[ext_resource type="Texture2D" uid="uid://mcfnk712wj4w" path="res://images/alien_planet /ground.png" id="2_4kq73"]
+
+[node name="moving_platform_sideways" type="AnimatableBody2D"]
+position = Vector2(-14, -10)
+script = ExtResource("1_t4qpw")
+distance = Vector2(100, 0)
+debug = false
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(165.594, 9.49999)
+scale = Vector2(2.09166, 2.76613)
+texture = ExtResource("2_4kq73")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(165.594, 9.49999)
+scale = Vector2(2.09166, 2.76613)
+polygon = PackedVector2Array(419, 25, -419, 25, -419, -25, 419, -25)
