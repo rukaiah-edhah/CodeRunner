@@ -1,18 +1,7 @@
 extends Control
 
 var messages = [
-	"But in the grand tapestry of programming, sometimes we confront the need for multiple possibilities. Enter the elif statement, a versatile arbiter, entrusted with evaluating additional conditions when its predecessors fail to reveal the path to truth.
-Contemplate upon this exemplar:
-
-num = 10
-
-if num > 0 then
-	Display 'Number is positive'
-elif num < 0 then
-	Display 'Number is negative'
-else
-	Display 'Number is zero'
-End if"
+	"Behold, in the realm of code, the function christened my_function, harboring a parameter named example, an embodiment of integer essence. This instrument, we wield within our function to perform the symphonies of operation."
 	]
 
 var typing_speed = .1

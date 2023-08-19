@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"These enigmatic entities emerge into existence through declarations, bearing names and data types like a sacred seal. Their essence takes form when values, bestowed by the '=' operator, find a dwelling within, be it 'count = 10;' for an integer or 'name = 'Sam';' for a string."
+	"The f ensconced within f'Hello, {name}!' whispers a secret to Python, saying, 'Behold, a tapestry where variables find their place!' Thus, if the name be Alice, the script unfurls, whispering 'Hello, Alice!' - an amalgamation of prose and essence. In concise tale, the f heralds a bridge betwixt text and variable, an alchemy of simplicity."
 	]
 
 var typing_speed = .1

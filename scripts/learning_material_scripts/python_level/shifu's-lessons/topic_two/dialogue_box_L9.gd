@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Contemplate the essence of these loops, for both the for and while loops embrace the art of repetition, echoing the code's heartbeat until the destined condition is met, or the appointed number of iterations transpires. Through their guidance, repetitive tasks are automated, collections are traversed, and the program's flow finds harmony within conditions."
+	"By mastering these scrolls of indentation and arithmetic arts, thou shall ascend, equipped to navigate treacherous expanses and vanquish further challengers in your grand Python odyssey.! Keep coding and exploring!"
 	]
 
 var typing_speed = .1

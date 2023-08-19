@@ -1,7 +1,21 @@
 extends Control
 
 var messages = [
-	"Embrace the grace of Camel case, a common convention, where compound words or phrases entwine without spaces, with each word graced by capitalization, except the first. Witness 'myVariableName' or 'studentAge' as exemplars."
+	"Now, let us weave the tale of conversions, a craft of shaping data's essence. When the incantation of input() summons, the offerings bestowed are garbed as strings. Should you wish to mold them into numbers - integers or fractions - a mastery of transformation unfolds, utilizing the incantations int() and float().
+Contemplate this instance, a fragment of conversion's essence:
+
+age_float = 25.5
+height_str = '175.5'
+weight_int  = 60
+
+# Age’s fluidity converges to the integer 25
+age_int = int(age_float)  
+
+# Height’s visage transmutes to 175.5
+height_float = float(height_str) 
+
+# Weight's numeral metamorphoses to '60'
+weight_str = str(weight_int)  "
 	]
 
 var typing_speed = .1

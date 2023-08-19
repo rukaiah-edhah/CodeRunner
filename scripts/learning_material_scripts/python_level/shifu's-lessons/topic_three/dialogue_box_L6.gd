@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Within the realm of Character, a single entity stands, a symbol of power represented by 'a' or '5,' where even the numbers cloaked in quotation marks transcend their numerical nature to become a part of the sacred script."
+	"Now, traverse the veiled veil to encounter the enigma of Logical Operators - conductors of union, synthesizing myriad truths and falsehoods, sculpting enlightenment from the decree of Comparison Operators."
 	]
 
 var typing_speed = .1

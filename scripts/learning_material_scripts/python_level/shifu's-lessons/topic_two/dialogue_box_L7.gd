@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Lastly, Upper Case, a realm reserved for constants and unmodifiable variables. Here, names are etched in uppercase majesty, words separated by underscores, standing tall in their power. 'MAX_VALUE' or 'PI' illustrate its magnificence."
+	"Beyond, Python's treasury unveils assignment operators, secret keys to intertwine mathematical sorcery and the fates of variables. With deftness, the (+=) and (-=) scribes augment and diminish the essence of a variable. Imagine, as x stands at 5, x += 3 mirrors x = x + 3, thus birthing 8."
 	]
 
 var typing_speed = .1

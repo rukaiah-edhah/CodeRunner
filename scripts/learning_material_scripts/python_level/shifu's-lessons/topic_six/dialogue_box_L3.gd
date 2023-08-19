@@ -1,7 +1,13 @@
 extends Control
 
 var messages = [
-	"Yet, tread with mindfulness, for an eternal dance may ensnare the unwary. The condition must find its end in falsehood, lest an infinite loop ensnare the program, causing it to wander indefinitely in the realm of repetition."
+	"Ah, but more marvels await! Not only can you whisper to singular letters, but summon a multitude with 'slicing'. Envision it as a chosen span upon the necklace, or a gathering of dancers beckoned forth.
+Contemplate this embodiment:
+
+my_string = 'Hello, World!'
+
+# Here converges 'H', 'e', 'l', 'l', 'o’ 
+group_wave = my_string[0:5] "
 	]
 
 var typing_speed = .1

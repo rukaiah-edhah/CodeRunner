@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"In the gentle embrace of summation, we discover that if, elif, and else statements, like wise sages, unlock the gates of decision-making within our program's heart. The art of execution, guided by conditions, offers a symphony of code blocks, embracing the program's flow with graceful flexibility."
+	"As your incantations unfurl within the function's embrace, harken to the cadence of proper indentation, akin to the dance of if or while loops. This rhythmic alignment sanctifies your code's sanctum, nurturing its execution in accord with cosmic harmony."
 	]
 
 var typing_speed = .1

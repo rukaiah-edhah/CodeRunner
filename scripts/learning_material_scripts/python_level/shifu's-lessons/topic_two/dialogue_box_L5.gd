@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Let this wisdom illuminate your path, young seeker, as you embark on your journey of discovery. May the spirits of Pseudocode and Flowcharts guide your steps, and may you emerge victorious in the battles that lie ahead."
+	"The (/) manifestation manifests division's divide, first yielding metrical wisdom through the prism of floating values (7 / 2 equals 3.5). In contrast, the (//) proclamation of integer division presents the quotient as an integer, humbly rounded down (7 // 2 equals 3)."
 	]
 
 var typing_speed = .1

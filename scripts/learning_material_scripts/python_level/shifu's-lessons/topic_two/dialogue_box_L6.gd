@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Ah, your progress brings great joy to my heart! Now, let us delve into the profound realm of variables, for they are the very essence of programming, embodying the power to store and embrace precious data."
+	"The (%) revelation births the modulus, unveiling the remnants of division's embrace - witness the residue when the first surrenders to the second (7 % 2 equals 1)."
 	]
 
 var typing_speed = .1

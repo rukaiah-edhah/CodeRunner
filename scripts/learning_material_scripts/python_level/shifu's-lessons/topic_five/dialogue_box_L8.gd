@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Remember that it is crucial to follow naming conventions and select descriptive names for variables to enhance code readability and comprehension. Consistent and unambiguous variable naming also facilitates code maintenance and teamwork."
+	"Thus concludes our pilgrimage, unveiling the wisdom of function inception and invocation in Python. Armed with this lore, wield the power to conjure great deeds, for within functions' grasp lies the means to illumine complexity and refine code's tapestry. May your coding journey be graced with awe and triumphant achievements!"
 	]
 
 var typing_speed = .1
@@ -131,4 +131,3 @@ func reset_scene():
 	
 	start_dialogue()
 #________________________________________________________________________
-

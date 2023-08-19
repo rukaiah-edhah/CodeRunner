@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Pascal case, akin to Camel case, but adorned with an uppercase beginning, finds its purpose in naming classes or types. Observe 'PersonName' or 'StudentAge' as examples."
+	"Through the marriage of conversions and inputs, the alchemy of interaction and dynamism flourishes. Here, your script breathes, engaging and mirroring the user's touch. As a shifu in Python's realm, embrace this enchantment, nurturing your code, unraveling the vistas of possibility within your coding odyssey!"
 	]
 
 var typing_speed = .1

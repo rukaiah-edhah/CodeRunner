@@ -1,7 +1,16 @@
 extends Control
 
 var messages = [
-	"May this wisdom guide your steps, dear disciple, as you traverse the path of conditional control structures. Embrace their power with grace and wisdom, for they shall reveal the path to harmony in your code's dance."
+	"Now, envision - how might one conjure this arcane might? Fear not, for the path is simplicity itself. To beckon a function's resonance, merely inscribe the function's name within parentheses. These parentheses may be vacant or embrace the souls of arguments, which the function shall imbue with purpose.
+Gaze upon this verse, an invocation to unchain the mystic force of my_function:
+
+# Summon the spell without argument (empty embrace).
+
+add_one() 
+
+# Or beckon the spell, endowing the 'example' with a chosen essence.
+
+add_one(8)"
 	]
 
 var typing_speed = .1

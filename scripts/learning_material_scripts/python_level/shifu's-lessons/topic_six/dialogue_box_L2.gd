@@ -1,11 +1,16 @@
 extends Control
 
 var messages = [
-	"Gaze upon the elegance of the while loop, a wise guardian that contemplates the condition before each iteration. When truth reveals itself, a sacred code block is summoned into existence. Thus, the loop continues to dance until the condition's truth fades away.
+	"Behold strings, akin to chests of textual treasures. Each character, a sentinel, positioned upon the stage of an 'index'. Visualize a congregation of dancers, each donning their designated stance. What revelry awaits! Yet, remember, the primary dancer, the initial character, takes stage at index 0!
+Imagine, a phrase 'Hello, World!' - and your heart's desire to greet the opening letter. Behold:
 
+my_string = 'Hello, World!'
 
-while (condition) 
-  // Code to be executed"
+# In this, 'H' emerges
+greet_first = my_string[0]  
+
+# And behold, 'W' stands before you!
+greet_eighth = my_string[7] "
 	]
 
 var typing_speed = .1

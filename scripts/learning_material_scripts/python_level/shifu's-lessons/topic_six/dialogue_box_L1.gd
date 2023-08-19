@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"In the realm of loops, two noble entities reign supreme: the 'while' and 'for' loops, both weaving tales of repetition with grace and precision."
+	"Your achievement radiates like the morning sun! Picture, if you will, a string, a tapestry of mystical beads adorning a necklace. Each bead, a character, a secret glyph. As you might single out a chosen gem, in Python's realm, the orchestra of strings allows communion with any character within."
 	]
 
 var typing_speed = .1

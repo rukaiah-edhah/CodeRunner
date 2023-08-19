@@ -1,7 +1,13 @@
 extends Control
 
 var messages = [
-	"When the path of decisions requires an alternative, behold the else statement. Like a bridge to an alternate reality, it unveils an alternative code block to be embraced when the condition fades into the realm of falsehood."
+	"To initiate the enchantment, you shall append parentheses to the name, gracing them with a colon's seal. Behold the commencement of magic! Within these parentheses, lay the parameters, minions of your design, hewn from variable types' essence.
+As an example, observe the visage of a formed function:
+
+def add_one(x) :
+	return x + 5
+
+# Birth of the 'add_one' spell, accepting one parameter and returning its amplified essence."
 	]
 
 var typing_speed = .1

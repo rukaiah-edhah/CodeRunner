@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Behold, the path of variable names is governed by conventions, a dance of letters and symbols. They humbly begin with a letter or underscore, adorned by letters, digits, or underscores, but be mindful, for they are case-sensitive. 'myVariable' and 'myvariable' are two separate entities, a testament to their uniqueness."
+	"With the waltz of f-strings enkindled within your essence, let us venture to the depths of inputs. The term 'input' in Python, a gateway to the river of interaction, where the user's voice flows to nourish the script's roots. This discourse, a two-way communion, where the user's wisdom illuminates the path, steering the dance of calculation, decision, and data."
 	]
 
 var typing_speed = .1

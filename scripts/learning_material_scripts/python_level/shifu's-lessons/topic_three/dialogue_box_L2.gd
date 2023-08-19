@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Behold the essence of Integer, a realm of whole numbers, pure and devoid of the decimal's veil, be it positive, like 5, or negative, like -10."
+	"Comparison Operators, akin to intrepid investigators, weave a tapestry of scrutiny betwixt two values or variables, unfolding the enigma of their relation. These inquisitors, as judges of verity, proclaim the truth or fallacy, rendered in the visage of Boolean essence - the radiant dichotomy of True and False, the very pillars of their judgment."
 	]
 
 var typing_speed = .1

@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Behold the String, a captivating symphony of characters, weaving tales of 'Hello, World!' in its enchanting embrace."
+	"The greater than or equal to (>=) reevaluates, extending its gaze to embrace equality. Thus, 8 >= 8 resonates with Truth. Yet, the less than or equal to (<=) scrutinizes equivalence within hierarchy, as 4 <= 3 resounds with a lament of False."
 	]
 
 var typing_speed = .1

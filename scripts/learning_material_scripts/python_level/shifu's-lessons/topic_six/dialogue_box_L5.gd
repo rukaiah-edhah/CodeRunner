@@ -1,11 +1,7 @@
 extends Control
 
 var messages = [
-	"The journey begins with initialization, setting forth the starting value. The condition emerges as the sentinel, guarding the continuation of the loop's dance. And behold, the iteration steps forth, updating the loop's variable after each sacred step.
-
-
-for (initialization; condition; iteration) 
-  // Code to be executed"
+	"Behold, the mastery to pinpoint characters, greeting them singly or as tribes, adorns you. Text's world unfurls as your playground within Python's embrace. Plunge deep, craft your verses, waltz with words, and let the sorcery of strings illuminate your coding odyssey!"
 	]
 
 var typing_speed = .1

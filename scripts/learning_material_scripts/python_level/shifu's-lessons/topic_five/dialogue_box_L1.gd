@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Within this mystical realm, dwell the most common of structures: if statements, elif statements, and else statements. Like celestial guardians, they discern the truth of conditions and bestow the gift of code execution accordingly."
+	"A grand voyage beckons, dear disciple! Together, we shall embark upon the sacred path of function crafting in the realm of Python. Steady your resolve, for the mists shall part, revealing the arcane artistry of forging potent functions that weave miracles in code's embrace!"
 	]
 
 var typing_speed = .1

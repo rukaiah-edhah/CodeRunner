@@ -1,7 +1,11 @@
 extends Control
 
 var messages = [
-	"Dwell upon the four diverse cases: Pascal case, camel case, sneak case, and upper case, each holding its own wisdom."
+	"To beckon the embrace of input in Python, the invocation of the input() scroll suffices. As this scroll unfurls, the script, like a watchful guardian, halts, awaiting the user's thoughts transcribed upon the keyboard. As the user's deliberation takes shape, the 'Enter' rune summons the script to resume its dance, bearing the gifted prose as a string of essence.
+Witness this modest verse, a glimpse of its essence:
+
+name = input('Pray, unveil thy name: ')
+echo(f'Greetings, {name}! An entrance to Python's embrace!')"
 	]
 
 var typing_speed = .1

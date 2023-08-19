@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"May this wisdom of variables accompany you on your journey, dear disciple, as you traverse the realms of programming. Let it empower you to wield the power of data with grace and precision, and may your code be a harmonious dance of values within the mystical sanctuary of variables."
+	"Behold the second, the logical OR (or), granting passage to Truth upon a single thread of verity. Thus, True or False, a nod to Truth, and the union of False with False begets False."
 	]
 
 var typing_speed = .1

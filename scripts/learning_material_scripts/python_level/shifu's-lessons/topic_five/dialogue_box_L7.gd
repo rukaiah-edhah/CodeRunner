@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"May this wisdom of loops guide you on your journey, dear seeker, as you traverse the realms of repetition and iteration. Embrace their power with grace and mindfulness, for they shall empower you to dance with code's essence in harmonious repetition."
+	"Through the prism of diverse arguments, our incantation's prowess waxes and wanes, affording us mastery over myriad tasks and results."
 	]
 
 var typing_speed = .1

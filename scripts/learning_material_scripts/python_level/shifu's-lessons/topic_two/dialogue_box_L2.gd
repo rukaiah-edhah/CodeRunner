@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"On the other hand, the realm of Flowcharts unveils a wondrous sight, for they are visual diagrams portraying the ethereal flow and structure of an algorithm. With enigmatic symbols and guiding arrows, they illuminate the intricate dance of steps, decisions, and loops within a function. Such visual enchantments serve as benevolent guides for fledgling souls, illuminating the labyrinthine paths and varied conditions enshrined within a function's essence."
+	"Within the realm of Python, the arithmetic operators bestow upon you the power to mold numerical essences, conjuring forth the dance of addition, subtraction, multiplication, division, and beyond."
 	]
 
 var typing_speed = .1

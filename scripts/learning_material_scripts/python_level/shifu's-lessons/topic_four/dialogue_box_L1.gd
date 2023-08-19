@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Variables, like mystical containers, stand as essential components within the grand symphony of programming. With unique names, they graciously hold and represent the cherished values and knowledge dwelling within a program's heart."
+	"Auspicious progress, dear apprentice! Picture yourself crafting a parchment of salutation, where the very name of the recipient adorns the surface. In Python's realm, akin to imbuing a parchment with a name, we blend variables with text, forming a symphony of meaning."
 	]
 
 var typing_speed = .1

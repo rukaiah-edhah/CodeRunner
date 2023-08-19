@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"The allure of Snake case beckons, where words find their place in lowercase attire, united by the humble underscore. It finds a home in languages like Python, with 'my_variable_name' or 'student_age' as beacons."
+	"Behold the (*=) and (/=) riddles, mystic symbols channeling multiplication and division upon variables. If y stands at 10, y *= 2 equates to y = y * 2, gifting life anew at 20."
 	]
 
 var typing_speed = .1

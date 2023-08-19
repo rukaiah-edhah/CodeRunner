@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"The mystique of Boolean awaits, with its two sacred truths, 'true' and 'false' revealing the pathways of logic in the grand cosmic dance."
+	"The greater than (>) examines the hierarchies, pondering if the first dominion surpasses the second. Witness, 10 > 5, decreeing Truth, while the less than (<) contemplates the hierarchy's inversion, as 2 < 7 echoes the same Truth."
 	]
 
 var typing_speed = .1

@@ -1,7 +1,22 @@
 extends Control
 
 var messages = [
-	"Thus, my young disciple, let the wisdom of these sacred words guide your path as you embark on the mystical journey of programming. Embrace the languages, for they are the keys to unlock the universe's secrets. Go forth and may your code illuminate the darkness like the radiant moon amidst the night sky."
+	"Finally, the third is the logical NOT (not), conjuring the inversion of veracity's veil. Behold, not True, bestows the mantle of False, while not False invokes the spirit of Truth.
+Contemplate this exposition:
+
+
+
+temperature = 25
+is_sunny = True
+
+if temperature > 30 and is_sunny:
+	echo('A fervent and sunny day, it be!')
+elif temperature <= 30 and is_sunny:
+	echo('A balmy, sun-kissed embrace.')
+elif temperature > 30 and not is_sunny:
+	echo('The fervor of heat, yet the sun conceals.')
+else:
+	echo('Neither fervent nor sun-kissed, this day.')"
 	]
 
 var typing_speed = .1

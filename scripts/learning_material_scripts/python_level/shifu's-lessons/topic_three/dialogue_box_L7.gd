@@ -1,8 +1,7 @@
 extends Control
 
 var messages = [
-	"Finally, the majesty of Array unveils itself, a sacred collection of elements, united by their shared data type, residing within the sanctum of square bracts. Observe this exemplar: ['a', 'c', 'd'].
-	May this sacred knowledge illuminate your path, dear seeker, as you traverse the vast lands of programming. Let the wisdom of data types guide you to wield the power of information with grace and precision. Your journey has just begun, and I shall remain by your side, a guiding light, as you embrace the mysteries of the digital cosmos."
+	"Among these artisans of logic, the first is the logical AND (and), harmonizing Truth if both dominions stand in unison. As True and True waltz to Truth's tune, let False join True to unveil the verdict of False."
 	]
 
 var typing_speed = .1

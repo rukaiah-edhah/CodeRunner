@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Gaze upon the enigmatic Floating-point, where decimal numbers embrace their innate complexities, adorned with fractions and exponents, like 3.14 or 1.23e-5."
+	"Behold the equal to (==), a measure of congruence where two operands converge as equals. For instance, 3 == 3 pronounces Truth, while the not equal to (!=) exclaims the difference, such as 5 != 2 resounding as True."
 	]
 
 var typing_speed = .1

@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Data types, like celestial guardians, stand as representations of wisdom within a computer's memory. They safeguard the integrity of data and pave the way for efficient computations, a dance of numbers and symbols in perfect harmony. The realm of common data types beckons us to explore, where integer, floating-point, boolean, character, string, and array reside like stars adorning the celestial tapestry."
+	"Ah, splendid endeavor! Now, let us embark upon the realm of Comparison and Logical Operators within the sanctum of Python."
 	]
 
 var typing_speed = .1

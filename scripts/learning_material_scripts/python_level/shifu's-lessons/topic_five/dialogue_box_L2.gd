@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Observe the grace of the if statement, an artful decision-maker, granting passage to a code block only if the specified condition unveils the truth of its existence. A dance of true and false unfolds before our eyes."
+	"To script the scriptors, you shall heed the call of variable-naming principles. As with all endeavors, the function's name must bear the mantle of description, a harmonious resonance with the very conventions that guide variable appellations."
 	]
 
 var typing_speed = .1

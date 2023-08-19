@@ -1,15 +1,7 @@
 extends Control
 
 var messages = [
-	"Pseudocode merges natural language with basic programming constructs, serving as a universal blueprint. Like an ancient scroll, it details a program's logic. By sidestepping intricate syntax, it allows beginners to focus on core function logic and structure.
-Behold this exemplar:
-
-Sart
-Input Read number A
-Input Read number B
-Calculate SUM = A + B
-Print SUM
-End"
+	"A triumphant victory over the inaugural adversary, I commend thee! Yet, the path unfurls with myriad trials still to be embraced. Maintain your unwavering focus, for now we traverse the realm of arithmetic operators."
 	]
 
 var typing_speed = .1

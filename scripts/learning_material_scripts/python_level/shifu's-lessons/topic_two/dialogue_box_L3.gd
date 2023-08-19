@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"n their union, Pseudocode and Flowcharts become indispensable allies, nurturing the fledgling minds of beginners, empowering them to envision, design, and comprehend the mystical art of functions."
+	"The (+) art of addition melds two operands, birthing unity from duality (2 + 3 equals 5). The (-) incantation of subtraction beckons the second operand's retreat from the first (5 - 2 equals 3)."
 	]
 
 var typing_speed = .1

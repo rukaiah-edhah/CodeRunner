@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"Thus, in contemplation, we perceive that flowcharts and pseudocode, like the sacred weapons of a warrior, serve as excellent tools to plan, design, and unravel the mysteries of functions. When faced with the choice between them, consider your innermost preferences, the function's complexity, and the need for visual representation."
+	"The (*) conjuration weaves the fabric of multiplication, merging two into one with purpose (2 * 3 equals 6). Behold, the (**) embodiment of exponentiation, where the first operand ascends to the dominion of the second (2 ** 3 equals 8)."
 	]
 
 var typing_speed = .1
