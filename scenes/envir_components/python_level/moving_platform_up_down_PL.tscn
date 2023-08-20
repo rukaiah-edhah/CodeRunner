@@ -1,10 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8xevhvyg824j"]
+[gd_scene load_steps=3 format=3 uid="uid://c8xevhvyg824j"]
 
 [ext_resource type="Script" path="res://Scripts/moving_platform_up_down.gd" id="1_cmdlx"]
-[ext_resource type="Texture2D" uid="uid://ckujv33dmdbwc" path="res://images/spaceship_interior/style_2/floor.png" id="2_et81k"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0fay"]
-size = Vector2(323, 42)
+[ext_resource type="Texture2D" uid="uid://ebeu5al5id6m" path="res://images/spaceship_interior/style_1/platform2 (2).png" id="2_ox05n"]
 
 [node name="moving_platform_up_down" type="AnimatableBody2D"]
 top_level = true
@@ -12,16 +9,13 @@ position = Vector2(-816, -683)
 script = ExtResource("1_cmdlx")
 distance = Vector2(0, 250)
 debug = false
-metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(975, 701)
-scale = Vector2(0.397418, 0.433606)
-texture = ExtResource("2_et81k")
-metadata/_edit_lock_ = true
+position = Vector2(893, 688)
+scale = Vector2(0.579545, 0.513043)
+texture = ExtResource("2_ox05n")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(974.5, 701)
-shape = SubResource("RectangleShape2D_r0fay")
-metadata/_edit_lock_ = true
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(893, 688)
+scale = Vector2(0.579545, 0.513043)
+polygon = PackedVector2Array(104, -51.2, 104, -49.5, 112, -43.5, 112, -19.2, 111.8, -18.5, 113.4, -18.5, 132, -9.7, 132, 28.5, 129, 30.5, 129, 43.5, 126.8, 43.5, 120.8, 49.5, 117.3, 49.5, 98.3, 55.5, 92.3, 55.5, 79.8, 57.5, -77.8, 57.5, -122, 49.2, -122, 47.5, -129, 42.5, -129, 30.6, -132, 28.8, -132, -10.5, -126.7, -14.5, -123.1, -14.5, -111, -18, -111, -19.5, -112, -44.5, -110.1, -44.5, -107.1, -49.5, -104.4, -49.5, -88.4, -55.5, -82.3, -55.5, -67.1, -57.5, 65.3, -57.5)
