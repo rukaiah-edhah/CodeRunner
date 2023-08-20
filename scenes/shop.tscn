@@ -216,7 +216,7 @@ text = "Healing Item
 
 [connection signal="item_bought" from="." to="." method="_on_item_bought"]
 [connection signal="property_list_changed" from="." to="." method="_on_property_list_changed"]
-[connection signal="pressed" from="Close__Shop" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Close__Shop" to="." method="_on_close__shop_pressed"]
 [connection signal="pressed" from="Control/Left_Arrow" to="." method="_on_left_arrow_pressed"]
 [connection signal="pressed" from="Control/Right_Arrow" to="." method="_on_right_arrow_pressed"]
 [connection signal="pressed" from="Control/Buy" to="." method="_on_buy_pressed"]

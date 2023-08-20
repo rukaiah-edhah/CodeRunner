@@ -1,25 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://5w3oro26ixht"]
+[gd_scene load_steps=3 format=3 uid="uid://5w3oro26ixht"]
 
 [ext_resource type="Script" path="res://Scripts/moving_platform_sideways.gd" id="1_8yvpl"]
-[ext_resource type="Texture2D" uid="uid://ckujv33dmdbwc" path="res://images/spaceship_interior/style_2/floor.png" id="2_v4m6s"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4le6b"]
-size = Vector2(36.7299, 42.3453)
+[ext_resource type="Texture2D" uid="uid://dvhngkx8lfgx1" path="res://images/spaceship_interior/style_1/platform1.png" id="2_g3mh4"]
 
 [node name="moving_platform_sideways" type="AnimatableBody2D"]
 position = Vector2(-2, -7)
 script = ExtResource("1_8yvpl")
 distance = Vector2(100, 0)
 debug = false
-metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(121, 25)
-scale = Vector2(0.300093, 0.415325)
-texture = ExtResource("2_v4m6s")
+position = Vector2(120.5, 25)
+scale = Vector2(0.422414, 0.34965)
+texture = ExtResource("2_g3mh4")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(121, 24)
-scale = Vector2(6.67031, -0.982149)
-shape = SubResource("RectangleShape2D_4le6b")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(120.5, 25)
+scale = Vector2(0.422414, 0.34965)
+polygon = PackedVector2Array(234, -36.3, 234, -22.5, 245.8, -22.5, 290, 22.7, 290, 62.5, 265, 62.5, 265, 71.5, -265, 71.5, -265, 62.5, -290, 62.5, -290, 23.5, -245.9, -22.5, -234, -22.5, -234, -36.3, -198, -71.3, 198, -71.5)
