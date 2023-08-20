@@ -530,7 +530,7 @@ size_flags_stretch_ratio = 0.1
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
-text = "Problem: Calculate the Average of Three Numbers"
+text = "Problem:Calculate remaining coins after drink purchase"
 label_settings = SubResource("LabelSettings_tu174")
 clip_text = true
 
@@ -557,6 +557,12 @@ text = "1
 
 3
 
+4
+
+5
+
+
+
 "
 label_settings = SubResource("LabelSettings_8g3qe")
 
@@ -573,13 +579,15 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 100
-text = "                       Number1, Number2, Number3
+text = "                       total_coins = 50
 
-                       SAverage = (Number1 + Number2 + Number3) / 3
+                       drink_cost = 7
     
-                       \"The average of the three numbers is:\", Average
+                      num_drinks = 3
 
-    "
+                      total_cost = drink_cost * num_drinks
+                       
+                remaining_coins = total_coins - total_cost"
 label_settings = SubResource("LabelSettings_e0svr")
 
 [node name="player_answer" type="OptionButton" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel"]

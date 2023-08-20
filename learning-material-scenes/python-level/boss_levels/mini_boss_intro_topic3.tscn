@@ -532,8 +532,7 @@ size_flags_stretch_ratio = 0.1
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
-text = "Problem: Calculate the area and circumference of a circle given its radius
-Input radius as float"
+text = "                         Problem: Determine shared rides based on ages"
 label_settings = SubResource("LabelSettings_tu174")
 clip_text = true
 
@@ -564,6 +563,13 @@ text = "1
 
 5
 
+6
+
+
+4
+
+5
+
 
 "
 label_settings = SubResource("LabelSettings_8g3qe")
@@ -581,16 +587,17 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 100
-text = "                       pi = 3.14159
+text = "                     
+                      your_age = 20
 
-                       area = pi radius radius
-                      circumference = 2 pi radius
+                      friend_age = 23
+                      can_ride_galactic_glide = (your_age == 21) and (friend_age == 21)
 
-                       \"Area:\", area
+                      can_ride_star_spinner = (18 < your_age < 25) and (18 < friend_age < 25)
 
-                \"Circumference:\", circumference
+                      print(\"Can both ride Galactic Glide?\", can_ride_galactic_glide)
 
-    "
+                      print(\"Can both ride Star Spinner?\", can_ride_star_spinner)"
 label_settings = SubResource("LabelSettings_e0svr")
 
 [node name="player_answer" type="OptionButton" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel"]

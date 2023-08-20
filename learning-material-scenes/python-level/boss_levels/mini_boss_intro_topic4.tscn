@@ -532,7 +532,7 @@ size_flags_stretch_ratio = 0.1
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
-text = "Problem: Convert Celsius to Fahrenheit."
+text = "Problem: Convert Earth Dollars to ZogBucks interactively. # 1 Earth Dollar = 3 ZogBucks"
 label_settings = SubResource("LabelSettings_tu174")
 clip_text = true
 
@@ -559,6 +559,11 @@ text = "1
 
 3
 
+4
+
+5
+
+
 "
 label_settings = SubResource("LabelSettings_8g3qe")
 
@@ -575,13 +580,15 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 100
-text = "                       celsius
+text = "                       earth_dollars = input(\"Enter amount in Earth Dollars (ED): \")
 
-                      fahrenheit = (celsius * 9/5) + 32
+                      earth_dollars = float(earth_dollars)
     
-                       fahrenheit, 
+                       conversion_rate = 3 
 
-    "
+                           zogbucks = earth_dollars * conversion_rate
+
+                         print(f\"{earth_dollars} Earth Dollars is equal to {zogbucks} ZogBucks.\")"
 label_settings = SubResource("LabelSettings_e0svr")
 
 [node name="player_answer" type="OptionButton" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel"]

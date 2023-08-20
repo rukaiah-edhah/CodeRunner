@@ -532,7 +532,7 @@ size_flags_stretch_ratio = 0.1
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
-text = "Problem: Determine the discount on an order based on the price."
+text = "Problem:Square user-input numbers using a function"
 label_settings = SubResource("LabelSettings_tu174")
 clip_text = true
 
@@ -558,6 +558,10 @@ text = "1
 2
 
 3
+
+4
+
+
 
 4
 
@@ -587,22 +591,15 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 100
-text = "                       Input total
+text = "                      def square(number):
 
-                       if total < 50 then
-                      `no discount`
+                       `return number ** 2`
+
+                      num = float(input(\"Enter a number to square: \"))
     
-                       elif total >= 50 and total < 100 then
+                       print(f\"The square of {num} is {square(num)}.\")
 
-                       `apply 25% discount`
-
-                        else
-
-                        `apply 25% discount`
-
-                       End if
-
-    "
+                       "
 label_settings = SubResource("LabelSettings_e0svr")
 
 [node name="player_answer" type="OptionButton" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel"]
