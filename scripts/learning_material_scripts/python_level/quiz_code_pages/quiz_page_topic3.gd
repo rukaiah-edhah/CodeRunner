@@ -9,31 +9,30 @@ signal quiz_finished
 
 var questions = [
 	{
-		"question": "Which data type would you use to represent a person's age?",
-		"options": ["Integer", "Floating-point", "String", "Boolean"], # 1. Add all of the options you want to display 
+		"question": "What will be the output of the following comparison? 7 >= 7",
+		"options": ["True", "False", "Neither True nor False", "Syntax Error"], # 1. Add all of the options you want to display 
 		"answer": 1 # The index of the correct answer
 	},
 	{
-		"question": "Which data type would you use to represent a person's name?",
-		"options": ["Character", "Boolean", "String", "Integer"],
-		"answer": 3
+		"question": "Which logical operator will return True only when both its operands are True?",
+		"options": ["or", "and", "not", "None of the above"],
+		"answer": 2
 	},
 	{
-		"question": "Which data type would you use to represent a list of students in a class?",
-		"options": ["Array", "Boolean", "Integer", "String"],
+		"question": "If x = 5 and y = 10, what will be the result of the following expression? x != y and x < y",
+		"options": ["True", "False", "Error", "Undefined"],
 		"answer": 1
 	},
 	{
 		
-		"question": "Which data type would you use to represent a True or False Value?
-",
-		"options": ["Float", "Boolean", "Integer", "Char"],
-		"answer": 2
+		"question": "In Python, which operator is used to check if two values are NOT equal?",
+		"options": ["=!", "/=", "<>", "!="],
+		"answer": 4
 	},
 	{
-		"question": "Which data type would you use to represent a number with a decimal?",
-		"options": ["String", "Integer", "Array", "Floating-point"],
-		"answer": 4
+		"question": " Consider the following expression: not (True or False). What will be its",
+		"options": ["True", "False", "Error", "Undefined"],
+		"answer": 2
 	}
 ]
 @onready var question_label = $background_color/question_container/question_label

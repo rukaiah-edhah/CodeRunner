@@ -9,30 +9,30 @@ signal quiz_finished
 
 var questions = [
 	{
-		"question": "Which arithmetic operator is used to raise the first operand to the power of the second operand?",
-		"options": ["Addition (+)", "Multiplication (*)", "Exponentiation (**)", "Modulus (%)"], # 1. Add all of the options you want to display 
-		"answer": 3 # The index of the correct answer
+		"question": "How do 'if,' 'elif,' and 'else' statements help manage how a program runs?",
+		"options": ["They set the program's start point", "They determine code's loop count", "They modify variable types", "They specify conditions for code paths"], # 1. Add all of the options you want to display 
+		"answer": 4 # The index of the correct answer
 	},
 	{
-		"question": "What is the result of the following expression: 9 // 2?",
-		"options": ["4.5", "4", "5", "3"],
+		"question": "Which control structure is used to execute a block of code only if a specified condition is true?",
+		"options": ["The else statement", "The if statement", "The elif statement", "All of the above"],
 		"answer": 2
 	},
 	{
-		"question": "If you have x = 15 and you execute the operation x //= 4, what will be the new value of x?",
-		"options": ["3,75", "4", "3", "5"],
-		"answer": 3
+		"question": "What is the purpose of the else statement?",
+		"options": ["Executes code if a condition is false", "Executes code if a condition is true", "Executes code regardless of prior condition", "Manages exceptions and errors"],
+		"answer": 1
 	},
 	{
 		
-		"question": "Which arithmetic operator is used for division that results in a floating-point value?",
-		"options": ["Multiplication (*)", "Modulus (%)", "Integer Division (//)", "Division (/)"],
-		"answer": 4
+		"question": "What is the purpose of the elif statement in conditional control structures?",
+		"options": ["Checks conditions and runs the first true one", "Runs code for a true condition", "Offers alternate block for false conditions.", "Prints variable's message"],
+		"answer": 1
 	},
 	{
-		"question": "If a = 10 and the operation a %= 3 is executed, what is the new value of a?",
-		"options": ["0", "1", "2", "3"],
-		"answer": 2
+		"question": "Which statement must be used to start a chain of conditional statements?",
+		"options": ["if", "elif", "else", "for"],
+		"answer": 1
 	}
 ]
 @onready var question_label = $background_color/question_container/question_label

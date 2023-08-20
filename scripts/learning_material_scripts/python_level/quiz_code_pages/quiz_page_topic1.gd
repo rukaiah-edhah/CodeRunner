@@ -9,30 +9,30 @@ signal quiz_finished
 
 var questions = [
 	{
-		"question": "Which type of programming language prioritizes ease of use and productivity?",
-		"options": [" Higher-level languages", "Lower-level languages", "General-purpose languages", "Specific-purpose languages"], # 1. Add all of the options you want to display 
-		"answer": 0 # The index of the correct answer
+		"question": "How do you write a comment in Python?",
+		"options": [" Using the /* symbol", "Starting a line with //.", "Starting a line with the # symbol", "Enclosing the text with double quotes"], # 1. Add all of the options you want to display 
+		"answer": 3 # The index of the correct answer
 	},
 	{
-		"question": "Higher-level programming languages are best described as:",
-		"options": ["Based on core computer principles", "Hardware-focused", "Clear and straightforward", "Specialized without extras"],
-		"answer": 2
+		"question": "How would you describe Python's syntax?",
+		"options": ["Difficult to understand and write", "Similar to machine language", "Easy to understand and write", "None of the above"],
+		"answer": 3
 	},
 	{
-		"question": "Which programming language is used for performance-critical tasks and provides more control and proximity to the hardware? ",
-		"options": ["Python", "JavaScript", "Assembly", "Ruby"],
-		"answer": 2
+		"question": "Why is Python considered easy to develop and test code?",
+		"options": ["Requires separate compilation", "Its syntax is difficult to understand", "Provides instant results as interpreted", "Requires extensive debugging"],
+		"answer": 3
 	},
 	{
 		
-		"question": "Which two basic numbers form the foundation of binary code in computing?",
-		"options": ["1 and 2", "0 and 1", "1 and 3", "0 and 2"],
-		"answer": 1
+		"question": "How is the structure and flow of a Python program determined?",
+		"options": ["By the number of functions you use", "By placing curly braces {} around code", "By indentation at the beginning of a line", "By using keywords like 'begin' and 'end'"],
+		"answer": 3
 	},
 	{
-		"question": "What are the two primary classifications of programming languages?",
-		"options": ["Higher Level & Medium Level", "Medium Level & Low level", "Powerful & Precise", "High Level & Low Level"],
-		"answer": 3
+		"question": "What will Python raise if you have inconsistent or missing indentation within a code block?",
+		"options": ["SyntaxWarning", "CodeFlowError", "StructureMismatch", "IndentationError"],
+		"answer": 4
 	}
 ]
 @onready var question_label = $background_color/question_container/question_label
