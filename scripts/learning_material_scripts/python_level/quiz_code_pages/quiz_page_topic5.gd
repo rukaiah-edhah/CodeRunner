@@ -9,30 +9,30 @@ signal quiz_finished
 
 var questions = [
 	{
-		"question": "How do 'if,' 'elif,' and 'else' statements help manage how a program runs?",
-		"options": ["They set the program's start point", "They determine code's loop count", "They modify variable types", "They specify conditions for code paths"], # 1. Add all of the options you want to display 
-		"answer": 4 # The index of the correct answer
+		"question": "What do the parentheses after a function name in Python denote?",
+		"options": ["Pass arguments to the function", "Signify the end of a function", "Represent the return value", "Define global variables"], # 1. Add all of the options you want to display 
+		"answer": 1 # The index of the correct answer
 	},
 	{
-		"question": "Which control structure is used to execute a block of code only if a specified condition is true?",
-		"options": ["The else statement", "The if statement", "The elif statement", "All of the above"],
-		"answer": 2
+		"question": "What is the primary purpose of defining a function in Python?",
+		"options": ["To store a value", "To improve the speed of a program", "To repeat a block of code multiple times", "To group code into logical, reusable units"],
+		"answer": 4
 	},
 	{
-		"question": "What is the purpose of the else statement?",
-		"options": ["Executes code if a condition is false", "Executes code if a condition is true", "Executes code regardless of prior condition", "Manages exceptions and errors"],
+		"question": "Which of the following correctly calls the add_one function with the number 7 as an argument?",
+		"options": ["add_one(7)", "add_one = 7", "7(add_one)", "call add_one(7)"],
 		"answer": 1
 	},
 	{
 		
-		"question": "What is the purpose of the elif statement in conditional control structures?",
-		"options": ["Checks conditions and runs the first true one", "Runs code for a true condition", "Offers alternate block for false conditions.", "Prints variable's message"],
+		"question": "Which part of the function provides a result back to the caller?",
+		"options": ["The return statement", "The function name", "The def keyword", "The parameters"],
 		"answer": 1
 	},
 	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 1
+		"question": "What does proper indentation inside a function definition ensure?",
+		"options": ["Provides function comment", "Ensures correct code execution", "Makes function globally accessible", "Speeds up the function"],
+		"answer": 2
 	}
 ]
 @onready var question_label = $background_color/question_container/question_label

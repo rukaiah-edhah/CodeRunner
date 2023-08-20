@@ -9,30 +9,30 @@ signal quiz_finished
 
 var questions = [
 	{
-		"question": "In programming, what's the main role of variables?",
-		"options": ["Just fancy names without much use", "Things you set once and never change", "Holders for values with specific names", "Short-lived items without much importance"], # 1. Add all of the options you want to display 
-		"answer": 3 # The index of the correct answer
+		"question": "What does the 'f' in an f-string in Python denote?",
+		"options": ["It stands for 'formatted'", "It signals a floating-point number", "It represents 'file' type", "It's an indication of a failure string"], # 1. Add all of the options you want to display 
+		"answer": 1 # The index of the correct answer
 	},
 	{
-		"question": "Which naming convention is commonly used for variables in Python?",
-		"options": ["Camel case", "Sneak case", "Upper case", "Pascal case"],
-		"answer": 2
-	},
-	{
-		"question": "Which naming convention is often used for naming classes or types?",
-		"options": ["Pascal case", "Upper case", "Sneak case", "Camel case"],
-		"answer": 1
-	},
-	{
-		
-		"question": "What does the = operator do when used with variables?",
-		"options": ["Compares two variable values", "Declares a variable ", "Assigns a value to a variable", "None of the above"],
+		"question": "What type of value does the input() function in Python return by default?",
+		"options": ["Integer", "Float", "String", "None"],
 		"answer": 3
 	},
 	{
-		"question": "Why is following naming conventions for variables important?",
-		"options": ["To make the code visually appealing", "To improve readability and understanding", "None of the above ", "To obscure the code from others"],
+		"question": "How can you convert a floating-point number to an integer in Python?",
+		"options": ["str(25.5)", "int('25.5')", "float(25)", "int(25.5)"],
+		"answer": 4
+	},
+	{
+		
+		"question": "If you wish to convert an integer value, say 45, to a string, which function will you use?",
+		"options": ["float(45)", "str(45)", "int(45)", "list(45)"],
 		"answer": 2
+	},
+	{
+		"question": "If you have the following code: name = input('What is your name? '), what will happen during its execution?",
+		"options": ["Prints user's name immediately", "Program terminates", "Awaits user input", "Causes error"],
+		"answer": 3
 	}
 ]
 @onready var question_label = $background_color/question_container/question_label
