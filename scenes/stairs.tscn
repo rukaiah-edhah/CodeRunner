@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8mkqqghgf283"]
+
+[ext_resource type="Texture2D" uid="uid://c5t1anhk1cwob" path="res://images/spaceship_interior/style_2/stairs.png" id="1_kf4yt"]
+
+[node name="stairs" type="Node2D"]
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, 1.90735e-06)
+scale = Vector2(1.39599, 1.62123)
+texture = ExtResource("1_kf4yt")
+flip_h = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Sprite2D/StaticBody2D"]
+scale = Vector2(1, 1)
+polygon = PackedVector2Array(-199.859, -105.784, -257.166, -105.475, -272.209, -105.475, -270.418, -69.0832, -239.974, -69.0832, -131.8, -64.5, 124.1, 182.5, 273, 182.5, 272.925, 147.727, 257.882, 147.419, 234.959, 147.419, 151.864, 146.802, 133.239, 146.185, 132.523, 127.372, 114.614, 127.064, 114.256, 110.101, 96.3477, 110.101, 95.6314, 92.2138, 76.6484, 92.2138, 75.932, 74.3261, 58.0235, 74.943, 57.3072, 57.0553, 40.115, 56.4385, 39.7569, 38.2425, 21.4902, 37.9341, 21.132, 19.7381, 3.22353, 19.4297, 1.43268, 2.46726, -15.7595, 1.85044, -15.7595, -15.7288, -33.3098, -15.7288, -34.7425, -34.2332, -52.2928, -34.2332, -52.651, -52.1208, -73.0667, -52.7376, -72.3503, -69.0832, -91.3333, -69.3916, -90.9752, -86.6624, -109.6, -87.5877, -111.033, -105.475)
