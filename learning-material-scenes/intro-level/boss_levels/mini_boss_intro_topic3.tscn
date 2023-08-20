@@ -2,47 +2,47 @@
 
 [ext_resource type="Script" path="res://scripts/mini_boss_level.gd" id="1_ub77d"]
 [ext_resource type="Script" path="res://scripts/block_area.gd" id="2_ttq72"]
-[ext_resource type="Texture2D" uid="uid://bprftbpgawt6x" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_000.png" id="3_g41pg"]
-[ext_resource type="Texture2D" uid="uid://rgmy7ab88ld" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_001.png" id="4_fkggo"]
-[ext_resource type="Texture2D" uid="uid://bvt5137cudap" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_002.png" id="5_jsdhu"]
-[ext_resource type="Texture2D" uid="uid://bvyiflerr0w4q" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_003.png" id="6_v6xty"]
-[ext_resource type="Texture2D" uid="uid://dok1adtp8snfh" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_004.png" id="7_65u8j"]
-[ext_resource type="Texture2D" uid="uid://duhojoiykikxp" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_10.png" id="8_e4smm"]
-[ext_resource type="Texture2D" uid="uid://dt0buaspb2rvw" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_000.png" id="9_xa47a"]
-[ext_resource type="Texture2D" uid="uid://b8rqctuc8pm7s" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_001.png" id="10_hg1n0"]
-[ext_resource type="Texture2D" uid="uid://cl20ti7wm501p" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_002.png" id="11_781ad"]
-[ext_resource type="Texture2D" uid="uid://ceekigvl67dgb" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_003.png" id="12_801py"]
-[ext_resource type="Texture2D" uid="uid://blk1awvu7osle" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_004.png" id="13_bb5vo"]
-[ext_resource type="Texture2D" uid="uid://bk3swpvivro7c" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_005.png" id="14_2mxko"]
-[ext_resource type="Texture2D" uid="uid://myop6fp0jmtu" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_006.png" id="15_nfslp"]
-[ext_resource type="Texture2D" uid="uid://b64ee7qtg56cw" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_007.png" id="16_lsbes"]
-[ext_resource type="Texture2D" uid="uid://cwcrpird0kjk6" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_008.png" id="17_57fpt"]
-[ext_resource type="Texture2D" uid="uid://c8si5jc31lnqw" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_009.png" id="18_8fl8c"]
-[ext_resource type="Texture2D" uid="uid://bov1rn5srhk4s" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_010.png" id="19_nl1q8"]
-[ext_resource type="Texture2D" uid="uid://wyapg77sul4x" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_011.png" id="20_mkgut"]
-[ext_resource type="Texture2D" uid="uid://c4uqrvrjci3fn" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_012.png" id="21_ey6ki"]
-[ext_resource type="Texture2D" uid="uid://3kxfw20r1rcj" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_013.png" id="22_f6upn"]
-[ext_resource type="Texture2D" uid="uid://dciy4dvuj310o" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_014.png" id="23_p4so3"]
-[ext_resource type="Texture2D" uid="uid://q8n0ywb55aih" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_015.png" id="24_fscys"]
-[ext_resource type="Texture2D" uid="uid://ditrtjkjn18bb" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_016.png" id="25_niqmk"]
-[ext_resource type="Texture2D" uid="uid://cfkp05acvvdvf" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_017.png" id="26_n3sov"]
-[ext_resource type="Texture2D" uid="uid://dugltcbnfi7nf" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_018.png" id="27_urcjk"]
-[ext_resource type="Texture2D" uid="uid://cql1fa4hkfods" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_019.png" id="28_rivyj"]
-[ext_resource type="Texture2D" uid="uid://uvpkqx0jh2wp" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_000.png" id="29_58ljd"]
-[ext_resource type="Texture2D" uid="uid://ce5i6djc578px" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_001.png" id="30_xrxwe"]
-[ext_resource type="Texture2D" uid="uid://mxb7uqhr7vmn" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_002.png" id="31_ilgyu"]
-[ext_resource type="Texture2D" uid="uid://dfrowjg7v6p1o" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_003.png" id="32_04uif"]
-[ext_resource type="Texture2D" uid="uid://byd0amn0rpm5l" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_004.png" id="33_14tnm"]
-[ext_resource type="Texture2D" uid="uid://bp27tmcim4dpj" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_005.png" id="34_kwpki"]
-[ext_resource type="Texture2D" uid="uid://ci1vo1gekcdaf" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_006.png" id="35_sbvpk"]
-[ext_resource type="Texture2D" uid="uid://fwq3y2ymgj55" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_007.png" id="36_l1a62"]
-[ext_resource type="Texture2D" uid="uid://bhhmfrn1omb2" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_008.png" id="37_0doxk"]
-[ext_resource type="Texture2D" uid="uid://bh8ndampn5pwb" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_009.png" id="38_tuimv"]
+[ext_resource type="Texture2D" uid="uid://cw7uw2clgrnwc" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_000.png" id="3_g41pg"]
+[ext_resource type="Texture2D" uid="uid://v03bb64beqai" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_001.png" id="4_fkggo"]
+[ext_resource type="Texture2D" uid="uid://ba2ry8iid6c10" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_002.png" id="5_jsdhu"]
+[ext_resource type="Texture2D" uid="uid://dqo1wl6vp0fq4" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_003.png" id="6_v6xty"]
+[ext_resource type="Texture2D" uid="uid://ub1y346ivnmt" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_004.png" id="7_65u8j"]
+[ext_resource type="Texture2D" uid="uid://wif71l0jemkn" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_10.png" id="8_e4smm"]
+[ext_resource type="Texture2D" uid="uid://dure3bdrvkd4m" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_000.png" id="9_xa47a"]
+[ext_resource type="Texture2D" uid="uid://kkeflsm1a4hb" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_001.png" id="10_hg1n0"]
+[ext_resource type="Texture2D" uid="uid://cnf3cpup2iyug" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_002.png" id="11_781ad"]
+[ext_resource type="Texture2D" uid="uid://dc807rurxvkos" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_003.png" id="12_801py"]
+[ext_resource type="Texture2D" uid="uid://bwlm313ahqmuv" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_004.png" id="13_bb5vo"]
+[ext_resource type="Texture2D" uid="uid://cjiktaaa15i77" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_005.png" id="14_2mxko"]
+[ext_resource type="Texture2D" uid="uid://cshtqa1dwbpyg" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_006.png" id="15_nfslp"]
+[ext_resource type="Texture2D" uid="uid://wt6wxden5b7p" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_007.png" id="16_lsbes"]
+[ext_resource type="Texture2D" uid="uid://dyg1qjqfeae7a" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_008.png" id="17_57fpt"]
+[ext_resource type="Texture2D" uid="uid://jloclqdimu1f" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_009.png" id="18_8fl8c"]
+[ext_resource type="Texture2D" uid="uid://pgxvg78nddpy" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_010.png" id="19_nl1q8"]
+[ext_resource type="Texture2D" uid="uid://mkgfsamfpgc2" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_011.png" id="20_mkgut"]
+[ext_resource type="Texture2D" uid="uid://b6emjc1dhbuf0" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_012.png" id="21_ey6ki"]
+[ext_resource type="Texture2D" uid="uid://c62usrbp6nswj" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_013.png" id="22_f6upn"]
+[ext_resource type="Texture2D" uid="uid://bb6je5cl07tg7" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_014.png" id="23_p4so3"]
+[ext_resource type="Texture2D" uid="uid://so7ts1wpfovt" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_015.png" id="24_fscys"]
+[ext_resource type="Texture2D" uid="uid://bm7xebuundkax" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_016.png" id="25_niqmk"]
+[ext_resource type="Texture2D" uid="uid://c4fak66crtyuu" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_017.png" id="26_n3sov"]
+[ext_resource type="Texture2D" uid="uid://duf8ophap2hgu" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_018.png" id="27_urcjk"]
+[ext_resource type="Texture2D" uid="uid://dvc3xn5ga20jg" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_019.png" id="28_rivyj"]
+[ext_resource type="Texture2D" uid="uid://u6feldyhl5tk" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_000.png" id="29_58ljd"]
+[ext_resource type="Texture2D" uid="uid://o0k2m1tdxlep" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_001.png" id="30_xrxwe"]
+[ext_resource type="Texture2D" uid="uid://bp1bxdxqyvqmf" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_002.png" id="31_ilgyu"]
+[ext_resource type="Texture2D" uid="uid://dugvgmmk8j5v8" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_003.png" id="32_04uif"]
+[ext_resource type="Texture2D" uid="uid://uq3gaorrg7eo" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_004.png" id="33_14tnm"]
+[ext_resource type="Texture2D" uid="uid://dw5sbitchw045" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_005.png" id="34_kwpki"]
+[ext_resource type="Texture2D" uid="uid://cfbbggnsuosf8" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_006.png" id="35_sbvpk"]
+[ext_resource type="Texture2D" uid="uid://cd01pt7xavok3" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_007.png" id="36_l1a62"]
+[ext_resource type="Texture2D" uid="uid://b12rhptj7ovgl" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_008.png" id="37_0doxk"]
+[ext_resource type="Texture2D" uid="uid://26wgcwi36jfw" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_009.png" id="38_tuimv"]
 [ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="39_00w6v"]
 [ext_resource type="Script" path="res://scripts/quiz_page.gd" id="40_dru76"]
-[ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="41_n8ytr"]
+[ext_resource type="FontFile" uid="uid://cgihnyetfqurr" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="41_n8ytr"]
 [ext_resource type="Script" path="res://scripts/intro_code_page.gd" id="42_37v7y"]
-[ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="43_thejq"]
+[ext_resource type="FontFile" uid="uid://b827yj5scm7kt" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="43_thejq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cguhy"]
 size = Vector2(963, 644)
@@ -532,7 +532,8 @@ size_flags_stretch_ratio = 0.1
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
-text = "Problem: Calculate the Sum of Two Numbers"
+text = "Problem: Calculate the area and circumference of a circle given its radius
+Input radius as float"
 label_settings = SubResource("LabelSettings_tu174")
 clip_text = true
 
@@ -559,6 +560,11 @@ text = "1
 
 3
 
+4
+
+5
+
+
 "
 label_settings = SubResource("LabelSettings_8g3qe")
 
@@ -575,11 +581,14 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 100
-text = "                       Number1, Number2
+text = "                       pi = 3.14159
 
-                       Sum = Number1 + Number2
-    
-                       \"The sum of the two numbers is:\", 
+                       area = pi radius radius
+                      circumference = 2 pi radius
+
+                       \"Area:\", area
+
+                \"Circumference:\", circumference
 
     "
 label_settings = SubResource("LabelSettings_e0svr")

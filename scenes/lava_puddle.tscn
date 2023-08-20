@@ -1,0 +1,95 @@
+[gd_scene load_steps=7 format=3 uid="uid://c1t2pf4ldn6nk"]
+
+[ext_resource type="Script" path="res://scripts/lava_puddle.gd" id="1_byp0w"]
+[ext_resource type="Texture2D" uid="uid://ctx68oc8ccy25" path="res://images/alien_planet /lava_puddle2 (2).png" id="1_r61e5"]
+[ext_resource type="Texture2D" uid="uid://d17vstefqr6tk" path="res://images/alien_planet /smoke.png" id="3_dts10"]
+
+[sub_resource type="Animation" id="Animation_ww105"]
+resource_name = "boil"
+length = 1.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lava_puddle_sprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.453, 0.545), Vector2(0.465, 0.56), Vector2(0.453, 0.545)]
+}
+
+[sub_resource type="Animation" id="Animation_w1u73"]
+resource_name = "smoke"
+length = 2.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("smoke:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.0745098)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("smoke:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.3, 1.8, 2.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.18239, 0.186525), Vector2(0.19, 0.195), Vector2(0.18239, 0.186525)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p4y0x"]
+_data = {
+"boil": SubResource("Animation_ww105"),
+"smoke": SubResource("Animation_w1u73")
+}
+
+[node name="lava_puddle" type="Node2D" groups=["obstacles"]]
+rotation = 0.00217797
+script = ExtResource("1_byp0w")
+
+[node name="lava_puddle_sprite" type="Sprite2D" parent="."]
+position = Vector2(1.99999, 1.24999)
+scale = Vector2(0.453, 0.545)
+texture = ExtResource("1_r61e5")
+
+[node name="smoke" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.0745098)
+position = Vector2(5.74314, -117.013)
+scale = Vector2(0.18239, 0.186525)
+texture = ExtResource("3_dts10")
+
+[node name="Area2D" type="Area2D" parent="." groups=["lava"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(1, 5)
+scale = Vector2(0.452722, 0.544944)
+polygon = PackedVector2Array(290, -87.2, 283.8, -81, 281.7, -81, 258.7, -64, 256.5, -64, 242.5, -57, 237.4, -57, 232.5, -60, 230.3, -60, 229, -59.6, 229, -58.9, 193.6, -35, 189.9, -35, 181, -35.8, 159.1, -24.4, 159.7, -21, 164.3, -21, 174.7, -17.5, 192.5, -28, 195.9, -28, 229, -36.5, 229, -37.3, 243, -43.3, 243, -44.1, 266.9, -60.3, 269, -59.2, 269, -57.8, 271.4, -55.5, 270.3, -53, 268.9, -53, 262.9, -46, 260.6, -46, 231.6, -25, 228.4, -25, 217.4, -20, 208.4, -20, 190, -16.3, 190, -15.6, 182, -12.6, 181.6, -11.5, 183.4, -7, 184.4, -7, 194.4, -3, 202.2, -3, 292, 11.3, 292, 12.9, 299, 16.8, 299, 22.8, 294.8, 27, 221, 27, 184, 40.4, 184, 41.3, 107.4, 74, 102, 74, 89.2, 77, -26, 77, -58, 76, -58, 74.5, -93, 63.5, -93, 62.1, -130.5, 40, -133.2, 40, -165.3, 35, -181.6, 35, -179.9, 38, -175.8, 38, -161, 41.4, -161, 42.9, -140, 56.9, -140, 58.2, -135, 63.2, -135, 65.8, -140.2, 71, -142.8, 71, -173.9, 74, -186, 74, -232, 72, -232, 70.8, -337, 55.7, -337, 54.5, -348, 51.5, -348, 50.1, -349, 49.4, -349, 38, -340.5, 34, -308, 34, -296, 27.8, -296, 30.2, -279, 32.2, -279, 33.9, -274.4, 37, -265, 37, -225, 38, -225, 37.3, -222.2, 34, -241.1, 34, -257, 31.7, -257, 29.5, -260.2, 23, -256.8, 23, -253.8, 20, -248.2, 20, -120, 10.1, -107.4, 4, -101.2, 4, -92, 3.2, -92, 1.3, -88, -4, -82.9, -4, -79.7, 0.699997, -43.4, -13, -39.1, -13, -17.3, -19, -9.39999, -19, 12.8, -23, 26.9, -23, 64.2, -24.9, 73.9, -41, 75.1, -41, 92.2, -57, 98.8, -57, 100.7, -55.1, 111, -58.9, 111, -55.8, 111.4, -55.4, 119, -59.2, 119, -56.7, 138, -53.7, 138, -52.1, 141.5, -50, 143.2, -50, 146.5, -53.4, 149, -52.3, 149, -45, 155.3, -35.3, 174.5, -45, 178.7, -45, 192, -46.8, 231.4, -71, 234.6, -71, 255, -74.7, 279.8, -89, 290, -89)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(1, 5)
+scale = Vector2(0.452722, 0.544944)
+polygon = PackedVector2Array(276.4, 33, 288.1, 33, 345, 37.1, 345, 38.6, 349, 39.9, 349, 52, 342.5, 55, 329.3, 55, 246.2, 68, 237.2, 68, 210, 70.2, 210, 68.5, 177, 60.6, 177, 58.8, 170.6, 52.5, 171.7, 50, 173.3, 50, 181.2, 43, 185.6, 43, 217.7, 32, 222.9, 32, 261, 29.1, 261, 27.1)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(1, 5)
+scale = Vector2(0.452722, 0.544944)
+polygon = PackedVector2Array(-112, 74.1, -112, 75.3, -106, 76.3, -106, 78.4, -101.7, 84.9, -102.8, 87, -104.4, 87, -107.4, 89, -165.2, 89, -172, 85.2, -172, 81.2, -167.8, 77, -165.3, 77, -150, 74.3, -150, 72.9)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_p4y0x")
+}
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_lava_area_entered"]

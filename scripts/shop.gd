@@ -167,3 +167,8 @@ var player_inventory  = {
             #print("Item bought:", item_data["Name"])
         #else:
             #print("Not enough coins to buy this")
+
+
+func _on_close__shop_pressed():
+    get_node("Anim").play("Transition_Out")
+    get_tree().paused = false

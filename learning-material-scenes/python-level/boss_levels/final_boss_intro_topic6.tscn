@@ -1,0 +1,1246 @@
+[gd_scene load_steps=208 format=3 uid="uid://dlgby46i6d47x"]
+
+[ext_resource type="Script" path="res://scripts/final_boss_level.gd" id="1_iq4ai"]
+[ext_resource type="Script" path="res://scripts/block_area.gd" id="2_s7ghm"]
+[ext_resource type="Texture2D" uid="uid://by1yhu83srmq6" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_000.png" id="3_nbqg3"]
+[ext_resource type="Texture2D" uid="uid://dgcow43pbelgs" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_001.png" id="4_y6tx3"]
+[ext_resource type="Texture2D" uid="uid://bvka58aelig32" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_002.png" id="5_tw3eh"]
+[ext_resource type="Texture2D" uid="uid://bides24s7gp84" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_003.png" id="6_0oths"]
+[ext_resource type="Texture2D" uid="uid://b6kh33wit1a7u" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_004.png" id="7_hnx3v"]
+[ext_resource type="Texture2D" uid="uid://b3he04f57rvgm" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_005.png" id="8_r8hf5"]
+[ext_resource type="Texture2D" uid="uid://bim2tk6e4g2by" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_006.png" id="9_7nnq6"]
+[ext_resource type="Texture2D" uid="uid://s84r6s7a2vxg" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_007.png" id="10_tf110"]
+[ext_resource type="Texture2D" uid="uid://co3updhlqqvkb" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_008.png" id="11_ol0a1"]
+[ext_resource type="Texture2D" uid="uid://q6xlsnnjfbo7" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_009.png" id="12_hb500"]
+[ext_resource type="Texture2D" uid="uid://cqkwkt5xfd5pe" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_010.png" id="13_s5khj"]
+[ext_resource type="Texture2D" uid="uid://cmwfns051l3pv" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_011.png" id="14_jspr3"]
+[ext_resource type="Texture2D" uid="uid://e05v03pmuxtw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_012.png" id="15_c44ef"]
+[ext_resource type="Texture2D" uid="uid://csksneq2ykp4r" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_013.png" id="16_v0ln0"]
+[ext_resource type="Texture2D" uid="uid://ccjn6q1yjt6bj" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_014.png" id="17_inukf"]
+[ext_resource type="Texture2D" uid="uid://dgiltpd3kjyfb" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_015.png" id="18_td321"]
+[ext_resource type="Texture2D" uid="uid://ch73qbactk7kx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_016.png" id="19_6o3ls"]
+[ext_resource type="Texture2D" uid="uid://dram35ya3a5g7" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_017.png" id="20_umj8v"]
+[ext_resource type="Texture2D" uid="uid://cc2lji5wkwnnf" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_018.png" id="21_l5x4u"]
+[ext_resource type="Texture2D" uid="uid://bii0ce3petwth" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_019.png" id="22_yxigf"]
+[ext_resource type="Texture2D" uid="uid://cq3r8pn5gsx3t" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_020.png" id="23_nb3yj"]
+[ext_resource type="Texture2D" uid="uid://bycqpw03ya52h" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_021.png" id="24_vt7lx"]
+[ext_resource type="Texture2D" uid="uid://bmu6ita0a8sfq" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_022.png" id="25_a6j2k"]
+[ext_resource type="Texture2D" uid="uid://bhr6cw0bvfd85" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_023.png" id="26_5sg4p"]
+[ext_resource type="Texture2D" uid="uid://b1b4wfn7r28cm" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_024.png" id="27_iocmm"]
+[ext_resource type="Texture2D" uid="uid://ddyj3ly5yp1ch" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_025.png" id="28_45w2x"]
+[ext_resource type="Texture2D" uid="uid://giodsbkdoysm" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_026.png" id="29_6d6n8"]
+[ext_resource type="Texture2D" uid="uid://okhd0ul5m4l1" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_027.png" id="30_tmyyr"]
+[ext_resource type="Texture2D" uid="uid://c200nnv7ighfx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_028.png" id="31_ehh2p"]
+[ext_resource type="Texture2D" uid="uid://csklkt4i8mqp6" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_029.png" id="32_l8pip"]
+[ext_resource type="Texture2D" uid="uid://bq6cy750g5r1h" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_030.png" id="33_oh45w"]
+[ext_resource type="Texture2D" uid="uid://bqfteqjlg3sds" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_031.png" id="34_v47w5"]
+[ext_resource type="Texture2D" uid="uid://dfbfouepg5q87" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_032.png" id="35_pub4g"]
+[ext_resource type="Texture2D" uid="uid://cw7djg63scrl" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_033.png" id="36_53vv6"]
+[ext_resource type="Texture2D" uid="uid://cp5qqabb66gcg" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_034.png" id="37_y0bbd"]
+[ext_resource type="Texture2D" uid="uid://cty11d44m6wpw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_035.png" id="38_px8tu"]
+[ext_resource type="Texture2D" uid="uid://bqc1gfbmrtt8l" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_036.png" id="39_udd0p"]
+[ext_resource type="Texture2D" uid="uid://coajtt1mmwuf2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_037.png" id="40_veh7l"]
+[ext_resource type="Texture2D" uid="uid://c0kh1pq48i62f" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_038.png" id="41_a2mv8"]
+[ext_resource type="Texture2D" uid="uid://duqhm4ilw13xo" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_039.png" id="42_or1oi"]
+[ext_resource type="Texture2D" uid="uid://cv3kukc1321lx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_040.png" id="43_fkkr6"]
+[ext_resource type="Texture2D" uid="uid://bjhliaosp5i6t" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_041.png" id="44_7sugs"]
+[ext_resource type="Texture2D" uid="uid://dmlkluh4m30ga" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_042.png" id="45_vbt30"]
+[ext_resource type="Texture2D" uid="uid://cxyanf4rpw43k" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_043.png" id="46_ig6qo"]
+[ext_resource type="Texture2D" uid="uid://xrh6aoqswcis" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_044.png" id="47_ufp5i"]
+[ext_resource type="Texture2D" uid="uid://cgk3w6xp1ddre" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_045.png" id="48_xis7k"]
+[ext_resource type="Texture2D" uid="uid://cpe7ttl0pkfoe" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_046.png" id="49_p072d"]
+[ext_resource type="Texture2D" uid="uid://ba2u57v40ya0o" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_047.png" id="50_mo547"]
+[ext_resource type="Texture2D" uid="uid://qwafwoxmyd12" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_048.png" id="51_riwfs"]
+[ext_resource type="Texture2D" uid="uid://cu0m7ycuhndrh" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_049.png" id="52_ldscc"]
+[ext_resource type="Texture2D" uid="uid://cpap8kf88eodd" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_050.png" id="53_0elbm"]
+[ext_resource type="Texture2D" uid="uid://iir1wk57kh5t" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_051.png" id="54_5gvnc"]
+[ext_resource type="Texture2D" uid="uid://6djr8wrbrlak" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_052.png" id="55_ol66d"]
+[ext_resource type="Texture2D" uid="uid://dku1gmkl3w0fy" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_053.png" id="56_jd6ic"]
+[ext_resource type="Texture2D" uid="uid://cpt6ygceamqnx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_054.png" id="57_sfd2v"]
+[ext_resource type="Texture2D" uid="uid://tp0lyb4k1r8o" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_055.png" id="58_gf8ui"]
+[ext_resource type="Texture2D" uid="uid://5tc2ifgah5e6" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_056.png" id="59_je0de"]
+[ext_resource type="Texture2D" uid="uid://dqijby5mk4mjs" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_057.png" id="60_cmxsd"]
+[ext_resource type="Texture2D" uid="uid://clp8a6eq0m3qa" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_058.png" id="61_68fo4"]
+[ext_resource type="Texture2D" uid="uid://d2a62d2vti1fk" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_059.png" id="62_1a4sa"]
+[ext_resource type="Texture2D" uid="uid://c5kpwfu5uvlbs" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_061.png" id="63_qaaaw"]
+[ext_resource type="Texture2D" uid="uid://bl5xp0omw4qja" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_060.png" id="64_al8k2"]
+[ext_resource type="Texture2D" uid="uid://db6j6t31p0i6p" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_062.png" id="65_f4s4q"]
+[ext_resource type="Texture2D" uid="uid://bpbhd5mhra605" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_063.png" id="66_kdx3i"]
+[ext_resource type="Texture2D" uid="uid://bf0qil0lqacv4" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_069.png" id="67_n70r1"]
+[ext_resource type="Texture2D" uid="uid://1fqtsvnb130v" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_064.png" id="68_odhv7"]
+[ext_resource type="Texture2D" uid="uid://ca6crmvkrvsip" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_065.png" id="69_tblyn"]
+[ext_resource type="Texture2D" uid="uid://c4csjf4fxeant" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_066.png" id="70_0yiib"]
+[ext_resource type="Texture2D" uid="uid://dlmenoyysunyn" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_067.png" id="71_u3ug1"]
+[ext_resource type="Texture2D" uid="uid://dg5hfufdy5ngw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_068.png" id="72_hgr3l"]
+[ext_resource type="Texture2D" uid="uid://d4b2r37puf0uf" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_070.png" id="73_oxudm"]
+[ext_resource type="Texture2D" uid="uid://ca0twt1g4x011" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_071.png" id="74_hvljj"]
+[ext_resource type="Texture2D" uid="uid://e0stgohi334u" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_072.png" id="75_xigva"]
+[ext_resource type="Texture2D" uid="uid://c5kib8cp5nbw2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_073.png" id="76_6t1yq"]
+[ext_resource type="Texture2D" uid="uid://b2xoiyi8yh6p8" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_074.png" id="77_4gf2e"]
+[ext_resource type="Texture2D" uid="uid://1ei57oww371v" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_079.png" id="78_2iqe6"]
+[ext_resource type="Texture2D" uid="uid://diubtldhi1udl" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_075.png" id="79_wcm5f"]
+[ext_resource type="Texture2D" uid="uid://bxmvophuko8as" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_076.png" id="80_qq0hb"]
+[ext_resource type="Texture2D" uid="uid://bchgh7r7mrids" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_077.png" id="81_hhxrb"]
+[ext_resource type="Texture2D" uid="uid://dlenuupldcoa4" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_078.png" id="82_isj3x"]
+[ext_resource type="Texture2D" uid="uid://dod1evi4nw6fh" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_080.png" id="83_bmyee"]
+[ext_resource type="Texture2D" uid="uid://broqybi8w5kdk" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_081.png" id="84_6a2g3"]
+[ext_resource type="Texture2D" uid="uid://bosg0igv36ftp" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_082.png" id="85_1r6ix"]
+[ext_resource type="Texture2D" uid="uid://cxaf2k6qme1pw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_083.png" id="86_g1jx1"]
+[ext_resource type="Texture2D" uid="uid://23j8ersipske" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_084.png" id="87_b7jbd"]
+[ext_resource type="Texture2D" uid="uid://cvabk4m8efcix" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_085.png" id="88_awk54"]
+[ext_resource type="Texture2D" uid="uid://bru5tgmwk65tu" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_086.png" id="89_x00om"]
+[ext_resource type="Texture2D" uid="uid://rn38oc3en1uy" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_087.png" id="90_lefop"]
+[ext_resource type="Texture2D" uid="uid://owxig0jk6xpl" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_088.png" id="91_jqr0t"]
+[ext_resource type="Texture2D" uid="uid://c86nb38cmufdv" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_089.png" id="92_lkcxe"]
+[ext_resource type="Texture2D" uid="uid://cwfuyoj3fayvk" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_090.png" id="93_1wehc"]
+[ext_resource type="Texture2D" uid="uid://by58mmiu8lu83" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_092.png" id="94_edcfc"]
+[ext_resource type="Texture2D" uid="uid://ckaw5q1areurh" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_091.png" id="95_jct5s"]
+[ext_resource type="Texture2D" uid="uid://y6lk2dr1016i" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_093.png" id="96_wrfwh"]
+[ext_resource type="Texture2D" uid="uid://bar7fv8nq54e4" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_094.png" id="97_7u038"]
+[ext_resource type="Texture2D" uid="uid://b4513abxsbkm6" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_095.png" id="98_jakjm"]
+[ext_resource type="Texture2D" uid="uid://uarg724dp3ul" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_096.png" id="99_7fweq"]
+[ext_resource type="Texture2D" uid="uid://c1mkistvoxs4m" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_097.png" id="100_w0xon"]
+[ext_resource type="Texture2D" uid="uid://co8s8jdeua4op" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_098.png" id="101_nll6d"]
+[ext_resource type="Texture2D" uid="uid://cbeoahyro84s8" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_099.png" id="102_i8s2a"]
+[ext_resource type="Texture2D" uid="uid://dxn5vlj5ntnwx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_100.png" id="103_ild3s"]
+[ext_resource type="Texture2D" uid="uid://7bgqioowhd34" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_101.png" id="104_w2pfi"]
+[ext_resource type="Texture2D" uid="uid://b1f0nhwgacolb" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_102.png" id="105_fdj7o"]
+[ext_resource type="Texture2D" uid="uid://cprgkqeg2wx7f" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_103.png" id="106_mxsue"]
+[ext_resource type="Texture2D" uid="uid://bss01bfmh4q8i" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_104.png" id="107_xbb4v"]
+[ext_resource type="Texture2D" uid="uid://dvwrw1s6f75my" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_105.png" id="108_jbsf1"]
+[ext_resource type="Texture2D" uid="uid://c17b6bt3qm5u8" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_106.png" id="109_486d3"]
+[ext_resource type="Texture2D" uid="uid://diyygkiqoqg7m" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_107.png" id="110_2vvqm"]
+[ext_resource type="Texture2D" uid="uid://bep06jswgqn3o" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_108.png" id="111_46fj4"]
+[ext_resource type="Texture2D" uid="uid://c71k8sbfoki5p" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_109.png" id="112_i8ljr"]
+[ext_resource type="Texture2D" uid="uid://4ckdtmd1ahj4" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_110.png" id="113_aekog"]
+[ext_resource type="Texture2D" uid="uid://bdug40yufh70x" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_111.png" id="114_umu68"]
+[ext_resource type="Texture2D" uid="uid://ba57310lws5xx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_112.png" id="115_x6lsf"]
+[ext_resource type="Texture2D" uid="uid://deu4mehgryrtm" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_113.png" id="116_xg6cr"]
+[ext_resource type="Texture2D" uid="uid://bien4grjl55is" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_114.png" id="117_6awa4"]
+[ext_resource type="Texture2D" uid="uid://7pr4y7yq7qcw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_115.png" id="118_fqsum"]
+[ext_resource type="Texture2D" uid="uid://ca7wr0inrtq7p" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_116.png" id="119_hty71"]
+[ext_resource type="Texture2D" uid="uid://cnxvc1k8vwy1q" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_117.png" id="120_2ii4x"]
+[ext_resource type="Texture2D" uid="uid://nl4ppy1syoqs" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_118.png" id="121_2dcwo"]
+[ext_resource type="Texture2D" uid="uid://dc35engi7nifp" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_119.png" id="122_luwts"]
+[ext_resource type="Texture2D" uid="uid://b5pa7q4tjhkyo" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_120.png" id="123_7uhot"]
+[ext_resource type="Texture2D" uid="uid://bkisx6ky03li8" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_121.png" id="124_68x1v"]
+[ext_resource type="Texture2D" uid="uid://bo0f25n1872ii" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_122.png" id="125_dflgy"]
+[ext_resource type="Texture2D" uid="uid://dj1smr7er6cpg" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_123.png" id="126_6huq3"]
+[ext_resource type="Texture2D" uid="uid://cwnjhej5utkdx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_124.png" id="127_cwaf3"]
+[ext_resource type="Texture2D" uid="uid://7vies7we1pql" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_125.png" id="128_ewtvt"]
+[ext_resource type="Texture2D" uid="uid://dkcrlpggvhjrk" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_126.png" id="129_cl5sn"]
+[ext_resource type="Texture2D" uid="uid://0l27gpkd3swu" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_00.png" id="130_uxjk6"]
+[ext_resource type="Texture2D" uid="uid://cdqrxkbwjlhgw" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_01.png" id="131_g6rrv"]
+[ext_resource type="Texture2D" uid="uid://c5jkm6hxti5xp" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_02.png" id="132_2u46q"]
+[ext_resource type="Texture2D" uid="uid://c2bu8trw42hsf" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_03.png" id="133_fxuvn"]
+[ext_resource type="Texture2D" uid="uid://cllumcpihntdl" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_04.png" id="134_yvh1w"]
+[ext_resource type="Texture2D" uid="uid://s34r1d5nqkee" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_05.png" id="135_qefdq"]
+[ext_resource type="Texture2D" uid="uid://jy0t7krf6ojp" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_06.png" id="136_mm86c"]
+[ext_resource type="Texture2D" uid="uid://dmv0ohf0qpav8" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_07.png" id="137_bqytv"]
+[ext_resource type="Texture2D" uid="uid://bl0s1ptk6cf3m" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_08.png" id="138_jirud"]
+[ext_resource type="Texture2D" uid="uid://bgfxxm107cgmx" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_09.png" id="139_s1o5y"]
+[ext_resource type="Texture2D" uid="uid://dcjpvn6aqfuw0" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_10.png" id="140_sdfbb"]
+[ext_resource type="Texture2D" uid="uid://tgqaf44o1dj2" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_11.png" id="141_6bc71"]
+[ext_resource type="Texture2D" uid="uid://caye65mon28f3" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_12.png" id="142_c1hn5"]
+[ext_resource type="Texture2D" uid="uid://duqtxb5oto7vh" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_13.png" id="143_s3p8k"]
+[ext_resource type="Texture2D" uid="uid://b5hsjd1fjjb6r" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_14.png" id="144_oy2u5"]
+[ext_resource type="Texture2D" uid="uid://cru60r4hb7g60" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_15.png" id="145_lj083"]
+[ext_resource type="Texture2D" uid="uid://drqjrhyfgb5oi" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_16.png" id="146_lprwe"]
+[ext_resource type="Texture2D" uid="uid://b63e0uxxhatq5" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_17.png" id="147_inrq7"]
+[ext_resource type="Texture2D" uid="uid://bk5sa8a7ihkgi" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_18.png" id="148_toabo"]
+[ext_resource type="Texture2D" uid="uid://cfxighm6fwudr" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_19.png" id="149_mds80"]
+[ext_resource type="Texture2D" uid="uid://mfia0n7jacwp" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_20.png" id="150_o6ykq"]
+[ext_resource type="Texture2D" uid="uid://dn6ad2fb10nh3" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_21.png" id="151_mqp85"]
+[ext_resource type="Texture2D" uid="uid://8bvbde8ymw8a" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_22.png" id="152_55ob0"]
+[ext_resource type="Texture2D" uid="uid://mljg6wders6c" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_23.png" id="153_722c1"]
+[ext_resource type="Texture2D" uid="uid://b3s17gxawnsso" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_24.png" id="154_qto27"]
+[ext_resource type="Texture2D" uid="uid://dcbdb2t4e1i2y" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_25.png" id="155_1lmuu"]
+[ext_resource type="Texture2D" uid="uid://cfx5r6vc3n0mo" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_26.png" id="156_coarw"]
+[ext_resource type="Texture2D" uid="uid://dm8xvycyrqkgt" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_27.png" id="157_m3sul"]
+[ext_resource type="Texture2D" uid="uid://2e1uoc4wllfd" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_28.png" id="158_mt44n"]
+[ext_resource type="Texture2D" uid="uid://d2iollj04a1nk" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_29.png" id="159_duraj"]
+[ext_resource type="Texture2D" uid="uid://c0x7j5rygdwdk" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_30.png" id="160_775y3"]
+[ext_resource type="Texture2D" uid="uid://dbho28yyfxdoh" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_31.png" id="161_ojypt"]
+[ext_resource type="Texture2D" uid="uid://c5aqupmig43t" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_32.png" id="162_u6aon"]
+[ext_resource type="Texture2D" uid="uid://7r0f50kr6gxn" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_33.png" id="163_2xud0"]
+[ext_resource type="Texture2D" uid="uid://b48nxx0d0om4e" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_34.png" id="164_rukcn"]
+[ext_resource type="Texture2D" uid="uid://b0il5726360wu" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_35.png" id="165_pxg3t"]
+[ext_resource type="Texture2D" uid="uid://dd33qsftd3c4u" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_36.png" id="166_0cd6h"]
+[ext_resource type="Texture2D" uid="uid://b4d7jokd0kr6" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_02.png" id="167_yq6cs"]
+[ext_resource type="Texture2D" uid="uid://c413fxtm6pe7k" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_03.png" id="168_pxkx3"]
+[ext_resource type="Texture2D" uid="uid://fuq5lmou46oe" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_04.png" id="169_yx1bm"]
+[ext_resource type="Texture2D" uid="uid://bbws3gwm817fu" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_05.png" id="170_w5y0q"]
+[ext_resource type="Texture2D" uid="uid://bxq7bf1vqjuot" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_06.png" id="171_lg5ui"]
+[ext_resource type="Texture2D" uid="uid://c432ff1fctoro" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_07.png" id="172_ftbvm"]
+[ext_resource type="Texture2D" uid="uid://bcleoqf6w0gae" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_08.png" id="173_fr1d0"]
+[ext_resource type="Texture2D" uid="uid://dd115cauvpg5k" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_09.png" id="174_1a87t"]
+[ext_resource type="Texture2D" uid="uid://ck2j20sbebin1" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_10.png" id="175_grf26"]
+[ext_resource type="Texture2D" uid="uid://0a8j8cve6moo" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_12.png" id="176_x85xi"]
+[ext_resource type="Texture2D" uid="uid://c6ebunn66mub3" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_11.png" id="177_8e8m0"]
+[ext_resource type="Texture2D" uid="uid://cjvsx5g82pg66" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_13.png" id="178_ng3f5"]
+[ext_resource type="Texture2D" uid="uid://c5kmtutdyqreq" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_14.png" id="179_to10t"]
+[ext_resource type="Texture2D" uid="uid://dth4jqa77pmwh" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_15.png" id="180_2aeeu"]
+[ext_resource type="Texture2D" uid="uid://b7vuri51m75hh" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_16.png" id="181_4caep"]
+[ext_resource type="Texture2D" uid="uid://dre4vv8w1fvtd" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_17.png" id="182_qgmwu"]
+[ext_resource type="Texture2D" uid="uid://d8a32g2svts" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_18.png" id="183_k8vsu"]
+[ext_resource type="Texture2D" uid="uid://wha6vgcw7vqk" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_19.png" id="184_054ba"]
+[ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="185_ypvyl"]
+[ext_resource type="Script" path="res://scripts/quiz_page.gd" id="186_1aexq"]
+[ext_resource type="FontFile" uid="uid://cgihnyetfqurr" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="187_vr6h3"]
+[ext_resource type="Script" path="res://scripts/code_page.gd" id="188_yj0a7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cguhy"]
+size = Vector2(963, 644)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rqvw"]
+size = Vector2(958, 640.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvki5"]
+size = Vector2(119.5, 643.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ebl7p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_nbqg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y6tx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tw3eh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0oths")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hnx3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_r8hf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7nnq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tf110")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ol0a1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_hb500")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_s5khj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_jspr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_c44ef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_v0ln0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_inukf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_td321")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6o3ls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_umj8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_l5x4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_yxigf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_nb3yj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_vt7lx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_a6j2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_5sg4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_iocmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_45w2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_6d6n8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_tmyyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ehh2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_l8pip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_oh45w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_v47w5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_pub4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_53vv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_y0bbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_px8tu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_udd0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_veh7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_a2mv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_or1oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_fkkr6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_7sugs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_vbt30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ig6qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ig6qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_ufp5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_xis7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_p072d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_mo547")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_riwfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ldscc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_0elbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_5gvnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_ol66d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_jd6ic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_sfd2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_gf8ui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_je0de")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_cmxsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_68fo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_1a4sa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_qaaaw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_al8k2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_f4s4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_kdx3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_n70r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_odhv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_tblyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_0yiib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_u3ug1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_hgr3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_oxudm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_hvljj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_xigva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_6t1yq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_4gf2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_2iqe6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_wcm5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_qq0hb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_hhxrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_isj3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_bmyee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_6a2g3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_1r6ix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_g1jx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_b7jbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_awk54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_x00om")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_lefop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_jqr0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_lkcxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_1wehc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_edcfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_jct5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_wrfwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_7u038")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_jakjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_7fweq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_w0xon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_nll6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_i8s2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_ild3s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_w2pfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_fdj7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_mxsue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_xbb4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_jbsf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_486d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_2vvqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_46fj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_i8ljr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_aekog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_umu68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_x6lsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_xg6cr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_6awa4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_fqsum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_hty71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_2ii4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_2dcwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_luwts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_7uhot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_68x1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_dflgy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_6huq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_cwaf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_ewtvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_cl5sn")
+}],
+"loop": false,
+"name": &"death",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("130_uxjk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_g6rrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_2u46q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_fxuvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_yvh1w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_qefdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_mm86c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_bqytv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_jirud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_s1o5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_sdfbb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_6bc71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_c1hn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_s3p8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_oy2u5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_lj083")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_lprwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_inrq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_toabo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_mds80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_o6ykq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_mqp85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_55ob0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_722c1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_qto27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_1lmuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_coarw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_m3sul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_mt44n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_duraj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_775y3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_ojypt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_u6aon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_2xud0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_rukcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_pxg3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_0cd6h")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("167_yq6cs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_pxkx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_yx1bm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_w5y0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_lg5ui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_ftbvm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_fr1d0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_1a87t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_grf26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_x85xi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_8e8m0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_ng3f5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_to10t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_2aeeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_4caep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_qgmwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_k8vsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_054ba")
+}],
+"loop": false,
+"name": &"wrong_answer",
+"speed": 15.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tu174"]
+font = ExtResource("187_vr6h3")
+font_size = 20
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
+font = ExtResource("187_vr6h3")
+font_size = 20
+font_color = Color(0.65098, 0.384314, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_e0svr"]
+font = ExtResource("187_vr6h3")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_dv4lf"]
+font = ExtResource("187_vr6h3")
+font_size = 20
+font_color = Color(1, 1, 1, 0.615686)
+
+[sub_resource type="Animation" id="Animation_kivbn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../feedback_conatiner/panel_container/panel2/feedback_container/feedback_label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_5hlbm"]
+resource_name = "text_animation"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../feedback_conatiner/panel_container/panel2/feedback_container/feedback_label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xycbe"]
+_data = {
+"RESET": SubResource("Animation_kivbn"),
+"text_animation": SubResource("Animation_5hlbm")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2riv2"]
+bg_color = Color(0.65098, 0.384314, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eocmm"]
+bg_color = Color(0.560784, 0, 0.113725, 1)
+
+[sub_resource type="Animation" id="Animation_2vdb3"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_fv11m"]
+resource_name = "block_area"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("boss_encounter_area/boss_level_window:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-566, -538), Vector2(-576, -538), Vector2(-556, -538), Vector2(-606, -538), Vector2(-576, -538), Vector2(-566, -538)]
+}
+
+[sub_resource type="Animation" id="Animation_j55cl"]
+resource_name = "display_window"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("boss_encounter_area/boss_level_window:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_cwsnv"]
+resource_name = "dissolve_window"
+length = 2.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("boss_encounter_area/boss_level_window:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bqsxn"]
+resource_name = "quiz_to_code"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("boss_encounter_area/boss_level_window/quiz_page:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("boss_encounter_area/boss_level_window/code_page:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.1, 2.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vb8hw"]
+_data = {
+"RESET": SubResource("Animation_2vdb3"),
+"block_area": SubResource("Animation_fv11m"),
+"display_window": SubResource("Animation_j55cl"),
+"dissolve_window": SubResource("Animation_cwsnv"),
+"quiz_to_code": SubResource("Animation_bqsxn")
+}
+
+[node name="final_boss_intro" type="Node2D"]
+position = Vector2(567, 589)
+script = ExtResource("1_iq4ai")
+
+[node name="block_area" type="StaticBody2D" parent="."]
+script = ExtResource("2_s7ghm")
+
+[node name="area_2d" type="Area2D" parent="block_area"]
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="block_area/area_2d"]
+show_behind_parent = true
+position = Vector2(39.5, -267)
+shape = SubResource("RectangleShape2D_cguhy")
+debug_color = Color(0.992157, 0, 0.278431, 0.0352941)
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="block_area"]
+show_behind_parent = true
+position = Vector2(40, -266.625)
+shape = SubResource("RectangleShape2D_4rqvw")
+debug_color = Color(1, 0.243137, 0.27451, 0.341176)
+
+[node name="boss_encounter_area" type="Area2D" parent="."]
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="boss_encounter_area"]
+show_behind_parent = true
+position = Vector2(-506.75, -268)
+shape = SubResource("RectangleShape2D_uvki5")
+
+[node name="animated_sprite_2d" type="AnimatedSprite2D" parent="boss_encounter_area"]
+position = Vector2(266, -94)
+scale = Vector2(1.22959, 1.3936)
+sprite_frames = SubResource("SpriteFrames_ebl7p")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("185_ypvyl")]
+modulate = Color(1, 1, 1, 0)
+show_behind_parent = true
+offset_left = -566.0
+offset_top = -538.0
+offset_right = 588.0
+offset_bottom = 110.0
+scale = Vector2(0.8, 0.8)
+metadata/_edit_group_ = true
+
+[node name="quiz_page" type="Control" parent="boss_encounter_area/boss_level_window"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = 2.0
+offset_right = -4.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("186_1aexq")
+
+[node name="background_color" type="ColorRect" parent="boss_encounter_area/boss_level_window/quiz_page"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 1155.0
+offset_bottom = 720.0
+color = Color(1, 1, 1, 0)
+
+[node name="question_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/quiz_page/background_color"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+offset_left = 107.0
+offset_top = 168.0
+offset_right = 1080.0
+offset_bottom = 261.0
+metadata/_edit_group_ = true
+
+[node name="question_label" type="RichTextLabel" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/question_container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/bold_font = ExtResource("187_vr6h3")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+
+[node name="options_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/quiz_page/background_color"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.466132
+anchor_top = 0.5
+anchor_right = 0.521833
+anchor_bottom = 0.5
+offset_left = -211.586
+offset_top = -150.36
+offset_right = 172.414
+offset_bottom = 123.64
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.1, 1.1)
+alignment = 1
+metadata/_edit_group_ = true
+metadata/_edit_use_anchors_ = true
+
+[node name="option_button1" type="Button" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("187_vr6h3")
+theme_override_font_sizes/font_size = 19
+clip_text = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="option_button2" type="Button" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("187_vr6h3")
+theme_override_font_sizes/font_size = 19
+clip_text = true
+expand_icon = true
+
+[node name="option_button3" type="Button" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("187_vr6h3")
+theme_override_font_sizes/font_size = 19
+clip_text = true
+expand_icon = true
+
+[node name="option_button4" type="Button" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("187_vr6h3")
+theme_override_font_sizes/font_size = 19
+clip_text = true
+expand_icon = true
+
+[node name="code_page" type="Control" parent="boss_encounter_area/boss_level_window"]
+modulate = Color(1, 1, 1, 0)
+layout_direction = 1
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -4.0
+offset_right = -1.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("188_yj0a7")
+
+[node name="background_color" type="ColorRect" parent="boss_encounter_area/boss_level_window/code_page"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = 25.0
+offset_right = -14.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(1, 1, 1, 0)
+
+[node name="code_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/code_page/background_color"]
+clip_contents = true
+layout_direction = 1
+layout_mode = 2
+offset_left = 31.0
+offset_top = 44.0
+offset_right = 851.0
+offset_bottom = 597.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="problem_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/code_page/background_color/code_container"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="problem_label" type="Label" parent="boss_encounter_area/boss_level_window/code_page/background_color/code_container/problem_container"]
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 3
+text = "Write a Python program that performs arithmetic operations
+"
+label_settings = SubResource("LabelSettings_tu174")
+
+[node name="panel" type="Panel" parent="boss_encounter_area/boss_level_window/code_page/background_color/code_container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="line_num_container" type="HBoxContainer" parent="boss_encounter_area/boss_level_window/code_page/background_color/code_container/panel"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 20.0
+offset_right = 44.0
+offset_bottom = 503.0
+
+[node name="line_number" type="Label" parent="boss_encounter_area/boss_level_window/code_page/background_color/code_container/panel/line_num_container"]
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0.639216, 0.94902, 1)
+theme_override_font_sizes/font_size = 19
+text = "1
+
+2
+
+3
+
+4"
+label_settings = SubResource("LabelSettings_8g3qe")
+
+[node name="code_template_conatiner" type="HBoxContainer" parent="boss_encounter_area/boss_level_window/code_page/background_color/code_container/panel"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 20.0
+offset_right = 708.0
+offset_bottom = 480.0
+
+[node name="code_template_label" type="Label" parent="boss_encounter_area/boss_level_window/code_page/background_color/code_container/panel/code_template_conatiner"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 100
+text = "num1 = 4
+
+num2 = 8
+    
+addition = num1                 num2
+    
+subtraction = num1                   num2"
+label_settings = SubResource("LabelSettings_e0svr")
+
+[node name="player_answer" type="LineEdit" parent="boss_encounter_area/boss_level_window/code_page/background_color/code_container/panel"]
+layout_mode = 2
+offset_left = 226.0
+offset_top = 133.0
+offset_right = 307.25
+offset_bottom = 164.0
+theme_override_fonts/font = ExtResource("187_vr6h3")
+
+[node name="player_answer2" type="LineEdit" parent="boss_encounter_area/boss_level_window/code_page/background_color/code_container/panel"]
+layout_mode = 2
+offset_left = 264.0
+offset_top = 192.0
+offset_right = 345.25
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("187_vr6h3")
+
+[node name="feedback_conatiner" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/code_page/background_color"]
+layout_mode = 2
+offset_left = 868.0
+offset_top = 98.0
+offset_right = 1128.0
+offset_bottom = 597.0
+
+[node name="panel_container" type="HBoxContainer" parent="boss_encounter_area/boss_level_window/code_page/background_color/feedback_conatiner"]
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="panel2" type="Panel" parent="boss_encounter_area/boss_level_window/code_page/background_color/feedback_conatiner/panel_container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="feedback_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/code_page/background_color/feedback_conatiner/panel_container/panel2"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 14.0
+offset_right = 240.0
+offset_bottom = 486.0
+
+[node name="feedback_label" type="Label" parent="boss_encounter_area/boss_level_window/code_page/background_color/feedback_conatiner/panel_container/panel2/feedback_container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0.639216, 0.94902, 0.431373)
+label_settings = SubResource("LabelSettings_dv4lf")
+autowrap_mode = 3
+
+[node name="animation_player" type="AnimationPlayer" parent="boss_encounter_area/boss_level_window/code_page/background_color/feedback_conatiner/panel_container/panel2/feedback_container"]
+root_node = NodePath("../../../../../run_button_conatiner")
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_xycbe")
+}
+
+[node name="run_button_conatiner" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/code_page/background_color"]
+layout_mode = 2
+offset_left = 1014.0
+offset_top = 50.0
+offset_right = 1122.0
+offset_bottom = 90.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.09
+
+[node name="run_button" type="Button" parent="boss_encounter_area/boss_level_window/code_page/background_color/run_button_conatiner"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("187_vr6h3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2riv2")
+text = "Run"
+
+[node name="health_bar" type="ProgressBar" parent="boss_encounter_area/boss_level_window"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 16.0
+offset_right = 302.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_eocmm")
+
+[node name="animation_player" type="AnimationPlayer" parent="boss_encounter_area"]
+process_priority = 2
+root_node = NodePath("../..")
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_vb8hw")
+}
+
+[connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button1" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_1_pressed" flags=18]
+[connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button2" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_2_pressed" flags=18]
+[connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button3" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_3_pressed" flags=18]
+[connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button4" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_4_pressed" flags=18]
+[connection signal="all_correct" from="boss_encounter_area/boss_level_window/code_page" to="." method="_on_code_page_all_correct"]
+[connection signal="pressed" from="boss_encounter_area/boss_level_window/code_page/background_color/run_button_conatiner/run_button" to="boss_encounter_area/boss_level_window/code_page" method="_on_run_button_pressed" flags=18]

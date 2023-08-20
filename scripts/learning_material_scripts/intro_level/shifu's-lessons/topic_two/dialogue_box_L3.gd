@@ -1,7 +1,7 @@
 extends Control
 
 var messages = [
-	"n their union, Pseudocode and Flowcharts become indispensable allies, nurturing the fledgling minds of beginners, empowering them to envision, design, and comprehend the mystical art of functions."
+	"In their union, Pseudocode and Flowcharts become indispensable allies, nurturing the fledgling minds of beginners, empowering them to envision, design, and comprehend the mystical art of functions."
 	]
 
 var typing_speed = .1
