@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsup6ehqgfr3p"]
+
+[ext_resource type="Texture2D" uid="uid://dvhngkx8lfgx1" path="res://images/spaceship_interior/style_1/platform1.png" id="1_jax77"]
+
+[node name="platform" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.750014, -1.5)
+scale = Vector2(0.44569, 0.454545)
+texture = ExtResource("1_jax77")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0.750014, -1.5)
+scale = Vector2(0.44569, 0.454545)
+polygon = PackedVector2Array(234, -36.3, 234, -22.5, 245.8, -22.5, 290, 22.7, 290, 62.5, 265, 62.5, 265, 71.5, -265, 71.5, -265, 62.5, -290, 62.5, -290, 23.5, -245.9, -22.5, -234, -22.5, -234, -36.3, -198, -71.3, 198, -71.5)
