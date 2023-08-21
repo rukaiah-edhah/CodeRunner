@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq5jd4ago8yeb"]
+
+[ext_resource type="Script" path="res://Scripts/moving_platform_sideways.gd" id="1_wep84"]
+[ext_resource type="Texture2D" uid="uid://cb48sanrbq2xr" path="res://images/spaceship_interior/style_2/room2_floor_version2.png" id="2_m0ikm"]
+
+[node name="moving_platform_sideways" type="AnimatableBody2D"]
+position = Vector2(-2, -7)
+script = ExtResource("1_wep84")
+distance = Vector2(100, 0)
+debug = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-542, 11.5)
+scale = Vector2(0.12636, 0.0868055)
+texture = ExtResource("2_m0ikm")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(6556.68, 0)
+scale = Vector2(0.963443, 1)
+texture = ExtResource("2_m0ikm")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(12883.9, 0)
+scale = Vector2(0.941038, 1)
+texture = ExtResource("2_m0ikm")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(14664.5, 0)
+texture = ExtResource("2_m0ikm")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-542, 11.5)
+scale = Vector2(0.12636, 0.0868055)
+polygon = PackedVector2Array(18027.9, 720, -3355.5, 720, -3371.32, -362.88, 18027.9, -316.8)
