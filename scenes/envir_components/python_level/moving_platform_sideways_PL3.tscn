@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfrhyctivqeo6"]
+
+[ext_resource type="Script" path="res://Scripts/moving_platform_sideways.gd" id="1_jqe44"]
+[ext_resource type="Texture2D" uid="uid://b3ogykofclvif" path="res://images/spaceship_interior/style_2/platform_3.png" id="2_7q0c6"]
+
+[node name="moving_platform_sideways" type="AnimatableBody2D"]
+position = Vector2(-2, -7)
+script = ExtResource("1_jqe44")
+distance = Vector2(100, 0)
+debug = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.499982, 0.5)
+scale = Vector2(0.182668, 0.184136)
+texture = ExtResource("2_7q0c6")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0.499982, 0.5)
+scale = Vector2(0.182668, 0.184136)
+polygon = PackedVector2Array(8.21173, -67.8846, 188.868, -78.7462, 342.151, -89.6077, 407.844, -105.9, 479.012, -133.054, 513.5, -116.8, 560.5, -95.8, 560.5, -94.6, 575.5, -84.6, 575.5, -83.2, 588.5, -67.6, 588.5, 66.5, 571.5, 87.5, 569.2, 87.5, 555.2, 98.5, 553.1, 98.5, 531, 110.5, 527.9, 110.5, 486.9, 126.5, 482.7, 126.5, 433.8, 140.5, 428.9, 140.5, 384.7, 150.5, 378.8, 150.5, 281.7, 165.5, 272.7, 165.5, 141.5, 176.5, -122.9, 176.5, -244.5, 169.4, -244.5, 168.3, -315.5, 161.3, -315.5, 160.3, -391.5, 149.2, -391.5, 148.2, -439.5, 139.2, -439.5, 138, -506.5, 120, -506.5, 118.8, -559.5, 95.8, -559.5, 94.6, -573.5, 85.6, -573.5, 84.2, -588.5, 66.5, -588.5, -67.5, -570.4, -88.5, -568.2, -88.5, -552.2, -100.5, -550, -100.5, -511.9, -118.5, -508.8, -118.5, -463.8, -133.5, -459.6, -133.5, -287.407, -95.0385)

@@ -10,11 +10,11 @@ distance = Vector2(100, 0)
 debug = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(120.5, 25)
-scale = Vector2(0.422414, 0.34965)
+position = Vector2(120.5, 20)
+scale = Vector2(0.422414, 0.41958)
 texture = ExtResource("2_g3mh4")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(120.5, 25)
-scale = Vector2(0.422414, 0.34965)
+position = Vector2(120.75, 19.5)
+scale = Vector2(0.421875, 0.41521)
 polygon = PackedVector2Array(234, -36.3, 234, -22.5, 245.8, -22.5, 290, 22.7, 290, 62.5, 265, 62.5, 265, 71.5, -265, 71.5, -265, 62.5, -290, 62.5, -290, 23.5, -245.9, -22.5, -234, -22.5, -234, -36.3, -198, -71.3, 198, -71.5)
