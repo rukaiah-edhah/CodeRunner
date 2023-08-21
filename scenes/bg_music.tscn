@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b0y2nbxqx3fkn"]
 
-[ext_resource type="AudioStream" uid="uid://b0ndkqb46ggl6" path="res://fonts-and-music/music/DavidKBD - Cosmic Pack 01 - Cosmic Journey-full.ogg" id="1_e4nvx"]
+[ext_resource type="AudioStream" uid="uid://b225qotolheqv" path="res://fonts-and-music/music/DavidKBD - Cosmic Pack 01 - Cosmic Journey-full.ogg" id="1_e4nvx"]
 
 [node name="bg_music" type="AudioStreamPlayer"]
 stream = ExtResource("1_e4nvx")

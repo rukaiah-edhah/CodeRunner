@@ -1,7 +1,7 @@
 [gd_scene load_steps=94 format=3 uid="uid://de7rl165dmwfw"]
 
 [ext_resource type="Script" path="res://scripts/intro_level.gd" id="1_kn3aq"]
-[ext_resource type="Texture2D" uid="uid://d32lpjwq3qjdc" path="res://images/grey_block.png" id="1_s21bj"]
+[ext_resource type="Texture2D" uid="uid://dqeyrhrx2f6wk" path="res://images/grey_block.png" id="1_s21bj"]
 [ext_resource type="PackedScene" uid="uid://c2gdlux5l4ird" path="res://scenes/envir_components/floor.tscn" id="2_137xm"]
 [ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="3_4bity"]
 [ext_resource type="PackedScene" uid="uid://cvhh5tql6pw0l" path="res://scenes/envir_components/wall.tscn" id="3_h243n"]
@@ -14,51 +14,51 @@
 [ext_resource type="PackedScene" uid="uid://4oe815g4xepq" path="res://scenes/envir_components/one_way_platform.tscn" id="7_8c3em"]
 [ext_resource type="PackedScene" uid="uid://bfjsr7nak3byc" path="res://scenes/envir_components/moving_platform_up_down3.tscn" id="7_8qbw0"]
 [ext_resource type="PackedScene" uid="uid://b6qwfieb5x5sj" path="res://scenes/envir_components/moving_platform_sideways3.tscn" id="8_iq7re"]
-[ext_resource type="Texture2D" uid="uid://ki4r3kacn8gi" path="res://images/alien_planet /bg.png" id="9_o124v"]
-[ext_resource type="Texture2D" uid="uid://b0fpboqqb7j0b" path="res://images/alien_planet /stars.png" id="9_u7faq"]
+[ext_resource type="Texture2D" uid="uid://bhnf868i2iekb" path="res://images/alien_planet /bg.png" id="9_o124v"]
+[ext_resource type="Texture2D" uid="uid://dvhky3fb80y8d" path="res://images/alien_planet /stars.png" id="9_u7faq"]
 [ext_resource type="Script" path="res://scripts/background.gd" id="10_11qca"]
-[ext_resource type="Texture2D" uid="uid://ct8fhjxo5on8q" path="res://images/alien_planet /bg_element_3.png" id="10_do6ie"]
-[ext_resource type="Texture2D" uid="uid://cdnbeqbg4uops" path="res://images/alien_planet /planets.png" id="10_r7flv"]
-[ext_resource type="PackedScene" uid="uid://mutxqjqsjyr0" path="res://scenes/envir_components/moving_platform_up_down_one_way.tscn" id="10_w4fhh"]
-[ext_resource type="Texture2D" uid="uid://cwfxmqkee0oug" path="res://images/alien_planet /rock_5.png" id="11_hr2j3"]
-[ext_resource type="Texture2D" uid="uid://cedlnh8tu088b" path="res://images/alien_planet /shooting_star.png" id="11_pjum4"]
-[ext_resource type="Texture2D" uid="uid://mcfnk712wj4w" path="res://images/alien_planet /ground.png" id="12_3cemt"]
+[ext_resource type="Texture2D" uid="uid://ces5hvq07mc4h" path="res://images/alien_planet /bg_element_3.png" id="10_do6ie"]
+[ext_resource type="Texture2D" uid="uid://bl5arxja1v562" path="res://images/alien_planet /planets.png" id="10_r7flv"]
+[ext_resource type="PackedScene" path="res://scenes/envir_components/moving_platform_up_down_one_way.tscn" id="10_w4fhh"]
+[ext_resource type="Texture2D" uid="uid://dcp6rydw1crax" path="res://images/alien_planet /rock_5.png" id="11_hr2j3"]
+[ext_resource type="Texture2D" uid="uid://d6xwh0426chs" path="res://images/alien_planet /shooting_star.png" id="11_pjum4"]
+[ext_resource type="Texture2D" uid="uid://b8bekfnspwy2m" path="res://images/alien_planet /ground.png" id="12_3cemt"]
 [ext_resource type="PackedScene" uid="uid://bm6kndyfuc7kv" path="res://scenes/envir_components/moving_platform_sideways2.tscn" id="13_7ltfj"]
-[ext_resource type="Texture2D" uid="uid://0fb0ks40u3vt" path="res://images/alien_planet /item_3.png" id="14_0wmyn"]
+[ext_resource type="Texture2D" uid="uid://dnubymdpxw5rm" path="res://images/alien_planet /item_3.png" id="14_0wmyn"]
 [ext_resource type="PackedScene" uid="uid://dh84xfvqmvl8t" path="res://scenes/envir_components/moving_platform_up_down2.tscn" id="14_n7bft"]
-[ext_resource type="Texture2D" uid="uid://5gfc8i0c25lg" path="res://images/alien_planet /bg_element.png" id="17_gh2e1"]
-[ext_resource type="Texture2D" uid="uid://bq5emc7cjvrt0" path="res://images/alien_planet /rock_7.png" id="18_8xcti"]
-[ext_resource type="Texture2D" uid="uid://cw0wdflaca1xx" path="res://images/alien_planet /bg_element_2.png" id="18_l00f6"]
-[ext_resource type="Texture2D" uid="uid://b6onu531x7vi3" path="res://images/alien_planet /bg_element_4_related.png" id="19_33rcr"]
-[ext_resource type="Texture2D" uid="uid://dks63ytrsj2ru" path="res://images/alien_planet /rock_9.png" id="19_41smk"]
+[ext_resource type="Texture2D" uid="uid://b7dl7pgm021do" path="res://images/alien_planet /bg_element.png" id="17_gh2e1"]
+[ext_resource type="Texture2D" uid="uid://bnt2ncmh0xj07" path="res://images/alien_planet /rock_7.png" id="18_8xcti"]
+[ext_resource type="Texture2D" uid="uid://2xiil5nw88hu" path="res://images/alien_planet /bg_element_2.png" id="18_l00f6"]
+[ext_resource type="Texture2D" uid="uid://b2hrxol80yq7g" path="res://images/alien_planet /bg_element_4_related.png" id="19_33rcr"]
+[ext_resource type="Texture2D" uid="uid://ba66vibvt57r" path="res://images/alien_planet /rock_9.png" id="19_41smk"]
 [ext_resource type="PackedScene" uid="uid://divgbcotp0d8v" path="res://scenes/coin.tscn" id="20_2i8pc"]
-[ext_resource type="Texture2D" uid="uid://cviwj7co0ibgl" path="res://images/alien_planet /bg_element_5.png" id="20_74o6o"]
+[ext_resource type="Texture2D" uid="uid://dkg3m63lnui3w" path="res://images/alien_planet /bg_element_5.png" id="20_74o6o"]
 [ext_resource type="PackedScene" uid="uid://cjxb4ef8x5tw5" path="res://scenes/coins_box.tscn" id="21_2tdba"]
-[ext_resource type="Texture2D" uid="uid://b50yl0mstfk0l" path="res://images/alien_planet /item_4.png" id="21_126ur"]
-[ext_resource type="Texture2D" uid="uid://cf3ep1wv83cvc" path="res://images/alien_planet /rock_10.png" id="21_lyagu"]
-[ext_resource type="Texture2D" uid="uid://b3jvj2nu0jmx7" path="res://images/alien_planet /item_5.png" id="22_deja5"]
-[ext_resource type="Texture2D" uid="uid://cc6t0sjbinknn" path="res://images/alien_planet /item_7.png" id="23_vpc7a"]
+[ext_resource type="Texture2D" uid="uid://bpuo6pnv4wlcc" path="res://images/alien_planet /item_4.png" id="21_126ur"]
+[ext_resource type="Texture2D" uid="uid://djls3myp41j8p" path="res://images/alien_planet /rock_10.png" id="21_lyagu"]
+[ext_resource type="Texture2D" uid="uid://o1q8ml71hbde" path="res://images/alien_planet /item_5.png" id="22_deja5"]
+[ext_resource type="Texture2D" uid="uid://bewnhl0bx676p" path="res://images/alien_planet /item_7.png" id="23_vpc7a"]
 [ext_resource type="PackedScene" uid="uid://b0y2nbxqx3fkn" path="res://scenes/bg_music.tscn" id="24_8lrfu"]
-[ext_resource type="Texture2D" uid="uid://xa3cicg01h6" path="res://images/alien_planet /item.png" id="25_c5nx4"]
-[ext_resource type="Texture2D" uid="uid://csn155siha070" path="res://images/alien_planet /item_8.png" id="27_bclw7"]
-[ext_resource type="Texture2D" uid="uid://cy5ovike0pw02" path="res://images/alien_planet /bg_element_4.png" id="27_he4y7"]
+[ext_resource type="Texture2D" uid="uid://blyoat03b4tgh" path="res://images/alien_planet /item.png" id="25_c5nx4"]
+[ext_resource type="Texture2D" uid="uid://dfdyhwfrbbbml" path="res://images/alien_planet /item_8.png" id="27_bclw7"]
+[ext_resource type="Texture2D" uid="uid://bj6lxhr1hlqqt" path="res://images/alien_planet /bg_element_4.png" id="27_he4y7"]
 [ext_resource type="PackedScene" uid="uid://yv4q2ayft2mq" path="res://learning-material-scenes/intro-level/shifu's-lessons/intro/shifu.tscn" id="28_3a1ls"]
-[ext_resource type="Texture2D" uid="uid://yfrdmq015t5l" path="res://images/alien_planet /item_6.png" id="28_7mv1w"]
+[ext_resource type="Texture2D" uid="uid://b7d4ep3ioejc1" path="res://images/alien_planet /item_6.png" id="28_7mv1w"]
 [ext_resource type="PackedScene" uid="uid://cr87j3ggbtht7" path="res://learning-material-scenes/intro-level/shifu's-lessons/intro/shifu_2.tscn" id="29_oumnb"]
 [ext_resource type="PackedScene" uid="uid://bypm3gqfiqlvq" path="res://scenes/Mini_Enemy.tscn" id="30_chylf"]
 [ext_resource type="PackedScene" uid="uid://bhiwhgg53t8dl" path="res://scenes/save_portal.tscn" id="31_n5ooj"]
-[ext_resource type="Texture2D" uid="uid://ky4ueg2qtlfk" path="res://images/alien_planet /item_17.png" id="31_p1u6g"]
-[ext_resource type="Texture2D" uid="uid://dr12wrm5bmayh" path="res://images/alien_planet /rock_6.png" id="32_2re3i"]
-[ext_resource type="Texture2D" uid="uid://bblp1diw13ltn" path="res://images/alien_planet /item_10.png" id="32_deubq"]
+[ext_resource type="Texture2D" uid="uid://bjk13aj4msdyr" path="res://images/alien_planet /item_17.png" id="31_p1u6g"]
+[ext_resource type="Texture2D" uid="uid://bobsamg2dhab" path="res://images/alien_planet /rock_6.png" id="32_2re3i"]
+[ext_resource type="Texture2D" uid="uid://bshcdwre0kjmm" path="res://images/alien_planet /item_10.png" id="32_deubq"]
 [ext_resource type="PackedScene" uid="uid://d2h5m00hf6l4u" path="res://learning-material-scenes/intro-level/shifu's-lessons/topic_one/shifu_3.tscn" id="33_188n6"]
-[ext_resource type="Texture2D" uid="uid://b0358svacgq62" path="res://images/alien_planet /item_16.png" id="33_jh8k3"]
-[ext_resource type="Texture2D" uid="uid://bmaecckm3rxyn" path="res://images/alien_planet /item_12.png" id="34_2skkm"]
-[ext_resource type="Texture2D" uid="uid://dch5jibkwj85a" path="res://images/alien_planet /item_15.png" id="35_d7bor"]
-[ext_resource type="Texture2D" uid="uid://b2x473cyklh7h" path="res://images/alien_planet /item_11.png" id="36_5ccty"]
-[ext_resource type="Texture2D" uid="uid://d2e3hk6lvsipb" path="res://images/alien_planet /item_14.png" id="36_d0cy2"]
+[ext_resource type="Texture2D" uid="uid://0nafwec45e70" path="res://images/alien_planet /item_16.png" id="33_jh8k3"]
+[ext_resource type="Texture2D" uid="uid://jorhr7h8u6d0" path="res://images/alien_planet /item_12.png" id="34_2skkm"]
+[ext_resource type="Texture2D" uid="uid://brr8bql1ex5b6" path="res://images/alien_planet /item_15.png" id="35_d7bor"]
+[ext_resource type="Texture2D" uid="uid://gtc13yuyl3eo" path="res://images/alien_planet /item_11.png" id="36_5ccty"]
+[ext_resource type="Texture2D" uid="uid://c5cqf4cqyhkqs" path="res://images/alien_planet /item_14.png" id="36_d0cy2"]
 [ext_resource type="PackedScene" uid="uid://bvoy4m1bs6mwu" path="res://learning-material-scenes/intro-level/shifu's-lessons/topic_one/shifu_4.tscn" id="36_ss0dc"]
-[ext_resource type="Texture2D" uid="uid://g2x7uoe0rrly" path="res://images/alien_planet /item_9.png" id="37_bhtql"]
-[ext_resource type="Texture2D" uid="uid://or2puvxwuajn" path="res://images/alien_planet /item_13.png" id="37_pa4db"]
+[ext_resource type="Texture2D" uid="uid://ixcj63swpf07" path="res://images/alien_planet /item_9.png" id="37_bhtql"]
+[ext_resource type="Texture2D" uid="uid://dk1rumb12804j" path="res://images/alien_planet /item_13.png" id="37_pa4db"]
 [ext_resource type="PackedScene" uid="uid://d3wt037bjwa0d" path="res://learning-material-scenes/intro-level/shifu's-lessons/topic_one/shifu_5.tscn" id="37_rkq55"]
 [ext_resource type="PackedScene" uid="uid://c100084uxo4oe" path="res://learning-material-scenes/intro-level/shifu's-lessons/topic_one/shifu_6.tscn" id="38_p4wyj"]
 [ext_resource type="PackedScene" uid="uid://bgve1ait01w1" path="res://scenes/teleportation_pads.tscn" id="39_3h4oj"]
@@ -70,7 +70,7 @@
 [ext_resource type="PackedScene" uid="uid://cpr4k6xjmm6k3" path="res://scenes/linked_path.tscn" id="45_h5fdd"]
 [ext_resource type="PackedScene" uid="uid://ber02rnbx084l" path="res://learning-material-scenes/intro-level/shifu's-lessons/topic_two/shifu_0.tscn" id="45_k17qs"]
 [ext_resource type="PackedScene" uid="uid://oree1vb4f1r3" path="res://scenes/boss_level_portal.tscn" id="46_xl6cn"]
-[ext_resource type="Texture2D" uid="uid://dcy06qienlne6" path="res://images/alien_planet /item_2.png" id="50_0w6d4"]
+[ext_resource type="Texture2D" uid="uid://bo4rwn630g3u5" path="res://images/alien_planet /item_2.png" id="50_0w6d4"]
 [ext_resource type="PackedScene" uid="uid://c1t2pf4ldn6nk" path="res://scenes/lava_puddle.tscn" id="54_dfk8w"]
 [ext_resource type="PackedScene" uid="uid://dl55816yjuu60" path="res://scenes/Shop_Trigger.tscn" id="60_tk1qw"]
 
@@ -1289,6 +1289,31 @@ position = Vector2(20288.5, -1269.5)
 scale = Vector2(2.2662, 1.94775)
 texture = ExtResource("10_do6ie")
 
+[node name="background_item60" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(22180, 1796)
+scale = Vector2(1.75413, 1.94775)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item71" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(12891, 6817)
+scale = Vector2(1.4182, 1.94775)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item68" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(20162, 5187)
+scale = Vector2(2.00032, 1.94775)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item67" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(26426, 4705)
+scale = Vector2(2.00032, 1.94775)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item63" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(13247.9, 3272)
+scale = Vector2(1.78923, 1.94775)
+texture = ExtResource("10_do6ie")
+
 [node name="background_item6" type="Sprite2D" parent="graphics/-3"]
 position = Vector2(24565, -1213)
 scale = Vector2(1.57178, 9.86667)
@@ -1309,9 +1334,29 @@ position = Vector2(27271, -1641.5)
 scale = Vector2(1.20334, 1.36923)
 texture = ExtResource("20_74o6o")
 
+[node name="background_item58" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(22293.5, 1942)
+scale = Vector2(1.62613, 1.81538)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item69" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(22181.5, 1942)
+scale = Vector2(1.78571, 1.81538)
+texture = ExtResource("20_74o6o")
+
 [node name="background_item10" type="Sprite2D" parent="graphics/-3"]
 position = Vector2(30474, -1295)
 scale = Vector2(1.29601, 1.36923)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item56" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(27040.5, 1913.5)
+scale = Vector2(1.56564, 0.815383)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item59" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(40235.5, 2221.5)
+scale = Vector2(1.19369, 0.969232)
 texture = ExtResource("20_74o6o")
 
 [node name="background_item11" type="Sprite2D" parent="graphics/-3"]
@@ -1339,6 +1384,26 @@ position = Vector2(85618, -2821)
 scale = Vector2(2.62643, 2.02611)
 texture = ExtResource("10_do6ie")
 
+[node name="background_item35" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(85938, -1215)
+scale = Vector2(2.62643, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item46" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(121831, -2471)
+scale = Vector2(2.62643, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item40" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(105791, -2357)
+scale = Vector2(2.62643, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item36" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(77215, -468)
+scale = Vector2(2.44346, 2.02611)
+texture = ExtResource("10_do6ie")
+
 [node name="background_item26" type="Sprite2D" parent="graphics/-3"]
 position = Vector2(96005, -3116)
 scale = Vector2(4.94409, 2.02611)
@@ -1349,8 +1414,68 @@ position = Vector2(40781, -3554)
 scale = Vector2(1.19059, 2.02611)
 texture = ExtResource("10_do6ie")
 
+[node name="background_item29" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(37477, 1096)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item55" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(34594, 2238)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item43" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(10489, 3224)
+scale = Vector2(1.51397, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item65" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(715, 4068)
+scale = Vector2(1.51397, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item30" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(52932, 236)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item66" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(52932, 236)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item49" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(45499, 179)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item51" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(48520, 123)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item45" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(91047, -1507)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item32" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(66423, -352)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item33" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(72595, -466)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
 [node name="background_item13" type="Sprite2D" parent="graphics/-3"]
 position = Vector2(39187.5, -2251.72)
+scale = Vector2(3.12631, 3.03631)
+texture = ExtResource("17_gh2e1")
+
+[node name="background_item57" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(37230, 1901)
 scale = Vector2(3.12631, 3.03631)
 texture = ExtResource("17_gh2e1")
 
@@ -1369,6 +1494,16 @@ position = Vector2(70352.5, -4170.5)
 scale = Vector2(4.00632, 3.93024)
 texture = ExtResource("17_gh2e1")
 
+[node name="background_item34" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(62602, -431)
+scale = Vector2(4.00632, 6.2907)
+texture = ExtResource("17_gh2e1")
+
+[node name="background_item47" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(82570, -1246)
+scale = Vector2(4.00632, 7.86629)
+texture = ExtResource("17_gh2e1")
+
 [node name="background_item22" type="Sprite2D" parent="graphics/-3"]
 position = Vector2(76364.5, -3741.5)
 scale = Vector2(2.70104, 3.09302)
@@ -1379,14 +1514,109 @@ position = Vector2(47587, -2620.16)
 scale = Vector2(5.43756, 2.73354)
 texture = ExtResource("20_74o6o")
 
+[node name="background_item44" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(114441, -1410)
+scale = Vector2(3.92665, 3.42831)
+texture = ExtResource("20_74o6o")
+
 [node name="background_item18" type="Sprite2D" parent="graphics/-3"]
 position = Vector2(63274.5, -3265)
 scale = Vector2(2.27993, 2.73354)
 texture = ExtResource("20_74o6o")
 
+[node name="background_item31" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(71253, -294.58)
+scale = Vector2(3.65122, 2.90523)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item48" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(46611.5, 307.71)
+scale = Vector2(3.72136, 1.77569)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item52" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(45310.8, 1232.5)
+scale = Vector2(3.62195, 1.86154)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item54" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(30838, 2377)
+scale = Vector2(1.63835, 2.18462)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item64" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(5471.5, 4199)
+scale = Vector2(3.33012, 1.57084)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item50" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(57429.9, -203.79)
+scale = Vector2(1.55863, 2.89877)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item53" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(52952, 362)
+scale = Vector2(1.56242, 2.90523)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item61" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(19081.8, 2683.71)
+scale = Vector2(2.29313, 1.43724)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item72" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(8162, 6893.35)
+scale = Vector2(1.62548, 2.47246)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item70" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(16931, 6517)
+scale = Vector2(1.47876, 2.90523)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item62" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(13243.2, 3427.21)
+scale = Vector2(1.81308, 1.54493)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item28" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(85905.5, -1024.5)
+scale = Vector2(2.76126, 2.35385)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item27" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(77237, -257.08)
+scale = Vector2(2.43437, 3.59754)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item37" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(77237.5, -257.08)
+scale = Vector2(2.44723, 3.59754)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item39" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(105872, -2123.96)
+scale = Vector2(2.5798, 3.59877)
+texture = ExtResource("20_74o6o")
+
 [node name="background_item23" type="Sprite2D" parent="graphics/-3"]
 position = Vector2(80557.5, -2797)
 scale = Vector2(3.01995, 2.73354)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item38" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(81909.8, -331)
+scale = Vector2(1.48423, 2.73354)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item41" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(102868, -2288)
+scale = Vector2(1.31604, 2.73354)
+texture = ExtResource("20_74o6o")
+
+[node name="background_item42" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(108885, -1988)
+scale = Vector2(1.36393, 1.85908)
 texture = ExtResource("20_74o6o")
 
 [node name="background_item19" type="Sprite2D" parent="graphics/-3"]
@@ -1410,6 +1640,46 @@ position = Vector2(80551.5, -2977)
 scale = Vector2(2.91175, 1.91919)
 texture = ExtResource("21_lyagu")
 
+[node name="rock17" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(19183, 2565)
+scale = Vector2(2.09571, 1.91919)
+texture = ExtResource("21_lyagu")
+
+[node name="rock19" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(-3750, 3681)
+scale = Vector2(1.42076, 2.26262)
+texture = ExtResource("21_lyagu")
+
+[node name="rock18" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(5790, 4104)
+scale = Vector2(2.09571, 1.91919)
+texture = ExtResource("21_lyagu")
+
+[node name="rock20" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(238.5, 7387)
+scale = Vector2(1.86389, 1.91919)
+texture = ExtResource("21_lyagu")
+
+[node name="rock13" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(89913.8, -1410)
+scale = Vector2(2.5112, 2.26263)
+texture = ExtResource("21_lyagu")
+
+[node name="rock15" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(113305, -1528)
+scale = Vector2(2.40911, 2.26263)
+texture = ExtResource("21_lyagu")
+
+[node name="rock16" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(106148, -2202)
+scale = Vector2(2.15989, 2.26263)
+texture = ExtResource("21_lyagu")
+
+[node name="rock14" type="Sprite2D" parent="graphics/-3"]
+position = Vector2(102847, -2406)
+scale = Vector2(1.21752, 2.26263)
+texture = ExtResource("21_lyagu")
+
 [node name="-2" type="CanvasLayer" parent="graphics"]
 layer = -2
 follow_viewport_enabled = true
@@ -1429,6 +1699,26 @@ position = Vector2(5635, -358)
 scale = Vector2(3.65818, 2.72022)
 texture = ExtResource("19_41smk")
 
+[node name="rock48" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(7047, 3857)
+scale = Vector2(3.65818, 2.72022)
+texture = ExtResource("19_41smk")
+
+[node name="rock62" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(1174, 7176)
+scale = Vector2(3.65818, 2.72022)
+texture = ExtResource("19_41smk")
+
+[node name="rock45" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(16521, 2787)
+scale = Vector2(3.65818, 2.72022)
+texture = ExtResource("19_41smk")
+
+[node name="rock57" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(16066, 6148)
+scale = Vector2(3.65818, 2.72022)
+texture = ExtResource("19_41smk")
+
 [node name="rock4" type="Sprite2D" parent="graphics/-2"]
 position = Vector2(3547, -292)
 scale = Vector2(2.86827, 1.79826)
@@ -1441,6 +1731,21 @@ texture = ExtResource("18_8xcti")
 
 [node name="rock6" type="Sprite2D" parent="graphics/-2"]
 position = Vector2(9756, -778)
+scale = Vector2(2.86827, 1.79826)
+texture = ExtResource("18_8xcti")
+
+[node name="rock46" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(3328, 3957)
+scale = Vector2(2.86827, 1.79826)
+texture = ExtResource("18_8xcti")
+
+[node name="rock49" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(-3081, 3493)
+scale = Vector2(2.86827, 1.79826)
+texture = ExtResource("18_8xcti")
+
+[node name="rock47" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(4747, 3926)
 scale = Vector2(2.86827, 1.79826)
 texture = ExtResource("18_8xcti")
 
@@ -1464,14 +1769,37 @@ position = Vector2(63820, -3624)
 scale = Vector2(2.68524, 2.02192)
 texture = ExtResource("18_8xcti")
 
+[node name="rock33" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(70574, -648)
+scale = Vector2(2.68524, 2.02192)
+texture = ExtResource("18_8xcti")
+
 [node name="rock11" type="Sprite2D" parent="graphics/-2"]
 position = Vector2(47267, -3060.59)
 scale = Vector2(2.68524, 2.04533)
 texture = ExtResource("18_8xcti")
 flip_h = true
 
+[node name="rock40" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(48217, 130)
+scale = Vector2(2.68524, 2.04533)
+texture = ExtResource("18_8xcti")
+flip_h = true
+
+[node name="rock64" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(53653, 3.05176e-05)
+scale = Vector2(2.68524, 2.04533)
+texture = ExtResource("18_8xcti")
+flip_h = true
+
 [node name="rock28" type="Sprite2D" parent="graphics/-2"]
 position = Vector2(80254, -3272)
+scale = Vector2(2.32998, 1.71682)
+texture = ExtResource("18_8xcti")
+flip_h = true
+
+[node name="rock37" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(115395, -1495)
 scale = Vector2(2.32998, 1.71682)
 texture = ExtResource("18_8xcti")
 flip_h = true
@@ -1487,13 +1815,42 @@ scale = Vector2(2.68524, 2.04533)
 texture = ExtResource("18_8xcti")
 flip_h = true
 
+[node name="rock34" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(61692, -558)
+scale = Vector2(2.68524, 2.04533)
+texture = ExtResource("18_8xcti")
+flip_h = true
+
 [node name="rock10" type="Sprite2D" parent="graphics/-2"]
 position = Vector2(51504.4, -2949.5)
 scale = Vector2(3.31595, 2.3099)
 texture = ExtResource("19_41smk")
 
+[node name="rock41" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(57252, -540)
+scale = Vector2(3.31595, 2.3099)
+texture = ExtResource("19_41smk")
+
 [node name="rock12" type="Sprite2D" parent="graphics/-2"]
 position = Vector2(44900, -2974)
+scale = Vector2(3.49723, 2.50479)
+texture = ExtResource("19_41smk")
+flip_h = true
+
+[node name="rock52" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(37569, 1733)
+scale = Vector2(3.49723, 2.50479)
+texture = ExtResource("19_41smk")
+flip_h = true
+
+[node name="rock53" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(31946, 4584)
+scale = Vector2(3.49723, 2.50479)
+texture = ExtResource("19_41smk")
+flip_h = true
+
+[node name="rock43" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(40315, 1972)
 scale = Vector2(3.49723, 2.50479)
 texture = ExtResource("19_41smk")
 flip_h = true
@@ -1508,6 +1865,36 @@ position = Vector2(15356, -627)
 scale = Vector2(3.50211, 2.17182)
 texture = ExtResource("18_8xcti")
 
+[node name="rock50" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(11449, 3052)
+scale = Vector2(3.50211, 2.17182)
+texture = ExtResource("18_8xcti")
+
+[node name="rock58" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(12430, 6641)
+scale = Vector2(3.50211, 2.17182)
+texture = ExtResource("18_8xcti")
+
+[node name="rock44" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(16329, 2756)
+scale = Vector2(3.50211, 2.17182)
+texture = ExtResource("18_8xcti")
+
+[node name="rock59" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(8098, 6614)
+scale = Vector2(3.50211, 2.17182)
+texture = ExtResource("18_8xcti")
+
+[node name="rock56" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(17551, 6173)
+scale = Vector2(3.50211, 2.17182)
+texture = ExtResource("18_8xcti")
+
+[node name="rock51" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(26070, 4578)
+scale = Vector2(3.50211, 2.17182)
+texture = ExtResource("18_8xcti")
+
 [node name="rock15" type="Sprite2D" parent="graphics/-2"]
 position = Vector2(16555, -630)
 scale = Vector2(3.50211, 2.17869)
@@ -1515,6 +1902,36 @@ texture = ExtResource("18_8xcti")
 
 [node name="rock16" type="Sprite2D" parent="graphics/-2"]
 position = Vector2(27656, -2603)
+scale = Vector2(3.21098, 1.94158)
+texture = ExtResource("18_8xcti")
+
+[node name="rock42" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(26525, 1606)
+scale = Vector2(3.21098, 1.94158)
+texture = ExtResource("18_8xcti")
+
+[node name="rock54" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(21592, 1708)
+scale = Vector2(3.21098, 1.94158)
+texture = ExtResource("18_8xcti")
+
+[node name="rock55" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(27701, 4525)
+scale = Vector2(3.21098, 1.94158)
+texture = ExtResource("18_8xcti")
+
+[node name="rock63" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(23017, 5747)
+scale = Vector2(3.21098, 1.94158)
+texture = ExtResource("18_8xcti")
+
+[node name="rock60" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(33107, 2095)
+scale = Vector2(3.21098, 1.94158)
+texture = ExtResource("18_8xcti")
+
+[node name="rock61" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(30062, 2090)
 scale = Vector2(3.21098, 1.94158)
 texture = ExtResource("18_8xcti")
 
@@ -1550,6 +1967,26 @@ texture = ExtResource("18_8xcti")
 
 [node name="rock24" type="Sprite2D" parent="graphics/-2"]
 position = Vector2(73189, -3751)
+scale = Vector2(3.21098, 1.94158)
+texture = ExtResource("18_8xcti")
+
+[node name="rock39" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(76696, -561)
+scale = Vector2(3.21098, 1.94158)
+texture = ExtResource("18_8xcti")
+
+[node name="rock35" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(84888, -1205)
+scale = Vector2(3.21098, 1.94158)
+texture = ExtResource("18_8xcti")
+
+[node name="rock36" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(88858, -1488)
+scale = Vector2(3.21098, 1.94158)
+texture = ExtResource("18_8xcti")
+
+[node name="rock38" type="Sprite2D" parent="graphics/-2"]
+position = Vector2(98939, -3049)
 scale = Vector2(3.21098, 1.94158)
 texture = ExtResource("18_8xcti")
 
@@ -1652,6 +2089,46 @@ position = Vector2(31258, -2489)
 scale = Vector2(5.90905, 4.76563)
 texture = ExtResource("36_d0cy2")
 
+[node name="item54" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(31689, 2172)
+scale = Vector2(5.90905, 4.76563)
+texture = ExtResource("36_d0cy2")
+
+[node name="item53" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(27543, 1695)
+scale = Vector2(5.90905, 4.76563)
+texture = ExtResource("36_d0cy2")
+
+[node name="item55" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(23474, 4543)
+scale = Vector2(5.90905, 4.76563)
+texture = ExtResource("36_d0cy2")
+
+[node name="item57" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(19945, 5188)
+scale = Vector2(5.90905, 4.76563)
+texture = ExtResource("36_d0cy2")
+
+[node name="item58" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(20373, 5765)
+scale = Vector2(5.90905, 4.76563)
+texture = ExtResource("36_d0cy2")
+
+[node name="item59" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(19245, 5762)
+scale = Vector2(5.90905, 4.76563)
+texture = ExtResource("36_d0cy2")
+
+[node name="item60" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(8974, 6649)
+scale = Vector2(5.90905, 4.76563)
+texture = ExtResource("36_d0cy2")
+
+[node name="item56" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(24747, 4565)
+scale = Vector2(5.90905, 4.76563)
+texture = ExtResource("36_d0cy2")
+
 [node name="item15" type="Sprite2D" parent="graphics/-1"]
 position = Vector2(32055, -2491)
 scale = Vector2(5.90905, 4.76563)
@@ -1672,6 +2149,11 @@ position = Vector2(50745, -2759)
 scale = Vector2(5.90905, 4.76563)
 texture = ExtResource("36_d0cy2")
 
+[node name="item49" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(56555, -270)
+scale = Vector2(5.90905, 4.76563)
+texture = ExtResource("36_d0cy2")
+
 [node name="item22" type="Sprite2D" parent="graphics/-1"]
 position = Vector2(55415, -2924.68)
 scale = Vector2(5.90905, 4.87462)
@@ -1679,6 +2161,16 @@ texture = ExtResource("37_bhtql")
 
 [node name="item23" type="Sprite2D" parent="graphics/-1"]
 position = Vector2(58829, -2933.18)
+scale = Vector2(5.90905, 5.12053)
+texture = ExtResource("37_bhtql")
+
+[node name="item50" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(62800, -444)
+scale = Vector2(5.90905, 5.12053)
+texture = ExtResource("37_bhtql")
+
+[node name="item51" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(58162, -241)
 scale = Vector2(5.90905, 5.12053)
 texture = ExtResource("37_bhtql")
 
@@ -1707,6 +2199,21 @@ position = Vector2(67278, -4228)
 scale = Vector2(4.40591, 3.5057)
 texture = ExtResource("33_jh8k3")
 
+[node name="item46" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(71170, -494)
+scale = Vector2(4.40591, 3.5057)
+texture = ExtResource("33_jh8k3")
+
+[node name="item47" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(82540, -573)
+scale = Vector2(4.40591, 3.5057)
+texture = ExtResource("33_jh8k3")
+
+[node name="item48" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(96026, -3129)
+scale = Vector2(4.40591, 3.5057)
+texture = ExtResource("33_jh8k3")
+
 [node name="item32" type="Sprite2D" parent="graphics/-1"]
 position = Vector2(79242, -2836)
 scale = Vector2(4.40591, 3.5057)
@@ -1732,8 +2239,23 @@ position = Vector2(90523, -3369)
 scale = Vector2(4.40591, 3.5057)
 texture = ExtResource("36_5ccty")
 
+[node name="item43" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(85635, -1174)
+scale = Vector2(4.40591, 3.5057)
+texture = ExtResource("36_5ccty")
+
 [node name="item41" type="Sprite2D" parent="graphics/-1"]
 position = Vector2(90970, -3370)
+scale = Vector2(4.40591, 3.5057)
+texture = ExtResource("36_5ccty")
+
+[node name="item44" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(108492, -2138)
+scale = Vector2(4.40591, 3.5057)
+texture = ExtResource("36_5ccty")
+
+[node name="item45" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(109459, -2147)
 scale = Vector2(4.40591, 3.5057)
 texture = ExtResource("36_5ccty")
 
@@ -1779,6 +2301,11 @@ texture = ExtResource("37_pa4db")
 
 [node name="item19" type="Sprite2D" parent="graphics/-1"]
 position = Vector2(40131, -3600)
+scale = Vector2(6.70378, 4.93353)
+texture = ExtResource("37_pa4db")
+
+[node name="item52" type="Sprite2D" parent="graphics/-1"]
+position = Vector2(44289, 275)
 scale = Vector2(6.70378, 4.93353)
 texture = ExtResource("37_pa4db")
 
@@ -2206,8 +2733,8 @@ scale = Vector2(0.787722, 1.00212)
 texture = ExtResource("12_3cemt")
 
 [node name="holder_floor25" type="Sprite2D" parent="graphics/0/floor"]
-position = Vector2(108871, -1858)
-scale = Vector2(2.36806, 3.91171)
+position = Vector2(108911, -1858)
+scale = Vector2(2.46327, 3.91171)
 texture = ExtResource("12_3cemt")
 
 [node name="holder_floor26" type="Sprite2D" parent="graphics/0/floor"]
@@ -2277,8 +2804,8 @@ scale = Vector2(2.22777, 3.91171)
 texture = ExtResource("12_3cemt")
 
 [node name="floor1" type="Sprite2D" parent="graphics/0/floor/holder_floor30"]
-position = Vector2(787.674, -0.255673)
-scale = Vector2(0.884103, 1.01129)
+position = Vector2(783.183, -0.255673)
+scale = Vector2(0.873385, 1.01129)
 texture = ExtResource("12_3cemt")
 
 [node name="holder_floor31" type="Sprite2D" parent="graphics/0/floor"]
@@ -2287,8 +2814,8 @@ scale = Vector2(2.88716, 3.91171)
 texture = ExtResource("12_3cemt")
 
 [node name="holder_floor32" type="Sprite2D" parent="graphics/0/floor"]
-position = Vector2(3871, 4272)
-scale = Vector2(2.22777, 3.91171)
+position = Vector2(3847.22, 4272)
+scale = Vector2(2.28453, 3.91171)
 texture = ExtResource("12_3cemt")
 
 [node name="floor1" type="Sprite2D" parent="graphics/0/floor/holder_floor32"]
@@ -2529,7 +3056,7 @@ scale = Vector2(2.56323, 3.91171)
 texture = ExtResource("12_3cemt")
 
 [node name="holder_floor56" type="Sprite2D" parent="graphics/0/floor"]
-position = Vector2(84831, -920)
+position = Vector2(88825, -1293)
 scale = Vector2(2.56323, 3.91171)
 texture = ExtResource("12_3cemt")
 
@@ -2593,8 +3120,8 @@ scale = Vector2(0.832929, 0.991892)
 texture = ExtResource("12_3cemt")
 
 [node name="holder_floor63" type="Sprite2D" parent="graphics/0/floor"]
-position = Vector2(19583, 5394)
-scale = Vector2(2.56324, 3.91171)
+position = Vector2(19569, 5394)
+scale = Vector2(2.59666, 3.91171)
 texture = ExtResource("12_3cemt")
 
 [node name="floor" type="Sprite2D" parent="graphics/0/floor/holder_floor63"]
@@ -2673,8 +3200,63 @@ position = Vector2(10542, -544.75)
 scale = Vector2(5.46268, 4.96835)
 texture = ExtResource("25_c5nx4")
 
+[node name="rock51" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(3333.25, 7230.5)
+scale = Vector2(2.86827, 1.82474)
+texture = ExtResource("18_8xcti")
+
+[node name="rock52" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(4888, 7261)
+scale = Vector2(2.86827, 1.79826)
+texture = ExtResource("18_8xcti")
+
+[node name="item80" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(2747, 7499)
+scale = Vector2(2.00368, 1.81967)
+texture = ExtResource("23_vpc7a")
+
+[node name="item81" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(4000, 7491)
+scale = Vector2(2.18468, 2.01626)
+texture = ExtResource("21_126ur")
+
+[node name="item82" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(5610, 7413.88)
+scale = Vector2(5.46268, 5.09177)
+texture = ExtResource("25_c5nx4")
+
+[node name="item68" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(-806.75, 4197)
+scale = Vector2(2.00368, 1.81967)
+texture = ExtResource("23_vpc7a")
+
+[node name="item69" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(5877, 4209)
+scale = Vector2(2.18468, 2.01626)
+texture = ExtResource("21_126ur")
+
+[node name="item77" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(853.669, 4225.5)
+scale = Vector2(2.18468, 2.65853)
+texture = ExtResource("21_126ur")
+
+[node name="item98" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(-3853, 7190)
+scale = Vector2(2.18468, 2.65853)
+texture = ExtResource("21_126ur")
+
+[node name="item70" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(2452.25, 4105.25)
+scale = Vector2(5.46268, 4.96835)
+texture = ExtResource("25_c5nx4")
+
 [node name="item8" type="Sprite2D" parent="graphics/1/section1"]
 position = Vector2(12299, -518)
+scale = Vector2(2.1519, 2.57698)
+texture = ExtResource("21_126ur")
+
+[node name="item50" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(12819, 3464)
 scale = Vector2(2.1519, 2.57698)
 texture = ExtResource("21_126ur")
 
@@ -2688,6 +3270,11 @@ position = Vector2(14476, -310)
 scale = Vector2(2.74156, 2.73585)
 texture = ExtResource("27_bclw7")
 
+[node name="item51" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(9656, 3390)
+scale = Vector2(2.74156, 2.73585)
+texture = ExtResource("27_bclw7")
+
 [node name="item11" type="Sprite2D" parent="graphics/1/section1"]
 position = Vector2(15812, -310)
 scale = Vector2(2.1519, 2.57698)
@@ -2695,6 +3282,11 @@ texture = ExtResource("21_126ur")
 
 [node name="item12" type="Sprite2D" parent="graphics/1/section1"]
 position = Vector2(17141, -310)
+scale = Vector2(2.1519, 2.57698)
+texture = ExtResource("21_126ur")
+
+[node name="item52" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(11054, 3401)
 scale = Vector2(2.1519, 2.57698)
 texture = ExtResource("21_126ur")
 
@@ -2713,13 +3305,103 @@ position = Vector2(21664.6, -1168.68)
 scale = Vector2(2.16826, 2.82232)
 texture = ExtResource("14_0wmyn")
 
+[node name="item38" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(36631, 1233)
+scale = Vector2(2.16826, 2.82232)
+texture = ExtResource("14_0wmyn")
+
+[node name="item47" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(36631, 1233)
+scale = Vector2(2.16826, 2.82232)
+texture = ExtResource("14_0wmyn")
+
+[node name="item44" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(31302, 2354)
+scale = Vector2(2.16826, 2.82232)
+texture = ExtResource("14_0wmyn")
+
+[node name="item46" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(27568, 1935)
+scale = Vector2(2.16826, 2.82232)
+texture = ExtResource("14_0wmyn")
+
+[node name="item42" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(38503, 1232)
+scale = Vector2(2.16826, 2.82232)
+texture = ExtResource("14_0wmyn")
+
+[node name="background_item67" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(31719, 4710)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item68" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(23143, 5994)
+scale = Vector2(1.19059, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="background_item69" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(-3901, 7039)
+scale = Vector2(0.988563, 2.02611)
+texture = ExtResource("10_do6ie")
+
+[node name="item78" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(30861.4, 4807.75)
+scale = Vector2(2.16826, 2.82232)
+texture = ExtResource("14_0wmyn")
+
+[node name="item79" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(32705.4, 4818.75)
+scale = Vector2(2.16826, 2.82232)
+texture = ExtResource("14_0wmyn")
+
 [node name="item16" type="Sprite2D" parent="graphics/1/section1"]
 position = Vector2(23879.6, -1174.68)
 scale = Vector2(2.35288, 3.04789)
 texture = ExtResource("14_0wmyn")
 
+[node name="item60" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(21210, 1914)
+scale = Vector2(2.35288, 3.04789)
+texture = ExtResource("14_0wmyn")
+
 [node name="item17" type="Sprite2D" parent="graphics/1/section1"]
 position = Vector2(25379, -1191.37)
+scale = Vector2(3.61064, 3.37189)
+texture = ExtResource("22_deja5")
+
+[node name="item61" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(18132.4, 2649.06)
+scale = Vector2(2.35288, 3.04789)
+texture = ExtResource("14_0wmyn")
+
+[node name="item87" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(18992, 5274)
+scale = Vector2(2.35288, 3.04789)
+texture = ExtResource("14_0wmyn")
+
+[node name="item88" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(16842, 6632)
+scale = Vector2(2.35288, 3.04789)
+texture = ExtResource("14_0wmyn")
+
+[node name="item62" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(19631.8, 2632.37)
+scale = Vector2(3.61064, 3.37189)
+texture = ExtResource("22_deja5")
+
+[node name="item83" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(25328.4, 4799.06)
+scale = Vector2(2.35288, 3.04789)
+texture = ExtResource("14_0wmyn")
+
+[node name="item84" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(26827.8, 4782.37)
+scale = Vector2(3.61064, 3.37189)
+texture = ExtResource("22_deja5")
+
+[node name="item59" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(23071, 1931)
 scale = Vector2(3.61064, 3.37189)
 texture = ExtResource("22_deja5")
 
@@ -2730,6 +3412,76 @@ texture = ExtResource("25_c5nx4")
 
 [node name="item19" type="Sprite2D" parent="graphics/1/section1"]
 position = Vector2(26683, -1611)
+scale = Vector2(4.49046, 4.29225)
+texture = ExtResource("28_7mv1w")
+
+[node name="item85" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(21877.4, 5260.5)
+scale = Vector2(6.56716, 6.06329)
+texture = ExtResource("25_c5nx4")
+
+[node name="item86" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(20551.4, 5347)
+scale = Vector2(4.49046, 4.29225)
+texture = ExtResource("28_7mv1w")
+
+[node name="item45" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(33223, 2360)
+scale = Vector2(4.49046, 4.29225)
+texture = ExtResource("28_7mv1w")
+
+[node name="item63" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(11899.4, 3394.68)
+scale = Vector2(2.16826, 2.82232)
+texture = ExtResource("14_0wmyn")
+
+[node name="item89" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(13011, 6971)
+scale = Vector2(2.1519, 2.57698)
+texture = ExtResource("21_126ur")
+
+[node name="item90" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(12091.4, 6901.68)
+scale = Vector2(2.16826, 2.82232)
+texture = ExtResource("14_0wmyn")
+
+[node name="item64" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(14058, 3458)
+scale = Vector2(4.49046, 4.29225)
+texture = ExtResource("28_7mv1w")
+
+[node name="item91" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(7456.68, 6914.84)
+scale = Vector2(2.1519, 2.57698)
+texture = ExtResource("21_126ur")
+
+[node name="item92" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(8695.68, 6908.84)
+scale = Vector2(4.49046, 4.29225)
+texture = ExtResource("28_7mv1w")
+
+[node name="item65" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(3185, 4193.48)
+scale = Vector2(2.74156, 2.73585)
+texture = ExtResource("27_bclw7")
+
+[node name="item66" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(4583, 4204.48)
+scale = Vector2(2.1519, 2.57698)
+texture = ExtResource("21_126ur")
+
+[node name="item96" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(-923, 7487)
+scale = Vector2(2.74156, 2.73585)
+texture = ExtResource("27_bclw7")
+
+[node name="item97" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(600.997, 7462.48)
+scale = Vector2(2.1519, 2.57698)
+texture = ExtResource("21_126ur")
+
+[node name="item67" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(7566, 4198)
 scale = Vector2(4.49046, 4.29225)
 texture = ExtResource("28_7mv1w")
 
@@ -2763,8 +3515,38 @@ position = Vector2(34644.5, -1722.03)
 scale = Vector2(2.00562, 2.48729)
 texture = ExtResource("21_126ur")
 
+[node name="item57" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(26012, 1989)
+scale = Vector2(2.00562, 2.48729)
+texture = ExtResource("21_126ur")
+
+[node name="item58" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(26736, 1966)
+scale = Vector2(2.00562, 2.48729)
+texture = ExtResource("21_126ur")
+
+[node name="item93" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(23857.5, 6132.68)
+scale = Vector2(2.16826, 2.82232)
+texture = ExtResource("14_0wmyn")
+
+[node name="item94" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(22301.5, 6186.68)
+scale = Vector2(2.00562, 2.48729)
+texture = ExtResource("21_126ur")
+
+[node name="item95" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(23025.5, 6163.68)
+scale = Vector2(2.00562, 2.48729)
+texture = ExtResource("21_126ur")
+
 [node name="item26" type="Sprite2D" parent="graphics/1/section1"]
 position = Vector2(37435, -1727.03)
+scale = Vector2(2.02357, 2.66615)
+texture = ExtResource("21_126ur")
+
+[node name="item48" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(36564, 1972)
 scale = Vector2(2.02357, 2.66615)
 texture = ExtResource("21_126ur")
 
@@ -2803,8 +3585,43 @@ position = Vector2(46487, -2560)
 scale = Vector2(4.32391, 4.1358)
 texture = ExtResource("28_7mv1w")
 
+[node name="item39" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(44745, 291)
+scale = Vector2(4.32391, 4.1358)
+texture = ExtResource("28_7mv1w")
+
+[node name="item54" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(43127, 1253)
+scale = Vector2(4.32391, 4.1358)
+texture = ExtResource("28_7mv1w")
+
+[node name="item55" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(47834, 1242)
+scale = Vector2(4.32391, 4.1358)
+texture = ExtResource("28_7mv1w")
+
+[node name="item40" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(44802, 416)
+scale = Vector2(4.32391, 4.1358)
+texture = ExtResource("28_7mv1w")
+
+[node name="item56" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(39636, 2253)
+scale = Vector2(4.32391, 4.1358)
+texture = ExtResource("28_7mv1w")
+
+[node name="item53" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(40752, 2250)
+scale = Vector2(4.32391, 4.1358)
+texture = ExtResource("28_7mv1w")
+
 [node name="item34" type="Sprite2D" parent="graphics/1/section1"]
 position = Vector2(47892, -2564)
+scale = Vector2(2.54103, 2.76016)
+texture = ExtResource("22_deja5")
+
+[node name="item49" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(45573, 1282)
 scale = Vector2(2.54103, 2.76016)
 texture = ExtResource("22_deja5")
 
@@ -2813,8 +3630,48 @@ position = Vector2(49239, -2555)
 scale = Vector2(1.86488, 2.42441)
 texture = ExtResource("14_0wmyn")
 
+[node name="item41" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(46648, 375)
+scale = Vector2(1.86488, 2.42441)
+texture = ExtResource("14_0wmyn")
+
+[node name="item71" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(45741, 371)
+scale = Vector2(4.32391, 4.1358)
+texture = ExtResource("28_7mv1w")
+
+[node name="item72" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(47666.5, 375.223)
+scale = Vector2(1.86488, 2.42441)
+texture = ExtResource("14_0wmyn")
+
+[node name="item73" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(51963.5, 450.224)
+scale = Vector2(4.32391, 4.1358)
+texture = ExtResource("28_7mv1w")
+
+[node name="item74" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(53809.5, 409.223)
+scale = Vector2(1.86488, 2.42441)
+texture = ExtResource("14_0wmyn")
+
+[node name="item75" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(44372.5, 1253.22)
+scale = Vector2(4.32391, 4.1358)
+texture = ExtResource("28_7mv1w")
+
+[node name="item76" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(46467, 1303)
+scale = Vector2(1.86488, 2.42441)
+texture = ExtResource("14_0wmyn")
+
 [node name="item36" type="Sprite2D" parent="graphics/1/section1"]
 position = Vector2(51640, -2572)
+scale = Vector2(2.57849, 2.97541)
+texture = ExtResource("23_vpc7a")
+
+[node name="item43" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(56924, -128)
 scale = Vector2(2.57849, 2.97541)
 texture = ExtResource("23_vpc7a")
 
@@ -2833,8 +3690,108 @@ position = Vector2(36132, -1814)
 scale = Vector2(2.61979, 2.24413)
 texture = ExtResource("32_2re3i")
 
+[node name="rock15" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(30588, 2270)
+scale = Vector2(2.61979, 2.24413)
+texture = ExtResource("32_2re3i")
+
+[node name="rock19" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(22080, 1885)
+scale = Vector2(2.61979, 2.24413)
+texture = ExtResource("32_2re3i")
+
+[node name="rock22" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(19795, 5879)
+scale = Vector2(2.61979, 2.24413)
+texture = ExtResource("32_2re3i")
+
+[node name="rock21" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(24105, 4612)
+scale = Vector2(2.61979, 2.24413)
+texture = ExtResource("32_2re3i")
+
+[node name="rock20" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(1670, 4091)
+scale = Vector2(2.61979, 2.24413)
+texture = ExtResource("32_2re3i")
+
+[node name="rock24" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(10283, 3290)
+scale = Vector2(2.61979, 2.24413)
+texture = ExtResource("32_2re3i")
+
+[node name="rock23" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(-321, 7214)
+scale = Vector2(2.61979, 2.24413)
+texture = ExtResource("32_2re3i")
+
+[node name="rock16" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(34141, 2315)
+scale = Vector2(2.61979, 2.24413)
+texture = ExtResource("32_2re3i")
+
 [node name="rock4" type="Sprite2D" parent="graphics/1/section1"]
 position = Vector2(85592, -2765)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock5" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(82322, -1181)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock8" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(72739, -321)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock11" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(72739, -321)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock12" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(72739, -321)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock13" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(66528, -275)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock14" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(52975, 335)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock17" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(52975, 335)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock18" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(44948, 1155)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock6" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(93647, -3104)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock7" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(102936, -2323)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock9" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(112768, -1463)
+scale = Vector2(2.69011, 2.32864)
+texture = ExtResource("32_2re3i")
+
+[node name="rock10" type="Sprite2D" parent="graphics/1/section1"]
+position = Vector2(119443, -2402)
 scale = Vector2(2.69011, 2.32864)
 texture = ExtResource("32_2re3i")
 
@@ -2850,8 +3807,23 @@ position = Vector2(53518.7, -2610.5)
 scale = Vector2(3.63355, 3.70759)
 texture = ExtResource("27_bclw7")
 
+[node name="item22" type="Sprite2D" parent="graphics/1/section2"]
+position = Vector2(53518.7, -2610.5)
+scale = Vector2(3.63355, 3.70759)
+texture = ExtResource("27_bclw7")
+
+[node name="item25" type="Sprite2D" parent="graphics/1/section2"]
+position = Vector2(53518.7, -2610.5)
+scale = Vector2(3.63355, 3.70759)
+texture = ExtResource("27_bclw7")
+
 [node name="item1" type="Sprite2D" parent="graphics/1/section2"]
 position = Vector2(54923.5, -2644)
+scale = Vector2(5.77611, 6.3038)
+texture = ExtResource("25_c5nx4")
+
+[node name="item23" type="Sprite2D" parent="graphics/1/section2"]
+position = Vector2(58522, -223)
 scale = Vector2(5.77611, 6.3038)
 texture = ExtResource("25_c5nx4")
 
@@ -2872,6 +3844,16 @@ texture = ExtResource("27_bclw7")
 
 [node name="item5" type="Sprite2D" parent="graphics/1/section2"]
 position = Vector2(61979.1, -3199.25)
+scale = Vector2(3.7726, 3.58962)
+texture = ExtResource("27_bclw7")
+
+[node name="item24" type="Sprite2D" parent="graphics/1/section2"]
+position = Vector2(62104, -314)
+scale = Vector2(3.7726, 3.58962)
+texture = ExtResource("27_bclw7")
+
+[node name="item26" type="Sprite2D" parent="graphics/1/section2"]
+position = Vector2(63167, -314)
 scale = Vector2(3.7726, 3.58962)
 texture = ExtResource("27_bclw7")
 
@@ -2900,6 +3882,16 @@ position = Vector2(69247.6, -3526.5)
 scale = Vector2(2.91312, 3.43902)
 texture = ExtResource("22_deja5")
 
+[node name="item20" type="Sprite2D" parent="graphics/1/section2"]
+position = Vector2(69247.6, -3526.5)
+scale = Vector2(2.91312, 3.43902)
+texture = ExtResource("22_deja5")
+
+[node name="item21" type="Sprite2D" parent="graphics/1/section2"]
+position = Vector2(69825, -178)
+scale = Vector2(2.91312, 3.43902)
+texture = ExtResource("22_deja5")
+
 [node name="item11" type="Sprite2D" parent="graphics/1/section2"]
 position = Vector2(71189.1, -3486)
 scale = Vector2(2.3601, 2.87809)
@@ -2917,6 +3909,16 @@ texture = ExtResource("22_deja5")
 
 [node name="item14" type="Sprite2D" parent="graphics/1/section2"]
 position = Vector2(66955.5, -4106.71)
+scale = Vector2(3.14155, 3.01291)
+texture = ExtResource("22_deja5")
+
+[node name="item18" type="Sprite2D" parent="graphics/1/section2"]
+position = Vector2(68856, -192.001)
+scale = Vector2(3.14155, 3.01291)
+texture = ExtResource("22_deja5")
+
+[node name="item19" type="Sprite2D" parent="graphics/1/section2"]
+position = Vector2(71356, -203)
 scale = Vector2(3.14155, 3.01291)
 texture = ExtResource("22_deja5")
 
@@ -2957,8 +3959,48 @@ position = Vector2(79626.8, -2701)
 scale = Vector2(2.51038, 2.57143)
 texture = ExtResource("14_0wmyn")
 
+[node name="item17" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(86234, -981)
+scale = Vector2(2.51038, 2.57143)
+texture = ExtResource("14_0wmyn")
+
+[node name="item28" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(82670, -234)
+scale = Vector2(2.51038, 2.57143)
+texture = ExtResource("14_0wmyn")
+
+[node name="item14" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(83213, -1072)
+scale = Vector2(2.51038, 2.57143)
+texture = ExtResource("14_0wmyn")
+
 [node name="item7" type="Sprite2D" parent="graphics/1/section3"]
 position = Vector2(81493.8, -2698)
+scale = Vector2(2.41794, 2.6015)
+texture = ExtResource("14_0wmyn")
+
+[node name="item18" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(91393, -1386)
+scale = Vector2(2.41794, 2.6015)
+texture = ExtResource("14_0wmyn")
+
+[node name="item21" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(108375, -1952)
+scale = Vector2(2.41794, 2.6015)
+texture = ExtResource("14_0wmyn")
+
+[node name="item13" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(77273, -243)
+scale = Vector2(2.41794, 2.6015)
+texture = ExtResource("14_0wmyn")
+
+[node name="item16" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(78495, -254)
+scale = Vector2(2.41794, 2.6015)
+texture = ExtResource("14_0wmyn")
+
+[node name="item15" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(75950, -232)
 scale = Vector2(2.41794, 2.6015)
 texture = ExtResource("14_0wmyn")
 
@@ -2972,13 +4014,33 @@ position = Vector2(86964, -2680)
 scale = Vector2(2.65808, 2.7097)
 texture = ExtResource("21_126ur")
 
+[node name="item22" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(95438, -2918)
+scale = Vector2(2.65808, 2.7097)
+texture = ExtResource("21_126ur")
+
+[node name="item26" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(106921, -2092)
+scale = Vector2(2.65808, 2.7097)
+texture = ExtResource("21_126ur")
+
 [node name="item12" type="Sprite2D" parent="graphics/1/section3"]
 position = Vector2(89180.3, -3234.01)
 scale = Vector2(6.11962, 3.12743)
 texture = ExtResource("50_0w6d4")
 
+[node name="item25" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(104612, -2103)
+scale = Vector2(6.11962, 3.12743)
+texture = ExtResource("50_0w6d4")
+
 [node name="item11" type="Sprite2D" parent="graphics/1/section3"]
 position = Vector2(91427, -3302.99)
+scale = Vector2(7.4633, 5.56983)
+texture = ExtResource("25_c5nx4")
+
+[node name="item23" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(97084, -3020)
 scale = Vector2(7.4633, 5.56983)
 texture = ExtResource("25_c5nx4")
 
@@ -2994,6 +4056,36 @@ texture = ExtResource("28_7mv1w")
 
 [node name="item8" type="Sprite2D" parent="graphics/1/section3"]
 position = Vector2(82576, -2694)
+scale = Vector2(4.02821, 4.2963)
+texture = ExtResource("28_7mv1w")
+
+[node name="item19" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(82576, -2694)
+scale = Vector2(4.02821, 4.2963)
+texture = ExtResource("28_7mv1w")
+
+[node name="item27" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(88233, -1382)
+scale = Vector2(4.02821, 4.2963)
+texture = ExtResource("28_7mv1w")
+
+[node name="item24" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(99524, -2954)
+scale = Vector2(4.02821, 4.2963)
+texture = ExtResource("28_7mv1w")
+
+[node name="item20" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(81184, -228)
+scale = Vector2(4.02821, 4.2963)
+texture = ExtResource("28_7mv1w")
+
+[node name="item29" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(90454, -1354)
+scale = Vector2(2.51038, 2.57143)
+texture = ExtResource("14_0wmyn")
+
+[node name="item30" type="Sprite2D" parent="graphics/1/section3"]
+position = Vector2(89466, -1348)
 scale = Vector2(4.02821, 4.2963)
 texture = ExtResource("28_7mv1w")
 
@@ -3063,7 +4155,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(-11334729, 0, 65536)
 
 [node name="player" parent="in_game_items/2" instance=ExtResource("3_4bity")]
-position = Vector2(5659, -649)
+position = Vector2(42655, 854)
 
 [node name="teleportation" type="Node2D" parent="in_game_items/2"]
 
@@ -3455,193 +4547,193 @@ debug_color = Color(0.878431, 0.282353, 0.494118, 0.419608)
 [node name="bg_music" parent="." instance=ExtResource("24_8lrfu")]
 
 [connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/coin" to="in_game_items/2/coins/tile_map_coins/coin" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22823" to="in_game_items/2/coins/tile_map_coins/@coin@22823" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22824" to="in_game_items/2/coins/tile_map_coins/@coin@22824" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22825" to="in_game_items/2/coins/tile_map_coins/@coin@22825" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22826" to="in_game_items/2/coins/tile_map_coins/@coin@22826" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22827" to="in_game_items/2/coins/tile_map_coins/@coin@22827" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22828" to="in_game_items/2/coins/tile_map_coins/@coin@22828" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22829" to="in_game_items/2/coins/tile_map_coins/@coin@22829" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22830" to="in_game_items/2/coins/tile_map_coins/@coin@22830" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22831" to="in_game_items/2/coins/tile_map_coins/@coin@22831" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22832" to="in_game_items/2/coins/tile_map_coins/@coin@22832" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22833" to="in_game_items/2/coins/tile_map_coins/@coin@22833" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22834" to="in_game_items/2/coins/tile_map_coins/@coin@22834" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22835" to="in_game_items/2/coins/tile_map_coins/@coin@22835" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22836" to="in_game_items/2/coins/tile_map_coins/@coin@22836" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22837" to="in_game_items/2/coins/tile_map_coins/@coin@22837" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22838" to="in_game_items/2/coins/tile_map_coins/@coin@22838" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22839" to="in_game_items/2/coins/tile_map_coins/@coin@22839" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22840" to="in_game_items/2/coins/tile_map_coins/@coin@22840" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22841" to="in_game_items/2/coins/tile_map_coins/@coin@22841" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22842" to="in_game_items/2/coins/tile_map_coins/@coin@22842" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22843" to="in_game_items/2/coins/tile_map_coins/@coin@22843" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22844" to="in_game_items/2/coins/tile_map_coins/@coin@22844" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22845" to="in_game_items/2/coins/tile_map_coins/@coin@22845" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22846" to="in_game_items/2/coins/tile_map_coins/@coin@22846" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22847" to="in_game_items/2/coins/tile_map_coins/@coin@22847" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22848" to="in_game_items/2/coins/tile_map_coins/@coin@22848" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22849" to="in_game_items/2/coins/tile_map_coins/@coin@22849" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22850" to="in_game_items/2/coins/tile_map_coins/@coin@22850" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22851" to="in_game_items/2/coins/tile_map_coins/@coin@22851" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22852" to="in_game_items/2/coins/tile_map_coins/@coin@22852" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22853" to="in_game_items/2/coins/tile_map_coins/@coin@22853" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22854" to="in_game_items/2/coins/tile_map_coins/@coin@22854" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22855" to="in_game_items/2/coins/tile_map_coins/@coin@22855" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22856" to="in_game_items/2/coins/tile_map_coins/@coin@22856" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22857" to="in_game_items/2/coins/tile_map_coins/@coin@22857" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22858" to="in_game_items/2/coins/tile_map_coins/@coin@22858" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22859" to="in_game_items/2/coins/tile_map_coins/@coin@22859" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22860" to="in_game_items/2/coins/tile_map_coins/@coin@22860" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22861" to="in_game_items/2/coins/tile_map_coins/@coin@22861" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22862" to="in_game_items/2/coins/tile_map_coins/@coin@22862" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22863" to="in_game_items/2/coins/tile_map_coins/@coin@22863" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22864" to="in_game_items/2/coins/tile_map_coins/@coin@22864" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22865" to="in_game_items/2/coins/tile_map_coins/@coin@22865" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22866" to="in_game_items/2/coins/tile_map_coins/@coin@22866" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22867" to="in_game_items/2/coins/tile_map_coins/@coin@22867" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22868" to="in_game_items/2/coins/tile_map_coins/@coin@22868" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22869" to="in_game_items/2/coins/tile_map_coins/@coin@22869" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22870" to="in_game_items/2/coins/tile_map_coins/@coin@22870" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22871" to="in_game_items/2/coins/tile_map_coins/@coin@22871" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22872" to="in_game_items/2/coins/tile_map_coins/@coin@22872" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22873" to="in_game_items/2/coins/tile_map_coins/@coin@22873" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22874" to="in_game_items/2/coins/tile_map_coins/@coin@22874" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22875" to="in_game_items/2/coins/tile_map_coins/@coin@22875" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22876" to="in_game_items/2/coins/tile_map_coins/@coin@22876" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22877" to="in_game_items/2/coins/tile_map_coins/@coin@22877" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22878" to="in_game_items/2/coins/tile_map_coins/@coin@22878" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22879" to="in_game_items/2/coins/tile_map_coins/@coin@22879" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22880" to="in_game_items/2/coins/tile_map_coins/@coin@22880" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22881" to="in_game_items/2/coins/tile_map_coins/@coin@22881" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22882" to="in_game_items/2/coins/tile_map_coins/@coin@22882" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22883" to="in_game_items/2/coins/tile_map_coins/@coin@22883" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22884" to="in_game_items/2/coins/tile_map_coins/@coin@22884" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22885" to="in_game_items/2/coins/tile_map_coins/@coin@22885" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22886" to="in_game_items/2/coins/tile_map_coins/@coin@22886" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22887" to="in_game_items/2/coins/tile_map_coins/@coin@22887" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22888" to="in_game_items/2/coins/tile_map_coins/@coin@22888" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22889" to="in_game_items/2/coins/tile_map_coins/@coin@22889" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22890" to="in_game_items/2/coins/tile_map_coins/@coin@22890" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22891" to="in_game_items/2/coins/tile_map_coins/@coin@22891" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22892" to="in_game_items/2/coins/tile_map_coins/@coin@22892" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22893" to="in_game_items/2/coins/tile_map_coins/@coin@22893" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22894" to="in_game_items/2/coins/tile_map_coins/@coin@22894" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22895" to="in_game_items/2/coins/tile_map_coins/@coin@22895" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22896" to="in_game_items/2/coins/tile_map_coins/@coin@22896" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22897" to="in_game_items/2/coins/tile_map_coins/@coin@22897" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22898" to="in_game_items/2/coins/tile_map_coins/@coin@22898" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22899" to="in_game_items/2/coins/tile_map_coins/@coin@22899" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22900" to="in_game_items/2/coins/tile_map_coins/@coin@22900" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22901" to="in_game_items/2/coins/tile_map_coins/@coin@22901" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22902" to="in_game_items/2/coins/tile_map_coins/@coin@22902" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22903" to="in_game_items/2/coins/tile_map_coins/@coin@22903" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22904" to="in_game_items/2/coins/tile_map_coins/@coin@22904" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22905" to="in_game_items/2/coins/tile_map_coins/@coin@22905" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22906" to="in_game_items/2/coins/tile_map_coins/@coin@22906" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22907" to="in_game_items/2/coins/tile_map_coins/@coin@22907" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22908" to="in_game_items/2/coins/tile_map_coins/@coin@22908" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22909" to="in_game_items/2/coins/tile_map_coins/@coin@22909" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22910" to="in_game_items/2/coins/tile_map_coins/@coin@22910" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22911" to="in_game_items/2/coins/tile_map_coins/@coin@22911" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22912" to="in_game_items/2/coins/tile_map_coins/@coin@22912" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22913" to="in_game_items/2/coins/tile_map_coins/@coin@22913" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22914" to="in_game_items/2/coins/tile_map_coins/@coin@22914" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22915" to="in_game_items/2/coins/tile_map_coins/@coin@22915" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22916" to="in_game_items/2/coins/tile_map_coins/@coin@22916" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22917" to="in_game_items/2/coins/tile_map_coins/@coin@22917" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22918" to="in_game_items/2/coins/tile_map_coins/@coin@22918" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22919" to="in_game_items/2/coins/tile_map_coins/@coin@22919" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22920" to="in_game_items/2/coins/tile_map_coins/@coin@22920" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22921" to="in_game_items/2/coins/tile_map_coins/@coin@22921" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22922" to="in_game_items/2/coins/tile_map_coins/@coin@22922" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22923" to="in_game_items/2/coins/tile_map_coins/@coin@22923" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22924" to="in_game_items/2/coins/tile_map_coins/@coin@22924" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22925" to="in_game_items/2/coins/tile_map_coins/@coin@22925" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22926" to="in_game_items/2/coins/tile_map_coins/@coin@22926" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22927" to="in_game_items/2/coins/tile_map_coins/@coin@22927" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22928" to="in_game_items/2/coins/tile_map_coins/@coin@22928" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22929" to="in_game_items/2/coins/tile_map_coins/@coin@22929" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22930" to="in_game_items/2/coins/tile_map_coins/@coin@22930" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22931" to="in_game_items/2/coins/tile_map_coins/@coin@22931" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22932" to="in_game_items/2/coins/tile_map_coins/@coin@22932" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22933" to="in_game_items/2/coins/tile_map_coins/@coin@22933" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22934" to="in_game_items/2/coins/tile_map_coins/@coin@22934" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22935" to="in_game_items/2/coins/tile_map_coins/@coin@22935" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22936" to="in_game_items/2/coins/tile_map_coins/@coin@22936" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22937" to="in_game_items/2/coins/tile_map_coins/@coin@22937" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22938" to="in_game_items/2/coins/tile_map_coins/@coin@22938" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22939" to="in_game_items/2/coins/tile_map_coins/@coin@22939" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22940" to="in_game_items/2/coins/tile_map_coins/@coin@22940" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22941" to="in_game_items/2/coins/tile_map_coins/@coin@22941" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22942" to="in_game_items/2/coins/tile_map_coins/@coin@22942" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22943" to="in_game_items/2/coins/tile_map_coins/@coin@22943" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22944" to="in_game_items/2/coins/tile_map_coins/@coin@22944" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22945" to="in_game_items/2/coins/tile_map_coins/@coin@22945" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22946" to="in_game_items/2/coins/tile_map_coins/@coin@22946" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22947" to="in_game_items/2/coins/tile_map_coins/@coin@22947" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22948" to="in_game_items/2/coins/tile_map_coins/@coin@22948" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22949" to="in_game_items/2/coins/tile_map_coins/@coin@22949" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22950" to="in_game_items/2/coins/tile_map_coins/@coin@22950" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22951" to="in_game_items/2/coins/tile_map_coins/@coin@22951" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22952" to="in_game_items/2/coins/tile_map_coins/@coin@22952" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22953" to="in_game_items/2/coins/tile_map_coins/@coin@22953" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22954" to="in_game_items/2/coins/tile_map_coins/@coin@22954" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22955" to="in_game_items/2/coins/tile_map_coins/@coin@22955" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22956" to="in_game_items/2/coins/tile_map_coins/@coin@22956" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22957" to="in_game_items/2/coins/tile_map_coins/@coin@22957" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22958" to="in_game_items/2/coins/tile_map_coins/@coin@22958" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22959" to="in_game_items/2/coins/tile_map_coins/@coin@22959" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22960" to="in_game_items/2/coins/tile_map_coins/@coin@22960" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22961" to="in_game_items/2/coins/tile_map_coins/@coin@22961" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22962" to="in_game_items/2/coins/tile_map_coins/@coin@22962" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22963" to="in_game_items/2/coins/tile_map_coins/@coin@22963" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22964" to="in_game_items/2/coins/tile_map_coins/@coin@22964" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22965" to="in_game_items/2/coins/tile_map_coins/@coin@22965" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22966" to="in_game_items/2/coins/tile_map_coins/@coin@22966" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22967" to="in_game_items/2/coins/tile_map_coins/@coin@22967" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22968" to="in_game_items/2/coins/tile_map_coins/@coin@22968" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22969" to="in_game_items/2/coins/tile_map_coins/@coin@22969" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22970" to="in_game_items/2/coins/tile_map_coins/@coin@22970" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22971" to="in_game_items/2/coins/tile_map_coins/@coin@22971" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22972" to="in_game_items/2/coins/tile_map_coins/@coin@22972" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22973" to="in_game_items/2/coins/tile_map_coins/@coin@22973" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22974" to="in_game_items/2/coins/tile_map_coins/@coin@22974" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22975" to="in_game_items/2/coins/tile_map_coins/@coin@22975" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22976" to="in_game_items/2/coins/tile_map_coins/@coin@22976" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22977" to="in_game_items/2/coins/tile_map_coins/@coin@22977" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22978" to="in_game_items/2/coins/tile_map_coins/@coin@22978" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22979" to="in_game_items/2/coins/tile_map_coins/@coin@22979" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22980" to="in_game_items/2/coins/tile_map_coins/@coin@22980" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22981" to="in_game_items/2/coins/tile_map_coins/@coin@22981" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22982" to="in_game_items/2/coins/tile_map_coins/@coin@22982" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22983" to="in_game_items/2/coins/tile_map_coins/@coin@22983" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22984" to="in_game_items/2/coins/tile_map_coins/@coin@22984" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22985" to="in_game_items/2/coins/tile_map_coins/@coin@22985" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22986" to="in_game_items/2/coins/tile_map_coins/@coin@22986" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22987" to="in_game_items/2/coins/tile_map_coins/@coin@22987" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22988" to="in_game_items/2/coins/tile_map_coins/@coin@22988" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22989" to="in_game_items/2/coins/tile_map_coins/@coin@22989" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22990" to="in_game_items/2/coins/tile_map_coins/@coin@22990" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22991" to="in_game_items/2/coins/tile_map_coins/@coin@22991" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22992" to="in_game_items/2/coins/tile_map_coins/@coin@22992" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22993" to="in_game_items/2/coins/tile_map_coins/@coin@22993" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22994" to="in_game_items/2/coins/tile_map_coins/@coin@22994" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22995" to="in_game_items/2/coins/tile_map_coins/@coin@22995" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@22996" to="in_game_items/2/coins/tile_map_coins/@coin@22996" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19753" to="in_game_items/2/coins/tile_map_coins/@coin@19753" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19754" to="in_game_items/2/coins/tile_map_coins/@coin@19754" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19755" to="in_game_items/2/coins/tile_map_coins/@coin@19755" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19756" to="in_game_items/2/coins/tile_map_coins/@coin@19756" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19757" to="in_game_items/2/coins/tile_map_coins/@coin@19757" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19758" to="in_game_items/2/coins/tile_map_coins/@coin@19758" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19759" to="in_game_items/2/coins/tile_map_coins/@coin@19759" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19760" to="in_game_items/2/coins/tile_map_coins/@coin@19760" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19761" to="in_game_items/2/coins/tile_map_coins/@coin@19761" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19762" to="in_game_items/2/coins/tile_map_coins/@coin@19762" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19763" to="in_game_items/2/coins/tile_map_coins/@coin@19763" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19764" to="in_game_items/2/coins/tile_map_coins/@coin@19764" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19765" to="in_game_items/2/coins/tile_map_coins/@coin@19765" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19766" to="in_game_items/2/coins/tile_map_coins/@coin@19766" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19767" to="in_game_items/2/coins/tile_map_coins/@coin@19767" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19768" to="in_game_items/2/coins/tile_map_coins/@coin@19768" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19769" to="in_game_items/2/coins/tile_map_coins/@coin@19769" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19770" to="in_game_items/2/coins/tile_map_coins/@coin@19770" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19771" to="in_game_items/2/coins/tile_map_coins/@coin@19771" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19772" to="in_game_items/2/coins/tile_map_coins/@coin@19772" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19773" to="in_game_items/2/coins/tile_map_coins/@coin@19773" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19774" to="in_game_items/2/coins/tile_map_coins/@coin@19774" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19775" to="in_game_items/2/coins/tile_map_coins/@coin@19775" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19776" to="in_game_items/2/coins/tile_map_coins/@coin@19776" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19777" to="in_game_items/2/coins/tile_map_coins/@coin@19777" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19778" to="in_game_items/2/coins/tile_map_coins/@coin@19778" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19779" to="in_game_items/2/coins/tile_map_coins/@coin@19779" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19780" to="in_game_items/2/coins/tile_map_coins/@coin@19780" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19781" to="in_game_items/2/coins/tile_map_coins/@coin@19781" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19782" to="in_game_items/2/coins/tile_map_coins/@coin@19782" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19783" to="in_game_items/2/coins/tile_map_coins/@coin@19783" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19784" to="in_game_items/2/coins/tile_map_coins/@coin@19784" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19785" to="in_game_items/2/coins/tile_map_coins/@coin@19785" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19786" to="in_game_items/2/coins/tile_map_coins/@coin@19786" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19787" to="in_game_items/2/coins/tile_map_coins/@coin@19787" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19788" to="in_game_items/2/coins/tile_map_coins/@coin@19788" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19789" to="in_game_items/2/coins/tile_map_coins/@coin@19789" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19790" to="in_game_items/2/coins/tile_map_coins/@coin@19790" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19791" to="in_game_items/2/coins/tile_map_coins/@coin@19791" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19792" to="in_game_items/2/coins/tile_map_coins/@coin@19792" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19793" to="in_game_items/2/coins/tile_map_coins/@coin@19793" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19794" to="in_game_items/2/coins/tile_map_coins/@coin@19794" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19795" to="in_game_items/2/coins/tile_map_coins/@coin@19795" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19796" to="in_game_items/2/coins/tile_map_coins/@coin@19796" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19797" to="in_game_items/2/coins/tile_map_coins/@coin@19797" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19798" to="in_game_items/2/coins/tile_map_coins/@coin@19798" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19799" to="in_game_items/2/coins/tile_map_coins/@coin@19799" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19800" to="in_game_items/2/coins/tile_map_coins/@coin@19800" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19801" to="in_game_items/2/coins/tile_map_coins/@coin@19801" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19802" to="in_game_items/2/coins/tile_map_coins/@coin@19802" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19803" to="in_game_items/2/coins/tile_map_coins/@coin@19803" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19804" to="in_game_items/2/coins/tile_map_coins/@coin@19804" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19805" to="in_game_items/2/coins/tile_map_coins/@coin@19805" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19806" to="in_game_items/2/coins/tile_map_coins/@coin@19806" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19807" to="in_game_items/2/coins/tile_map_coins/@coin@19807" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19808" to="in_game_items/2/coins/tile_map_coins/@coin@19808" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19809" to="in_game_items/2/coins/tile_map_coins/@coin@19809" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19810" to="in_game_items/2/coins/tile_map_coins/@coin@19810" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19811" to="in_game_items/2/coins/tile_map_coins/@coin@19811" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19812" to="in_game_items/2/coins/tile_map_coins/@coin@19812" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19813" to="in_game_items/2/coins/tile_map_coins/@coin@19813" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19814" to="in_game_items/2/coins/tile_map_coins/@coin@19814" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19815" to="in_game_items/2/coins/tile_map_coins/@coin@19815" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19816" to="in_game_items/2/coins/tile_map_coins/@coin@19816" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19817" to="in_game_items/2/coins/tile_map_coins/@coin@19817" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19818" to="in_game_items/2/coins/tile_map_coins/@coin@19818" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19819" to="in_game_items/2/coins/tile_map_coins/@coin@19819" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19820" to="in_game_items/2/coins/tile_map_coins/@coin@19820" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19821" to="in_game_items/2/coins/tile_map_coins/@coin@19821" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19822" to="in_game_items/2/coins/tile_map_coins/@coin@19822" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19823" to="in_game_items/2/coins/tile_map_coins/@coin@19823" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19824" to="in_game_items/2/coins/tile_map_coins/@coin@19824" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19825" to="in_game_items/2/coins/tile_map_coins/@coin@19825" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19826" to="in_game_items/2/coins/tile_map_coins/@coin@19826" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19827" to="in_game_items/2/coins/tile_map_coins/@coin@19827" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19828" to="in_game_items/2/coins/tile_map_coins/@coin@19828" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19829" to="in_game_items/2/coins/tile_map_coins/@coin@19829" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19830" to="in_game_items/2/coins/tile_map_coins/@coin@19830" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19831" to="in_game_items/2/coins/tile_map_coins/@coin@19831" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19832" to="in_game_items/2/coins/tile_map_coins/@coin@19832" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19833" to="in_game_items/2/coins/tile_map_coins/@coin@19833" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19834" to="in_game_items/2/coins/tile_map_coins/@coin@19834" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19835" to="in_game_items/2/coins/tile_map_coins/@coin@19835" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19836" to="in_game_items/2/coins/tile_map_coins/@coin@19836" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19837" to="in_game_items/2/coins/tile_map_coins/@coin@19837" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19838" to="in_game_items/2/coins/tile_map_coins/@coin@19838" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19839" to="in_game_items/2/coins/tile_map_coins/@coin@19839" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19840" to="in_game_items/2/coins/tile_map_coins/@coin@19840" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19841" to="in_game_items/2/coins/tile_map_coins/@coin@19841" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19842" to="in_game_items/2/coins/tile_map_coins/@coin@19842" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19843" to="in_game_items/2/coins/tile_map_coins/@coin@19843" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19844" to="in_game_items/2/coins/tile_map_coins/@coin@19844" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19845" to="in_game_items/2/coins/tile_map_coins/@coin@19845" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19846" to="in_game_items/2/coins/tile_map_coins/@coin@19846" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19847" to="in_game_items/2/coins/tile_map_coins/@coin@19847" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19848" to="in_game_items/2/coins/tile_map_coins/@coin@19848" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19849" to="in_game_items/2/coins/tile_map_coins/@coin@19849" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19850" to="in_game_items/2/coins/tile_map_coins/@coin@19850" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19851" to="in_game_items/2/coins/tile_map_coins/@coin@19851" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19852" to="in_game_items/2/coins/tile_map_coins/@coin@19852" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19853" to="in_game_items/2/coins/tile_map_coins/@coin@19853" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19854" to="in_game_items/2/coins/tile_map_coins/@coin@19854" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19855" to="in_game_items/2/coins/tile_map_coins/@coin@19855" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19856" to="in_game_items/2/coins/tile_map_coins/@coin@19856" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19857" to="in_game_items/2/coins/tile_map_coins/@coin@19857" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19858" to="in_game_items/2/coins/tile_map_coins/@coin@19858" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19859" to="in_game_items/2/coins/tile_map_coins/@coin@19859" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19860" to="in_game_items/2/coins/tile_map_coins/@coin@19860" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19861" to="in_game_items/2/coins/tile_map_coins/@coin@19861" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19862" to="in_game_items/2/coins/tile_map_coins/@coin@19862" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19863" to="in_game_items/2/coins/tile_map_coins/@coin@19863" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19864" to="in_game_items/2/coins/tile_map_coins/@coin@19864" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19865" to="in_game_items/2/coins/tile_map_coins/@coin@19865" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19866" to="in_game_items/2/coins/tile_map_coins/@coin@19866" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19867" to="in_game_items/2/coins/tile_map_coins/@coin@19867" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19868" to="in_game_items/2/coins/tile_map_coins/@coin@19868" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19869" to="in_game_items/2/coins/tile_map_coins/@coin@19869" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19870" to="in_game_items/2/coins/tile_map_coins/@coin@19870" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19871" to="in_game_items/2/coins/tile_map_coins/@coin@19871" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19872" to="in_game_items/2/coins/tile_map_coins/@coin@19872" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19873" to="in_game_items/2/coins/tile_map_coins/@coin@19873" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19874" to="in_game_items/2/coins/tile_map_coins/@coin@19874" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19875" to="in_game_items/2/coins/tile_map_coins/@coin@19875" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19876" to="in_game_items/2/coins/tile_map_coins/@coin@19876" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19877" to="in_game_items/2/coins/tile_map_coins/@coin@19877" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19878" to="in_game_items/2/coins/tile_map_coins/@coin@19878" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19879" to="in_game_items/2/coins/tile_map_coins/@coin@19879" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19880" to="in_game_items/2/coins/tile_map_coins/@coin@19880" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19881" to="in_game_items/2/coins/tile_map_coins/@coin@19881" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19882" to="in_game_items/2/coins/tile_map_coins/@coin@19882" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19883" to="in_game_items/2/coins/tile_map_coins/@coin@19883" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19884" to="in_game_items/2/coins/tile_map_coins/@coin@19884" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19885" to="in_game_items/2/coins/tile_map_coins/@coin@19885" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19886" to="in_game_items/2/coins/tile_map_coins/@coin@19886" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19887" to="in_game_items/2/coins/tile_map_coins/@coin@19887" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19888" to="in_game_items/2/coins/tile_map_coins/@coin@19888" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19889" to="in_game_items/2/coins/tile_map_coins/@coin@19889" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19890" to="in_game_items/2/coins/tile_map_coins/@coin@19890" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19891" to="in_game_items/2/coins/tile_map_coins/@coin@19891" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19892" to="in_game_items/2/coins/tile_map_coins/@coin@19892" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19893" to="in_game_items/2/coins/tile_map_coins/@coin@19893" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19894" to="in_game_items/2/coins/tile_map_coins/@coin@19894" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19895" to="in_game_items/2/coins/tile_map_coins/@coin@19895" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19896" to="in_game_items/2/coins/tile_map_coins/@coin@19896" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19897" to="in_game_items/2/coins/tile_map_coins/@coin@19897" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19898" to="in_game_items/2/coins/tile_map_coins/@coin@19898" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19899" to="in_game_items/2/coins/tile_map_coins/@coin@19899" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19900" to="in_game_items/2/coins/tile_map_coins/@coin@19900" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19901" to="in_game_items/2/coins/tile_map_coins/@coin@19901" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19902" to="in_game_items/2/coins/tile_map_coins/@coin@19902" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19903" to="in_game_items/2/coins/tile_map_coins/@coin@19903" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19904" to="in_game_items/2/coins/tile_map_coins/@coin@19904" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19905" to="in_game_items/2/coins/tile_map_coins/@coin@19905" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19906" to="in_game_items/2/coins/tile_map_coins/@coin@19906" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19907" to="in_game_items/2/coins/tile_map_coins/@coin@19907" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19908" to="in_game_items/2/coins/tile_map_coins/@coin@19908" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19909" to="in_game_items/2/coins/tile_map_coins/@coin@19909" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19910" to="in_game_items/2/coins/tile_map_coins/@coin@19910" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19911" to="in_game_items/2/coins/tile_map_coins/@coin@19911" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19912" to="in_game_items/2/coins/tile_map_coins/@coin@19912" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19913" to="in_game_items/2/coins/tile_map_coins/@coin@19913" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19914" to="in_game_items/2/coins/tile_map_coins/@coin@19914" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19915" to="in_game_items/2/coins/tile_map_coins/@coin@19915" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19916" to="in_game_items/2/coins/tile_map_coins/@coin@19916" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19917" to="in_game_items/2/coins/tile_map_coins/@coin@19917" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19918" to="in_game_items/2/coins/tile_map_coins/@coin@19918" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19919" to="in_game_items/2/coins/tile_map_coins/@coin@19919" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19920" to="in_game_items/2/coins/tile_map_coins/@coin@19920" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19921" to="in_game_items/2/coins/tile_map_coins/@coin@19921" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19922" to="in_game_items/2/coins/tile_map_coins/@coin@19922" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19923" to="in_game_items/2/coins/tile_map_coins/@coin@19923" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19924" to="in_game_items/2/coins/tile_map_coins/@coin@19924" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19925" to="in_game_items/2/coins/tile_map_coins/@coin@19925" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins/tile_map_coins/@coin@19926" to="in_game_items/2/coins/tile_map_coins/@coin@19926" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/coins_box" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/coins_box" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@22997" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@22997" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@22998" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@22998" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@22999" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@22999" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23000" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23000" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23001" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23001" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23002" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23002" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23003" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23003" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23004" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23004" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23005" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23005" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23006" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23006" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23007" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23007" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23008" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23008" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23009" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23009" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23010" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@23010" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19927" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19927" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19928" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19928" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19929" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19929" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19930" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19930" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19931" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19931" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19932" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19932" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19933" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19933" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19934" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19934" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19935" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19935" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19936" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19936" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19937" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19937" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19938" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19938" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19939" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19939" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19940" to="in_game_items/2/coin_boxes/tile_map_coin_boxes/@coins_box@19940" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="in_game_items/2/save_portals/tile_map_save_portal/Save_Portal" to="in_game_items/2/save_portals/tile_map_save_portal/Save_Portal" method="_on_body_entered" flags=18]
