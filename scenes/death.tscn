@@ -11,32 +11,70 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qgdqd")
 
+[node name="border1" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 8.0
+offset_bottom = 648.0
+
+[node name="border2" type="ColorRect" parent="border1"]
+layout_mode = 0
+offset_left = 1141.0
+offset_top = -1.0
+offset_right = 1150.0
+offset_bottom = 642.0
+
+[node name="border3" type="ColorRect" parent="border1"]
+layout_mode = 0
+offset_top = -3.0
+offset_right = 1150.0
+offset_bottom = 5.0
+
+[node name="border4" type="ColorRect" parent="border1"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 633.0
+offset_right = 1149.0
+offset_bottom = 643.0
+
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 2008.0
-offset_bottom = 1090.0
-color = Color(0, 0, 0, 0.341176)
+offset_left = 8.0
+offset_top = 10.0
+offset_right = 1141.0
+offset_bottom = 638.0
+color = Color(0, 0, 0, 0.560784)
 
 [node name="g_label" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 683.0
-offset_top = 290.0
-offset_right = 898.0
-offset_bottom = 362.0
+offset_left = 464.0
+offset_top = 154.0
+offset_right = 716.0
+offset_bottom = 220.0
 
 [node name="restart" type="Button" parent="."]
 layout_mode = 0
-offset_left = 700.0
-offset_top = 370.0
-offset_right = 875.0
-offset_bottom = 405.0
+offset_left = 482.0
+offset_top = 246.0
+offset_right = 657.0
+offset_bottom = 281.0
 
 [node name="quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 701.0
-offset_top = 421.0
-offset_right = 876.0
-offset_bottom = 456.0
+offset_left = 483.0
+offset_top = 298.0
+offset_right = 658.0
+offset_bottom = 333.0
 
+[node name="next" type="Timer" parent="."]
+
+[node name="pulse" type="Timer" parent="."]
+
+[connection signal="mouse_entered" from="restart" to="." method="_on_restart_mouse_entered"]
+[connection signal="mouse_exited" from="restart" to="." method="_on_restart_mouse_exited"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+[connection signal="mouse_entered" from="quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="mouse_exited" from="quit" to="." method="_on_quit_mouse_exited"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
+[connection signal="timeout" from="next" to="." method="_on_next_timeout"]
+[connection signal="timeout" from="pulse" to="." method="_on_pulse_timeout"]
