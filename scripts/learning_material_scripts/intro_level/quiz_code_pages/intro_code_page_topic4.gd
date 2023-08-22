@@ -5,10 +5,10 @@ signal take_damage
 signal all_correct
 
 var correct_answers = {
-    "background_color/code_container/panel/player_answer": "Input",
-    "background_color/code_container/panel/player_answer2": "(Number1 + Number2 + Number3) / 3",
-    "background_color/code_container/panel/player_answer3": "Display",
-    "background_color/code_container/panel/player_answer4": "Average",
+    "background_color/code_container/panel/player_answer": "celsius",
+    "background_color/code_container/panel/player_answer2": "fahrenheit",
+    "background_color/code_container/panel/player_answer3": "(celsius * 9/5) + 32",
+    "background_color/code_container/panel/player_answer4": "fahrenheit",
     # You can add more and the right answer; however, keep in mind to put the path inside a string without using $
 }
 

@@ -1,14 +1,15 @@
 extends Control
 
-var messages
-#	'Python Comments:',
-#	'Comments can be used to explain Python code.
-#
-#Comments can be used to make the code more readable.
-#
-#Comments can be used to prevent execution when testing code.' ,
-#'#This is a comment'
-#	]
+var messages = [ 
+    "Behold this exemplar:
+
+Sart
+Input Read number A
+Input Read number B
+Calculate SUM = A + B
+Print SUM
+End"
+    ]
 
 var typing_speed = .1
 var read_time = 2
@@ -18,6 +19,7 @@ var current_message = 0
 var display = ""
 var current_char = 0
 var active = false
+var block_area_active = true
 
 
 
@@ -28,24 +30,19 @@ var active = false
 @onready var anim_player = $AnimationPlayer
 @onready var enter_button = $dialogue_box_sprite/panel/VBoxContainer/Button
 @onready var encounter_area = $encounter_area
-@onready var example_box = $dialogue_box_sprite
 
 var current_line_visible = 0
 var dialogue_complete = false
 
-# prioritize these animations over the block area animation
-var is_displaying_window = false
-var is_dissolving_window = false
 #____________________________________________________________________
 
 
-
 func _ready():
-    encounter_area.body_entered.connect(_on_encounter_area_area_entered)
-    block_area.player_hit.connect(_on_block_area_player_hit)
-    anim_player.animation_finished.connect(_on_animation_player_animation_finished)
+    encounter_area.body_entered.connect(_on_encounter_area_body_entered)
+    #anim_player.play("display")
     
-    messages = StaticData.item_data
+    #messages = StaticData.item_data
+    #print(messages)
     
     enter_button.visible = false 
     dialogue_text.scroll_active = false # Disable manual scrolling
@@ -74,8 +71,6 @@ func start_dialogue():
 
 func stop_dialogue():
     # get_parent().remove_child(self)
-    block_area.queue_free()
-    is_displaying_window = true
     anim_player.play("dissolve")
 
 func _on_next_char_timeout():
@@ -114,25 +109,37 @@ func _on_next_message_timeout():
         $next_char.start()
 
 #_____________________________Added by Rukaiah__________________________
-func _on_encounter_area_area_entered(area):
-    start_dialogue()
-    encounter_area.body_entered.disconnect(_on_encounter_area_area_entered)
-    #anim_player.play("display")
+func _on_encounter_area_body_entered(body):
+    if body.is_in_group("player"):
+        start_dialogue()
+        encounter_area.body_entered.disconnect(_on_encounter_area_body_entered)
+
 
 func _on_button_pressed():
-    if (current_message == len(messages) - 1):
+    if current_message == len(messages) - 1:
         stop_dialogue()
+        if block_area_active:  # remove block area only when it is active
+            block_area.queue_free()
+            block_area_active = false
+ 
 
-func _on_block_area_player_hit():
-    if is_dissolving_window:
-        return  
-        
-    anim_player.play("shake_animation")
+func reset_scene():
+    # Reset animation
+    anim_player.stop()
+    anim_player.seek(0)
+    
+    # Reset text and associated variables
+    current_message = 0
+    display = ""
+    current_char = 0
+    dialogue_text.text = ""
 
     
-func _on_animation_player_animation_finished(anim_name):
-    match anim_name:
-        "dissolve":
-            is_dissolving_window = false
-#________________________________________________________________________
-
+    # Reset other states
+    enter_button.visible = false
+    dialogue_text.scroll_active = false
+    $dialogue_box_sprite/panel/Arrow.visible = false
+    var block_area_active = true
+    
+    start_dialogue()
+#_______________________________
