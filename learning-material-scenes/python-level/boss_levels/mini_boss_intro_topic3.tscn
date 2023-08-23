@@ -384,6 +384,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("43_10h8r")]
+modulate = Color(1, 1, 1, 0)
 show_behind_parent = true
 offset_left = -566.0
 offset_top = -538.0
@@ -393,7 +394,6 @@ scale = Vector2(0.8, 0.8)
 metadata/_edit_group_ = true
 
 [node name="quiz_page" type="Control" parent="boss_encounter_area/boss_level_window"]
-modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -490,6 +490,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/background = SubResource("StyleBoxFlat_eocmm")
 
 [node name="python_code_page" type="Control" parent="boss_encounter_area/boss_level_window"]
+modulate = Color(1, 1, 1, 0)
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 15

@@ -43,9 +43,9 @@
 [ext_resource type="Texture2D" uid="uid://chi8ogystdugm" path="res://images/mini_boss_python/__small_droid_activated_shoot_008.png" id="41_nqadq"]
 [ext_resource type="Texture2D" uid="uid://c7x03gg7onium" path="res://images/mini_boss_python/__small_droid_activated_shoot_009.png" id="42_ht6h8"]
 [ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="43_y4jjf"]
-[ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/quiz_code_pages/quiz_page_topic1.gd" id="44_alh8i"]
+[ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/quiz_code_pages/quiz_page_topic4.gd" id="44_76hxl"]
 [ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="45_22amp"]
-[ext_resource type="Script" path="res://scripts/code_page.gd" id="46_0kkbo"]
+[ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/quiz_code_pages/python_code_page_topic4.gd" id="46_fqss6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cguhy"]
 size = Vector2(963, 644)
@@ -384,6 +384,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("43_y4jjf")]
+modulate = Color(1, 1, 1, 0)
 show_behind_parent = true
 offset_left = -566.0
 offset_top = -538.0
@@ -406,7 +407,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("44_alh8i")
+script = ExtResource("44_76hxl")
 
 [node name="background_color" type="ColorRect" parent="boss_encounter_area/boss_level_window/quiz_page"]
 layout_mode = 0
@@ -503,7 +504,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("46_0kkbo")
+script = ExtResource("46_fqss6")
 
 [node name="background_color" type="ColorRect" parent="boss_encounter_area/boss_level_window/python_code_page"]
 layout_mode = 1
@@ -541,7 +542,7 @@ size_flags_stretch_ratio = 0.1
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
-text = "Problem: Check the spaceship's fuel status "
+text = "Problem: Convert Earth Dollars to ZogBucks interactively"
 label_settings = SubResource("LabelSettings_tu174")
 
 [node name="panel" type="Panel" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container"]
@@ -571,7 +572,11 @@ text = "1
 
 5
 
-6"
+6
+
+7
+
+8"
 label_settings = SubResource("LabelSettings_8g3qe")
 
 [node name="code_template_conatiner" type="HBoxContainer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
@@ -587,49 +592,53 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 100
-text = "# Check spaceship fuel status
+text = "earth_dollars =                       (\"Enter amount in Earth Dollars (ED): \")
 
-fuel_status = \"full\"
+# Convert input string to float
 
-                fuel_status == \"full\":
+earth_dollars =                     (earth_dollars)
 
-                            (\"The spaceship is ready to launch!\")
+# 1 Earth Dollar = 3 ZogBucks
 
-          
+conversion_rate = 3
 
-                              \"Refuel the spaceship!\")"
+# Convert Earth Dollars to ZogBucks
+
+zogbucks = 
+
+print(f\"                         Earth Dollars is equal to {zogbucks} ZogBucks.\")"
 label_settings = SubResource("LabelSettings_e0svr")
 
 [node name="player_answer" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 52.0
-offset_top = 133.0
-offset_right = 132.0
-offset_bottom = 164.0
+offset_left = 220.0
+offset_top = 17.0
+offset_right = 336.0
+offset_bottom = 46.0
 theme_override_fonts/font = ExtResource("45_22amp")
 
 [node name="player_answer2" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 105.0
-offset_top = 192.0
-offset_right = 206.0
-offset_bottom = 223.0
+offset_left = 228.0
+offset_top = 134.0
+offset_right = 323.0
+offset_bottom = 163.0
 theme_override_fonts/font = ExtResource("45_22amp")
 
 [node name="player_answer3" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 61.0
-offset_top = 250.0
-offset_right = 147.0
-offset_bottom = 279.0
+offset_left = 183.0
+offset_top = 367.0
+offset_right = 476.0
+offset_bottom = 399.0
 theme_override_fonts/font = ExtResource("45_22amp")
 
 [node name="player_answer4" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 106.0
-offset_top = 307.0
-offset_right = 217.0
-offset_bottom = 339.0
+offset_left = 136.0
+offset_top = 423.0
+offset_right = 263.0
+offset_bottom = 457.0
 theme_override_fonts/font = ExtResource("45_22amp")
 
 [node name="feedback_conatiner" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color"]

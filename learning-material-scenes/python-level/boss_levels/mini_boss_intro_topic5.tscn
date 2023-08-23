@@ -43,9 +43,9 @@
 [ext_resource type="Texture2D" uid="uid://dgxaewtllg7xs" path="res://images/mini_boss_python/__round_droid_activated_shoot_008.png" id="41_w746e"]
 [ext_resource type="Texture2D" uid="uid://cnm1xclj7f46v" path="res://images/mini_boss_python/__round_droid_activated_shoot_009.png" id="42_78a71"]
 [ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="43_jm4yh"]
-[ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/quiz_code_pages/quiz_page_topic1.gd" id="44_uu8ub"]
+[ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/quiz_code_pages/quiz_page_topic5.gd" id="44_8olqo"]
 [ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="45_vda5f"]
-[ext_resource type="Script" path="res://scripts/code_page.gd" id="46_n5f4a"]
+[ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/quiz_code_pages/python_code_page_topic5.gd" id="46_kge68"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cguhy"]
 size = Vector2(963, 644)
@@ -377,13 +377,14 @@ position = Vector2(-506.75, -268)
 shape = SubResource("RectangleShape2D_uvki5")
 
 [node name="animated_sprite_2d" type="AnimatedSprite2D" parent="boss_encounter_area"]
-position = Vector2(369, -146.5)
-scale = Vector2(0.339181, 0.34202)
+position = Vector2(367.5, -146.5)
+scale = Vector2(0.341687, 0.34202)
 sprite_frames = SubResource("SpriteFrames_ebl7p")
 animation = &"idle"
 autoplay = "idle"
 
 [node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("43_jm4yh")]
+modulate = Color(1, 1, 1, 0)
 show_behind_parent = true
 offset_left = -566.0
 offset_top = -538.0
@@ -406,7 +407,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("44_uu8ub")
+script = ExtResource("44_8olqo")
 
 [node name="background_color" type="ColorRect" parent="boss_encounter_area/boss_level_window/quiz_page"]
 layout_mode = 0
@@ -503,7 +504,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("46_n5f4a")
+script = ExtResource("46_kge68")
 
 [node name="background_color" type="ColorRect" parent="boss_encounter_area/boss_level_window/python_code_page"]
 layout_mode = 1
@@ -541,7 +542,7 @@ size_flags_stretch_ratio = 0.1
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
-text = "Problem: Check the spaceship's fuel status "
+text = "Problem:Square user-input numbers using a function"
 label_settings = SubResource("LabelSettings_tu174")
 
 [node name="panel" type="Panel" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container"]
@@ -587,48 +588,64 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 100
-text = "# Check spaceship fuel status
+text = "                  square(number)     
 
-fuel_status = \"full\"
+       return 
 
-                fuel_status == \"full\":
+# Take the user input and convert it to float
 
-                            (\"The spaceship is ready to launch!\")
+num =                                 (\"Enter a number to square: \")
 
-          
+# Call the 'square' function and display the square of the number
 
-                              \"Refuel the spaceship!\")"
+print(f\"The square of {num} is {                                  }.\")"
 label_settings = SubResource("LabelSettings_e0svr")
 
 [node name="player_answer" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 52.0
-offset_top = 133.0
-offset_right = 132.0
-offset_bottom = 164.0
+offset_left = 48.0
+offset_top = 19.0
+offset_right = 149.0
+offset_bottom = 48.0
 theme_override_fonts/font = ExtResource("45_vda5f")
 
 [node name="player_answer2" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 105.0
-offset_top = 192.0
-offset_right = 206.0
-offset_bottom = 223.0
+offset_left = 325.0
+offset_top = 20.0
+offset_right = 403.0
+offset_bottom = 50.0
 theme_override_fonts/font = ExtResource("45_vda5f")
 
 [node name="player_answer3" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 61.0
-offset_top = 250.0
-offset_right = 147.0
-offset_bottom = 279.0
+offset_left = 170.0
+offset_top = 78.0
+offset_right = 450.0
+offset_bottom = 107.0
 theme_override_fonts/font = ExtResource("45_vda5f")
 
 [node name="player_answer4" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 106.0
-offset_top = 307.0
-offset_right = 217.0
+offset_left = 131.0
+offset_top = 191.0
+offset_right = 301.0
+offset_bottom = 220.0
+theme_override_fonts/font = ExtResource("45_vda5f")
+
+[node name="player_answer5" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
+layout_mode = 2
+offset_left = 613.0
+offset_top = 191.0
+offset_right = 691.0
+offset_bottom = 220.0
+theme_override_fonts/font = ExtResource("45_vda5f")
+
+[node name="player_answer6" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
+layout_mode = 2
+offset_left = 375.0
+offset_top = 306.0
+offset_right = 558.0
 offset_bottom = 339.0
 theme_override_fonts/font = ExtResource("45_vda5f")
 

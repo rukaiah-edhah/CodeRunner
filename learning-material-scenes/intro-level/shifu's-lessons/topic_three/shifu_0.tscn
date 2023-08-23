@@ -68,7 +68,7 @@
 [ext_resource type="Texture2D" uid="uid://ck2n8gguv77tt" path="res://images/Shifu/Character_07-idle_42.png" id="66_deija"]
 [ext_resource type="Texture2D" uid="uid://hxd2u0m6w3rx" path="res://images/Shifu/Character_07-idle_43.png" id="67_phfq4"]
 [ext_resource type="Script" path="res://scripts/learning_material_scripts/intro_level/shifu's-lessons/topic_six/dialogue_box_topic1.gd" id="68_37jyb"]
-[ext_resource type="Texture2D" uid="uid://ckn7ho4dpk06g" path="res://images/learning_material_boxes/red.png" id="69_enveb"]
+[ext_resource type="Texture2D" uid="uid://d1g88bpr8s1cd" path="res://images/learning_material_boxes/green.png" id="69_fno71"]
 [ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="70_b6a08"]
 [ext_resource type="Texture2D" uid="uid://c61vkjdl8heew" path="res://images/learning_material_boxes/arrow_yellow.png" id="71_go50k"]
 [ext_resource type="FontFile" uid="uid://c1w4uwymgxw6f" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Italic.ttf" id="72_jx261"]
@@ -466,9 +466,9 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = -99.0
 offset_top = 27.0
-offset_right = 697.0
-offset_bottom = 390.0
-texture = ExtResource("69_enveb")
+offset_right = 737.0
+offset_bottom = 397.0
+texture = ExtResource("69_fno71")
 
 [node name="panel" type="Panel" parent="dialogue/dialogue_box_sprite"]
 modulate = Color(1, 1, 1, 0.752941)
