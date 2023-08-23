@@ -1,50 +1,120 @@
-[gd_scene load_steps=6 format=3 uid="uid://brqa4emc67drg"]
+[gd_scene load_steps=10 format=3 uid="uid://brqa4emc67drg"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_8mpn6"]
-[ext_resource type="PackedScene" uid="uid://dieljgd8ai41" path="res://scenes/world.tscn" id="2_yh8q3"]
-[ext_resource type="Texture2D" uid="uid://cnnu3j23yhpps" path="res://images/cat_player_animation/Jump3.png" id="3_0i6do"]
-[ext_resource type="Texture2D" uid="uid://bere8w00533jv" path="res://images/helmet.png" id="4_aoqtt"]
+[ext_resource type="Texture2D" uid="uid://chpop6y66xr3i" path="res://images/menu_bg.png" id="2_a6cv2"]
+[ext_resource type="FontFile" uid="uid://ccb1mu4uu8dxg" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="3_mmws1"]
+[ext_resource type="Texture2D" uid="uid://cg3sxr8hixj3q" path="res://images/button_bg.png" id="4_y7mwo"]
 [ext_resource type="PackedScene" uid="uid://b0y2nbxqx3fkn" path="res://scenes/bg_music.tscn" id="5_uuloj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_j0qhm"]
+font = ExtResource("3_mmws1")
+font_size = 70
+
+[sub_resource type="LabelSettings" id="LabelSettings_8b6ft"]
+font = ExtResource("3_mmws1")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_jy65m"]
+font = ExtResource("3_mmws1")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_p2bil"]
+font = ExtResource("3_mmws1")
+font_size = 100
 
 [node name="menu" type="Node2D"]
 script = ExtResource("1_8mpn6")
 
-[node name="menu_world" parent="." instance=ExtResource("2_yh8q3")]
-position = Vector2(4, -2)
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(575, 322)
+scale = Vector2(0.300234, 0.276844)
+texture = ExtResource("2_a6cv2")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(579, 505)
-scale = Vector2(0.439739, 0.422716)
-texture = ExtResource("3_0i6do")
+[node name="code" type="Label" parent="."]
+offset_left = 223.0
+offset_top = 202.0
+offset_right = 916.0
+offset_bottom = 433.0
+size_flags_horizontal = 4
+text = "C O D E 
+R  U  N  N  E  R
+"
+label_settings = SubResource("LabelSettings_j0qhm")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
-position = Vector2(-56.8521, -78.0667)
-scale = Vector2(0.383097, 0.335929)
-texture = ExtResource("4_aoqtt")
+[node name="quit" type="Sprite2D" parent="."]
+position = Vector2(277, 526)
+scale = Vector2(0.298879, 0.278761)
+texture = ExtResource("4_y7mwo")
+
+[node name="Label" type="Label" parent="quit"]
+offset_left = -318.0
+offset_top = -97.0
+offset_right = 335.0
+offset_bottom = 100.0
+text = "Quit "
+label_settings = SubResource("LabelSettings_8b6ft")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="options" type="Sprite2D" parent="."]
+position = Vector2(859, 526)
+scale = Vector2(0.298879, 0.278761)
+texture = ExtResource("4_y7mwo")
+
+[node name="Label" type="Label" parent="options"]
+offset_left = -288.0
+offset_top = -111.0
+offset_right = 294.0
+offset_bottom = 133.0
+text = "Options"
+label_settings = SubResource("LabelSettings_jy65m")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="start" type="Sprite2D" parent="."]
+position = Vector2(569, 526)
+scale = Vector2(0.321295, 0.287611)
+texture = ExtResource("4_y7mwo")
+
+[node name="Label" type="Label" parent="start"]
+offset_left = -308.0
+offset_top = -111.0
+offset_right = 317.0
+offset_bottom = 115.0
+text = "Start"
+label_settings = SubResource("LabelSettings_p2bil")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="start_button" type="Button" parent="."]
-offset_left = 138.0
-offset_top = 249.0
-offset_right = 298.0
-offset_bottom = 286.0
+modulate = Color(1, 1, 1, 0)
+offset_left = 463.0
+offset_top = 499.0
+offset_right = 675.0
+offset_bottom = 554.0
 
 [node name="quit_button" type="Button" parent="."]
-offset_left = 828.0
-offset_top = 249.0
-offset_right = 988.0
-offset_bottom = 286.0
+modulate = Color(1, 1, 1, 0)
+offset_left = 174.0
+offset_top = 498.0
+offset_right = 378.0
+offset_bottom = 557.0
 
 [node name="load_button" type="Button" parent="."]
-offset_left = 368.0
-offset_top = 249.0
-offset_right = 528.0
-offset_bottom = 286.0
+visible = false
+offset_left = 493.0
+offset_top = 513.0
+offset_right = 653.0
+offset_bottom = 550.0
 
 [node name="options_button" type="Button" parent="."]
-offset_left = 598.0
-offset_top = 249.0
-offset_right = 758.0
-offset_bottom = 286.0
+modulate = Color(1, 1, 1, 0)
+offset_left = 756.0
+offset_top = 496.0
+offset_right = 961.0
+offset_bottom = 553.0
 
 [node name="bg_music" parent="." instance=ExtResource("5_uuloj")]
 

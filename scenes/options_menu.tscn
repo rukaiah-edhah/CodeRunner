@@ -1,8 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://tjbvo7db6awc"]
+[gd_scene load_steps=9 format=3 uid="uid://tjbvo7db6awc"]
 
 [ext_resource type="Script" path="res://scripts/options_menu.gd" id="1_8pgr6"]
-[ext_resource type="PackedScene" uid="uid://dieljgd8ai41" path="res://scenes/world.tscn" id="2_l3c6b"]
+[ext_resource type="Texture2D" uid="uid://chpop6y66xr3i" path="res://images/menu_bg.png" id="2_jgrds"]
 [ext_resource type="StyleBox" uid="uid://iuskkhobcs2e" path="res://images/themes/purple_button.tres" id="2_v63xt"]
+[ext_resource type="Texture2D" uid="uid://cg3sxr8hixj3q" path="res://images/button_bg.png" id="4_qgx7r"]
+[ext_resource type="FontFile" uid="uid://ccb1mu4uu8dxg" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="5_4gyqk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_14eoo"]
+font = ExtResource("5_4gyqk")
+font_size = 90
+
+[sub_resource type="LabelSettings" id="LabelSettings_xwutd"]
+font = ExtResource("5_4gyqk")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_jrfg1"]
+font = ExtResource("5_4gyqk")
+font_size = 100
 
 [node name="options menu" type="Control"]
 top_level = true
@@ -14,31 +28,80 @@ offset_right = 1152.0
 offset_bottom = 456.0
 script = ExtResource("1_8pgr6")
 
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(594, 210.5)
+scale = Vector2(0.326168, 0.305698)
+texture = ExtResource("2_jgrds")
+
 [node name="brightness" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 122.0
-offset_top = 160.0
-offset_right = 335.0
-offset_bottom = 207.0
+offset_left = 130.0
+offset_top = 207.0
+offset_right = 369.0
+offset_bottom = 282.0
 theme_override_styles/normal = ExtResource("2_v63xt")
 
 [node name="volume" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 424.0
-offset_top = 161.0
-offset_right = 641.0
-offset_bottom = 207.0
+offset_left = 456.0
+offset_top = 208.0
+offset_right = 700.0
+offset_bottom = 284.0
 
 [node name="back" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 735.0
-offset_top = 163.0
-offset_right = 948.0
-offset_bottom = 209.0
+offset_left = 802.0
+offset_top = 210.0
+offset_right = 1006.0
+offset_bottom = 276.0
 
-[node name="Node2D" parent="." instance=ExtResource("2_l3c6b")]
-show_behind_parent = true
-position = Vector2(5, -110)
+[node name="brightness2" type="Sprite2D" parent="."]
+position = Vector2(247, 244)
+scale = Vector2(0.325965, 0.331858)
+texture = ExtResource("4_qgx7r")
+
+[node name="Label" type="Label" parent="brightness2"]
+offset_left = -319.0
+offset_top = -108.0
+offset_right = 319.0
+offset_bottom = 111.0
+text = "Brightness"
+label_settings = SubResource("LabelSettings_14eoo")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="volume2" type="Sprite2D" parent="."]
+position = Vector2(574, 244)
+scale = Vector2(0.323786, 0.327434)
+texture = ExtResource("4_qgx7r")
+
+[node name="Label" type="Label" parent="volume2"]
+offset_left = -358.0
+offset_top = -95.0
+offset_right = 358.0
+offset_bottom = 95.0
+text = "Volume"
+label_settings = SubResource("LabelSettings_xwutd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="back2" type="Sprite2D" parent="."]
+position = Vector2(906, 244)
+scale = Vector2(0.32363, 0.326327)
+texture = ExtResource("4_qgx7r")
+
+[node name="Label" type="Label" parent="back2"]
+offset_left = -349.164
+offset_top = -107.254
+offset_right = 358.836
+offset_bottom = 121.746
+text = "Back"
+label_settings = SubResource("LabelSettings_jrfg1")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="brightness" to="." method="_on_brightness_pressed"]
 [connection signal="pressed" from="volume" to="." method="_on_volume_pressed"]

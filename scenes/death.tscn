@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://1s2vrm0ngi5v"]
+[gd_scene load_steps=6 format=3 uid="uid://1s2vrm0ngi5v"]
 
 [ext_resource type="Script" path="res://scripts/death.gd" id="1_qgdqd"]
+[ext_resource type="Texture2D" uid="uid://cnm1gghovqagw" path="res://images/game_over.png" id="2_o2863"]
+[ext_resource type="Texture2D" uid="uid://cg3sxr8hixj3q" path="res://images/button_bg.png" id="3_w0odn"]
+[ext_resource type="FontFile" uid="uid://ccb1mu4uu8dxg" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="4_ptnvi"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3afba"]
+font = ExtResource("4_ptnvi")
+font_size = 100
 
 [node name="death" type="Control"]
 layout_mode = 3
@@ -37,7 +44,48 @@ offset_top = 633.0
 offset_right = 1149.0
 offset_bottom = 643.0
 
+[node name="bg" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.815686)
+position = Vector2(574, 325.5)
+scale = Vector2(0.7075, 0.694445)
+texture = ExtResource("2_o2863")
+
+[node name="restart2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.815686)
+position = Vector2(447, 555)
+scale = Vector2(0.260274, 0.283186)
+texture = ExtResource("3_w0odn")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="restart2"]
+offset_left = -302.0
+offset_top = -99.0
+offset_right = 309.0
+offset_bottom = 109.0
+text = "Restart"
+label_settings = SubResource("LabelSettings_3afba")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="quit2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.815686)
+position = Vector2(704, 555)
+scale = Vector2(0.260274, 0.283186)
+texture = ExtResource("3_w0odn")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="quit2"]
+offset_left = -302.0
+offset_top = -99.0
+offset_right = 309.0
+offset_bottom = 109.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_3afba")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 8.0
 offset_top = 10.0
@@ -47,24 +95,26 @@ color = Color(0, 0, 0, 0.560784)
 
 [node name="g_label" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 464.0
-offset_top = 154.0
-offset_right = 716.0
-offset_bottom = 220.0
+offset_left = 328.0
+offset_top = 200.0
+offset_right = 844.0
+offset_bottom = 324.0
 
 [node name="restart" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 482.0
-offset_top = 246.0
-offset_right = 657.0
-offset_bottom = 281.0
+offset_left = 366.0
+offset_top = 523.0
+offset_right = 535.0
+offset_bottom = 585.0
 
 [node name="quit" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 483.0
-offset_top = 298.0
-offset_right = 658.0
-offset_bottom = 333.0
+offset_left = 625.0
+offset_top = 524.0
+offset_right = 780.0
+offset_bottom = 584.0
 
 [node name="next" type="Timer" parent="."]
 

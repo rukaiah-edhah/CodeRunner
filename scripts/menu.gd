@@ -5,17 +5,17 @@ extends Node2D
 @onready var options_button = $options_button
 @onready var quit_button = $quit_button
 
-var _font = preload("res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf")
-var button_bg = preload("res://images/themes/purple_button.tres")
+#var _font = preload("res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf")
+#var button_bg = preload("res://images/themes/purple_button.tres")
 
 #background music path
 const music_path: String = "res://fonts-and-music/music/DavidKBD - Cosmic Pack 03 - Nebula Run-variation5.ogg"
 func _ready():
     # menu option labels
-    start_button.text = "New Game"
-    load_button.text = "Load Game"
-    options_button.text = "Options"
-    quit_button.text = "Quit"
+    #start_button.text = "New Game"
+    #load_button.text = "Load Game"
+    #options_button.text = "Options"
+    #quit_button.text = "Quit"
     
     #background music
     $bg_music.stream = preload(music_path)
@@ -23,29 +23,29 @@ func _ready():
     $bg_music.play()
     
     
-    start_button.add_theme_font_override("font", _font)
-    load_button.add_theme_font_override("font", _font)
-    options_button.add_theme_font_override("font", _font)
-    quit_button.add_theme_font_override("font", _font)
+    #start_button.add_theme_font_override("font", _font)
+    #load_button.add_theme_font_override("font", _font)
+    #options_button.add_theme_font_override("font", _font)
+    #quit_button.add_theme_font_override("font", _font)
     
-    start_button.add_theme_stylebox_override("normal", button_bg)
-    load_button.add_theme_stylebox_override("normal", button_bg)
-    options_button.add_theme_stylebox_override("normal", button_bg)
-    quit_button.add_theme_stylebox_override("normal", button_bg)
+    #start_button.add_theme_stylebox_override("normal", button_bg)
+    #load_button.add_theme_stylebox_override("normal", button_bg)
+    #options_button.add_theme_stylebox_override("normal", button_bg)
+    #quit_button.add_theme_stylebox_override("normal", button_bg)
     
-    start_button.add_theme_stylebox_override("hover", button_bg)
-    load_button.add_theme_stylebox_override("hover", button_bg)
-    options_button.add_theme_stylebox_override("hover", button_bg)
-    quit_button.add_theme_stylebox_override("hover", button_bg)
+    #start_button.add_theme_stylebox_override("hover", button_bg)
+    #load_button.add_theme_stylebox_override("hover", button_bg)
+    #options_button.add_theme_stylebox_override("hover", button_bg)
+    #quit_button.add_theme_stylebox_override("hover", button_bg)
     
-    start_button.add_theme_stylebox_override("pressed", button_bg)
-    load_button.add_theme_stylebox_override("pressed", button_bg)
-    options_button.add_theme_stylebox_override("pressed", button_bg)
-    quit_button.add_theme_stylebox_override("pressed", button_bg)
+    #start_button.add_theme_stylebox_override("pressed", button_bg)
+    #load_button.add_theme_stylebox_override("pressed", button_bg)
+    #options_button.add_theme_stylebox_override("pressed", button_bg)
+    #quit_button.add_theme_stylebox_override("pressed", button_bg)
 
 func _on_start_button_pressed():
     # when you press start -> go to game
-    get_tree().change_scene_to_file("res://scenes/main.tscn")
+    get_tree().change_scene_to_file("res://scenes/intro_level.tscn")
 
 func _on_options_button_pressed():
     # when you press options -> go to options menu
@@ -111,3 +111,4 @@ func _on_load_button_pressed():
             if i == "filename" or i == "parent" or i == "pos_x" or i == "pos_y":
                 continue
             new_object.set(i, node_data[i])
+
