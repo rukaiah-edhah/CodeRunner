@@ -316,7 +316,7 @@ polygon = PackedVector2Array(19, -122, 27, -120, 27, -120, 40, -117, 50, -112, 6
 position = Vector2(3, -20)
 scale = Vector2(0.357341, 0.404729)
 sprite_frames = SubResource("SpriteFrames_fq2uv")
-animation = &"die"
+animation = &"idle"
 autoplay = "idle"
 flip_h = true
 
