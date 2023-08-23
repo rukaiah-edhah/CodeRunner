@@ -1,48 +1,51 @@
-[gd_scene load_steps=63 format=3 uid="uid://brcgkica18h5a"]
+[gd_scene load_steps=66 format=3 uid="uid://ccnox800sq1qj"]
 
-[ext_resource type="Script" path="res://scripts/mini_boss_level.gd" id="1_4vjhl"]
-[ext_resource type="Script" path="res://scripts/block_area.gd" id="2_kemjv"]
-[ext_resource type="Texture2D" uid="uid://cw7uw2clgrnwc" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_000.png" id="3_433b2"]
-[ext_resource type="Texture2D" uid="uid://v03bb64beqai" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_001.png" id="4_xe8ed"]
-[ext_resource type="Texture2D" uid="uid://ba2ry8iid6c10" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_002.png" id="5_7m24m"]
-[ext_resource type="Texture2D" uid="uid://dqo1wl6vp0fq4" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_003.png" id="6_lmpqp"]
-[ext_resource type="Texture2D" uid="uid://ub1y346ivnmt" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_004.png" id="7_ejtiy"]
-[ext_resource type="Texture2D" uid="uid://wif71l0jemkn" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_10.png" id="8_3p43o"]
-[ext_resource type="Texture2D" uid="uid://dure3bdrvkd4m" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_000.png" id="9_2kxuj"]
-[ext_resource type="Texture2D" uid="uid://kkeflsm1a4hb" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_001.png" id="10_fbcod"]
-[ext_resource type="Texture2D" uid="uid://cnf3cpup2iyug" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_002.png" id="11_eenu6"]
-[ext_resource type="Texture2D" uid="uid://dc807rurxvkos" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_003.png" id="12_xfgjj"]
-[ext_resource type="Texture2D" uid="uid://bwlm313ahqmuv" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_004.png" id="13_dhi0u"]
-[ext_resource type="Texture2D" uid="uid://cjiktaaa15i77" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_005.png" id="14_xn2tn"]
-[ext_resource type="Texture2D" uid="uid://cshtqa1dwbpyg" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_006.png" id="15_vhjgk"]
-[ext_resource type="Texture2D" uid="uid://wt6wxden5b7p" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_007.png" id="16_lkhwt"]
-[ext_resource type="Texture2D" uid="uid://dyg1qjqfeae7a" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_008.png" id="17_rmwcn"]
-[ext_resource type="Texture2D" uid="uid://jloclqdimu1f" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_009.png" id="18_xgrr3"]
-[ext_resource type="Texture2D" uid="uid://pgxvg78nddpy" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_010.png" id="19_eheax"]
-[ext_resource type="Texture2D" uid="uid://mkgfsamfpgc2" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_011.png" id="20_slrb1"]
-[ext_resource type="Texture2D" uid="uid://b6emjc1dhbuf0" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_012.png" id="21_xdaa3"]
-[ext_resource type="Texture2D" uid="uid://c62usrbp6nswj" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_013.png" id="22_57g44"]
-[ext_resource type="Texture2D" uid="uid://bb6je5cl07tg7" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_014.png" id="23_842h1"]
-[ext_resource type="Texture2D" uid="uid://so7ts1wpfovt" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_015.png" id="24_vy6iq"]
-[ext_resource type="Texture2D" uid="uid://bm7xebuundkax" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_016.png" id="25_du52p"]
-[ext_resource type="Texture2D" uid="uid://c4fak66crtyuu" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_017.png" id="26_rk4dc"]
-[ext_resource type="Texture2D" uid="uid://duf8ophap2hgu" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_018.png" id="27_j47a6"]
-[ext_resource type="Texture2D" uid="uid://dvc3xn5ga20jg" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_019.png" id="28_sb618"]
-[ext_resource type="Texture2D" uid="uid://u6feldyhl5tk" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_000.png" id="29_jloyy"]
-[ext_resource type="Texture2D" uid="uid://o0k2m1tdxlep" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_001.png" id="30_hnwdh"]
-[ext_resource type="Texture2D" uid="uid://bp1bxdxqyvqmf" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_002.png" id="31_8slfr"]
-[ext_resource type="Texture2D" uid="uid://dugvgmmk8j5v8" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_003.png" id="32_0yux5"]
-[ext_resource type="Texture2D" uid="uid://uq3gaorrg7eo" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_004.png" id="33_x12ok"]
-[ext_resource type="Texture2D" uid="uid://dw5sbitchw045" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_005.png" id="34_6tbh7"]
-[ext_resource type="Texture2D" uid="uid://cfbbggnsuosf8" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_006.png" id="35_tyxmq"]
-[ext_resource type="Texture2D" uid="uid://cd01pt7xavok3" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_007.png" id="36_qt02o"]
-[ext_resource type="Texture2D" uid="uid://b12rhptj7ovgl" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_008.png" id="37_84p40"]
-[ext_resource type="Texture2D" uid="uid://26wgcwi36jfw" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_009.png" id="38_diyyi"]
-[ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="39_k8x6y"]
-[ext_resource type="Script" path="res://scripts/quiz_page.gd" id="40_6j77d"]
-[ext_resource type="FontFile" uid="uid://cgihnyetfqurr" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="41_4d4n1"]
-[ext_resource type="Script" path="res://scripts/intro_code_page.gd" id="42_2rex8"]
-[ext_resource type="FontFile" uid="uid://b827yj5scm7kt" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="43_cdaln"]
+[ext_resource type="Script" path="res://scripts/mini_boss_level.gd" id="1_lexty"]
+[ext_resource type="Script" path="res://scripts/block_area.gd" id="2_enqt6"]
+[ext_resource type="Texture2D" uid="uid://bjwnwijdiyapt" path="res://images/mini_boss_python/__small_droid_dead_000.png" id="3_i8g34"]
+[ext_resource type="Texture2D" uid="uid://dhluvb1sobked" path="res://images/mini_boss_python/__small_droid_dead_001.png" id="4_wxeb2"]
+[ext_resource type="Texture2D" uid="uid://bhs3djgrwvk2q" path="res://images/mini_boss_python/__small_droid_dead_002.png" id="5_35guk"]
+[ext_resource type="Texture2D" uid="uid://c6hvv2dult3uf" path="res://images/mini_boss_python/__small_droid_dead_003.png" id="6_ffcej"]
+[ext_resource type="Texture2D" uid="uid://jyvqehbxuagw" path="res://images/mini_boss_python/__small_droid_dead_004.png" id="7_pmdjo"]
+[ext_resource type="Texture2D" uid="uid://bp4e4smllqmts" path="res://images/mini_boss_python/__small_droid_dead_005.png" id="8_gscch"]
+[ext_resource type="Texture2D" uid="uid://two0isxdo7lh" path="res://images/mini_boss_python/__small_droid_dead_006.png" id="9_13l5l"]
+[ext_resource type="Texture2D" uid="uid://3c0r4w38lld3" path="res://images/mini_boss_python/__small_droid_dead_007.png" id="10_b5j8q"]
+[ext_resource type="Texture2D" uid="uid://cirrk5x4wt15c" path="res://images/mini_boss_python/__small_droid_dead_008.png" id="11_gfioy"]
+[ext_resource type="Texture2D" uid="uid://bxcnc38qkvygg" path="res://images/mini_boss_python/__small_droid_dead_009.png" id="12_e5epy"]
+[ext_resource type="Texture2D" uid="uid://chy37mu6cm85w" path="res://images/mini_boss_python/__small_droid_activated_idle_000.png" id="13_ye15j"]
+[ext_resource type="Texture2D" uid="uid://86y6x35twvrx" path="res://images/mini_boss_python/__small_droid_activated_idle_001.png" id="14_mt4xi"]
+[ext_resource type="Texture2D" uid="uid://07k4ls5dsv6i" path="res://images/mini_boss_python/__small_droid_activated_idle_002.png" id="15_fwut5"]
+[ext_resource type="Texture2D" uid="uid://crax6ejmb7hre" path="res://images/mini_boss_python/__small_droid_activated_idle_003.png" id="16_q28wi"]
+[ext_resource type="Texture2D" uid="uid://xb20s0fh4afm" path="res://images/mini_boss_python/__small_droid_activated_idle_004.png" id="17_1jrfs"]
+[ext_resource type="Texture2D" uid="uid://bmox313sfekiy" path="res://images/mini_boss_python/__small_droid_activated_idle_005.png" id="18_1jn8u"]
+[ext_resource type="Texture2D" uid="uid://cd44w2l2mlat2" path="res://images/mini_boss_python/__small_droid_activated_idle_006.png" id="19_8nsd6"]
+[ext_resource type="Texture2D" uid="uid://mukb612sw7bi" path="res://images/mini_boss_python/__small_droid_activated_idle_007.png" id="20_fgt7v"]
+[ext_resource type="Texture2D" uid="uid://dg1rvfj1ogpbl" path="res://images/mini_boss_python/__small_droid_activated_idle_008.png" id="21_fpms6"]
+[ext_resource type="Texture2D" uid="uid://b7ywv3ymg7iqe" path="res://images/mini_boss_python/__small_droid_activated_idle_009.png" id="22_ddu6v"]
+[ext_resource type="Texture2D" uid="uid://b0ajv6yj2l5n4" path="res://images/mini_boss_python/__small_droid_activated_idle_010.png" id="23_fxcan"]
+[ext_resource type="Texture2D" uid="uid://cq52v5lbwfneu" path="res://images/mini_boss_python/__small_droid_activated_idle_011.png" id="24_i0a2h"]
+[ext_resource type="Texture2D" uid="uid://dlvby5xvop3dt" path="res://images/mini_boss_python/__small_droid_activated_idle_012.png" id="25_j75bg"]
+[ext_resource type="Texture2D" uid="uid://3xaju7jk184l" path="res://images/mini_boss_python/__small_droid_activated_idle_013.png" id="26_6o44v"]
+[ext_resource type="Texture2D" uid="uid://dnhhaqxdarltq" path="res://images/mini_boss_python/__small_droid_activated_idle_014.png" id="27_rfmhm"]
+[ext_resource type="Texture2D" uid="uid://3pgk5b686x7b" path="res://images/mini_boss_python/__small_droid_activated_idle_015.png" id="28_tfq6d"]
+[ext_resource type="Texture2D" uid="uid://dn6g6dpdnrti7" path="res://images/mini_boss_python/__small_droid_activated_idle_016.png" id="29_n4pk1"]
+[ext_resource type="Texture2D" uid="uid://cw6x14jqo3qjc" path="res://images/mini_boss_python/__small_droid_activated_idle_017.png" id="30_rk662"]
+[ext_resource type="Texture2D" uid="uid://cnsxeo1loqcn" path="res://images/mini_boss_python/__small_droid_activated_idle_018.png" id="31_ccc17"]
+[ext_resource type="Texture2D" uid="uid://cfp7whu764igx" path="res://images/mini_boss_python/__small_droid_activated_idle_019.png" id="32_3m6pa"]
+[ext_resource type="Texture2D" uid="uid://ccovrwpbmggdj" path="res://images/mini_boss_python/__small_droid_activated_shoot_000.png" id="33_3v2mv"]
+[ext_resource type="Texture2D" uid="uid://boarnlrcx6pn5" path="res://images/mini_boss_python/__small_droid_activated_shoot_001.png" id="34_julvp"]
+[ext_resource type="Texture2D" uid="uid://budi8ttwc2fri" path="res://images/mini_boss_python/__small_droid_activated_shoot_002.png" id="35_shbbu"]
+[ext_resource type="Texture2D" uid="uid://ys1nv5l7dm4f" path="res://images/mini_boss_python/__small_droid_activated_shoot_003.png" id="36_j2kxh"]
+[ext_resource type="Texture2D" uid="uid://bqc2v8la7ytlo" path="res://images/mini_boss_python/__small_droid_activated_shoot_004.png" id="37_v2f4j"]
+[ext_resource type="Texture2D" uid="uid://dvvc1gfhwqwa0" path="res://images/mini_boss_python/__small_droid_activated_shoot_005.png" id="38_ui2r2"]
+[ext_resource type="Texture2D" uid="uid://nligmhr88cm4" path="res://images/mini_boss_python/__small_droid_activated_shoot_006.png" id="39_kxkdv"]
+[ext_resource type="Texture2D" uid="uid://bxpab5sfuo8j5" path="res://images/mini_boss_python/__small_droid_activated_shoot_007.png" id="40_gly62"]
+[ext_resource type="Texture2D" uid="uid://chi8ogystdugm" path="res://images/mini_boss_python/__small_droid_activated_shoot_008.png" id="41_nqadq"]
+[ext_resource type="Texture2D" uid="uid://c7x03gg7onium" path="res://images/mini_boss_python/__small_droid_activated_shoot_009.png" id="42_ht6h8"]
+[ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="43_y4jjf"]
+[ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/quiz_code_pages/quiz_page_topic1.gd" id="44_alh8i"]
+[ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="45_22amp"]
+[ext_resource type="Script" path="res://scripts/code_page.gd" id="46_0kkbo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cguhy"]
 size = Vector2(963, 644)
@@ -57,40 +60,34 @@ size = Vector2(119.5, 643.5)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_433b2")
+"texture": ExtResource("3_i8g34")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_xe8ed")
+"texture": ExtResource("4_wxeb2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_7m24m")
+"texture": ExtResource("5_35guk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_lmpqp")
+"texture": ExtResource("6_ffcej")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ejtiy")
+"texture": ExtResource("7_pmdjo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ejtiy")
+"texture": ExtResource("8_gscch")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ejtiy")
+"texture": ExtResource("9_13l5l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ejtiy")
+"texture": ExtResource("10_b5j8q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ejtiy")
+"texture": ExtResource("11_gfioy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ejtiy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_ejtiy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_3p43o")
+"texture": ExtResource("12_e5epy")
 }],
 "loop": false,
 "name": &"death",
@@ -98,64 +95,64 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_2kxuj")
+"texture": ExtResource("13_ye15j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_fbcod")
+"texture": ExtResource("14_mt4xi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_eenu6")
+"texture": ExtResource("15_fwut5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_xfgjj")
+"texture": ExtResource("16_q28wi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_dhi0u")
+"texture": ExtResource("17_1jrfs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_xn2tn")
+"texture": ExtResource("18_1jn8u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_vhjgk")
+"texture": ExtResource("19_8nsd6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_lkhwt")
+"texture": ExtResource("20_fgt7v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_rmwcn")
+"texture": ExtResource("21_fpms6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_xgrr3")
+"texture": ExtResource("22_ddu6v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_eheax")
+"texture": ExtResource("23_fxcan")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_slrb1")
+"texture": ExtResource("24_i0a2h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_xdaa3")
+"texture": ExtResource("25_j75bg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_57g44")
+"texture": ExtResource("26_6o44v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_842h1")
+"texture": ExtResource("27_rfmhm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_vy6iq")
+"texture": ExtResource("28_tfq6d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_du52p")
+"texture": ExtResource("29_n4pk1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_rk4dc")
+"texture": ExtResource("30_rk662")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_j47a6")
+"texture": ExtResource("31_ccc17")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_sb618")
+"texture": ExtResource("32_3m6pa")
 }],
 "loop": true,
 "name": &"idle",
@@ -168,58 +165,61 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("29_jloyy")
+"texture": ExtResource("33_3v2mv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_hnwdh")
+"texture": ExtResource("34_julvp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_8slfr")
+"texture": ExtResource("35_shbbu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_0yux5")
+"texture": ExtResource("36_j2kxh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_x12ok")
+"texture": ExtResource("37_v2f4j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_6tbh7")
+"texture": ExtResource("38_ui2r2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_tyxmq")
+"texture": ExtResource("39_kxkdv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_qt02o")
+"texture": ExtResource("40_gly62")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_84p40")
+"texture": ExtResource("41_nqadq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_diyyi")
+"texture": ExtResource("42_ht6h8")
 }],
 "loop": false,
 "name": &"wrong_answer",
 "speed": 8.0
 }]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eocmm"]
+bg_color = Color(0, 0.717647, 0.8, 1)
+
 [sub_resource type="LabelSettings" id="LabelSettings_tu174"]
-font = ExtResource("43_cdaln")
+font = ExtResource("45_22amp")
 font_size = 20
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
-font = ExtResource("41_4d4n1")
+font = ExtResource("45_22amp")
 font_size = 20
-font_color = Color(0.65098, 0.384314, 1, 1)
+font_color = Color(0, 0.717647, 0.8, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_e0svr"]
-font = ExtResource("41_4d4n1")
+font = ExtResource("45_22amp")
 font_size = 20
 
 [sub_resource type="LabelSettings" id="LabelSettings_dv4lf"]
-font = ExtResource("41_4d4n1")
+font = ExtResource("45_22amp")
 font_size = 20
-font_color = Color(1, 1, 1, 0.984314)
+font_color = Color(1, 1, 1, 0.615686)
 
 [sub_resource type="Animation" id="Animation_kivbn"]
 length = 0.001
@@ -259,10 +259,7 @@ _data = {
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2riv2"]
-bg_color = Color(0.65098, 0.384314, 1, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eocmm"]
-bg_color = Color(0.376471, 0, 0.682353, 1)
+bg_color = Color(0, 0.717647, 0.8, 1)
 
 [sub_resource type="Animation" id="Animation_2vdb3"]
 length = 0.001
@@ -332,11 +329,11 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("boss_encounter_area/boss_level_window/intro_code_page:modulate")
+tracks/1/path = NodePath("boss_encounter_area/boss_level_window/python_code_page:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(1.6, 2.9),
+"times": PackedFloat32Array(1.5, 2.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -351,12 +348,12 @@ _data = {
 "quiz_to_code": SubResource("Animation_bqsxn")
 }
 
-[node name="mini_boss_intro" type="Node2D"]
+[node name="mini_boss_intro_topic1" type="Node2D"]
 position = Vector2(567, 589)
-script = ExtResource("1_4vjhl")
+script = ExtResource("1_lexty")
 
 [node name="block_area" type="StaticBody2D" parent="."]
-script = ExtResource("2_kemjv")
+script = ExtResource("2_enqt6")
 
 [node name="area_2d" type="Area2D" parent="block_area"]
 
@@ -380,14 +377,13 @@ position = Vector2(-506.75, -268)
 shape = SubResource("RectangleShape2D_uvki5")
 
 [node name="animated_sprite_2d" type="AnimatedSprite2D" parent="boss_encounter_area"]
-position = Vector2(374, -91.5)
-scale = Vector2(0.510638, 0.575847)
+position = Vector2(396, -152)
+scale = Vector2(0.341688, 0.39976)
 sprite_frames = SubResource("SpriteFrames_ebl7p")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("39_k8x6y")]
-modulate = Color(1, 1, 1, 0)
+[node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("43_y4jjf")]
 show_behind_parent = true
 offset_left = -566.0
 offset_top = -538.0
@@ -397,6 +393,7 @@ scale = Vector2(0.8, 0.8)
 metadata/_edit_group_ = true
 
 [node name="quiz_page" type="Control" parent="boss_encounter_area/boss_level_window"]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -409,7 +406,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("40_6j77d")
+script = ExtResource("44_alh8i")
 
 [node name="background_color" type="ColorRect" parent="boss_encounter_area/boss_level_window/quiz_page"]
 layout_mode = 0
@@ -432,7 +429,7 @@ metadata/_edit_group_ = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/bold_font = ExtResource("41_4d4n1")
+theme_override_fonts/bold_font = ExtResource("45_22amp")
 theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
 
@@ -456,7 +453,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="option_button1" type="Button" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("41_4d4n1")
+theme_override_fonts/font = ExtResource("45_22amp")
 theme_override_font_sizes/font_size = 19
 clip_text = true
 icon_alignment = 1
@@ -464,54 +461,66 @@ expand_icon = true
 
 [node name="option_button2" type="Button" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("41_4d4n1")
+theme_override_fonts/font = ExtResource("45_22amp")
 theme_override_font_sizes/font_size = 19
 clip_text = true
 expand_icon = true
 
 [node name="option_button3" type="Button" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("41_4d4n1")
+theme_override_fonts/font = ExtResource("45_22amp")
 theme_override_font_sizes/font_size = 19
 clip_text = true
 expand_icon = true
 
 [node name="option_button4" type="Button" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("41_4d4n1")
+theme_override_fonts/font = ExtResource("45_22amp")
 theme_override_font_sizes/font_size = 19
 clip_text = true
 expand_icon = true
 
-[node name="intro_code_page" type="Control" parent="boss_encounter_area/boss_level_window"]
-modulate = Color(1, 1, 1, 0)
+[node name="health_bar" type="ProgressBar" parent="boss_encounter_area/boss_level_window"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 16.0
+offset_right = 302.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_eocmm")
+
+[node name="python_code_page" type="Control" parent="boss_encounter_area/boss_level_window"]
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -6.0
-offset_top = 2.0
-offset_right = 3.0
-offset_bottom = -4.0
+offset_left = -11.0
+offset_top = -1.0
+offset_right = -2.0
+offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("42_2rex8")
+script = ExtResource("46_0kkbo")
 
-[node name="background_color" type="ColorRect" parent="boss_encounter_area/boss_level_window/intro_code_page"]
+[node name="background_color" type="ColorRect" parent="boss_encounter_area/boss_level_window/python_code_page"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = 25.0
+offset_right = -14.0
+offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color(1, 1, 1, 0)
 
-[node name="code_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color"]
+[node name="code_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color"]
 clip_contents = true
 layout_direction = 1
 layout_mode = 2
@@ -523,31 +532,30 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="problem_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container"]
+[node name="problem_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container"]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.1
 
-[node name="problem_label" type="Label" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/problem_container"]
+[node name="problem_label" type="Label" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/problem_container"]
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
-text = "Problem: Convert Earth Dollars to ZogBucks interactively. # 1 Earth Dollar = 3 ZogBucks"
+text = "Problem: Check the spaceship's fuel status "
 label_settings = SubResource("LabelSettings_tu174")
-clip_text = true
 
-[node name="panel" type="Panel" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container"]
+[node name="panel" type="Panel" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="line_num_container" type="HBoxContainer" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel"]
+[node name="line_num_container" type="HBoxContainer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 0
 offset_left = 21.0
 offset_top = 20.0
 offset_right = 44.0
 offset_bottom = 503.0
 
-[node name="line_number" type="Label" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel/line_num_container"]
+[node name="line_number" type="Label" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel/line_num_container"]
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
@@ -563,131 +571,106 @@ text = "1
 
 5
 
-
-"
+6"
 label_settings = SubResource("LabelSettings_8g3qe")
 
-[node name="code_template_conatiner" type="HBoxContainer" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel"]
+[node name="code_template_conatiner" type="HBoxContainer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 0
 offset_left = 52.0
 offset_top = 20.0
 offset_right = 708.0
 offset_bottom = 480.0
 
-[node name="code_template_label" type="Label" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel/code_template_conatiner"]
+[node name="code_template_label" type="Label" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel/code_template_conatiner"]
 layout_direction = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 100
-text = "                       earth_dollars = input(\"Enter amount in Earth Dollars (ED): \")
+text = "# Check spaceship fuel status
 
-                      earth_dollars = float(earth_dollars)
-    
-                       conversion_rate = 3 
+fuel_status = \"full\"
 
-                           zogbucks = earth_dollars * conversion_rate
+                fuel_status == \"full\":
 
-                         print(f\"{earth_dollars} Earth Dollars is equal to {zogbucks} ZogBucks.\")"
+                            (\"The spaceship is ready to launch!\")
+
+          
+
+                              \"Refuel the spaceship!\")"
 label_settings = SubResource("LabelSettings_e0svr")
 
-[node name="player_answer" type="OptionButton" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel"]
+[node name="player_answer" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 49.0
-offset_top = 19.0
-offset_right = 168.0
-offset_bottom = 49.0
-theme_override_fonts/font = ExtResource("41_4d4n1")
-item_count = 3
-popup/item_0/text = "Input"
-popup/item_0/id = 0
-popup/item_1/text = "Calculate"
-popup/item_1/id = 1
-popup/item_2/text = "Display"
-popup/item_2/id = 2
-
-[node name="player_answer2" type="OptionButton" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel"]
-layout_mode = 2
-offset_left = 50.0
-offset_top = 75.0
-offset_right = 169.0
-offset_bottom = 105.0
-theme_override_fonts/font = ExtResource("41_4d4n1")
-item_count = 3
-popup/item_0/text = "Input"
-popup/item_0/id = 0
-popup/item_1/text = "Calculate"
-popup/item_1/id = 1
-popup/item_2/text = "Display"
-popup/item_2/id = 2
-
-[node name="player_answer3" type="OptionButton" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel"]
-layout_mode = 2
-offset_left = 51.0
+offset_left = 52.0
 offset_top = 133.0
-offset_right = 170.0
-offset_bottom = 163.0
-theme_override_fonts/font = ExtResource("41_4d4n1")
-item_count = 3
-popup/item_0/text = "Input"
-popup/item_0/id = 0
-popup/item_1/text = "Calculate"
-popup/item_1/id = 1
-popup/item_2/text = "Display"
-popup/item_2/id = 2
+offset_right = 132.0
+offset_bottom = 164.0
+theme_override_fonts/font = ExtResource("45_22amp")
 
-[node name="player_answer4" type="OptionButton" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/code_container/panel"]
+[node name="player_answer2" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
 layout_mode = 2
-offset_left = 540.0
-offset_top = 133.0
-offset_right = 659.0
-offset_bottom = 163.0
-theme_override_fonts/font = ExtResource("41_4d4n1")
-item_count = 2
-popup/item_0/text = "Sum"
-popup/item_0/id = 0
-popup/item_1/text = "sum"
-popup/item_1/id = 1
+offset_left = 105.0
+offset_top = 192.0
+offset_right = 206.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("45_22amp")
 
-[node name="feedback_conatiner" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color"]
+[node name="player_answer3" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
+layout_mode = 2
+offset_left = 61.0
+offset_top = 250.0
+offset_right = 147.0
+offset_bottom = 279.0
+theme_override_fonts/font = ExtResource("45_22amp")
+
+[node name="player_answer4" type="LineEdit" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/code_container/panel"]
+layout_mode = 2
+offset_left = 106.0
+offset_top = 307.0
+offset_right = 217.0
+offset_bottom = 339.0
+theme_override_fonts/font = ExtResource("45_22amp")
+
+[node name="feedback_conatiner" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color"]
 layout_mode = 2
 offset_left = 868.0
 offset_top = 98.0
 offset_right = 1128.0
 offset_bottom = 597.0
 
-[node name="panel_container" type="HBoxContainer" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/feedback_conatiner"]
+[node name="panel_container" type="HBoxContainer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/feedback_conatiner"]
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="panel2" type="Panel" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/feedback_conatiner/panel_container"]
+[node name="panel2" type="Panel" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/feedback_conatiner/panel_container"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="feedback_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/feedback_conatiner/panel_container/panel2"]
+[node name="feedback_container" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/feedback_conatiner/panel_container/panel2"]
 layout_mode = 0
 offset_left = 17.0
 offset_top = 14.0
 offset_right = 240.0
 offset_bottom = 486.0
 
-[node name="feedback_label" type="Label" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/feedback_conatiner/panel_container/panel2/feedback_container"]
+[node name="feedback_label" type="Label" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/feedback_conatiner/panel_container/panel2/feedback_container"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0.639216, 0.94902, 0.431373)
 label_settings = SubResource("LabelSettings_dv4lf")
 autowrap_mode = 3
 
-[node name="animation_player" type="AnimationPlayer" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/feedback_conatiner/panel_container/panel2/feedback_container"]
+[node name="animation_player" type="AnimationPlayer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/feedback_conatiner/panel_container/panel2/feedback_container"]
 root_node = NodePath("../../../../../run_button_conatiner")
 reset_on_save = false
 libraries = {
 "": SubResource("AnimationLibrary_xycbe")
 }
 
-[node name="run_button_conatiner" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color"]
+[node name="run_button_conatiner" type="VBoxContainer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color"]
 layout_mode = 2
 offset_left = 1014.0
 offset_top = 50.0
@@ -696,21 +679,12 @@ offset_bottom = 90.0
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.09
 
-[node name="run_button" type="Button" parent="boss_encounter_area/boss_level_window/intro_code_page/background_color/run_button_conatiner"]
+[node name="run_button" type="Button" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/run_button_conatiner"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("41_4d4n1")
+theme_override_fonts/font = ExtResource("45_22amp")
 theme_override_styles/normal = SubResource("StyleBoxFlat_2riv2")
 text = "Run"
-
-[node name="health_bar" type="ProgressBar" parent="boss_encounter_area/boss_level_window"]
-layout_mode = 0
-offset_left = 28.0
-offset_top = 16.0
-offset_right = 302.0
-offset_bottom = 44.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_styles/background = SubResource("StyleBoxFlat_eocmm")
 
 [node name="animation_player" type="AnimationPlayer" parent="boss_encounter_area"]
 process_priority = 2
@@ -720,9 +694,11 @@ libraries = {
 "": SubResource("AnimationLibrary_vb8hw")
 }
 
+[connection signal="wrong_answer" from="boss_encounter_area/boss_level_window/quiz_page" to="." method="player_wrong_answer"]
+[connection signal="wrong_answer" from="boss_encounter_area/boss_level_window/quiz_page" to="." method="_on_quiz_page_wrong_answer"]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button1" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_1_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button2" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_2_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button3" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_3_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button4" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_4_pressed" flags=18]
-[connection signal="all_correct" from="boss_encounter_area/boss_level_window/intro_code_page" to="." method="_on_code_page_all_correct"]
-[connection signal="pressed" from="boss_encounter_area/boss_level_window/intro_code_page/background_color/run_button_conatiner/run_button" to="boss_encounter_area/boss_level_window/intro_code_page" method="_on_run_button_pressed" flags=18]
+[connection signal="all_correct" from="boss_encounter_area/boss_level_window/python_code_page" to="." method="_on_code_page_all_correct"]
+[connection signal="pressed" from="boss_encounter_area/boss_level_window/python_code_page/background_color/run_button_conatiner/run_button" to="boss_encounter_area/boss_level_window/python_code_page" method="_on_run_button_pressed" flags=18]

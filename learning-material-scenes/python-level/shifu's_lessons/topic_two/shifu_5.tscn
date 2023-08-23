@@ -68,7 +68,7 @@
 [ext_resource type="Texture2D" uid="uid://ck2n8gguv77tt" path="res://images/Shifu/Character_07-idle_42.png" id="66_62kjo"]
 [ext_resource type="Texture2D" uid="uid://hxd2u0m6w3rx" path="res://images/Shifu/Character_07-idle_43.png" id="67_cij1r"]
 [ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/shifu's-lessons/topic_two/dialogue_box_L5.gd" id="68_11ck7"]
-[ext_resource type="Texture2D" uid="uid://ckn7ho4dpk06g" path="res://images/learning_material_boxes/red.png" id="69_y2o23"]
+[ext_resource type="Texture2D" uid="uid://dbtsngr3h2vlm" path="res://images/learning_material_boxes/python_box_2.png" id="69_lpsum"]
 [ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="70_ds235"]
 [ext_resource type="Texture2D" uid="uid://c61vkjdl8heew" path="res://images/learning_material_boxes/arrow_yellow.png" id="71_nvqpe"]
 [ext_resource type="FontFile" uid="uid://c1w4uwymgxw6f" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Italic.ttf" id="72_1c30r"]
@@ -369,7 +369,7 @@ radius = 487.775
 
 [sub_resource type="Animation" id="Animation_epu7n"]
 resource_name = "display"
-length = 5.0
+length = 3.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -464,19 +464,21 @@ libraries = {
 [node name="dialogue_box_sprite" type="TextureRect" parent="dialogue"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = -99.0
-offset_top = 27.0
-offset_right = 697.0
-offset_bottom = 390.0
-texture = ExtResource("69_y2o23")
+offset_left = -103.0
+offset_top = -61.0
+offset_right = 3907.0
+offset_bottom = 2634.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("69_lpsum")
 
 [node name="panel" type="Panel" parent="dialogue/dialogue_box_sprite"]
 modulate = Color(1, 1, 1, 0.752941)
 layout_mode = 0
-offset_left = 126.0
-offset_top = 42.0
-offset_right = 673.0
-offset_bottom = 323.0
+offset_left = 650.0
+offset_top = 650.0
+offset_right = 1197.0
+offset_bottom = 931.0
+scale = Vector2(5, 5)
 
 [node name="dialogue_text" type="RichTextLabel" parent="dialogue/dialogue_box_sprite/panel"]
 layout_mode = 0
