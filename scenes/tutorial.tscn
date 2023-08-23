@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkppa23tcackc"]
+
+[ext_resource type="Script" path="res://scripts/tutorial.gd" id="1_pa4fm"]
+
+[node name="tutorial" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pa4fm")
+
+[node name="bg" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 705.0
+offset_bottom = 109.0
+color = Color(0, 0, 0, 0.0901961)
+
+[node name="tutorial_txt" type="RichTextLabel" parent="bg"]
+layout_mode = 2
+offset_left = 6.0
+offset_top = 4.0
+offset_right = 703.0
+offset_bottom = 77.0
+
+[node name="next" type="Timer" parent="."]
+
+[node name="next2" type="Timer" parent="."]
+
+[connection signal="timeout" from="next" to="." method="_on_next_timeout"]
+[connection signal="timeout" from="next2" to="." method="_on_next_2_timeout"]

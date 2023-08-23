@@ -1,47 +1,46 @@
-[gd_scene load_steps=62 format=3 uid="uid://nysj1aefxnej"]
+[gd_scene load_steps=61 format=3 uid="uid://nysj1aefxnej"]
 
 [ext_resource type="Script" path="res://scripts/mini_boss_level.gd" id="1_cvtxy"]
 [ext_resource type="Script" path="res://scripts/block_area.gd" id="2_dfbmw"]
-[ext_resource type="Texture2D" uid="uid://cw7uw2clgrnwc" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_000.png" id="3_oceqy"]
-[ext_resource type="Texture2D" uid="uid://v03bb64beqai" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_001.png" id="4_4wn25"]
-[ext_resource type="Texture2D" uid="uid://ba2ry8iid6c10" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_002.png" id="5_4o66l"]
-[ext_resource type="Texture2D" uid="uid://dqo1wl6vp0fq4" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_003.png" id="6_djw54"]
-[ext_resource type="Texture2D" uid="uid://ub1y346ivnmt" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_004.png" id="7_saagd"]
-[ext_resource type="Texture2D" uid="uid://wif71l0jemkn" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_10.png" id="8_apywq"]
-[ext_resource type="Texture2D" uid="uid://dure3bdrvkd4m" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_000.png" id="9_x2rbt"]
-[ext_resource type="Texture2D" uid="uid://kkeflsm1a4hb" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_001.png" id="10_1rd0j"]
-[ext_resource type="Texture2D" uid="uid://cnf3cpup2iyug" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_002.png" id="11_xsj0v"]
-[ext_resource type="Texture2D" uid="uid://dc807rurxvkos" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_003.png" id="12_3g6rj"]
-[ext_resource type="Texture2D" uid="uid://bwlm313ahqmuv" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_004.png" id="13_xwpby"]
-[ext_resource type="Texture2D" uid="uid://cjiktaaa15i77" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_005.png" id="14_h20v1"]
-[ext_resource type="Texture2D" uid="uid://cshtqa1dwbpyg" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_006.png" id="15_xwacb"]
-[ext_resource type="Texture2D" uid="uid://wt6wxden5b7p" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_007.png" id="16_hrbp0"]
-[ext_resource type="Texture2D" uid="uid://dyg1qjqfeae7a" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_008.png" id="17_isr28"]
-[ext_resource type="Texture2D" uid="uid://jloclqdimu1f" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_009.png" id="18_y8e34"]
-[ext_resource type="Texture2D" uid="uid://pgxvg78nddpy" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_010.png" id="19_id4yi"]
-[ext_resource type="Texture2D" uid="uid://mkgfsamfpgc2" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_011.png" id="20_b5h30"]
-[ext_resource type="Texture2D" uid="uid://b6emjc1dhbuf0" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_012.png" id="21_v4bgm"]
-[ext_resource type="Texture2D" uid="uid://c62usrbp6nswj" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_013.png" id="22_l2n86"]
-[ext_resource type="Texture2D" uid="uid://bb6je5cl07tg7" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_014.png" id="23_esnls"]
-[ext_resource type="Texture2D" uid="uid://so7ts1wpfovt" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_015.png" id="24_klpnd"]
-[ext_resource type="Texture2D" uid="uid://bm7xebuundkax" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_016.png" id="25_6k8fk"]
-[ext_resource type="Texture2D" uid="uid://c4fak66crtyuu" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_017.png" id="26_8503l"]
-[ext_resource type="Texture2D" uid="uid://duf8ophap2hgu" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_018.png" id="27_juthy"]
-[ext_resource type="Texture2D" uid="uid://dvc3xn5ga20jg" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_019.png" id="28_gql0e"]
-[ext_resource type="Texture2D" uid="uid://u6feldyhl5tk" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_000.png" id="29_tv4m6"]
-[ext_resource type="Texture2D" uid="uid://o0k2m1tdxlep" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_001.png" id="30_sfqhi"]
-[ext_resource type="Texture2D" uid="uid://bp1bxdxqyvqmf" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_002.png" id="31_egiab"]
-[ext_resource type="Texture2D" uid="uid://dugvgmmk8j5v8" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_003.png" id="32_rig5b"]
-[ext_resource type="Texture2D" uid="uid://uq3gaorrg7eo" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_004.png" id="33_e051y"]
-[ext_resource type="Texture2D" uid="uid://dw5sbitchw045" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_005.png" id="34_6e8w6"]
-[ext_resource type="Texture2D" uid="uid://cfbbggnsuosf8" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_006.png" id="35_0e40v"]
-[ext_resource type="Texture2D" uid="uid://cd01pt7xavok3" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_007.png" id="36_8xveh"]
-[ext_resource type="Texture2D" uid="uid://b12rhptj7ovgl" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_008.png" id="37_ff8cr"]
-[ext_resource type="Texture2D" uid="uid://26wgcwi36jfw" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_009.png" id="38_e6c5s"]
+[ext_resource type="Texture2D" uid="uid://6wr5qgscvvvx" path="res://images/mini_boss/pink/__alien_creature_5_pink_die_000.png" id="3_56ddo"]
+[ext_resource type="Texture2D" uid="uid://cubsxr8loiqfv" path="res://images/mini_boss/pink/__alien_creature_5_pink_die_001.png" id="4_i2q1v"]
+[ext_resource type="Texture2D" uid="uid://1lpca8guvpff" path="res://images/mini_boss/pink/__alien_creature_5_pink_die_002.png" id="5_tl57n"]
+[ext_resource type="Texture2D" uid="uid://xw5vf41bqpfw" path="res://images/mini_boss/pink/__alien_creature_5_pink_die_003.png" id="6_1cgfl"]
+[ext_resource type="Texture2D" uid="uid://qlui16o7eje2" path="res://images/mini_boss/pink/__alien_creature_5_pink_die_004.png" id="7_vgmo4"]
+[ext_resource type="Texture2D" uid="uid://bb238csx4xurt" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_000.png" id="8_rrkvi"]
+[ext_resource type="Texture2D" uid="uid://bn2tqusu7q2gj" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_001.png" id="9_mxf1h"]
+[ext_resource type="Texture2D" uid="uid://csqme4ilebeuu" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_002.png" id="10_dj5m5"]
+[ext_resource type="Texture2D" uid="uid://c7qr6eabn3rk0" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_003.png" id="11_wb3sj"]
+[ext_resource type="Texture2D" uid="uid://b2o13spm6igeq" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_004.png" id="12_p3kl3"]
+[ext_resource type="Texture2D" uid="uid://cgmn7bmd6rjhl" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_005.png" id="13_ysbvn"]
+[ext_resource type="Texture2D" uid="uid://ykph6dukf5k1" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_006.png" id="14_c4yij"]
+[ext_resource type="Texture2D" uid="uid://1oaay6b300sr" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_007.png" id="15_m1cas"]
+[ext_resource type="Texture2D" uid="uid://co18evs8ft3i3" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_008.png" id="16_iawde"]
+[ext_resource type="Texture2D" uid="uid://clxfm1tntoja6" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_009.png" id="17_osuuy"]
+[ext_resource type="Texture2D" uid="uid://cmcmwt23e6nt4" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_010.png" id="18_jusru"]
+[ext_resource type="Texture2D" uid="uid://dlxqbfthtfjt5" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_011.png" id="19_v5dgi"]
+[ext_resource type="Texture2D" uid="uid://cr3bqy7qqu8lb" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_012.png" id="20_jv7x1"]
+[ext_resource type="Texture2D" uid="uid://gr2e2bprx6nv" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_013.png" id="21_p2e10"]
+[ext_resource type="Texture2D" uid="uid://cpk0nv4vj2wkc" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_014.png" id="22_4k04o"]
+[ext_resource type="Texture2D" uid="uid://bsyqyxb6fgviw" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_015.png" id="23_epkg4"]
+[ext_resource type="Texture2D" uid="uid://jqpho8ijqu1s" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_016.png" id="24_cm74k"]
+[ext_resource type="Texture2D" uid="uid://dchqdro0ydvjb" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_017.png" id="25_320kj"]
+[ext_resource type="Texture2D" uid="uid://ckosxkm13m3s8" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_018.png" id="26_dbcq6"]
+[ext_resource type="Texture2D" uid="uid://bpb3vjwx6x4u6" path="res://images/mini_boss/pink/__alien_creature_5_pink_idle_019.png" id="27_gwmsr"]
+[ext_resource type="Texture2D" uid="uid://dpjewbtr65sxw" path="res://images/mini_boss/pink/__alien_creature_5_pink_roar_000.png" id="28_ea1ds"]
+[ext_resource type="Texture2D" uid="uid://dikajc8oag3yh" path="res://images/mini_boss/pink/__alien_creature_5_pink_roar_001.png" id="29_42kes"]
+[ext_resource type="Texture2D" uid="uid://d3ji20b408ovl" path="res://images/mini_boss/pink/__alien_creature_5_pink_roar_002.png" id="30_1cul0"]
+[ext_resource type="Texture2D" uid="uid://bl5xavdqbq75r" path="res://images/mini_boss/pink/__alien_creature_5_pink_roar_003.png" id="31_ttyes"]
+[ext_resource type="Texture2D" uid="uid://cu5qxdgf2xupb" path="res://images/mini_boss/pink/__alien_creature_5_pink_roar_004.png" id="32_fjguc"]
+[ext_resource type="Texture2D" uid="uid://brd7oh1yq17oo" path="res://images/mini_boss/pink/__alien_creature_5_pink_roar_005.png" id="33_efto4"]
+[ext_resource type="Texture2D" uid="uid://da07tx4ihu3jx" path="res://images/mini_boss/pink/__alien_creature_5_pink_roar_006.png" id="34_qju76"]
+[ext_resource type="Texture2D" uid="uid://ciymsa1x8a1dv" path="res://images/mini_boss/pink/__alien_creature_5_pink_roar_007.png" id="35_tiixl"]
+[ext_resource type="Texture2D" uid="uid://cuquln1qqelol" path="res://images/mini_boss/pink/__alien_creature_5_pink_roar_008.png" id="36_dvp60"]
+[ext_resource type="Texture2D" uid="uid://bqpjcarwg0asc" path="res://images/mini_boss/pink/__alien_creature_5_pink_roar_009.png" id="37_lw2rn"]
 [ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="39_aaghj"]
-[ext_resource type="FontFile" uid="uid://cgihnyetfqurr" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="40_4slfq"]
+[ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="40_4slfq"]
 [ext_resource type="Script" path="res://scripts/intro_code_page.gd" id="41_5esff"]
-[ext_resource type="FontFile" uid="uid://b827yj5scm7kt" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="42_kpr1l"]
+[ext_resource type="FontFile" uid="uid://cwbqlu04cyyvj" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Bold.ttf" id="42_kpr1l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cguhy"]
 size = Vector2(963, 644)
@@ -56,40 +55,40 @@ size = Vector2(119.5, 643.5)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_oceqy")
+"texture": ExtResource("3_56ddo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_4wn25")
+"texture": ExtResource("4_i2q1v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_4o66l")
+"texture": ExtResource("5_tl57n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_djw54")
+"texture": ExtResource("6_1cgfl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_saagd")
+"texture": ExtResource("7_vgmo4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_saagd")
+"texture": ExtResource("7_vgmo4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_saagd")
+"texture": ExtResource("7_vgmo4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_saagd")
+"texture": ExtResource("7_vgmo4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_saagd")
+"texture": ExtResource("7_vgmo4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_saagd")
+"texture": ExtResource("7_vgmo4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_saagd")
+"texture": ExtResource("7_vgmo4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_apywq")
+"texture": ExtResource("7_vgmo4")
 }],
 "loop": false,
 "name": &"death",
@@ -97,64 +96,64 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_x2rbt")
+"texture": ExtResource("8_rrkvi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_1rd0j")
+"texture": ExtResource("9_mxf1h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_xsj0v")
+"texture": ExtResource("10_dj5m5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_3g6rj")
+"texture": ExtResource("11_wb3sj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_xwpby")
+"texture": ExtResource("12_p3kl3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_h20v1")
+"texture": ExtResource("13_ysbvn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_xwacb")
+"texture": ExtResource("14_c4yij")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_hrbp0")
+"texture": ExtResource("15_m1cas")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_isr28")
+"texture": ExtResource("16_iawde")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_y8e34")
+"texture": ExtResource("17_osuuy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_id4yi")
+"texture": ExtResource("18_jusru")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_b5h30")
+"texture": ExtResource("19_v5dgi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_v4bgm")
+"texture": ExtResource("20_jv7x1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_l2n86")
+"texture": ExtResource("21_p2e10")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_esnls")
+"texture": ExtResource("22_4k04o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_klpnd")
+"texture": ExtResource("23_epkg4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_6k8fk")
+"texture": ExtResource("24_cm74k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_8503l")
+"texture": ExtResource("25_320kj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_juthy")
+"texture": ExtResource("26_dbcq6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_gql0e")
+"texture": ExtResource("27_gwmsr")
 }],
 "loop": true,
 "name": &"idle",
@@ -167,34 +166,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("29_tv4m6")
+"texture": ExtResource("28_ea1ds")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_sfqhi")
+"texture": ExtResource("29_42kes")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_egiab")
+"texture": ExtResource("30_1cul0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_rig5b")
+"texture": ExtResource("31_ttyes")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_e051y")
+"texture": ExtResource("32_fjguc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_6e8w6")
+"texture": ExtResource("33_efto4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_0e40v")
+"texture": ExtResource("34_qju76")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_8xveh")
+"texture": ExtResource("35_tiixl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_ff8cr")
+"texture": ExtResource("36_dvp60")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_e6c5s")
+"texture": ExtResource("37_lw2rn")
 }],
 "loop": false,
 "name": &"wrong_answer",

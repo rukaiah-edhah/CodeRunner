@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bvt5137cudap" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_002.png" id="5_jsdhu"]
 [ext_resource type="Texture2D" uid="uid://bvyiflerr0w4q" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_003.png" id="6_v6xty"]
 [ext_resource type="Texture2D" uid="uid://dok1adtp8snfh" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_004.png" id="7_65u8j"]
-[ext_resource type="Texture2D" uid="uid://duhojoiykikxp" path="res://images/mini_boss_animation/Death/Bringer-of-Death_Death_10.png" id="8_e4smm"]
+[ext_resource type="Texture2D" uid="uid://duhojoiykikxp" path="res://unnecessary-files/mini_boss_animation/Death/Bringer-of-Death_Death_10.png" id="8_e4smm"]
 [ext_resource type="Texture2D" uid="uid://dt0buaspb2rvw" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_000.png" id="9_xa47a"]
 [ext_resource type="Texture2D" uid="uid://b8rqctuc8pm7s" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_001.png" id="10_hg1n0"]
 [ext_resource type="Texture2D" uid="uid://cl20ti7wm501p" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_002.png" id="11_781ad"]

@@ -62,7 +62,7 @@ _data = {
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2riv2"]
 bg_color = Color(0.65098, 0.384314, 1, 1)
 
-[node name="code_page" type="Control"]
+[node name="python_code_page" type="Control"]
 layout_direction = 1
 layout_mode = 3
 anchors_preset = 15

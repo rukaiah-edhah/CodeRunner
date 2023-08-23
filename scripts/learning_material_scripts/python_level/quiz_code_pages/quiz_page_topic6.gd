@@ -8,7 +8,7 @@ signal take_damage
 signal quiz_finished
 
 var questions = [
-    {
+        {
         "question": "How do 'if,' 'elif,' and 'else' statements help manage how a program runs?",
         "options": ["They set the program's start point", "They determine code's loop count", "They modify variable types", "They specify conditions for code paths"], # 1. Add all of the options you want to display 
         "answer": 3 # The index of the correct answer
@@ -34,6 +34,56 @@ var questions = [
         "options": ["if", "elif", "else", "for"],
         "answer": 0
     },
+    {
+        "question": "Which statement must be used to start a chain of conditional statements?",
+        "options": ["if", "elif", "else", "for"],
+        "answer": 0
+    },
+    {
+        "question": "Which statement must be used to start a chain of conditional statements?",
+        "options": ["if", "elif", "else", "for"],
+        "answer": 0
+    },
+    {
+        "question": "Which statement must be used to start a chain of conditional statements?",
+        "options": ["if", "elif", "else", "for"],
+        "answer": 0
+    },
+    {
+        "question": "Which statement must be used to start a chain of conditional statements?",
+        "options": ["if", "elif", "else", "for"],
+        "answer": 0
+    },
+    {
+        "question": "Which statement must be used to start a chain of conditional statements?",
+        "options": ["if", "elif", "else", "for"],
+        "answer": 0
+    },
+    {
+        "question": "Which statement must be used to start a chain of conditional statements?",
+        "options": ["if", "elif", "else", "for"],
+        "answer": 0
+    },
+    {
+        "question": "Which statement must be used to start a chain of conditional statements?",
+        "options": ["if", "elif", "else", "for"],
+        "answer": 0
+    },
+    {
+        "question": "Which statement must be used to start a chain of conditional statements?",
+        "options": ["if", "elif", "else", "for"],
+        "answer": 0
+    },
+    {
+        "question": "Which statement must be used to start a chain of conditional statements?",
+        "options": ["if", "elif", "else", "for"],
+        "answer": 0
+    },
+    {
+        "question": "Which statement must be used to start a chain of conditional statements?",
+        "options": ["if", "elif", "else", "for"],
+        "answer": 0
+    },   
 ]
 @onready var question_label = $background_color/question_container/question_label
 

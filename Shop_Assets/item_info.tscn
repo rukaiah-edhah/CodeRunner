@@ -1,0 +1,129 @@
+[gd_scene load_steps=8 format=3 uid="uid://dsajkpxnepbg5"]
+
+[ext_resource type="Texture2D" uid="uid://dbssmjfyq4f8m" path="res://images/Berry.png" id="1_5uu0s"]
+[ext_resource type="Script" path="res://Shop_Assets/item_info.gd" id="1_8cup6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ybutu"]
+bg_color = Color(0, 0.643137, 0.929412, 1)
+
+[sub_resource type="Animation" id="Animation_kidln"]
+resource_name = "Trans_In"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -300), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_88jfk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -300)]
+}
+
+[sub_resource type="Animation" id="Animation_otgjo"]
+resource_name = "Trans_Out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 300)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gctg0"]
+_data = {
+"RESET": SubResource("Animation_88jfk"),
+"Trans_In": SubResource("Animation_kidln"),
+"Trans_Out": SubResource("Animation_otgjo")
+}
+
+[node name="Item_info" type="CanvasLayer"]
+offset = Vector2(0, -300)
+transform = Transform2D(1, 0, 0, 1, 0, -300)
+script = ExtResource("1_8cup6")
+
+[node name="Item_Info_BG" type="Panel" parent="."]
+offset_left = 83.0
+offset_top = 61.0
+offset_right = 404.0
+offset_bottom = 349.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ybutu")
+
+[node name="Use_Button" type="Button" parent="."]
+offset_left = 269.0
+offset_top = 258.0
+offset_right = 383.0
+offset_bottom = 315.0
+
+[node name="Use_Text" type="Label" parent="Use_Button"]
+offset_left = 38.0
+offset_top = 18.0
+offset_right = 78.0
+offset_bottom = 44.0
+text = "Use"
+horizontal_alignment = 1
+
+[node name="Close_Button" type="Button" parent="."]
+offset_left = 116.0
+offset_top = 259.0
+offset_right = 228.0
+offset_bottom = 314.0
+
+[node name="Close_Button" type="Label" parent="Close_Button"]
+offset_left = 35.0
+offset_top = 17.0
+offset_right = 77.0
+offset_bottom = 43.0
+text = "Close"
+horizontal_alignment = 1
+
+[node name="Item_Info_AP" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gctg0")
+}
+
+[node name="Title" type="Label" parent="."]
+offset_left = 205.0
+offset_top = 95.0
+offset_right = 294.0
+offset_bottom = 121.0
+text = "Item_Name
+"
+horizontal_alignment = 1
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(244, 182)
+scale = Vector2(3.14286, 3.07143)
+texture = ExtResource("1_5uu0s")
+
+[node name="Description" type="Label" parent="."]
+offset_left = 223.0
+offset_top = 218.0
+offset_right = 263.0
+offset_bottom = 241.0
+text = "blah"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Use_Button" to="." method="_on_use_button_pressed"]
+[connection signal="pressed" from="Close_Button" to="." method="_on_close_button_pressed"]
