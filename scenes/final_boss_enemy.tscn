@@ -1,191 +1,194 @@
-[gd_scene load_steps=191 format=3 uid="uid://c54nwv5sdqiu"]
+[gd_scene load_steps=194 format=3 uid="uid://c54nwv5sdqiu"]
 
 [ext_resource type="Script" path="res://scripts/boss_enemy.gd" id="1_7lup1"]
-[ext_resource type="Texture2D" uid="uid://dv16tftme0e72" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_01.png" id="2_yuufq"]
-[ext_resource type="Texture2D" uid="uid://b6v5lpidx3t5t" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_02.png" id="3_idarp"]
-[ext_resource type="Texture2D" uid="uid://dpi31tnu84ngf" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_03.png" id="4_5m4le"]
-[ext_resource type="Texture2D" uid="uid://dyvmsu8gcgmsq" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_04.png" id="5_wvxcp"]
-[ext_resource type="Texture2D" uid="uid://bv0r3hehu7n06" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_05.png" id="6_17ukt"]
-[ext_resource type="Texture2D" uid="uid://bewtwtsvj7her" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_06.png" id="7_rldgj"]
-[ext_resource type="Texture2D" uid="uid://djpsotbog14l1" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_07.png" id="8_jn5wq"]
-[ext_resource type="Texture2D" uid="uid://lidewyg8m8i4" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_08.png" id="9_0ivay"]
-[ext_resource type="Texture2D" uid="uid://d1wujkydfbqk3" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_09.png" id="10_8qf2t"]
-[ext_resource type="Texture2D" uid="uid://da1ir7dgamd03" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_10.png" id="11_et5d1"]
-[ext_resource type="Texture2D" uid="uid://dj6yl6tkoja2m" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_11.png" id="12_eymbc"]
-[ext_resource type="Texture2D" uid="uid://dnd02nnr5f7t6" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_12.png" id="13_cknyw"]
-[ext_resource type="Texture2D" uid="uid://dafew164g03e2" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_13.png" id="14_ca30f"]
-[ext_resource type="Texture2D" uid="uid://buouk7ex3vb8b" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_14.png" id="15_00cf3"]
-[ext_resource type="Texture2D" uid="uid://blhtec5o1nysa" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_15.png" id="16_rph6m"]
-[ext_resource type="Texture2D" uid="uid://cr481imvjcqjt" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_16.png" id="17_ym8w5"]
-[ext_resource type="Texture2D" uid="uid://decud1jx5kh51" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_17.png" id="18_bhjws"]
-[ext_resource type="Texture2D" uid="uid://cxiqe1xueo3ff" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_18.png" id="19_effwc"]
-[ext_resource type="Texture2D" uid="uid://c0t27m7uu73j7" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_19.png" id="20_3xtx7"]
-[ext_resource type="Texture2D" uid="uid://cb5uxwcnkkeof" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_000.png" id="21_xgpok"]
-[ext_resource type="Texture2D" uid="uid://ip8ehsnwjedn" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_001.png" id="22_64wsp"]
-[ext_resource type="Texture2D" uid="uid://bcotkhpn7yg50" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_002.png" id="23_exeu5"]
-[ext_resource type="Texture2D" uid="uid://cv3y8fu3yrn54" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_003.png" id="24_84hfm"]
-[ext_resource type="Texture2D" uid="uid://c62gqi6dbi7nl" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_004.png" id="25_hqkbx"]
-[ext_resource type="Texture2D" uid="uid://yj0brmn7ugo3" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_005.png" id="26_205fs"]
-[ext_resource type="Texture2D" uid="uid://cy8gf8o0jvijj" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_006.png" id="27_ymiyg"]
-[ext_resource type="Texture2D" uid="uid://caapssduy8ec4" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_007.png" id="28_drma4"]
-[ext_resource type="Texture2D" uid="uid://dalgpnn2ayupy" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_008.png" id="29_n7gkt"]
-[ext_resource type="Texture2D" uid="uid://dfnb4ntnry7xg" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_009.png" id="30_bgg51"]
-[ext_resource type="Texture2D" uid="uid://6alg3oho0fpv" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_010.png" id="31_o2sjf"]
-[ext_resource type="Texture2D" uid="uid://dyh60vxnwrtje" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_011.png" id="32_tfbx4"]
-[ext_resource type="Texture2D" uid="uid://ccxom5m3esg3t" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_012.png" id="33_qfpxw"]
-[ext_resource type="Texture2D" uid="uid://dr6eif8xnjjqs" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_013.png" id="34_dkrh2"]
-[ext_resource type="Texture2D" uid="uid://i50tfxtgfpvu" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_014.png" id="35_f47qr"]
-[ext_resource type="Texture2D" uid="uid://jaxaj4yftdep" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_015.png" id="36_ie7mi"]
-[ext_resource type="Texture2D" uid="uid://cmkg7tf8di7xl" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_016.png" id="37_osag0"]
-[ext_resource type="Texture2D" uid="uid://dyt0rctni2fcq" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_017.png" id="38_78vls"]
-[ext_resource type="Texture2D" uid="uid://cx3k7xwav1gvi" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_018.png" id="39_4jjgf"]
-[ext_resource type="Texture2D" uid="uid://b8jsqeik2g4dp" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_019.png" id="40_2at3a"]
-[ext_resource type="Texture2D" uid="uid://tshw8jq2mgk0" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_020.png" id="41_d2xbe"]
-[ext_resource type="Texture2D" uid="uid://imfcf7hcsdbd" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_021.png" id="42_sads2"]
-[ext_resource type="Texture2D" uid="uid://c7nm80np8vb1s" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_022.png" id="43_opye8"]
-[ext_resource type="Texture2D" uid="uid://ce3obgrcstpwm" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_023.png" id="44_6ur2n"]
-[ext_resource type="Texture2D" uid="uid://bkhsaog05qjye" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_024.png" id="45_hoj6g"]
-[ext_resource type="Texture2D" uid="uid://bdxodw0sxnnsy" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_025.png" id="46_6kdx1"]
-[ext_resource type="Texture2D" uid="uid://vdnfe3hq6xiq" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_026.png" id="47_o2gxq"]
-[ext_resource type="Texture2D" uid="uid://mnagbju56881" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_027.png" id="48_gil0o"]
-[ext_resource type="Texture2D" uid="uid://mcmv66qwlunr" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_028.png" id="49_l0x7b"]
-[ext_resource type="Texture2D" uid="uid://b2r16j5d4y34k" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_029.png" id="50_g28sx"]
-[ext_resource type="Texture2D" uid="uid://c0h03ha262f03" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_030.png" id="51_bttw0"]
-[ext_resource type="Texture2D" uid="uid://duonrdny5dpms" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_031.png" id="52_1eqf3"]
-[ext_resource type="Texture2D" uid="uid://ombm7yhofxn8" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_032.png" id="53_6gcir"]
-[ext_resource type="Texture2D" uid="uid://fjijh1gkm7vo" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_033.png" id="54_0c8k1"]
-[ext_resource type="Texture2D" uid="uid://jekt64ffy0dm" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_034.png" id="55_s3kql"]
-[ext_resource type="Texture2D" uid="uid://bddxh5jeq477a" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_035.png" id="56_f6whm"]
-[ext_resource type="Texture2D" uid="uid://dom84fq67ypmy" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_036.png" id="57_fr2j2"]
-[ext_resource type="Texture2D" uid="uid://bg26arooueu3w" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_037.png" id="58_q5wt4"]
-[ext_resource type="Texture2D" uid="uid://c8jeyhchapig6" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_038.png" id="59_67xd8"]
-[ext_resource type="Texture2D" uid="uid://dvwyosukapauq" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_039.png" id="60_nlgjh"]
-[ext_resource type="Texture2D" uid="uid://114uix5ndnoc" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_040.png" id="61_bce7s"]
-[ext_resource type="Texture2D" uid="uid://c8ijbm5le6yef" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_041.png" id="62_hmrtj"]
-[ext_resource type="Texture2D" uid="uid://dbmlrwp04xtsv" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_042.png" id="63_qccjk"]
-[ext_resource type="Texture2D" uid="uid://dffaakskrmeoa" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_043.png" id="64_rwtmi"]
-[ext_resource type="Texture2D" uid="uid://bbc20g3183us2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_044.png" id="65_bfpn4"]
-[ext_resource type="Texture2D" uid="uid://2qspvhcmyi8" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_045.png" id="66_5yiw3"]
-[ext_resource type="Texture2D" uid="uid://ccvlu0c3i8fl2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_046.png" id="67_nknsu"]
-[ext_resource type="Texture2D" uid="uid://fxy7y2vqqk7a" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_047.png" id="68_bae1d"]
-[ext_resource type="Texture2D" uid="uid://bnxj13aeww5ko" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_048.png" id="69_x23np"]
-[ext_resource type="Texture2D" uid="uid://bry5l16umn40n" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_049.png" id="70_ug7wg"]
-[ext_resource type="Texture2D" uid="uid://bb0q8udf0qq4c" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_050.png" id="71_ymiyt"]
-[ext_resource type="Texture2D" uid="uid://d15wwv5skhf8i" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_051.png" id="72_tafh8"]
-[ext_resource type="Texture2D" uid="uid://d0qqoucsmbbe8" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_052.png" id="73_1r85r"]
-[ext_resource type="Texture2D" uid="uid://dlm051fhwaql0" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_053.png" id="74_l7vu8"]
-[ext_resource type="Texture2D" uid="uid://b5q0samuwmk20" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_054.png" id="75_vrojb"]
-[ext_resource type="Texture2D" uid="uid://bfwwmx2xr6kxx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_055.png" id="76_kfyas"]
-[ext_resource type="Texture2D" uid="uid://c1v4dxtenh0aa" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_056.png" id="77_u4nop"]
-[ext_resource type="Texture2D" uid="uid://ccpd0v3q10bjl" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_057.png" id="78_h81hb"]
-[ext_resource type="Texture2D" uid="uid://5yf7a0m3ekph" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_058.png" id="79_gyooe"]
-[ext_resource type="Texture2D" uid="uid://bbqcbktgsj651" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_059.png" id="80_yt7qr"]
-[ext_resource type="Texture2D" uid="uid://b4f7dym8bk7ed" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_060.png" id="81_6ch64"]
-[ext_resource type="Texture2D" uid="uid://d1ngd0cbbdl1e" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_061.png" id="82_2kbd0"]
-[ext_resource type="Texture2D" uid="uid://du47klgcxoejb" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_062.png" id="83_lo1jj"]
-[ext_resource type="Texture2D" uid="uid://dittf27pn6pyu" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_063.png" id="84_ypae4"]
-[ext_resource type="Texture2D" uid="uid://d3n6f6xaf4gie" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_064.png" id="85_4o1pk"]
-[ext_resource type="Texture2D" uid="uid://cycnbgijh100v" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_065.png" id="86_unn2v"]
-[ext_resource type="Texture2D" uid="uid://8aipbec5dth8" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_066.png" id="87_y48l4"]
-[ext_resource type="Texture2D" uid="uid://dl7xt4kver48t" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_067.png" id="88_onfbp"]
-[ext_resource type="Texture2D" uid="uid://coukqwm4p5e6o" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_068.png" id="89_wlw6v"]
-[ext_resource type="Texture2D" uid="uid://duw7odclrab2x" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_069.png" id="90_5b3je"]
-[ext_resource type="Texture2D" uid="uid://clg3tr34vhg38" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_070.png" id="91_6wna1"]
-[ext_resource type="Texture2D" uid="uid://bqt6dbo42d1g" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_071.png" id="92_hibbq"]
-[ext_resource type="Texture2D" uid="uid://p578s410sytw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_072.png" id="93_lbjb7"]
-[ext_resource type="Texture2D" uid="uid://r2bcshdlvcwt" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_073.png" id="94_xjdud"]
-[ext_resource type="Texture2D" uid="uid://cfafmh1pbksye" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_074.png" id="95_g3uj6"]
-[ext_resource type="Texture2D" uid="uid://b7uqgleyjyjw7" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_075.png" id="96_ubqlu"]
-[ext_resource type="Texture2D" uid="uid://bcyquo4bykjgv" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_076.png" id="97_mgi0s"]
-[ext_resource type="Texture2D" uid="uid://di2vh16nrov8n" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_077.png" id="98_88nyb"]
-[ext_resource type="Texture2D" uid="uid://cf32ohyj55g5j" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_078.png" id="99_cvs7k"]
-[ext_resource type="Texture2D" uid="uid://dl14361hm8b2q" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_079.png" id="100_g17hf"]
-[ext_resource type="Texture2D" uid="uid://dfcrt4eeqir0g" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_080.png" id="101_5ftbu"]
-[ext_resource type="Texture2D" uid="uid://d3ne4f1lytcb1" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_081.png" id="102_7xiv6"]
-[ext_resource type="Texture2D" uid="uid://cp8rxppx56a38" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_082.png" id="103_x4iow"]
-[ext_resource type="Texture2D" uid="uid://oycdfq3oqyv3" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_083.png" id="104_au3um"]
-[ext_resource type="Texture2D" uid="uid://6wn8cmsn5qun" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_084.png" id="105_xbl2y"]
-[ext_resource type="Texture2D" uid="uid://c7ceb82hs8nhh" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_085.png" id="106_207uw"]
-[ext_resource type="Texture2D" uid="uid://55nmrabqnmlx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_086.png" id="107_w42ae"]
-[ext_resource type="Texture2D" uid="uid://uhel7d3g741v" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_087.png" id="108_y4n7t"]
-[ext_resource type="Texture2D" uid="uid://davade4uo7js2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_088.png" id="109_5aheb"]
-[ext_resource type="Texture2D" uid="uid://dm2la6up3678x" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_089.png" id="110_uin17"]
-[ext_resource type="Texture2D" uid="uid://d1hujtxnragjm" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_090.png" id="111_fydyt"]
-[ext_resource type="Texture2D" uid="uid://7s5oxgls1xpc" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_091.png" id="112_5dinp"]
-[ext_resource type="Texture2D" uid="uid://cck4lvr3u4sqt" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_092.png" id="113_vilos"]
-[ext_resource type="Texture2D" uid="uid://suye4e318kxv" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_093.png" id="114_qgkpj"]
-[ext_resource type="Texture2D" uid="uid://bo2ngq23syx27" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_094.png" id="115_nf5qb"]
-[ext_resource type="Texture2D" uid="uid://yxwcos5kg22j" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_095.png" id="116_hja2e"]
-[ext_resource type="Texture2D" uid="uid://ce8pnctfkiiqh" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_096.png" id="117_5vujy"]
-[ext_resource type="Texture2D" uid="uid://q4bthb61s868" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_097.png" id="118_wksml"]
-[ext_resource type="Texture2D" uid="uid://b0kaah8lgvnb8" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_098.png" id="119_tf25e"]
-[ext_resource type="Texture2D" uid="uid://egjq5rak3lay" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_099.png" id="120_fhqtq"]
-[ext_resource type="Texture2D" uid="uid://ceyo5iayjdcm2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_100.png" id="121_afwh7"]
-[ext_resource type="Texture2D" uid="uid://dn73wwm5p5rbm" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_101.png" id="122_n7ngh"]
-[ext_resource type="Texture2D" uid="uid://bvvjmj7q5nha3" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_102.png" id="123_qsj86"]
-[ext_resource type="Texture2D" uid="uid://dtbod6br01pyo" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_103.png" id="124_2nkgp"]
-[ext_resource type="Texture2D" uid="uid://ba4il4b4qkuww" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_104.png" id="125_oxweg"]
-[ext_resource type="Texture2D" uid="uid://btd3kyim64lrg" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_105.png" id="126_dmtru"]
-[ext_resource type="Texture2D" uid="uid://cqj8jiuhd344x" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_106.png" id="127_xk5ex"]
-[ext_resource type="Texture2D" uid="uid://pb2k2t1dg13m" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_107.png" id="128_ec2ry"]
-[ext_resource type="Texture2D" uid="uid://b03p7ia8yqvsc" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_108.png" id="129_j7sll"]
-[ext_resource type="Texture2D" uid="uid://djqtxegj8noqw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_109.png" id="130_ws7lf"]
-[ext_resource type="Texture2D" uid="uid://dq8amfwrkx1kc" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_110.png" id="131_r46hf"]
-[ext_resource type="Texture2D" uid="uid://cnprt3ymanppw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_111.png" id="132_ex4vy"]
-[ext_resource type="Texture2D" uid="uid://f3b88arccr3s" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_112.png" id="133_5owj2"]
-[ext_resource type="Texture2D" uid="uid://d3ar816whjv73" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_113.png" id="134_6nwqu"]
-[ext_resource type="Texture2D" uid="uid://unuj7bc823uc" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_114.png" id="135_ev136"]
-[ext_resource type="Texture2D" uid="uid://dagmqujg5l23b" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_115.png" id="136_d63bv"]
-[ext_resource type="Texture2D" uid="uid://bqvam67sd8ryo" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_116.png" id="137_xawu2"]
-[ext_resource type="Texture2D" uid="uid://c3337up887mcw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_117.png" id="138_4ros8"]
-[ext_resource type="Texture2D" uid="uid://beyue02a251vs" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_118.png" id="139_itsbj"]
-[ext_resource type="Texture2D" uid="uid://dmx08iu5w870m" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_119.png" id="140_mvps1"]
-[ext_resource type="Texture2D" uid="uid://6b5ndlymk2gd" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_120.png" id="141_wchwe"]
-[ext_resource type="Texture2D" uid="uid://c1yjagt18yhno" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_121.png" id="142_qxfcg"]
-[ext_resource type="Texture2D" uid="uid://briawpcd6d206" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_122.png" id="143_3jkna"]
-[ext_resource type="Texture2D" uid="uid://c0xgc1pg02hps" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_123.png" id="144_sj4kr"]
-[ext_resource type="Texture2D" uid="uid://r6qcsme2wqb0" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_124.png" id="145_j25i1"]
-[ext_resource type="Texture2D" uid="uid://cjuujehecrjph" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_125.png" id="146_6fryu"]
-[ext_resource type="Texture2D" uid="uid://bsoarnqcx5uo4" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_126.png" id="147_fs411"]
-[ext_resource type="Texture2D" uid="uid://bea0obvm7pw3c" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_00.png" id="148_hwstm"]
-[ext_resource type="Texture2D" uid="uid://bguhyejw4n8wc" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_01.png" id="149_gfepb"]
-[ext_resource type="Texture2D" uid="uid://b8dwjwhtkm4ve" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_02.png" id="150_74f56"]
-[ext_resource type="Texture2D" uid="uid://dw0o7oebae84p" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_03.png" id="151_ejhan"]
-[ext_resource type="Texture2D" uid="uid://deqxqf8rldq5x" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_04.png" id="152_2a7td"]
-[ext_resource type="Texture2D" uid="uid://cgm2o8wdg3xkh" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_05.png" id="153_7nc6g"]
-[ext_resource type="Texture2D" uid="uid://1y7mlajhnjkm" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_06.png" id="154_yqwqt"]
-[ext_resource type="Texture2D" uid="uid://ldf2iqls1eln" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_07.png" id="155_3rjva"]
-[ext_resource type="Texture2D" uid="uid://bkc2gqjrnnb7r" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_08.png" id="156_t7s55"]
-[ext_resource type="Texture2D" uid="uid://xc7x86gg02cr" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_09.png" id="157_qncbm"]
-[ext_resource type="Texture2D" uid="uid://b0rtk0bhlkiid" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_10.png" id="158_w3t41"]
-[ext_resource type="Texture2D" uid="uid://b61in104to48f" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_11.png" id="159_lb44y"]
-[ext_resource type="Texture2D" uid="uid://d4f8cfegfj83" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_12.png" id="160_kbwms"]
-[ext_resource type="Texture2D" uid="uid://bgx0qe02gah80" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_13.png" id="161_7avhn"]
-[ext_resource type="Texture2D" uid="uid://d20aoau0lbpfc" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_14.png" id="162_206hc"]
-[ext_resource type="Texture2D" uid="uid://2bfpwi32lmy1" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_15.png" id="163_oyogl"]
-[ext_resource type="Texture2D" uid="uid://bca44yhyfbx8v" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_16.png" id="164_duyiu"]
-[ext_resource type="Texture2D" uid="uid://7elmo1eajnx2" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_17.png" id="165_pe42n"]
-[ext_resource type="Texture2D" uid="uid://cchdldfoqunqg" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_18.png" id="166_6444n"]
-[ext_resource type="Texture2D" uid="uid://dyt2nt8qh66xc" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_19.png" id="167_oqg3v"]
-[ext_resource type="Texture2D" uid="uid://bweocfvf4oaf8" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_20.png" id="168_km14l"]
-[ext_resource type="Texture2D" uid="uid://d2qhx8y57x0bt" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_21.png" id="169_g6f56"]
-[ext_resource type="Texture2D" uid="uid://q2467kwxmxw0" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_22.png" id="170_t3raa"]
-[ext_resource type="Texture2D" uid="uid://0il1fv5e705w" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_23.png" id="171_noidu"]
-[ext_resource type="Texture2D" uid="uid://ctctmeamwq2h7" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_24.png" id="172_6mny2"]
-[ext_resource type="Texture2D" uid="uid://dx5l6jnk47o4p" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_25.png" id="173_dyac1"]
-[ext_resource type="Texture2D" uid="uid://d1qjlorf1nx7w" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_26.png" id="174_n55gy"]
-[ext_resource type="Texture2D" uid="uid://bwg01hus3r0wk" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_27.png" id="175_fufyh"]
-[ext_resource type="Texture2D" uid="uid://dtd8wtl2ygtlu" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_28.png" id="176_a112e"]
-[ext_resource type="Texture2D" uid="uid://da55noca5jjdh" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_29.png" id="177_ffnnm"]
-[ext_resource type="Texture2D" uid="uid://cv5jo6obj1gcr" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_30.png" id="178_anc8h"]
-[ext_resource type="Texture2D" uid="uid://dq7ogfcisagv7" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_31.png" id="179_ye0qe"]
-[ext_resource type="Texture2D" uid="uid://dv3viyxb4pgxj" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_32.png" id="180_4gjpf"]
-[ext_resource type="Texture2D" uid="uid://dqj11b6mr6j1y" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_33.png" id="181_uvodk"]
-[ext_resource type="Texture2D" uid="uid://5q5i2ati2jyk" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_34.png" id="182_tcgl8"]
-[ext_resource type="Texture2D" uid="uid://bawq16j6dyjpt" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_35.png" id="183_71ss8"]
-[ext_resource type="Texture2D" uid="uid://d3ixovt38n2rx" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_36.png" id="184_rpqgx"]
-[ext_resource type="PackedScene" uid="uid://cxwt44nrspiye" path="res://scenes/final_boss_quiz.tscn" id="185_iq8qe"]
-[ext_resource type="Texture2D" uid="uid://cw0f5u18vrftq" path="res://images/green.png" id="186_mgmce"]
+[ext_resource type="Texture2D" uid="uid://bce2c2dk3mrfs" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_01.png" id="2_yuufq"]
+[ext_resource type="Texture2D" uid="uid://bxvjwuau1crv7" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_02.png" id="3_idarp"]
+[ext_resource type="Texture2D" uid="uid://cka0q7mni7tq0" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_03.png" id="4_5m4le"]
+[ext_resource type="Texture2D" uid="uid://riab04or4nvk" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_04.png" id="5_wvxcp"]
+[ext_resource type="Texture2D" uid="uid://byf7fs4xe7i7k" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_05.png" id="6_17ukt"]
+[ext_resource type="Texture2D" uid="uid://csn2q6gjhia6j" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_06.png" id="7_rldgj"]
+[ext_resource type="Texture2D" uid="uid://b1yhn8c4sil0s" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_07.png" id="8_jn5wq"]
+[ext_resource type="Texture2D" uid="uid://vdartlgbsxys" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_08.png" id="9_0ivay"]
+[ext_resource type="Texture2D" uid="uid://d1n52vqiuxlwl" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_09.png" id="10_8qf2t"]
+[ext_resource type="Texture2D" uid="uid://bvcutmeteapsj" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_10.png" id="11_et5d1"]
+[ext_resource type="Texture2D" uid="uid://c55x5ojlvl06l" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_11.png" id="12_eymbc"]
+[ext_resource type="Texture2D" uid="uid://dgichc8eo5tht" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_12.png" id="13_cknyw"]
+[ext_resource type="Texture2D" uid="uid://deafuaf516l16" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_13.png" id="14_ca30f"]
+[ext_resource type="Texture2D" uid="uid://b8vi2udxd1jfn" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_14.png" id="15_00cf3"]
+[ext_resource type="Texture2D" uid="uid://0ndap8ceeg57" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_15.png" id="16_rph6m"]
+[ext_resource type="Texture2D" uid="uid://b2b42j4d5t803" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_16.png" id="17_ym8w5"]
+[ext_resource type="Texture2D" uid="uid://nc8e0bewkx7d" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_17.png" id="18_bhjws"]
+[ext_resource type="Texture2D" uid="uid://wsybn87kuapk" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_18.png" id="19_effwc"]
+[ext_resource type="Texture2D" uid="uid://ctusrjfu2maxp" path="res://images/final_boss_sprite/attack/Alien_Boss_01-Stage_1_Attack_01_19.png" id="20_3xtx7"]
+[ext_resource type="Texture2D" uid="uid://myb1wfwvufhl" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_000.png" id="21_xgpok"]
+[ext_resource type="Texture2D" uid="uid://dub41tcojy442" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_001.png" id="22_64wsp"]
+[ext_resource type="Texture2D" uid="uid://d4f18gryyjfpj" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_002.png" id="23_exeu5"]
+[ext_resource type="Texture2D" uid="uid://gjp4jfbrnvbn" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_003.png" id="24_84hfm"]
+[ext_resource type="Texture2D" uid="uid://cc2q3n7wy5jdn" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_004.png" id="25_hqkbx"]
+[ext_resource type="Texture2D" uid="uid://ohp1xp8nl3tb" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_005.png" id="26_205fs"]
+[ext_resource type="Texture2D" uid="uid://catd24nmphp2m" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_006.png" id="27_ymiyg"]
+[ext_resource type="Texture2D" uid="uid://dj1lb5f71q5fe" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_007.png" id="28_drma4"]
+[ext_resource type="Texture2D" uid="uid://bseksrhuvvy0t" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_008.png" id="29_n7gkt"]
+[ext_resource type="Texture2D" uid="uid://1sdacfohubpd" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_009.png" id="30_bgg51"]
+[ext_resource type="Texture2D" uid="uid://b47n4xsrdsh51" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_010.png" id="31_o2sjf"]
+[ext_resource type="Texture2D" uid="uid://bj6wri2ppfi6j" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_011.png" id="32_tfbx4"]
+[ext_resource type="Texture2D" uid="uid://m3bpcp47m2nw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_012.png" id="33_qfpxw"]
+[ext_resource type="Texture2D" uid="uid://daapxrf5lc2mi" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_013.png" id="34_dkrh2"]
+[ext_resource type="Texture2D" uid="uid://dko3b2h2y2ikx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_014.png" id="35_f47qr"]
+[ext_resource type="Texture2D" uid="uid://dlkdt4dtj4wd3" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_015.png" id="36_ie7mi"]
+[ext_resource type="Texture2D" uid="uid://ddqyby3m5lxsp" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_016.png" id="37_osag0"]
+[ext_resource type="Texture2D" uid="uid://cpj4rl7ig6vj8" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_017.png" id="38_78vls"]
+[ext_resource type="Texture2D" uid="uid://ba21eaqffxqh" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_018.png" id="39_4jjgf"]
+[ext_resource type="Texture2D" uid="uid://c8hewaj4i0a0b" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_019.png" id="40_2at3a"]
+[ext_resource type="Texture2D" uid="uid://ovcnw23blny6" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_020.png" id="41_d2xbe"]
+[ext_resource type="Texture2D" uid="uid://cjmbrojwu6mmg" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_021.png" id="42_sads2"]
+[ext_resource type="Texture2D" uid="uid://dykewxki1avkx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_022.png" id="43_opye8"]
+[ext_resource type="Texture2D" uid="uid://du08u6k2douqy" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_023.png" id="44_6ur2n"]
+[ext_resource type="Texture2D" uid="uid://cswgaagepbnh2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_024.png" id="45_hoj6g"]
+[ext_resource type="Texture2D" uid="uid://dph67wqdp1cby" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_025.png" id="46_6kdx1"]
+[ext_resource type="Texture2D" uid="uid://cp03vdgy4cwhq" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_026.png" id="47_o2gxq"]
+[ext_resource type="Texture2D" uid="uid://cyyskhhiudy2x" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_027.png" id="48_gil0o"]
+[ext_resource type="Texture2D" uid="uid://dk1euat1h6ae1" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_028.png" id="49_l0x7b"]
+[ext_resource type="Texture2D" uid="uid://c0jfl1iqf4lja" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_029.png" id="50_g28sx"]
+[ext_resource type="Texture2D" uid="uid://be3ucullb8hfy" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_030.png" id="51_bttw0"]
+[ext_resource type="Texture2D" uid="uid://mrwkhax6arww" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_031.png" id="52_1eqf3"]
+[ext_resource type="Texture2D" uid="uid://dmhj050u7ol4m" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_032.png" id="53_6gcir"]
+[ext_resource type="Texture2D" uid="uid://c8c1ld0qv5uq1" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_033.png" id="54_0c8k1"]
+[ext_resource type="Texture2D" uid="uid://ctep5w4837uhf" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_034.png" id="55_s3kql"]
+[ext_resource type="Texture2D" uid="uid://lvm5ubaq60ie" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_035.png" id="56_f6whm"]
+[ext_resource type="Texture2D" uid="uid://dgusf2kioyqg2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_036.png" id="57_fr2j2"]
+[ext_resource type="Texture2D" uid="uid://cb6lys6yfcy0l" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_037.png" id="58_q5wt4"]
+[ext_resource type="Texture2D" uid="uid://f3000f4t7uws" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_038.png" id="59_67xd8"]
+[ext_resource type="Texture2D" uid="uid://4bpybfymkvre" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_039.png" id="60_nlgjh"]
+[ext_resource type="Texture2D" uid="uid://bxebwk48g73tp" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_040.png" id="61_bce7s"]
+[ext_resource type="Texture2D" uid="uid://bxd3v3e15gvit" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_041.png" id="62_hmrtj"]
+[ext_resource type="Texture2D" uid="uid://d24kwmke8n1s6" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_042.png" id="63_qccjk"]
+[ext_resource type="Texture2D" uid="uid://cisn7ar62h8xo" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_043.png" id="64_rwtmi"]
+[ext_resource type="Texture2D" uid="uid://d15o83jvr4f71" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_044.png" id="65_bfpn4"]
+[ext_resource type="Texture2D" uid="uid://d4xb5tpv1e2f" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_045.png" id="66_5yiw3"]
+[ext_resource type="Texture2D" uid="uid://do83p7taqi2j7" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_046.png" id="67_nknsu"]
+[ext_resource type="Texture2D" uid="uid://isyaqswk8ml6" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_047.png" id="68_bae1d"]
+[ext_resource type="Texture2D" uid="uid://dhav3p4cp6qoj" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_048.png" id="69_x23np"]
+[ext_resource type="Texture2D" uid="uid://b5kmlvf1exi8r" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_049.png" id="70_ug7wg"]
+[ext_resource type="Texture2D" uid="uid://4mn1mhnxce4m" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_050.png" id="71_ymiyt"]
+[ext_resource type="Texture2D" uid="uid://b4a50u06rkawe" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_051.png" id="72_tafh8"]
+[ext_resource type="Texture2D" uid="uid://bailb2hh3kg1q" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_052.png" id="73_1r85r"]
+[ext_resource type="Texture2D" uid="uid://cxm0ssq24ydpd" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_053.png" id="74_l7vu8"]
+[ext_resource type="Texture2D" uid="uid://baggj0u8oingp" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_054.png" id="75_vrojb"]
+[ext_resource type="Texture2D" uid="uid://c6jkl3wcy2g4o" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_055.png" id="76_kfyas"]
+[ext_resource type="Texture2D" uid="uid://bw8fkbgj4id8e" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_056.png" id="77_u4nop"]
+[ext_resource type="Texture2D" uid="uid://cdof7nofmjs1" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_057.png" id="78_h81hb"]
+[ext_resource type="Texture2D" uid="uid://c5mmgc2eqnr65" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_058.png" id="79_gyooe"]
+[ext_resource type="Texture2D" uid="uid://byycrgp4fplmu" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_059.png" id="80_yt7qr"]
+[ext_resource type="Texture2D" uid="uid://ctm5c7ku7epbm" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_060.png" id="81_6ch64"]
+[ext_resource type="Texture2D" uid="uid://bh6ty7gtxkvrx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_061.png" id="82_2kbd0"]
+[ext_resource type="Texture2D" uid="uid://ds2c602r3wlkn" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_062.png" id="83_lo1jj"]
+[ext_resource type="Texture2D" uid="uid://beglq6ujo8ou2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_063.png" id="84_ypae4"]
+[ext_resource type="Texture2D" uid="uid://d0xhnbukvby71" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_064.png" id="85_4o1pk"]
+[ext_resource type="Texture2D" uid="uid://d2aqd1nrv4jxw" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_065.png" id="86_unn2v"]
+[ext_resource type="Texture2D" uid="uid://cjnb54kkn84on" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_066.png" id="87_y48l4"]
+[ext_resource type="Texture2D" uid="uid://b3pjkdidhi5q7" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_067.png" id="88_onfbp"]
+[ext_resource type="Texture2D" uid="uid://bc4ydj2to2220" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_068.png" id="89_wlw6v"]
+[ext_resource type="Texture2D" uid="uid://cmndeb613qya6" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_069.png" id="90_5b3je"]
+[ext_resource type="Texture2D" uid="uid://caq5g0n74nmku" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_070.png" id="91_6wna1"]
+[ext_resource type="Texture2D" uid="uid://dskpw47l7dahh" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_071.png" id="92_hibbq"]
+[ext_resource type="Texture2D" uid="uid://co2qqd1d64325" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_072.png" id="93_lbjb7"]
+[ext_resource type="Texture2D" uid="uid://knx7r3f6ql80" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_073.png" id="94_xjdud"]
+[ext_resource type="Texture2D" uid="uid://cyqe8s0v3qw8b" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_074.png" id="95_g3uj6"]
+[ext_resource type="Texture2D" uid="uid://dloa56uumejp6" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_075.png" id="96_ubqlu"]
+[ext_resource type="Texture2D" uid="uid://3r1ekdj1n40y" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_076.png" id="97_mgi0s"]
+[ext_resource type="Texture2D" uid="uid://b13fymd37mw4u" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_077.png" id="98_88nyb"]
+[ext_resource type="Texture2D" uid="uid://cmvucegt04u1q" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_078.png" id="99_cvs7k"]
+[ext_resource type="Texture2D" uid="uid://oayqqmg3gyhq" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_079.png" id="100_g17hf"]
+[ext_resource type="Texture2D" uid="uid://dyk3qktgw5q04" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_080.png" id="101_5ftbu"]
+[ext_resource type="Texture2D" uid="uid://bh3i87ny824g2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_081.png" id="102_7xiv6"]
+[ext_resource type="Texture2D" uid="uid://bdntm3icc3l4r" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_082.png" id="103_x4iow"]
+[ext_resource type="Texture2D" uid="uid://dg7xuaxdppw64" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_083.png" id="104_au3um"]
+[ext_resource type="Texture2D" uid="uid://b2jl1x868dp31" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_084.png" id="105_xbl2y"]
+[ext_resource type="Texture2D" uid="uid://dlh8s2lh7d36m" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_085.png" id="106_207uw"]
+[ext_resource type="Texture2D" uid="uid://c1i7nwxqowcek" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_086.png" id="107_w42ae"]
+[ext_resource type="Texture2D" uid="uid://bgrnnvjdtf23h" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_087.png" id="108_y4n7t"]
+[ext_resource type="Texture2D" uid="uid://b7gpg1w4h6knb" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_088.png" id="109_5aheb"]
+[ext_resource type="Texture2D" uid="uid://bt7884krgy4s0" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_089.png" id="110_uin17"]
+[ext_resource type="Texture2D" uid="uid://c3pdhgsgmvgne" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_090.png" id="111_fydyt"]
+[ext_resource type="Texture2D" uid="uid://bd2dun0mg3dcj" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_091.png" id="112_5dinp"]
+[ext_resource type="Texture2D" uid="uid://coapyu7fd32ru" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_092.png" id="113_vilos"]
+[ext_resource type="Texture2D" uid="uid://onvmlepf3vja" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_093.png" id="114_qgkpj"]
+[ext_resource type="Texture2D" uid="uid://bcc1u6dfwtqvy" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_094.png" id="115_nf5qb"]
+[ext_resource type="Texture2D" uid="uid://cyxmveiinf52f" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_095.png" id="116_hja2e"]
+[ext_resource type="Texture2D" uid="uid://c0rdfvlmvpnr7" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_096.png" id="117_5vujy"]
+[ext_resource type="Texture2D" uid="uid://dixdslc0p6y6w" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_097.png" id="118_wksml"]
+[ext_resource type="Texture2D" uid="uid://be75wjvq24od7" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_098.png" id="119_tf25e"]
+[ext_resource type="Texture2D" uid="uid://df2mf2ydtbon4" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_099.png" id="120_fhqtq"]
+[ext_resource type="Texture2D" uid="uid://dmwqsy7latj24" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_100.png" id="121_afwh7"]
+[ext_resource type="Texture2D" uid="uid://b73bylnyia0q7" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_101.png" id="122_n7ngh"]
+[ext_resource type="Texture2D" uid="uid://djtlmm4uwoa7n" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_102.png" id="123_qsj86"]
+[ext_resource type="Texture2D" uid="uid://cpnpd6o8w6cmt" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_103.png" id="124_2nkgp"]
+[ext_resource type="Texture2D" uid="uid://by07258lq2tyu" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_104.png" id="125_oxweg"]
+[ext_resource type="Texture2D" uid="uid://cnv67dbjt5t1p" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_105.png" id="126_dmtru"]
+[ext_resource type="Texture2D" uid="uid://cybwa72hest6h" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_106.png" id="127_xk5ex"]
+[ext_resource type="Texture2D" uid="uid://b0e5isgdo4728" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_107.png" id="128_ec2ry"]
+[ext_resource type="Texture2D" uid="uid://bg1h2j6ks861n" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_108.png" id="129_j7sll"]
+[ext_resource type="Texture2D" uid="uid://cu0j00euu8n7d" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_109.png" id="130_ws7lf"]
+[ext_resource type="Texture2D" uid="uid://r2exi15heoyy" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_110.png" id="131_r46hf"]
+[ext_resource type="Texture2D" uid="uid://cv1mkka28801y" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_111.png" id="132_ex4vy"]
+[ext_resource type="Texture2D" uid="uid://ciqbm01vbpcew" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_112.png" id="133_5owj2"]
+[ext_resource type="Texture2D" uid="uid://bw7f13eno2npl" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_113.png" id="134_6nwqu"]
+[ext_resource type="Texture2D" uid="uid://cbsqa2hxg5rox" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_114.png" id="135_ev136"]
+[ext_resource type="Texture2D" uid="uid://bcnqbn6oqhukb" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_115.png" id="136_d63bv"]
+[ext_resource type="Texture2D" uid="uid://b0lky0tppxxu0" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_116.png" id="137_xawu2"]
+[ext_resource type="Texture2D" uid="uid://kpbjbnnofih3" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_117.png" id="138_4ros8"]
+[ext_resource type="Texture2D" uid="uid://bpaw2nu010ub2" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_118.png" id="139_itsbj"]
+[ext_resource type="Texture2D" uid="uid://b20oo7q5efkmh" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_119.png" id="140_mvps1"]
+[ext_resource type="Texture2D" uid="uid://dmk0d3tkr8w8e" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_120.png" id="141_wchwe"]
+[ext_resource type="Texture2D" uid="uid://b5j7fqk45aqx" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_121.png" id="142_qxfcg"]
+[ext_resource type="Texture2D" uid="uid://bggwpopr6tuwe" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_122.png" id="143_3jkna"]
+[ext_resource type="Texture2D" uid="uid://cy71x3oemvarr" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_123.png" id="144_sj4kr"]
+[ext_resource type="Texture2D" uid="uid://bnldt6sv8br65" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_124.png" id="145_j25i1"]
+[ext_resource type="Texture2D" uid="uid://b4jxqi8nxc2d7" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_125.png" id="146_6fryu"]
+[ext_resource type="Texture2D" uid="uid://cd2q50oc03wj0" path="res://images/final_boss_sprite/death/Alien_Boss_01-Death_126.png" id="147_fs411"]
+[ext_resource type="Texture2D" uid="uid://cn36vyl154lxd" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_00.png" id="148_hwstm"]
+[ext_resource type="Texture2D" uid="uid://bgusyvwdky7w4" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_01.png" id="149_gfepb"]
+[ext_resource type="Texture2D" uid="uid://c13pep5gtmfpl" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_02.png" id="150_74f56"]
+[ext_resource type="Texture2D" uid="uid://bofe54kimdjjt" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_03.png" id="151_ejhan"]
+[ext_resource type="Texture2D" uid="uid://bltbnuc004hf4" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_04.png" id="152_2a7td"]
+[ext_resource type="Texture2D" uid="uid://mdvo8rtkigf8" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_05.png" id="153_7nc6g"]
+[ext_resource type="Texture2D" uid="uid://crntoiqjm61fy" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_06.png" id="154_yqwqt"]
+[ext_resource type="Texture2D" uid="uid://gymxtygjg3tr" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_07.png" id="155_3rjva"]
+[ext_resource type="Texture2D" uid="uid://drpjw8i4532jq" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_08.png" id="156_t7s55"]
+[ext_resource type="Texture2D" uid="uid://sseecxfmvt32" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_09.png" id="157_qncbm"]
+[ext_resource type="Texture2D" uid="uid://d1b7skdcjje7l" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_10.png" id="158_w3t41"]
+[ext_resource type="Texture2D" uid="uid://586sohgxglic" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_11.png" id="159_lb44y"]
+[ext_resource type="Texture2D" uid="uid://dxy77ucq2u5d2" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_12.png" id="160_kbwms"]
+[ext_resource type="Texture2D" uid="uid://04ae0nqiwddq" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_13.png" id="161_7avhn"]
+[ext_resource type="Texture2D" uid="uid://cs7nycyl651pq" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_14.png" id="162_206hc"]
+[ext_resource type="Texture2D" uid="uid://3e5n3482ohx1" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_15.png" id="163_oyogl"]
+[ext_resource type="Texture2D" uid="uid://d2uwy4o846rcu" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_16.png" id="164_duyiu"]
+[ext_resource type="Texture2D" uid="uid://crcat2e7r381e" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_17.png" id="165_pe42n"]
+[ext_resource type="Texture2D" uid="uid://g1plrafetkfu" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_18.png" id="166_6444n"]
+[ext_resource type="Texture2D" uid="uid://dql154v7la5pa" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_19.png" id="167_oqg3v"]
+[ext_resource type="Texture2D" uid="uid://cq6j6180u0d56" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_20.png" id="168_km14l"]
+[ext_resource type="Texture2D" uid="uid://uel41ciond1l" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_21.png" id="169_g6f56"]
+[ext_resource type="Texture2D" uid="uid://btnhnhuhai8co" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_22.png" id="170_t3raa"]
+[ext_resource type="Texture2D" uid="uid://cqdqm7kngpj34" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_23.png" id="171_noidu"]
+[ext_resource type="Texture2D" uid="uid://bfrqw6e11kjdp" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_24.png" id="172_6mny2"]
+[ext_resource type="Texture2D" uid="uid://cqg8oq7m0anos" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_25.png" id="173_dyac1"]
+[ext_resource type="Texture2D" uid="uid://b3dq886wlh5k6" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_26.png" id="174_n55gy"]
+[ext_resource type="Texture2D" uid="uid://bflmj8rxx31br" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_27.png" id="175_fufyh"]
+[ext_resource type="Texture2D" uid="uid://c31marqiolrwk" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_28.png" id="176_a112e"]
+[ext_resource type="Texture2D" uid="uid://cnhley6ppftti" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_29.png" id="177_ffnnm"]
+[ext_resource type="Texture2D" uid="uid://c5fv5tplv72jt" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_30.png" id="178_anc8h"]
+[ext_resource type="Texture2D" uid="uid://d0rhhfi8ig777" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_31.png" id="179_ye0qe"]
+[ext_resource type="Texture2D" uid="uid://cxrkg34ruljtc" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_32.png" id="180_4gjpf"]
+[ext_resource type="Texture2D" uid="uid://bx4vnqaqpe6wi" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_33.png" id="181_uvodk"]
+[ext_resource type="Texture2D" uid="uid://chkq3e03hb6si" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_34.png" id="182_tcgl8"]
+[ext_resource type="Texture2D" uid="uid://cynl36aglyg51" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_35.png" id="183_71ss8"]
+[ext_resource type="Texture2D" uid="uid://bca8rajdly42" path="res://images/final_boss_sprite/idle/Alien_Boss_01-Stage_1_Idle_36.png" id="184_rpqgx"]
+[ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="185_7a10n"]
+[ext_resource type="Texture2D" uid="uid://bw84qa7cs2ovi" path="res://unnecessary-files/green.png" id="186_lnu5w"]
+[ext_resource type="PackedScene" uid="uid://dnk6l6w3mks4c" path="res://scenes/intro_final_code_pages/intro_final_boss_code_level1.tscn" id="186_mbuyt"]
+[ext_resource type="PackedScene" uid="uid://bky3eiphjcu10" path="res://scenes/intro_final_code_pages/intro_final_boss_code_level2.tscn" id="187_uw81n"]
+[ext_resource type="PackedScene" uid="uid://bjef712hn32mb" path="res://scenes/intro_final_code_pages/intro_final_boss_code_level3.tscn" id="188_6gylu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xc4v7"]
 size = Vector2(354, 771)
@@ -253,6 +256,134 @@ animations = [{
 "loop": false,
 "name": &"attack",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_f6whm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_fr2j2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_q5wt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_67xd8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_nlgjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_bce7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_hmrtj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_qccjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_rwtmi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_bfpn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_5yiw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_nknsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_bae1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_x23np")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_ug7wg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_ymiyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_tafh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_1r85r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_1r85r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_tafh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_ymiyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_ug7wg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_x23np")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_bae1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_nknsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_5yiw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_bfpn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_rwtmi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_qccjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_hmrtj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_bce7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_nlgjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_67xd8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_q5wt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_fr2j2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_f6whm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_s3kql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_0c8k1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_6gcir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_1eqf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_g28sx")
+}],
+"loop": false,
+"name": &"attacked",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -778,33 +909,40 @@ top_level = true
 position = Vector2(847, 524)
 scale = Vector2(0.747169, 0.742282)
 sprite_frames = SubResource("SpriteFrames_h2xrj")
-animation = &"death"
+animation = &"attacked"
 autoplay = "idle"
-frame = 126
-frame_progress = 1.0
 
-[node name="boss" parent="final_boss_area" instance=ExtResource("185_iq8qe")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = -133.0
-offset_top = -472.0
-offset_right = -133.0
-offset_bottom = -472.0
-grow_horizontal = 1
-grow_vertical = 1
-scale = Vector2(0.65, 0.65)
+[node name="boss_level_window" parent="final_boss_area" instance=ExtResource("185_7a10n")]
+offset_left = -194.0
+offset_top = -542.0
+offset_right = 960.0
+offset_bottom = 106.0
+scale = Vector2(0.8, 0.8)
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="final_boss_area/boss"]
+[node name="boss" parent="final_boss_area/boss_level_window" instance=ExtResource("186_mbuyt")]
+layout_mode = 1
+offset_left = 2.0
+offset_top = -1.0
+offset_right = 2.0
+offset_bottom = -1.0
+
+[node name="boss2" parent="final_boss_area/boss_level_window" instance=ExtResource("187_uw81n")]
+visible = false
+layout_mode = 1
+
+[node name="boss3" parent="final_boss_area/boss_level_window" instance=ExtResource("188_6gylu")]
+visible = false
+layout_mode = 1
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="final_boss_area/boss_level_window"]
 top_level = true
-layout_mode = 0
-offset_left = 810.0
-offset_top = 105.0
-offset_right = 1010.0
-offset_bottom = 131.0
+offset_left = 915.0
+offset_top = 42.0
+offset_right = 1115.0
+offset_bottom = 68.0
 scale = Vector2(0.5, 0.5)
 value = 100.0
-texture_progress = ExtResource("186_mgmce")
+texture_progress = ExtResource("186_lnu5w")
 
 [node name="boss_area" type="Area2D" parent="."]
 position = Vector2(731, 249)
@@ -820,3 +958,7 @@ debug_color = Color(0.721569, 0.431373, 0.54902, 0.419608)
 position = Vector2(115, 10)
 shape = SubResource("RectangleShape2D_rrng8")
 debug_color = Color(0.796078, 0.380392, 0.494118, 0.419608)
+
+[node name="howl" type="AudioStreamPlayer" parent="."]
+
+[node name="growl" type="AudioStreamPlayer" parent="."]
