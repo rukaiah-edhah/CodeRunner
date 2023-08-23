@@ -1,13 +1,7 @@
 extends Control
 
 var messages = [
-    "Ah, but more marvels await! Not only can you whisper to singular letters, but summon a multitude with 'slicing'. Envision it as a chosen span upon the necklace, or a gathering of dancers beckoned forth.
-Contemplate this embodiment:
-
-my_string = 'Hello, World!'
-
-# Here converges 'H', 'e', 'l', 'l', 'o’ 
-group_wave = my_string[0:5] "
+    "Ah, but more marvels await! Not only can you whisper to singular letters, but summon a multitude with 'slicing'. Envision it as a chosen span upon the necklace, or a gathering of dancers beckoned forth."
     ]
 
 var typing_speed = .1
