@@ -1,0 +1,139 @@
+[gd_scene load_steps=29 format=3 uid="uid://cp7kgib8no6yf"]
+
+[ext_resource type="Script" path="res://scripts/Mini_Enemy.gd" id="1_c0b8x"]
+[ext_resource type="Texture2D" uid="uid://l1a5iu67bfku" path="res://images/mini_enemies_python/__droid_02_dead_000.png" id="2_5ukyl"]
+[ext_resource type="Texture2D" uid="uid://wcjampw0bl2s" path="res://images/mini_enemies_python/__droid_02_dead_001.png" id="3_3ej06"]
+[ext_resource type="Texture2D" uid="uid://bruow33d6scjs" path="res://images/mini_enemies_python/__droid_02_dead_002.png" id="4_gmtxp"]
+[ext_resource type="Texture2D" uid="uid://co3k0upxjj0ka" path="res://images/mini_enemies_python/__droid_02_dead_003.png" id="5_m2iil"]
+[ext_resource type="Texture2D" uid="uid://bifaur70flxyy" path="res://images/mini_enemies_python/__droid_02_dead_004.png" id="6_58n88"]
+[ext_resource type="Texture2D" uid="uid://b41d1uxfsjlme" path="res://images/mini_enemies_python/__droid_02_dead_005.png" id="7_fmm0v"]
+[ext_resource type="Texture2D" uid="uid://btuy801bt2ceb" path="res://images/mini_enemies_python/__droid_02_dead_006.png" id="8_o5ivt"]
+[ext_resource type="Texture2D" uid="uid://cwcsblomllj46" path="res://images/mini_enemies_python/__droid_02_dead_007.png" id="9_isvj7"]
+[ext_resource type="Texture2D" uid="uid://p4h3vwjncwpi" path="res://images/mini_enemies_python/__droid_02_dead_008.png" id="10_l88sk"]
+[ext_resource type="Texture2D" uid="uid://bnknct8n8lxan" path="res://images/mini_enemies_python/__droid_02_dead_009.png" id="11_mwin5"]
+[ext_resource type="Texture2D" uid="uid://bh60304xd3rul" path="res://images/mini_enemies_python/__droid_02_walk_000.png" id="12_8nu2f"]
+[ext_resource type="Texture2D" uid="uid://dpawdev8mxd5s" path="res://images/mini_enemies_python/__droid_02_walk_001.png" id="13_u3nq0"]
+[ext_resource type="Texture2D" uid="uid://bqfoenfpunpc0" path="res://images/mini_enemies_python/__droid_02_walk_002.png" id="14_2chmd"]
+[ext_resource type="Texture2D" uid="uid://b01sssb5y0r2o" path="res://images/mini_enemies_python/__droid_02_walk_003.png" id="15_or6tv"]
+[ext_resource type="Texture2D" uid="uid://cg72nvucm1r5q" path="res://images/mini_enemies_python/__droid_02_walk_004.png" id="16_fb2lu"]
+[ext_resource type="Texture2D" uid="uid://gxqhcr8qa0k" path="res://images/mini_enemies_python/__droid_02_walk_005.png" id="17_4adnp"]
+[ext_resource type="Texture2D" uid="uid://dxhttid6qsn8l" path="res://images/mini_enemies_python/__droid_02_walk_006.png" id="18_mnjfc"]
+[ext_resource type="Texture2D" uid="uid://cm7lptbirsf28" path="res://images/mini_enemies_python/__droid_02_walk_007.png" id="19_frr4n"]
+[ext_resource type="Texture2D" uid="uid://dhkttxf8xnrlo" path="res://images/mini_enemies_python/__droid_02_walk_scanning_000.png" id="20_1ps4u"]
+[ext_resource type="Texture2D" uid="uid://kqi67h3qjl3l" path="res://images/mini_enemies_python/__droid_02_walk_scanning_001.png" id="21_soajx"]
+[ext_resource type="Texture2D" uid="uid://prbl36pl3603" path="res://images/mini_enemies_python/__droid_02_walk_scanning_002.png" id="22_6dk46"]
+[ext_resource type="Texture2D" uid="uid://c26jvwprrjp4g" path="res://images/mini_enemies_python/__droid_02_walk_scanning_003.png" id="23_wgtbt"]
+[ext_resource type="Texture2D" uid="uid://dbmlpr1ku3teu" path="res://images/mini_enemies_python/__droid_02_walk_scanning_004.png" id="24_3timf"]
+[ext_resource type="Texture2D" uid="uid://qdco1j2v4yj2" path="res://images/mini_enemies_python/__droid_02_walk_scanning_005.png" id="25_7thlc"]
+[ext_resource type="Texture2D" uid="uid://bspl8u4d0hh3v" path="res://images/mini_enemies_python/__droid_02_walk_scanning_006.png" id="26_u6mh6"]
+[ext_resource type="Texture2D" uid="uid://bhkjeyc4rfrs3" path="res://images/mini_enemies_python/__droid_02_walk_scanning_007.png" id="27_gst47"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h63gl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5ukyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3ej06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gmtxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_m2iil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_58n88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fmm0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_o5ivt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_isvj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_l88sk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mwin5")
+}],
+"loop": false,
+"name": &"Death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_8nu2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_u3nq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_2chmd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_or6tv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fb2lu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4adnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_mnjfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_frr4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1ps4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_soajx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6dk46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_wgtbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_3timf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_7thlc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_u6mh6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_gst47")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[node name="mini_enemy" type="CharacterBody2D" groups=["obstacles"]]
+script = ExtResource("1_c0b8x")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(6, -29)
+rotation = -6.28319
+scale = Vector2(0.222353, 0.142792)
+sprite_frames = SubResource("SpriteFrames_h63gl")
+animation = &"Run"
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-2, -5)
+scale = Vector2(1, 0.864092)
+polygon = PackedVector2Array(7, -64.8079, 15, -62.4933, 20, -61.3361, 28, -57.8642, 33, -54.3924, 34, -53.2351, 38, -48.6059, 40, -45.1341, 42, -40.5049, 42, -31.2467, 38, -28.9321, 34, -27.7748, 33, -25.4603, 31, -23.1457, 29, -21.9884, 26, -20.8311, 21, -20.8311, 21, -16.202, 20, -16.202, 20, -13.8874, 23, -13.8874, 23, -9.25827, 23, 1.15728, 25, 2.31457, 25, 5.78642, 32, 6.94371, 37, 10.4156, 47, 17.3593, 55, 24.303, 58, 26.6175, 57, 27.7748, 59, 28.9321, 58, 31.2467, 59, 32.404, 59, 34.7185, 58, 37.0331, 55, 38.1904, 51, 38.1904, 50, 37.0331, 48, 38.1904, 46, 35.8758, 43, 37.0331, 41, 37.0331, 35, 31.2467, 26, 21.9884, 24, 19.6738, 23, 18.5165, 22, 31.2467, 21, 32.404, 17, 33.5612, 17, 35.8758, 15, 35.8758, 14, 38.1904, 10, 39.3477, 6, 38.1904, 3, 35.8758, 3, 34.7185, 1, 33.5612, 1, 31.2467, 0, 32.404, -3, 33.5612, -3, 34.7185, -4, 35.8758, -4, 38.1904, -8, 40.5049, -12, 40.5049, -15, 39.3477, -16, 38.1904, -19, 37.0331, -19, 34.7185, -21, 34.7185, -24, 20.8311, -30, 17.3593, -32, 19.6738, -42, 28.9321, -51, 37.0331, -52, 38.1904, -54, 37.0331, -56, 39.3477, -59, 38.1904, -62, 39.3477, -66, 38.1904, -68, 37.0331, -69, 34.7185, -69, 32.404, -68, 31.2467, -68, 30.0894, -67, 28.9321, -68, 25.4603, -56, 17.3593, -42, 8.10099, -38, 5.78642, -34, 5.78642, -28, 6.94371, -27, 9.25827, -26, 10.4156, -26, 6.94371, -25, 2.31457, -25, -12.7301, -22, -13.8874, -22, -16.202, -23, -17.3593, -23, -20.8311, -29, -23.1457, -32, -26.6175, -32, -28.9321, -41, -30.0894, -42, -31.2467, -42, -35.8758, -40, -43.9768, -36, -52.0778, -28, -57.8642, -16, -62.4933, -5, -64.8079, 4, -64.8079)
+
+[node name="flip_timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true

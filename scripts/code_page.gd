@@ -5,8 +5,10 @@ signal take_damage
 signal all_correct
 
 var correct_answers = {
-    "background_color/code_container/panel/player_answer": "+",
-    "background_color/code_container/panel/player_answer2": "-",
+    "background_color/code_container/panel/player_answer": "if",
+    "background_color/code_container/panel/player_answer2": "print",
+    "background_color/code_container/panel/player_answer3": "else:",
+    "background_color/code_container/panel/player_answer4": "print(",
     # You can add more and the right answer; however, keep in mind to put the path inside a string without using $
 }
 
