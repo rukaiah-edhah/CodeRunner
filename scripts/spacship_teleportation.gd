@@ -23,11 +23,3 @@ func _change_scene():
     var new_scene = get_tree().change_scene_to_file("res://scenes/python_envir.tscn")
 
     
-    # _________CONTROLLING THE PLAYER'S POSITION IN THE NEW SCENE (will be tested later on)_________
-    #var current_scene = get_tree().current_scene
-    #for child in current_scene.get_children():
-        #print(child.name)
-    #var player = current_scene.get_node("player") 
-    #var spawn_position = current_scene.get_node("spawn_point").global_position
-    #player.global_position = spawn_position
-    # ______________________________________________________________________________________________
