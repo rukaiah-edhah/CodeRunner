@@ -1,45 +1,50 @@
-[gd_scene load_steps=61 format=3 uid="uid://beflo6v0nhir8"]
+[gd_scene load_steps=66 format=3 uid="uid://beflo6v0nhir8"]
 
 [ext_resource type="Script" path="res://scripts/mini_boss_level.gd" id="1_3e54w"]
 [ext_resource type="Script" path="res://scripts/block_area.gd" id="2_6jf0b"]
-[ext_resource type="Texture2D" uid="uid://bprftbpgawt6x" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_000.png" id="3_r6uoy"]
-[ext_resource type="Texture2D" uid="uid://rgmy7ab88ld" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_001.png" id="4_ka02g"]
-[ext_resource type="Texture2D" uid="uid://bvt5137cudap" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_002.png" id="5_63w84"]
-[ext_resource type="Texture2D" uid="uid://bvyiflerr0w4q" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_003.png" id="6_x26al"]
-[ext_resource type="Texture2D" uid="uid://dok1adtp8snfh" path="res://images/mini_boss/purple/__alien_creature_5_purple_die_004.png" id="7_h323g"]
-[ext_resource type="Texture2D" uid="uid://dt0buaspb2rvw" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_000.png" id="9_fgybe"]
-[ext_resource type="Texture2D" uid="uid://b8rqctuc8pm7s" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_001.png" id="10_kij2b"]
-[ext_resource type="Texture2D" uid="uid://cl20ti7wm501p" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_002.png" id="11_mdats"]
-[ext_resource type="Texture2D" uid="uid://ceekigvl67dgb" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_003.png" id="12_ccbvl"]
-[ext_resource type="Texture2D" uid="uid://blk1awvu7osle" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_004.png" id="13_80bom"]
-[ext_resource type="Texture2D" uid="uid://bk3swpvivro7c" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_005.png" id="14_xy1xv"]
-[ext_resource type="Texture2D" uid="uid://myop6fp0jmtu" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_006.png" id="15_wjk37"]
-[ext_resource type="Texture2D" uid="uid://b64ee7qtg56cw" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_007.png" id="16_8q7ii"]
-[ext_resource type="Texture2D" uid="uid://cwcrpird0kjk6" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_008.png" id="17_5a488"]
-[ext_resource type="Texture2D" uid="uid://c8si5jc31lnqw" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_009.png" id="18_8jnpc"]
-[ext_resource type="Texture2D" uid="uid://bov1rn5srhk4s" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_010.png" id="19_j8hlk"]
-[ext_resource type="Texture2D" uid="uid://wyapg77sul4x" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_011.png" id="20_6l1ch"]
-[ext_resource type="Texture2D" uid="uid://c4uqrvrjci3fn" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_012.png" id="21_0ww8t"]
-[ext_resource type="Texture2D" uid="uid://3kxfw20r1rcj" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_013.png" id="22_uoy32"]
-[ext_resource type="Texture2D" uid="uid://dciy4dvuj310o" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_014.png" id="23_7uj02"]
-[ext_resource type="Texture2D" uid="uid://q8n0ywb55aih" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_015.png" id="24_kff78"]
-[ext_resource type="Texture2D" uid="uid://ditrtjkjn18bb" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_016.png" id="25_jpw55"]
-[ext_resource type="Texture2D" uid="uid://cfkp05acvvdvf" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_017.png" id="26_h521j"]
-[ext_resource type="Texture2D" uid="uid://dugltcbnfi7nf" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_018.png" id="27_bxyc6"]
-[ext_resource type="Texture2D" uid="uid://cql1fa4hkfods" path="res://images/mini_boss/purple/__alien_creature_5_purple_idle_019.png" id="28_iaqqy"]
-[ext_resource type="Texture2D" uid="uid://uvpkqx0jh2wp" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_000.png" id="29_dyyiu"]
-[ext_resource type="Texture2D" uid="uid://ce5i6djc578px" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_001.png" id="30_ihofb"]
-[ext_resource type="Texture2D" uid="uid://mxb7uqhr7vmn" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_002.png" id="31_qgtv2"]
-[ext_resource type="Texture2D" uid="uid://dfrowjg7v6p1o" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_003.png" id="32_jird8"]
-[ext_resource type="Texture2D" uid="uid://byd0amn0rpm5l" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_004.png" id="33_v6p5l"]
-[ext_resource type="Texture2D" uid="uid://bp27tmcim4dpj" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_005.png" id="34_5575i"]
-[ext_resource type="Texture2D" uid="uid://ci1vo1gekcdaf" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_006.png" id="35_2d16q"]
-[ext_resource type="Texture2D" uid="uid://fwq3y2ymgj55" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_007.png" id="36_iuc10"]
-[ext_resource type="Texture2D" uid="uid://bhhmfrn1omb2" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_008.png" id="37_eu5ra"]
-[ext_resource type="Texture2D" uid="uid://bh8ndampn5pwb" path="res://images/mini_boss/purple/__alien_creature_5_purple_roar_009.png" id="38_y5a0u"]
+[ext_resource type="Texture2D" uid="uid://c1igykshqgeu2" path="res://images/mini_boss_python/__round_droid_dead_000.png" id="3_eyksl"]
+[ext_resource type="Texture2D" uid="uid://dk3jrv24l3vsf" path="res://images/mini_boss_python/__round_droid_dead_001.png" id="4_k5bsn"]
+[ext_resource type="Texture2D" uid="uid://6m8gbi7f7cuy" path="res://images/mini_boss_python/__round_droid_dead_002.png" id="5_qtl1b"]
+[ext_resource type="Texture2D" uid="uid://cqr756wgdop60" path="res://images/mini_boss_python/__round_droid_dead_003.png" id="6_ayfid"]
+[ext_resource type="Texture2D" uid="uid://tblcwbarpc4a" path="res://images/mini_boss_python/__round_droid_dead_004.png" id="7_x2820"]
+[ext_resource type="Texture2D" uid="uid://cnnojtn5pav60" path="res://images/mini_boss_python/__round_droid_dead_005.png" id="8_d3js0"]
+[ext_resource type="Texture2D" uid="uid://b3c4tecbixkc3" path="res://images/mini_boss_python/__round_droid_dead_006.png" id="9_td5df"]
+[ext_resource type="Texture2D" uid="uid://k7kk08q84gxb" path="res://images/mini_boss_python/__round_droid_dead_007.png" id="10_1pfi2"]
+[ext_resource type="Texture2D" uid="uid://drn0260inojue" path="res://images/mini_boss_python/__round_droid_dead_008.png" id="11_50fba"]
+[ext_resource type="Texture2D" uid="uid://qibo11a2u6w3" path="res://images/mini_boss_python/__round_droid_dead_009.png" id="12_sju1r"]
+[ext_resource type="Texture2D" uid="uid://cg3gj2toeuxd4" path="res://images/mini_boss_python/__round_droid_activated_idle_000.png" id="13_148px"]
+[ext_resource type="Texture2D" uid="uid://b0ifpgufqa3lv" path="res://images/mini_boss_python/__round_droid_activated_idle_001.png" id="14_i2iu5"]
+[ext_resource type="Texture2D" uid="uid://djtpmsa6uca4l" path="res://images/mini_boss_python/__round_droid_activated_idle_002.png" id="15_2kw7i"]
+[ext_resource type="Texture2D" uid="uid://cida65bkk2084" path="res://images/mini_boss_python/__round_droid_activated_idle_003.png" id="16_v1w5r"]
+[ext_resource type="Texture2D" uid="uid://crxntjxwro1y3" path="res://images/mini_boss_python/__round_droid_activated_idle_004.png" id="17_l6l1f"]
+[ext_resource type="Texture2D" uid="uid://df7kknp0h07a5" path="res://images/mini_boss_python/__round_droid_activated_idle_005.png" id="18_03c4t"]
+[ext_resource type="Texture2D" uid="uid://ddqugdba6l620" path="res://images/mini_boss_python/__round_droid_activated_idle_006.png" id="19_4fobo"]
+[ext_resource type="Texture2D" uid="uid://cmjdfw4ovkw83" path="res://images/mini_boss_python/__round_droid_activated_idle_007.png" id="20_d14yc"]
+[ext_resource type="Texture2D" uid="uid://gvevsqd6jb3s" path="res://images/mini_boss_python/__round_droid_activated_idle_008.png" id="21_gxttr"]
+[ext_resource type="Texture2D" uid="uid://cm6hjvjq5q17d" path="res://images/mini_boss_python/__round_droid_activated_idle_009.png" id="22_setio"]
+[ext_resource type="Texture2D" uid="uid://c2n633rexfuq1" path="res://images/mini_boss_python/__round_droid_activated_idle_010.png" id="23_55wlj"]
+[ext_resource type="Texture2D" uid="uid://cvrm334xo40s0" path="res://images/mini_boss_python/__round_droid_activated_idle_011.png" id="24_3mgyf"]
+[ext_resource type="Texture2D" uid="uid://bk21kpt7ares0" path="res://images/mini_boss_python/__round_droid_activated_idle_012.png" id="25_rqvv4"]
+[ext_resource type="Texture2D" uid="uid://bmswgc0x3hill" path="res://images/mini_boss_python/__round_droid_activated_idle_013.png" id="26_8jq5d"]
+[ext_resource type="Texture2D" uid="uid://ypy571r875k7" path="res://images/mini_boss_python/__round_droid_activated_idle_014.png" id="27_v87wh"]
+[ext_resource type="Texture2D" uid="uid://cboiyytngb61o" path="res://images/mini_boss_python/__round_droid_activated_idle_015.png" id="28_jpj2f"]
+[ext_resource type="Texture2D" uid="uid://dd7p0oje7nbl6" path="res://images/mini_boss_python/__round_droid_activated_idle_016.png" id="29_skef4"]
+[ext_resource type="Texture2D" uid="uid://da00s3o6lluyi" path="res://images/mini_boss_python/__round_droid_activated_idle_017.png" id="30_badwv"]
+[ext_resource type="Texture2D" uid="uid://4oyd0uddm4m8" path="res://images/mini_boss_python/__round_droid_activated_idle_018.png" id="31_hejeb"]
+[ext_resource type="Texture2D" uid="uid://di45q1ji87hgd" path="res://images/mini_boss_python/__round_droid_activated_idle_019.png" id="32_d0avo"]
+[ext_resource type="Texture2D" uid="uid://crrebt7ssun10" path="res://images/mini_boss_python/__round_droid_activated_shoot_000.png" id="33_rfiog"]
+[ext_resource type="Texture2D" uid="uid://qairg08spuwa" path="res://images/mini_boss_python/__round_droid_activated_shoot_001.png" id="34_k2ap5"]
+[ext_resource type="Texture2D" uid="uid://dwtqb60o3syw4" path="res://images/mini_boss_python/__round_droid_activated_shoot_002.png" id="35_tn2x6"]
+[ext_resource type="Texture2D" uid="uid://b2aywbiwumnk0" path="res://images/mini_boss_python/__round_droid_activated_shoot_003.png" id="36_1diaa"]
+[ext_resource type="Texture2D" uid="uid://btd5n01jlq5cv" path="res://images/mini_boss_python/__round_droid_activated_shoot_004.png" id="37_45w7t"]
+[ext_resource type="Texture2D" uid="uid://djtsqivtdj5uv" path="res://images/mini_boss_python/__round_droid_activated_shoot_005.png" id="38_udmia"]
 [ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="39_6xkrn"]
+[ext_resource type="Texture2D" uid="uid://svbj25wikdt7" path="res://images/mini_boss_python/__round_droid_activated_shoot_006.png" id="39_rht53"]
+[ext_resource type="Texture2D" uid="uid://cv86jrifwyepa" path="res://images/mini_boss_python/__round_droid_activated_shoot_007.png" id="40_6aerd"]
 [ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/quiz_code_pages/quiz_page_topic1.gd" id="40_wesxa"]
+[ext_resource type="Texture2D" uid="uid://dgxaewtllg7xs" path="res://images/mini_boss_python/__round_droid_activated_shoot_008.png" id="41_2bhxy"]
 [ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="41_ubmgc"]
+[ext_resource type="Texture2D" uid="uid://cnm1xclj7f46v" path="res://images/mini_boss_python/__round_droid_activated_shoot_009.png" id="42_ay41h"]
 [ext_resource type="Script" path="res://scripts/code_page.gd" id="42_yoxyv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cguhy"]
@@ -55,40 +60,34 @@ size = Vector2(119.5, 643.5)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_r6uoy")
+"texture": ExtResource("3_eyksl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_ka02g")
+"texture": ExtResource("4_k5bsn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_63w84")
+"texture": ExtResource("5_qtl1b")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_x26al")
+"texture": ExtResource("6_ayfid")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_h323g")
+"texture": ExtResource("7_x2820")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_h323g")
+"texture": ExtResource("8_d3js0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_h323g")
+"texture": ExtResource("9_td5df")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_h323g")
+"texture": ExtResource("10_1pfi2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_h323g")
+"texture": ExtResource("11_50fba")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_h323g")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_h323g")
-}, {
-"duration": 1.0,
-"texture": null
+"texture": ExtResource("12_sju1r")
 }],
 "loop": false,
 "name": &"death",
@@ -96,64 +95,64 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_fgybe")
+"texture": ExtResource("13_148px")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_kij2b")
+"texture": ExtResource("14_i2iu5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_mdats")
+"texture": ExtResource("15_2kw7i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_ccbvl")
+"texture": ExtResource("16_v1w5r")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_80bom")
+"texture": ExtResource("17_l6l1f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_xy1xv")
+"texture": ExtResource("18_03c4t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_wjk37")
+"texture": ExtResource("19_4fobo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_8q7ii")
+"texture": ExtResource("20_d14yc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_5a488")
+"texture": ExtResource("21_gxttr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_8jnpc")
+"texture": ExtResource("22_setio")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_j8hlk")
+"texture": ExtResource("23_55wlj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_6l1ch")
+"texture": ExtResource("24_3mgyf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_0ww8t")
+"texture": ExtResource("25_rqvv4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_uoy32")
+"texture": ExtResource("26_8jq5d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_7uj02")
+"texture": ExtResource("27_v87wh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_kff78")
+"texture": ExtResource("28_jpj2f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_jpw55")
+"texture": ExtResource("29_skef4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_h521j")
+"texture": ExtResource("30_badwv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_bxyc6")
+"texture": ExtResource("31_hejeb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_iaqqy")
+"texture": ExtResource("32_d0avo")
 }],
 "loop": true,
 "name": &"idle",
@@ -166,34 +165,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("29_dyyiu")
+"texture": ExtResource("33_rfiog")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_ihofb")
+"texture": ExtResource("34_k2ap5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_qgtv2")
+"texture": ExtResource("35_tn2x6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_jird8")
+"texture": ExtResource("36_1diaa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_v6p5l")
+"texture": ExtResource("37_45w7t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_5575i")
+"texture": ExtResource("38_udmia")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_2d16q")
+"texture": ExtResource("39_rht53")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_iuc10")
+"texture": ExtResource("40_6aerd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_eu5ra")
+"texture": ExtResource("41_2bhxy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_y5a0u")
+"texture": ExtResource("42_ay41h")
 }],
 "loop": false,
 "name": &"wrong_answer",
@@ -201,7 +200,7 @@ animations = [{
 }]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eocmm"]
-bg_color = Color(0.376471, 0, 0.682353, 1)
+bg_color = Color(0, 0.717647, 0.8, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_tu174"]
 font = ExtResource("41_ubmgc")
@@ -211,7 +210,7 @@ font_color = Color(0, 0, 0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
 font = ExtResource("41_ubmgc")
 font_size = 20
-font_color = Color(0.65098, 0.384314, 1, 1)
+font_color = Color(0, 0.717647, 0.8, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_e0svr"]
 font = ExtResource("41_ubmgc")
@@ -260,7 +259,7 @@ _data = {
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2riv2"]
-bg_color = Color(0.65098, 0.384314, 1, 1)
+bg_color = Color(0, 0.717647, 0.8, 1)
 
 [sub_resource type="Animation" id="Animation_2vdb3"]
 length = 0.001
@@ -378,8 +377,8 @@ position = Vector2(-506.75, -268)
 shape = SubResource("RectangleShape2D_uvki5")
 
 [node name="animated_sprite_2d" type="AnimatedSprite2D" parent="boss_encounter_area"]
-position = Vector2(374, -59)
-scale = Vector2(0.510638, 0.575847)
+position = Vector2(399, -132)
+scale = Vector2(0.357561, 0.356135)
 sprite_frames = SubResource("SpriteFrames_ebl7p")
 animation = &"idle"
 autoplay = "idle"
@@ -395,7 +394,6 @@ scale = Vector2(0.8, 0.8)
 metadata/_edit_group_ = true
 
 [node name="quiz_page" type="Control" parent="boss_encounter_area/boss_level_window"]
-modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -492,6 +490,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/background = SubResource("StyleBoxFlat_eocmm")
 
 [node name="python_code_page" type="Control" parent="boss_encounter_area/boss_level_window"]
+modulate = Color(1, 1, 1, 0)
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 15
@@ -664,6 +663,8 @@ size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0.639216, 0.94902, 0.431373)
 label_settings = SubResource("LabelSettings_dv4lf")
 autowrap_mode = 3
+visible_characters = 0
+visible_ratio = 0.0
 
 [node name="animation_player" type="AnimationPlayer" parent="boss_encounter_area/boss_level_window/python_code_page/background_color/feedback_conatiner/panel_container/panel2/feedback_container"]
 root_node = NodePath("../../../../../run_button_conatiner")
@@ -696,8 +697,8 @@ libraries = {
 "": SubResource("AnimationLibrary_vb8hw")
 }
 
-[connection signal="wrong_answer" from="boss_encounter_area/boss_level_window/quiz_page" to="." method="_on_quiz_page_wrong_answer"]
 [connection signal="wrong_answer" from="boss_encounter_area/boss_level_window/quiz_page" to="." method="player_wrong_answer"]
+[connection signal="wrong_answer" from="boss_encounter_area/boss_level_window/quiz_page" to="." method="_on_quiz_page_wrong_answer"]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button1" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_1_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button2" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_2_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button3" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_3_pressed" flags=18]
