@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bytc46ibx8mr3"]
+
+[ext_resource type="Script" path="res://Shop_Assets/shop_trigger.gd" id="1_e5r37"]
+[ext_resource type="PackedScene" uid="uid://db2tir1l5ayce" path="res://Shop_Assets/shop.tscn" id="2_ymp20"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6lhoo"]
+size = Vector2(32, 29)
+
+[node name="Shop_Trigger" type="Area2D"]
+script = ExtResource("1_e5r37")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6lhoo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Shop" parent="." instance=ExtResource("2_ymp20")]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

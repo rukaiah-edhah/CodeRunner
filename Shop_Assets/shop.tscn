@@ -1,0 +1,218 @@
+[gd_scene load_steps=14 format=3 uid="uid://db2tir1l5ayce"]
+
+[ext_resource type="Script" path="res://Shop_Assets/Shop.gd" id="1_e030f"]
+[ext_resource type="Texture2D" uid="uid://qff1naeqswa2" path="res://images/right_arrow.png" id="2_8wws3"]
+[ext_resource type="Script" path="res://Shop_Assets/Cost.gd" id="3_ach27"]
+[ext_resource type="Texture2D" uid="uid://cr34gf4c7t1rl" path="res://images/farmingTilesheetComplete.png" id="3_rh14b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ix4uy"]
+
+[sub_resource type="Animation" id="Animation_vvkci"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_uclfr"]
+resource_name = "Trans_In"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -300), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_j5foc"]
+resource_name = "Trans_Out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 300)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5ytcc"]
+_data = {
+"RESET": SubResource("Animation_vvkci"),
+"Trans_In": SubResource("Animation_uclfr"),
+"Trans_Out": SubResource("Animation_j5foc")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrs2s"]
+atlas = ExtResource("3_rh14b")
+region = Rect2(112, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xxvg"]
+atlas = ExtResource("3_rh14b")
+region = Rect2(160, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l27d7"]
+atlas = ExtResource("3_rh14b")
+region = Rect2(128, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_elxli"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrs2s")
+}],
+"loop": true,
+"name": &"Apple",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xxvg")
+}],
+"loop": true,
+"name": &"Berry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l27d7")
+}],
+"loop": true,
+"name": &"Carrot",
+"speed": 5.0
+}]
+
+[node name="Shop" type="CanvasLayer"]
+script = ExtResource("1_e030f")
+
+[node name="Shop_BG" type="Panel" parent="."]
+modulate = Color(0.321569, 0.360784, 0.952941, 1)
+offset_left = 198.0
+offset_top = 47.0
+offset_right = 467.0
+offset_bottom = 181.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ix4uy")
+
+[node name="Shop_Anim_Player" type="AnimationPlayer" parent="."]
+process_mode = 3
+libraries = {
+"": SubResource("AnimationLibrary_5ytcc")
+}
+
+[node name="Close" type="Label" parent="."]
+offset_left = 407.0
+offset_top = 53.0
+offset_right = 449.0
+offset_bottom = 79.0
+text = "Close"
+horizontal_alignment = 1
+
+[node name="Close_Button" type="Button" parent="Close"]
+layout_mode = 0
+offset_left = -26.0
+offset_top = -5.0
+offset_right = 60.0
+offset_bottom = 27.0
+
+[node name="Left_Arrow" type="Button" parent="."]
+offset_left = 277.0
+offset_top = 98.0
+offset_right = 315.0
+offset_bottom = 125.0
+
+[node name="Left_Arrow_Sprite" type="Sprite2D" parent="Left_Arrow"]
+position = Vector2(20.5551, 16.8729)
+rotation = -3.11192
+scale = Vector2(0.0631806, 0.0652966)
+texture = ExtResource("2_8wws3")
+
+[node name="Right_Arrow" type="Button" parent="."]
+offset_left = 351.0
+offset_top = 101.0
+offset_right = 389.0
+offset_bottom = 128.0
+
+[node name="Right_Arrow_Sprite" type="Sprite2D" parent="Right_Arrow"]
+position = Vector2(20, 12)
+scale = Vector2(0.0675085, 0.0648333)
+texture = ExtResource("2_8wws3")
+
+[node name="Item_Info" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 333.0
+offset_top = 110.0
+offset_right = 373.0
+offset_bottom = 150.0
+
+[node name="Name" type="Label" parent="Item_Info"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.862
+offset_left = -114.0
+offset_top = -55.0
+offset_right = -101.48
+offset_bottom = -28.0
+text = "Name"
+horizontal_alignment = 1
+
+[node name="Cost" type="Label" parent="Item_Info"]
+layout_mode = 0
+offset_left = -112.0
+offset_top = -32.0
+offset_right = -72.0
+offset_bottom = -6.0
+text = "Cost"
+horizontal_alignment = 1
+script = ExtResource("3_ach27")
+
+[node name="Description" type="Label" parent="Item_Info"]
+layout_mode = 0
+offset_left = -47.0
+offset_top = 25.0
+offset_right = 36.0
+offset_bottom = 51.0
+text = "Deoiadfwe"
+horizontal_alignment = 1
+
+[node name="Item_Icon_Sprite" type="AnimatedSprite2D" parent="Item_Info"]
+position = Vector2(7, -38)
+scale = Vector2(3.5625, 2.75)
+sprite_frames = SubResource("SpriteFrames_elxli")
+animation = &"Carrot"
+
+[node name="Buy_Button" type="Button" parent="."]
+offset_left = 385.0
+offset_top = 136.0
+offset_right = 448.0
+offset_bottom = 163.0
+
+[node name="Buy" type="Label" parent="Buy_Button"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 4.0
+offset_right = 52.0
+offset_bottom = 30.0
+text = "Buy"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Close/Close_Button" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="Left_Arrow" to="." method="_on_left_arrow_pressed"]
+[connection signal="pressed" from="Right_Arrow" to="." method="_on_right_arrow_pressed"]
+[connection signal="pressed" from="Buy_Button" to="." method="_on_buy_button_pressed"]

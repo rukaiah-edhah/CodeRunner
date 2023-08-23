@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5aosmgpy3ycc"]
+
+[ext_resource type="Script" path="res://Shop_Assets/item_slot.gd" id="1_11kec"]
+[ext_resource type="Texture2D" uid="uid://dbssmjfyq4f8m" path="res://images/Berry.png" id="2_qsvc0"]
+
+[node name="Item_Slot" type="Panel"]
+custom_minimum_size = Vector2(32, 32)
+offset_right = 32.0
+offset_bottom = 32.0
+script = ExtResource("1_11kec")
+
+[node name="Item_Icon" type="Sprite2D" parent="."]
+position = Vector2(13, 15)
+texture = ExtResource("2_qsvc0")
+
+[node name="Count" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 12.0
+offset_right = 63.0
+offset_bottom = 38.0
+text = "1
+"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
