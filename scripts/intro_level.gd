@@ -3,6 +3,7 @@ extends Node2D
 
 const music_path: String = "res://fonts-and-music/music/DavidKBD - Cosmic Pack 02 - Galactic Pulse-full.ogg"
 @onready var player = $'in_game_items/2/player'
+var enemy_scene = preload("res://scenes/Mini_Enemy.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

@@ -156,7 +156,7 @@ func enable_movement():
     can_move = true
     
 func global_on_player_damaged():
-    _damage(3)
+    _damage(2)
 # ___________________________________________________________________
     
 func _damage(damage_value):

@@ -13,6 +13,9 @@ var is_dead = false
 var can_flip = true
 signal Player_Damaged
 
+var hit_sound = preload("res://fonts-and-music/music/mini_enemies2.mp3")
+var poof_sound = preload("res://fonts-and-music/music/poof-mini_enemies.mp3")
+
 func _ready():
     flip_timer.timeout.connect(_on_flip_timer_timeout)
     for lava_area in get_tree().get_nodes_in_group("lava"):
@@ -45,6 +48,7 @@ func _physics_process(delta):
                         has_processed_collision = true
                 else:
                     #emit_signal("Player_Damaged")
+                    play_sound(hit_sound, -20.0)
                     get_tree().call_group("global_listeners", "global_on_player_damaged")
                     has_processed_collision = true
     
@@ -75,6 +79,7 @@ func _on_flip_timer_timeout():
 
 ## ENEMY DEATH FUNCTION PLAYS DEATH ANIMATION AND TAKES AWAY THEIR COLLISION ##
 func enemy_died():
+    play_sound(poof_sound, 5.0)
     _animation.play("Death")
     is_dead = true
     #  We can use queue_free() or the following: 
@@ -86,3 +91,10 @@ func _on_lava_area_body_entered(body):
         direction.x = -direction.x
         can_flip = false
         flip_timer.start()
+        
+func play_sound(audio_stream, volume_db = 0.0):
+    var audio_stream_player = AudioStreamPlayer.new()
+    audio_stream_player.stream = audio_stream
+    audio_stream_player.volume_db = volume_db
+    self.add_child(audio_stream_player)
+    audio_stream_player.play()

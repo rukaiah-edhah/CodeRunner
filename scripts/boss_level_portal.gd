@@ -3,7 +3,7 @@ extends Area2D
 
 @export var path : NodePath 
 
-var portal_sound = preload("res://fonts-and-music/music/spaceship_teleportation.mp3")
+var portal_sound = preload("res://fonts-and-music/music/boss_level_portal.mp3")
 
 func _on_area_entered(area: Area2D):
     if area.is_in_group("player"):

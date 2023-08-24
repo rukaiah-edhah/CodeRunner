@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://oree1vb4f1r3"]
 
-[ext_resource type="Script" path="res://scripts/teleportation_pads.gd" id="1_5b7hu"]
+[ext_resource type="Script" path="res://scripts/boss_level_portal.gd" id="1_43dwg"]
 [ext_resource type="Texture2D" uid="uid://cleatwjwe8q6m" path="res://images/alien_planet /fire.png" id="2_p0ljd"]
 [ext_resource type="Texture2D" uid="uid://c46ksgr06ksyy" path="res://images/alien_planet /fire_anim.png" id="2_sbypv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8lmfl"]
-size = Vector2(568, 414)
+size = Vector2(56, 527)
 
 [sub_resource type="Animation" id="Animation_0lb0b"]
 resource_name = "dissolve"
@@ -29,7 +29,7 @@ _data = {
 }
 
 [node name="boss_level_portal" type="Area2D"]
-script = ExtResource("1_5b7hu")
+script = ExtResource("1_43dwg")
 
 [node name="fire" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
@@ -43,7 +43,7 @@ scale = Vector2(3.15789, 3.02049)
 texture = ExtResource("2_p0ljd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(17, -4)
+position = Vector2(71, -8.5)
 shape = SubResource("RectangleShape2D_8lmfl")
 debug_color = Color(0.603922, 0.529412, 0.321569, 0.419608)
 
