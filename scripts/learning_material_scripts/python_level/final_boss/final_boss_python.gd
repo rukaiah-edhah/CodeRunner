@@ -13,8 +13,8 @@ var health = 100
 @onready var code_page = $boss_encounter_area/boss_level_window/boss
 @onready var block_area = $block_area
 @onready var boss_encounter_area = $boss_encounter_area
-@onready var growl = $growl
-@onready var howl = $howl
+@onready var crash = $crash
+@onready var shoot = $shoot
 
 # Responsible for the flash effect 
 @onready var top_border = $boss_encounter_area/boss_level_window/top_border
@@ -27,8 +27,8 @@ var is_displaying_window = false
 var is_dissolving_window = false
 var is_transitioning_to_code = false
 
-var growl_audio = preload('res://fonts-and-music/music/growl.mp3')
-var howl_audio = preload('res://fonts-and-music/music/monster_howl.mp3')
+var crash_audio = preload('res://fonts-and-music/music/computer-crash.mp3')
+var shoot_audio = preload('res://fonts-and-music/music/laser-gun.mp3')
 
 func _ready():
 	BossManager.add_boss(self) # Connects the boss's signals to the player's methods
@@ -55,6 +55,9 @@ func _ready():
 	
 	# setting healthbar to 100 initially
 	health_bar.value = health
+	
+	crash.stream = crash_audio
+	shoot.stream = shoot_audio
 
 
 # Signal handlers 
@@ -70,7 +73,7 @@ func on_quiz_finished():
 func _on_code_page_all_correct():
 	health_bar.value = 0 #makes sure that the health goes to 0 befor the window dissolves 
 	await get_tree().create_timer(1.5).timeout
-	howl.play(0)
+	crash.play(0)
 	anim_sprite.play("death") # Remove/change based on the boss' animations
 	await anim_sprite.animation_finished
 	is_dissolving_window = true
@@ -94,6 +97,7 @@ func _on_player_hit_block_area():
 
 # Quiz and code page handlers
 func player_wrong_answer():
+	shoot.play(0)
 	anim_sprite.play("wrong_answer") # Remove/change based on the boss' animations
 	emit_signal("wrong_answer")
 	await anim_sprite.animation_finished
@@ -101,11 +105,12 @@ func player_wrong_answer():
 	
 func take_damage(amount):
 	health -= amount
+	crash.play(23)
 	health_bar.value = health
 	if health > 0:
 		anim_sprite.play("attacked") # Remove/change based on the boss' animations
 		await anim_sprite.animation_finished
-		anim_sprite.play("a_idle") # Remove/change based on the boss' animations
+		anim_sprite.play("idle") # Remove/change based on the boss' animations
 	
 	
 # Utility functions

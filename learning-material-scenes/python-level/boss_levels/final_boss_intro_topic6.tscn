@@ -1,8 +1,10 @@
-[gd_scene load_steps=88 format=3 uid="uid://dlgby46i6d47x"]
+[gd_scene load_steps=90 format=3 uid="uid://dlgby46i6d47x"]
 
 [ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/final_boss/final_boss_python.gd" id="1_5twru"]
 [ext_resource type="Script" path="res://scripts/block_area.gd" id="2_s7ghm"]
+[ext_resource type="Texture2D" uid="uid://k4qnbrvbw76f" path="res://images/final_boss_python/__droid_04_eye_hollow_walk_alert_007.png" id="3_lpdyu"]
 [ext_resource type="Texture2D" uid="uid://dyrejtux5jiv0" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_000.png" id="3_nyckf"]
+[ext_resource type="Texture2D" uid="uid://c76v0btda3kso" path="res://images/final_boss_python/__droid_04_eye_hollow_walk_not_alert_000.png" id="4_4s55e"]
 [ext_resource type="Texture2D" uid="uid://mqog87mgobbl" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_001.png" id="4_ovmtd"]
 [ext_resource type="Texture2D" uid="uid://b66n1pfqxku5c" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_002.png" id="5_hg7ho"]
 [ext_resource type="Texture2D" uid="uid://bkpbv0tovkoqv" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_003.png" id="6_846pk"]
@@ -88,6 +90,53 @@ size = Vector2(119.5, 643.5)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ebl7p"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lpdyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4s55e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lpdyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4s55e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lpdyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4s55e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lpdyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4s55e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lpdyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4s55e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lpdyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4s55e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lpdyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4s55e")
+}],
+"loop": false,
+"name": &"attacked",
+"speed": 15.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_nyckf")
@@ -436,8 +485,10 @@ shape = SubResource("RectangleShape2D_uvki5")
 position = Vector2(460, -233)
 scale = Vector2(0.519048, 0.672628)
 sprite_frames = SubResource("SpriteFrames_ebl7p")
-animation = &"idle"
+animation = &"attacked"
 autoplay = "idle"
+frame = 13
+frame_progress = 1.0
 
 [node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("185_ypvyl")]
 show_behind_parent = true
@@ -647,6 +698,12 @@ reset_on_save = false
 libraries = {
 "": SubResource("AnimationLibrary_vb8hw")
 }
+
+[node name="crash" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(412, -94)
+
+[node name="shoot" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(412, -94)
 
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button1" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_1_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button2" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_2_pressed" flags=18]
