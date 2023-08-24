@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dfewuq08k2mdv"]
 
 [ext_resource type="Script" path="res://Scripts/moving_platform_oscilate.gd" id="1_wtwoa"]
-[ext_resource type="Texture2D" uid="uid://dhixcilhx0bsk" path="res://images/spaceship_interior/style_1/platform3 (2).png" id="2_2otab"]
+[ext_resource type="Texture2D" uid="uid://dbbi468nbhclf" path="res://images/spaceship_interior/style_1/platform2.png" id="2_mbv4g"]
 
 [node name="moving_platform_oscilate" type="AnimatableBody2D"]
 process_mode = 1
@@ -13,7 +13,7 @@ debug = false
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(106.022, -2.71167)
 scale = Vector2(0.658924, 0.638464)
-texture = ExtResource("2_2otab")
+texture = ExtResource("2_mbv4g")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(106, -3.49999)
