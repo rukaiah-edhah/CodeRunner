@@ -1,6 +1,6 @@
-[gd_scene load_steps=35 format=3 uid="uid://bo2vfu0vkqg3m"]
+[gd_scene load_steps=43 format=3 uid="uid://bo2vfu0vkqg3m"]
 
-[ext_resource type="Texture2D" uid="uid://d32lpjwq3qjdc" path="res://images/grey_block.png" id="1_0msub"]
+[ext_resource type="Texture2D" uid="uid://bd16vawkbglce" path="res://images/grey_block.png" id="1_0msub"]
 [ext_resource type="PackedScene" uid="uid://5w3oro26ixht" path="res://scenes/envir_components/python_level/moving_platform_sideways_PL.tscn" id="4_segcm"]
 [ext_resource type="PackedScene" uid="uid://bsup6ehqgfr3p" path="res://scenes/envir_components/python_level/platform_python.tscn" id="5_fhe4e"]
 [ext_resource type="PackedScene" uid="uid://dfewuq08k2mdv" path="res://scenes/envir_components/python_level/moving_platform_oscilate_PL.tscn" id="5_jmtru"]
@@ -13,19 +13,27 @@
 [ext_resource type="PackedScene" uid="uid://cu46u1ulhqch0" path="res://scenes/envir_components/down_stairs.tscn" id="9_h21xr"]
 [ext_resource type="PackedScene" uid="uid://cal1327wnp1rp" path="res://scenes/envir_components/python_level/moving_platform_sideways_PL2.tscn" id="9_yonum"]
 [ext_resource type="PackedScene" uid="uid://dfrhyctivqeo6" path="res://scenes/envir_components/python_level/moving_platform_sideways_PL3.tscn" id="10_2nf65"]
-[ext_resource type="Texture2D" uid="uid://cdnbeqbg4uops" path="res://images/alien_planet /planets.png" id="11_t5sk6"]
+[ext_resource type="Texture2D" uid="uid://5h10jinkxjcg" path="res://images/alien_planet /planets.png" id="11_t5sk6"]
 [ext_resource type="PackedScene" uid="uid://c0g7y7sxuq23w" path="res://scenes/envir_components/python_level/moving_platform_up_down_PL3.tscn" id="12_3jxbh"]
-[ext_resource type="Texture2D" uid="uid://ki4r3kacn8gi" path="res://images/alien_planet /bg.png" id="12_vy3or"]
-[ext_resource type="Texture2D" uid="uid://ckyj44xvx0ox5" path="res://images/spaceship_interior/style_2/window3.png" id="13_h7q48"]
-[ext_resource type="Texture2D" uid="uid://b0fpboqqb7j0b" path="res://images/alien_planet /stars.png" id="13_rkddb"]
-[ext_resource type="Texture2D" uid="uid://bu4v3tklpcqw6" path="res://images/spaceship_interior/style_2/ceiling.png" id="14_7sh2a"]
+[ext_resource type="Texture2D" uid="uid://dyvg8a0kxhu1u" path="res://images/alien_planet /bg.png" id="12_vy3or"]
+[ext_resource type="Texture2D" uid="uid://4b0s68e17igr" path="res://images/spaceship_interior/style_2/window3.png" id="13_h7q48"]
+[ext_resource type="Texture2D" uid="uid://bq4xkbun5bhop" path="res://images/alien_planet /stars.png" id="13_rkddb"]
+[ext_resource type="Texture2D" uid="uid://b8g6srvjj21xw" path="res://images/spaceship_interior/style_2/ceiling.png" id="14_7sh2a"]
 [ext_resource type="Script" path="res://scripts/background_python.gd" id="14_q34xu"]
-[ext_resource type="Texture2D" uid="uid://ckujv33dmdbwc" path="res://images/spaceship_interior/style_2/floor.png" id="15_da0hg"]
-[ext_resource type="Texture2D" uid="uid://bjbyqihwiyaax" path="res://images/spaceship_interior/style_2/room_1_floor.png" id="19_dph6b"]
+[ext_resource type="Texture2D" uid="uid://b0p00po02qy3t" path="res://images/spaceship_interior/style_2/floor.png" id="15_da0hg"]
+[ext_resource type="Texture2D" uid="uid://bp6of16yqvw5w" path="res://images/spaceship_interior/style_2/room_1_floor.png" id="19_dph6b"]
 [ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="20_6vxv0"]
 [ext_resource type="PackedScene" uid="uid://bxmpl0pcciurl" path="res://scenes/podium_portal.tscn" id="20_f2qpy"]
 [ext_resource type="PackedScene" uid="uid://cpr4k6xjmm6k3" path="res://scenes/linked_path.tscn" id="21_l5rng"]
-[ext_resource type="Texture2D" uid="uid://cb48sanrbq2xr" path="res://images/spaceship_interior/style_2/room2_floor_version2.png" id="23_flot8"]
+[ext_resource type="Texture2D" uid="uid://dw4njuj6jjwws" path="res://images/spaceship_interior/style_2/room2_floor_version2.png" id="23_flot8"]
+[ext_resource type="PackedScene" uid="uid://fieakrbmq8bi" path="res://learning-material-scenes/python-level/shifu's_lessons/topic_one/shifu_7.tscn" id="27_qjplc"]
+[ext_resource type="PackedScene" uid="uid://dry2l7ac4xsgi" path="res://learning-material-scenes/python-level/shifu's_lessons/topic_one/shifu_6.tscn" id="28_rhl7f"]
+[ext_resource type="PackedScene" uid="uid://cwy25ddf1gy70" path="res://learning-material-scenes/python-level/shifu's_lessons/topic_one/shifu_5.tscn" id="29_wdici"]
+[ext_resource type="PackedScene" uid="uid://cvklfxe0wfyby" path="res://learning-material-scenes/python-level/shifu's_lessons/topic_one/shifu_4.tscn" id="30_t2bhd"]
+[ext_resource type="PackedScene" uid="uid://74gxvceg31fj" path="res://learning-material-scenes/python-level/shifu's_lessons/topic_one/shifu_3.tscn" id="31_ix5yr"]
+[ext_resource type="PackedScene" uid="uid://kt60vsgl60sv" path="res://learning-material-scenes/python-level/shifu's_lessons/topic_one/shifu_2.tscn" id="32_wnu2a"]
+[ext_resource type="PackedScene" uid="uid://bgbugc13f4hq5" path="res://learning-material-scenes/python-level/shifu's_lessons/topic_one/shifu_1.tscn" id="33_3aory"]
+[ext_resource type="PackedScene" uid="uid://dbuhknmtrdfob" path="res://learning-material-scenes/python-level/shifu's_lessons/topic_one/example_box_python1.tscn" id="34_ixkdy"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ix7jp"]
 
@@ -71,7 +79,6 @@ scenes/8/scene = ExtResource("10_2nf65")
 scenes/9/scene = ExtResource("12_3jxbh")
 scenes/10/scene = ExtResource("5_l41v2")
 scenes/11/scene = ExtResource("6_ucf1b")
-scenes/11/display_placeholder = ExtResource("6_ucf1b")
 
 [sub_resource type="TileSet" id="TileSet_i0epy"]
 sources/0 = SubResource("TileSetScenesCollectionSource_rmq7w")
@@ -879,6 +886,76 @@ position = Vector2(2244, 15)
 scale = Vector2(0.137386, 0.0847223)
 texture = ExtResource("19_dph6b")
 
+[node name="floor_holder3" type="Sprite2D" parent="graphics/0/room1"]
+position = Vector2(13664, 473)
+scale = Vector2(0.130979, 0.0847223)
+texture = ExtResource("19_dph6b")
+
+[node name="floor3" type="Sprite2D" parent="graphics/0/room1/floor_holder3"]
+position = Vector2(13387.6, -0.000320435)
+texture = ExtResource("19_dph6b")
+
+[node name="floor2" type="Sprite2D" parent="graphics/0/room1/floor_holder3"]
+position = Vector2(6691.91, -0.000335693)
+texture = ExtResource("19_dph6b")
+
+[node name="floor4" type="Sprite2D" parent="graphics/0/room1/floor_holder3"]
+position = Vector2(20098.6, -0.000335693)
+texture = ExtResource("19_dph6b")
+
+[node name="floor5" type="Node2D" parent="graphics/0/room1/floor_holder3"]
+position = Vector2(23610.7, -177.049)
+scale = Vector2(7.63481, 11.8033)
+
+[node name="floor" type="Sprite2D" parent="graphics/0/room1/floor_holder3/floor5"]
+position = Vector2(509.747, 15)
+scale = Vector2(0.158172, 0.0847223)
+texture = ExtResource("19_dph6b")
+
+[node name="floor_holder4" type="Sprite2D" parent="graphics/0/room1"]
+position = Vector2(19394, 243)
+scale = Vector2(0.130979, 0.0847223)
+texture = ExtResource("19_dph6b")
+
+[node name="floor3" type="Sprite2D" parent="graphics/0/room1/floor_holder4"]
+position = Vector2(13387.6, -0.000320435)
+texture = ExtResource("19_dph6b")
+
+[node name="floor2" type="Sprite2D" parent="graphics/0/room1/floor_holder4"]
+position = Vector2(6691.91, -0.000335693)
+texture = ExtResource("19_dph6b")
+
+[node name="floor4" type="Sprite2D" parent="graphics/0/room1/floor_holder4"]
+position = Vector2(20785.8, -0.000335693)
+scale = Vector2(1.20479, 1)
+texture = ExtResource("19_dph6b")
+
+[node name="floor5" type="Node2D" parent="graphics/0/room1/floor_holder4"]
+position = Vector2(23610.7, -177.049)
+scale = Vector2(7.63481, 11.8033)
+
+[node name="floor_holder5" type="Sprite2D" parent="graphics/0/room1"]
+position = Vector2(23517, -149)
+scale = Vector2(0.130979, 0.0847223)
+texture = ExtResource("19_dph6b")
+
+[node name="floor3" type="Sprite2D" parent="graphics/0/room1/floor_holder5"]
+position = Vector2(13387.6, -0.000320435)
+texture = ExtResource("19_dph6b")
+
+[node name="floor2" type="Sprite2D" parent="graphics/0/room1/floor_holder5"]
+position = Vector2(6691.91, -0.000335693)
+texture = ExtResource("19_dph6b")
+
+[node name="floor4" type="Sprite2D" parent="graphics/0/room1/floor_holder5"]
+position = Vector2(17552.4, 11.8034)
+scale = Vector2(1.20479, 1)
+texture = ExtResource("19_dph6b")
+
+[node name="floor5" type="Node2D" parent="graphics/0/room1/floor_holder5"]
+position = Vector2(23610.7, -177.049)
+scale = Vector2(7.63481, 11.8033)
+
 [node name="floor_holder2" type="Sprite2D" parent="graphics/0/room1"]
 position = Vector2(8075, -353)
 scale = Vector2(0.130979, 0.0847223)
@@ -1103,6 +1180,35 @@ position = Vector2(133668, -9403)
 layer = 2
 follow_viewport_enabled = true
 
+[node name="Topic1" type="Node2D" parent="shifu\'s_lessons/2"]
+
+[node name="Shifu" parent="shifu\'s_lessons/2/Topic1" instance=ExtResource("27_qjplc")]
+position = Vector2(2429, -673)
+
+[node name="Shifu2" parent="shifu\'s_lessons/2/Topic1" instance=ExtResource("28_rhl7f")]
+position = Vector2(4478, -748)
+
+[node name="Shifu3" parent="shifu\'s_lessons/2/Topic1" instance=ExtResource("29_wdici")]
+position = Vector2(8651, -1077)
+
+[node name="Shifu4" parent="shifu\'s_lessons/2/Topic1" instance=ExtResource("30_t2bhd")]
+position = Vector2(10752, -1078)
+
+[node name="Shifu5" parent="shifu\'s_lessons/2/Topic1" instance=ExtResource("31_ix5yr")]
+position = Vector2(15368, -212)
+
+[node name="Shifu6" parent="shifu\'s_lessons/2/Topic1" instance=ExtResource("32_wnu2a")]
+position = Vector2(19739, -494)
+
+[node name="Shifu7" parent="shifu\'s_lessons/2/Topic1" instance=ExtResource("33_3aory")]
+position = Vector2(24381, -910)
+
+[node name="example_box" parent="shifu\'s_lessons/2/Topic1" instance=ExtResource("34_ixkdy")]
+offset_left = 21255.0
+offset_top = -411.0
+offset_right = 21255.0
+offset_bottom = -411.0
+
 [node name="boss_levels" type="Node2D" parent="."]
 
 [node name="2" type="CanvasLayer" parent="boss_levels"]
@@ -1115,6 +1221,20 @@ follow_viewport_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area"]
 position = Vector2(6989, 426)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area4" type="Area2D" parent="fall_return_area"]
+position = Vector2(26600, 266.445)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area4"]
+position = Vector2(119.008, -4.44531)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area5" type="Area2D" parent="fall_return_area"]
+position = Vector2(32521.7, 118.984)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area5"]
+position = Vector2(95.2871, -3.98364)
 shape = SubResource("RectangleShape2D_ih7le")
 
 [node name="fall_area2" type="Area2D" parent="fall_return_area"]
@@ -1134,7 +1254,7 @@ shape = SubResource("RectangleShape2D_ih7le")
 [node name="return_area" type="Area2D" parent="fall_return_area"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area"]
-position = Vector2(5831, -530)
+position = Vector2(5906, -530)
 shape = SubResource("RectangleShape2D_0usmw")
 debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
 
@@ -1148,8 +1268,18 @@ debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
 
 [node name="return_area3" type="Area2D" parent="fall_return_area"]
 position = Vector2(21661.9, -716.765)
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area3"]
 position = Vector2(616.099, 390.765)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area4" type="Area2D" parent="fall_return_area"]
+position = Vector2(27474, -655.901)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area4"]
+position = Vector2(268.97, 4.90057)
 shape = SubResource("RectangleShape2D_0usmw")
 debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
