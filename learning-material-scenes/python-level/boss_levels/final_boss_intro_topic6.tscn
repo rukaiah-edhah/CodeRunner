@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=3 uid="uid://dlgby46i6d47x"]
+[gd_scene load_steps=90 format=3 uid="uid://dlgby46i6d47x"]
 
 [ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/final_boss/final_boss_python.gd" id="1_5twru"]
 [ext_resource type="Script" path="res://scripts/block_area.gd" id="2_s7ghm"]
@@ -74,7 +74,6 @@
 [ext_resource type="Texture2D" uid="uid://cuie7ihn606lf" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_017.png" id="70_t1f2p"]
 [ext_resource type="Texture2D" uid="uid://dfc1sfg054u5r" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_018.png" id="71_2txnv"]
 [ext_resource type="Texture2D" uid="uid://5vclsl400ycw" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_019.png" id="72_ag7as"]
-[ext_resource type="PackedScene" uid="uid://bl85n628tg6p5" path="res://pp.tscn" id="77_36q74"]
 [ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="185_ypvyl"]
 [ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/quiz_code_pages/quiz_page_topic6.gd" id="186_a3y2c"]
 [ext_resource type="Script" path="res://scripts/python_final_code_pages/python_final_code1.gd" id="187_rftn1"]
@@ -705,9 +704,6 @@ position = Vector2(412, -94)
 
 [node name="shoot" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(412, -94)
-
-[node name="Node2D" parent="." instance=ExtResource("77_36q74")]
-position = Vector2(-1069, -560)
 
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button1" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_1_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button2" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_2_pressed" flags=18]
