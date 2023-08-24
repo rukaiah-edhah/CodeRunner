@@ -462,7 +462,7 @@ libraries = {
 }
 
 [node name="dialogue_box_sprite" type="TextureRect" parent="dialogue"]
-modulate = Color(1, 1, 1, 0.047619)
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = -99.0
 offset_top = 27.0
