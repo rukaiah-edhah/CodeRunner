@@ -47,7 +47,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="coins_box" type="Area2D"]
+[node name="coins_box" type="Area2D" groups=["coins"]]
 position = Vector2(0, 1)
 script = ExtResource("1_obsr7")
 

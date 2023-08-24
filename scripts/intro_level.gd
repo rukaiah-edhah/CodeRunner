@@ -1,14 +1,16 @@
 extends Node2D
 
 
-const music_path: String = "res://fonts-and-music/music/DavidKBD - Cosmic Pack 01 - Cosmic Journey-variation2.ogg"
+const music_path: String = "res://fonts-and-music/music/DavidKBD - Cosmic Pack 02 - Galactic Pulse-full.ogg"
 @onready var player = $'in_game_items/2/player'
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
     $bg_music.stream = preload(music_path)
+    $bg_music.stream.loop = true  # This line sets the audio to loop
     $bg_music.volume_db = -15
     $bg_music.play()
+    
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -20,6 +22,7 @@ func transport(body, place):
     # check if it is player falling -> if it is then put them in the position of the return area
     if body.is_in_group('player'):
         player.position = place.get_position()
+        
 
 
 func _on_fall_area_body_entered(body):
@@ -208,3 +211,4 @@ func _on_fall_area_46_body_entered(body):
 
 func _on_fall_area_47_body_entered(body):
     transport(body, $fall_return_areas/return_area47)
+

@@ -55,10 +55,16 @@ func _ready():
     coin_panel.position = COIN_PANEL_POSITION_RIGHT
     #___________________________________________________________________________________________________
     
-    #_____________________connecting PLayer_Damaged signal_________________
-    var obstacles = get_tree().get_nodes_in_group("obstacles")
-    for obstacle in obstacles:
-        obstacle.Player_Damaged.connect(_on_player_damaged)
+    #_____________________connecting signals_________________
+    #var obstacles = get_tree().get_nodes_in_group("obstacles")
+    #for obstacle in obstacles:
+        #obstacle.Player_Damaged.connect(global_on_player_damaged)
+        
+    #var coins = get_tree().get_nodes_in_group("coins")
+    #for coin in coins:
+        #coin.coin_inventory_changed.connect(_on_coin_coin_inventory_changed)
+        
+    add_to_group("global_listeners")
     #_____________________________________________________________________
     
     
@@ -149,7 +155,7 @@ func disable_movement():
 func enable_movement():
     can_move = true
     
-func _on_player_damaged():
+func global_on_player_damaged():
     _damage(3)
 # ___________________________________________________________________
     
@@ -170,7 +176,7 @@ func update_healthbar(value):
     set_health_bar()
 
 
-func _on_coin_coin_inventory_changed():
+func global_coin_inventory_changed():
     # add three coins to the coin bar when user picks up a coin
     coins += 3
     set_coin_bar()

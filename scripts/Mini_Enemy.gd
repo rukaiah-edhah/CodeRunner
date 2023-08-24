@@ -44,7 +44,8 @@ func _physics_process(delta):
                         enemy_died()
                         has_processed_collision = true
                 else:
-                    emit_signal("Player_Damaged")
+                    #emit_signal("Player_Damaged")
+                    get_tree().call_group("global_listeners", "global_on_player_damaged")
                     has_processed_collision = true
     
             if can_flip and normal.x != 0:

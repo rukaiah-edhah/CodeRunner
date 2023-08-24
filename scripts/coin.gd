@@ -14,5 +14,8 @@ func _on_body_entered(body):
     # send signal to player and make coin dissappear
     if body.is_in_group("player"):
         coin_sound.play(0)
-        emit_signal("coin_inventory_changed")
-        queue_free()
+        get_tree().call_group("global_listeners", "global_coin_inventory_changed")
+        #emit_signal("coin_inventory_changed")
+
+func _on_coin_audio_finished():
+    queue_free()

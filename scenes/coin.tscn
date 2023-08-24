@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://divgbcotp0d8v"]
+[gd_scene load_steps=14 format=3 uid="uid://divgbcotp0d8v"]
 
 [ext_resource type="Script" path="res://scripts/coin.gd" id="1_7irsq"]
 [ext_resource type="Texture2D" uid="uid://vt7kmmtdjp18" path="res://images/coin_animation/coin_1.png" id="2_m6718"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dc0om5c4l5rmh" path="res://images/coin_animation/coin_7.png" id="8_w1ftv"]
 [ext_resource type="Texture2D" uid="uid://63eitt4li2ss" path="res://images/coin_animation/coin_8.png" id="9_lwe7q"]
 [ext_resource type="Texture2D" uid="uid://bd2a47b46knuk" path="res://images/coin_animation/coin_9.png" id="10_5rqc3"]
+[ext_resource type="AudioStream" uid="uid://xm7ffcgfa4p1" path="res://fonts-and-music/music/pickupCoin.wav" id="11_slvon"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0hlmf"]
 animations = [{
@@ -50,7 +51,7 @@ animations = [{
 radius = 11.0
 height = 24.0
 
-[node name="coin" type="Area2D"]
+[node name="coin" type="Area2D" groups=["coins"]]
 position = Vector2(1, 1)
 script = ExtResource("1_7irsq")
 
@@ -67,5 +68,7 @@ frame_progress = 0.925382
 shape = SubResource("CapsuleShape2D_xy16x")
 
 [node name="coin_audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_slvon")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="finished" from="coin_audio" to="." method="_on_coin_audio_finished"]
