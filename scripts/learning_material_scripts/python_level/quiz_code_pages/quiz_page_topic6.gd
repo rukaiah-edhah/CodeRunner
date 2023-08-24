@@ -9,81 +9,80 @@ signal quiz_finished
 
 var questions = [
 		{
-		"question": "How do 'if,' 'elif,' and 'else' statements help manage how a program runs?",
-		"options": ["They set the program's start point", "They determine code's loop count", "They modify variable types", "They specify conditions for code paths"], # 1. Add all of the options you want to display 
+		"question": "What does the slice my_string[0:5] return if my_string is 'Hello, World!'?",
+		"options": ["Hell", "Hello", "Hello,", ", World!"], # 1. Add all of the options you want to display 
+		"answer": 1 # The index of the correct answer
+	},
+	{
+		"question": "If you want to access the last character of a string in Python, which index would you use?",
+		"options": ["0", "-1", "1", "The length of the string"], # 1. Add all of the options you want to display 
+		"answer": 1 # The index of the correct answer
+	},
+	{
+		"question": 'If my_string is "Hello, World!", what would my_string[-5] return?',
+		"options": [',', 'W', 'o','l'], # 1. Add all of the options you want to display 
+		"answer": 2 # The index of the correct answer
+	},
+	{
+		"question": 'When slicing a string in Python, if you omit the end index, it will:',
+		"options": ["Return an empty string, Slice the string until its end, Result in an error, Return only the character at the start index"], # 1. Add all of the options you want to display 
+		"answer": 1 # The index of the correct answer
+	},
+	{
+		"question": 'What would be the result of my_string[7:] if my_string is "Hello, World!"?',
+		"options": ["Hello, ", "World!", ", World!", "World"], # 1. Add all of the options you want to display 
+		"answer": 1 # The index of the correct answer
+	},
+	{
+		"question": "What do the parentheses after a function name in Python denote?",
+		"options": ["Pass arguments to the function", "Signify the end of a function", "Represent the return value", "Define global variables"], # 1. Add all of the options you want to display 
+		"answer": 0 # The index of the correct answer
+	},
+	{
+		"question": "Which logical operator will return True only when both its operands are True?",
+		"options": ["or", "and", "not", "None of the above"], # 1. Add all of the options you want to display 
+		"answer": 1 # The index of the correct answer
+	},
+	{
+		"question": "Which arithmetic operator is used to raise the first operand to the power of the second operand?",
+		"options": ["Addition (+)", "Multiplication (*)", "Exponentiation (**)", "Modulus (%)"], # 1. Add all of the options you want to display 
+		"answer": 2 # The index of the correct answer
+	},
+	{
+		"question": "What will Python raise if you have inconsistent or missing indentation within a code block?",
+		"options": ["SyntaxWarning", "CodeFlowError", "StructureMismatch", "IndentationError"], # 1. Add all of the options you want to display 
 		"answer": 3 # The index of the correct answer
 	},
 	{
-		"question": "Which control structure is used to execute a block of code only if a specified condition is true?",
-		"options": ["The else statement", "The if statement", "The elif statement", "All of the above"],
-		"answer": 1
+		"question": "What is the primary purpose of defining a function in Python?",
+		"options": ["To store a value", "To improve the speed of a program", "To repeat a block of code multiple times", "To group code into logical, reusable units"], # 1. Add all of the options you want to display 
+		"answer": 3 # The index of the correct answer
 	},
 	{
-		"question": "What is the purpose of the else statement?",
-		"options": ["Executes code if a condition is false", "Executes code if a condition is true", "Executes code regardless of prior condition", "Manages exceptions and errors"],
-		"answer": 0
+		"question": "What does the 'f' in an f-string in Python denote?",
+		"options": ["It stands for 'formatted'", "It signals a floating-point number", "It represents 'file' type", "It's an indication of a failure string"], # 1. Add all of the options you want to display 
+		"answer": 0 # The index of the correct answer
 	},
 	{
-		
-		"question": "What is the purpose of the elif statement in conditional control structures?",
-		"options": ["Checks conditions and runs the first true one", "Runs code for a true condition", "Offers alternate block for false conditions.", "Prints variable's message"],
-		"answer": 0
+		"question": "Which arithmetic operator is used for division that results in a floating-point value?",
+		"options": ["Multiplication (*)", "Modulus (%)", "Integer Division (//)", "Division (/)"], # 1. Add all of the options you want to display 
+		"answer": 3 # The index of the correct answer
 	},
 	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
+		"question": "Which of the following correctly calls the add_one function with the number 7 as an argument?",
+		"options": ["add_one(7)", "add_one = 7", "7(add_one)", "call add_one(7)"], # 1. Add all of the options you want to display 
+		"answer": 0 # The index of the correct answer
 	},
 	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
+		"question": "In Python, which operator is used to check if two values are NOT equal?",
+		"options": ["=!", "/=", "<>", "!="], # 1. Add all of the options you want to display 
+		"answer": 3 # The index of the correct answer
 	},
 	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
+		"question": "Which part of the function provides a result back to the caller?",
+		"options": ["The return statement", "The function name", "The def keyword", "The parameters"], # 1. Add all of the options you want to display 
+		"answer": 0 # The index of the correct answer
 	},
-	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
-	},
-	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
-	},
-	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
-	},
-	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
-	},
-	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
-	},
-	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
-	},
-	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
-	},
-	{
-		"question": "Which statement must be used to start a chain of conditional statements?",
-		"options": ["if", "elif", "else", "for"],
-		"answer": 0
-	},   
 ]
 @onready var question_label = $background_color/question_container/question_label
 
