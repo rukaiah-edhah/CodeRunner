@@ -1,6 +1,6 @@
 [gd_scene load_steps=102 format=3 uid="uid://bo2vfu0vkqg3m"]
 
-[ext_resource type="Texture2D" uid="uid://d32lpjwq3qjdc" path="res://images/grey_block.png" id="1_0msub"]
+[ext_resource type="Texture2D" uid="uid://bd16vawkbglce" path="res://images/grey_block.png" id="1_0msub"]
 [ext_resource type="PackedScene" uid="uid://5w3oro26ixht" path="res://scenes/envir_components/python_level/moving_platform_sideways_PL.tscn" id="4_segcm"]
 [ext_resource type="PackedScene" uid="uid://bsup6ehqgfr3p" path="res://scenes/envir_components/python_level/platform_python.tscn" id="5_fhe4e"]
 [ext_resource type="PackedScene" uid="uid://dfewuq08k2mdv" path="res://scenes/envir_components/python_level/moving_platform_oscilate_PL.tscn" id="5_jmtru"]
@@ -13,21 +13,21 @@
 [ext_resource type="PackedScene" uid="uid://cu46u1ulhqch0" path="res://scenes/envir_components/down_stairs.tscn" id="9_h21xr"]
 [ext_resource type="PackedScene" uid="uid://cal1327wnp1rp" path="res://scenes/envir_components/python_level/moving_platform_sideways_PL2.tscn" id="9_yonum"]
 [ext_resource type="PackedScene" uid="uid://dfrhyctivqeo6" path="res://scenes/envir_components/python_level/moving_platform_sideways_PL3.tscn" id="10_2nf65"]
-[ext_resource type="Texture2D" uid="uid://cdnbeqbg4uops" path="res://images/alien_planet /planets.png" id="11_t5sk6"]
+[ext_resource type="Texture2D" uid="uid://5h10jinkxjcg" path="res://images/alien_planet /planets.png" id="11_t5sk6"]
 [ext_resource type="PackedScene" uid="uid://c0g7y7sxuq23w" path="res://scenes/envir_components/python_level/moving_platform_up_down_PL3.tscn" id="12_3jxbh"]
-[ext_resource type="Texture2D" uid="uid://ki4r3kacn8gi" path="res://images/alien_planet /bg.png" id="12_vy3or"]
-[ext_resource type="Texture2D" uid="uid://ckyj44xvx0ox5" path="res://images/spaceship_interior/style_2/window3.png" id="13_h7q48"]
-[ext_resource type="Texture2D" uid="uid://b0fpboqqb7j0b" path="res://images/alien_planet /stars.png" id="13_rkddb"]
-[ext_resource type="Texture2D" uid="uid://bu4v3tklpcqw6" path="res://images/spaceship_interior/style_2/ceiling.png" id="14_7sh2a"]
+[ext_resource type="Texture2D" uid="uid://dyvg8a0kxhu1u" path="res://images/alien_planet /bg.png" id="12_vy3or"]
+[ext_resource type="Texture2D" uid="uid://4b0s68e17igr" path="res://images/spaceship_interior/style_2/window3.png" id="13_h7q48"]
+[ext_resource type="Texture2D" uid="uid://bq4xkbun5bhop" path="res://images/alien_planet /stars.png" id="13_rkddb"]
+[ext_resource type="Texture2D" uid="uid://b8g6srvjj21xw" path="res://images/spaceship_interior/style_2/ceiling.png" id="14_7sh2a"]
 [ext_resource type="Script" path="res://scripts/background_python.gd" id="14_q34xu"]
-[ext_resource type="Texture2D" uid="uid://ckujv33dmdbwc" path="res://images/spaceship_interior/style_2/floor.png" id="15_da0hg"]
-[ext_resource type="Texture2D" uid="uid://bjbyqihwiyaax" path="res://images/spaceship_interior/style_2/room_1_floor.png" id="19_dph6b"]
+[ext_resource type="Texture2D" uid="uid://b0p00po02qy3t" path="res://images/spaceship_interior/style_2/floor.png" id="15_da0hg"]
+[ext_resource type="Texture2D" uid="uid://bp6of16yqvw5w" path="res://images/spaceship_interior/style_2/room_1_floor.png" id="19_dph6b"]
 [ext_resource type="PackedScene" uid="uid://bjr3f6oxwl481" path="res://scenes/player.tscn" id="20_6vxv0"]
 [ext_resource type="PackedScene" uid="uid://bxmpl0pcciurl" path="res://scenes/podium_portal.tscn" id="20_f2qpy"]
-[ext_resource type="Texture2D" uid="uid://c7jnbh4v2nykn" path="res://images/spaceship_interior/style_2/final_boss_level_room.png" id="21_g7i4d"]
+[ext_resource type="Texture2D" uid="uid://dl5vhpwkpwdfl" path="res://images/spaceship_interior/style_2/final_boss_level_room.png" id="21_g7i4d"]
 [ext_resource type="PackedScene" uid="uid://cpr4k6xjmm6k3" path="res://scenes/linked_path.tscn" id="21_l5rng"]
-[ext_resource type="Texture2D" uid="uid://cb48sanrbq2xr" path="res://images/spaceship_interior/style_2/room2_floor_version2.png" id="23_flot8"]
-[ext_resource type="Texture2D" uid="uid://cns58gea6vb6k" path="res://images/spaceship_interior/style_2/final_boss_floor.png" id="24_b0l8j"]
+[ext_resource type="Texture2D" uid="uid://dw4njuj6jjwws" path="res://images/spaceship_interior/style_2/room2_floor_version2.png" id="23_flot8"]
+[ext_resource type="Texture2D" uid="uid://bnxuuuw7chj7x" path="res://images/spaceship_interior/style_2/final_boss_floor.png" id="24_b0l8j"]
 [ext_resource type="PackedScene" uid="uid://fieakrbmq8bi" path="res://learning-material-scenes/python-level/shifu's_lessons/topic_one/shifu_7.tscn" id="27_qjplc"]
 [ext_resource type="PackedScene" uid="uid://dry2l7ac4xsgi" path="res://learning-material-scenes/python-level/shifu's_lessons/topic_one/shifu_6.tscn" id="28_rhl7f"]
 [ext_resource type="PackedScene" uid="uid://divgbcotp0d8v" path="res://scenes/coin.tscn" id="29_wbqs8"]
@@ -148,10 +148,10 @@ tile_size = Vector2i(200, 16)
 sources/0 = SubResource("TileSetScenesCollectionSource_oyi0d")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ih7le"]
-size = Vector2(2127, 47)
+size = Vector2(4159.84, 67.562)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0usmw"]
-size = Vector2(552.435, 41)
+size = Vector2(542.218, 79.5)
 
 [node name="python_level" type="Node2D"]
 
@@ -1240,7 +1240,6 @@ scale = Vector2(7.63481, 11.8033)
 
 [node name="floor_holder17" type="Sprite2D" parent="graphics/0/room1/floor_holder16"]
 position = Vector2(23350.4, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("19_dph6b")
 
 [node name="floor2" type="Sprite2D" parent="graphics/0/room1/floor_holder16/floor_holder17"]
@@ -1281,7 +1280,6 @@ scale = Vector2(7.63481, 11.8033)
 
 [node name="floor_holder17" type="Sprite2D" parent="graphics/0/room1/floor_holder18"]
 position = Vector2(23350.4, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("19_dph6b")
 
 [node name="floor4" type="Sprite2D" parent="graphics/0/room1/floor_holder18/floor_holder17"]
@@ -2609,7 +2607,7 @@ position = Vector2(28207, -567)
 linked_path_self = NodePath(".")
 
 [node name="linked_path2" parent="doors/1" instance=ExtResource("21_l5rng")]
-position = Vector2(79105, -1746)
+position = Vector2(79405, -1762)
 linked_path_self = NodePath(".")
 
 [node name="linked_path3" parent="doors/1" instance=ExtResource("21_l5rng")]
@@ -2753,7 +2751,7 @@ position = Vector2(107883, -2325)
 position = Vector2(104127, -1996)
 
 [node name="Shifu6" parent="shifu\'s_lessons/2/Topic3" instance=ExtResource("51_pv53s")]
-position = Vector2(100246, -1986)
+position = Vector2(100880, -2054)
 
 [node name="Shifu7" parent="shifu\'s_lessons/2/Topic3" instance=ExtResource("52_stgad")]
 position = Vector2(95549, -1622)
@@ -2788,7 +2786,7 @@ position = Vector2(24058, -5256)
 position = Vector2(30081, -5646)
 
 [node name="Shifu6" parent="shifu\'s_lessons/2/Topic4" instance=ExtResource("61_pfchi")]
-position = Vector2(36161, -6267)
+position = Vector2(36946, -6395)
 
 [node name="example_box" parent="shifu\'s_lessons/2/Topic4" instance=ExtResource("62_dq4dq")]
 offset_left = 25470.0
@@ -2916,9 +2914,162 @@ shape = SubResource("RectangleShape2D_ih7le")
 
 [node name="fall_area5" type="Area2D" parent="fall_return_area"]
 position = Vector2(32521.7, 118.984)
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area5"]
 position = Vector2(95.2871, -3.98364)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area6" type="Area2D" parent="fall_return_area"]
+position = Vector2(40967.1, 927.621)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area6"]
+position = Vector2(645.896, -12.6206)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area7" type="Area2D" parent="fall_return_area"]
+position = Vector2(44832.7, 627.639)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area7"]
+position = Vector2(645.896, -12.6206)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area8" type="Area2D" parent="fall_return_area"]
+position = Vector2(48252.8, 433.506)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area8"]
+position = Vector2(1473.31, -12.6206)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area9" type="Area2D" parent="fall_return_area"]
+position = Vector2(54116, 341.69)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area9"]
+position = Vector2(1473.31, -12.6206)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area10" type="Area2D" parent="fall_return_area"]
+position = Vector2(58178.1, -65.1436)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area10"]
+position = Vector2(608.945, -12.8564)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area11" type="Area2D" parent="fall_return_area"]
+position = Vector2(61119.3, -318.737)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area11"]
+position = Vector2(608.945, -12.8564)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area12" type="Area2D" parent="fall_return_area"]
+position = Vector2(68345.9, 320.841)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area12"]
+position = Vector2(608.945, -12.8564)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area13" type="Area2D" parent="fall_return_area"]
+position = Vector2(73166.3, -212.526)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area13"]
+position = Vector2(608.945, -12.8564)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area14" type="Area2D" parent="fall_return_area"]
+position = Vector2(77779.9, -719.761)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area14"]
+position = Vector2(608.945, -12.8564)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area15" type="Area2D" parent="fall_return_area"]
+position = Vector2(82974.3, -758.543)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area15"]
+position = Vector2(608.945, -12.8564)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area16" type="Area2D" parent="fall_return_area"]
+position = Vector2(86525.4, -1046.29)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area16"]
+position = Vector2(126.586, 12.292)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area17" type="Area2D" parent="fall_return_area"]
+position = Vector2(92879.1, -293.105)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area17"]
+position = Vector2(558.867, -3.89453)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area18" type="Area2D" parent="fall_return_area"]
+position = Vector2(96881.4, -514.091)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area18"]
+position = Vector2(1373.65, 7.09131)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area19" type="Area2D" parent="fall_return_area"]
+position = Vector2(104950, -566.442)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area19"]
+position = Vector2(1373.65, 7.09131)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area20" type="Area2D" parent="fall_return_area"]
+position = Vector2(109664, -1102.17)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area20"]
+position = Vector2(781.992, -24.8301)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area21" type="Area2D" parent="fall_return_area"]
+position = Vector2(116767, -636.584)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area21"]
+position = Vector2(781.992, -24.8301)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area22" type="Area2D" parent="fall_return_area"]
+position = Vector2(122148, -719.535)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area22"]
+position = Vector2(781.992, -24.8301)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area23" type="Area2D" parent="fall_return_area"]
+position = Vector2(127251, -1031.66)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area23"]
+position = Vector2(781.992, -24.8301)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area24" type="Area2D" parent="fall_return_area"]
+position = Vector2(133667, -1409.21)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area24"]
+position = Vector2(781.992, -24.8301)
 shape = SubResource("RectangleShape2D_ih7le")
 
 [node name="fall_area2" type="Area2D" parent="fall_return_area"]
@@ -2929,10 +3080,185 @@ position = Vector2(304.949, 16.1104)
 shape = SubResource("RectangleShape2D_ih7le")
 
 [node name="fall_area3" type="Area2D" parent="fall_return_area"]
-position = Vector2(21840.2, 546.298)
+position = Vector2(22069, 589)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area3"]
 position = Vector2(1279.78, 57.7024)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area25" type="Area2D" parent="fall_return_area"]
+position = Vector2(-609.796, 340.982)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area25"]
+position = Vector2(1279.78, 57.7024)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area26" type="Area2D" parent="fall_return_area"]
+position = Vector2(-595.627, -3492.79)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area26"]
+position = Vector2(1279.78, 57.7024)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area27" type="Area2D" parent="fall_return_area"]
+position = Vector2(4025.58, -3424.83)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area27"]
+position = Vector2(1279.78, 57.7024)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area28" type="Area2D" parent="fall_return_area"]
+position = Vector2(7583.18, -3758.3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area28"]
+position = Vector2(1279.78, 57.7024)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area29" type="Area2D" parent="fall_return_area"]
+position = Vector2(14467.3, -4150.04)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area29"]
+position = Vector2(1279.78, 57.7024)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area30" type="Area2D" parent="fall_return_area"]
+position = Vector2(23160.5, -3861.87)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area30"]
+position = Vector2(466.485, 23.8696)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area31" type="Area2D" parent="fall_return_area"]
+position = Vector2(27251.9, -4133.09)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area31"]
+position = Vector2(466.485, 23.8696)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area32" type="Area2D" parent="fall_return_area"]
+position = Vector2(33899.9, -4550.93)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area32"]
+position = Vector2(375.234, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area33" type="Area2D" parent="fall_return_area"]
+position = Vector2(39362.2, -4856.68)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area33"]
+position = Vector2(375.234, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area34" type="Area2D" parent="fall_return_area"]
+position = Vector2(46936.4, -4856.68)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area34"]
+position = Vector2(375.234, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area35" type="Area2D" parent="fall_return_area"]
+position = Vector2(55876.5, -5034.47)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area35"]
+position = Vector2(375.234, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area36" type="Area2D" parent="fall_return_area"]
+position = Vector2(62164.1, -5580.53)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area36"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area37" type="Area2D" parent="fall_return_area"]
+position = Vector2(67054.2, -5872.61)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area37"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area38" type="Area2D" parent="fall_return_area"]
+position = Vector2(71232.2, -6240.89)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area38"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area39" type="Area2D" parent="fall_return_area"]
+position = Vector2(78844.1, -6042.85)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area39"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area40" type="Area2D" parent="fall_return_area"]
+position = Vector2(83229.8, -6128.24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area40"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area41" type="Area2D" parent="fall_return_area"]
+position = Vector2(87033.3, -5818.55)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area41"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area42" type="Area2D" parent="fall_return_area"]
+position = Vector2(92603.6, -6437.92)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area42"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area43" type="Area2D" parent="fall_return_area"]
+position = Vector2(98375.1, -6437.92)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area43"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area44" type="Area2D" parent="fall_return_area"]
+position = Vector2(105863, -6651.49)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area44"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area45" type="Area2D" parent="fall_return_area"]
+position = Vector2(110856, -6779.64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area45"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area46" type="Area2D" parent="fall_return_area"]
+position = Vector2(118872, -7014.57)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area46"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area47" type="Area2D" parent="fall_return_area"]
+position = Vector2(124791, -7153.39)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area47"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area48" type="Area2D" parent="fall_return_area"]
+position = Vector2(129465, -7760.17)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area48"]
+position = Vector2(472.992, 34.1504)
+shape = SubResource("RectangleShape2D_ih7le")
+
+[node name="fall_area49" type="Area2D" parent="fall_return_area"]
+position = Vector2(135249, -8536.03)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/fall_area49"]
+position = Vector2(472.992, 34.1504)
 shape = SubResource("RectangleShape2D_ih7le")
 
 [node name="return_area" type="Area2D" parent="fall_return_area"]
@@ -2968,110 +3294,506 @@ position = Vector2(268.97, 4.90057)
 shape = SubResource("RectangleShape2D_0usmw")
 debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
 
+[node name="return_area5" type="Area2D" parent="fall_return_area"]
+position = Vector2(40153.1, 64.9111)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area5"]
+position = Vector2(382.939, 5.08886)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area6" type="Area2D" parent="fall_return_area"]
+position = Vector2(44402.2, -623.615)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area6"]
+position = Vector2(174.845, 20.6147)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area7" type="Area2D" parent="fall_return_area"]
+position = Vector2(47736.5, -1141.56)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area7"]
+position = Vector2(174.845, 20.6147)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area8" type="Area2D" parent="fall_return_area"]
+position = Vector2(53438, -1302.6)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area8"]
+position = Vector2(174.845, 20.6147)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area9" type="Area2D" parent="fall_return_area"]
+position = Vector2(57516.9, -1658.58)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area9"]
+position = Vector2(174.845, 20.6147)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area10" type="Area2D" parent="fall_return_area"]
+position = Vector2(60262.5, -1417.39)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area10"]
+position = Vector2(174.845, 20.6147)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area11" type="Area2D" parent="fall_return_area"]
+position = Vector2(67511.4, -1253.86)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area11"]
+position = Vector2(174.845, 20.6147)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area12" type="Area2D" parent="fall_return_area"]
+position = Vector2(74537.8, -2053.91)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area12"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area13" type="Area2D" parent="fall_return_area"]
+position = Vector2(78644.8, -2086.64)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area13"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area14" type="Area2D" parent="fall_return_area"]
+position = Vector2(82089.5, -1985.8)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area14"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area15" type="Area2D" parent="fall_return_area"]
+position = Vector2(85496.8, -2087.63)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area15"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area16" type="Area2D" parent="fall_return_area"]
+position = Vector2(94063.1, -1669.11)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area16"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area17" type="Area2D" parent="fall_return_area"]
+position = Vector2(100003, -2063.77)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area17"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area18" type="Area2D" parent="fall_return_area"]
+position = Vector2(106267, -2560.36)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area18"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area19" type="Area2D" parent="fall_return_area"]
+position = Vector2(111321, -2844.58)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area19"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area20" type="Area2D" parent="fall_return_area"]
+position = Vector2(116399, -2044.58)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area20"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area21" type="Area2D" parent="fall_return_area"]
+position = Vector2(121731, -2239.88)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area21"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area22" type="Area2D" parent="fall_return_area"]
+position = Vector2(128943, -2738.18)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area22"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area23" type="Area2D" parent="fall_return_area"]
+position = Vector2(132958, -2602.26)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area23"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area24" type="Area2D" parent="fall_return_area"]
+position = Vector2(229.256, -486.283)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area24"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area25" type="Area2D" parent="fall_return_area"]
+position = Vector2(-361.546, -4164.83)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area25"]
+position = Vector2(281.289, 52.1616)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area26" type="Area2D" parent="fall_return_area"]
+position = Vector2(3481.91, -4383.81)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area26"]
+position = Vector2(153.089, 51.8057)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area27" type="Area2D" parent="fall_return_area"]
+position = Vector2(7080.27, -4761.27)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area27"]
+position = Vector2(153.089, 51.8057)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area28" type="Area2D" parent="fall_return_area"]
+position = Vector2(13977, -5234.93)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area28"]
+position = Vector2(153.089, 51.8057)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area29" type="Area2D" parent="fall_return_area"]
+position = Vector2(21960.4, -4980.66)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area29"]
+position = Vector2(153.089, 51.8057)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area30" type="Area2D" parent="fall_return_area"]
+position = Vector2(26794.3, -5285.79)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area30"]
+position = Vector2(153.089, 51.8057)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area31" type="Area2D" parent="fall_return_area"]
+position = Vector2(35921.1, -6399.64)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area31"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area32" type="Area2D" parent="fall_return_area"]
+position = Vector2(41305.2, -6532.97)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area32"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area33" type="Area2D" parent="fall_return_area"]
+position = Vector2(46657, -6532.97)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area33"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area34" type="Area2D" parent="fall_return_area"]
+position = Vector2(55218.3, -6355.18)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area34"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area35" type="Area2D" parent="fall_return_area"]
+position = Vector2(60821.1, -6990.15)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area35"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area36" type="Area2D" parent="fall_return_area"]
+position = Vector2(66724, -7180.63)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area36"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area37" type="Area2D" parent="fall_return_area"]
+position = Vector2(70648.1, -7752.1)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area37"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area38" type="Area2D" parent="fall_return_area"]
+position = Vector2(78378, -7409.68)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area38"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area39" type="Area2D" parent="fall_return_area"]
+position = Vector2(82834.7, -7377.65)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area39"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area40" type="Area2D" parent="fall_return_area"]
+position = Vector2(87770.1, -7879.55)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area40"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area41" type="Area2D" parent="fall_return_area"]
+position = Vector2(90393.1, -7847.51)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area41"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area42" type="Area2D" parent="fall_return_area"]
+position = Vector2(97755.7, -7997.01)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area42"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area43" type="Area2D" parent="fall_return_area"]
+position = Vector2(105318, -8007.69)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area43"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area44" type="Area2D" parent="fall_return_area"]
+position = Vector2(110258, -8114.48)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area44"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area45" type="Area2D" parent="fall_return_area"]
+position = Vector2(116726, -8306.7)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area45"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area46" type="Area2D" parent="fall_return_area"]
+position = Vector2(124342, -8573.66)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area46"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area47" type="Area2D" parent="fall_return_area"]
+position = Vector2(129357, -9126.62)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area47"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
+[node name="return_area48" type="Area2D" parent="fall_return_area"]
+position = Vector2(135181, -9765.09)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fall_return_area/return_area48"]
+position = Vector2(277.89, 51.6377)
+shape = SubResource("RectangleShape2D_0usmw")
+debug_color = Color(0.921569, 0.054902, 0.662745, 0.419608)
+
 [connection signal="body_entered" from="in_game_items/2/coins_tile_map/coin" to="in_game_items/2/coins_tile_map/coin" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748703" to="in_game_items/2/coins_tile_map/@coin@748703" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748704" to="in_game_items/2/coins_tile_map/@coin@748704" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748705" to="in_game_items/2/coins_tile_map/@coin@748705" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748706" to="in_game_items/2/coins_tile_map/@coin@748706" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748707" to="in_game_items/2/coins_tile_map/@coin@748707" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748708" to="in_game_items/2/coins_tile_map/@coin@748708" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748709" to="in_game_items/2/coins_tile_map/@coin@748709" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748710" to="in_game_items/2/coins_tile_map/@coin@748710" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748711" to="in_game_items/2/coins_tile_map/@coin@748711" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748712" to="in_game_items/2/coins_tile_map/@coin@748712" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748713" to="in_game_items/2/coins_tile_map/@coin@748713" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748714" to="in_game_items/2/coins_tile_map/@coin@748714" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748715" to="in_game_items/2/coins_tile_map/@coin@748715" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748716" to="in_game_items/2/coins_tile_map/@coin@748716" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748717" to="in_game_items/2/coins_tile_map/@coin@748717" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748718" to="in_game_items/2/coins_tile_map/@coin@748718" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748719" to="in_game_items/2/coins_tile_map/@coin@748719" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748720" to="in_game_items/2/coins_tile_map/@coin@748720" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748721" to="in_game_items/2/coins_tile_map/@coin@748721" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748722" to="in_game_items/2/coins_tile_map/@coin@748722" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748723" to="in_game_items/2/coins_tile_map/@coin@748723" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748724" to="in_game_items/2/coins_tile_map/@coin@748724" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748725" to="in_game_items/2/coins_tile_map/@coin@748725" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748726" to="in_game_items/2/coins_tile_map/@coin@748726" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748727" to="in_game_items/2/coins_tile_map/@coin@748727" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748728" to="in_game_items/2/coins_tile_map/@coin@748728" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748729" to="in_game_items/2/coins_tile_map/@coin@748729" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748730" to="in_game_items/2/coins_tile_map/@coin@748730" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748731" to="in_game_items/2/coins_tile_map/@coin@748731" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748732" to="in_game_items/2/coins_tile_map/@coin@748732" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748733" to="in_game_items/2/coins_tile_map/@coin@748733" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748734" to="in_game_items/2/coins_tile_map/@coin@748734" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748735" to="in_game_items/2/coins_tile_map/@coin@748735" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748736" to="in_game_items/2/coins_tile_map/@coin@748736" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748737" to="in_game_items/2/coins_tile_map/@coin@748737" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748738" to="in_game_items/2/coins_tile_map/@coin@748738" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748739" to="in_game_items/2/coins_tile_map/@coin@748739" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748740" to="in_game_items/2/coins_tile_map/@coin@748740" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748741" to="in_game_items/2/coins_tile_map/@coin@748741" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748742" to="in_game_items/2/coins_tile_map/@coin@748742" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748743" to="in_game_items/2/coins_tile_map/@coin@748743" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748744" to="in_game_items/2/coins_tile_map/@coin@748744" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748745" to="in_game_items/2/coins_tile_map/@coin@748745" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748746" to="in_game_items/2/coins_tile_map/@coin@748746" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748747" to="in_game_items/2/coins_tile_map/@coin@748747" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748748" to="in_game_items/2/coins_tile_map/@coin@748748" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748749" to="in_game_items/2/coins_tile_map/@coin@748749" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748750" to="in_game_items/2/coins_tile_map/@coin@748750" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748751" to="in_game_items/2/coins_tile_map/@coin@748751" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748752" to="in_game_items/2/coins_tile_map/@coin@748752" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748753" to="in_game_items/2/coins_tile_map/@coin@748753" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748754" to="in_game_items/2/coins_tile_map/@coin@748754" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748755" to="in_game_items/2/coins_tile_map/@coin@748755" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748756" to="in_game_items/2/coins_tile_map/@coin@748756" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748757" to="in_game_items/2/coins_tile_map/@coin@748757" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748758" to="in_game_items/2/coins_tile_map/@coin@748758" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748759" to="in_game_items/2/coins_tile_map/@coin@748759" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748760" to="in_game_items/2/coins_tile_map/@coin@748760" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748761" to="in_game_items/2/coins_tile_map/@coin@748761" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748762" to="in_game_items/2/coins_tile_map/@coin@748762" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748763" to="in_game_items/2/coins_tile_map/@coin@748763" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748764" to="in_game_items/2/coins_tile_map/@coin@748764" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748765" to="in_game_items/2/coins_tile_map/@coin@748765" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748766" to="in_game_items/2/coins_tile_map/@coin@748766" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748767" to="in_game_items/2/coins_tile_map/@coin@748767" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748768" to="in_game_items/2/coins_tile_map/@coin@748768" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748769" to="in_game_items/2/coins_tile_map/@coin@748769" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748770" to="in_game_items/2/coins_tile_map/@coin@748770" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748771" to="in_game_items/2/coins_tile_map/@coin@748771" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748772" to="in_game_items/2/coins_tile_map/@coin@748772" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748773" to="in_game_items/2/coins_tile_map/@coin@748773" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748774" to="in_game_items/2/coins_tile_map/@coin@748774" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748775" to="in_game_items/2/coins_tile_map/@coin@748775" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748776" to="in_game_items/2/coins_tile_map/@coin@748776" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748777" to="in_game_items/2/coins_tile_map/@coin@748777" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748778" to="in_game_items/2/coins_tile_map/@coin@748778" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748779" to="in_game_items/2/coins_tile_map/@coin@748779" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748780" to="in_game_items/2/coins_tile_map/@coin@748780" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748781" to="in_game_items/2/coins_tile_map/@coin@748781" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748782" to="in_game_items/2/coins_tile_map/@coin@748782" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748783" to="in_game_items/2/coins_tile_map/@coin@748783" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748784" to="in_game_items/2/coins_tile_map/@coin@748784" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748785" to="in_game_items/2/coins_tile_map/@coin@748785" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748786" to="in_game_items/2/coins_tile_map/@coin@748786" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748787" to="in_game_items/2/coins_tile_map/@coin@748787" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748788" to="in_game_items/2/coins_tile_map/@coin@748788" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748789" to="in_game_items/2/coins_tile_map/@coin@748789" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748790" to="in_game_items/2/coins_tile_map/@coin@748790" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748791" to="in_game_items/2/coins_tile_map/@coin@748791" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748792" to="in_game_items/2/coins_tile_map/@coin@748792" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748793" to="in_game_items/2/coins_tile_map/@coin@748793" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748794" to="in_game_items/2/coins_tile_map/@coin@748794" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748795" to="in_game_items/2/coins_tile_map/@coin@748795" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748796" to="in_game_items/2/coins_tile_map/@coin@748796" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748797" to="in_game_items/2/coins_tile_map/@coin@748797" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748798" to="in_game_items/2/coins_tile_map/@coin@748798" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748799" to="in_game_items/2/coins_tile_map/@coin@748799" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748800" to="in_game_items/2/coins_tile_map/@coin@748800" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748801" to="in_game_items/2/coins_tile_map/@coin@748801" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748802" to="in_game_items/2/coins_tile_map/@coin@748802" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748803" to="in_game_items/2/coins_tile_map/@coin@748803" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748804" to="in_game_items/2/coins_tile_map/@coin@748804" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748805" to="in_game_items/2/coins_tile_map/@coin@748805" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748806" to="in_game_items/2/coins_tile_map/@coin@748806" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748807" to="in_game_items/2/coins_tile_map/@coin@748807" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@748808" to="in_game_items/2/coins_tile_map/@coin@748808" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18712" to="in_game_items/2/coins_tile_map/@coin@18712" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18713" to="in_game_items/2/coins_tile_map/@coin@18713" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18714" to="in_game_items/2/coins_tile_map/@coin@18714" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18715" to="in_game_items/2/coins_tile_map/@coin@18715" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18716" to="in_game_items/2/coins_tile_map/@coin@18716" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18717" to="in_game_items/2/coins_tile_map/@coin@18717" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18718" to="in_game_items/2/coins_tile_map/@coin@18718" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18719" to="in_game_items/2/coins_tile_map/@coin@18719" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18720" to="in_game_items/2/coins_tile_map/@coin@18720" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18721" to="in_game_items/2/coins_tile_map/@coin@18721" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18722" to="in_game_items/2/coins_tile_map/@coin@18722" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18723" to="in_game_items/2/coins_tile_map/@coin@18723" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18724" to="in_game_items/2/coins_tile_map/@coin@18724" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18725" to="in_game_items/2/coins_tile_map/@coin@18725" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18726" to="in_game_items/2/coins_tile_map/@coin@18726" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18727" to="in_game_items/2/coins_tile_map/@coin@18727" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18728" to="in_game_items/2/coins_tile_map/@coin@18728" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18729" to="in_game_items/2/coins_tile_map/@coin@18729" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18730" to="in_game_items/2/coins_tile_map/@coin@18730" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18731" to="in_game_items/2/coins_tile_map/@coin@18731" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18732" to="in_game_items/2/coins_tile_map/@coin@18732" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18733" to="in_game_items/2/coins_tile_map/@coin@18733" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18734" to="in_game_items/2/coins_tile_map/@coin@18734" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18735" to="in_game_items/2/coins_tile_map/@coin@18735" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18736" to="in_game_items/2/coins_tile_map/@coin@18736" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18737" to="in_game_items/2/coins_tile_map/@coin@18737" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18738" to="in_game_items/2/coins_tile_map/@coin@18738" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18739" to="in_game_items/2/coins_tile_map/@coin@18739" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18740" to="in_game_items/2/coins_tile_map/@coin@18740" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18741" to="in_game_items/2/coins_tile_map/@coin@18741" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18742" to="in_game_items/2/coins_tile_map/@coin@18742" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18743" to="in_game_items/2/coins_tile_map/@coin@18743" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18744" to="in_game_items/2/coins_tile_map/@coin@18744" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18745" to="in_game_items/2/coins_tile_map/@coin@18745" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18746" to="in_game_items/2/coins_tile_map/@coin@18746" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18747" to="in_game_items/2/coins_tile_map/@coin@18747" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18748" to="in_game_items/2/coins_tile_map/@coin@18748" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18749" to="in_game_items/2/coins_tile_map/@coin@18749" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18750" to="in_game_items/2/coins_tile_map/@coin@18750" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18751" to="in_game_items/2/coins_tile_map/@coin@18751" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18752" to="in_game_items/2/coins_tile_map/@coin@18752" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18753" to="in_game_items/2/coins_tile_map/@coin@18753" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18754" to="in_game_items/2/coins_tile_map/@coin@18754" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18755" to="in_game_items/2/coins_tile_map/@coin@18755" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18756" to="in_game_items/2/coins_tile_map/@coin@18756" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18757" to="in_game_items/2/coins_tile_map/@coin@18757" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18758" to="in_game_items/2/coins_tile_map/@coin@18758" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18759" to="in_game_items/2/coins_tile_map/@coin@18759" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18760" to="in_game_items/2/coins_tile_map/@coin@18760" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18761" to="in_game_items/2/coins_tile_map/@coin@18761" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18762" to="in_game_items/2/coins_tile_map/@coin@18762" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18763" to="in_game_items/2/coins_tile_map/@coin@18763" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18764" to="in_game_items/2/coins_tile_map/@coin@18764" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18765" to="in_game_items/2/coins_tile_map/@coin@18765" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18766" to="in_game_items/2/coins_tile_map/@coin@18766" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18767" to="in_game_items/2/coins_tile_map/@coin@18767" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18768" to="in_game_items/2/coins_tile_map/@coin@18768" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18769" to="in_game_items/2/coins_tile_map/@coin@18769" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18770" to="in_game_items/2/coins_tile_map/@coin@18770" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18771" to="in_game_items/2/coins_tile_map/@coin@18771" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18772" to="in_game_items/2/coins_tile_map/@coin@18772" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18773" to="in_game_items/2/coins_tile_map/@coin@18773" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18774" to="in_game_items/2/coins_tile_map/@coin@18774" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18775" to="in_game_items/2/coins_tile_map/@coin@18775" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18776" to="in_game_items/2/coins_tile_map/@coin@18776" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18777" to="in_game_items/2/coins_tile_map/@coin@18777" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18778" to="in_game_items/2/coins_tile_map/@coin@18778" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18779" to="in_game_items/2/coins_tile_map/@coin@18779" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18780" to="in_game_items/2/coins_tile_map/@coin@18780" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18781" to="in_game_items/2/coins_tile_map/@coin@18781" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18782" to="in_game_items/2/coins_tile_map/@coin@18782" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18783" to="in_game_items/2/coins_tile_map/@coin@18783" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18784" to="in_game_items/2/coins_tile_map/@coin@18784" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18785" to="in_game_items/2/coins_tile_map/@coin@18785" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18786" to="in_game_items/2/coins_tile_map/@coin@18786" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18787" to="in_game_items/2/coins_tile_map/@coin@18787" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18788" to="in_game_items/2/coins_tile_map/@coin@18788" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18789" to="in_game_items/2/coins_tile_map/@coin@18789" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18790" to="in_game_items/2/coins_tile_map/@coin@18790" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18791" to="in_game_items/2/coins_tile_map/@coin@18791" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18792" to="in_game_items/2/coins_tile_map/@coin@18792" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18793" to="in_game_items/2/coins_tile_map/@coin@18793" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18794" to="in_game_items/2/coins_tile_map/@coin@18794" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18795" to="in_game_items/2/coins_tile_map/@coin@18795" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18796" to="in_game_items/2/coins_tile_map/@coin@18796" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18797" to="in_game_items/2/coins_tile_map/@coin@18797" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18798" to="in_game_items/2/coins_tile_map/@coin@18798" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18799" to="in_game_items/2/coins_tile_map/@coin@18799" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18800" to="in_game_items/2/coins_tile_map/@coin@18800" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18801" to="in_game_items/2/coins_tile_map/@coin@18801" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18802" to="in_game_items/2/coins_tile_map/@coin@18802" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18803" to="in_game_items/2/coins_tile_map/@coin@18803" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18804" to="in_game_items/2/coins_tile_map/@coin@18804" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18805" to="in_game_items/2/coins_tile_map/@coin@18805" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18806" to="in_game_items/2/coins_tile_map/@coin@18806" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18807" to="in_game_items/2/coins_tile_map/@coin@18807" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18808" to="in_game_items/2/coins_tile_map/@coin@18808" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18809" to="in_game_items/2/coins_tile_map/@coin@18809" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18810" to="in_game_items/2/coins_tile_map/@coin@18810" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18811" to="in_game_items/2/coins_tile_map/@coin@18811" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18812" to="in_game_items/2/coins_tile_map/@coin@18812" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18813" to="in_game_items/2/coins_tile_map/@coin@18813" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18814" to="in_game_items/2/coins_tile_map/@coin@18814" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18815" to="in_game_items/2/coins_tile_map/@coin@18815" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18816" to="in_game_items/2/coins_tile_map/@coin@18816" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="in_game_items/2/coins_tile_map/@coin@18817" to="in_game_items/2/coins_tile_map/@coin@18817" method="_on_body_entered" flags=18]
