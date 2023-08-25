@@ -15,6 +15,7 @@ var health = 100
 @onready var boss_encounter_area = $boss_encounter_area
 @onready var growl = $growl
 @onready var howl = $howl
+@onready var encounter = $encounter
 
 # Responsible for the flash effect 
 @onready var top_border = $boss_encounter_area/boss_level_window/top_border
@@ -29,6 +30,7 @@ var is_transitioning_to_code = false
 
 var growl_audio = preload('res://fonts-and-music/music/growl.mp3')
 var howl_audio = preload('res://fonts-and-music/music/monster_howl.mp3')
+var ecounter_audio = preload("res://fonts-and-music/music/final_boss_intro_encounter.mp3")
 
 func _ready():
     BossManager.add_boss(self) # Connects the boss's signals to the player's methods
@@ -55,10 +57,13 @@ func _ready():
     
     # setting audio and changing effects/volume
     howl.stream = howl_audio
-    howl.pitch_scale = -0.80
+    howl.pitch_scale = -0.50
     
     growl.stream = growl_audio
-    growl.volume_db = -15
+    growl.volume_db = -10
+    
+    encounter.stream = ecounter_audio
+    encounter.volume_db = 1 
     
     # setting healthbar to 100 initially
     health_bar.value = health
@@ -66,7 +71,8 @@ func _ready():
 
 # Signal handlers 
 func _on_boss_encounter_area_body_entered(body):
-    if body.is_in_group("player"): 
+    if body.is_in_group("player"):
+        encounter.play(0) 
         is_displaying_window = true
         anim_player.play("display_window")
         boss_encounter_area.body_entered.disconnect(_on_boss_encounter_area_body_entered)

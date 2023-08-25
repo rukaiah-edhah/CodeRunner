@@ -23,7 +23,7 @@ func _change_scene():
     # Joel, you can fade in/out or do any animation here for smoother transitions between the scenes
     
     
-    var new_scene = get_tree().change_scene_to_file("res://scenes/python_envir.tscn")
+    var new_scene = get_tree().change_scene_to_file("res://scenes/python_level.tscn")
 
 func play_sound(audio_stream):
     var audio_stream_player = AudioStreamPlayer.new()
