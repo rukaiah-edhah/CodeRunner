@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgsxf6cf8q276"]
+[gd_scene load_steps=4 format=3 uid="uid://bgsxf6cf8q276"]
 
 [ext_resource type="Script" path="res://scripts/volume_options.gd" id="1_63qig"]
+[ext_resource type="Texture2D" uid="uid://dm7j6bm3efa6i" path="res://images/button_bg.png" id="2_s50rn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tn4lm"]
+texture = ExtResource("2_s50rn")
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -17,6 +21,7 @@ offset_left = 1064.0
 offset_top = 5.0
 offset_right = 1141.0
 offset_bottom = 25.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_tn4lm")
 
 [node name="volume_bar" type="HSlider" parent="volume_button"]
 layout_mode = 0

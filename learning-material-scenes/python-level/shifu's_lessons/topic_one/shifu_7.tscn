@@ -513,7 +513,7 @@ modulate = Color(1, 1, 1, 0.839216)
 self_modulate = Color(1, 1, 1, 0.835294)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("72_hb2gx")
-text = "I am ready!"
+text = "Got it!"
 
 [node name="next_char" type="Timer" parent="dialogue"]
 
