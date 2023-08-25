@@ -9,7 +9,8 @@ extends Node2D
 #var button_bg = preload("res://images/themes/purple_button.tres")
 
 #background music path
-const music_path: String = "res://fonts-and-music/music/DavidKBD - Cosmic Pack 03 - Nebula Run-variation5.ogg"
+const music_path: String = "res://fonts-and-music/music/DavidKBD - Cosmic Pack 04 - Orbit Oddyseey-variation4.ogg"
+
 func _ready():
     pass
     # menu option labels

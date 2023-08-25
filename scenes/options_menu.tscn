@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://tjbvo7db6awc"]
+[gd_scene load_steps=10 format=3 uid="uid://tjbvo7db6awc"]
 
 [ext_resource type="Script" path="res://scripts/options_menu.gd" id="1_8pgr6"]
-[ext_resource type="Texture2D" uid="uid://b8umrxdpv2q0l" path="res://images/menu_bg.png" id="2_jgrds"]
+[ext_resource type="Texture2D" uid="uid://chpop6y66xr3i" path="res://images/menu_bg.png" id="2_jgrds"]
 [ext_resource type="StyleBox" uid="uid://iuskkhobcs2e" path="res://images/themes/purple_button.tres" id="2_v63xt"]
-[ext_resource type="Texture2D" uid="uid://dm7j6bm3efa6i" path="res://images/button_bg.png" id="4_qgx7r"]
-[ext_resource type="FontFile" uid="uid://5d3c1vsdc7j2" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="5_4gyqk"]
+[ext_resource type="Texture2D" uid="uid://cg3sxr8hixj3q" path="res://images/button_bg.png" id="4_qgx7r"]
+[ext_resource type="FontFile" uid="uid://ccb1mu4uu8dxg" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="5_4gyqk"]
+[ext_resource type="PackedScene" uid="uid://b0y2nbxqx3fkn" path="res://scenes/bg_music.tscn" id="6_5xiiw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_14eoo"]
 font = ExtResource("5_4gyqk")
@@ -118,6 +119,8 @@ text = "Back"
 label_settings = SubResource("LabelSettings_jrfg1")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="bg_music" parent="." instance=ExtResource("6_5xiiw")]
 
 [connection signal="pressed" from="brightness" to="." method="_on_brightness_pressed"]
 [connection signal="pressed" from="volume" to="." method="_on_volume_pressed"]

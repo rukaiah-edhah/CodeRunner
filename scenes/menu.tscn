@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://brqa4emc67drg"]
+[gd_scene load_steps=10 format=3 uid="uid://brqa4emc67drg"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_8mpn6"]
-[ext_resource type="Texture2D" uid="uid://b8umrxdpv2q0l" path="res://images/menu_bg.png" id="2_a6cv2"]
-[ext_resource type="FontFile" uid="uid://5d3c1vsdc7j2" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="3_mmws1"]
-[ext_resource type="Texture2D" uid="uid://dm7j6bm3efa6i" path="res://images/button_bg.png" id="4_y7mwo"]
+[ext_resource type="Texture2D" uid="uid://chpop6y66xr3i" path="res://images/menu_bg.png" id="2_a6cv2"]
+[ext_resource type="FontFile" uid="uid://ccb1mu4uu8dxg" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="3_mmws1"]
+[ext_resource type="Texture2D" uid="uid://cg3sxr8hixj3q" path="res://images/button_bg.png" id="4_y7mwo"]
+[ext_resource type="PackedScene" uid="uid://b0y2nbxqx3fkn" path="res://scenes/bg_music.tscn" id="5_48i4w"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_j0qhm"]
 font = ExtResource("3_mmws1")
@@ -114,6 +115,8 @@ offset_left = 756.0
 offset_top = 496.0
 offset_right = 961.0
 offset_bottom = 553.0
+
+[node name="bg_musics" parent="." instance=ExtResource("5_48i4w")]
 
 [connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="quit_button" to="." method="_on_quit_button_pressed"]
