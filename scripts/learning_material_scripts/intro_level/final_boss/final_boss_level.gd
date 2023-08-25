@@ -15,6 +15,7 @@ var health = 100
 @onready var boss_encounter_area = $boss_encounter_area
 @onready var growl = $growl
 @onready var howl = $howl
+@onready var encounter = $encounter
 
 # Responsible for the flash effect 
 @onready var top_border = $boss_encounter_area/boss_level_window/top_border
@@ -29,48 +30,56 @@ var is_transitioning_to_code = false
 
 var growl_audio = preload('res://fonts-and-music/music/growl.mp3')
 var howl_audio = preload('res://fonts-and-music/music/monster_howl.mp3')
+var ecounter_audio = preload("res://fonts-and-music/music/final_boss_intro_encounter.mp3")
 
 func _ready():
-	BossManager.add_boss(self) # Connects the boss's signals to the player's methods
-	
-	# Connecting area signals
-	boss_encounter_area.body_entered.connect(_on_boss_encounter_area_body_entered)
-	block_area.player_hit.connect(_on_player_hit_block_area)
-	
-	# Connecting quiz signals
-	quiz_page.wrong_answer.connect(player_wrong_answer)
-	quiz_page.take_damage.connect(take_damage)
-	quiz_page.quiz_finished.connect(on_quiz_finished)
-	
-	# Connecting code page signals
-	code_page.wrong_answer.connect(player_wrong_answer)
-	code_page.right_answer.connect(_on_code_page_all_correct)
-	
-	# Initial visibility setup
-	quiz_page.visible = true
-	code_page.visible = false
-	
-	# connecting animation signals
-	anim_player.animation_finished.connect(_on_animation_player_animation_finished)
-	
-	# setting audio and changing effects/volume
-	howl.stream = howl_audio
-	howl.pitch_scale = -0.80
-	
-	growl.stream = growl_audio
-	growl.volume_db = -15
-	
-	# setting healthbar to 100 initially
-	health_bar.value = health
+
+    BossManager.add_boss(self) # Connects the boss's signals to the player's methods
+    
+    # Connecting area signals
+    boss_encounter_area.body_entered.connect(_on_boss_encounter_area_body_entered)
+    block_area.player_hit.connect(_on_player_hit_block_area)
+    
+    # Connecting quiz signals
+    quiz_page.wrong_answer.connect(player_wrong_answer)
+    quiz_page.take_damage.connect(take_damage)
+    quiz_page.quiz_finished.connect(on_quiz_finished)
+    
+    # Connecting code page signals
+    code_page.wrong_answer.connect(player_wrong_answer)
+    code_page.right_answer.connect(_on_code_page_all_correct)
+    
+    # Initial visibility setup
+    quiz_page.visible = true
+    code_page.visible = false
+    
+    # connecting animation signals
+    anim_player.animation_finished.connect(_on_animation_player_animation_finished)
+    
+    # setting audio and changing effects/volume
+    howl.stream = howl_audio
+    howl.pitch_scale = -0.50
+    
+    growl.stream = growl_audio
+    growl.volume_db = -10
+    
+    encounter.stream = ecounter_audio
+    encounter.volume_db = 1 
+    
+    # setting healthbar to 100 initially
+    health_bar.value = health
+
 
 
 # Signal handlers 
 func _on_boss_encounter_area_body_entered(body):
-	if body.is_in_group("player"): 
-		is_displaying_window = true
-		anim_player.play("display_window")
-		boss_encounter_area.body_entered.disconnect(_on_boss_encounter_area_body_entered)
-		
+    if body.is_in_group("player"):
+        encounter.play(0) 
+        is_displaying_window = true
+        anim_player.play("display_window")
+        boss_encounter_area.body_entered.disconnect(_on_boss_encounter_area_body_entered)
+        
+
 func on_quiz_finished():
 	transition_to_code_page()
 	
