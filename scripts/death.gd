@@ -31,7 +31,7 @@ func _ready():
 	
 	restart_button.text = 'RESTART'
 	restart_button.add_theme_font_override('font', font)
-	quit_button.text = 'QUIT AND EXIT'
+	quit_button.text = 'QUIT'
 	quit_button.add_theme_font_override('font', font)
 	restart_button.add_theme_constant_override('outline_size', 10)
 	quit_button.add_theme_constant_override('outline_size', 10)
