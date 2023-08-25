@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://tjbvo7db6awc"]
 
 [ext_resource type="Script" path="res://scripts/options_menu.gd" id="1_8pgr6"]
-[ext_resource type="Texture2D" uid="uid://chpop6y66xr3i" path="res://images/menu_bg.png" id="2_jgrds"]
+[ext_resource type="Texture2D" uid="uid://b8umrxdpv2q0l" path="res://images/menu_bg.png" id="2_jgrds"]
 [ext_resource type="StyleBox" uid="uid://iuskkhobcs2e" path="res://images/themes/purple_button.tres" id="2_v63xt"]
-[ext_resource type="Texture2D" uid="uid://cg3sxr8hixj3q" path="res://images/button_bg.png" id="4_qgx7r"]
-[ext_resource type="FontFile" uid="uid://ccb1mu4uu8dxg" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="5_4gyqk"]
+[ext_resource type="Texture2D" uid="uid://dm7j6bm3efa6i" path="res://images/button_bg.png" id="4_qgx7r"]
+[ext_resource type="FontFile" uid="uid://5d3c1vsdc7j2" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="5_4gyqk"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_14eoo"]
 font = ExtResource("5_4gyqk")
@@ -49,6 +49,22 @@ offset_left = 456.0
 offset_top = 208.0
 offset_right = 700.0
 offset_bottom = 284.0
+
+[node name="slider" type="HSlider" parent="volume"]
+top_level = true
+layout_mode = 0
+offset_left = 475.0
+offset_top = 412.0
+offset_right = 675.0
+offset_bottom = 428.0
+
+[node name="mute" type="CheckBox" parent="volume"]
+top_level = true
+layout_mode = 0
+offset_left = 562.0
+offset_top = 447.0
+offset_right = 586.0
+offset_bottom = 471.0
 
 [node name="back" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
@@ -105,4 +121,6 @@ vertical_alignment = 1
 
 [connection signal="pressed" from="brightness" to="." method="_on_brightness_pressed"]
 [connection signal="pressed" from="volume" to="." method="_on_volume_pressed"]
+[connection signal="value_changed" from="volume/slider" to="." method="_on_slider_value_changed"]
+[connection signal="toggled" from="volume/mute" to="." method="_on_mute_toggled"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

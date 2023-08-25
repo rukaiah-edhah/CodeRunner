@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0y2nbxqx3fkn"]
+[gd_scene load_steps=3 format=3 uid="uid://b0y2nbxqx3fkn"]
 
-[ext_resource type="AudioStream" uid="uid://b225qotolheqv" path="res://fonts-and-music/music/DavidKBD - Cosmic Pack 01 - Cosmic Journey-full.ogg" id="1_e4nvx"]
+[ext_resource type="AudioStream" uid="uid://c0vveh4h0ny50" path="res://fonts-and-music/music/DavidKBD - Cosmic Pack 01 - Cosmic Journey-full.ogg" id="1_e4nvx"]
+[ext_resource type="Script" path="res://scripts/bg_music.gd" id="2_c2r4h"]
 
 [node name="bg_music" type="AudioStreamPlayer"]
 stream = ExtResource("1_e4nvx")
 volume_db = -3.0
 autoplay = true
+script = ExtResource("2_c2r4h")
