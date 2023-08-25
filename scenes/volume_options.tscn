@@ -37,8 +37,6 @@ offset_top = 44.0
 offset_right = 53.0
 offset_bottom = 68.0
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-
 [connection signal="pressed" from="volume_button" to="." method="_on_volume_button_pressed"]
 [connection signal="value_changed" from="volume_button/volume_bar" to="." method="_on_volume_bar_value_changed"]
 [connection signal="toggled" from="volume_button/mute_button" to="." method="_on_mute_button_toggled"]
