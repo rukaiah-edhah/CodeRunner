@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c8xevhvyg824j"]
 
 [ext_resource type="Script" path="res://Scripts/moving_platform_up_down.gd" id="1_cmdlx"]
-[ext_resource type="Texture2D" uid="uid://ebeu5al5id6m" path="res://images/spaceship_interior/style_1/platform2 (2).png" id="2_ox05n"]
+[ext_resource type="Texture2D" uid="uid://dbbi468nbhclf" path="res://images/spaceship_interior/style_1/platform2.png" id="2_lupqa"]
 
 [node name="moving_platform_up_down" type="AnimatableBody2D"]
 top_level = true
@@ -13,7 +13,7 @@ debug = false
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(909.25, 693.25)
 scale = Vector2(0.702651, 0.604348)
-texture = ExtResource("2_ox05n")
+texture = ExtResource("2_lupqa")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(909, 693.5)

@@ -1,25 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dsajkpxnepbg5"]
+[gd_scene load_steps=7 format=3 uid="uid://dsajkpxnepbg5"]
 
-[ext_resource type="Texture2D" uid="uid://dbssmjfyq4f8m" path="res://images/Berry.png" id="1_5uu0s"]
 [ext_resource type="Script" path="res://Shop_Assets/item_info.gd" id="1_8cup6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ybutu"]
 bg_color = Color(0, 0.643137, 0.929412, 1)
-
-[sub_resource type="Animation" id="Animation_kidln"]
-resource_name = "Trans_In"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:offset")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, -300), Vector2(0, 0)]
-}
 
 [sub_resource type="Animation" id="Animation_88jfk"]
 length = 0.001
@@ -34,6 +18,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0, -300)]
+}
+
+[sub_resource type="Animation" id="Animation_kidln"]
+resource_name = "Trans_In"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -300), Vector2(0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_otgjo"]
@@ -77,6 +76,7 @@ offset_right = 383.0
 offset_bottom = 315.0
 
 [node name="Use_Text" type="Label" parent="Use_Button"]
+layout_mode = 0
 offset_left = 38.0
 offset_top = 18.0
 offset_right = 78.0
@@ -91,6 +91,7 @@ offset_right = 228.0
 offset_bottom = 314.0
 
 [node name="Close_Button" type="Label" parent="Close_Button"]
+layout_mode = 0
 offset_left = 35.0
 offset_top = 17.0
 offset_right = 77.0
@@ -115,7 +116,6 @@ horizontal_alignment = 1
 [node name="Icon" type="Sprite2D" parent="."]
 position = Vector2(244, 182)
 scale = Vector2(3.14286, 3.07143)
-texture = ExtResource("1_5uu0s")
 
 [node name="Description" type="Label" parent="."]
 offset_left = 223.0

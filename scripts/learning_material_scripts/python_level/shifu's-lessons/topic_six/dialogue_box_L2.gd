@@ -1,16 +1,7 @@
 extends Control
 
 var messages = [
-    "Behold strings, akin to chests of textual treasures. Each character, a sentinel, positioned upon the stage of an 'index'. Visualize a congregation of dancers, each donning their designated stance. What revelry awaits! Yet, remember, the primary dancer, the initial character, takes stage at index 0!
-Imagine, a phrase 'Hello, World!' - and your heart's desire to greet the opening letter. Behold:
-
-my_string = 'Hello, World!'
-
-# In this, 'H' emerges
-greet_first = my_string[0]  
-
-# And behold, 'W' stands before you!
-greet_eighth = my_string[7] "
+    "Behold strings, akin to chests of textual treasures. Each character, a sentinel, positioned upon the stage of an 'index'. Visualize a congregation of dancers, each donning their designated stance. What revelry awaits! Yet, remember, the primary dancer, the initial character, takes stage at index 0!"
     ]
 
 var typing_speed = .1

@@ -137,3 +137,7 @@ polygon = PackedVector2Array(7, -64.8079, 15, -62.4933, 20, -61.3361, 28, -57.86
 [node name="flip_timer" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(-62, -39)
+scale = Vector2(48.2, 14.4)

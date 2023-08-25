@@ -28,7 +28,9 @@ var green_health = preload("res://unnecessary-files/green.png")
 const FULL_HEALTH = 100
 var health = FULL_HEALTH
 
-#_____________________Added bt Rukaiah_________________________    
+#_____________________Added bt Rukaiah_________________________   
+var is_special_animation_playing = false
+ 
 # Variabels for controlling the camera's position based in the player's diraction
 @onready var player_camera = $RemoteTransform2D/Camera2D
 # Camera 
@@ -53,10 +55,16 @@ func _ready():
     coin_panel.position = COIN_PANEL_POSITION_RIGHT
     #___________________________________________________________________________________________________
     
-    #_____________________connecting PLayer_Damaged signal_________________
-    var obstacles = get_tree().get_nodes_in_group("obstacles")
-    for obstacle in obstacles:
-        obstacle.Player_Damaged.connect(_on_player_damaged)
+    #_____________________connecting signals_________________
+    #var obstacles = get_tree().get_nodes_in_group("obstacles")
+    #for obstacle in obstacles:
+        #obstacle.Player_Damaged.connect(global_on_player_damaged)
+        
+    #var coins = get_tree().get_nodes_in_group("coins")
+    #for coin in coins:
+        #coin.coin_inventory_changed.connect(_on_coin_coin_inventory_changed)
+        
+    add_to_group("global_listeners")
     #_____________________________________________________________________
     
     
@@ -79,6 +87,8 @@ func set_health_bar():
     healthbar.value = health
 
 func _process(_delta): 
+    if is_special_animation_playing:
+        return
     # setting player animation to movement
     if Input.is_action_pressed("jump"):
         _animation.play("jump")
@@ -145,8 +155,8 @@ func disable_movement():
 func enable_movement():
     can_move = true
     
-func _on_player_damaged():
-    _damage(3)
+func global_on_player_damaged():
+    _damage(2)
 # ___________________________________________________________________
     
 func _damage(damage_value):
@@ -166,7 +176,7 @@ func update_healthbar(value):
     set_health_bar()
 
 
-func _on_coin_coin_inventory_changed():
+func global_coin_inventory_changed():
     # add three coins to the coin bar when user picks up a coin
     coins += 3
     set_coin_bar()
@@ -174,8 +184,7 @@ func _on_coin_coin_inventory_changed():
 #_________________________________________Added by Rukaiah__________________________________________
 func _on_mini_boss_level_wrong_answer(): # Connect the signal wrong_answer to this function in main 
     # The reduction of health and coins per wrong answer can be adjusted below
-    _animation.play("hurt") # NOT WORKING
-    print("Trying to play hurt animation") 
+    is_special_animation_playing = true
     health -= 3
     coins -= 3 
     if health <= 0:
@@ -185,15 +194,25 @@ func _on_mini_boss_level_wrong_answer(): # Connect the signal wrong_answer to th
         coins = 0 
     update_healthbar(health)
     set_coin_bar()
+    _animation.play("hurt")
+    _animation.animation_finished.connect(_on_special_animation_finished)
 
 
-func _on_mini_boss_level_all_correct(): # Connect the signal all_correct to this function in maih
+func _on_mini_boss_level_all_correct(): # Connect the signal all_correct to this function in main
+    #is_special_animation_playing = true
+    #_animation.play("shoot")
+    _animation.animation_finished.connect(_on_special_animation_finished)
     if health < 100: 
-        _animation.play("shoot") # NOT WORKING 
         health = 100  # I am restoring the player's health to full if all answers are correct, but we can only add specific numbers if we wish
     coins += 100
     update_healthbar(health)  # make sure to update the health bar
     set_coin_bar()  # make sure to update the coins
+    _animation.play("shoot")
+    
+    
+func _on_special_animation_finished():
+    is_special_animation_playing = false
+    _animation.animation_finished.disconnect(_on_special_animation_finished)
 #___________________________________________________________________________________________________
 
 func save():

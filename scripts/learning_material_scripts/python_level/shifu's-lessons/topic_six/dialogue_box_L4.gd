@@ -1,13 +1,7 @@
 extends Control
 
 var messages = [
-    "A whimsical dance, Python's arsenal holds! To voyage backward through the dance, employ the sorcery of negative indices. The terminal dancer? -1, the antecedent spirit? -2, and so the tale unfolds.
-Perceive this exemplar:
-
-my_string = 'Hello, World!'
-
-# In this, your gaze rests upon '!' 
-backwards_hello = my_string[-1]  "
+    "A whimsical dance, Python's arsenal holds! To voyage backward through the dance, employ the sorcery of negative indices. The terminal dancer? -1, the antecedent spirit? -2, and so the tale unfolds."
     ]
 
 var typing_speed = .1

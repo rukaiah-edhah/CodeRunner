@@ -97,6 +97,10 @@ scale = Vector2(0.294714, 0.218084)
 sprite_frames = SubResource("SpriteFrames_h63gl")
 animation = &"Run"
 
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(-52.5, -50)
+scale = Vector2(55.75, 23.6)
+
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-2, -5)
 scale = Vector2(1, 0.864092)

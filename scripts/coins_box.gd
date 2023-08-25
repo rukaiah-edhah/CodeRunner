@@ -1,5 +1,7 @@
 extends Area2D
 
+signal coin_inventory_changed
+
 var active = false
 var has_played = false
 
@@ -31,4 +33,6 @@ func _on_body_entered(body):
         anim_coin_box.play("coin_box")
         active = true
         has_played = true
+        #emit_signal("coin_inventory_changed")
+        get_tree().call_group("global_listeners", "global_coin_inventory_changed")
 

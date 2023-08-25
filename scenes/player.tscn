@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=3 uid="uid://bjr3f6oxwl481"]
+[gd_scene load_steps=72 format=3 uid="uid://bjr3f6oxwl481"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ra8ml"]
 [ext_resource type="Texture2D" uid="uid://bb7b43ff3vjjv" path="res://images/player/white/defend/__all_white_spaceman_defend_000.png" id="2_v8lgr"]
@@ -69,6 +69,7 @@
 [ext_resource type="Texture2D" uid="uid://dwvtvkhbdi26b" path="res://images/player/white/shoot/__all_white_spaceman_shoot_006.png" id="53_wnr82"]
 [ext_resource type="Texture2D" uid="uid://b4ojthufom3l2" path="res://images/player/white/shoot/__all_white_spaceman_shoot_007.png" id="54_xw7lo"]
 [ext_resource type="Texture2D" uid="uid://r1l11t8mhi3" path="res://unnecessary-files/green.png" id="67_0r6mn"]
+[ext_resource type="AudioStream" uid="uid://mju42rrl8d0s" path="res://fonts-and-music/music/beat_mini_boss.mp3" id="70_xijtl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fq2uv"]
 animations = [{
@@ -87,7 +88,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"defend",
-"speed": 15.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -107,7 +108,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"die",
-"speed": 15.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -124,7 +125,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"hurt",
-"speed": 15.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -259,7 +260,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"shoot ",
-"speed": 15.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -396,5 +397,8 @@ scale = Vector2(0.110352, 0.0996094)
 texture = ExtResource("42_b0a8h")
 
 [node name="jump_sound" type="AudioStreamPlayer" parent="."]
+
+[node name="beat_mini_boss" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("70_xijtl")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dsfm4bcjrbc80" path="res://images/alien_planet /light_3.png" id="3_xn6cs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8lmfl"]
-size = Vector2(742, 207)
+size = Vector2(361, 416)
 
 [sub_resource type="Animation" id="Animation_0lb0b"]
 resource_name = "dissolve"
@@ -17,7 +17,7 @@ tracks/0/path = NodePath("light_1:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.06, 1.56),
+"times": PackedFloat32Array(0.06, 1.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.556863)]
@@ -43,7 +43,7 @@ scale = Vector2(1.40863, 1.47151)
 texture = ExtResource("3_xn6cs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(6, -36)
+position = Vector2(214.5, -82)
 shape = SubResource("RectangleShape2D_8lmfl")
 debug_color = Color(0, 0.631373, 0.462745, 0.419608)
 
