@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://1s2vrm0ngi5v"]
+[gd_scene load_steps=7 format=3 uid="uid://1s2vrm0ngi5v"]
 
 [ext_resource type="Script" path="res://scripts/death.gd" id="1_qgdqd"]
 [ext_resource type="Texture2D" uid="uid://c27iae42lp2ie" path="res://images/game_over.png" id="2_o2863"]
 [ext_resource type="Texture2D" uid="uid://dm7j6bm3efa6i" path="res://images/button_bg.png" id="3_w0odn"]
 [ext_resource type="FontFile" uid="uid://5d3c1vsdc7j2" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="4_ptnvi"]
+[ext_resource type="SpriteFrames" uid="uid://b7k0l7k14afqc" path="res://images/themes/shifu.tres" id="5_dvrji"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_3afba"]
 font = ExtResource("4_ptnvi")
@@ -45,9 +46,9 @@ offset_right = 1149.0
 offset_bottom = 643.0
 
 [node name="bg" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.815686)
-position = Vector2(574, 325.5)
-scale = Vector2(0.7075, 0.694445)
+self_modulate = Color(1, 0.764706, 0.729412, 1)
+position = Vector2(574, 325)
+scale = Vector2(0.7075, 0.695556)
 texture = ExtResource("2_o2863")
 
 [node name="restart2" type="Sprite2D" parent="."]
@@ -95,10 +96,10 @@ color = Color(0, 0, 0, 0.560784)
 
 [node name="g_label" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 328.0
-offset_top = 200.0
-offset_right = 844.0
-offset_bottom = 324.0
+offset_left = 312.0
+offset_top = 189.0
+offset_right = 828.0
+offset_bottom = 313.0
 
 [node name="restart" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
@@ -118,7 +119,21 @@ offset_bottom = 584.0
 
 [node name="next" type="Timer" parent="."]
 
+[node name="lighten" type="Timer" parent="."]
+
 [node name="pulse" type="Timer" parent="."]
+
+[node name="shifu" type="AnimatedSprite2D" parent="."]
+top_level = true
+position = Vector2(559, 349)
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("5_dvrji")
+animation = &"sleep"
+autoplay = "default"
+frame = 23
+frame_progress = 1.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [connection signal="mouse_entered" from="restart" to="." method="_on_restart_mouse_entered"]
 [connection signal="mouse_exited" from="restart" to="." method="_on_restart_mouse_exited"]
@@ -127,4 +142,5 @@ offset_bottom = 584.0
 [connection signal="mouse_exited" from="quit" to="." method="_on_quit_mouse_exited"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
 [connection signal="timeout" from="next" to="." method="_on_next_timeout"]
+[connection signal="timeout" from="lighten" to="." method="_on_lighten_timeout"]
 [connection signal="timeout" from="pulse" to="." method="_on_pulse_timeout"]

@@ -9,7 +9,11 @@ extends Control
 @onready var border2 = $border1/border2
 @onready var border3 = $border1/border3
 @onready var border4 = $border1/border4
+@onready var lighten = $lighten
+@onready var shifu = $shifu
+@onready var music = $AudioStreamPlayer
 
+var audio = preload('res://fonts-and-music/music/player_death.mp3')
 var font = preload("res://fonts-and-music/fonts/elnath/ELNATH.ttf")
 # setting variables for timers
 var type_speed = 0.10
@@ -21,8 +25,16 @@ var label = 'GAME OVER'
 var red = 'd00000'
 var black = '000000'
 
+var current_light = 0
+var modulates = ['505050', '505050', '505050', '585858', '585858', '787878', '787878', 'ffffff', 'ffffff',
+'ffc3ba', 'ff9e90', 'ff5b4a', 'ff5b4a', 'd00000', 'd00000']
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	# assign music, darken bg
+	music.stream = audio
+	music.stream.loop = true
+	$bg.modulate = '2f2f2f'
 	# set labels and formatting
 	game_over_label.add_theme_font_override('normal_font', font)
 	game_over_label.add_theme_font_size_override("normal_font_size", 80)
@@ -44,8 +56,16 @@ func _ready():
 	border3.color = black
 	border4.color = black
 	
+	#change music
+	music_change()
 	# start label making
 	start_label()
+
+
+func music_change():
+	# stop regular music and begin death music
+	BgMusic.stop()
+	music.play(0)
 
 
 func start_label():
@@ -94,6 +114,7 @@ func _on_next_timeout():
 		next.stop()
 		next.one_shot = true
 		start_pulse()
+		start_lightening()
 
 
 func _on_pulse_timeout():
@@ -128,3 +149,27 @@ func _on_quit_mouse_entered():
 
 func _on_quit_mouse_exited():
 	quit_button.add_theme_color_override('font_outline_color', black)
+
+
+func start_lightening():
+	# set variables and start timer
+	current_light = 0
+	
+	lighten.set_wait_time(0.06)
+	lighten.start()
+
+
+func _on_lighten_timeout():
+	# show different colors on bg and animate shifu to fall asleep
+	if current_light < 9:
+		$bg.modulate = modulates[current_light]
+		if current_light == 2:
+			shifu.play('sleep')
+	if current_light < 14:
+		$bg.self_modulate = modulates[current_light]
+		current_light += 1
+	else:
+		# show buttons and game over banner
+		restart_button.visible = true
+		quit_button.visible = true
+		game_over_label.visible = true
