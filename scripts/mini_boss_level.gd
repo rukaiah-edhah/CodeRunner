@@ -32,30 +32,30 @@ var block_area_sound = preload("res://fonts-and-music/music/block_area.mp3")
 var beat_boss_sound = preload("res://fonts-and-music/music/beat_mini_boss.mp3")
 
 func _ready():
-	BossManager.add_boss(self) # Connects the boss's signals to the player's methods
-	
-	# Connecting area signals
-	boss_encounter_area.body_entered.connect(_on_boss_encounter_area_body_entered)
-	block_area.player_hit.connect(_on_player_hit_block_area)
-	
-	# Connecting quiz signals
-	quiz_page.wrong_answer.connect(player_wrong_answer)
-	quiz_page.take_damage.connect(take_damage)
-	quiz_page.quiz_finished.connect(on_quiz_finished)
-	
-	# Connecting code page signals
-	code_page.wrong_answer.connect(player_wrong_answer)
-	code_page.take_damage.connect(take_damage)
-	code_page.all_correct.connect(_on_code_page_all_correct)
-	
-	# Initial visibility setup
-	quiz_page.visible = true
-	code_page.visible = false
-	
-	# connecting animation signals
-	anim_player.animation_finished.connect(_on_animation_player_animation_finished)
-	
-	
+    BossManager.add_boss(self) # Connects the boss's signals to the player's methods
+    
+    # Connecting area signals
+    boss_encounter_area.body_entered.connect(_on_boss_encounter_area_body_entered)
+    block_area.player_hit.connect(_on_player_hit_block_area)
+    
+    # Connecting quiz signals
+    quiz_page.wrong_answer.connect(player_wrong_answer)
+    quiz_page.take_damage.connect(take_damage)
+    quiz_page.quiz_finished.connect(on_quiz_finished)
+    
+    # Connecting code page signals
+    code_page.wrong_answer.connect(player_wrong_answer)
+    code_page.take_damage.connect(take_damage)
+    code_page.all_correct.connect(_on_code_page_all_correct)
+    
+    # Initial visibility setup
+    quiz_page.visible = true
+    code_page.visible = false
+    
+    # connecting animation signals
+    anim_player.animation_finished.connect(_on_animation_player_animation_finished)
+    
+    
 # Signal handlers 
 func _on_boss_encounter_area_body_entered(body):
     if body.is_in_group("player"): 
@@ -114,24 +114,24 @@ func take_damage(amount):
     
 # Utility functions
 func transition_to_code_page():
-	code_page.visible = true
-	is_transitioning_to_code = true 
-	anim_player.play("quiz_to_code")
-	
+    code_page.visible = true
+    is_transitioning_to_code = true 
+    anim_player.play("quiz_to_code")
+    
 func flash_border(border):
-	border.color = Color(1, 1, 1, 1)
-	await get_tree().create_timer(0.3).timeout 
-	border.color = Color(0, 0, 0, 1)  
+    border.color = Color(1, 1, 1, 1)
+    await get_tree().create_timer(0.3).timeout 
+    border.color = Color(0, 0, 0, 1)  
 
 
 func _on_animation_player_animation_finished(anim_name):
-	match anim_name:
-		"display_window":
-			is_displaying_window = false
-		"dissolve_window":
-			is_dissolving_window = false
-		"quiz_to_code":
-			is_transitioning_to_code = false
+    match anim_name:
+        "display_window":
+            is_displaying_window = false
+        "dissolve_window":
+            is_dissolving_window = false
+        "quiz_to_code":
+            is_transitioning_to_code = false
 
 # sound
 func play_sound(audio_stream):
