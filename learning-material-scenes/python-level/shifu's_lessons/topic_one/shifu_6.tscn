@@ -462,17 +462,6 @@ libraries = {
 "": SubResource("AnimationLibrary_exk74")
 }
 
-[node name="dialogue_text" type="RichTextLabel" parent="dialogue"]
-layout_mode = 0
-offset_left = 65.0
-offset_top = 85.0
-offset_right = 553.0
-offset_bottom = 312.0
-theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_fonts/bold_font = ExtResource("70_lr0a8")
-theme_override_font_sizes/normal_font_size = 24
-bbcode_enabled = true
-
 [node name="dialogue_box_sprite" type="TextureRect" parent="dialogue"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
@@ -491,6 +480,17 @@ offset_top = 590.0
 offset_right = 1097.0
 offset_bottom = 856.0
 scale = Vector2(5, 5)
+
+[node name="dialogue_text" type="RichTextLabel" parent="dialogue/dialogue_box_sprite/panel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 10.0
+offset_right = 497.0
+offset_bottom = 237.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/bold_font = ExtResource("70_lr0a8")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
 
 [node name="Arrow" type="Sprite2D" parent="dialogue/dialogue_box_sprite/panel"]
 visible = false
