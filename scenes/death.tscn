@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://1s2vrm0ngi5v"]
 
 [ext_resource type="Script" path="res://scripts/death.gd" id="1_qgdqd"]
-[ext_resource type="Texture2D" uid="uid://cnm1gghovqagw" path="res://images/game_over.png" id="2_o2863"]
-[ext_resource type="Texture2D" uid="uid://cg3sxr8hixj3q" path="res://images/button_bg.png" id="3_w0odn"]
-[ext_resource type="FontFile" uid="uid://ccb1mu4uu8dxg" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="4_ptnvi"]
+[ext_resource type="Texture2D" uid="uid://c27iae42lp2ie" path="res://images/game_over.png" id="2_o2863"]
+[ext_resource type="Texture2D" uid="uid://dm7j6bm3efa6i" path="res://images/button_bg.png" id="3_w0odn"]
+[ext_resource type="FontFile" uid="uid://5d3c1vsdc7j2" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="4_ptnvi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_3afba"]
 font = ExtResource("4_ptnvi")
