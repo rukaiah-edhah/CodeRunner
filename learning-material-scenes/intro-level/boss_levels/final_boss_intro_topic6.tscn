@@ -1268,6 +1268,8 @@ position = Vector2(226, -28)
 
 [node name="encounter" type="AudioStreamPlayer2D" parent="."]
 
+[node name="beat" type="AudioStreamPlayer2D" parent="."]
+
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button1" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_1_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button2" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_2_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button3" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_3_pressed" flags=18]

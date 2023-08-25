@@ -1,0 +1,96 @@
+[gd_scene load_steps=20 format=3 uid="uid://b0c0b0xugg5b"]
+
+[ext_resource type="Script" path="res://scripts/save_portal.gd" id="1_flejy"]
+[ext_resource type="Texture2D" uid="uid://bnilvffmn12wh" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_000.png" id="2_xrp7g"]
+[ext_resource type="Texture2D" uid="uid://dc48v6rry05o6" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_001.png" id="3_yusfu"]
+[ext_resource type="Texture2D" uid="uid://cvx3t2w1dxl2y" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_002.png" id="4_w7by5"]
+[ext_resource type="Texture2D" uid="uid://cgftskp4vkupq" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_003.png" id="5_1et6l"]
+[ext_resource type="Texture2D" uid="uid://dangpoe33k84a" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_004.png" id="6_hyf3d"]
+[ext_resource type="Texture2D" uid="uid://b7y1ifq327mny" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_005.png" id="7_ubj7y"]
+[ext_resource type="Texture2D" uid="uid://dm4210wvc5k6g" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_006.png" id="8_fsbkc"]
+[ext_resource type="Texture2D" uid="uid://78ifayhsth6q" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_007.png" id="9_xcs4n"]
+[ext_resource type="Texture2D" uid="uid://b7o1ydr6e6i5i" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_008.png" id="10_sidrg"]
+[ext_resource type="Texture2D" uid="uid://cyweol6wg6ud6" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_009.png" id="11_fj2dd"]
+[ext_resource type="Texture2D" uid="uid://dbnwk1ynde1nw" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_010.png" id="12_kuxt4"]
+[ext_resource type="Texture2D" uid="uid://c0mrq8x2sigul" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_011.png" id="13_aq822"]
+[ext_resource type="Texture2D" uid="uid://cnqb6ixeswter" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_012.png" id="14_wwj2i"]
+[ext_resource type="Texture2D" uid="uid://cthyw102idlvh" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_013.png" id="15_gxok6"]
+[ext_resource type="Texture2D" uid="uid://duf3tcgj8hjve" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_014.png" id="16_6dpl8"]
+[ext_resource type="Texture2D" uid="uid://66thv08lqjkv" path="res://images/save_portal_python/__laboratory_portal_pink_portal_on_015.png" id="17_yvd45"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ncyu4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xrp7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yusfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w7by5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1et6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hyf3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ubj7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fsbkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xcs4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sidrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fj2dd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kuxt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_aq822")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_wwj2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_gxok6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_6dpl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_yvd45")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_upycg"]
+radius = 407.299
+
+[node name="Save_Portal" type="Area2D"]
+position = Vector2(-2.99997, -3.00002)
+scale = Vector2(0.228537, 0.23281)
+script = ExtResource("1_flejy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(35.0051, -141.746)
+scale = Vector2(2.15848, 2.26781)
+sprite_frames = SubResource("SpriteFrames_ncyu4")
+autoplay = "default"
+frame_progress = 0.708175
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(13.1269, 90.2024)
+shape = SubResource("CircleShape2D_upycg")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
