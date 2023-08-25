@@ -2,82 +2,82 @@
 
 [ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/final_boss/final_boss_python.gd" id="1_5twru"]
 [ext_resource type="Script" path="res://scripts/block_area.gd" id="2_s7ghm"]
-[ext_resource type="Texture2D" uid="uid://csnmwwlbewfyb" path="res://images/final_boss_python/__droid_04_eye_hollow_walk_alert_007.png" id="3_lpdyu"]
-[ext_resource type="Texture2D" uid="uid://cfamftj1jqs4o" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_000.png" id="3_nyckf"]
-[ext_resource type="Texture2D" uid="uid://c7mojecyqeb4v" path="res://images/final_boss_python/__droid_04_eye_hollow_walk_not_alert_000.png" id="4_4s55e"]
-[ext_resource type="Texture2D" uid="uid://g3kg66qlr6gw" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_001.png" id="4_ovmtd"]
-[ext_resource type="Texture2D" uid="uid://xoj6dq4u8qqd" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_002.png" id="5_hg7ho"]
-[ext_resource type="Texture2D" uid="uid://wlx12ke3xvrb" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_003.png" id="6_846pk"]
-[ext_resource type="Texture2D" uid="uid://cwrwwgkgibxul" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_004.png" id="7_e6wkk"]
-[ext_resource type="Texture2D" uid="uid://dmflbjbad6lvv" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_005.png" id="8_0e2gn"]
-[ext_resource type="Texture2D" uid="uid://bcx5jbtlh2bkj" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_006.png" id="9_lor2y"]
-[ext_resource type="Texture2D" uid="uid://uyd10x70g1pb" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_007.png" id="10_ccjso"]
-[ext_resource type="Texture2D" uid="uid://brs0wx80foa3w" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_008.png" id="11_c775x"]
-[ext_resource type="Texture2D" uid="uid://ihje363u3f2s" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_009.png" id="12_0c5jn"]
-[ext_resource type="Texture2D" uid="uid://dftp70ger1coi" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_000.png" id="13_6ddot"]
-[ext_resource type="Texture2D" uid="uid://dx3u2b32frlgb" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_000.png" id="14_1skql"]
-[ext_resource type="Texture2D" uid="uid://b151k8ovy2svv" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_001.png" id="15_lshmc"]
-[ext_resource type="Texture2D" uid="uid://cnumyumkyfnkr" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_002.png" id="16_5mu12"]
-[ext_resource type="Texture2D" uid="uid://o2esycjvgms5" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_003.png" id="17_ln8j8"]
-[ext_resource type="Texture2D" uid="uid://dneyp1xyxxqah" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_004.png" id="18_m5oe0"]
-[ext_resource type="Texture2D" uid="uid://b5ci81wibxfwi" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_005.png" id="19_cfv4c"]
-[ext_resource type="Texture2D" uid="uid://c44y7iybljghi" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_006.png" id="20_x6hj1"]
-[ext_resource type="Texture2D" uid="uid://bchcpxfpfigt8" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_007.png" id="21_rwrak"]
-[ext_resource type="Texture2D" uid="uid://do6nu2h3u1bpy" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_008.png" id="22_iuup1"]
-[ext_resource type="Texture2D" uid="uid://wofurvo0i268" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_009.png" id="23_qk2l2"]
-[ext_resource type="Texture2D" uid="uid://yapkvr4kqiqw" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_010.png" id="24_v8aoc"]
-[ext_resource type="Texture2D" uid="uid://dmorg2pjkbpxe" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_011.png" id="25_p7c3w"]
-[ext_resource type="Texture2D" uid="uid://dobyernbglnby" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_012.png" id="26_uuj48"]
-[ext_resource type="Texture2D" uid="uid://b8afwqo8w7irk" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_013.png" id="27_xhlh2"]
-[ext_resource type="Texture2D" uid="uid://dkeitxqr0k20a" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_014.png" id="28_pahx4"]
-[ext_resource type="Texture2D" uid="uid://boel5shm7qv7f" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_015.png" id="29_dc6j8"]
-[ext_resource type="Texture2D" uid="uid://dupj7r54g8ub0" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_016.png" id="30_bcyed"]
-[ext_resource type="Texture2D" uid="uid://cgm26k0ukbvje" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_017.png" id="31_t8301"]
-[ext_resource type="Texture2D" uid="uid://d118sxdm4e3lg" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_018.png" id="32_5cxrt"]
-[ext_resource type="Texture2D" uid="uid://b0h6fhv63ldr8" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_019.png" id="33_ojkyf"]
-[ext_resource type="Texture2D" uid="uid://4nsul50niny6" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_001.png" id="34_wmumy"]
-[ext_resource type="Texture2D" uid="uid://dul2aaogwy3f3" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_002.png" id="35_prhax"]
-[ext_resource type="Texture2D" uid="uid://lj4sifyw4o3s" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_003.png" id="36_013g2"]
-[ext_resource type="Texture2D" uid="uid://cc6uqlse70a4e" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_004.png" id="37_dw3yv"]
-[ext_resource type="Texture2D" uid="uid://bkxrt6fqu1g5m" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_005.png" id="38_jwjwm"]
-[ext_resource type="Texture2D" uid="uid://bbr42vgw11pss" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_006.png" id="39_7k1dn"]
-[ext_resource type="Texture2D" uid="uid://bjrkp20ergi4d" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_007.png" id="40_8spxv"]
-[ext_resource type="Texture2D" uid="uid://be6kuv414vua8" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_008.png" id="41_rexgk"]
-[ext_resource type="Texture2D" uid="uid://c6e8nkf2hdkf7" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_009.png" id="42_7jrtw"]
-[ext_resource type="Texture2D" uid="uid://d3ap7dudt1jm" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_010.png" id="43_hmups"]
-[ext_resource type="Texture2D" uid="uid://h2qbomkwh2bj" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_011.png" id="44_5mn2c"]
-[ext_resource type="Texture2D" uid="uid://cjg7ul6542e08" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_012.png" id="45_74xur"]
-[ext_resource type="Texture2D" uid="uid://blsmgwv6fcxq2" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_013.png" id="46_y1y67"]
-[ext_resource type="Texture2D" uid="uid://66odnctvhw7g" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_014.png" id="47_f7xsg"]
-[ext_resource type="Texture2D" uid="uid://buyxtk1ddflpl" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_015.png" id="48_c50l0"]
-[ext_resource type="Texture2D" uid="uid://etlf7rcnwfy0" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_016.png" id="49_5horu"]
-[ext_resource type="Texture2D" uid="uid://dbc7lepb1d2ns" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_017.png" id="50_lv6l3"]
-[ext_resource type="Texture2D" uid="uid://bcrkue2kcwssd" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_018.png" id="51_ykwx6"]
-[ext_resource type="Texture2D" uid="uid://b7emkxm2cffd" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_019.png" id="52_b7um0"]
-[ext_resource type="Texture2D" uid="uid://d3yq4dvyx6bqj" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_000.png" id="53_wqxim"]
-[ext_resource type="Texture2D" uid="uid://c38rprbpuewv6" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_001.png" id="54_baqvc"]
-[ext_resource type="Texture2D" uid="uid://ddaqehx868jow" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_002.png" id="55_c1sbs"]
-[ext_resource type="Texture2D" uid="uid://bwchsnm67180y" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_003.png" id="56_el0rs"]
-[ext_resource type="Texture2D" uid="uid://iylc5ofu0pmg" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_004.png" id="57_ux26x"]
-[ext_resource type="Texture2D" uid="uid://b37c7ygs50itt" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_005.png" id="58_ks52o"]
-[ext_resource type="Texture2D" uid="uid://26hh8le2e8vp" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_006.png" id="59_aki1g"]
-[ext_resource type="Texture2D" uid="uid://cm0q288ujfq3y" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_007.png" id="60_2qwgp"]
-[ext_resource type="Texture2D" uid="uid://bupso5nxu2lc1" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_008.png" id="61_bu1ts"]
-[ext_resource type="Texture2D" uid="uid://ciqrjm2rsgufd" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_009.png" id="62_5878v"]
-[ext_resource type="Texture2D" uid="uid://bpxgg5ag06uox" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_010.png" id="63_r38gf"]
-[ext_resource type="Texture2D" uid="uid://dtgypm442cexh" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_011.png" id="64_8wrbe"]
-[ext_resource type="Texture2D" uid="uid://boej8x40ybg6e" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_012.png" id="65_ob1a4"]
-[ext_resource type="Texture2D" uid="uid://dqr87ora06gh5" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_013.png" id="66_38w8w"]
-[ext_resource type="Texture2D" uid="uid://blw5rc161fyxx" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_014.png" id="67_kd6fe"]
-[ext_resource type="Texture2D" uid="uid://bxkxphhqks8co" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_015.png" id="68_mth3k"]
-[ext_resource type="Texture2D" uid="uid://bum4ngmbojpvk" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_016.png" id="69_r7mts"]
-[ext_resource type="Texture2D" uid="uid://qhdyoaog5jif" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_017.png" id="70_t1f2p"]
-[ext_resource type="Texture2D" uid="uid://bsjbmr2hkqrpa" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_018.png" id="71_2txnv"]
-[ext_resource type="Texture2D" uid="uid://c71fwaso4e238" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_019.png" id="72_ag7as"]
+[ext_resource type="Texture2D" uid="uid://c6l7ril60lquo" path="res://images/final_boss_python/__droid_04_eye_hollow_walk_alert_007.png" id="3_lpdyu"]
+[ext_resource type="Texture2D" uid="uid://dd4a2ybx3j7au" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_000.png" id="3_nyckf"]
+[ext_resource type="Texture2D" uid="uid://chto8a0l16f7s" path="res://images/final_boss_python/__droid_04_eye_hollow_walk_not_alert_000.png" id="4_4s55e"]
+[ext_resource type="Texture2D" uid="uid://b5u4c0pb2rw2b" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_001.png" id="4_ovmtd"]
+[ext_resource type="Texture2D" uid="uid://cd3jmbxkrxpo4" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_002.png" id="5_hg7ho"]
+[ext_resource type="Texture2D" uid="uid://31j4unk7b1jc" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_003.png" id="6_846pk"]
+[ext_resource type="Texture2D" uid="uid://brrabfnfmfqme" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_004.png" id="7_e6wkk"]
+[ext_resource type="Texture2D" uid="uid://c1jf82xji3cr" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_005.png" id="8_0e2gn"]
+[ext_resource type="Texture2D" uid="uid://6cfdmxn43ux3" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_006.png" id="9_lor2y"]
+[ext_resource type="Texture2D" uid="uid://f1esplen88ba" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_007.png" id="10_ccjso"]
+[ext_resource type="Texture2D" uid="uid://c5a2jfx6f74qa" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_008.png" id="11_c775x"]
+[ext_resource type="Texture2D" uid="uid://xxfdc4wpndh2" path="res://images/final_boss_python/__droid_04_eye_hollow_dead_009.png" id="12_0c5jn"]
+[ext_resource type="Texture2D" uid="uid://d0e7it081ctu4" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_000.png" id="13_6ddot"]
+[ext_resource type="Texture2D" uid="uid://bl8mqhfgfbgge" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_000.png" id="14_1skql"]
+[ext_resource type="Texture2D" uid="uid://cyadxxwtmf5io" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_001.png" id="15_lshmc"]
+[ext_resource type="Texture2D" uid="uid://ew4nfocdt3tc" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_002.png" id="16_5mu12"]
+[ext_resource type="Texture2D" uid="uid://dnxbckm587xxe" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_003.png" id="17_ln8j8"]
+[ext_resource type="Texture2D" uid="uid://oldw830vl3i8" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_004.png" id="18_m5oe0"]
+[ext_resource type="Texture2D" uid="uid://jq5sonmft0iy" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_005.png" id="19_cfv4c"]
+[ext_resource type="Texture2D" uid="uid://83o5a03y6hrw" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_006.png" id="20_x6hj1"]
+[ext_resource type="Texture2D" uid="uid://dolcigtj4priy" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_007.png" id="21_rwrak"]
+[ext_resource type="Texture2D" uid="uid://b2umyw36cksnp" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_008.png" id="22_iuup1"]
+[ext_resource type="Texture2D" uid="uid://dfq0au0jafi1i" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_009.png" id="23_qk2l2"]
+[ext_resource type="Texture2D" uid="uid://blf54nmld7hwd" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_010.png" id="24_v8aoc"]
+[ext_resource type="Texture2D" uid="uid://dyhf8t0jcda7" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_011.png" id="25_p7c3w"]
+[ext_resource type="Texture2D" uid="uid://csvaxlsl040sp" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_012.png" id="26_uuj48"]
+[ext_resource type="Texture2D" uid="uid://drd1tgsvfcfx0" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_013.png" id="27_xhlh2"]
+[ext_resource type="Texture2D" uid="uid://jswn8uoick6b" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_014.png" id="28_pahx4"]
+[ext_resource type="Texture2D" uid="uid://dayglk0rpuanu" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_015.png" id="29_dc6j8"]
+[ext_resource type="Texture2D" uid="uid://dp0wb73d3q5in" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_016.png" id="30_bcyed"]
+[ext_resource type="Texture2D" uid="uid://sgax56ca3gen" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_017.png" id="31_t8301"]
+[ext_resource type="Texture2D" uid="uid://cil46nxtcas37" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_018.png" id="32_5cxrt"]
+[ext_resource type="Texture2D" uid="uid://bqqypachfpewk" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_spinning_arm_019.png" id="33_ojkyf"]
+[ext_resource type="Texture2D" uid="uid://cn5dwnqxc8qo8" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_001.png" id="34_wmumy"]
+[ext_resource type="Texture2D" uid="uid://cyy14p40eykex" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_002.png" id="35_prhax"]
+[ext_resource type="Texture2D" uid="uid://i431p7u3x3l7" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_003.png" id="36_013g2"]
+[ext_resource type="Texture2D" uid="uid://c3ndn13kllj15" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_004.png" id="37_dw3yv"]
+[ext_resource type="Texture2D" uid="uid://dpgnulhsmc0dg" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_005.png" id="38_jwjwm"]
+[ext_resource type="Texture2D" uid="uid://dbjie3762m45c" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_006.png" id="39_7k1dn"]
+[ext_resource type="Texture2D" uid="uid://cn4trmvaohian" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_007.png" id="40_8spxv"]
+[ext_resource type="Texture2D" uid="uid://dwi7ale5eb14e" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_008.png" id="41_rexgk"]
+[ext_resource type="Texture2D" uid="uid://bdbnegm5t6yqm" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_009.png" id="42_7jrtw"]
+[ext_resource type="Texture2D" uid="uid://8rt1q206bdhb" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_010.png" id="43_hmups"]
+[ext_resource type="Texture2D" uid="uid://q681l7agpgcs" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_011.png" id="44_5mn2c"]
+[ext_resource type="Texture2D" uid="uid://btqo12eqqjiug" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_012.png" id="45_74xur"]
+[ext_resource type="Texture2D" uid="uid://bpd2bvodqf3fv" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_013.png" id="46_y1y67"]
+[ext_resource type="Texture2D" uid="uid://tksgnmxj3ckv" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_014.png" id="47_f7xsg"]
+[ext_resource type="Texture2D" uid="uid://dpjnasp8mjws5" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_015.png" id="48_c50l0"]
+[ext_resource type="Texture2D" uid="uid://cw0yjlsvmx12m" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_016.png" id="49_5horu"]
+[ext_resource type="Texture2D" uid="uid://bs0ukry5swe4s" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_017.png" id="50_lv6l3"]
+[ext_resource type="Texture2D" uid="uid://cvdarpeu805ax" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_018.png" id="51_ykwx6"]
+[ext_resource type="Texture2D" uid="uid://d0o35jme7sxeu" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_alert_019.png" id="52_b7um0"]
+[ext_resource type="Texture2D" uid="uid://dun6xgsi8k2fv" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_000.png" id="53_wqxim"]
+[ext_resource type="Texture2D" uid="uid://53cj5fmi62qd" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_001.png" id="54_baqvc"]
+[ext_resource type="Texture2D" uid="uid://chd6mb3bkytfd" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_002.png" id="55_c1sbs"]
+[ext_resource type="Texture2D" uid="uid://bsg52l21ibuul" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_003.png" id="56_el0rs"]
+[ext_resource type="Texture2D" uid="uid://ds1vccf7yrkjy" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_004.png" id="57_ux26x"]
+[ext_resource type="Texture2D" uid="uid://2v3kk1bsbye1" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_005.png" id="58_ks52o"]
+[ext_resource type="Texture2D" uid="uid://dcrswnkvsasbs" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_006.png" id="59_aki1g"]
+[ext_resource type="Texture2D" uid="uid://b30a5y8oyrfpm" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_007.png" id="60_2qwgp"]
+[ext_resource type="Texture2D" uid="uid://kh42ox8kehvb" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_008.png" id="61_bu1ts"]
+[ext_resource type="Texture2D" uid="uid://2olwkch6afiu" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_009.png" id="62_5878v"]
+[ext_resource type="Texture2D" uid="uid://c8ncjftqge056" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_010.png" id="63_r38gf"]
+[ext_resource type="Texture2D" uid="uid://bb2mv06waokpx" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_011.png" id="64_8wrbe"]
+[ext_resource type="Texture2D" uid="uid://dsigqak78iq8a" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_012.png" id="65_ob1a4"]
+[ext_resource type="Texture2D" uid="uid://bdld28r46qwp6" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_013.png" id="66_38w8w"]
+[ext_resource type="Texture2D" uid="uid://cx4w342nuxpo8" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_014.png" id="67_kd6fe"]
+[ext_resource type="Texture2D" uid="uid://q713uem528bh" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_015.png" id="68_mth3k"]
+[ext_resource type="Texture2D" uid="uid://b1j3jwn3s8afo" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_016.png" id="69_r7mts"]
+[ext_resource type="Texture2D" uid="uid://b1p3mxlmo7igx" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_017.png" id="70_t1f2p"]
+[ext_resource type="Texture2D" uid="uid://dlwvttp3mrm3c" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_018.png" id="71_2txnv"]
+[ext_resource type="Texture2D" uid="uid://1om5gp46bb4t" path="res://images/final_boss_python/__droid_04_eye_hollow_idle_shoot_019.png" id="72_ag7as"]
 [ext_resource type="PackedScene" uid="uid://dutqe76oy7gik" path="res://scenes/boss_level_components/boss_level_window.tscn" id="185_ypvyl"]
 [ext_resource type="Script" path="res://scripts/learning_material_scripts/python_level/quiz_code_pages/quiz_page_topic6.gd" id="186_a3y2c"]
 [ext_resource type="Script" path="res://scripts/python_final_code_pages/python_final_code1.gd" id="187_rftn1"]
-[ext_resource type="FontFile" uid="uid://b47jyqncn0ah1" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="187_vr6h3"]
+[ext_resource type="FontFile" uid="uid://bx0mk2j0ybi5s" path="res://fonts-and-music/fonts/quiz_code_pages_font/LibreBaskerville-Regular.ttf" id="187_vr6h3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cguhy"]
 size = Vector2(1016, 644)
@@ -167,6 +167,27 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("12_0c5jn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0c5jn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_c775x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ccjso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lor2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0e2gn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0e2gn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lor2y")
 }],
 "loop": false,
 "name": &"death",
@@ -485,9 +506,9 @@ shape = SubResource("RectangleShape2D_uvki5")
 position = Vector2(458, -228)
 scale = Vector2(0.514286, 0.651244)
 sprite_frames = SubResource("SpriteFrames_ebl7p")
-animation = &"attacked"
+animation = &"death"
 autoplay = "idle"
-frame = 13
+frame = 16
 frame_progress = 1.0
 
 [node name="boss_level_window" parent="boss_encounter_area" instance=ExtResource("185_ypvyl")]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c170vx72m3820"]
 
 [ext_resource type="Script" path="res://scripts/winner.gd" id="1_bbyg0"]
-[ext_resource type="Texture2D" uid="uid://c27iae42lp2ie" path="res://images/game_over.png" id="2_rwnn1"]
+[ext_resource type="Texture2D" uid="uid://dj42mejj7w1ys" path="res://images/game_over.png" id="2_rwnn1"]
 [ext_resource type="SpriteFrames" uid="uid://b7k0l7k14afqc" path="res://images/themes/shifu.tres" id="3_6rwwf"]
 
 [node name="win" type="Control"]
