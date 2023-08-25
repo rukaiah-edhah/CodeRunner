@@ -8,12 +8,12 @@ var encounter_sound = preload("res://fonts-and-music/music/shifu.mp3")
 #var fade_sound = preload("res://fonts-and-music/music/fadein_choir-91038.mp3")
 #var data_sound = preload("res://fonts-and-music/music/keyboard-153960.mp3")
 
-var data_sound_player = AudioStreamPlayer.new() 
+#var data_sound_player = AudioStreamPlayer.new() 
 
 func _ready():
     encounter_area.body_entered.connect(_on_shifu_encounter_area_body_entered)
     encounter_area.body_exited.connect(_on_shifu_encounter_area_body_exited)
-    self.add_child(data_sound_player)
+    #self.add_child(data_sound_player)
     
     dialogue_box.visible = false
 func _on_shifu_encounter_area_body_entered(body):
