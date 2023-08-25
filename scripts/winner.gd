@@ -13,6 +13,9 @@ extends Control
 @onready var shifu_message = $shifu/shifu_message
 @onready var lighten = $lighten
 @onready var shifu = $shifu
+@onready var shifu_audio = $shifu_audio
+
+var audio = preload('res://fonts-and-music/music/shifu.mp3')
 
 var font = preload("res://fonts-and-music/fonts/elnath/ELNATH.ttf")
 var button = preload("res://images/themes/button_bg.tres")
@@ -76,11 +79,16 @@ func _ready():
 	border2.color = green
 	border3.color = green
 	border4.color = green
+	
+	shifu_audio.stream = audio
+	shifu_audio.volume_db = 10
+	
 	# start shifu animation and dialogue
 	start_shifu()
 
 
 func start_shifu():
+	shifu_audio.play(0)
 	# set timer variables and start timer
 	current_character = 0
 	current_message = 0

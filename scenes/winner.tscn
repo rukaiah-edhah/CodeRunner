@@ -371,6 +371,9 @@ offset_bottom = 382.0
 scale = Vector2(0.75, 0.75)
 bbcode_enabled = true
 
+[node name="shifu_audio" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(569, 373)
+
 [connection signal="mouse_entered" from="menu" to="." method="_on_restart_mouse_entered"]
 [connection signal="mouse_exited" from="menu" to="." method="_on_restart_mouse_exited"]
 [connection signal="pressed" from="menu" to="." method="_on_restart_pressed"]
