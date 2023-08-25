@@ -7,32 +7,11 @@ var enemy_scene = preload("res://scenes/Mini_Enemy.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-<<<<<<< HEAD
-	$bg_music.stream = preload(music_path)
-	$bg_music.volume_db = -15
-	$bg_music.play()
-<<<<<<< HEAD
-	
-=======
->>>>>>> 48f545dbb421f96f0ff03856eb1f09480092cebc
-=======
-	$bg_music.stream = preload(music_path)
-	$bg_music.stream.loop = true  # This line sets the audio to loop
-	$bg_music.volume_db = -15
-	$bg_music.play()
-	
->>>>>>> 441b639ce79d41ac46437e013a8519286a7e705b
-
+	create_connections()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-<<<<<<< HEAD
 	pass
-<<<<<<< HEAD
-=======
-=======
-	pass
->>>>>>> 441b639ce79d41ac46437e013a8519286a7e705b
 
 
 func transport(body, place):
@@ -40,7 +19,6 @@ func transport(body, place):
 	if body.is_in_group('player'):
 		player.position = place.get_position()
 		
-
 
 func _on_fall_area_body_entered(body):
 	transport(body, $fall_return_areas/return_area)
@@ -219,12 +197,7 @@ func _on_fall_area_44_body_entered(body):
 
 
 func _on_fall_area_45_body_entered(body):
-<<<<<<< HEAD
 	transport(body, $fall_return_areas/return_area45)
->>>>>>> 48f545dbb421f96f0ff03856eb1f09480092cebc
-=======
-	transport(body, $fall_return_areas/return_area45)
->>>>>>> 441b639ce79d41ac46437e013a8519286a7e705b
 
 
 func _on_fall_area_46_body_entered(body):
@@ -234,3 +207,51 @@ func _on_fall_area_46_body_entered(body):
 func _on_fall_area_47_body_entered(body):
 	transport(body, $fall_return_areas/return_area47)
 
+func create_connections():
+	$fall_return_areas/fall_area.body_entered.connect(_on_fall_area_body_entered)
+	$fall_return_areas/fall_area2.body_entered.connect(_on_fall_area_2_body_entered)
+	$fall_return_areas/fall_area3.body_entered.connect(_on_fall_area_3_body_entered)
+	$fall_return_areas/fall_area4.body_entered.connect(_on_fall_area_4_body_entered)
+	$fall_return_areas/fall_area5.body_entered.connect(_on_fall_area_5_body_entered)
+	$fall_return_areas/fall_area6.body_entered.connect(_on_fall_area_6_body_entered)
+	$fall_return_areas/fall_area7.body_entered.connect(_on_fall_area_7_body_entered)
+	$fall_return_areas/fall_area8.body_entered.connect(_on_fall_area_8_body_entered)
+	$fall_return_areas/fall_area9.body_entered.connect(_on_fall_area_9_body_entered)
+	$fall_return_areas/fall_area10.body_entered.connect(_on_fall_area_10_body_entered)
+	$fall_return_areas/fall_area11.body_entered.connect(_on_fall_area_11_body_entered)
+	$fall_return_areas/fall_area12.body_entered.connect(_on_fall_area_12_body_entered)
+	$fall_return_areas/fall_area13.body_entered.connect(_on_fall_area_13_body_entered)
+	$fall_return_areas/fall_area14.body_entered.connect(_on_fall_area_14_body_entered)
+	$fall_return_areas/fall_area15.body_entered.connect(_on_fall_area_15_body_entered)
+	$fall_return_areas/fall_area16.body_entered.connect(_on_fall_area_16_body_entered)
+	$fall_return_areas/fall_area17.body_entered.connect(_on_fall_area_17_body_entered)
+	$fall_return_areas/fall_area18.body_entered.connect(_on_fall_area_18_body_entered)
+	$fall_return_areas/fall_area19.body_entered.connect(_on_fall_area_19_body_entered)
+	$fall_return_areas/fall_area20.body_entered.connect(_on_fall_area_20_body_entered)
+	$fall_return_areas/fall_area21.body_entered.connect(_on_fall_area_21_body_entered)
+	$fall_return_areas/fall_area22.body_entered.connect(_on_fall_area_22_body_entered)
+	$fall_return_areas/fall_area23.body_entered.connect(_on_fall_area_23_body_entered)
+	$fall_return_areas/fall_area24.body_entered.connect(_on_fall_area_24_body_entered)
+	$fall_return_areas/fall_area25.body_entered.connect(_on_fall_area_25_body_entered)
+	$fall_return_areas/fall_area26.body_entered.connect(_on_fall_area_26_body_entered)
+	$fall_return_areas/fall_area27.body_entered.connect(_on_fall_area_27_body_entered)
+	$fall_return_areas/fall_area28.body_entered.connect(_on_fall_area_28_body_entered)
+	$fall_return_areas/fall_area29.body_entered.connect(_on_fall_area_29_body_entered)
+	$fall_return_areas/fall_area30.body_entered.connect(_on_fall_area_30_body_entered)
+	$fall_return_areas/fall_area31.body_entered.connect(_on_fall_area_31_body_entered)
+	$fall_return_areas/fall_area32.body_entered.connect(_on_fall_area_32_body_entered)
+	$fall_return_areas/fall_area33.body_entered.connect(_on_fall_area_33_body_entered)
+	$fall_return_areas/fall_area34.body_entered.connect(_on_fall_area_34_body_entered)
+	$fall_return_areas/fall_area35.body_entered.connect(_on_fall_area_35_body_entered)
+	$fall_return_areas/fall_area36.body_entered.connect(_on_fall_area_36_body_entered)
+	$fall_return_areas/fall_area37.body_entered.connect(_on_fall_area_37_body_entered)
+	$fall_return_areas/fall_area38.body_entered.connect(_on_fall_area_38_body_entered)
+	$fall_return_areas/fall_area39.body_entered.connect(_on_fall_area_39_body_entered)
+	$fall_return_areas/fall_area40.body_entered.connect(_on_fall_area_40_body_entered)
+	$fall_return_areas/fall_area41.body_entered.connect(_on_fall_area_41_body_entered)
+	$fall_return_areas/fall_area42.body_entered.connect(_on_fall_area_42_body_entered)
+	$fall_return_areas/fall_area43.body_entered.connect(_on_fall_area_43_body_entered)
+	$fall_return_areas/fall_area44.body_entered.connect(_on_fall_area_44_body_entered)
+	$fall_return_areas/fall_area45.body_entered.connect(_on_fall_area_45_body_entered)
+	$fall_return_areas/fall_area46.body_entered.connect(_on_fall_area_46_body_entered)
+	$fall_return_areas/fall_area47.body_entered.connect(_on_fall_area_47_body_entered)
