@@ -1,6 +1,6 @@
 [gd_scene load_steps=66 format=3 uid="uid://beflo6v0nhir8"]
 
-[ext_resource type="Script" path="res://scripts/mini_boss_level.gd" id="1_3e54w"]
+[ext_resource type="Script" path="res://scripts/mini_boss_level_python.gd" id="1_mg7q8"]
 [ext_resource type="Script" path="res://scripts/block_area.gd" id="2_6jf0b"]
 [ext_resource type="Texture2D" uid="uid://c1igykshqgeu2" path="res://images/mini_boss_python/__round_droid_dead_000.png" id="3_eyksl"]
 [ext_resource type="Texture2D" uid="uid://dk3jrv24l3vsf" path="res://images/mini_boss_python/__round_droid_dead_001.png" id="4_k5bsn"]
@@ -350,7 +350,7 @@ _data = {
 
 [node name="mini_boss_intro_topic1" type="Node2D"]
 position = Vector2(567, 589)
-script = ExtResource("1_3e54w")
+script = ExtResource("1_mg7q8")
 
 [node name="block_area" type="StaticBody2D" parent="."]
 script = ExtResource("2_6jf0b")
