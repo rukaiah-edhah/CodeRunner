@@ -9,7 +9,7 @@ var health = 100
 @onready var anim_player = $boss_encounter_area/animation_player
 @onready var boss_level_window = $boss_encounter_area/boss_level_window
 @onready var quiz_page = $boss_encounter_area/boss_level_window/quiz_page
-@onready var code_page = $boss_encounter_area/boss_level_window/intro_code_page
+@onready var code_page = $boss_encounter_area/boss_level_window/python_code_page
 @onready var block_area = $block_area
 @onready var boss_encounter_area = $boss_encounter_area
 
