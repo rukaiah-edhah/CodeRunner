@@ -3,20 +3,24 @@ extends Area2D
 
 @export var path : NodePath 
 
-var python_portal_sound = preload("res://fonts-and-music/music/boss_level_portal.mp3")
+var portal_sound = preload("res://fonts-and-music/music/spaceship_teleportation.mp3")
 
 func _on_area_entered(area: Area2D):
     if area.is_in_group("player"):
-        play_sound(python_portal_sound, -5.0)
+        play_sound(portal_sound, -10.0)
         area.get_parent().disable_movement()
-        $AnimationPlayer.play("light_effect")
-        await $AnimationPlayer.animation_finished
         area.get_parent().get_node("PlayerAnimation").play("Dissolve")
-        await get_tree().create_timer(1.0).timeout
+        await get_tree().create_timer(0.5).timeout
+        $AnimationPlayer.play("dissolve")
+        await $AnimationPlayer.animation_finished
         var linked_path = get_node(path)
         area.get_parent().global_position = linked_path.global_position
         area.get_parent().get_node("PlayerAnimation").play("Appear")
         area.get_parent().enable_movement()
+        
+        
+        var python_level = get_node("../../..")  
+        python_level.change_bgm("res://fonts-and-music/music/DavidKBD - Cosmic Pack 03 - Nebula Run-variation4.ogg")
 
 func play_sound(audio_stream, volume_db = 0.0):
     var audio_stream_player = AudioStreamPlayer.new()

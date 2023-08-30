@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://ce8ubi1ai0vvi"]
+
+[ext_resource type="Script" path="res://scripts/teleportation_pad.gd" id="1_fojhi"]
+[ext_resource type="Texture2D" uid="uid://bf7k1alxq1mtm" path="res://images/alien_planet /teleportation_pads (2).png" id="2_kwxs5"]
+[ext_resource type="Texture2D" uid="uid://dsfm4bcjrbc80" path="res://images/alien_planet /light_3.png" id="3_hjlxd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8lmfl"]
+size = Vector2(361, 416)
+
+[sub_resource type="Animation" id="Animation_0lb0b"]
+resource_name = "dissolve"
+length = 1.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("light_1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.06, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.556863)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_af2uy"]
+_data = {
+"dissolve": SubResource("Animation_0lb0b")
+}
+
+[node name="teleportation_pads" type="Area2D"]
+script = ExtResource("1_fojhi")
+
+[node name="teleportation_pad" type="Sprite2D" parent="."]
+position = Vector2(12, -75)
+scale = Vector2(0.50211, 0.359848)
+texture = ExtResource("2_kwxs5")
+
+[node name="light_1" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(3.5, -303.5)
+scale = Vector2(1.40863, 1.35756)
+texture = ExtResource("3_hjlxd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(224, -100)
+shape = SubResource("RectangleShape2D_8lmfl")
+debug_color = Color(0, 0.631373, 0.462745, 0.419608)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_af2uy")
+}
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

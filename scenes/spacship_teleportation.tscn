@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://72gp0ct0f57p"]
+[gd_scene load_steps=8 format=3 uid="uid://72gp0ct0f57p"]
 
 [ext_resource type="Script" path="res://scripts/spacship_teleportation.gd" id="1_d82ot"]
 [ext_resource type="Texture2D" uid="uid://d0hm1lxi36w4d" path="res://images/alien_planet /spacship_1.png" id="1_m37xu"]
 [ext_resource type="Texture2D" uid="uid://chqfocahtmf45" path="res://images/alien_planet /light_beam.png" id="2_0st2i"]
+[ext_resource type="PackedScene" uid="uid://dh54201bra4a0" path="res://scenes/scene_transition.tscn" id="4_5rrjv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w0k16"]
 size = Vector2(75.7361, 319.681)
@@ -43,7 +44,7 @@ scale = Vector2(1.70408, 2.18089)
 texture = ExtResource("2_0st2i")
 
 [node name="movement_block_area" type="CollisionShape2D" parent="."]
-position = Vector2(104, 23)
+position = Vector2(78, 24)
 scale = Vector2(1.58445, 2.1584)
 shape = SubResource("RectangleShape2D_w0k16")
 debug_color = Color(0.909804, 0.164706, 0.611765, 0.419608)
@@ -57,5 +58,8 @@ libraries = {
 "": SubResource("AnimationLibrary_lgrsb")
 }
 
+[node name="Scene_Transition" parent="." instance=ExtResource("4_5rrjv")]
+
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
+[connection signal="transitioned" from="Scene_Transition" to="." method="_on_scene_transition_transitioned"]

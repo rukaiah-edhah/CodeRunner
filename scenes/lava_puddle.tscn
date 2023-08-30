@@ -61,11 +61,11 @@ script = ExtResource("1_byp0w")
 
 [node name="lava_puddle_sprite" type="Sprite2D" parent="."]
 position = Vector2(1.99999, 1.24999)
-scale = Vector2(0.453, 0.545)
+scale = Vector2(0.462843, 0.557303)
 texture = ExtResource("1_r61e5")
 
 [node name="smoke" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.0745098)
+modulate = Color(1, 1, 1, 0)
 position = Vector2(5.74314, -117.013)
 scale = Vector2(0.18239, 0.186525)
 texture = ExtResource("3_dts10")
@@ -93,3 +93,4 @@ libraries = {
 }
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_lava_area_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -1,9 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://dh54201bra4a0"]
 
-[ext_resource type="Script" path="res://scene_transition.gd" id="1_dtpoo"]
+[ext_resource type="Script" path="res://scripts/scene_transition.gd" id="1_2vilu"]
 
 [sub_resource type="Animation" id="Animation_u11tu"]
 resource_name = "Fade_To_Black"
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -11,7 +12,7 @@ tracks/0/path = NodePath("Scene_Trans_Rect:color")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
+"times": PackedFloat32Array(0, 1.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
@@ -55,7 +56,7 @@ _data = {
 }
 
 [node name="Scene_Transition" type="CanvasLayer"]
-script = ExtResource("1_dtpoo")
+script = ExtResource("1_2vilu")
 
 [node name="Scene_Trans_Rect" type="ColorRect" parent="."]
 anchors_preset = 15

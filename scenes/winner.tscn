@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c170vx72m3820"]
 
 [ext_resource type="Script" path="res://scripts/winner.gd" id="1_bbyg0"]
-[ext_resource type="Texture2D" uid="uid://dj42mejj7w1ys" path="res://images/game_over.png" id="2_rwnn1"]
+[ext_resource type="Texture2D" uid="uid://cnm1gghovqagw" path="res://images/game_over.png" id="2_rwnn1"]
 [ext_resource type="SpriteFrames" uid="uid://b7k0l7k14afqc" path="res://images/themes/shifu.tres" id="3_6rwwf"]
 
 [node name="win" type="Control"]
@@ -63,7 +63,7 @@ offset_bottom = 603.0
 
 [node name="shifu" type="AnimatedSprite2D" parent="."]
 top_level = true
-position = Vector2(560, 323)
+position = Vector2(576, 230)
 scale = Vector2(0.5, 0.5)
 sprite_frames = ExtResource("3_6rwwf")
 animation = &"sleep"
@@ -72,10 +72,10 @@ frame = 22
 frame_progress = 1.0
 
 [node name="shifu_message" type="RichTextLabel" parent="shifu"]
-offset_left = 228.0
-offset_top = -338.0
-offset_right = 1098.0
-offset_bottom = 116.0
+offset_left = -408.0
+offset_top = 342.0
+offset_right = 462.0
+offset_bottom = 732.0
 
 [node name="shifu_nextc" type="Timer" parent="."]
 
@@ -85,10 +85,10 @@ offset_bottom = 116.0
 
 [node name="congratulations" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 264.0
-offset_top = 274.0
-offset_right = 1280.0
-offset_bottom = 382.0
+offset_left = 281.0
+offset_top = 97.0
+offset_right = 1274.0
+offset_bottom = 214.0
 scale = Vector2(0.75, 0.75)
 bbcode_enabled = true
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=29 format=3 uid="uid://cp7kgib8no6yf"]
 
-[ext_resource type="Script" path="res://scripts/Mini_Enemy.gd" id="1_c0b8x"]
+[ext_resource type="Script" path="res://scripts/Mini_Enemy_Python.gd" id="1_6d8b4"]
 [ext_resource type="Texture2D" uid="uid://l1a5iu67bfku" path="res://images/mini_enemies_python/__droid_02_dead_000.png" id="2_5ukyl"]
 [ext_resource type="Texture2D" uid="uid://wcjampw0bl2s" path="res://images/mini_enemies_python/__droid_02_dead_001.png" id="3_3ej06"]
 [ext_resource type="Texture2D" uid="uid://bruow33d6scjs" path="res://images/mini_enemies_python/__droid_02_dead_002.png" id="4_gmtxp"]
@@ -120,7 +120,7 @@ animations = [{
 }]
 
 [node name="mini_enemy" type="CharacterBody2D" groups=["obstacles"]]
-script = ExtResource("1_c0b8x")
+script = ExtResource("1_6d8b4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(6, -29)

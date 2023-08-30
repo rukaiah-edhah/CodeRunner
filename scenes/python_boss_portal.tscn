@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxmpl0pcciurl"]
+
+[ext_resource type="Script" path="res://scripts/podium_portal.gd" id="1_ymmt2"]
+[ext_resource type="Texture2D" uid="uid://icujyps3avj0" path="res://images/spaceship_interior/style_2/mini_boss_teleportation.png" id="2_l2v6c"]
+[ext_resource type="Texture2D" uid="uid://dsfm4bcjrbc80" path="res://images/alien_planet /light_3.png" id="3_1ulkh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8lmfl"]
+size = Vector2(249.5, 317)
+
+[sub_resource type="Animation" id="Animation_jfmvc"]
+resource_name = "light_effect"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.560784)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bfhpy"]
+_data = {
+"light_effect": SubResource("Animation_jfmvc")
+}
+
+[node name="python_boss_portal" type="Area2D"]
+script = ExtResource("1_ymmt2")
+
+[node name="python_boss_portal" type="Sprite2D" parent="."]
+position = Vector2(-16.5, 3.50001)
+scale = Vector2(1.12313, 1.34127)
+texture = ExtResource("2_l2v6c")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="python_boss_portal"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="python_boss_portal/StaticBody2D"]
+polygon = PackedVector2Array(78.2082, -55.0345, 107.1, -45.6207, 125.033, -38.3793, 131, -35.1, 131, -30, 133, 21, 131.7, 21, 128.6, 35, 126.8, 35, 118.8, 43, 114.3, 43, 93.4, 52, 87.4, 52, 47.2, 60, -49, 60, -49, 58.8, -77, 55.8, -77, 54.5, -114, 45.6, -114, 44.1, -129, 34.1, -129, 31.5, -133, 23.5, -133, 22, -127.026, -37.6552, -118.059, -41.2759, -99.1301, -49.2414, -104.112, -36.931, -82.6023, -26.9823, -71.2342, -21.7241, -22.4163, -17.3793, 15.4424, -15.931, 65.2565, -21, 98.1338, -31.1379, 101.123, -42)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(156, -42)
+shape = SubResource("RectangleShape2D_8lmfl")
+debug_color = Color(0, 0.631373, 0.462745, 0.419608)
+
+[node name="light" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-17.5, -124)
+scale = Vector2(0.479695, 0.388998)
+texture = ExtResource("3_1ulkh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bfhpy")
+}
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

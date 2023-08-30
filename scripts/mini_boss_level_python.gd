@@ -25,11 +25,11 @@ var is_dissolving_window = false
 var is_transitioning_to_code = false
 
 # sound
-var encounter_sound = preload("res://fonts-and-music/music/gong-91013.mp3")
-var right_answer_sound = preload("res://fonts-and-music/music/rightanswer-95219.mp3")
-var wrong_answer_sound = preload("res://fonts-and-music/music/wrong-answer-126515.mp3")
+var encounter_sound = preload("res://fonts-and-music/music/mini_boss_encounter_python.mp3")
+var right_answer_sound = preload("res://fonts-and-music/music/correct-choice-43861.mp3")
+var wrong_answer_sound = preload("res://fonts-and-music/music/wrong_answer_python.mp3")
 var block_area_sound = preload("res://fonts-and-music/music/block_area.mp3")
-var beat_boss_sound = preload("res://fonts-and-music/music/beat_mini_boss.mp3")
+var beat_boss_sound = preload("res://fonts-and-music/music/mini_boss_die_python.mp3")
 
 func _ready():
     BossManager.add_boss(self) # Connects the boss's signals to the player's methods
@@ -59,20 +59,20 @@ func _ready():
 # Signal handlers 
 func _on_boss_encounter_area_body_entered(body):
     if body.is_in_group("player"): 
-        play_sound(encounter_sound) 
+        play_sound(encounter_sound, 5.0) 
         is_displaying_window = true
         anim_player.play("display_window")
         boss_encounter_area.body_entered.disconnect(_on_boss_encounter_area_body_entered)
         
 func on_quiz_finished():
-    play_sound(right_answer_sound)
+    play_sound(right_answer_sound, 5.0)
     transition_to_code_page()
     
 func _on_code_page_all_correct():
     health_bar.value = 0 #makes sure that the health goes to 0 befor the window dissolves 
     await get_tree().create_timer(1.5).timeout
     anim_sprite.play("death") # Remove/change based on the boss' animations
-    play_sound(beat_boss_sound)
+    play_sound(beat_boss_sound, 10.0)
     await anim_sprite.animation_finished
     is_dissolving_window = true
     anim_player.play("dissolve_window")
@@ -90,20 +90,20 @@ func _on_player_hit_block_area():
     flash_border(right_border)
     flash_border(left_border)
     
-    play_sound(block_area_sound)
+    play_sound(block_area_sound, 1)
     anim_player.play("block_area")
     
 
 # Quiz and code page handlers
 func player_wrong_answer():
-    play_sound(wrong_answer_sound) 
+    play_sound(wrong_answer_sound, -1.0) 
     anim_sprite.play("wrong_answer") # Remove/change based on the boss' animations
     emit_signal("wrong_answer")
     await anim_sprite.animation_finished
     anim_sprite.play("idle") # Remove/change based on the boss' animations
     
 func take_damage(amount):
-    play_sound(right_answer_sound)
+    play_sound(right_answer_sound, 5.0)
     health -= amount
     health_bar.value = health
     if health > 0:
@@ -134,9 +134,10 @@ func _on_animation_player_animation_finished(anim_name):
             is_transitioning_to_code = false
 
 # sound
-func play_sound(audio_stream):
+func play_sound(audio_stream, volume_db = 0.0):
     var audio_stream_player = AudioStreamPlayer.new()
     audio_stream_player.stream = audio_stream
+    audio_stream_player.volume_db = volume_db
     self.add_child(audio_stream_player)
     audio_stream_player.play()
 

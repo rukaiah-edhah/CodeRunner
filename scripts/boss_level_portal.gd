@@ -9,10 +9,12 @@ func _on_area_entered(area: Area2D):
     if area.is_in_group("player"):
         play_sound(portal_sound)
         area.get_parent().disable_movement()
-        $AnimationPlayer.play("dissolve")
-        await $AnimationPlayer.animation_finished
+        area.get_parent().get_node("PlayerAnimation").play("Dissolve")
+        await get_tree().create_timer(0.5).timeout
         var linked_path = get_node(path)
         area.get_parent().global_position = linked_path.global_position
+        area.get_parent().get_node("PlayerAnimation").play("Appear")
+        area.get_parent().enable_movement()
 
 func play_sound(audio_stream):
     var audio_stream_player = AudioStreamPlayer.new()

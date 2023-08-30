@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bgve1ait01w1"]
 
-[ext_resource type="Script" path="res://scripts/teleportation_pads.gd" id="1_ytb27"]
+[ext_resource type="Script" path="res://scripts/teleportation_pad.gd" id="1_hodvx"]
 [ext_resource type="Texture2D" uid="uid://bf7k1alxq1mtm" path="res://images/alien_planet /teleportation_pads (2).png" id="2_uiv82"]
 [ext_resource type="Texture2D" uid="uid://dsfm4bcjrbc80" path="res://images/alien_planet /light_3.png" id="3_xn6cs"]
 
@@ -29,21 +29,21 @@ _data = {
 }
 
 [node name="teleportation_pads" type="Area2D"]
-script = ExtResource("1_ytb27")
+script = ExtResource("1_hodvx")
 
 [node name="teleportation_pad" type="Sprite2D" parent="."]
-position = Vector2(4, -64)
-scale = Vector2(0.609858, 0.647727)
+position = Vector2(12, -75)
+scale = Vector2(0.50211, 0.359848)
 texture = ExtResource("2_uiv82")
 
 [node name="light_1" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(3.5, -274.5)
-scale = Vector2(1.40863, 1.47151)
+position = Vector2(3.5, -303.5)
+scale = Vector2(1.40863, 1.35756)
 texture = ExtResource("3_xn6cs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(214.5, -82)
+position = Vector2(224, -100)
 shape = SubResource("RectangleShape2D_8lmfl")
 debug_color = Color(0, 0.631373, 0.462745, 0.419608)
 
