@@ -205,7 +205,6 @@ bg_color = Color(0, 0.717647, 0.8, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_tu174"]
 font = ExtResource("40_4slfq")
 font_size = 20
-font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
 font = ExtResource("40_4slfq")
@@ -407,6 +406,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("44_i6ggw")
+metadata/_edit_use_anchors_ = true
 
 [node name="background_color" type="ColorRect" parent="boss_encounter_area/boss_level_window/quiz_page"]
 layout_mode = 0
@@ -428,7 +428,7 @@ metadata/_edit_group_ = true
 [node name="question_label" type="RichTextLabel" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/question_container"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/bold_font = ExtResource("40_4slfq")
 theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
@@ -482,10 +482,10 @@ expand_icon = true
 
 [node name="health_bar" type="ProgressBar" parent="boss_encounter_area/boss_level_window"]
 layout_mode = 0
-offset_left = 28.0
-offset_top = 16.0
-offset_right = 302.0
-offset_bottom = 44.0
+offset_left = 856.0
+offset_top = 35.0
+offset_right = 1117.0
+offset_bottom = 60.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/background = SubResource("StyleBoxFlat_eocmm")
 

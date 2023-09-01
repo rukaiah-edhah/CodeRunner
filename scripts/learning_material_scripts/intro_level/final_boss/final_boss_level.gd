@@ -17,6 +17,7 @@ var health = 100
 @onready var howl = $howl
 @onready var encounter = $encounter
 @onready var beat = $beat
+@onready var block = $block
 
 # Responsible for the flash effect 
 @onready var top_border = $boss_encounter_area/boss_level_window/top_border
@@ -33,6 +34,7 @@ var growl_audio = preload('res://fonts-and-music/music/growl.mp3')
 var howl_audio = preload('res://fonts-and-music/music/monster_howl.mp3')
 var ecounter_audio = preload("res://fonts-and-music/music/final_boss_intro_encounter.mp3")
 var beat_audio = preload("res://fonts-and-music/music/beat_final_boss.mp3")
+var block_area_sound = preload("res://fonts-and-music/music/block_area.mp3")
 
 func _ready():
 
@@ -70,6 +72,9 @@ func _ready():
     
     beat.stream = beat_audio
     beat.volume_db = 1 
+    
+    block.stream = block_area_sound
+    block.volume_db = 5
     
     # setting healthbar to 100 initially
     health_bar.value = health
@@ -112,6 +117,7 @@ func _on_code_page_all_correct():
 func _on_player_hit_block_area():
     if is_dissolving_window or is_displaying_window or is_transitioning_to_code:
         return
+    block.play(0)
 
     flash_border(top_border)
     flash_border(bottom_border)

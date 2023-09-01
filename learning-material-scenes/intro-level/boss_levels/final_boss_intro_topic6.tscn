@@ -1047,7 +1047,7 @@ position = Vector2(-624, -268)
 shape = SubResource("RectangleShape2D_uvki5")
 
 [node name="animated_sprite_2d" type="AnimatedSprite2D" parent="boss_encounter_area"]
-position = Vector2(216, -178)
+position = Vector2(216, -94)
 scale = Vector2(1.74524, 1.7861)
 sprite_frames = SubResource("SpriteFrames_ebl7p")
 animation = &"a_idle"
@@ -1098,7 +1098,7 @@ metadata/_edit_group_ = true
 [node name="question_label" type="RichTextLabel" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/question_container"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/bold_font = ExtResource("187_af0iq")
 theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
@@ -1152,15 +1152,14 @@ expand_icon = true
 
 [node name="health_bar" type="ProgressBar" parent="boss_encounter_area/boss_level_window"]
 layout_mode = 0
-offset_left = 28.0
+offset_left = 794.0
 offset_top = 16.0
-offset_right = 302.0
+offset_right = 1124.0
 offset_bottom = 44.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/background = SubResource("StyleBoxFlat_eocmm")
 
 [node name="boss" type="Control" parent="boss_encounter_area/boss_level_window"]
-visible = false
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -1269,6 +1268,8 @@ position = Vector2(226, -28)
 [node name="encounter" type="AudioStreamPlayer2D" parent="."]
 
 [node name="beat" type="AudioStreamPlayer2D" parent="."]
+
+[node name="block" type="AudioStreamPlayer2D" parent="."]
 
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button1" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_1_pressed" flags=18]
 [connection signal="pressed" from="boss_encounter_area/boss_level_window/quiz_page/background_color/options_container/option_button2" to="boss_encounter_area/boss_level_window/quiz_page" method="_on_option_button_2_pressed" flags=18]

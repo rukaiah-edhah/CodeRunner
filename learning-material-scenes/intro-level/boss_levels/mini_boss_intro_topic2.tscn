@@ -204,7 +204,6 @@ animations = [{
 [sub_resource type="LabelSettings" id="LabelSettings_tu174"]
 font = ExtResource("43_uetrs")
 font_size = 20
-font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8g3qe"]
 font = ExtResource("41_bkf5m")
@@ -379,7 +378,7 @@ position = Vector2(-506.75, -268)
 shape = SubResource("RectangleShape2D_uvki5")
 
 [node name="animated_sprite_2d" type="AnimatedSprite2D" parent="boss_encounter_area"]
-position = Vector2(374, -91.5)
+position = Vector2(374, -19)
 scale = Vector2(0.510638, 0.575847)
 sprite_frames = SubResource("SpriteFrames_ebl7p")
 animation = &"wrong_answer"
@@ -432,7 +431,7 @@ metadata/_edit_group_ = true
 [node name="question_label" type="RichTextLabel" parent="boss_encounter_area/boss_level_window/quiz_page/background_color/question_container"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/bold_font = ExtResource("41_bkf5m")
 theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
@@ -703,9 +702,9 @@ text = "Run"
 
 [node name="health_bar" type="ProgressBar" parent="boss_encounter_area/boss_level_window"]
 layout_mode = 0
-offset_left = 28.0
+offset_left = 858.0
 offset_top = 16.0
-offset_right = 302.0
+offset_right = 1127.0
 offset_bottom = 44.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/background = SubResource("StyleBoxFlat_eocmm")

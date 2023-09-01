@@ -1,75 +1,75 @@
-[gd_scene load_steps=72 format=3 uid="uid://bjr3f6oxwl481"]
+[gd_scene load_steps=75 format=3 uid="uid://bjr3f6oxwl481"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ra8ml"]
-[ext_resource type="Texture2D" uid="uid://bbfkaany4p6ca" path="res://images/player/white/defend/__all_white_spaceman_defend_000.png" id="2_v8lgr"]
-[ext_resource type="Texture2D" uid="uid://tgxmje2ty5vr" path="res://images/player/white/defend/__all_white_spaceman_defend_001.png" id="3_0a7o4"]
-[ext_resource type="Texture2D" uid="uid://cn2lc733c2r63" path="res://images/player/white/defend/__all_white_spaceman_defend_002.png" id="4_1em4q"]
-[ext_resource type="Texture2D" uid="uid://c0nmion3gsp2r" path="res://images/player/white/defend/__all_white_spaceman_defend_003.png" id="5_xl63f"]
-[ext_resource type="Texture2D" uid="uid://bo6sunos6hacp" path="res://images/player/white/die/__all_white_spaceman_die_000.png" id="6_ni5ag"]
-[ext_resource type="Texture2D" uid="uid://cifv4o3dia6t0" path="res://images/player/white/die/__all_white_spaceman_die_001.png" id="7_3ommy"]
-[ext_resource type="Texture2D" uid="uid://j3hnp3oaw4o7" path="res://images/player/white/die/__all_white_spaceman_die_002.png" id="8_ai57d"]
-[ext_resource type="Texture2D" uid="uid://ddf8rb3rsfhth" path="res://images/player/white/die/__all_white_spaceman_die_003.png" id="9_pmchf"]
-[ext_resource type="Texture2D" uid="uid://b6ev4r10pujbe" path="res://images/player/white/die/__all_white_spaceman_die_004.png" id="10_v0ogs"]
-[ext_resource type="Texture2D" uid="uid://04cwsm82tu5o" path="res://images/player/white/hurt/__all_white_spaceman_hurt_000.png" id="11_nsx8s"]
-[ext_resource type="Texture2D" uid="uid://csrewgximxp0m" path="res://images/player/white/hurt/__all_white_spaceman_hurt_001.png" id="12_kqcq5"]
-[ext_resource type="Texture2D" uid="uid://dlyrl6r4fej3f" path="res://images/player/white/idle/__all_white_spaceman_idle_000.png" id="12_n51ny"]
-[ext_resource type="Texture2D" uid="uid://debeoda4fd0s0" path="res://images/player/white/idle/__all_white_spaceman_idle_001.png" id="13_kog4l"]
-[ext_resource type="Texture2D" uid="uid://eq355e0sxswg" path="res://images/player/white/hurt/__all_white_spaceman_hurt_002.png" id="13_p8foy"]
-[ext_resource type="Texture2D" uid="uid://bxphvwljspmoi" path="res://images/player/white/hurt/__all_white_spaceman_hurt_003.png" id="14_fdbdv"]
-[ext_resource type="Texture2D" uid="uid://cf723udlhaooq" path="res://images/player/white/idle/__all_white_spaceman_idle_002.png" id="14_fgj0l"]
-[ext_resource type="Texture2D" uid="uid://hfpmyo54apto" path="res://images/player/white/idle/__all_white_spaceman_idle_003.png" id="15_86wuw"]
-[ext_resource type="Texture2D" uid="uid://c550o4l3mdrn2" path="res://images/player/white/idle/__all_white_spaceman_idle_004.png" id="16_txi2m"]
-[ext_resource type="Texture2D" uid="uid://bl7ctwryywkbe" path="res://images/player/white/idle/__all_white_spaceman_idle_005.png" id="17_6mp23"]
-[ext_resource type="Texture2D" uid="uid://bfuwu361ye1gy" path="res://images/player/white/idle/__all_white_spaceman_idle_012.png" id="18_henft"]
-[ext_resource type="Texture2D" uid="uid://dsxfj7vxsyf2n" path="res://images/player/white/idle/__all_white_spaceman_idle_006.png" id="19_xitjr"]
-[ext_resource type="Texture2D" uid="uid://dwi8rrpsmyg4k" path="res://images/player/white/idle/__all_white_spaceman_idle_008.png" id="20_h1lfy"]
-[ext_resource type="Texture2D" uid="uid://cugl2na172soh" path="res://images/player/white/idle/__all_white_spaceman_idle_007.png" id="21_d06me"]
-[ext_resource type="Texture2D" uid="uid://dhqmoipogao7x" path="res://images/player/white/jump/__all_white_spaceman_jump_000.png" id="22_oq5d0"]
-[ext_resource type="Texture2D" uid="uid://byq5a6ou5u46n" path="res://images/player/white/idle/__all_white_spaceman_idle_009.png" id="22_yb473"]
-[ext_resource type="Texture2D" uid="uid://gwddpooye68b" path="res://images/player/white/jump/__all_white_spaceman_jump_001.png" id="23_0p57o"]
-[ext_resource type="Texture2D" uid="uid://c233er2yepya7" path="res://images/player/white/idle/__all_white_spaceman_idle_010.png" id="23_fecl4"]
-[ext_resource type="Texture2D" uid="uid://bm0ie2q1ehk3m" path="res://images/player/white/idle/__all_white_spaceman_idle_011.png" id="24_0jsp4"]
-[ext_resource type="Texture2D" uid="uid://bswtjkb4b3tx2" path="res://images/player/white/jump/__all_white_spaceman_jump_002.png" id="24_1clr4"]
-[ext_resource type="Texture2D" uid="uid://b50naiscbaoh7" path="res://images/player/white/jump/__all_white_spaceman_jump_003.png" id="25_85uqe"]
-[ext_resource type="Texture2D" uid="uid://bb6g3bl306vxe" path="res://images/player/white/idle/__all_white_spaceman_idle_013.png" id="25_c1wl0"]
-[ext_resource type="Texture2D" uid="uid://b55lk5e0in2iv" path="res://images/player/white/jump/__all_white_spaceman_jump_004.png" id="26_arlql"]
-[ext_resource type="Texture2D" uid="uid://c2oy8nphac3g7" path="res://images/player/white/idle/__all_white_spaceman_idle_014.png" id="26_cb017"]
-[ext_resource type="Texture2D" uid="uid://du6dvtq6js4bb" path="res://images/player/white/idle/__all_white_spaceman_idle_015.png" id="27_s0rc6"]
-[ext_resource type="Texture2D" uid="uid://b5kgek0n2j8u2" path="res://images/player/white/jump/__all_white_spaceman_jump_005.png" id="27_tbi33"]
-[ext_resource type="Texture2D" uid="uid://dcvbndodjbhod" path="res://images/player/white/idle/__all_white_spaceman_idle_016.png" id="28_5nu24"]
-[ext_resource type="Texture2D" uid="uid://bw8r3k6qpujus" path="res://images/player/white/jump/__all_white_spaceman_jump_006.png" id="28_a7up8"]
-[ext_resource type="Texture2D" uid="uid://cr5yj0n0llmai" path="res://images/player/white/idle/__all_white_spaceman_idle_017.png" id="29_2c2lp"]
-[ext_resource type="Texture2D" uid="uid://14h8vrhuid42" path="res://images/player/white/jump/__all_white_spaceman_jump_007.png" id="29_e23dc"]
-[ext_resource type="Texture2D" uid="uid://bi1n8pg3l7pv3" path="res://images/player/white/jump/__all_white_spaceman_jump_008.png" id="30_1vp7b"]
-[ext_resource type="Texture2D" uid="uid://xv13rl81mybj" path="res://images/player/white/idle/__all_white_spaceman_idle_018.png" id="30_ojmyg"]
-[ext_resource type="Texture2D" uid="uid://bd37wqc8u12f4" path="res://images/player/white/jump/__all_white_spaceman_jump_009.png" id="31_6fuq2"]
-[ext_resource type="Texture2D" uid="uid://dbhaksxwpwobf" path="res://images/player/white/idle/__all_white_spaceman_idle_019.png" id="31_8gdus"]
-[ext_resource type="Texture2D" uid="uid://dhtfqq5jyvjj6" path="res://images/player/white/jump/__all_white_spaceman_jump_010.png" id="32_fkapc"]
-[ext_resource type="Texture2D" uid="uid://bv71lffwr6te7" path="res://images/player/white/jump/__all_white_spaceman_jump_011.png" id="33_x2rvq"]
-[ext_resource type="Texture2D" uid="uid://df8d1jp3x4oea" path="res://images/player/white/walk/__all_white_spaceman_walk_000.png" id="34_xpfym"]
-[ext_resource type="Texture2D" uid="uid://jv37r4n0emep" path="res://images/player/white/walk/__all_white_spaceman_walk_001.png" id="35_pvoas"]
-[ext_resource type="Texture2D" uid="uid://bet68h144uwwu" path="res://images/player/white/walk/__all_white_spaceman_walk_002.png" id="36_a7ob4"]
-[ext_resource type="Texture2D" uid="uid://j6puvqc6tbcy" path="res://images/player/white/walk/__all_white_spaceman_walk_003.png" id="37_vlbt2"]
-[ext_resource type="Texture2D" uid="uid://islm0phvuql6" path="res://images/player/white/walk/__all_white_spaceman_walk_004.png" id="38_1t8aa"]
-[ext_resource type="Texture2D" uid="uid://deiraonkxmmln" path="res://images/player/white/walk/__all_white_spaceman_walk_005.png" id="39_qbpo3"]
-[ext_resource type="Texture2D" uid="uid://dlmjgj2yskk7m" path="res://images/player/white/walk/__all_white_spaceman_walk_006.png" id="40_sugpn"]
-[ext_resource type="Texture2D" uid="uid://628f667c6u2g" path="res://images/coin_animation/coin_1.png" id="41_36tdq"]
-[ext_resource type="Texture2D" uid="uid://cnl3ymjp46nyh" path="res://images/player/white/walk/__all_white_spaceman_walk_007.png" id="41_i66hj"]
-[ext_resource type="Texture2D" uid="uid://b7fltgr3jrs6d" path="res://images/player/white/walk/__all_white_spaceman_walk_008.png" id="42_5barh"]
-[ext_resource type="Texture2D" uid="uid://dtmxft3d58s3j" path="res://images/helmet.png" id="42_b0a8h"]
-[ext_resource type="Texture2D" uid="uid://b3qsm6sevw38p" path="res://images/player/white/walk/__all_white_spaceman_walk_009.png" id="43_g3y7l"]
-[ext_resource type="Texture2D" uid="uid://c0pbuu7andwyg" path="res://images/player/white/walk/__all_white_spaceman_walk_010.png" id="44_sh5l6"]
-[ext_resource type="Texture2D" uid="uid://c7r20mp5ygv07" path="res://images/player/white/walk/__all_white_spaceman_walk_011.png" id="45_ayab7"]
-[ext_resource type="Texture2D" uid="uid://dkccero71hedg" path="res://images/player/white/shoot/__all_white_spaceman_shoot_000.png" id="47_y5ib3"]
-[ext_resource type="Texture2D" uid="uid://lphwtwokuccu" path="res://images/player/white/shoot/__all_white_spaceman_shoot_001.png" id="48_hm0fe"]
-[ext_resource type="Texture2D" uid="uid://bxkjf3dv65tka" path="res://images/player/white/shoot/__all_white_spaceman_shoot_002.png" id="49_2lvoh"]
-[ext_resource type="Texture2D" uid="uid://drx2ldlrohnyl" path="res://images/player/white/shoot/__all_white_spaceman_shoot_003.png" id="50_hiy3n"]
-[ext_resource type="Texture2D" uid="uid://b1v23n024abys" path="res://images/player/white/shoot/__all_white_spaceman_shoot_004.png" id="51_epgy3"]
-[ext_resource type="Texture2D" uid="uid://dkf5wcc88hkd0" path="res://images/player/white/shoot/__all_white_spaceman_shoot_005.png" id="52_f5cba"]
-[ext_resource type="Texture2D" uid="uid://c7n51ickrpyw8" path="res://images/player/white/shoot/__all_white_spaceman_shoot_006.png" id="53_wnr82"]
-[ext_resource type="Texture2D" uid="uid://6tn7hw28r8fy" path="res://images/player/white/shoot/__all_white_spaceman_shoot_007.png" id="54_xw7lo"]
-[ext_resource type="Texture2D" uid="uid://c1hs2he84c05x" path="res://unnecessary-files/green.png" id="67_0r6mn"]
-[ext_resource type="AudioStream" uid="uid://csvydm2mundga" path="res://fonts-and-music/music/beat_mini_boss.mp3" id="70_xijtl"]
+[ext_resource type="Texture2D" uid="uid://bb7b43ff3vjjv" path="res://images/player/white/defend/__all_white_spaceman_defend_000.png" id="2_v8lgr"]
+[ext_resource type="Texture2D" uid="uid://h5mmxtv616vy" path="res://images/player/white/defend/__all_white_spaceman_defend_001.png" id="3_0a7o4"]
+[ext_resource type="Texture2D" uid="uid://cikqctgpiqyyy" path="res://images/player/white/defend/__all_white_spaceman_defend_002.png" id="4_1em4q"]
+[ext_resource type="Texture2D" uid="uid://cm7xxby34igjf" path="res://images/player/white/defend/__all_white_spaceman_defend_003.png" id="5_xl63f"]
+[ext_resource type="Texture2D" uid="uid://1hrox52rq41b" path="res://images/player/white/die/__all_white_spaceman_die_000.png" id="6_ni5ag"]
+[ext_resource type="Texture2D" uid="uid://dijpnqdl23hfo" path="res://images/player/white/die/__all_white_spaceman_die_001.png" id="7_3ommy"]
+[ext_resource type="Texture2D" uid="uid://c7v7okk2ng5j3" path="res://images/player/white/die/__all_white_spaceman_die_002.png" id="8_ai57d"]
+[ext_resource type="Texture2D" uid="uid://bq0ipuqw5t8pi" path="res://images/player/white/die/__all_white_spaceman_die_003.png" id="9_pmchf"]
+[ext_resource type="Texture2D" uid="uid://b8h21evmha4us" path="res://images/player/white/die/__all_white_spaceman_die_004.png" id="10_v0ogs"]
+[ext_resource type="Texture2D" uid="uid://kjq1f12xjppc" path="res://images/player/white/hurt/__all_white_spaceman_hurt_000.png" id="11_nsx8s"]
+[ext_resource type="Texture2D" uid="uid://corseb1mjipik" path="res://images/player/white/hurt/__all_white_spaceman_hurt_001.png" id="12_kqcq5"]
+[ext_resource type="Texture2D" uid="uid://v45fu0bydbgy" path="res://images/player/white/idle/__all_white_spaceman_idle_000.png" id="12_n51ny"]
+[ext_resource type="Texture2D" uid="uid://c5jkrgmvgyo5h" path="res://images/player/white/idle/__all_white_spaceman_idle_001.png" id="13_kog4l"]
+[ext_resource type="Texture2D" uid="uid://b0kknofi4cc8n" path="res://images/player/white/hurt/__all_white_spaceman_hurt_002.png" id="13_p8foy"]
+[ext_resource type="Texture2D" uid="uid://gomkrxwr3x8i" path="res://images/player/white/hurt/__all_white_spaceman_hurt_003.png" id="14_fdbdv"]
+[ext_resource type="Texture2D" uid="uid://bkp7h1fwt5q45" path="res://images/player/white/idle/__all_white_spaceman_idle_002.png" id="14_fgj0l"]
+[ext_resource type="Texture2D" uid="uid://dof80o0b3dxcw" path="res://images/player/white/idle/__all_white_spaceman_idle_003.png" id="15_86wuw"]
+[ext_resource type="Texture2D" uid="uid://xlj30vvhnos6" path="res://images/player/white/idle/__all_white_spaceman_idle_004.png" id="16_txi2m"]
+[ext_resource type="Texture2D" uid="uid://cr4wh21ny35s3" path="res://images/player/white/idle/__all_white_spaceman_idle_005.png" id="17_6mp23"]
+[ext_resource type="Texture2D" uid="uid://di80kg0xaeooe" path="res://images/player/white/idle/__all_white_spaceman_idle_012.png" id="18_henft"]
+[ext_resource type="Texture2D" uid="uid://bgpumfjk8vlxw" path="res://images/player/white/idle/__all_white_spaceman_idle_006.png" id="19_xitjr"]
+[ext_resource type="Texture2D" uid="uid://fc6jicqjgrcl" path="res://images/player/white/idle/__all_white_spaceman_idle_008.png" id="20_h1lfy"]
+[ext_resource type="Texture2D" uid="uid://6n3udb3s1kwi" path="res://images/player/white/idle/__all_white_spaceman_idle_007.png" id="21_d06me"]
+[ext_resource type="Texture2D" uid="uid://cf0iwmggx5fsa" path="res://images/player/white/jump/__all_white_spaceman_jump_000.png" id="22_oq5d0"]
+[ext_resource type="Texture2D" uid="uid://dbmxxufkfyy72" path="res://images/player/white/idle/__all_white_spaceman_idle_009.png" id="22_yb473"]
+[ext_resource type="Texture2D" uid="uid://c5qfyvfn1c6of" path="res://images/player/white/jump/__all_white_spaceman_jump_001.png" id="23_0p57o"]
+[ext_resource type="Texture2D" uid="uid://br6tn6qs8sn6j" path="res://images/player/white/idle/__all_white_spaceman_idle_010.png" id="23_fecl4"]
+[ext_resource type="Texture2D" uid="uid://dmshysgdeubom" path="res://images/player/white/idle/__all_white_spaceman_idle_011.png" id="24_0jsp4"]
+[ext_resource type="Texture2D" uid="uid://d22hcwie8bxfl" path="res://images/player/white/jump/__all_white_spaceman_jump_002.png" id="24_1clr4"]
+[ext_resource type="Texture2D" uid="uid://7fpwan6qquo" path="res://images/player/white/jump/__all_white_spaceman_jump_003.png" id="25_85uqe"]
+[ext_resource type="Texture2D" uid="uid://3puypqmol8my" path="res://images/player/white/idle/__all_white_spaceman_idle_013.png" id="25_c1wl0"]
+[ext_resource type="Texture2D" uid="uid://b8sw2bvuktagd" path="res://images/player/white/jump/__all_white_spaceman_jump_004.png" id="26_arlql"]
+[ext_resource type="Texture2D" uid="uid://b1vr4n0qgvpfn" path="res://images/player/white/idle/__all_white_spaceman_idle_014.png" id="26_cb017"]
+[ext_resource type="Texture2D" uid="uid://d3y3uhcb1wk6i" path="res://images/player/white/idle/__all_white_spaceman_idle_015.png" id="27_s0rc6"]
+[ext_resource type="Texture2D" uid="uid://y5vrm0uejdsm" path="res://images/player/white/jump/__all_white_spaceman_jump_005.png" id="27_tbi33"]
+[ext_resource type="Texture2D" uid="uid://da4w1hmi6c045" path="res://images/player/white/idle/__all_white_spaceman_idle_016.png" id="28_5nu24"]
+[ext_resource type="Texture2D" uid="uid://dqpykhiyqxs7l" path="res://images/player/white/jump/__all_white_spaceman_jump_006.png" id="28_a7up8"]
+[ext_resource type="Texture2D" uid="uid://g6tnvwvt2gj1" path="res://images/player/white/idle/__all_white_spaceman_idle_017.png" id="29_2c2lp"]
+[ext_resource type="Texture2D" uid="uid://1set32x6dv05" path="res://images/player/white/jump/__all_white_spaceman_jump_007.png" id="29_e23dc"]
+[ext_resource type="Texture2D" uid="uid://d0q3fshsdrds4" path="res://images/player/white/jump/__all_white_spaceman_jump_008.png" id="30_1vp7b"]
+[ext_resource type="Texture2D" uid="uid://ctvv2wivtqwg7" path="res://images/player/white/idle/__all_white_spaceman_idle_018.png" id="30_ojmyg"]
+[ext_resource type="Texture2D" uid="uid://b6j5wsl5ed445" path="res://images/player/white/jump/__all_white_spaceman_jump_009.png" id="31_6fuq2"]
+[ext_resource type="Texture2D" uid="uid://ciy3k5aajr00t" path="res://images/player/white/idle/__all_white_spaceman_idle_019.png" id="31_8gdus"]
+[ext_resource type="Texture2D" uid="uid://dawrkauhj6i8x" path="res://images/player/white/jump/__all_white_spaceman_jump_010.png" id="32_fkapc"]
+[ext_resource type="Texture2D" uid="uid://dia5lxkc7h0nd" path="res://images/player/white/jump/__all_white_spaceman_jump_011.png" id="33_x2rvq"]
+[ext_resource type="Texture2D" uid="uid://dyloqymf2itke" path="res://images/player/white/walk/__all_white_spaceman_walk_000.png" id="34_xpfym"]
+[ext_resource type="Texture2D" uid="uid://ctxxsw1m7n88m" path="res://images/player/white/walk/__all_white_spaceman_walk_001.png" id="35_pvoas"]
+[ext_resource type="Texture2D" uid="uid://dvaerac3rp46g" path="res://images/player/white/walk/__all_white_spaceman_walk_002.png" id="36_a7ob4"]
+[ext_resource type="Texture2D" uid="uid://dok5xiv33r7vf" path="res://images/player/white/walk/__all_white_spaceman_walk_003.png" id="37_vlbt2"]
+[ext_resource type="Texture2D" uid="uid://e37au3hn73yk" path="res://images/player/white/walk/__all_white_spaceman_walk_004.png" id="38_1t8aa"]
+[ext_resource type="Texture2D" uid="uid://cokcken7bwjjp" path="res://images/player/white/walk/__all_white_spaceman_walk_005.png" id="39_qbpo3"]
+[ext_resource type="Texture2D" uid="uid://b7tucr3b7g1yr" path="res://images/player/white/walk/__all_white_spaceman_walk_006.png" id="40_sugpn"]
+[ext_resource type="Texture2D" uid="uid://vt7kmmtdjp18" path="res://images/coin_animation/coin_1.png" id="41_36tdq"]
+[ext_resource type="Texture2D" uid="uid://bp4nqurf35ivi" path="res://images/player/white/walk/__all_white_spaceman_walk_007.png" id="41_i66hj"]
+[ext_resource type="Texture2D" uid="uid://d211etjjc36ca" path="res://images/player/white/walk/__all_white_spaceman_walk_008.png" id="42_5barh"]
+[ext_resource type="Texture2D" uid="uid://bere8w00533jv" path="res://images/helmet.png" id="42_b0a8h"]
+[ext_resource type="Texture2D" uid="uid://bppvdhy8ht8r1" path="res://images/player/white/walk/__all_white_spaceman_walk_009.png" id="43_g3y7l"]
+[ext_resource type="Texture2D" uid="uid://bmemp4dtjyvqu" path="res://images/player/white/walk/__all_white_spaceman_walk_010.png" id="44_sh5l6"]
+[ext_resource type="Texture2D" uid="uid://d0461pey06ejf" path="res://images/player/white/walk/__all_white_spaceman_walk_011.png" id="45_ayab7"]
+[ext_resource type="Texture2D" uid="uid://di54nqqs3dord" path="res://images/player/white/shoot/__all_white_spaceman_shoot_000.png" id="47_y5ib3"]
+[ext_resource type="Texture2D" uid="uid://dn2wcfvnmvlli" path="res://images/player/white/shoot/__all_white_spaceman_shoot_001.png" id="48_hm0fe"]
+[ext_resource type="Texture2D" uid="uid://hpiry3wq85cn" path="res://images/player/white/shoot/__all_white_spaceman_shoot_002.png" id="49_2lvoh"]
+[ext_resource type="Texture2D" uid="uid://ck1w7kbwdaky" path="res://images/player/white/shoot/__all_white_spaceman_shoot_003.png" id="50_hiy3n"]
+[ext_resource type="Texture2D" uid="uid://c1uwbw6njgssi" path="res://images/player/white/shoot/__all_white_spaceman_shoot_004.png" id="51_epgy3"]
+[ext_resource type="Texture2D" uid="uid://bfyp7f7mh0igu" path="res://images/player/white/shoot/__all_white_spaceman_shoot_005.png" id="52_f5cba"]
+[ext_resource type="Texture2D" uid="uid://dwvtvkhbdi26b" path="res://images/player/white/shoot/__all_white_spaceman_shoot_006.png" id="53_wnr82"]
+[ext_resource type="Texture2D" uid="uid://b4ojthufom3l2" path="res://images/player/white/shoot/__all_white_spaceman_shoot_007.png" id="54_xw7lo"]
+[ext_resource type="Texture2D" uid="uid://r1l11t8mhi3" path="res://unnecessary-files/green.png" id="67_0r6mn"]
+[ext_resource type="AudioStream" uid="uid://mju42rrl8d0s" path="res://fonts-and-music/music/beat_mini_boss.mp3" id="70_xijtl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fq2uv"]
 animations = [{
@@ -304,6 +304,42 @@ animations = [{
 "speed": 15.0
 }]
 
+[sub_resource type="Animation" id="Animation_c8qt7"]
+resource_name = "Dissolve"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_70nka"]
+resource_name = "Appear"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tspsu"]
+_data = {
+"Appear": SubResource("Animation_70nka"),
+"Dissolve": SubResource("Animation_c8qt7")
+}
+
 [node name="player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_ra8ml")
 
@@ -403,5 +439,12 @@ position = Vector2(44, 0)
 
 [node name="beat_mini_boss" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("70_xijtl")
+
+[node name="player_hurt" type="AudioStreamPlayer2D" parent="."]
+
+[node name="PlayerAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tspsu")
+}
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
