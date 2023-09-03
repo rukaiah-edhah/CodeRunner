@@ -55,7 +55,7 @@ func _process(_delta):
             dialogue_text.scroll_to_line(current_line_visible)
         if Input.is_action_just_pressed("ui_accept"):
         #start_dialogue()
-            stop_dialogue()
+            pass
 
 func start_dialogue():
     current_message = 0
@@ -99,7 +99,7 @@ func _on_next_message_timeout():
             current_line_visible = min(dialogue_text.get_line_count() - 1, current_line_visible + 1)
             dialogue_text.scroll_to_line(current_line_visible)
         if Input.is_action_just_pressed("ui_accept"):
-            stop_dialogue()
+            pass
     else: 
         current_message += 1
         display = ""

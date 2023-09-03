@@ -1,11 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://brqa4emc67drg"]
+[gd_scene load_steps=12 format=3 uid="uid://brqa4emc67drg"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_8mpn6"]
 [ext_resource type="Texture2D" uid="uid://chpop6y66xr3i" path="res://images/menu_bg.png" id="2_a6cv2"]
 [ext_resource type="FontFile" uid="uid://ccb1mu4uu8dxg" path="res://fonts-and-music/fonts/elnath/ELNATH.ttf" id="3_mmws1"]
 [ext_resource type="Texture2D" uid="uid://cg3sxr8hixj3q" path="res://images/button_bg.png" id="4_y7mwo"]
 [ext_resource type="PackedScene" uid="uid://b0y2nbxqx3fkn" path="res://scenes/bg_music.tscn" id="5_48i4w"]
-[ext_resource type="AudioStream" uid="uid://c2ne56kgli1a8" path="res://fonts-and-music/music/DavidKBD - Cosmic Pack 06 - Lunar Rampage-Variation5.ogg" id="6_rgo8b"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_j0qhm"]
 font = ExtResource("3_mmws1")
@@ -146,8 +145,6 @@ offset_right = 961.0
 offset_bottom = 553.0
 
 [node name="bg_musics" parent="." instance=ExtResource("5_48i4w")]
-stream = ExtResource("6_rgo8b")
-volume_db = -13.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

@@ -4344,7 +4344,7 @@ layer = 3
 follow_viewport_enabled = true
 
 [node name="player" parent="in_game_items/3" instance=ExtResource("3_4bity")]
-position = Vector2(1301.09, -293.49)
+position = Vector2(440.991, -265.023)
 
 [node name="2" type="CanvasLayer" parent="in_game_items"]
 layer = 2
@@ -4623,6 +4623,7 @@ position = Vector2(43873, 5157)
 [node name="shifu\'s_lessons" type="Node2D" parent="."]
 
 [node name="2" type="CanvasLayer" parent="shifu\'s_lessons"]
+layer = 2
 follow_viewport_enabled = true
 
 [node name="topic_1" type="Node2D" parent="shifu\'s_lessons/2"]

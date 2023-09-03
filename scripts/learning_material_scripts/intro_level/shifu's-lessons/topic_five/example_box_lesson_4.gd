@@ -60,7 +60,7 @@ func _process(_delta):
             dialogue_text.scroll_to_line(current_line_visible)
         if Input.is_action_just_pressed("ui_accept"):
         #start_dialogue()
-            stop_dialogue()
+            pass
 
 func start_dialogue():
     current_message = 0
@@ -104,7 +104,7 @@ func _on_next_message_timeout():
             current_line_visible = min(dialogue_text.get_line_count() - 1, current_line_visible + 1)
             dialogue_text.scroll_to_line(current_line_visible)
         if Input.is_action_just_pressed("ui_accept"):
-            stop_dialogue()
+            pass
     else: 
         current_message += 1
         display = ""
@@ -121,7 +121,7 @@ func _on_encounter_area_body_entered(body):
 func _on_button_pressed():
     if current_message == len(messages) - 1:
         stop_dialogue()
-        if block_area_active:  # remove block area only when it is active
+        if block_area_active:  
             block_area.queue_free()
             block_area_active = false
  
