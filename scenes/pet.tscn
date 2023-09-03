@@ -1,0 +1,361 @@
+[gd_scene load_steps=63 format=3 uid="uid://b4fkrbt6jy37q"]
+
+[ext_resource type="Texture2D" uid="uid://bcyji0ghopcq" path="res://images/pets/cat_monster/__cat_monster_idle_000.png" id="1_7y6sf"]
+[ext_resource type="Script" path="res://scripts/pet.gd" id="1_wijxk"]
+[ext_resource type="Texture2D" uid="uid://d22a1bwkf7q1l" path="res://images/pets/cat_monster/__cat_monster_idle_001.png" id="2_3umd2"]
+[ext_resource type="Texture2D" uid="uid://bjr6bpgiah3mr" path="res://images/pets/cat_monster/__cat_monster_die_000.png" id="2_c7vtw"]
+[ext_resource type="Texture2D" uid="uid://b4uvri1pxx2ab" path="res://images/pets/cat_monster/__cat_monster_hurt_000.png" id="2_rmbs1"]
+[ext_resource type="Texture2D" uid="uid://b4sskh2au7wr2" path="res://images/pets/cat_monster/__cat_monster_idle_002.png" id="3_2yrwc"]
+[ext_resource type="Texture2D" uid="uid://d246vkx613b87" path="res://images/pets/cat_monster/__cat_monster_die_001.png" id="3_e33ya"]
+[ext_resource type="Texture2D" uid="uid://ducem5oiykh4a" path="res://images/pets/cat_monster/__cat_monster_hurt_001.png" id="3_g01rv"]
+[ext_resource type="Texture2D" uid="uid://dqqlw7fxur2kv" path="res://images/pets/cat_monster/__cat_monster_hurt_002.png" id="4_8pk01"]
+[ext_resource type="Texture2D" uid="uid://ctg06lu1gtfy7" path="res://images/pets/cat_monster/__cat_monster_die_002.png" id="4_h3oei"]
+[ext_resource type="Texture2D" uid="uid://d3m7mjrbx26g4" path="res://images/pets/cat_monster/__cat_monster_idle_003.png" id="4_ifag2"]
+[ext_resource type="Texture2D" uid="uid://dh4x5afcli654" path="res://images/pets/cat_monster/__cat_monster_hurt_003.png" id="5_akc5o"]
+[ext_resource type="Texture2D" uid="uid://rta60668l1x" path="res://images/pets/cat_monster/__cat_monster_die_003.png" id="5_l6wji"]
+[ext_resource type="Texture2D" uid="uid://cmk3mvlec7y5x" path="res://images/pets/cat_monster/__cat_monster_idle_004.png" id="5_vq7ji"]
+[ext_resource type="Texture2D" uid="uid://dw43ggpgrsk5" path="res://images/pets/cat_monster/__cat_monster_die_004.png" id="6_b20ty"]
+[ext_resource type="Texture2D" uid="uid://caeswwwcc713x" path="res://images/pets/cat_monster/__cat_monster_hurt_004.png" id="6_mhkg3"]
+[ext_resource type="Texture2D" uid="uid://chwfxikvi8mo6" path="res://images/pets/cat_monster/__cat_monster_idle_005.png" id="6_x60x2"]
+[ext_resource type="Texture2D" uid="uid://l5jqxvvna3iq" path="res://images/pets/cat_monster/__cat_monster_die_005.png" id="7_hjsrw"]
+[ext_resource type="Texture2D" uid="uid://dpg846d2aydpy" path="res://images/pets/cat_monster/__cat_monster_idle_006.png" id="7_wxtqx"]
+[ext_resource type="Texture2D" uid="uid://c3ih02c5d2anu" path="res://images/pets/cat_monster/__cat_monster_die_006.png" id="8_d4qpa"]
+[ext_resource type="Texture2D" uid="uid://dmwvvrg6ngxl8" path="res://images/pets/cat_monster/__cat_monster_idle_007.png" id="8_ff5s1"]
+[ext_resource type="Texture2D" uid="uid://bb882m5u31xws" path="res://images/pets/cat_monster/__cat_monster_die_007.png" id="9_ilkyc"]
+[ext_resource type="Texture2D" uid="uid://b1o3jpjww3ym7" path="res://images/pets/cat_monster/__cat_monster_idle_008.png" id="9_r1k1l"]
+[ext_resource type="Texture2D" uid="uid://8g5eyhjkkyk7" path="res://images/pets/cat_monster/__cat_monster_die_008.png" id="10_5b4ga"]
+[ext_resource type="Texture2D" uid="uid://cmho4lce1rvay" path="res://images/pets/cat_monster/__cat_monster_idle_009.png" id="10_18ojp"]
+[ext_resource type="Texture2D" uid="uid://bvspasjhuxt0r" path="res://images/pets/cat_monster/__cat_monster_idle_010.png" id="11_hgsvb"]
+[ext_resource type="Texture2D" uid="uid://r84djvy6gage" path="res://images/pets/cat_monster/__cat_monster_die_009.png" id="11_j6wdf"]
+[ext_resource type="Texture2D" uid="uid://hgoaib7mtons" path="res://images/pets/cat_monster/__cat_monster_idle_011.png" id="12_pey2h"]
+[ext_resource type="Texture2D" uid="uid://nw8qjhuos07o" path="res://images/pets/cat_monster/__cat_monster_idle_012.png" id="13_vg02g"]
+[ext_resource type="Texture2D" uid="uid://bsf78w0dd6l6h" path="res://images/pets/cat_monster/__cat_monster_idle_013.png" id="14_6mkwi"]
+[ext_resource type="Texture2D" uid="uid://cmjoa0tavxrp0" path="res://images/pets/cat_monster/__cat_monster_idle_014.png" id="15_ubx8d"]
+[ext_resource type="Texture2D" uid="uid://dshoce8cagxrx" path="res://images/pets/cat_monster/__cat_monster_idle_015.png" id="16_tq1mr"]
+[ext_resource type="Texture2D" uid="uid://den4kqy2l3jg6" path="res://images/pets/cat_monster/__cat_monster_idle_016.png" id="17_pdorq"]
+[ext_resource type="Texture2D" uid="uid://cpv72dmupwvd6" path="res://images/pets/cat_monster/__cat_monster_idle_017.png" id="18_ki5gv"]
+[ext_resource type="Texture2D" uid="uid://3p2d6lc012sp" path="res://images/pets/cat_monster/__cat_monster_idle_018.png" id="19_otugj"]
+[ext_resource type="Texture2D" uid="uid://dtagsuifdp358" path="res://images/pets/cat_monster/__cat_monster_idle_019.png" id="20_1vu1i"]
+[ext_resource type="Texture2D" uid="uid://q7774qvir6t1" path="res://images/pets/cat_monster/__cat_monster_jump_000.png" id="22_6ty8y"]
+[ext_resource type="Texture2D" uid="uid://p54o01vtg7t0" path="res://images/pets/cat_monster/__cat_monster_jump_001.png" id="23_25i45"]
+[ext_resource type="Texture2D" uid="uid://b5pfjge66m3wn" path="res://images/pets/cat_monster/__cat_monster_jump_002.png" id="24_coi82"]
+[ext_resource type="Texture2D" uid="uid://d21anjabp77p" path="res://images/pets/cat_monster/__cat_monster_jump_003.png" id="25_ks86m"]
+[ext_resource type="Texture2D" uid="uid://byk4dm87vcw80" path="res://images/pets/cat_monster/__cat_monster_jump_004.png" id="26_e6o4q"]
+[ext_resource type="Texture2D" uid="uid://qlbogny80mls" path="res://images/pets/cat_monster/__cat_monster_jump_005.png" id="27_yt4qd"]
+[ext_resource type="Texture2D" uid="uid://bq6wntqtbi031" path="res://images/pets/cat_monster/__cat_monster_jump_006.png" id="28_5hidb"]
+[ext_resource type="Texture2D" uid="uid://bmaxvf81lf00f" path="res://images/pets/cat_monster/__cat_monster_jump_007.png" id="29_wttwn"]
+[ext_resource type="Texture2D" uid="uid://bn2kxf62bx8ea" path="res://images/pets/cat_monster/__cat_monster_jump_008.png" id="30_up2be"]
+[ext_resource type="Texture2D" uid="uid://d4ju84sfoe1un" path="res://images/pets/cat_monster/__cat_monster_jump_009.png" id="31_h1iai"]
+[ext_resource type="Texture2D" uid="uid://bntw2oykvpwbi" path="res://images/pets/cat_monster/__cat_monster_jump_010.png" id="32_lodxl"]
+[ext_resource type="Texture2D" uid="uid://dvrlyxn5umo2b" path="res://images/pets/cat_monster/__cat_monster_jump_011.png" id="33_q7tlm"]
+[ext_resource type="Texture2D" uid="uid://b2fko8lvhl6u2" path="res://images/pets/cat_monster/__cat_monster_walk_000.png" id="34_f6goo"]
+[ext_resource type="Texture2D" uid="uid://b75a61oos8xbt" path="res://images/pets/cat_monster/__cat_monster_walk_001.png" id="35_bwo0c"]
+[ext_resource type="Texture2D" uid="uid://b3mrwhkb802qh" path="res://images/pets/cat_monster/__cat_monster_walk_002.png" id="36_dgy85"]
+[ext_resource type="Texture2D" uid="uid://csn5o4kgcpqyh" path="res://images/pets/cat_monster/__cat_monster_walk_003.png" id="37_lseum"]
+[ext_resource type="Texture2D" uid="uid://kwd8wj6bi10d" path="res://images/pets/cat_monster/__cat_monster_walk_004.png" id="38_cu7ca"]
+[ext_resource type="Texture2D" uid="uid://b4tcm5v5q8leh" path="res://images/pets/cat_monster/__cat_monster_walk_005.png" id="39_pp5kb"]
+[ext_resource type="Texture2D" uid="uid://c5jaqsty7gpwx" path="res://images/pets/cat_monster/__cat_monster_walk_006.png" id="40_kp0gf"]
+[ext_resource type="Texture2D" uid="uid://f0j65ny8wjpl" path="res://images/pets/cat_monster/__cat_monster_walk_007.png" id="41_lkag7"]
+[ext_resource type="Texture2D" uid="uid://ddfkb1p4232es" path="res://images/pets/cat_monster/__cat_monster_walk_008.png" id="42_gb2gc"]
+[ext_resource type="Texture2D" uid="uid://bmou8tpfw6g27" path="res://images/pets/cat_monster/__cat_monster_walk_009.png" id="43_jsjbr"]
+[ext_resource type="Texture2D" uid="uid://dnjetrq04heja" path="res://images/pets/cat_monster/__cat_monster_walk_010.png" id="44_u7nxy"]
+[ext_resource type="Texture2D" uid="uid://72ckinv5buyq" path="res://images/pets/cat_monster/__cat_monster_walk_011.png" id="45_uf2mn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_th75y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7y6sf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3umd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2yrwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ifag2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vq7ji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_x60x2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wxtqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ff5s1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_r1k1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_18ojp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_hgsvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pey2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vg02g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6mkwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ubx8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_tq1mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_pdorq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ki5gv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_otugj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1vu1i")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ts33r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_c7vtw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_e33ya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_h3oei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_l6wji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b20ty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hjsrw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_d4qpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ilkyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5b4ga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_j6wdf")
+}],
+"loop": true,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rmbs1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g01rv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8pk01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_akc5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mhkg3")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7y6sf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3umd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2yrwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ifag2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vq7ji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_x60x2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wxtqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ff5s1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_r1k1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_18ojp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_hgsvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pey2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vg02g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6mkwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ubx8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_tq1mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_pdorq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ki5gv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_otugj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1vu1i")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_6ty8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_25i45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_coi82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ks86m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_e6o4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_yt4qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_5hidb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_wttwn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_up2be")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_h1iai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_lodxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_q7tlm")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_f6goo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_bwo0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_dgy85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_lseum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_cu7ca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_pp5kb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_kp0gf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_lkag7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_gb2gc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_jsjbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_u7nxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_uf2mn")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 15.0
+}]
+
+[node name="pet" type="CharacterBody2D"]
+script = ExtResource("1_wijxk")
+
+[node name="shadow" type="AnimatedSprite2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 0.419608)
+position = Vector2(0, 90)
+scale = Vector2(0.149051, 0.141141)
+sprite_frames = SubResource("SpriteFrames_th75y")
+animation = &"idle"
+flip_h = true
+flip_v = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.86102e-06, 0.249997)
+scale = Vector2(0.154472, 0.153904)
+sprite_frames = SubResource("SpriteFrames_ts33r")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.447631
+flip_h = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(4.54747e-13, 0)
+polygon = PackedVector2Array(-16, -29, -11, -31, -10, -32, -7, -38, -6, -39, -5, -40, -2, -39, 0, -37, 3, -33, 11, -32, 14, -30, 20, -36, 24, -38, 25, -38, 26, -34, 25, -27, 25, -24, 25, -23, 27, -18, 31, -14, 33, -9, 33, -5, 32, 0, 30, 3, 27, 6, 26, 9, 23, 12, 25, 14, 26, 16, 25, 18, 25, 18, 24, 20, 22, 22, 19, 23, 17, 22, 17, 19, 16, 17, 11, 18, 10, 19, 10, 22, 9, 26, 10, 27, 12, 27, 14, 28, 17, 30, 17, 33, 15, 34, 12, 34, 9, 34, 4, 34, 0, 35, -8, 34, -11, 34, -12, 31, -10, 29, -9, 27, -7, 21, -7, 18, -10, 17, -11, 18, -11, 21, -13, 23, -17, 23, -19, 21, -20, 26, -24, 31, -31, 35, -38, 34, -44, 31, -49, 23, -49, 19, -47, 16, -44, 15, -41, 15, -39, 16, -38, 20, -36, 24, -34, 25, -29, 24, -24, 20, -20, 12, -24, 6, -27, -5, -26, -15, -23, -22)

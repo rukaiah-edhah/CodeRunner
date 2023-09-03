@@ -57,6 +57,7 @@ func _ready():
     player_camera.offset = CAMERA_OFFSET_RIGHT
     healthbar.position = HEALTHBAR_POSITION_RIGHT 
     coin_panel.position = COIN_PANEL_POSITION_RIGHT
+
     #___________________________________________________________________________________________________
     
     #_____________________connecting signals_________________
@@ -124,7 +125,7 @@ func _physics_process(_delta):
         if jump_count < double_jump:
             velocity.y = -jump_force
             jump_count += 1
-        
+            
     # allow for movement left and right through input
     var horizontal_direction = Input.get_axis("move_left", "move_right")
     
@@ -132,6 +133,7 @@ func _physics_process(_delta):
     
     if is_special_animation_playing:
         return
+        
     
     # setting player animation to movement
     if Input.is_action_pressed("jump"):
@@ -213,11 +215,16 @@ func _on_mini_boss_level_wrong_answer(): # Connect the signal wrong_answer to th
     health -= 3
     coins -= 3 
     if health <= 0:
-        health = 0
-        death()
+        health = 0 
+        is_special_animation_playing = true
+        _animation.animation_finished.connect(_on_special_animation_finished)
+        _animation.play('die')
+        await _animation.animation_finished
+        get_tree().change_scene_to_file("res://scenes/death.tscn")
     if coins <= 0: # Further logic can be added here once the number of coins reaches zero e.q sound effects 
         coins = 0 
     update_healthbar(health)
+    set_health_bar()
     set_coin_bar()
     _animation.play("hurt")
     hurt_sound.play()

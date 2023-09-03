@@ -25,6 +25,7 @@ var messages = [
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+    get_parent().can_move = false
     await get_tree().create_timer(1.5).timeout
     tutorial_txt.add_theme_font_override("normal_font", font)
     tutorial_txt.add_theme_color_override('font_outline_color', '000000')
@@ -49,6 +50,7 @@ func start_tutorial():
 
 
 func stop_tutorial():
+    get_parent().can_move = true
     typing_sound.stream.loop = false
     # clear tutorial
     queue_free()

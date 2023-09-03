@@ -23,10 +23,13 @@ offset_left = 6.0
 offset_top = 4.0
 offset_right = 703.0
 offset_bottom = 77.0
+theme_override_font_sizes/normal_font_size = 22
 
 [node name="next" type="Timer" parent="."]
 
 [node name="next2" type="Timer" parent="."]
+
+[node name="typing" type="AudioStreamPlayer2D" parent="."]
 
 [connection signal="timeout" from="next" to="." method="_on_next_timeout"]
 [connection signal="timeout" from="next2" to="." method="_on_next_2_timeout"]
