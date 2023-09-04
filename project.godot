@@ -18,10 +18,7 @@ config/features=PackedStringArray("4.0", "GL Compatibility")
 [autoload]
 
 BossManager="*res://scripts/singleton/boss_manager.gd"
-StaticData="*res://unnecessary-files/static_data.gd"
-IntorStaticData1="*res://learning-material/intro-level/singleton/intor_static_data1.gd"
-Global="*res://Shop_Assets/Global.gd"
-EnemyMarker="*res://scripts/singleton/EnemyMarker.gd"
+Global="*res://scenes/Shop_Assets/Global.gd"
 BgMusic="*res://scripts/bg_music.gd"
 
 [display]

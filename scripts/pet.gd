@@ -13,7 +13,7 @@ func _ready():
 
 func _physics_process(delta):
     if player != null:
-        _animation.flip_h = player._animation.flip_h  # Sync flip state with player
+        _animation.flip_h = player._animation.flip_h  
         
         var player_current_animation = player._animation.animation
         

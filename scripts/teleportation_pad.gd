@@ -10,12 +10,18 @@ func _on_area_entered(area: Area2D):
         play_sound(portal_sound, -10.0)
         area.get_parent().disable_movement()
         area.get_parent().get_node("PlayerAnimation").play("Dissolve")
+        
+        var pet_node = get_node("../../../3/pet")
+        pet_node.get_node("PetAnimation").play("Dissolve")
+            
         await get_tree().create_timer(0.5).timeout
-        $AnimationPlayer.play("dissolve")
-        await $AnimationPlayer.animation_finished
+        
         var linked_path = get_node(path)
         area.get_parent().global_position = linked_path.global_position
+        
         area.get_parent().get_node("PlayerAnimation").play("Appear")
+        pet_node.get_node("PetAnimation").play("Appear")
+        
         area.get_parent().enable_movement()
         
         

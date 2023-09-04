@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=3 uid="uid://db2tir1l5ayce"]
 
-[ext_resource type="Script" path="res://Shop_Assets/Shop.gd" id="1_e030f"]
+[ext_resource type="Script" path="res://scenes/Shop_Assets/Shop.gd" id="1_e030f"]
 [ext_resource type="Texture2D" uid="uid://oo7cr820w524" path="res://images/right_arrow.png" id="2_8wws3"]
-[ext_resource type="Script" path="res://Shop_Assets/Cost.gd" id="3_ach27"]
+[ext_resource type="Script" path="res://scenes/Shop_Assets/Cost.gd" id="3_ach27"]
 [ext_resource type="Texture2D" uid="uid://cr34gf4c7t1rl" path="res://images/farmingTilesheetComplete.png" id="3_rh14b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ix4uy"]

@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://bi6gplnb4m3o"]
 
-[ext_resource type="Script" path="res://Shop_Assets/Player_Grid.gd" id="1_nov65"]
-[ext_resource type="Script" path="res://Shop_Assets/player_inventory.gd" id="1_x5gr5"]
-[ext_resource type="Script" path="res://Shop_Assets/Gold_Count.gd" id="3_s7vxu"]
-[ext_resource type="PackedScene" uid="uid://dsajkpxnepbg5" path="res://Shop_Assets/item_info.tscn" id="4_bp4at"]
+[ext_resource type="Script" path="res://scenes/Shop_Assets/Player_Grid.gd" id="1_nov65"]
+[ext_resource type="Script" path="res://scenes/Shop_Assets/player_inventory.gd" id="1_x5gr5"]
+[ext_resource type="Script" path="res://scenes/Shop_Assets/Gold_Count.gd" id="3_s7vxu"]
+[ext_resource type="PackedScene" uid="uid://dsajkpxnepbg5" path="res://scenes/Shop_Assets/item_info.tscn" id="4_bp4at"]
 
 [sub_resource type="Animation" id="Animation_vxc2u"]
 length = 0.001

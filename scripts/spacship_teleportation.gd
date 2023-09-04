@@ -13,12 +13,17 @@ func _on_area_entered(area: Area2D):
         player_in_range = true
         $anim_spacship.play("light_effect")
         await get_tree().create_timer(0.5).timeout
+        var pet_node = get_node("../../../3/pet")
+        pet_node.get_node("PetAnimation").play("Dissolve")
         area.get_parent().get_node("PlayerAnimation").play("Dissolve")
         #await get_tree().create_timer(0.5).timeout
         $timer.start()
         area.get_parent().disable_movement() # We may need to use the function named enable_movement() to let the player move again in the Python level
         area.get_parent().get_node("PlayerAnimation").play("Appear")
+        pet_node.get_node("PetAnimation").play("Appear")
         area.get_parent().get_node("PlayerAnimation").play("Dissolve")
+        pet_node.get_node("PetAnimation").play("Dissolve")
+        
 
 func _on_timer_timeout():
     if player_in_range:
