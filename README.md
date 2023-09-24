@@ -2,6 +2,7 @@
 **Code Runner** is an educational platformer game where you learn coding basics on an alien planet and Python skills aboard a spaceship, guided by your holographic mentor, **Shifu**.
 
 ## The Journey
+[![Video Thumbnail](https://i.ibb.co/GJJ6W4X/Screenshot-2023-09-24-at-2-50-11-PM.png)](https://drive.google.com/drive/folders/1FI0clg6IpX_EXnScBlrqomPfrHZh7m5l)
 In a world rattled by a digital anomaly, a lone figure stands humbly beneath the imposing silhouette of a mysterious spaceship, perched on an unknown planet and the nucleus of the chaotic disturbances. Under the guidance of Shifu, a sage of programming, their journey commences outside the spacecraft, acquiring elementary programming skills. With this pivotal knowledge in hand, they prepare to climb into the spacecraft to undertake their primary mission - reaching the central computer.
 
 Navigating through the spaceship's inner maze, under Shifu's unyielding guidance, they'll learn **Python**, the language vital to tame the rogue central computer. Armed with their newfound knowledge of Python, they take on their mission: to still the digital tempest, recalibrate the system, and restore balance, not just to the spacecraft, but to the entire world.
