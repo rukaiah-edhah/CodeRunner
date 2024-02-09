@@ -35,8 +35,6 @@ This game was created in June 2023 with the Godot game engine, utilizing GDScrip
 - **Game Environment**: Avoid lava, beat enemies, pick up coins, and reach save points, all with your pet following you.
 - **Milestones**: Defeat the final boss in the intro level to enter the Spaceship where Python lessons will be held. Beat the final boss in the Python level to finish the game.
 
-## Coming Soon
-Stay tuned for download and installation capabilities. While we've taken a brief pause, we're committed to resuming work on Code Runner to make it accessible to all enthusiastic learners out there.
 
 ## License
 This project is licensed under the **MIT License** - see the LICENSE file for details.
