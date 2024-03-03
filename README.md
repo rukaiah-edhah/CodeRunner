@@ -6,6 +6,8 @@ In a world rattled by a digital anomaly, a lone figure stands humbly beneath the
 
 Navigating through the spaceship's inner maze, under Shifu's unyielding guidance, they'll learn **Python**, the language vital to tame the rogue central computer. Armed with their newfound knowledge of Python, they take on their mission: to still the digital tempest, recalibrate the system, and restore balance, not just to the spacecraft, but to the entire world.
 
+https://github.com/rukaiah-edhah/CodeRunner/assets/134958226/59917119-0337-4e47-8d9c-fe7da9059381
+
 ## About the Creation
 This game was created in June 2023 with the Godot game engine, utilizing GDScript as the programming language. Developed by **Rukaiah Edhah, Abutalib Hassan, Izabelle Lantz, Joel Torres, and Shevan Abdulla** as part of Cohort 2 for the **TechWise** program provided by Talentsprint and supported by Google.
 
